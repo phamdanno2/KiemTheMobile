@@ -289,6 +289,7 @@ namespace FSPlay.KiemVu.Control.Component
 
                 return false;
             }
+
             ///// Nếu bản đồ không cho phép dùng kỹ năng
             //else if (!Global.Data.GameScene.CurrentMapData.Setting.AllowUseSkill)
             //{

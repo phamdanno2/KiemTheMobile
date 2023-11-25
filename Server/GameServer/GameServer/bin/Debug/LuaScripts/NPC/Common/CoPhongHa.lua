@@ -13,7 +13,7 @@ local CoPhongHa = Scripts[000151]
 function CoPhongHa:OnOpen(scene, npc, player, otherParams)
 
 	local dialog = GUI.CreateNPCDialog()
-	dialog:AddText("Nhân chi sơ, Tính bản thiện . Ta có thể giúp gì cho nhà ngươi ")
+	dialog:AddText("Nhân chi sơ, Tính bản thiện . Ta có thể giúp gì cho nhà ngươi TMS naaaaaaaaaaaaaaaaaaaa")
 	dialog:AddSelection(5, "<color=#fbe66f>[Hỗ Trợ]</color> <color=#06f455>Vũ Khí Tân Thủ</color>.")
 	--[[ dialog:AddSelection(1, "<color=#fbe66f>[Hệ thống]</color> <color=#06f455>Nhận đồng trên web</color>.")
 	dialog:AddSelection(2, "<color=#51e1fb>Nhận thưởng hoạt động </color>.") ]]

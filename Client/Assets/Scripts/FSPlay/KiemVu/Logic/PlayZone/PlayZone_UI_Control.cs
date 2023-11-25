@@ -140,7 +140,7 @@ public partial class PlayZone
             }
 
             /// Nếu là kỹ năng tay trái thì sẽ cho tìm mục tiêu, kỹ năng tay phải thì sẽ đánh theo hướng
-            SkillManager.LeaderUseSkill(skillID, this.UIBottomBar.UISkillBar.ShowMainSkill, ignoreTarget);
+            SkillManager.LeaderUseSkill(skillID, true, ignoreTarget);
         };
         this.UIBottomBar.UISkillBar.AruaButtonClicked = () => {
             KTTCPSkillManager.SendSaveAndActivateAruaKey(this.UIBottomBar.UISkillBar.AruaSkillID, this.UIBottomBar.UISkillBar.ActivateArua ? 1 : 0);

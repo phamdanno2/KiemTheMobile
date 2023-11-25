@@ -77,23 +77,12 @@ namespace FSPlay.KiemVu.UI.RoleManager
     public class UISelectRole : MonoBehaviour
     {
         #region Define
-        /// <summary>
-        /// Nút quay lại màn hình đăng nhập
-        /// </summary>
-        [SerializeField]
-        private UnityEngine.UI.Button UIButton_Back;
 
         /// <summary>
         /// Nút thoát Game
         /// </summary>
         [SerializeField]
         private UnityEngine.UI.Button UIButton_ExitGame;
-
-        /// <summary>
-        /// Nút tạo nhân vật
-        /// </summary>
-        [SerializeField]
-        private UnityEngine.UI.Button UIButton_CreateRole;
 
         /// <summary>
         /// Nút vào Game
@@ -155,11 +144,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
         public Action QuitGame { get; set; }
 
         /// <summary>
-        /// Sự kiện khi nút quay lại màn hình Chọn máy chủ được ấn
-        /// </summary>
-        public Action BackToSelectServer { get; set; }
-
-        /// <summary>
         /// Sự kiện khi nút xóa nhân vật được ấn
         /// </summary>
         public Action DeleteRole { get; set; }
@@ -208,23 +192,13 @@ namespace FSPlay.KiemVu.UI.RoleManager
         /// </summary>
         private void InitPrefabs()
         {
-            this.UIToggle_RoleInfo1.gameObject.SetActive(false);
-            this.UIToggle_RoleInfo2.gameObject.SetActive(false);
-            this.UIToggle_RoleInfo3.gameObject.SetActive(false);
-            this.UIToggle_RoleInfo4.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo1.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo2.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo3.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo4.gameObject.SetActive(false);
 
-            this.UIButton_Back.onClick.AddListener(this.ButtonBack_Clicked);
             this.UIButton_ExitGame.onClick.AddListener(this.ButtonExitGame_Clicked);
-            this.UIButton_CreateRole.onClick.AddListener(this.ButtonCreateRole_Clicked);
             this.UIButton_EnterGame.onClick.AddListener(this.ButtonEnterGame_Clicked);
-        }
-
-        /// <summary>
-        /// Sự kiện khi nút quay lại được ấn
-        /// </summary>
-        private void ButtonBack_Clicked()
-        {
-            this.BackToSelectServer?.Invoke();
         }
 
         /// <summary>
@@ -233,14 +207,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
         private void ButtonExitGame_Clicked()
         {
             this.QuitGame?.Invoke();
-        }
-
-        /// <summary>
-        /// Sự kiện khi nút tạo nhân vật được ấn
-        /// </summary>
-        private void ButtonCreateRole_Clicked()
-        {
-            this.CreateRole?.Invoke();
         }
 
         /// <summary>
@@ -260,17 +226,35 @@ namespace FSPlay.KiemVu.UI.RoleManager
         {
             this.ListRole.Clear();
 
-            this.UIToggle_RoleInfo1.Active = false;
+            this.UIToggle_RoleInfo1.gameObject.SetActive(true);
+            this.UIToggle_RoleInfo1.Active = true;
+            this.UIToggle_RoleInfo1.OnSelected = (isSelected) => {
+                if (isSelected) this.SelectRole(0);
+            };
+            this.UIToggle_RoleInfo2.gameObject.SetActive(true);
             this.UIToggle_RoleInfo2.Active = false;
+            this.UIToggle_RoleInfo2.OnSelected = (isSelected) => {
+                if (isSelected) this.SelectRole(1);
+            };
+            this.UIToggle_RoleInfo3.gameObject.SetActive(true);
             this.UIToggle_RoleInfo3.Active = false;
+            this.UIToggle_RoleInfo3.OnSelected = (isSelected) => {
+                if (isSelected) this.SelectRole(2);
+            };
+            this.UIToggle_RoleInfo4.gameObject.SetActive(true);
             this.UIToggle_RoleInfo4.Active = false;
-
-            this.UIToggle_RoleInfo1.gameObject.SetActive(false);
-            this.UIToggle_RoleInfo2.gameObject.SetActive(false);
-            this.UIToggle_RoleInfo3.gameObject.SetActive(false);
-            this.UIToggle_RoleInfo4.gameObject.SetActive(false);
+            this.UIToggle_RoleInfo4.OnSelected = (isSelected) => {
+                if (isSelected) this.SelectRole(3);
+            };
+            //this.UIToggle_RoleInfo1.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo2.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo3.gameObject.SetActive(false);
+            //this.UIToggle_RoleInfo4.gameObject.SetActive(false);
         }
-
+        [SerializeField]
+        GameObject male;
+        [SerializeField]
+        GameObject female;
         /// <summary>
         /// Chọn nhân vật từ danh sách
         /// </summary>
@@ -283,7 +267,17 @@ namespace FSPlay.KiemVu.UI.RoleManager
                 return;
             }
 
-            this.LastSelectedRole = id == 0 ? this.UIToggle_RoleInfo1.RoleData : id == 1 ? this.UIToggle_RoleInfo2.RoleData : id == 2 ? this.UIToggle_RoleInfo3.RoleData : this.UIToggle_RoleInfo4.RoleData;
+            if (id >= this.ListRole.Count)
+            {
+                this.CreateRole?.Invoke();
+            }
+            else
+            {
+                male.SetActive(ListRole[id].Sex == 0);
+                female.SetActive(ListRole[id].Sex == 1);
+
+                this.LastSelectedRole = id == 0 ? this.UIToggle_RoleInfo1.RoleData : id == 1 ? this.UIToggle_RoleInfo2.RoleData : id == 2 ? this.UIToggle_RoleInfo3.RoleData : this.UIToggle_RoleInfo4.RoleData;
+            }
         }
         #endregion
 
@@ -303,7 +297,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
             this.ClearRoleList();
 
             string[] roles = s.Split('|');
-            int lastId = -1;
             for (int i = 0; i < roles.Length; i++)
             {
                 string[] temp = roles[i].Split('$');
@@ -334,70 +327,18 @@ namespace FSPlay.KiemVu.UI.RoleManager
 
                 if (!isAddToLogin)
                 {
-                    lastId = i;
                     if (i == 0)
-                    {
-                        this.UIToggle_RoleInfo1.gameObject.SetActive(true);
                         this.UIToggle_RoleInfo1.RoleData = data;
-                        this.UIToggle_RoleInfo1.OnSelected = (isSelected) => {
-                            this.SelectRole(0);
-                        };
-                        this.UIToggle_RoleInfo1.Ready = () => {
-                            if (this.IsReady)
-                            {
-                                Super.HideNetWaiting();
-                            }
-                        };
-                    }
                     else if (i == 1)
-                    {
-                        this.UIToggle_RoleInfo2.gameObject.SetActive(true);
                         this.UIToggle_RoleInfo2.RoleData = data;
-                        this.UIToggle_RoleInfo2.OnSelected = (isSelected) => {
-                            this.SelectRole(1);
-                        };
-                        this.UIToggle_RoleInfo2.Ready = () => {
-                            if (this.IsReady)
-                            {
-                                Super.HideNetWaiting();
-                            }
-                        };
-                    }
                     else if (i == 2)
-                    {
-                        this.UIToggle_RoleInfo3.gameObject.SetActive(true);
                         this.UIToggle_RoleInfo3.RoleData = data;
-                        this.UIToggle_RoleInfo3.OnSelected = (isSelected) => {
-                            this.SelectRole(2);
-                        };
-                        this.UIToggle_RoleInfo3.Ready = () => {
-                            if (this.IsReady)
-                            {
-                                Super.HideNetWaiting();
-                            }
-                        };
-                    }
-                    else if (i == 3)
-                    {
-                        this.UIToggle_RoleInfo4.gameObject.SetActive(true);
+                    else
                         this.UIToggle_RoleInfo4.RoleData = data;
-                        this.UIToggle_RoleInfo4.OnSelected = (isSelected) => {
-                            this.SelectRole(3);
-                        };
-                        this.UIToggle_RoleInfo4.Ready = () => {
-                            if (this.IsReady)
-                            {
-                                Super.HideNetWaiting();
-                            }
-                        };
-                    }
                 }
             }
 
-            if (!isAddToLogin && lastId != -1)
-            {
-                this.SelectRole(lastId);
-            }
+            this.SelectRole(0);
         }
 
         /// <summary>

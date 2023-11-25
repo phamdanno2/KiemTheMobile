@@ -2,6 +2,7 @@
 using FSPlay.KiemVu.Entities.Config;
 using FSPlay.KiemVu.UI.Main.SetHandSkill;
 using System;
+using System.Reflection;
 using UnityEngine;
 
 namespace FSPlay.KiemVu.UI.Main
@@ -11,11 +12,14 @@ namespace FSPlay.KiemVu.UI.Main
 	/// </summary>
 	public class UISetHandSkill : MonoBehaviour
 	{
-		#region Define
-		/// <summary>
-		/// Sự kiện đóng khung
-		/// </summary>
-		[SerializeField]
+        #region Define
+        [SerializeField]
+        private UnityEngine.UI.Button UIButton_Reset;
+
+        /// <summary>
+        /// Sự kiện đóng khung
+        /// </summary>
+        [SerializeField]
 		private UnityEngine.UI.Button UIButton_Close;
 
 		/// <summary>
@@ -49,36 +53,6 @@ namespace FSPlay.KiemVu.UI.Main
 		private UISetHandSkill_Button UIButton_LeftHandSkill4;
 
 		/// <summary>
-		/// Button kỹ năng chính tay phải
-		/// </summary>
-		[SerializeField]
-		private UISetHandSkill_Button UIButton_RightHandMainSkill;
-
-		/// <summary>
-		/// Button kỹ năng phụ số 1 tay phải
-		/// </summary>
-		[SerializeField]
-		private UISetHandSkill_Button UIButton_RightHandSkill1;
-
-		/// <summary>
-		/// Button kỹ năng phụ số 2 tay phải
-		/// </summary>
-		[SerializeField]
-		private UISetHandSkill_Button UIButton_RightHandSkill2;
-
-		/// <summary>
-		/// Button kỹ năng phụ số 3 tay phải
-		/// </summary>
-		[SerializeField]
-		private UISetHandSkill_Button UIButton_RightHandSkill3;
-
-		/// <summary>
-		/// Button kỹ năng phụ số 4 tay phải
-		/// </summary>
-		[SerializeField]
-		private UISetHandSkill_Button UIButton_RightHandSkill4;
-
-		/// <summary>
 		/// Button kỹ năng vòng sáng
 		/// </summary>
 		[SerializeField]
@@ -89,7 +63,7 @@ namespace FSPlay.KiemVu.UI.Main
 		/// <summary>
 		/// Danh sách kỹ năng được xếp vào ô kỹ năng nhanh
 		/// </summary>
-		private readonly int[] skills = new int[10];
+		private readonly int[] skills = new int[10] { -1,-1,-1,-1,-1,-1,-1,-1, -1, -1 };
 
 		/// <summary>
 		/// ID kỹ năng vòng sáng
@@ -121,49 +95,47 @@ namespace FSPlay.KiemVu.UI.Main
 		/// </summary>
 		private void InitPrefabs()
 		{
+            this.UIButton_Reset.onClick.AddListener(this.ButtonReset_Clicked);
+            
 			this.UIButton_Close.onClick.AddListener(this.ButtonClose_Clicked);
 
 			this.UIButton_LeftHandMainSkill.Click = () => {
 				this.OpenSelectSkillFrame(this.UIButton_LeftHandMainSkill, 0, 0);
 			};
 			this.UIButton_LeftHandSkill1.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill1, 0, 1);
+				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill1, 1, 1);
 			};
 			this.UIButton_LeftHandSkill2.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill2, 0, 2);
+				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill2, 1, 2);
 			};
 			this.UIButton_LeftHandSkill3.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill3, 0, 3);
+				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill3, 1, 3);
 			};
 			this.UIButton_LeftHandSkill4.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill4, 0, 4);
-			};
-
-			this.UIButton_RightHandMainSkill.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_RightHandMainSkill, 0, 5);
-			};
-			this.UIButton_RightHandSkill1.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_RightHandSkill1, 0, 6);
-			};
-			this.UIButton_RightHandSkill2.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_RightHandSkill2, 0, 7);
-			};
-			this.UIButton_RightHandSkill3.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_RightHandSkill3, 0, 8);
-			};
-			this.UIButton_RightHandSkill4.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_RightHandSkill4, 0, 9);
+				this.OpenSelectSkillFrame(this.UIButton_LeftHandSkill4, 1, 4);
 			};
 
 			this.UIButton_AuraSkill.Click = () => {
-				this.OpenSelectSkillFrame(this.UIButton_AuraSkill, 1);
+				this.OpenSelectSkillFrame(this.UIButton_AuraSkill, 2);
 			};
 		}
+        private void ButtonReset_Clicked()
+        {
+            this.SetSkill(this.UIButton_LeftHandMainSkill, -1);
+            this.SetSkill(this.UIButton_LeftHandSkill1, -1);
+            this.SetSkill(this.UIButton_LeftHandSkill2, -1);
+            this.SetSkill(this.UIButton_LeftHandSkill3, -1);
+            this.SetSkill(this.UIButton_LeftHandSkill4, -1);
 
-		/// <summary>
-		/// Sự kiện khi Button đóng khung được ấn
-		/// </summary>
-		private void ButtonClose_Clicked()
+            this.SetSkill(this.UIButton_AuraSkill, -1);
+
+            PlayZone.GlobalPlayZone.UIBottomBar.UISkillBar.ResetSkill();
+        }
+
+        /// <summary>
+        /// Sự kiện khi Button đóng khung được ấn
+        /// </summary>
+        private void ButtonClose_Clicked()
 		{
 			this.Close?.Invoke();
 		}
@@ -242,11 +214,6 @@ namespace FSPlay.KiemVu.UI.Main
 				this.SetSkill(this.UIButton_LeftHandSkill2, this.skills[2]);
 				this.SetSkill(this.UIButton_LeftHandSkill3, this.skills[3]);
 				this.SetSkill(this.UIButton_LeftHandSkill4, this.skills[4]);
-				this.SetSkill(this.UIButton_RightHandMainSkill, this.skills[5]);
-				this.SetSkill(this.UIButton_RightHandSkill1, this.skills[6]);
-				this.SetSkill(this.UIButton_RightHandSkill2, this.skills[7]);
-				this.SetSkill(this.UIButton_RightHandSkill3, this.skills[8]);
-				this.SetSkill(this.UIButton_RightHandSkill4, this.skills[9]);
 			}
 
 			/// Kỹ năng vòng sáng

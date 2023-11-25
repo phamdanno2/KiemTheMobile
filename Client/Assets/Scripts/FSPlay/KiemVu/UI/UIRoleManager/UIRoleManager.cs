@@ -47,6 +47,9 @@ namespace FSPlay.KiemVu.UI.RoleManager
         public bool DirectLogin { get; set; }
         #endregion
 
+        [SerializeField]
+        private UnityEngine.UI.Button UIButton_Back;
+
         #region Core MonoBehaviour
         /// <summary>
         /// Hàm này gọi đến ở Frame đầu tiên
@@ -71,7 +74,11 @@ namespace FSPlay.KiemVu.UI.RoleManager
 		/// </summary>
 		private void InitPrefabs()
         {
-            
+            this.UIButton_Back.onClick.AddListener(() =>
+            {
+                PreGameTCPCmdHandler.Instance.CloseSocket(true);
+                this.GoBack?.Invoke();
+            });
         }
         #endregion
 
@@ -192,11 +199,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
             
             this.UISelectRole.gameObject.SetActive(false);
             this.UICreateRole.gameObject.SetActive(true);
-
-            this.UICreateRole.GoBack = () => {
-                PreGameTCPCmdHandler.Instance.CloseSocket(true);
-                this.GoBack?.Invoke();
-            };
         }
 
         /// <summary>
@@ -225,11 +227,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
                 GameInstance.Game.CurrentSession.RoleName = this.UISelectRole.LastSelectedRole.Name;
 
                 this.EnterGame();
-            };
-
-            this.UISelectRole.BackToSelectServer = () => {
-                PreGameTCPCmdHandler.Instance.CloseSocket(true);
-                this.GoBack?.Invoke();
             };
 
             this.UISelectRole.QuitGame = () => {

@@ -1,0 +1,10 @@
+应用程序出现了异常[1]:
+MySQLDriverCS Exception: MySQLDriverCS Error: can't connect.Authentication plugin 'caching_sha2_password' cannot be loaded: The specified module could not be found.
+
+
+ 额外信息: CurrentDomain_UnhandledException
+    at LogDBServer.DB.DBConnections.BuidConnections(MySQLConnectionString connStr, Int32 maxCount)
+   at LogDBServer.DB.DBManager.LoadDatabase(MySQLConnectionString connstr, Int32 MaxConns, Int32 codePage)
+   at LogDBServer.Program.InitServer()
+   at LogDBServer.Program.OnStartServer()
+   at LogDBServer.Program.Main(String[] args)

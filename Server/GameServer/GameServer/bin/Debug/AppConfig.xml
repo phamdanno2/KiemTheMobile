@@ -16,7 +16,7 @@
   <!--Path GameRes资源所在的目录-->
   <Resource Path="Config" /> 
   <!--Giftcode Active Service-->
-  <GiftCode Url="http://sdk.kt2009.mobi:8887/ActiveGiftCode.aspx" />
+  <GiftCode Url="http://103.48.194.142:8887/ActiveGiftCode.aspx" />
 
   <ClientVersion Core="23" Resource="56" />
   

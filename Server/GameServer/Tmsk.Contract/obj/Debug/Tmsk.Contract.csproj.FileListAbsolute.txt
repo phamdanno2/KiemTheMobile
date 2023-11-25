@@ -315,3 +315,12 @@ C:\Users\Administrator\Downloads\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\Tms
 C:\Users\Administrator\Downloads\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.csproj.CopyComplete
 C:\Users\Administrator\Downloads\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.dll
 C:\Users\Administrator\Downloads\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.pdb
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\bin\Debug\Tmsk.Contract.dll
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\bin\Debug\Tmsk.Contract.pdb
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\bin\Debug\protobuf-net.dll
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\bin\Debug\zlib.net.dll
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.csproj.CopyComplete
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.dll
+C:\Users\Administrator\Downloads\settup\Gs_KT2009Tkim_Open\Gs_KT2009Tkim_Open\GameServer\KTGameServer\Tmsk.Contract\obj\Debug\Tmsk.Contract.pdb

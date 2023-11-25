@@ -48,6 +48,12 @@ namespace FSPlay.KiemVu.UI.RoleManager
         private TextMeshProUGUI UIText_RoleClass;
         #endregion
 
+        [SerializeField]
+        UnityEngine.GameObject info;
+
+        [SerializeField]
+        UnityEngine.GameObject txt;
+
         #region Properties
         /// <summary>
         /// Kích hoạt
@@ -84,7 +90,7 @@ namespace FSPlay.KiemVu.UI.RoleManager
         /// <summary>
         /// Đối tượng được tham chiếu
         /// </summary>
-        private CharacterPreview previewRole;
+        //private CharacterPreview previewRole;
 
         /// <summary>
         /// Sự kiện khi đối tượng được chon
@@ -116,10 +122,10 @@ namespace FSPlay.KiemVu.UI.RoleManager
         /// </summary>
         private void OnDestroy()
         {
-            if (this.previewRole != null)
-            {
-                GameObject.Destroy(this.previewRole.gameObject);
-            }
+            //if (this.previewRole != null)
+            //{
+            //    GameObject.Destroy(this.previewRole.gameObject);
+            //}
         }
         #endregion
 
@@ -139,6 +145,9 @@ namespace FSPlay.KiemVu.UI.RoleManager
         /// </summary>
         public void UpdateRole()
         {
+            info.SetActive(true);
+            txt.SetActive(false);
+/*
             if (this.previewRole == null)
             {
                 this.previewRole = Object2DFactory.MakeRolePreview();
@@ -159,7 +168,7 @@ namespace FSPlay.KiemVu.UI.RoleManager
             this.previewRole.OnStart = () => {
                 this.UIImage_RolePreview.texture = this.previewRole.ReferenceCamera.targetTexture;
             };
-
+*/
             this.UIText_RoleName.text = this._RoleData.Name;
             this.UIText_RoleLevel.text = this._RoleData.Level + "";
             string factionName = KTGlobal.GetFactionName(this._RoleData.FactionID, out Color color);

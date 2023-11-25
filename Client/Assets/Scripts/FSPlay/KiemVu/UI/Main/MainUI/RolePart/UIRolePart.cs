@@ -10,6 +10,7 @@ using System;
 using FSPlay.KiemVu.Entities.Config;
 using System.Linq;
 using FSPlay.GameEngine.Logic;
+using FSPlay.KiemVu.Network;
 
 namespace FSPlay.KiemVu.UI.Main.MainUI
 {
@@ -436,7 +437,8 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// <param name="isSelected"></param>
         private void ToggleRoleFace_Selected(bool isSelected)
         {
-            this.RoleFaceSelected?.Invoke(isSelected);
+            //this.RoleFaceSelected?.Invoke(isSelected);
+            KT_TCPHandler.SendGetRoleAttributes();
         }
         #endregion
 

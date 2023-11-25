@@ -44,6 +44,8 @@ namespace FSPlay.KiemVu.Control.Component
                     KTAutoFightManager.Instance.ChangeAutoFightTarget(this.RefObject);
                     //KTDebug.LogError(string.Format("{0} - ID = {1} is clicked.", this.RefObject.RoleName, this.RefObject.RoleID));
                     Global.Data.GameScene.MonsterClick(this.RefObject);
+
+                    PlayZone.GlobalPlayZone.UIBottomBar.UISkillBar.UI_SkillButton_Main.autoSkill = true;
                 }
                 /// Nếu là điểm thu thập
                 else if (this.RefObject.SpriteType == GSpriteTypes.GrowPoint)

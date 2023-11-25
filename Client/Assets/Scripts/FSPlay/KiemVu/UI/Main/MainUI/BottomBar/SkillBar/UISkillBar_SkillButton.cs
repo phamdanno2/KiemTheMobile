@@ -1,4 +1,5 @@
-﻿using FSPlay.KiemVu.Utilities.UnityUI;
+﻿using FSPlay.KiemVu.Control.Component;
+using FSPlay.KiemVu.Utilities.UnityUI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -173,6 +174,9 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.SkillBar
         /// </summary>
         private bool lastIsCooldown = false;
 
+        [HideInInspector]
+        public bool autoSkill = false;
+
         #region Core MonoBehaviour
         /// <summary>
         /// Hàm này gọi ở Frame đầu tiên
@@ -188,6 +192,22 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.SkillBar
         /// </summary>
         private void Update()
         {
+            if (autoSkill)
+            {
+                if (SkillManager.SelectedTarget == null)
+                {
+                    this.holdTime = 0;
+                    this.autoSkill = false;
+                    return;
+                }
+                this.holdTime += Time.deltaTime;
+                if (this.holdTime >= 0.5)
+                {
+                    SkillManager.LeaderUseSkill(SkillID);
+                    //this.Click?.Invoke();
+                    this.holdTime = 0;
+                }
+            }
             if (this.mouseDown)
             {
                 this.holdTime += Time.deltaTime;
@@ -200,7 +220,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.SkillBar
             }
             else
             {
-                this.holdTime = 0;
+                //this.holdTime = 0;
             }
 
             /// Nếu kỹ năng đang trong trạng thái hồi
@@ -264,6 +284,8 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.SkillBar
         public void OnPointerDown(PointerEventData pointerEventData)
         {
             this.mouseDown = true;
+            this.autoSkill = false;
+            this.holdTime = 0;
         }
 
         /// <summary>
@@ -272,6 +294,10 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.SkillBar
         /// <param name="pointerEventData"></param>
         public void OnPointerUp(PointerEventData pointerEventData)
         {
+            if (SkillID <= 0)
+            {
+                PlayZone.GlobalPlayZone.OpenUISetHandSkill();
+            }
             if (this.mouseDown)
             {
                 this.Click?.Invoke();

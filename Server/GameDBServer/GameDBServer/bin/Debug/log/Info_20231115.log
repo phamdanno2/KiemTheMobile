@@ -1,0 +1,15 @@
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49905, total count: 1
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49906, total count: 2
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49907, total count: 3
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49908, total count: 4
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49909, total count: 5
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49910, total count: 6
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49911, total count: 7
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49912, total count: 8
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49913, total count: 9
+2023-11-15 16:16:06	New socket connection: 127.0.0.1:49914, total count: 10
+2023-11-15 17:43:44	Query role info from DB: 1236_congacon1
+2023-11-15 17:44:02	Load role data from DB: 200000
+2023-11-15 18:25:05	Release unused role: 200000
+2023-11-15 19:45:32	Query role info from DB: 1237_1231231
+2023-11-15 19:45:39	Load role data from DB: 200001

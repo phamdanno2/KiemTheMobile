@@ -1,0 +1,84 @@
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56710, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56709, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56714, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56716, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56715, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56711, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56712, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56713, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56707, last operation: Receive, error: ConnectionReset
+2023-11-20 00:39:20	Close socket: 127.0.0.1:56708, last operation: Receive, error: ConnectionReset
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49455, total count: 1
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49456, total count: 2
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49457, total count: 3
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49458, total count: 4
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49459, total count: 5
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49460, total count: 6
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49461, total count: 7
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49462, total count: 8
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49463, total count: 9
+2023-11-20 00:41:12	New socket connection: 127.0.0.1:49464, total count: 10
+2023-11-20 00:42:15	Query role info from DB: 1238_testgamezz
+2023-11-20 00:42:22	Load role data from DB: 200001
+2023-11-20 00:44:08	Query role info from DB: 1237_soking
+2023-11-20 00:44:26	Load role data from DB: 200002
+2023-11-20 00:48:57	Query role info from DB: 1239_trongnhan123
+2023-11-20 00:49:09	Load role data from DB: 200003
+2023-11-20 01:12:35	Query role info from DB: 1240_master
+2023-11-20 01:12:51	Load role data from DB: 200004
+2023-11-20 01:17:22	Release unused role: 200001
+2023-11-20 01:22:24	Release unused role: 200002
+2023-11-20 01:27:26	Release unused role: 200003
+2023-11-20 01:36:29	Query role info from DB: 1241_testzzaj
+2023-11-20 01:36:34	Load role data from DB: 200005
+2023-11-20 01:57:40	Release unused role: 200004
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49457, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49455, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49458, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49456, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49459, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49460, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49464, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49462, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49463, last operation: Receive, error: ConnectionReset
+2023-11-20 02:11:44	Close socket: 127.0.0.1:49461, last operation: Receive, error: ConnectionReset
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52565, total count: 1
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52566, total count: 2
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52567, total count: 3
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52568, total count: 4
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52569, total count: 5
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52570, total count: 6
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52571, total count: 7
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52572, total count: 8
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52573, total count: 9
+2023-11-20 09:40:55	New socket connection: 127.0.0.1:52574, total count: 10
+2023-11-20 09:45:14	Query role info from DB: 1242_sangsang
+2023-11-20 09:46:25	Load role data from DB: 200006
+2023-11-20 10:41:11	Query role info from DB: 1242_sangsang
+2023-11-20 10:53:50	Query role info from DB: 1241_testzzaj
+2023-11-20 10:53:50	Load role data from DB: 200005
+2023-11-20 11:47:44	Release unused role: 200005
+2023-11-20 12:32:48	Query role info from DB: 1242_sangsang
+2023-11-20 12:42:48	Query role info from DB: 1237_soking
+2023-11-20 12:42:48	Load role data from DB: 200002
+2023-11-20 12:43:14	Load role data from DB: 200007
+2023-11-20 13:03:24	Release unused role: 200006
+2023-11-20 13:05:51	Query role info from DB: 1242_sangsang
+2023-11-20 13:05:51	Load role data from DB: 200006
+2023-11-20 13:13:29	Release unused role: 200002
+2023-11-20 13:18:32	Release unused role: 200007
+2023-11-20 15:29:41	Release unused role: 200006
+2023-11-20 15:38:09	Query role info from DB: 1242_sangsang
+2023-11-20 15:38:09	Load role data from DB: 200006
+2023-11-20 18:31:16	Release unused role: 200006
+2023-11-20 19:45:15	Query role info from DB: 1243_nguyetchu
+2023-11-20 19:45:26	Load role data from DB: 200008
+2023-11-20 20:07:39	Query role info from DB: 1242_sangsang
+2023-11-20 20:07:39	Load role data from DB: 200006
+2023-11-20 20:25:40	Query role info from DB: 1243_nguyetchu
+2023-11-20 21:02:33	Release unused role: 200006
+2023-11-20 22:26:43	Query role info from DB: 1244_joomla
+2023-11-20 22:26:57	Load role data from DB: 200009
+2023-11-20 22:29:53	Query role info from DB: 1243_nguyetchu
+2023-11-20 23:03:31	Release unused role: 200008
+2023-11-20 23:13:37	Release unused role: 200009

@@ -15,11 +15,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
     public class UICreateRole : MonoBehaviour
     {
         #region Define
-        /// <summary>
-        /// Button quay trở lại
-        /// </summary>
-        [SerializeField]
-        private UnityEngine.UI.Button UIButton_GoBack;
 
         /// <summary>
         /// Toggle giới tính nhân vật Nam
@@ -105,10 +100,6 @@ namespace FSPlay.KiemVu.UI.RoleManager
             }
         }
 
-        /// <summary>
-        /// Sự kiện khi nút quay lại được ấn
-        /// </summary>
-        public Action GoBack { get; set; }
         #endregion
 
         #region Core MonoBehaviour
@@ -127,17 +118,8 @@ namespace FSPlay.KiemVu.UI.RoleManager
         /// </summary>
         private void InitPrefabs()
         {
-            this.UIButton_GoBack.onClick.AddListener(this.ButtonGoBack_Clicked);
             this.UIButton_GetRandomName.onClick.AddListener(this.ButtonGetRandomName_Clicked);
             this.UIButton_CreateRole.onClick.AddListener(this.ButtonCreateRole_Clicked);
-        }
-
-        /// <summary>
-        /// Sự kiện khi nút quay lại được ấn
-        /// </summary>
-        private void ButtonGoBack_Clicked()
-        {
-            this.GoBack?.Invoke();
         }
 
         /// <summary>
@@ -219,6 +201,7 @@ namespace FSPlay.KiemVu.UI.RoleManager
         /// </summary>
         private void RefreshVillages()
         {
+            bool isFirst = true;
             foreach (int villageID in this._Villages)
             {
                 if (FSPlay.KiemVu.Loader.Loader.Maps.TryGetValue(villageID, out Entities.Config.Map mapInfo))
@@ -231,6 +214,13 @@ namespace FSPlay.KiemVu.UI.RoleManager
                     toggle.OnSelected = (isSelected) => {
                         this.SelectedVillageID = villageID;
                     };
+
+                    if (isFirst)
+                    {
+                        isFirst = false;
+                        toggle.Active = true;
+                        this.SelectedVillageID = villageID;
+                    }
                 }
             }
         }

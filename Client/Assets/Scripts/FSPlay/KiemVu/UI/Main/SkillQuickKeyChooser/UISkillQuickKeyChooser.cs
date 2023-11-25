@@ -4,7 +4,9 @@ using Server.Data;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 namespace FSPlay.KiemVu.UI.Main.SkillQuickKeyChooser
 {
@@ -103,34 +105,63 @@ namespace FSPlay.KiemVu.UI.Main.SkillQuickKeyChooser
                 return;
             }
 
-            /// Nếu là kỹ năng thường
-            if (this.Type == 0)
-            {
-                foreach (SkillData skill in Global.Data.RoleData.SkillDataList)
-                {
-                    if (Loader.Loader.Skills.TryGetValue(skill.SkillID, out SkillDataEx skillData))
-                    {
-                        /// Nếu không phải kỹ năng bị động và vòng sáng
-                        if (skill.Level > 0 && !skillData.IsArua && KTGlobal.IsCanUseSkill(skillData))
-                        {
-                            UISkillQuickKeyChooser_Item item = GameObject.Instantiate<UISkillQuickKeyChooser_Item>(this.UIButton_SkillPrefab);
-                            item.gameObject.SetActive(true);
-                            item.transform.SetParent(this.UIButton_SkillPrefab.transform.parent, false);
+            var skills = Global.Data.RoleData.SkillDataList.Where(x => x.SkillLevel > 0 && 
+                x.SkillID != PlayZone.GlobalPlayZone.UIBottomBar.UISkillBar.AruaSkillID &&
+                !PlayZone.GlobalPlayZone.UIBottomBar.UISkillBar.skills.Contains(x.SkillID)).ToList();
 
-                            item.IconBundleDir = skillData.IconBundleDir;
-                            item.IconAtlasName = skillData.IconAtlasName;
-                            item.IconSpriteName = skillData.Icon;
-                            item.Click = () =>
-                            {
-                                this.SkillClick?.Invoke(skill.SkillID);
-                            };
-                            item.Load();
+            foreach (SkillData skill in skills)
+            {
+                if (Loader.Loader.Skills.TryGetValue(skill.SkillID, out SkillDataEx skillData))
+                {
+                    if (this.Type == 0) // attack
+                    {
+                        if (skillData.Type != 4)
+                        {
+                            if ((skillData.Type != 5) && (skillData.TargetType != "enemy"))
+                                continue;
                         }
+                    }
+                    else if (this.Type == 1)// support
+                    {
+                        if (skillData.IsArua || skillData.Type == 3)
+                            continue;
+                    }
+                    else
+                    {
+                        if (!skillData.IsArua)
+                            continue;
+                        
+                    }
+
+                    /// Nếu không phải kỹ năng bị động và vòng sáng
+                    if (KTGlobal.IsCanUseSkill(skillData))
+                    {
+                        UISkillQuickKeyChooser_Item item = GameObject.Instantiate<UISkillQuickKeyChooser_Item>(this.UIButton_SkillPrefab);
+                        item.gameObject.SetActive(true);
+                        item.transform.SetParent(this.UIButton_SkillPrefab.transform.parent, false);
+
+                        item.IconBundleDir = skillData.IconBundleDir;
+                        item.IconAtlasName = skillData.IconAtlasName;
+                        item.IconSpriteName = skillData.Icon;
+                        item.Click = () =>
+                        {
+                            this.SkillClick?.Invoke(skill.SkillID);
+                        };
+                        item.Load();
                     }
                 }
             }
-            /// Nếu là kỹ năng vòng sáng
-            else
+/*
+            /// Nếu là kỹ năng thường
+            if (this.Type == 0) // attack
+            {
+                
+            }
+            else if (this.Type == 1)// support
+            {
+
+            } 
+            else// Nếu là kỹ năng vòng sáng
             {
                 foreach (SkillData skill in Global.Data.RoleData.SkillDataList)
                 {
@@ -155,6 +186,7 @@ namespace FSPlay.KiemVu.UI.Main.SkillQuickKeyChooser
                     }
                 }
             }
+*/
         }
         #endregion
     }

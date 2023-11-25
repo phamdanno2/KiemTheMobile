@@ -43,7 +43,7 @@ namespace FSPlay.KiemVu.Factory.InAppPurchase
             KTGlobal.ShowLoadingFrame("Xác thực hóa đơn");
             if (PaymentRequest != null)
             {
-                SimpleHttpTask.HttpPost("https://sdk.kt2009.mobi/PaymentVerify.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
+                SimpleHttpTask.HttpPost("https://ken.jx1mobile.net/PaymentVerify.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
                 {
                     this.PaymentVerifyRep(request);
                 }, 10f);

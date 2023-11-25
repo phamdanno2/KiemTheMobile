@@ -1,5 +1,6 @@
 ﻿using FSPlay.GameEngine.Logic;
 using FSPlay.KiemVu.UI.Main.MainUI;
+using FSPlay.KiemVu.Utilities.UnityUI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -49,6 +50,12 @@ namespace FSPlay.KiemVu.UI.Main
         [SerializeField]
         private float AnimationTime = 2f;
         #endregion
+
+        /// <summary>
+        /// Toggle đổi tay
+        /// </summary>
+        [SerializeField]
+        private UnityEngine.UI.Button UIToggle_SkillChangeHand;
 
         /// <summary>
         /// Tọa độ vị trí xuất hiện của ControlButtons
@@ -132,7 +139,34 @@ namespace FSPlay.KiemVu.UI.Main
             this.InitPrefabs();
         }
         #endregion
+        /// <summary>
+        /// Sự kiện khi Toggle đổi tay được ấn
+        /// </summary>
+        /// <param name="isSelected"></param>
+        private bool isSelected = false;
+        private void ToggleChangeSkill_Selected()
+        {
+            isSelected = !isSelected;
+            if (!isSelected)
+                ShowUISkillBar();
+            else
+                ShowUIControlButtons();
+/*
+            /// Nếu chọn kỹ năng ở tay trái
+            if (isSelected)
+            {
+                KTGlobal.AddNotification("<color=red>Kỹ năng <color=yellow>tay trái</color>, các kỹ năng tấn công sẽ <color=yellow>tự chọn mục tiêu</color>.</color>");
+            }
+            /// Nếu chọn kỹ năng ở tay phải
+			else
+            {
+                KTGlobal.AddNotification("<color=red>Kỹ năng <color=yellow>tay phải</color>, các kỹ năng tấn công <color=yellow>theo hướng phía trước của nhân vật</color>.</color>");
+            }
 
+            this.RefreshSkillIcon();
+            this.RefreshCooldowns();
+*/
+        }
         #region Code UI
         /// <summary>
         /// Khởi tạo ban đầu
@@ -140,6 +174,7 @@ namespace FSPlay.KiemVu.UI.Main
         private void InitPrefabs()
         {
             this.UIButton_ShowNearbyPlayer.onClick.AddListener(this.ButtonShowNearbyPlayer_Clicked);
+            this.UIToggle_SkillChangeHand.onClick.AddListener(this.ToggleChangeSkill_Selected);
         }
 
         /// <summary>

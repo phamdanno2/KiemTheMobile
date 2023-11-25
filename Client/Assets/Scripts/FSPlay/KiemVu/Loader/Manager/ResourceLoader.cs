@@ -140,6 +140,12 @@ namespace FSPlay.KiemVu.Loader
             }
             TextAsset textAsset = bundle.LoadAsset(fileName) as TextAsset;
             string text = textAsset.text;
+/*
+            var save = "C:\\KT\\" + fileName;
+            var path = Path.GetDirectoryName(save);
+            Directory.CreateDirectory(path);
+            File.WriteAllText(save, text);
+*/
             Resources.UnloadAsset(textAsset);
             GameObject.DestroyImmediate(textAsset, true);
             return XElement.Parse(text);

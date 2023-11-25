@@ -296,7 +296,7 @@ namespace FSPlay.KiemVu.Logic
                             /// Chọn một skill ra để tấn công mục tiêu // TODO CHỌN RA SKILL HỢP LÝ CHO CÁC PHÁI
                            
                         }
-
+/*
                         // Nếu là chế độ train quái hoặc là chế độ PK nhưng có thiết lập sử dụng base skill thì mới tìm skillt ân thủ
                         if ((KTAutoAttackSetting.IsTrainMode && KTAutoAttackSetting._AutoConfig._AutoTrainConfig.UseNewbieSkill==true) || (!KTAutoAttackSetting.IsTrainMode && KTAutoAttackSetting._AutoConfig._AutoPKConfig.UsingBaseSkill == true))
                         {
@@ -325,6 +325,14 @@ namespace FSPlay.KiemVu.Logic
                                 weaponSkillData = null;
                             }
                         }
+*/
+                        if (skillInfo.Equals(default) || skillInfo.Key == null || skillInfo.Value == null)
+                        {
+                            if (Loader.Loader.Skills.TryGetValue(PlayZone.GlobalPlayZone.UIBottomBar.UISkillBar.UI_SkillButton_Main.SkillID, out SkillDataEx skillData))
+                            {
+                                weaponSkillData = skillData;
+                            }
+                        }
 
                         /// Kỹ năng sẽ được dùng
                         SkillDataEx skill = weaponSkillData ?? skillInfo.Key;
@@ -347,6 +355,7 @@ namespace FSPlay.KiemVu.Logic
 
                         /// Phạm vi tấn công của kỹ năng
                         int skillCastRange = skill.AttackRadius;
+/*
                         // Nếu không phải là skill tân thủ lấy ra tầm đánh của skill
                         if (skill.ID > 10)
                         {
@@ -359,7 +368,7 @@ namespace FSPlay.KiemVu.Logic
                                 skillCastRange = skillPd.Get<KMagicAttrib>((int) MAGIC_ATTRIB.magic_skill_attackradius).nValue[0];
                             }
                         }
-
+*/
                         GSprite nextTarget = null;
                         /// Nếu có mục tiêu trước đó
                         if (this.AutoFightLastTarget != null)

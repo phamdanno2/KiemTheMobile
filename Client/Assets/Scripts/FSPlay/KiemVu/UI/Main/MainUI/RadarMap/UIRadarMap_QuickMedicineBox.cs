@@ -122,7 +122,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.RadarMap
         private void ButtonHPMedicine_Clicked()
         {
             /// Nếu chưa có thuốc nào được đặt vào
-            if (this.UIItemBox_HPMedicine.Data == null)
+            if ((this.UIItemBox_HPMedicine.Data == null)|| (this.UIItemBox_HPMedicine.Data.GoodsID <= 0))
             {
                 this.ShowQuickUseItemSelectFrame_Left();
             }
@@ -152,7 +152,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI.RadarMap
         private void ButtonMPMedicine_Clicked()
         {
             /// Nếu chưa có thuốc nào được đặt vào
-            if (this.UIItemBox_MPMedicine.Data == null)
+            if ((this.UIItemBox_MPMedicine.Data == null)||(UIItemBox_MPMedicine.Data.GoodsID <= 0))
             {
                 this.ShowQuickUseItemSelectFrame_Right();
             }

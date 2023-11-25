@@ -1,0 +1,28 @@
+2023-11-25 00:16:56	Query role info from DB: 3_master
+2023-11-25 00:17:26	Load role data from DB: 200027
+2023-11-25 00:33:08	Release unused role: 200026
+2023-11-25 01:23:34	Release unused role: 200027
+2023-11-25 10:12:35	Query role info from DB: 1_testtest
+2023-11-25 10:43:20	Release unused role: 200025
+2023-11-25 11:42:47	Query role info from DB: 1_testtest
+2023-11-25 11:42:47	Load role data from DB: 200025
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57494, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57497, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57495, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57500, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57502, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57503, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57499, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57496, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57498, last operation: Receive, error: ConnectionReset
+2023-11-25 12:23:37	Close socket: 127.0.0.1:57501, last operation: Receive, error: ConnectionReset
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64122, total count: 1
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64123, total count: 2
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64124, total count: 3
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64125, total count: 4
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64126, total count: 5
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64127, total count: 6
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64128, total count: 7
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64129, total count: 8
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64130, total count: 9
+2023-11-25 12:24:19	New socket connection: 127.0.0.1:64131, total count: 10

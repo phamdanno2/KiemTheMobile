@@ -362,26 +362,28 @@ function NPC_Test:OnOpen(scene, npc, player, otherParams)
 	dialog:AddSelection(30000, "Ta muốn đổi tên")
 	dialog:AddSelection(30001, "Xóa vật phẩm")
 	dialog:AddSelection(30002, "Ghép vật phẩm")
-	-- dialog:AddSelection(22222, "EXP BOOK")
 	-- dialog:AddSelection(10012, "Nhận cấp 89")
 	-- dialog:AddSelection(10024, "Nhận cấp 99")
 	-- dialog:AddSelection(10000, "Nhận cấp 109")
-	-- dialog:AddSelection(11111, "Nhận cấp 119")
+	
+	dialog:AddSelection(11111, "Nhận cấp 119")
+	dialog:AddSelection(10002, "Nhận <color=red> Mật Tịch (cao) Theo Phái </color>")
+	dialog:AddSelection(10001, "Nhận <color=red>500 vạn (bạc,đồng)</color>")
+	dialog:AddSelection(100030, "Tiền vàng Du Long")
+	dialog:AddSelection(10003, "Nhận <color=red>Phi Phong</color>")
+	dialog:AddSelection(10015, "Nhận thần thú")
+    dialog:AddSelection(10005, "Nhận <color=red>Nhận 1000 uy danh </color>")
+	dialog:AddSelection(10014, "500 vỏ sò")
+
 	-- dialog:AddSelection(10023, "Nhận <color=red>Nhận set đồ theo hệ 89 +12</color>")
 	-- dialog:AddSelection(10025, "Nhận <color=red>Nhận set đồ theo hệ 89 +8</color>")	
 	-- dialog:AddSelection(10004, "Nhận <color=red>Nhận set đồ theo hệ 119 +14</color>")
-	--dialog:AddSelection(10001, "Nhận <color=red>500 vạn (đồng)</color>")
-	-- dialog:AddSelection(10002, "Nhận <color=red> Mật Tịch (cao) Theo Phái </color>")
-	-- dialog:AddSelection(10003, "Nhận <color=red>3 Huyền Tinh 8</color>")
-	-- dialog:AddSelection(10005, "Nhận <color=red>Nhận 1000 uy danh </color>")
 	-- dialog:AddSelection(10006, "Làm mới số lượt đi phụ bản trong ngày")
 	-- dialog:AddSelection(10007, "Nhận 5 bản đồ bí Cảnh")
 	-- dialog:AddSelection(10008, "Nhận 100 Nguyệt Ảnh Thạch")
 	-- dialog:AddSelection(10009, "Nhận 50 Chiến thư Du Long")
 	-- dialog:AddSelection(10010, "Nhận Lệnh bài Thi đấu môn phái (sơ)")
-	-- dialog:AddSelection(10015, "Nhận thần thú")
 	-- dialog:AddSelection(100020, "Nhận 10000 tinh lực,hoạt lực")
---	dialog:AddSelection(100030, "GiftCode")
 	-- if record2 ~= 1 then
 		-- dialog:AddSelection(30003, "Nhận <color=green>Thẻ đổi tên </color> ")
 	-- end
@@ -472,7 +474,6 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		dialog:Show(npc, player)
 	end
 	if selectionID == 10007 then
-	
 		Player.AddItemLua(player,590,5,-1,1)
 		dialog:AddText(""..npc:GetName().."Bạn đã nhận </color=red>5 bản đồ bí Cảnh </color>thành công")
 		dialog:Show(npc, player)
@@ -517,12 +518,21 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		
 	end
 	if selectionID == 10014 then
-		player:SetPrayTimes(100)
-		dialog:AddText("nhận 100 lượt quay chúc chúc phúc thành công !")
+		--player:SetPrayTimes(100)
+		--dialog:AddText("nhận 100 lượt quay chúc chúc phúc thành công !")
+		--dialog:Show(npc, player)
+		Player.AddItemLua(player,746,500,-1,1)
+		dialog:AddText(""..npc:GetName().."nhận 500 vỏ sò !")
 		dialog:Show(npc, player)
+		return
 	end
 	if selectionID == 10015 then
 		Player.AddItemLua(player,3508,1,-1,1)
+		Player.AddItemLua(player,3509,1,-1,1)
+		Player.AddItemLua(player,3510,1,-1,1)
+		Player.AddItemLua(player,3511,1,-1,1)
+		Player.AddItemLua(player,3512,1,-1,1)
+		Player.AddItemLua(player,3597,1,-1,1)
 		dialog:AddText(""..npc:GetName().."Bạn đã nhận </color=red>thần thú </color>thành công")
 		dialog:Show(npc, player)
 		return
@@ -532,10 +542,16 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		Player.AddMakePoint(player,10000)
 		dialog:AddText(""..npc:GetName().."Nhận tinh lực hoạt lực thành công")
 		dialog:Show(npc, player)
+		return
 	end
 	if selectionID == 100030 then
-		GUI.OpenUI(player, "UIGiftCode")
-		GUI.CloseDialog(player)
+		--GUI.OpenUI(player, "UIGiftCode")
+		--GUI.CloseDialog(player)
+		Player.AddItemLua(player,1033,10,-1,1)
+		Player.AddItemLua(player,1034,10,-1,1)		
+		Player.AddItemLua(player,1074,10000,-1,1)
+		dialog:AddText(""..npc:GetName().." nhận Tiền Vàng Du Long thành công")
+		dialog:Show(npc, player)
 		return
 	end
 	if selectionID == 10002 then
@@ -584,14 +600,25 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 			dialog:Show(npc, player)
 		end
 	elseif selectionID == 10001 then
-		if Player.CheckMoney(player,2) >= 10000000 then
-			dialog:AddText("Trên người ngươi quá nhiều <color=#ffd24d>(Đồng)</color>không thể nhân được nữa.")
-			dialog:Show(npc, player)
-		else
-			Player.AddMoney(player,5000000,2)
-			dialog:AddText("Ngươi đã nhận <color=#ffd24d>500 vạn (đồng)</color>thành công")
-			dialog:Show(npc, player)
+		local str = "";
+		if Player.CheckMoney(player,0) < 10000000 then
+			Player.AddMoney(player,5000000,0)
+			str = str .. "<color=#ffd24d>500 vạn (bạc khóa)</color>";
 		end
+		if Player.CheckMoney(player,1) < 10000000 then
+			Player.AddMoney(player,5000000,1)
+			str = str .. "<color=#ffd24d>500 vạn (bạc)</color>";
+		end
+		if Player.CheckMoney(player,2) < 10000000 then
+			Player.AddMoney(player,5000000,2)
+			str = str .. "<color=#ffd24d>500 vạn (đồng)</color>";
+		end
+		if Player.CheckMoney(player,3) < 10000000 then
+			Player.AddMoney(player,5000000,3)
+			str = str .. "<color=#ffd24d>500 vạn (đồng khóa)</color>";
+		end
+		dialog:AddText("Ngươi đã nhận "..str.." thành công")
+		dialog:Show(npc, player)
 	elseif selectionID == 10000 then
 			player:SetLevel(109)
 			dialog:AddText("Thiết lập cấp độ 109 thành công")
@@ -601,8 +628,9 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 			dialog:AddText("Thiết lập cấp độ 109 thành công")
 			dialog:Show(npc, player)
 	elseif selectionID == 10003 then
-		Player:AddItemLua(player,190,3,0,1)
-		dialog:AddText("Bạn dã nhận được 3 viên huyền tinh 8")
+		Player:AddItemLua(player,3619,1,-1,1)--Sieu Pham Kim-Nam
+		Player:AddItemLua(player,3629,1,-1,1)--Sieu Pham Kim-Nu
+		dialog:AddText("Bạn dã nhận được Phi Phong")
 		dialog:Show(npc, player)
 	elseif selectionID == 10004 then--NPC_Test:SetBelonging(npc, player, ItemID,Number,Series,LockStatus) set do +14
 			if player:GetFactionID()==0 then

@@ -24071,7 +24071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IAPManager_RequestPayment_m220124DD7E4D4
 		}
 	}
 	{
-		// SimpleHttpTask.HttpPost("https://sdk.kt2009.mobi/PaymentCreate.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
+		// SimpleHttpTask.HttpPost("https://ken.jx1mobile.net/PaymentCreate.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
 		// {
 		//     this.RequestPaymentRep(request);
 		// }, 10f);
@@ -24526,7 +24526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IAPManager_RequestVerifyPayment_m402B111
 		}
 	}
 	{
-		// SimpleHttpTask.HttpPost("https://sdk.kt2009.mobi/PaymentVerify.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
+		// SimpleHttpTask.HttpPost("https://ken.jx1mobile.net/PaymentVerify.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
 		// {
 		//     this.PaymentVerifyRep(request);
 		// }, 10f);

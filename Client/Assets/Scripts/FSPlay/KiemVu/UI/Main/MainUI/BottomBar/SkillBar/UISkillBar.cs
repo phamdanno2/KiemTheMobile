@@ -11,6 +11,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 namespace FSPlay.KiemVu.UI.Main.MainUI
@@ -24,8 +25,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// <summary>
         /// Button Skill chính
         /// </summary>
-        [SerializeField]
-        private UISkillBar_SkillButton UI_SkillButton_Main;
+        public UISkillBar_SkillButton UI_SkillButton_Main;
 
         /// <summary>
         /// Button Skill phụ 1
@@ -56,12 +56,6 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// </summary>
         [SerializeField]
         private UISkillBar_SkillButton UI_SkillButton_AruaSkill;
-
-        /// <summary>
-        /// Toggle đổi tay
-        /// </summary>
-        [SerializeField]
-        private UIToggleSprite UIToggle_SkillChangeHand;
 
         /// <summary>
         /// Button chuyển trạng thái cưỡi
@@ -180,21 +174,6 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// </summary>
         public Action<bool> LockJoyStickMove { get; set; }
 
-        /// <summary>
-        /// Đang hiển thị kỹ năng tay trái
-        /// </summary>
-        public bool ShowMainSkill
-        {
-            get
-            {
-                return this.UIToggle_SkillChangeHand.Active;
-            }
-            set
-            {
-                this.UIToggle_SkillChangeHand.Active = value;
-            }
-        }
-
         private bool _AutoFarmEnable = false;
         /// <summary>
         /// Kích hoạt Auto Farm
@@ -263,7 +242,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// <summary>
         /// Danh sách kỹ năng được xếp vào ô kỹ năng nhanh
         /// </summary>
-        private readonly int[] skills = new int[10];
+        public readonly int[] skills = new int[10];
 
         /// <summary>
         /// Luồng tự động lưu lại thay đổi thiết lập ở khung kỹ năng
@@ -290,9 +269,18 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         private void Start()
         {
             this.InitPrefabs();
-            this.ShowMainSkill = true;
         }
         #endregion
+
+        [SerializeField]
+        private UnityEngine.UI.Button UIToggle_SkillTarget;
+
+        [SerializeField]
+        UnityEngine.UI.Image image_normal;
+        [SerializeField]
+        UnityEngine.UI.Image image_select;
+        [SerializeField]
+        TMPro.TextMeshProUGUI ui_text;
 
         #region Code UI
         /// <summary>
@@ -300,7 +288,8 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// </summary>
         private void InitPrefabs()
         {
-            this.UIToggle_SkillChangeHand.OnSelected = this.ToggleChangeSkill_Selected;
+            ui_text.text = "Quái";
+            this.UIToggle_SkillTarget.onClick.AddListener(this.ToggleChangeSkill_Selected);
             this.UIButton_Jump.onClick.AddListener(this.ButtonJump_Clicked);
             this.UIButton_Sit.onClick.AddListener(this.ButtonSit_Clicked);
             this.UIButton_ToggleMount.onClick.AddListener(this.ButtonToggleMount_Clicked);
@@ -318,28 +307,25 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
             this.RefreshSkillIcon();
             this.RefreshCooldowns();
         }
-
-        /// <summary>
-        /// Sự kiện khi Toggle đổi tay được ấn
-        /// </summary>
-        /// <param name="isSelected"></param>
-        private void ToggleChangeSkill_Selected(bool isSelected)
+        private bool ignoreTarget = false;
+        private void ToggleChangeSkill_Selected()
         {
-            /// Nếu chọn kỹ năng ở tay trái
-            if (isSelected)
-			{
-                KTGlobal.AddNotification("<color=red>Kỹ năng <color=yellow>tay trái</color>, các kỹ năng tấn công sẽ <color=yellow>tự chọn mục tiêu</color>.</color>");
-			}
-            /// Nếu chọn kỹ năng ở tay phải
-			else
-			{
-                KTGlobal.AddNotification("<color=red>Kỹ năng <color=yellow>tay phải</color>, các kỹ năng tấn công <color=yellow>theo hướng phía trước của nhân vật</color>.</color>");
-			}
+            ignoreTarget = !ignoreTarget;
 
-            this.RefreshSkillIcon();
-            this.RefreshCooldowns();
+            if (ignoreTarget)
+            {
+                UIToggle_SkillTarget.targetGraphic = image_select;
+                ui_text.text = "Không";
+            }
+            else
+            {
+                UIToggle_SkillTarget.targetGraphic = image_normal;
+                ui_text.text = "Quái";
+            }
+
+            image_normal.gameObject.SetActive(!ignoreTarget);
+            image_select.gameObject.SetActive(ignoreTarget);
         }
-
         /// <summary>
         /// Sự kiện khi nút Nhảy được ấn
         /// </summary>
@@ -419,7 +405,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// </summary>
         /// <param name="skillID"></param>
         /// <param name="skillButton"></param>
-        private void ItemToSkillButton(int skillID, UISkillBar_SkillButton skillButton, int index, bool ignoreTarget)
+        private void ItemToSkillButton(int skillID, UISkillBar_SkillButton skillButton, int index, bool ignoreTarget_)
         {
             if (!Loader.Loader.Skills.TryGetValue(skillID, out Entities.Config.SkillDataEx skillData))
             {
@@ -460,7 +446,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// <returns></returns>
         private IEnumerator AutoSaveChangeOnQuickKey()
         {
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(1f);
             KTTCPSkillManager.SendSaveQuickKey(this.skills.ToList());
 
             this.autoSaveWhenSkillChangedCoroutine = null;
@@ -634,24 +620,49 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
                 }
             }
 
-            if (this.ShowMainSkill)
-            {
-                this.ItemToSkillButton(this.skills[0], this.UI_SkillButton_Main, 0, false);
-                this.ItemToSkillButton(this.skills[1], this.UI_SkillButton_SubSkill1, 1, false);
-                this.ItemToSkillButton(this.skills[2], this.UI_SkillButton_SubSkill2, 2, false);
-                this.ItemToSkillButton(this.skills[3], this.UI_SkillButton_SubSkill3, 3, false);
-                this.ItemToSkillButton(this.skills[4], this.UI_SkillButton_SubSkill4, 4, false);
-            }
-            else
-            {
-                this.ItemToSkillButton(this.skills[5], this.UI_SkillButton_Main, 5, true);
-                this.ItemToSkillButton(this.skills[6], this.UI_SkillButton_SubSkill1, 6, true);
-                this.ItemToSkillButton(this.skills[7], this.UI_SkillButton_SubSkill2, 7, true);
-                this.ItemToSkillButton(this.skills[8], this.UI_SkillButton_SubSkill3, 8, true);
-                this.ItemToSkillButton(this.skills[9], this.UI_SkillButton_SubSkill4, 9, true);
-            }
+            this.ItemToSkillButton(this.skills[0], this.UI_SkillButton_Main, 0, false);
+            this.ItemToSkillButton(this.skills[1], this.UI_SkillButton_SubSkill1, 1, false);
+            this.ItemToSkillButton(this.skills[2], this.UI_SkillButton_SubSkill2, 2, false);
+            this.ItemToSkillButton(this.skills[3], this.UI_SkillButton_SubSkill3, 3, false);
+            this.ItemToSkillButton(this.skills[4], this.UI_SkillButton_SubSkill4, 4, false);
         }
 
+        public void ResetSkill()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                this.skills[i] = -1;
+            }
+            this.ItemToSkillButton(this.skills[0], this.UI_SkillButton_Main, 0, false);
+            this.ItemToSkillButton(this.skills[1], this.UI_SkillButton_SubSkill1, 1, false);
+            this.ItemToSkillButton(this.skills[2], this.UI_SkillButton_SubSkill2, 2, false);
+            this.ItemToSkillButton(this.skills[3], this.UI_SkillButton_SubSkill3, 3, false);
+            this.ItemToSkillButton(this.skills[4], this.UI_SkillButton_SubSkill4, 4, false);
+
+            string quickKey = string.Join("|", this.skills);
+            Global.Data.RoleData.MainQuickBarKeys = quickKey;
+
+            if (this.autoSaveWhenSkillChangedCoroutine != null)
+            {
+                this.StopCoroutine(this.autoSaveWhenSkillChangedCoroutine);
+            }
+            this.autoSaveWhenSkillChangedCoroutine = this.StartCoroutine(this.AutoSaveChangeOnQuickKey());
+
+            AddAruaSkill(-1);
+
+            /// Thiết lập ID vòng sáng tương ứng
+            this.AruaSkillID = 1;
+            this.ActivateArua = false;
+
+            string aruaKey = string.Format("{0}_{1}", this.AruaSkillID, this.ActivateArua ? 1 : 0);
+            Global.Data.RoleData.OtherQuickBarKeys = aruaKey;
+
+            if (this.autoSaveAruaCoroutine != null)
+            {
+                this.StopCoroutine(this.autoSaveAruaCoroutine);
+            }
+            this.autoSaveAruaCoroutine = this.StartCoroutine(this.AutoSaveAndActivateArua());
+        }
         /// <summary>
         /// Làm mới kỹ năng vòng sáng
         /// </summary>

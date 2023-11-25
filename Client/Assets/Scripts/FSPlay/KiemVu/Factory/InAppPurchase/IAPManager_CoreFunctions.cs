@@ -73,7 +73,7 @@ namespace FSPlay.KiemVu.Factory.InAppPurchase
 
             if (PaymentRequest != null)
             {
-                SimpleHttpTask.HttpPost("https://sdk.kt2009.mobi/PaymentCreate.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
+                SimpleHttpTask.HttpPost("https://ken.jx1mobile.net/PaymentCreate.aspx", null, DataHelper.ObjectToBytes(PaymentRequest), (request) =>
                 {
                     this.RequestPaymentRep(request);
                 }, 10f);
