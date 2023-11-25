@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+    <Monster ID="1" Code="2081" X="4256" Y="1708" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="1" Code="2081" X="2950" Y="1674" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="1" Code="2081" X="3653" Y="2558" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="1" Code="2081" X="2342" Y="2514" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="1" Code="2081" X="1722" Y="1816" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="1" Code="2081" X="1320" Y="1231" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 	
+	<Monster ID="2" Code="2082" X="3294" Y="3868" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="2" Code="2082" X="2090" Y="3459" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="2" Code="2082" X="2410" Y="4328" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="2" Code="2082" X="3946" Y="3740" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="2" Code="2082" X="1274" Y="5218" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+		
+	<Monster ID="3" Code="2242" X="2164" Y="6681" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="3" Code="2242" X="3318" Y="6042" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="3" Code="2242" X="3939" Y="7049" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="3" Code="2242" X="5096" Y="6744" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="3" Code="2242" X="5206" Y="5636" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+		
+	<Monster ID="4" Code="2243" X="7474" Y="7066" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="4" Code="2243" X="6551" Y="6026" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="4" Code="2243" X="8874" Y="7055" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="4" Code="2243" X="7956" Y="6401" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="4" Code="2243" X="7562" Y="3897" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+
+	
+	<!-- Boss The gioi -->
+    <!-- Vạn Lão Điên[Hỏa 55] -->
+	<Monster ID="22" Code="2971" X="7143" Y="3617" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="23" Code="2971" X="6938" Y="7414" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="24" Code="2971" X="1693" Y="7129" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="25" Code="2971" X="981" Y="4053" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="26" Code="2971" X="1210" Y="616" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />		
+	<!-- Cao Sĩ Hiền[Thổ 55] -->
+	<Monster ID="27" Code="2972" X="4675" Y="6038" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="28" Code="2972" X="3689" Y="7256" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="29" Code="2972" X="3112" Y="5612" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="30" Code="2972" X="1216" Y="2376" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="31" Code="2972" X="3719" Y="1230" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	 
+	
+    
+	
+  </Monsters>
+</Map>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptIndex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- Player Script -->
+	<Script ID="999999" Dir="PlayerEvent.lua" />
+	<!-- End -->
+	
+	
+	<!-- AI Scripts -->
+	<Script ID="100000" Dir="AIScript/Monster/AIMonster_Default.lua" />
+	<!-- End -->
+	
+	<!-- NPC -->
+	<Script ID="0" Dir="Test/NPC_Test.lua" />
+	<Script ID="1" Dir="Test/NPC_Test1.lua" />
+	<Script ID="2" Dir="NPC/TuongDuongPhu/ChungMinhTriMo.lua" />
+	<Script ID="3" Dir="NPC/Common/BaoVanDong.lua" />
+	<Script ID="4" Dir="NPC/PhuongTuongPhu/TuMocTrach.lua" />
+	<Script ID="5" Dir="NPC/PhuongTuongPhu/PhuSiTuong.lua" />
+	<Script ID="6" Dir="NPC/PhuongTuongPhu/SuGiaThinhHa.lua" />
+	<Script ID="7" Dir="NPC/PhuongTuongPhu/HuyenTrangDaiSu.lua" />
+	<Script ID="8" Dir="NPC/Common/HieuUyMoBinhMongCoTayHa.lua" />
+	<Script ID="9" Dir="NPC/TuongDuongPhu/HuuLoBaLac.lua" />
+	<Script ID="10" Dir="NPC/TuongDuongPhu/NghiemNhuy.lua" />
+	<Script ID="11" Dir="NPC/TuongDuongPhu/ThanTieu.lua" />
+	<Script ID="12" Dir="NPC/Common/ThuKho.lua" />
+	<Script ID="13" Dir="NPC/Common/XaPhu.lua" />
+	<Script ID="14" Dir="NPC/Common/TienTrang.lua" />
+	<Script ID="15" Dir="NPC/Common/bangHoiLienMinhSu.lua" />
+	<Script ID="16" Dir="NPC/Common/QuanLanhTho.lua" />
+	<Script ID="17" Dir="NPC/Common/QuanQuanNhu.lua" />
+	<Script ID="18" Dir="NPC/Common/TrieuNguyenTinh.lua" />
+	<Script ID="19" Dir="NPC/Common/HoanNhanLongHuc.lua" />
+	<Script ID="20" Dir="NPC/Common/QuanLienDauCaoCap.lua" />
+	<Script ID="21" Dir="NPC/Common/QuanLienDauSoCap.lua" />
+	<Script ID="22" Dir="NPC/Common/TruongTungDao.lua" />
+	<Script ID="23" Dir="NPC/Common/MocLuong.lua" />
+	<Script ID="24" Dir="NPC/Common/DaiLaoBach.lua" />
+	<Script ID="25" Dir="NPC/Common/ThamHaDiep.lua" />
+	<Script ID="26" Dir="NPC/Common/HachPhieuTinh.lua" />
+	<Script ID="27" Dir="NPC/Common/TruongTramKinh.lua" />
+	<Script ID="28" Dir="NPC/Common/BatDongTienSinh.lua" />
+	<Script ID="29" Dir="NPC/TuongDuongPhu/DiemTuuThuc.lua" />
+	<Script ID="30" Dir="NPC/Common/CongBinhTu.lua" />
+	<Script ID="31" Dir="NPC/Common/ThuongNhanDacSan.lua" />
+	<Script ID="33" Dir="NPC/Common/DaLuyenDaiSu.lua" />
+	<Script ID="34" Dir="NPC/Common/BoDauHinhBo.lua" />
+	<Script ID="35" Dir="NPC/Common/ChuThuongHoi.lua" />
+	<Script ID="36" Dir="NPC/Common/DiepChiLam.lua" />
+	<Script ID="37" Dir="NPC/Common/BanNgua.lua" />
+	<Script ID="38" Dir="NPC/BietKinhPhu/TrieuKhan.lua" />
+	<Script ID="39" Dir="NPC/BietKinhPhu/ThuongGiaTieuDao.lua" />
+	<Script ID="40" Dir="NPC/BietKinhPhu/GiaLuatSoTai.lua" />
+	<Script ID="41" Dir="NPC/BietKinhPhu/HoangThuong.lua" />
+	<Script ID="42" Dir="NPC/BietKinhPhu/NhaDich.lua" />
+	<Script ID="43" Dir="NPC/DuongChauPhu/DoPhuKhang.lua" />
+	<Script ID="44" Dir="NPC/LamAnPhu/VuKhiDacChe.lua" />
+	<Script ID="45" Dir="NPC/LamAnPhu/QuachTiet.lua" />
+	<Script ID="46" Dir="NPC/LamAnPhu/LeBoThiLang.lua" />
+	<Script ID="47" Dir="NPC/LamAnPhu/TieuXuanTu.lua" />
+	<Script ID="48" Dir="NPC/LamAnPhu/PhoThieuKhach.lua" />
+	<Script ID="49" Dir="NPC/LamAnPhu/ChieuMoQuan.lua" />
+	<Script ID="50" Dir="NPC/LamAnPhu/PhucLoiQuan.lua" />
+	<Script ID="51" Dir="NPC/Common/TinhHuyen.lua" />
+	<Script ID="52" Dir="NPC/Common/DuongTeDan.lua" />
+	<Script ID="53" Dir="NPC/Common/BienNhatXuan.lua" />
+	<Script ID="54" Dir="NPC/Common/HuyenTinh.lua" />
+	<Script ID="55" Dir="NPC/Common/LaTuan.lua" />
+	<Script ID="56" Dir="NPC/Common/ToNha.lua" />
+	<Script ID="57" Dir="NPC/Common/TaPhiKinh.lua" />
+	<Script ID="58" Dir="NPC/Common/QuyKinhTinh.lua" />
+	<Script ID="59" Dir="NPC/Common/MinhTue.lua" />
+	<Script ID="60" Dir="NPC/TuongDuongPhu/DuVanTangNhan.lua"/>
+	<Script ID="61" Dir="NPC/Common/DongLang.lua" />
+	<Script ID="62" Dir="NPC/Common/DoanTuTinh.lua" />
+	<Script ID="63" Dir="NPC/Common/BuiVien.lua" />
+	<Script ID="64" Dir="NPC/Common/TruyenTongMonPhai.lua" />
+	<Script ID="65" Dir="NPC/Common/TongQuanMonPhai.lua" />
+	<Script ID="66" Dir="NPC/ThieuLamPhai/HuyenKho.lua" />
+	<Script ID="67" Dir="NPC/ThieuLamPhai/TrungHue.lua" />
+	<Script ID="68" Dir="NPC/ThieuLamPhai/TruTriHuyenTu.lua" />
+	<Script ID="69" Dir="NPC/ThieuLamPhai/HuyenBi.lua" />
+	<Script ID="70" Dir="NPC/ThieuLamPhai/TrungQuang.lua" />
+	<Script ID="71" Dir="NPC/VoDangPhai/VuongTrungDuong.lua" />
+	<Script ID="72" Dir="NPC/VoDangPhai/NhatDiepChanNhan.lua" />
+	<Script ID="73" Dir="NPC/VoDangPhai/ChungChiMinh.lua" />
+	<Script ID="74" Dir="NPC/VoDangPhai/DongHuChanNhan.lua" />
+	<Script ID="75" Dir="NPC/VoDangPhai/LoHieuNhien.lua" />
+	<Script ID="76" Dir="NPC/ThienNhanGiao/NgotTan.lua" />
+	<Script ID="77" Dir="NPC/ThienNhanGiao/HoangNhanTuong.lua" />
+	<Script ID="78" Dir="NPC/ThienNhanGiao/DoanMocDue.lua" />
+	<Script ID="79" Dir="NPC/ThienNhanGiao/VinhDo.lua" />
+	<Script ID="80" Dir="NPC/ThienNhanGiao/BoSatPhongNo.lua" />
+	<Script ID="81" Dir="NPC/CaiBang/ThachVienHien.lua" />
+	<Script ID="82" Dir="NPC/CaiBang/LanhThuVan.lua" />
+	<Script ID="83" Dir="NPC/CaiBang/CungThieuTran.lua" />
+	<Script ID="84" Dir="NPC/CaiBang/LaPhong.lua" />
+	<Script ID="85" Dir="NPC/CaiBang/CauChiThuy.lua" />
+	<Script ID="86" Dir="NPC/NgaMyPhai/VoTuongSuThai.lua" />
+	<Script ID="87" Dir="NPC/NgaMyPhai/VoNiemSuThai.lua" />
+	<Script ID="88" Dir="NPC/NgaMyPhai/CuuTuyet.lua" />
+	<Script ID="89" Dir="NPC/NgaMyPhai/LangPhongNhan.lua" />
+	<Script ID="90" Dir="NPC/NgaMyPhai/VoSanSuThai.lua" />
+	<Script ID="96" Dir="NPC/ThuyYenMon/CoNguyetHoa.lua" />
+	<Script ID="97" Dir="NPC/ThuyYenMon/VinhGiaoGiao.lua" />
+	<Script ID="98" Dir="NPC/ThuyYenMon/NhanXaoVan.lua" />
+	<Script ID="99" Dir="NPC/ThuyYenMon/DanBichTu.lua" />
+	<Script ID="100" Dir="NPC/ThuyYenMon/DoanTieuVu.lua" />
+	<Script ID="106" Dir="NPC/ConLonPhai/TongThuHoach.lua" />
+	<Script ID="107" Dir="NPC/ConLonPhai/DuLacThien.lua" />
+	<Script ID="108" Dir="NPC/ConLonPhai/DuThanhTo.lua" />
+	<Script ID="109" Dir="NPC/ConLonPhai/GiaCatTracVan.lua" />
+	<Script ID="110" Dir="NPC/ConLonPhai/TaVuDien.lua" />
+	<Script ID="111" Dir="NPC/ConLonPhai/HaoVuCongChua.lua" />
+	<Script ID="112" Dir="NPC/DoanThi/DoanTriHung.lua" />
+	<Script ID="113" Dir="NPC/DoanThi/VuThanhPhong.lua" />
+	<Script ID="114" Dir="NPC/DoanThi/KieuTangTu.lua" />
+	<Script ID="115" Dir="NPC/DoanThi/CaoVeBich.lua" />
+	<Script ID="116" Dir="NPC/DoanThi/DaiGioiThienSu.lua" />
+	<Script ID="117" Dir="NPC/DoanThi/VoSongMuoiMuoi.lua" />	
+
+	<Script ID="119" Dir="NPC/MinhGiao/ThuyLien.lua" />
+	<Script ID="120" Dir="NPC/MinhGiao/CaoXuanThu.lua" />
+	<Script ID="121" Dir="NPC/MinhGiao/MoDungChieu.lua" />
+	<Script ID="122" Dir="NPC/MinhGiao/TaThuDung.lua" />
+	<Script ID="123" Dir="NPC/MinhGiao/CaiA.lua" />
+	<Script ID="124" Dir="NPC/MinhGiao/PhuongHanhGiac.lua" />
+	<Script ID="125" Dir="NPC/MinhGiao/LieuHaDo.lua" />
+					
+	<Script ID="132" Dir="NPC/DuongMon/DuongHac.lua" />
+	<Script ID="133" Dir="NPC/DuongMon/DuongNgo.lua" />
+	<Script ID="134" Dir="NPC/DuongMon/DuongNhu.lua" />
+	<Script ID="135" Dir="NPC/DuongMon/DuongKhuyet.lua" />
+	<Script ID="136" Dir="NPC/DuongMon/DuongHieu.lua" />
+	<Script ID="137" Dir="NPC/BaoDanhTDC/HoangPhi.lua" />
+	<Script ID="138" Dir="NPC/BaoDanhTDC/TrieuKhan.lua" />
+	<Script ID="139" Dir="NPC/Common/TrinhBatCo.lua" />
+	<Script ID="140" Dir="NPC/Common/ThienCoTu.lua" />
+	<Script ID="141" Dir="NPC/Common/TuTruongNga.lua" />
+	<Script ID="142" Dir="NPC/Common/TocBatDai.lua" />
+	<Script ID="143" Dir="NPC/Common/LuuTatKhac.lua" />
+	<Script ID="144" Dir="NPC/Common/ThamThietThach.lua" />
+	<Script ID="145" Dir="NPC/Common/HuaTriVi.lua" />
+	<Script ID="146" Dir="NPC/Common/NhanNhuNgoc.lua" />
+	<Script ID="147" Dir="NPC/Common/RuongCuNat.lua" />
+	
+	<Script ID="148" Dir="NPC/Common/LongNguThaiGia.lua" />
+	<Script ID="149" Dir="NPC/Common/LeQuan.lua" />
+	<Script ID="150" Dir="NPC/Common/TruongTuyetChi.lua" />
+	<Script ID="151" Dir="NPC/Common/CoPhongHa.lua" />
+	<Script ID="152" Dir="NPC/Common/ChuongMon.lua" />
+	
+	<Script ID="153" Dir="NPC/ThienVuongBang/HungDinh.lua" />
+	<Script ID="154" Dir="NPC/ThienVuongBang/BuiDucPhi.lua" />
+	<Script ID="155" Dir="NPC/ThienVuongBang/QuyPhucBan.lua" />
+	<Script ID="156" Dir="NPC/TayTuyDao/TayTuyDaiSu.lua" />
+	<Script ID="157" Dir="NPC/Common/NPCText.lua" />
+	<Script ID="158" Dir="NPC/ThienVuongBang/LauNhatQuan.lua" />
+	<!-- End -->
+	
+	<!-- Item -->
+	<Script ID="100001" Dir="Test/Item_Test.lua" />
+	<Script ID="200002" Dir="Item/Common/TruyenThongPhu_TanThuThon.lua" />
+	<Script ID="200003" Dir="Item/Common/TruyenThongPhu_ThanhThi.lua" />
+	<Script ID="200004" Dir="Item/Common/TruyenThongPhu_MonPhai.lua" />
+	<Script ID="200005" Dir="Item/Common/TruyenThongPhu.lua" />
+	<Script ID="200006" Dir="Item/Common/PhieuGiamGia.lua" />
+	<Script ID="200007" Dir="Item/Common/LuaTrai.lua" />
+	<Script ID="200008" Dir="Item/Common/TruyenTongPhuTho.lua" />
+	<Script ID="200009" Dir="Item/Common/TuLuyenChau.lua" />
+	<Script ID="200010" Dir="Item/Common/SachTuLuyen.lua" />
+
+	<Script ID="200011" Dir="Item/Common/KimTe.lua" />
+	<Script ID="200012" Dir="Item/Common/TangBaoDo.lua" />
+	<Script ID="200013" Dir="Item/Common/CuuChuyenTucMenhHoan.lua" />
+	<Script ID="200014" Dir="Item/Common/ChieuThuTongKim.lua" />
+	<Script ID="200015" Dir="Item/Common/LenhBaiBachHoDuong.lua" />
+	<Script ID="200016" Dir="Item/Common/BachCauHoan.lua" />
+	<Script ID="200017" Dir="Item/Common/LenhBaiTayTuyDao.lua" />
+	<Script ID="200018" Dir="Item/Common/LenhBaiThiDauMonPhai.lua" />
+	<Script ID="200019" Dir="Item/Common/CangKhonPhu.lua" />
+	<Script ID="200021" Dir="Item/Common/Lenhbaitrieuhoibanghoi.lua" />
+	<Script ID="200022" Dir="Item/Common/TinhKhiTan.lua" />
+	<Script ID="200023" Dir="Item/Common/HoatKhiTan.lua" />
+	<Script ID="200024" Dir="Item/Common/LenhBaiChienTruongDuongChau.lua" />
+	<Script ID="200025" Dir="Item/Common/GiayPhepBayBan.lua" />
+	<Script ID="200026" Dir="Item/Common/ThoiVang.lua" />
+	<Script ID="200027" Dir="Item/Common/LenhBaiChucPhuc.lua" />
+	<Script ID="200028" Dir="Item/Common/RuongHonThach.lua" />
+	<Script ID="200029" Dir="Item/Common/OpenChess.lua" />
+	<Script ID="200030" Dir="Item/Common/PhaoHoa.lua" />
+	<Script ID="200031" Dir="Item/Common/PhieuDongKhoa.lua" />
+	<Script ID="200032" Dir="Item/Common/PhieuBacKhoa.lua" />
+
+	<Script ID="200033" Dir="Item/Common/BanThachPhu.lua" />
+	<Script ID="200034" Dir="Item/Common/HoGiapPhien.lua" />
+	<Script ID="200035" Dir="Item/Common/NguHanhThach.lua" />
+	<Script ID="200037" Dir="Item/Common/ThungRuou.lua" />
+	<Script ID="200038" Dir="Item/Common/LenhBaiHinhBo.lua" />
+	<Script ID="200040" Dir="Item/Common/KhongBachTamThu.lua" />
+	<Script ID="200041" Dir="Item/Common/ThienNhanPhu.lua" />
+	<Script ID="200042" Dir="Item/Common/BanDoBiCanh.lua" />
+	<Script ID="200043" Dir="Item/Common/ChiaKhoaDong.lua" />
+	<Script ID="200044" Dir="Item/Common/ChiaKhoaBac.lua" />
+	<Script ID="200045" Dir="Item/Common/OcBienTruyenThanh.lua" />
+	<Script ID="200046" Dir="Item/Common/DayCuongThanBi.lua" />
+	<Script ID="200047" Dir="Item/Common/GioHoaTinh.lua" />
+	<Script ID="200048" Dir="Item/Common/LenhBaiNghiaQuan.lua" />
+	<Script ID="200049" Dir="Item/Common/LenhBaiUyDanhGiangHo.lua" />
+	<Script ID="200050" Dir="Item/Common/VoLamCaoThuLenh.lua" />
+	<Script ID="200051" Dir="Item/Common/TuiPhucHoangKim.lua" />
+	<Script ID="200052" Dir="Item/Common/ChiaKhoaXichSat.lua" />
+	<Script ID="200053" Dir="Item/Common/DanCo.lua" />
+	<Script ID="200054" Dir="Item/Common/PhieuTayDiem.lua" />
+	<Script ID="200055" Dir="Item/Common/SachKinhNghiemDongHanh.lua" />
+	<Script ID="200056" Dir="Item/Common/BiKipDongHanhDacBiet.lua" />
+	<Script ID="200057" Dir="Item/Common/TuBiTamKinh.lua" />
+
+	<Script ID="200058" Dir="Item/Common/HanhQuanDon.lua" />
+	<Script ID="200059" Dir="Item/Common/MaDaoThach.lua" />
+	<Script ID="200060" Dir="Item/Common/RandomBox.lua" />
+
+	<Script ID="200061" Dir="Item/Common/LenhBaiChienTruongPhuongTuong.lua" />
+	<Script ID="200062" Dir="Item/Common/LenhBaiChienTruongTuongDuong.lualua" />
+	<Script ID="200063" Dir="Item/Common/TuiLuongNghiaQuan.lua" />
+	<Script ID="200064" Dir="Item/Common/TiepVienNghiaQuan.lua" />
+	<Script ID="200065" Dir="Item/Common/AnhHungLenh.lua" />
+	<Script ID="200066" Dir="Item/Common/BachNgoc.lua" />
+	<Script ID="200067" Dir="Item/Common/TieuDuLongLenh.lua" />
+	<Script ID="200068" Dir="Item/Common/TuiPhuc.lua" />
+	<Script ID="200069" Dir="Item/Common/LenhBaiTieuGiaoCoc.lua" />
+	<Script ID="200070" Dir="Item/Common/LenhBaiLienDau.lua" />
+	<Script ID="200072" Dir="Item/Common/TranhDoatDanhVongBai.lua" />
+	<Script ID="200073" Dir="Item/Common/DanhVongLanhTho.lua" />
+	<Script ID="200074" Dir="Item/Common/TanLang.lua" />
+	<!-- End -->
+	
+	<!-- Grow Point -->
+	<Script ID="300001" Dir="GrowPoint/GrowPoint_Default.lua" />
+	<!-- End -->
+	
+	<!-- Events -->
+	<Script ID="400002" Dir="Activity/BaiHuTang/BaiHuTang_ActivityScript.lua" />
+	<Script ID="400003" Dir="Activity/BaiHuTang/BaiHuTang_1_Script.lua" />
+	<Script ID="400004" Dir="Activity/BaiHuTang/BaiHuTang_2_Script.lua" />
+	<Script ID="400005" Dir="Activity/BaiHuTang/BaiHuTang_3_Script.lua" />
+	<Script ID="400006" Dir="Activity/BaiHuTang/BaiHuTang_Teleport.lua" />
+	<Script ID="400007" Dir="Activity/BaiHuTang/BaiHuTangHuWei_Dong.lua" />
+	<Script ID="400008" Dir="Activity/BaiHuTang/BaiHuTangHuWei_Bei.lua" />
+	<Script ID="400009" Dir="Activity/BaiHuTang/BaiHuTangHuWei_Xi.lua" />
+	<Script ID="400010" Dir="Activity/BaiHuTang/BaiHuTangHuWei_Nan.lua" />
+	<Script ID="400011" Dir="Activity/BaiHuTang/BaiHuTangCheFu.lua" />
+	<Script ID="400012" Dir="Activity/BaiHuTang/BaiHuTangChuanSongRen_ChengShi.lua" />
+	<!-- End -->
+	
+</ScriptIndex>

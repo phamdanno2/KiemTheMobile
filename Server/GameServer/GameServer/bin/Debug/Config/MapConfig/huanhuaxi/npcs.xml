@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="1208"  Name="Vân Tiểu Đao" MinimapName="" VisibleOnMinimap="1" Title="Khoái Đao Môn" X="7103" Y="3334" Dir="7" ScriptID="157"/>
+	
+   
+  </NPCs>
+</Map>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTopRankingConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TopRankingConfig RankType="1" RankName="Tài phú" EndTime="2023-09-27T23:59:00.9855744+07:00">
+
+   <AwardConfig RankStart="1" RankEnd="1" AwardList="10470:10|8220:1|10460:20|189:5" Index="1" />
+    <AwardConfig RankStart="2" RankEnd="2" AwardList="10826:1|8180:1|10460:15|189:3" Index="2" />
+    <AwardConfig RankStart="3" RankEnd="3" AwardList="12218:1|8170:1|10460:10|189:3" Index="3" />
+    <AwardConfig RankStart="4" RankEnd="10" AwardList="11262:1|8160:1|10460:5|189:2" Index="4" />
+
+  </TopRankingConfig>
+
+   <TopRankingConfig RankType="0" RankName="Cấp Độ" EndTime="2023-09-27T23:59:00.9855744+07:00">
+
+	<AwardConfig RankStart="1" RankEnd="1" AwardList="8170:1|10448:30|403:30|8436:1|8434:1|188:5" Index="1" />
+    <AwardConfig RankStart="2" RankEnd="2" AwardList="8160:1|10448:20|403:20|8436:1|8434:1|188:3" Index="2" />
+    <AwardConfig RankStart="3" RankEnd="3" AwardList="8150:1|10448:15|403:15|8436:1|8434:1|188:3" Index="2" />
+    <AwardConfig RankStart="4" RankEnd="10" AwardList="8140:1|10448:10|403:10|8436:1|8434:1|188:2" Index="4" />
+
+  </TopRankingConfig>
+  <!-- <TopRankingConfig RankType="5" RankName="Uy Danh" EndTime="2023-09-15T23:00:00.9855744+07:00"> -->
+
+	<!-- <AwardConfig RankStart="1" RankEnd="1" AwardList="8309:1|10448:10" Index="1" /> -->
+    <!-- <AwardConfig RankStart="2" RankEnd="2" AwardList="8160:1|10448:5" Index="2" /> -->
+    <!-- <AwardConfig RankStart="3" RankEnd="3" AwardList="8150:1" Index="3" /> -->
+    <!-- <AwardConfig RankStart="4" RankEnd="10" AwardList="8140:1" Index="4" /> -->
+
+  <!-- </TopRankingConfig> -->
+  <!-- <TopRankingConfig RankType="3" RankName="Võ Lâm" EndTime="2023-09-15T23:00:00.9855744+07:00"> -->
+
+	<!-- <AwardConfig RankStart="1" RankEnd="1" AwardList="8309:1|10448:10" Index="1" /> -->
+    <!-- <AwardConfig RankStart="2" RankEnd="2" AwardList="8160:1|10448:5" Index="2" /> -->
+    <!-- <AwardConfig RankStart="3" RankEnd="3" AwardList="8150:1" Index="3" /> -->
+    <!-- <AwardConfig RankStart="4" RankEnd="10" AwardList="8140:1" Index="4" /> -->
+
+  <!-- </TopRankingConfig> -->
+</ArrayOfTopRankingConfig>

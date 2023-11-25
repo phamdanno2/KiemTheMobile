@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Cửu Lão Động 1[Cấp 25]" Key="1" To="51" ToX="11597" ToY="5311" X="2710" Y="1130" Radius="100" />
+	<Teleport Code="2" Tip="Cửu Lão Động 3[Cấp 45]" Key="2" To="71" ToX="3187" ToY="1243" X="12051" Y="5265" Radius="100" />
+	
+	</Teleports>
+</Map>

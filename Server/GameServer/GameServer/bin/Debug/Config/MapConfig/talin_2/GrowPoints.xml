@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1548" Name="Thổ Phục Linh" PosX="5668" PosY="5931" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1548" Name="Thổ Phục Linh" PosX="5834" PosY="6086" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1548" Name="Thổ Phục Linh" PosX="6420" PosY="6024" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 <GrowPoint Code="1549" Name="Sơn Dược" PosX="5873" PosY="5843" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1549" Name="Sơn Dược" PosX="6202" PosY="5807" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1549" Name="Sơn Dược" PosX="6556" PosY="5873" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 <GrowPoint Code="1550" Name="Cửu Tiết Xương Bồ" PosX="6752" PosY="5975" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1550" Name="Cửu Tiết Xương Bồ" PosX="6961" PosY="5873" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1550" Name="Cửu Tiết Xương Bồ" PosX="6743" PosY="5790" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 <GrowPoint Code="1551" Name="Đại Thanh Đâu" PosX="6892" PosY="5628" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1551" Name="Đại Thanh Đâu" PosX="6563" PosY="5653" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1551" Name="Đại Thanh Đâu" PosX="6213" PosY="5665" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	</GrowPoints>
+</Map>

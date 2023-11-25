@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+     <NPC Code="213"  Name="Trừng Huệ" MinimapName="" VisibleOnMinimap="1" Title="" X="4970" Y="5230" Dir="7" ScriptID="67" />
+	 <NPC Code="6781" Name="Bất Động Tiên Sinh" MinimapName="Tạp Hóa" VisibleOnMinimap="1" Title="Chủ Tiệm Tạp Hóa" X="5430" Y="4570" Dir="7" ScriptID="28"/>
+	 <NPC Code="6778" Name="Thẩm Hà Diệp" MinimapName="Phòng Cụ" VisibleOnMinimap="1" Title="Chủ Tiệm Phòng Cụ" X="4830" Y="4270" Dir="7" ScriptID="25"/>
+	 <NPC Code="6777" Name="Điềm Tửu Thúc" MinimapName="Binh Khí" VisibleOnMinimap="1" Title="Chủ Tiệm Binh Khí" X="4150" Y="3910" Dir="7"  ScriptID="29" />
+	 <NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="4970" Y="2710" Dir="4" ScriptID="12" />
+	 <NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="5450" Y="2430" Dir="7" ScriptID="27"/>
+	 <NPC Code="6782" Name="Đại Lão Bạch" MinimapName="Tửu Lầu" VisibleOnMinimap="1" Title="Chủ Tửu Lầu" X="6090" Y="2270" Dir="1"  ScriptID="24"/>
+	 <NPC Code="3574" Name="Dã Luyện Đại Sư" MinimapName="" VisibleOnMinimap="1" Title="" X="4830" Y="1530" Dir="7" ScriptID="33"/>
+	 
+	 <NPC Code="3510" Name="Huyền Khổ" MinimapName="" VisibleOnMinimap="1" Title="" X="3170" Y="4530" Dir="7" ScriptID="66" />
+	 <NPC Code="2531" Name="Tổng Quản Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="4950" Y="3370" Dir="7" ScriptID="65" />
+	 <NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="4350" Y="2990" Dir="5" ScriptID="64" />
+	 <NPC Code="3512" Name="Huyền Từ" MinimapName="Trụ Trì Huyền Từ" VisibleOnMinimap="1" Title="Trụ trì Thiếu Lâm Tự" X="5770" Y="3490" Dir="1" ScriptID="152" />
+	 <NPC Code="5130" Name="Huyền Bi" MinimapName="" VisibleOnMinimap="1" Title="" X="7770" Y="2630" Dir="1" ScriptID="69" />
+	 <NPC Code="220"  Name="Trừng Quang" MinimapName="" VisibleOnMinimap="1" Title="" X="5210" Y="1390" Dir="1" ScriptID="70" />
+	 
+	 
+  </NPCs>
+</Map>

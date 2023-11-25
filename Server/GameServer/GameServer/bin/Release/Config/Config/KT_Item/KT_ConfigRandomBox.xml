@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	=== Hướng dẫn config randombox ===
+	=== Hướng dẫn config randombox ===
+	
+	Khai báo 1 Boxs ID mới thì IDBox cần phải khác nhau không được giống nhau
+	Tổng số lượng RATE phải điền đúng nếu ko sẽ gây lỗi
+	LimitWeek : Tối đa 1 tuần được mở mấy lần  | Nếu để là 0 thì không giới hạn
+	LimitDay : Tối đa 1 ngày được mở mấy lần | Nếu để là 0 thì không giới hạn
+	Lock : 0 Là không khóa | 1 là có khóa
+	Type : Là kiểu tong đó : 0 là vật phẩm | 1 là bạc khóa , 2: là bạc , 3 là đồng khóa , 4 là đồng	| 5 là Exp
+  Serier : là đồ theo hệ
+  TimeLimit : thời gian đồ có thể dùng
+  ItemID là ID đồ của vật phẩm 
+	Number : Là số lượng tương ứng của mỗi vật phẩm | Nếu type là tiền thì Number là số tiền
+-->
+<ConfigBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Boxs IDBox="1" BoxName="初级令牌（30声望）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="338" Number="1" Series="0" TimeLimit="0" Rate="3000" Lock="0" />
+    <Items Type="0" ItemID="339" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="340" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="10000" Series="0" TimeLimit="0" Rate="1500" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="30000" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="2" BoxName="家族令牌（初级）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="0" Rate="5000" Lock="1" />
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="0" Rate="3090" Lock="1" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="3" BoxName="6级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="0" Rate="7000" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="4" BoxName="7级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="8400" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="300000" Series="0" TimeLimit="0" Rate="1500" Lock="0" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="5" BoxName="7级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="7700" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="600000" Series="0" TimeLimit="0" Rate="1500" Lock="0" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="800" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="6" BoxName="8级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="8700" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="1000000" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="191" Number="1" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="7" BoxName="牛栏寨腰牌" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="2951" Number="1" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="2952" Number="1" Series="0" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="2953" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="2954" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="2955" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="5" ItemID="-1" Number="10000" Series="0" TimeLimit="0" Rate="4500" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="300" Series="0" TimeLimit="0" Rate="1500" Lock="0" />
+    <Items Type="0" ItemID="506" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="8" BoxName="4级玄晶" TotalRate="9999" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="186" Number="1" Series="0" TimeLimit="0" Rate="3879" Lock="1" />
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="1" />
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="1" Lock="1" />
+    <Items Type="0" ItemID="599" Number="1" Series="0" TimeLimit="43200" Rate="3000" Lock="0" />
+    <Items Type="0" ItemID="590" Number="1" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+    <Items Type="0" ItemID="2398" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="2406" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="2400" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="2404" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="2402" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="500" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="9" BoxName="4级玄晶" TotalRate="9998" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="186" Number="1" Series="0" TimeLimit="0" Rate="4790" Lock="1" />
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="0" Rate="3600" Lock="1" />
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="0" Rate="1500" Lock="1" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+    <Items Type="0" ItemID="337" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="337" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="10" BoxName="玄铁原木" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="1814" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="1818" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="1808" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="1809" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="1820" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="11" BoxName="JXB50000" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="1200" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="150000" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="7469" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="0" Rate="600" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="0" Rate="1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="12" BoxName="4级玄晶（绑定的）" TotalRate="1000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="388" Number="1" Series="0" TimeLimit="0" Rate="517" Lock="0" />
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="0" Rate="3" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="10000" Series="0" TimeLimit="0" Rate="150" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="60" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="20" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="5" Lock="0" />
+    <Items Type="0" ItemID="627" Number="1" Series="0" TimeLimit="0" Rate="5" Lock="1" />
+    <Items Type="0" ItemID="630" Number="1" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="13" BoxName="5级玄晶（绑定的）" TotalRate="1000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="0" Rate="467" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="150" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="200000" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="500000" Series="0" TimeLimit="0" Rate="3" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="14" BoxName="499绑金" TotalRate="996" LimitWeek="0" LimitDay="0">
+    <Items Type="3" ItemID="-1" Number="499" Series="0" TimeLimit="0" Rate="840" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="999" Series="0" TimeLimit="0" Rate="119" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="1999" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="2999" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="4999" Series="0" TimeLimit="0" Rate="1" Lock="0" />
+    <Items Type="0" ItemID="1073" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="1079" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="1082" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="0" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="15" BoxName="熟牛肉" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="2954" Number="1" Series="0" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="2955" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="5" ItemID="-1" Number="12000" Series="0" TimeLimit="0" Rate="4800" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="400" Series="0" TimeLimit="0" Rate="1900" Lock="0" />
+    <Items Type="0" ItemID="506" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="16" BoxName="6级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="6000" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="0" Rate="700" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="658" Number="1" Series="0" TimeLimit="0" Rate="3200" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="17" BoxName="经验" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="5" ItemID="-1" Number="40000000" Series="0" TimeLimit="0" Rate="2500" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="1600" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="150000" Series="0" TimeLimit="0" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="307" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="317" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="327" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="900" Lock="1" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="150" Lock="1" />
+    <Items Type="0" ItemID="1483" Number="1" Series="0" TimeLimit="0" Rate="0" Lock="1" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="18" BoxName="6玄（绑定1个月期限）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="7190" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="2500" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="19" BoxName="5玄" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="0" Rate="8650" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="20" BoxName="4玄" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="388" Number="1" Series="0" TimeLimit="0" Rate="8650" Lock="0" />
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="21" BoxName="3玄" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="387" Number="1" Series="0" TimeLimit="0" Rate="8580" Lock="0" />
+    <Items Type="0" ItemID="388" Number="1" Series="0" TimeLimit="0" Rate="1250" Lock="0" />
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="0" Rate="150" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="20" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="22" BoxName="6玄" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="8580" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="1250" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="150" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="20" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="23" BoxName="熟牛肉" TotalRate="9700" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="2954" Number="1" Series="0" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="2955" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="5" ItemID="-1" Number="13500" Series="0" TimeLimit="0" Rate="4500" Lock="0" />
+    <Items Type="2" ItemID="-1" Number="500" Series="0" TimeLimit="0" Rate="1900" Lock="0" />
+    <Items Type="0" ItemID="506" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="24" BoxName="6级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="3450" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="4000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="750" Number="1" Series="0" TimeLimit="0" Rate="700" Lock="0" />
+    <Items Type="0" ItemID="747" Number="1" Series="0" TimeLimit="0" Rate="1260" Lock="0" />
+    <Items Type="0" ItemID="748" Number="1" Series="0" TimeLimit="0" Rate="20" Lock="0" />
+    <Items Type="0" ItemID="749" Number="1" Series="0" TimeLimit="0" Rate="20" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="25" BoxName="6级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="6280" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="20" Lock="0" />
+    <Items Type="0" ItemID="750" Number="1" Series="0" TimeLimit="0" Rate="700" Lock="0" />
+    <Items Type="0" ItemID="747" Number="1" Series="0" TimeLimit="0" Rate="1260" Lock="0" />
+    <Items Type="0" ItemID="748" Number="1" Series="0" TimeLimit="0" Rate="20" Lock="0" />
+    <Items Type="0" ItemID="749" Number="1" Series="0" TimeLimit="0" Rate="20" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="26" BoxName="6级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="4090" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="3300" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="750" Number="1" Series="0" TimeLimit="0" Rate="525" Lock="0" />
+    <Items Type="0" ItemID="747" Number="1" Series="0" TimeLimit="0" Rate="945" Lock="0" />
+    <Items Type="0" ItemID="748" Number="1" Series="0" TimeLimit="0" Rate="15" Lock="0" />
+    <Items Type="0" ItemID="749" Number="1" Series="0" TimeLimit="0" Rate="15" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="27" BoxName="龙舟：破浪" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="751" Number="1" Series="0" TimeLimit="0" Rate="3100" Lock="0" />
+    <Items Type="0" ItemID="752" Number="1" Series="0" TimeLimit="0" Rate="3100" Lock="0" />
+    <Items Type="0" ItemID="753" Number="1" Series="0" TimeLimit="0" Rate="3100" Lock="0" />
+    <Items Type="0" ItemID="754" Number="1" Series="0" TimeLimit="0" Rate="700" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="28" BoxName="8级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="8350" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="150" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="29" BoxName="6级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="1200" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="200000" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="500000" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="1000000" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="300" Series="0" TimeLimit="0" Rate="5040" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="500" Series="0" TimeLimit="0" Rate="1500" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="1000" Series="0" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="2000" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="5000" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="30" BoxName="10级玄晶（绑定）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="7400" Lock="0" />
+    <Items Type="0" ItemID="822" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="31" BoxName="9级玄晶（绑定）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="2500" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="7000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="32" BoxName="8级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="9600" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="350" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="33" BoxName="兰花箱" TotalRate="-3" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="837" Number="1" Series="0" TimeLimit="10080" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="838" Number="1" Series="0" TimeLimit="10080" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="839" Number="1" Series="0" TimeLimit="10080" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="34" BoxName="紫檀箱" TotalRate="-3" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="840" Number="1" Series="0" TimeLimit="10080" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="841" Number="1" Series="0" TimeLimit="10080" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="842" Number="1" Series="0" TimeLimit="10080" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="35" BoxName="[面具]靖哥哥" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="747" Number="1" Series="0" TimeLimit="43200" Rate="2500" Lock="0" />
+    <Items Type="0" ItemID="223" Number="1" Series="0" TimeLimit="43200" Rate="5900" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="36" BoxName="精气散（回500）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="348" Number="1" Series="0" TimeLimit="43200" Rate="3700" Lock="1" />
+    <Items Type="0" ItemID="349" Number="1" Series="0" TimeLimit="43200" Rate="1300" Lock="1" />
+    <Items Type="0" ItemID="351" Number="1" Series="0" TimeLimit="43200" Rate="3700" Lock="1" />
+    <Items Type="0" ItemID="352" Number="1" Series="0" TimeLimit="43200" Rate="1300" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="37" BoxName="优惠券：3折购买1个7级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="845" Number="1" Series="0" TimeLimit="43200" Rate="400" Lock="1" />
+    <Items Type="0" ItemID="846" Number="1" Series="0" TimeLimit="43200" Rate="80" Lock="1" />
+    <Items Type="0" ItemID="843" Number="1" Series="0" TimeLimit="43200" Rate="1900" Lock="1" />
+    <Items Type="0" ItemID="299" Number="1" Series="0" TimeLimit="43200" Rate="5900" Lock="1" />
+    <Items Type="0" ItemID="556" Number="1" Series="0" TimeLimit="43200" Rate="1720" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="38" BoxName="精气散（回1000）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="349" Number="1" Series="0" TimeLimit="43200" Rate="3690" Lock="1" />
+    <Items Type="0" ItemID="350" Number="1" Series="0" TimeLimit="43200" Rate="1300" Lock="1" />
+    <Items Type="0" ItemID="352" Number="1" Series="0" TimeLimit="43200" Rate="3690" Lock="1" />
+    <Items Type="0" ItemID="353" Number="1" Series="0" TimeLimit="43200" Rate="1300" Lock="1" />
+    <Items Type="0" ItemID="668" Number="1" Series="0" TimeLimit="43200" Rate="20" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="39" BoxName="特效白驹丸" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="300" Number="1" Series="0" TimeLimit="43200" Rate="170" Lock="1" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="1" />
+    <Items Type="0" ItemID="344" Number="1" Series="0" TimeLimit="43200" Rate="2140" Lock="1" />
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="43200" Rate="4340" Lock="1" />
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="43200" Rate="1130" Lock="1" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="43200" Rate="40" Lock="1" />
+    <Items Type="0" ItemID="582" Number="1" Series="0" TimeLimit="43200" Rate="880" Lock="1" />
+    <Items Type="0" ItemID="584" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="40" BoxName="磨刀石(5级)" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="269" Number="1" Series="0" TimeLimit="43200" Rate="2270" Lock="1" />
+    <Items Type="0" ItemID="279" Number="1" Series="0" TimeLimit="43200" Rate="2410" Lock="1" />
+    <Items Type="0" ItemID="289" Number="1" Series="0" TimeLimit="43200" Rate="2570" Lock="1" />
+    <Items Type="0" ItemID="272" Number="1" Series="0" TimeLimit="43200" Rate="770" Lock="1" />
+    <Items Type="0" ItemID="282" Number="1" Series="0" TimeLimit="43200" Rate="910" Lock="1" />
+    <Items Type="0" ItemID="292" Number="1" Series="0" TimeLimit="43200" Rate="1060" Lock="1" />
+    <Items Type="0" ItemID="846" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="41" BoxName="7级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="8400" Lock="1" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="42" BoxName="8级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="8400" Lock="1" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="43" BoxName="5级玄晶（绑定)" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="43200" Rate="5600" Lock="1" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="1" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="300" Lock="1" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+    <Items Type="0" ItemID="915" Number="1" Series="0" TimeLimit="43200" Rate="2900" Lock="0" />
+    <Items Type="0" ItemID="916" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="917" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="44" BoxName="白驹丸" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="297" Number="1" Series="0" TimeLimit="43200" Rate="194" Lock="0" />
+    <Items Type="0" ItemID="298" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="299" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="403" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="183" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="185" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="402" Number="1" Series="0" TimeLimit="43200" Rate="150" Lock="0" />
+    <Items Type="0" ItemID="487" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="488" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="496" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="555" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="222" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="554" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="344" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="400" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="223" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="216" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="2929" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="2930" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="2931" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="198" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="197" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="336" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="3473" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="3474" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="348" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="349" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="350" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="351" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="352" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="353" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="507" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="513" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="514" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="191" Number="1" Series="0" TimeLimit="43200" Rate="5" Lock="0" />
+    <Items Type="0" ItemID="300" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="557" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="491" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="493" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="343" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="340" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="378" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="379" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="380" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="433" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="556" Number="1" Series="0" TimeLimit="43200" Rate="150" Lock="0" />
+    <Items Type="0" ItemID="582" Number="1" Series="0" TimeLimit="43200" Rate="180" Lock="0" />
+    <Items Type="0" ItemID="583" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="590" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="515" Number="1" Series="0" TimeLimit="43200" Rate="1" Lock="0" />
+    <Items Type="0" ItemID="634" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="635" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="769" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="825" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="827" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="579" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="580" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="581" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="770" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="527" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="530" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="607" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="805" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="748" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="749" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="45" BoxName="6级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="1450" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="6000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="46" BoxName="6级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="6380" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="3000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="20" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="47" BoxName="5级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="43200" Rate="5690" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="3000" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="48" BoxName="武林大会英雄令牌" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="939" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="6900" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="49" BoxName="酒箱（50瓶）" TotalRate="-3" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="488" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="600" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="590" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="50" BoxName="酒箱（50瓶）" TotalRate="-3" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="488" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="600" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="0" />
+    <Items Type="0" ItemID="590" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="51" BoxName="酒箱（50瓶）" TotalRate="-3" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="488" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="600" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="590" Number="1" Series="0" TimeLimit="43200" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="52" BoxName="8888绑金" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="3" ItemID="-1" Number="8888" Series="0" TimeLimit="0" Rate="200" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="4888" Series="0" TimeLimit="0" Rate="300" Lock="1" />
+    <Items Type="0" ItemID="739" Number="1" Series="0" TimeLimit="43200" Rate="3000" Lock="1" />
+    <Items Type="0" ItemID="582" Number="1" Series="0" TimeLimit="0" Rate="4000" Lock="1" />
+    <Items Type="0" ItemID="947" Number="1" Series="0" TimeLimit="43200" Rate="2500" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="53" BoxName="特别的精魄" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="1060" Number="1" Series="0" TimeLimit="43200" Rate="2000" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="4888" Series="0" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="0" ItemID="1027" Number="1" Series="0" TimeLimit="0" Rate="4000" Lock="1" />
+    <Items Type="0" ItemID="1055" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="1" />
+    <Items Type="0" ItemID="947" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="54" BoxName="5级玄晶（绑定)" TotalRate="9998" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="187" Number="1" Series="0" TimeLimit="0" Rate="6889" Lock="1" />
+    <Items Type="0" ItemID="188" Number="1" Series="0" TimeLimit="0" Rate="3000" Lock="1" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="1" />
+    <Items Type="0" ItemID="191" Number="1" Series="0" TimeLimit="43200" Rate="1" Lock="1" />
+    <Items Type="0" ItemID="337" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="337" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="55" BoxName="7级玄晶" TotalRate="1000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="668" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="30" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="2" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="99999" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="56" BoxName="同伴特殊材料（不绑定）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="1081" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="1100" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="7639" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="1066" Number="1" Series="0" TimeLimit="0" Rate="1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="57" BoxName="29999绑定银两" TotalRate="999" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="29999" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="1057" Number="1" Series="0" TimeLimit="0" Rate="215" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="1" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="1071" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="1" />
+    <Items Type="0" ItemID="1081" Number="1" Series="0" TimeLimit="0" Rate="1" Lock="0" />
+    <Items Type="0" ItemID="1099" Number="1" Series="0" TimeLimit="43200" Rate="3" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="0" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="58" BoxName="7级玄晶（绑定）" TotalRate="1000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="859" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="1" Lock="0" />
+    <Items Type="0" ItemID="914" Number="1" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="59" BoxName="29999绑定银两" TotalRate="9999" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="29999" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="389" Number="1" Series="0" TimeLimit="43200" Rate="3967" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="3000" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="30" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="3" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="1071" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="0" ItemID="-1" Number="0" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="60" BoxName="50000绑银" TotalRate="1000000" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="660000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="280000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="300000" Series="0" TimeLimit="0" Rate="50000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="500000" Series="0" TimeLimit="0" Rate="10000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="61" BoxName="20000绑银" TotalRate="1000000" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="216000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="630000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="140000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="300000" Series="0" TimeLimit="0" Rate="14000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="62" BoxName="20000绑银" TotalRate="1000000" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="282000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="630000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="80000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="300000" Series="0" TimeLimit="0" Rate="8000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="63" BoxName="20000绑银" TotalRate="1000000" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="456000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="500000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="40000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="300000" Series="0" TimeLimit="0" Rate="4000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="64" BoxName="7级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="8400" Lock="1" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="65" BoxName="8级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="8400" Lock="1" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="66" BoxName="7级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="8400" Lock="1" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="1500" Lock="1" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="67" BoxName="6级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="1200" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="200000" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="500000" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="1000000" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="300" Series="0" TimeLimit="0" Rate="5040" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="500" Series="0" TimeLimit="0" Rate="1500" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="1000" Series="0" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="2000" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="5000" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="68" BoxName="6级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="120" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="1" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="10000" Series="0" TimeLimit="0" Rate="2379" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="20000" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="50000" Series="0" TimeLimit="0" Rate="30" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="10" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="30" Series="0" TimeLimit="0" Rate="5040" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="50" Series="0" TimeLimit="0" Rate="1500" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="100" Series="0" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="200" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="500" Series="0" TimeLimit="0" Rate="10" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="69" BoxName="2010绑定金币" TotalRate="-7" LimitWeek="0" LimitDay="0">
+    <Items Type="3" ItemID="-1" Number="2010" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="1" ItemID="-1" Number="200000" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="3461" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="230" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="231" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="232" Number="1" Series="0" TimeLimit="0" Rate="-1" Lock="1" />
+    <Items Type="0" ItemID="506" Number="1" Series="0" TimeLimit="30" Rate="-1" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="70" BoxName="6级玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="5000" Lock="1" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="0" Rate="3200" Lock="1" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="1" />
+    <Items Type="3" ItemID="-1" Number="999" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="9999" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="71" BoxName="6级玄晶（绑定的）" TotalRate="10450" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="1400" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="5500" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="50" Lock="0" />
+    <Items Type="0" ItemID="1254" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="72" BoxName="6级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="4080" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="4300" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="20" Lock="0" />
+    <Items Type="0" ItemID="1254" Number="1" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="73" BoxName="6级玄晶（绑定的）" TotalRate="9800" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="0" Rate="7190" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="1254" Number="1" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="74" BoxName="7级玄晶（绑定的）" TotalRate="10109" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="8000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="927" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="5" ItemID="-1" Number="10000000" Series="0" TimeLimit="0" Rate="-1" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="75" BoxName="1000000经验" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="5" ItemID="-1" Number="1000000" Series="0" TimeLimit="0" Rate="2330" Lock="0" />
+    <Items Type="5" ItemID="-1" Number="2000000" Series="0" TimeLimit="0" Rate="1250" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="60000" Series="0" TimeLimit="0" Rate="2000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="100000" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="200000" Series="0" TimeLimit="0" Rate="300" Lock="0" />
+    <Items Type="0" ItemID="390" Number="1" Series="0" TimeLimit="43200" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="391" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="392" Number="1" Series="0" TimeLimit="43200" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+    <Items Type="0" ItemID="491" Number="1" Series="0" TimeLimit="43200" Rate="10" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="76" BoxName="1000000 绑银" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="1" ItemID="-1" Number="1000000" Series="0" TimeLimit="0" Rate="1500" Lock="0" />
+    <Items Type="1" ItemID="-1" Number="2000000" Series="0" TimeLimit="0" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="2000" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="1200" Lock="0" />
+    <Items Type="0" ItemID="395" Number="1" Series="0" TimeLimit="43200" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="310" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="320" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="330" Number="1" Series="0" TimeLimit="43200" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="914" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+    <Items Type="0" ItemID="491" Number="1" Series="0" TimeLimit="43200" Rate="1000" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="77" BoxName="9級玄晶" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="191" Number="1" Series="0" TimeLimit="0" Rate="100" Lock="0" />
+    <Items Type="0" ItemID="1480" Number="1" Series="1" TimeLimit="0" Rate="500" Lock="1" />
+    <Items Type="0" ItemID="190" Number="1" Series="0" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="189" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="300" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="1481" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="300" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="197" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="507" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="383" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="353" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="350" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="344" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="223" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="3" ItemID="-1" Number="1000" Series="0" TimeLimit="0" Rate="800" Lock="1" />
+  </Boxs>
+  <Boxs IDBox="78" BoxName="中級祈福令牌" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="514" Number="1" Series="1" TimeLimit="0" Rate="200" Lock="0" />
+    <Items Type="0" ItemID="378" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="-1" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+    <Items Type="0" ItemID="216" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="300" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="1481" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="402" Number="1" Series="1" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="556" Number="1" Series="0" TimeLimit="0" Rate="400" Lock="0" />
+    <Items Type="0" ItemID="507" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="383" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="353" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="350" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="344" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="223" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+    <Items Type="0" ItemID="488" Number="1" Series="1" TimeLimit="0" Rate="800" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="79" BoxName="9级玄晶（绑定的）" TotalRate="10000" LimitWeek="0" LimitDay="0">
+    <Items Type="0" ItemID="393" Number="1" Series="0" TimeLimit="43200" Rate="6500" Lock="0" />
+    <Items Type="0" ItemID="394" Number="1" Series="0" TimeLimit="43200" Rate="3000" Lock="0" />
+    <Items Type="0" ItemID="1074" Number="1" Series="0" TimeLimit="0" Rate="500" Lock="0" />
+  </Boxs>
+  <Boxs IDBox="100" BoxName="Rương vừa đẹp vừa cao quý" TotalRate="10000" LimitWeek="10" LimitDay="0">
+    <Items Type="0" ItemID="190" Series="0" TimeLimit="0" Number="1" Rate="9290" Lock="1" />
+     <Items Type="0" ItemID="191" Series="0" TimeLimit="0" Number="1" Rate="500" Lock="1" />
+     <Items Type="0" ItemID="192" Series="0" TimeLimit="0" Number="1" Rate="150" Lock="1" />
+    <Items Type="0" ItemID="193"  Series="0" TimeLimit="0" Number="1" Rate="50" Lock="1" />
+     <Items Type="0" ItemID="194" Series="0" TimeLimit="0" Number="1" Rate="10" Lock="1" />
+  </Boxs>
+   <Boxs IDBox="337" BoxName="Túi Phúc Hoàng Kim" TotalRate="8800" LimitWeek="0" LimitDay="0">
+    <Items Type="5" ItemID="-1" Series="0" TimeLimit="0" Number="10000" Rate="3000" Lock="1" />
+    <Items Type="3" ItemID="-1" Series="0" TimeLimit="0" Number="25" Rate="2000" Lock="1" />
+    <Items Type="5" ItemID="-1" Series="0" TimeLimit="0" Number="25000" Rate="1000" Lock="1" />
+    <Items Type="5" ItemID="-1" Series="0" TimeLimit="0" Number="30000" Rate="1500" Lock="1" />
+    <Items Type="1" ItemID="-1" Series="0" TimeLimit="0" Number="1000" Rate="500" Lock="1" />
+    <Items Type="1" ItemID="-1" Series="0" TimeLimit="0" Number="2500" Rate="300" Lock="1" />
+    <Items Type="3" ItemID="-1" Series="0" TimeLimit="0" Number="100" Rate="200" Lock="1" />
+    <Items Type="3" ItemID="-1" Series="0" TimeLimit="0" Number="300" Rate="100" Lock="1" />
+    <Items Type="5" ItemID="-1" Series="0" TimeLimit="0" Number="50000" Rate="100" Lock="1" />
+    <Items Type="1" ItemID="-1" Series="0" TimeLimit="0" Number="30000" Rate="100" Lock="1" />
+
+  </Boxs>
+</ConfigBox>

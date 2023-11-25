@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9CB8BC5-F139-490F-9CE9-1E26EDCE4103}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tmsk.Contract</RootNamespace>
+    <AssemblyName>Tmsk.Contract</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>dlls\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GameServer\dlls\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Const\ConstData.cs" />
+    <Compile Include="Const\Enumerations.cs" />
+    <Compile Include="Const\ESpreadState.cs" />
+    <Compile Include="Const\GlobalEventTypes.cs" />
+    <Compile Include="Const\KuaFuEnumerations.cs" />
+    <Compile Include="Const\ServerConsts.cs" />
+    <Compile Include="Const\StdErrorCode.cs" />
+    <Compile Include="KuaFuData\UnionAllyData.cs" />
+    <Compile Include="Data\RangeKey64.cs" />
+    <Compile Include="KuaFuData\CoupleArenaData.cs" />
+    <Compile Include="KuaFuData\CoupleWishDefine.cs" />
+    <Compile Include="KuaFuData\ZhengBaConfig.cs" />
+    <Compile Include="KuaFuData\ZhengBaDefine.cs" />
+    <Compile Include="Context\AuthorizationContext.cs" />
+    <Compile Include="Context\RuntimeData.cs" />
+    <Compile Include="Data\GameSceneStateTimeData.cs" />
+    <Compile Include="Data\InputKingPaiHangData.cs" />
+    <Compile Include="Data\IntPairKey.cs" />
+    <Compile Include="Data\KuaFuLineData.cs" />
+    <Compile Include="Data\KuaFuServerLoginData.cs" />
+    <Compile Include="Data\RangeKey.cs" />
+    <Compile Include="Data\ServerListProtoBuffData.cs" />
+    <Compile Include="Data\WebLoginToken.cs" />
+    <Compile Include="Data\RoleIdRange.cs" />
+    <Compile Include="EventObject\KuaFuEventObject.cs" />
+    <Compile Include="Interface\CmdHandler.cs" />
+    <Compile Include="Interface\EventObjectEx.cs" />
+    <Compile Include="Interface\ICoreInterface.cs" />
+    <Compile Include="Interface\IEventListenerEx.cs" />
+    <Compile Include="Interface\IExecCommand.cs" />
+    <Compile Include="Interface\IManager2.cs" />
+    <Compile Include="Interface\IProtoBuffData.cs" />
+    <Compile Include="Interface\ISceneEventSource.cs" />
+    <Compile Include="KuaFuData\HuanYingSiYuanGameData.cs" />
+    <Compile Include="KuaFuData\KFCopyTeamDefine.cs" />
+    <Compile Include="KuaFuData\KFCopyTeamErrorCodes.cs" />
+    <Compile Include="KuaFuData\KFCopyTeamProtobufData.cs" />
+    <Compile Include="KuaFuData\KuaFuConsts.cs" />
+    <Compile Include="KuaFuData\KuaFuData.cs" />
+    <Compile Include="KuaFuData\KuaFuServerListProtoData.cs" />
+    <Compile Include="KuaFuData\MoRiJudgeGameData.cs" />
+    <Compile Include="KuaFuData\SpreadGameData.cs" />
+    <Compile Include="KuaFuData\TianTiGameData.cs" />
+    <Compile Include="KuaFuData\YongZheZhanChangGameData.cs" />
+    <Compile Include="KuaFuData\LangHunLingYuGameData.cs" />
+    <Compile Include="KuaFuInterface\EventHandler.cs" />
+    <Compile Include="KuaFuInterface\IActivityData.cs" />
+    <Compile Include="KuaFuInterface\IAllyService.cs" />
+    <Compile Include="KuaFuInterface\ICoupleArenaService.cs" />
+    <Compile Include="KuaFuInterface\IKuaFuCopyService.cs" />
+    <Compile Include="KuaFuInterface\IKuaFuMapService.cs" />
+    <Compile Include="KuaFuInterface\IKuaFuService.cs" />
+    <Compile Include="KuaFuInterface\ISpreadService.cs" />
+    <Compile Include="KuaFuInterface\ITianTiService.cs" />
+    <Compile Include="KuaFuInterface\IYongZheZhanChangService.cs" />
+    <Compile Include="KuaFuInterface\ILangHunLingYuService.cs" />
+    <Compile Include="KuaFuInterface\ICoupleWishService.cs" />
+    <Compile Include="Tools\AesHelper.cs" />
+    <Compile Include="Tools\ConfigHelper.cs" />
+    <Compile Include="Tools\CRC32.cs" />
+    <Compile Include="Tools\DataHelper.cs" />
+    <Compile Include="Tools\IpHelper.cs" />
+    <Compile Include="Tools\ListExt.cs" />
+    <Compile Include="Tools\LogManager.cs" />
+    <Compile Include="Tools\MD5.cs" />
+    <Compile Include="Tools\MD5Helper.cs" />
+    <Compile Include="Tools\MD5Managed.cs" />
+    <Compile Include="Tools\MemoryBlock.cs" />
+    <Compile Include="Tools\MiniDump.cs" />
+    <Compile Include="Tools\MmTimer.cs" />
+    <Compile Include="Tools\NetHelper.cs" />
+    <Compile Include="Tools\RandomHelper.cs" />
+    <Compile Include="Tools\RC4Helper.cs" />
+    <Compile Include="Tools\SHA1Helper.cs" />
+    <Compile Include="Tools\StringEncrypt.cs" />
+    <Compile Include="Tools\StringUtil.cs" />
+    <Compile Include="Tools\SysConOut.cs" />
+    <Compile Include="Tools\TimeUtil.cs" />
+    <Compile Include="Tools\TMSKThreadStaticClass.cs" />
+    <Compile Include="Tools\WebHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

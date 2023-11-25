@@ -1,0 +1,24 @@
+2023-10-28 20:09:44	Release unused role: 200103
+2023-10-28 20:09:44	Release unused role: 200107
+2023-10-28 20:09:44	Release unused role: 200108
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61483, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61485, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61486, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61487, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61489, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61484, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61491, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61492, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61488, last operation: Receive, error: ConnectionReset
+2023-10-28 20:10:57	Close socket: 127.0.0.1:61490, last operation: Receive, error: ConnectionReset
+2023-10-28 20:11:06	Load role data from DB: 200060
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49804, total count: 1
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49805, total count: 2
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49806, total count: 3
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49807, total count: 4
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49808, total count: 5
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49809, total count: 6
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49810, total count: 7
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49811, total count: 8
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49812, total count: 9
+2023-10-28 20:11:12	New socket connection: 127.0.0.1:49813, total count: 10

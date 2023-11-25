@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Hổ Khâu Kiếm Trì[Cấp 65]" Key="1" To="96" ToX="2725" ToY="8068" X="4501" Y="489" Radius="50" />
+		<Teleport Code="2" Tip="Dương Châu Phủ" Key="2" To="26" ToX="9610" ToY="630" X="794" Y="7188" Radius="50" />
+		<Teleport Code="3" Tip="Thục Cương Sơn[Cấp 75]" Key="3" To="103" ToX="999" ToY="1317" X="6221" Y="7673" Radius="50" />
+		
+		
+	</Teleports>
+</Map>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Long Môn Trấn" Key="1" To="2" ToX="3646" ToY="605" X="6927" Y="3113" Radius="50" />
+	  <Teleport Code="2" Tip="Phượng Tường Phủ" Key="2" To="24" ToX="889" ToY="5014" X="6025" Y="310" Radius="50" />
+	  <Teleport Code="3" Tip="Cán Hoa Khê [cấp 55] " Key="3" To="90" ToX="8907" ToY="2368" X="1651" Y="525" Radius="50" />	  
+	  <Teleport Code="4" Tip="Kiến Tính Phong [cấp 25] " Key="4" To="48" ToX="8024" ToY="847" X="572" Y="2581" Radius="50" />
+	  
+	  
+	  
+	  
+	  
+	  
+	</Teleports>
+</Map>

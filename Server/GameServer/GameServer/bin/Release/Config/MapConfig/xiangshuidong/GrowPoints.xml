@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1528" Name="Tử Ngọc" PosX="5819" PosY="4718" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	</GrowPoints>
+</Map>

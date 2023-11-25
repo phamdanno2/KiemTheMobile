@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      
+	 <Teleport Code="1" Tip="Ngoài Yến Tử Ổ[cấp 35]" Key="1" To="60" ToX="1086" ToY="3220" X="4215" Y="5177" Radius="50" />
+     
+	  
+	</Teleports>
+</Map>

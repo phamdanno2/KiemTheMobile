@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TotalRechage>
+	<TotalRechageAward ID="1" MinYuanBao="1000" GoodsIDs="15005,2|186,3|15000,5" />
+	<TotalRechageAward ID="2" MinYuanBao="2000" GoodsIDs="15005,4|188,3|15000,10" />
+	<TotalRechageAward ID="3" MinYuanBao="4000" GoodsIDs="15005,8|189,1|402,3" />
+	<TotalRechageAward ID="4" MinYuanBao="8000" GoodsIDs="15001,1|189,1|402,5|15006,1" />
+	<TotalRechageAward ID="5" MinYuanBao="16000" GoodsIDs="15001,2|190,1|403,1|15006,2" />
+	<TotalRechageAward ID="5" MinYuanBao="32000" GoodsIDs="15001,3|191,1|403,2|15007,1" />
+	<TotalRechageAward ID="5" MinYuanBao="64000" GoodsIDs="15001,5|191,2|403,4|15007,2" />
+	<TotalRechageAward ID="5" MinYuanBao="128000" GoodsIDs="15001,8|192,1|403,8|15008,1" />
+</TotalRechage>

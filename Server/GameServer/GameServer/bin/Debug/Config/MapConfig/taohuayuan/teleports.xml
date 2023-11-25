@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Tỏa Vân Uyên[cấp 105]" Key="1" To="128" ToX="1068" ToY="4332" X="11745" Y="7861" Radius="100" />
+	<Teleport Code="2" Tip="Miêu Lĩnh[cấp 95]" Key="2" To="119" ToX="9068" ToY="4188" X="13285" Y="2101" Radius="100" />
+	<Teleport Code="3" Tip="Vũ Lăng Sơn[cấp 95]" Key="3" To="121" ToX="5021" ToY="906" X="590" Y="2821" Radius="100" />
+	
+	
+	</Teleports>
+</Map>

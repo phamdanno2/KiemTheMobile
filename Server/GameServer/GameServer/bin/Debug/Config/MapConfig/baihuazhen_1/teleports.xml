@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Bách Hoa Cốc[cấp 25]" Key="1" To="52" ToX="9387" ToY="7503" X="7290" Y="813" Radius="100" />	 
+	  <Teleport Code="2" Tip="Trong Bách Hoa Trận[cấp 45] " Key="2" To="72" ToX="7185" ToY="1049" X="9609" Y="7768" Radius="100" />
+	  
+	  
+	</Teleports>
+</Map>

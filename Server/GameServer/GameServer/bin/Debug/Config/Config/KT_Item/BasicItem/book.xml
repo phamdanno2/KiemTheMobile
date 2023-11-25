@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="3232" Name="Mật tịch Đao Thiếu Lâm (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Thiếu Lâm (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="1" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="320" DexInitMax="480" VitInitMin="640" VitInitMax="960" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3233" Name="Mật tịch Côn Thiếu Lâm (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Côn Thiếu Lâm (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="2" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="480" StrInitMax="720" DexInitMin="480" DexInitMax="720" VitInitMin="640" VitInitMax="960" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3234" Name="Mật tịch Thương Thiên Vương (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Thương Thiên Vương (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="3" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="480" DexInitMax="720" VitInitMin="480" VitInitMax="720" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3235" Name="Mật tịch Chùy Thiên Vương (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chùy Thiên Vương (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="4" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="160" DexInitMax="240" VitInitMin="800" VitInitMax="1200" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3236" Name="Mật tịch Hãm Tĩnh Đường Môn (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Hãm Tĩnh Đường Môn (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="5" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="800" DexInitMax="1200" VitInitMin="800" VitInitMax="1200" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3237" Name="Mật tịch Tụ Tiễn Đường Môn (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Tụ Tiễn Đường Môn (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="6" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="800" DexInitMax="1200" VitInitMin="800" VitInitMax="1200" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3238" Name="Mật tịch Đao Ngũ Độc (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Ngũ Độc (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="7" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="800" StrInitMax="1200" DexInitMin="320" DexInitMax="480" VitInitMin="480" VitInitMax="720" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3239" Name="Mật tịch Chưởng Ngũ Độc (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Ngũ Độc (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="8" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3240" Name="Mật tịch Chưởng Nga My (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Nga My (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="9" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3241" Name="Mật tịch Phụ Trợ Nga My (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Phụ Trợ Nga My (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="10" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3242" Name="Mật tịch Kiếm Thúy Yên (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Thúy Yên (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="11" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3243" Name="Mật tịch Đao Thúy Yên (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Thúy Yên (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="12" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="320" DexInitMax="480" VitInitMin="640" VitInitMax="960" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3244" Name="Mật tịch Chưởng Cái Bang (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Cái Bang (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="13" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3245" Name="Mật tịch Côn Cái Bang (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Côn Cái Bang (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="14" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="800" StrInitMax="1200" DexInitMin="320" DexInitMax="480" VitInitMin="480" VitInitMax="720" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3246" Name="Mật tịch Chiến Nhẫn (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chiến Nhẫn (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="15" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="480" StrInitMax="720" DexInitMin="320" DexInitMax="480" VitInitMin="800" VitInitMax="1200" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3247" Name="Mật tịch Ma Nhẫn (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Ma Nhẫn (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="16" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3248" Name="Mật tịch Khí Võ Đang (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Khí Võ Đang (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="17" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3249" Name="Mật tịch Kiếm Võ Đang (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Võ Đang (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="18" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="160" DexInitMax="240" VitInitMin="160" VitInitMax="240" EngInitMin="640" EngInitMax="960" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3250" Name="Mật tịch Đao Côn Lôn (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Côn Lôn (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="19" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="800" StrInitMax="1200" DexInitMin="320" DexInitMax="480" VitInitMin="480" VitInitMax="720" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3251" Name="Mật tịch Kiếm Côn Lôn (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Côn Lôn (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="20" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3252" Name="Mật tịch Chùy Minh Giáo (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chùy Minh Giáo (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="21" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="320" DexInitMax="480" VitInitMin="640" VitInitMax="960" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3253" Name="Mật tịch Kiếm Minh Giáo (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Minh Giáo (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="22" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3254" Name="Mật tịch Chỉ Đoàn Thị (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chỉ Đoàn Thị (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="23" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="640" StrInitMax="960" DexInitMin="320" DexInitMax="480" VitInitMin="640" VitInitMax="960" EngInitMin="0" EngInitMax="0" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3255" Name="Mật tịch Khí Đoàn Thị (sơ)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Khí Đoàn Thị (sơ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="24" Level="1" SuiteID="0" Icon="book_n_xinshoumiji" View="book_n_xinshoumiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="10000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="800" VitInitMax="1200" EngInitMin="800" EngInitMax="1200" SkillID1="10" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3256" Name="Mật tịch Đao Thiếu Lâm (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Thiếu Lâm (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="1" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="480" DexInitMax="720" VitInitMin="960" VitInitMax="1440" EngInitMin="0" EngInitMax="0" SkillID1="1200" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3257" Name="Mật tịch Côn Thiếu Lâm (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Côn Thiếu Lâm (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="2" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="720" StrInitMax="1080" DexInitMin="720" DexInitMax="1080" VitInitMin="960" VitInitMax="1440" EngInitMin="0" EngInitMax="0" SkillID1="1201" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3258" Name="Mật tịch Thương Thiên Vương (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Thương Thiên Vương (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="3" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="720" DexInitMax="1080" VitInitMin="720" VitInitMax="1080" EngInitMin="0" EngInitMax="0" SkillID1="1202" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3259" Name="Mật tịch Chùy Thiên Vương (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chùy Thiên Vương (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="4" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="240" DexInitMax="360" VitInitMin="1200" VitInitMax="1800" EngInitMin="0" EngInitMax="0" SkillID1="1202" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3260" Name="Mật tịch Hãm Tĩnh Đường Môn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Hãm Tĩnh Đường Môn (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="5" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="1200" DexInitMax="1800" VitInitMin="1200" VitInitMax="1800" EngInitMin="0" EngInitMax="0" SkillID1="1203" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3261" Name="Mật tịch Tụ Tiễn Đường Môn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Tụ Tiễn Đường Môn (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="6" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="1200" DexInitMax="1800" VitInitMin="1200" VitInitMax="1800" EngInitMin="0" EngInitMax="0" SkillID1="1204" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3262" Name="Mật tịch Đao Ngũ Độc (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Ngũ Độc (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="7" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="1200" StrInitMax="1800" DexInitMin="480" DexInitMax="720" VitInitMin="720" VitInitMax="1080" EngInitMin="0" EngInitMax="0" SkillID1="1205" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3263" Name="Mật tịch Chưởng Ngũ Độc (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Ngũ Độc (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="8" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1206" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3264" Name="Mật tịch Chưởng Nga My (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Nga My (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="9" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1207" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3265" Name="Mật tịch Phụ Trợ Nga My (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Phụ Trợ Nga My (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="10" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1208" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3266" Name="Mật tịch Kiếm Thúy Yên (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Thúy Yên (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="11" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1209" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3267" Name="Mật tịch Đao Thúy Yên (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Thúy Yên (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="12" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="480" DexInitMax="720" VitInitMin="960" VitInitMax="1440" EngInitMin="0" EngInitMax="0" SkillID1="1210" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3268" Name="Mật tịch Chưởng Cái Bang (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Cái Bang (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="13" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1211" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3269" Name="Mật tịch Côn Cái Bang (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Côn Cái Bang (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="14" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="1200" StrInitMax="1800" DexInitMin="480" DexInitMax="720" VitInitMin="720" VitInitMax="1080" EngInitMin="0" EngInitMax="0" SkillID1="1212" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3270" Name="Mật tịch Chiến Nhẫn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chiến Nhẫn (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="15" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="720" StrInitMax="1080" DexInitMin="480" DexInitMax="720" VitInitMin="1200" VitInitMax="1800" EngInitMin="0" EngInitMax="0" SkillID1="1213" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3271" Name="Mật tịch Ma Nhẫn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Ma Nhẫn (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="16" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1214" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3272" Name="Mật tịch Khí Võ Đang (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Khí Võ Đang (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="17" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1215" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3273" Name="Mật tịch Kiếm Võ Đang (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Võ Đang (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="18" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="240" DexInitMax="360" VitInitMin="240" VitInitMax="360" EngInitMin="960" EngInitMax="1440" SkillID1="1216" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3274" Name="Mật tịch Đao Côn Lôn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Côn Lôn (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="19" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="1200" StrInitMax="1800" DexInitMin="480" DexInitMax="720" VitInitMin="720" VitInitMax="1080" EngInitMin="0" EngInitMax="0" SkillID1="1217" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3275" Name="Mật tịch Kiếm Côn Lôn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Côn Lôn (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="20" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1218" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3276" Name="Mật tịch Chùy Minh Giáo (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chùy Minh Giáo (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="21" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="480" DexInitMax="720" VitInitMin="960" VitInitMax="1440" EngInitMin="0" EngInitMax="0" SkillID1="1219" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3277" Name="Mật tịch Kiếm Minh Giáo (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Minh Giáo (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="22" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1220" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3278" Name="Mật tịch Chỉ Đoàn Thị (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chỉ Đoàn Thị (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="23" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="960" StrInitMax="1440" DexInitMin="480" DexInitMax="720" VitInitMin="960" VitInitMax="1440" EngInitMin="0" EngInitMax="0" SkillID1="1221" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3279" Name="Mật tịch Khí Đoàn Thị (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Khí Đoàn Thị (trung)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="24" Level="2" SuiteID="0" Icon="book_zhongjimiji" View="book_zhongjimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="1200" VitInitMax="1800" EngInitMin="1200" EngInitMax="1800" SkillID1="1222" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3280" Name="Mật tịch Đao Thiếu Lâm (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Thiếu Lâm (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="1" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="960" DexInitMax="1440" VitInitMin="1920" VitInitMax="2880" EngInitMin="0" EngInitMax="0" SkillID1="1241" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3281" Name="Mật tịch Côn Thiếu Lâm (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Côn Thiếu Lâm (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="2" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1440" StrInitMax="2160" DexInitMin="1440" DexInitMax="2160" VitInitMin="1920" VitInitMax="2880" EngInitMin="0" EngInitMax="0" SkillID1="1242" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3282" Name="Mật tịch Thương Thiên Vương (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Thương Thiên Vương (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="3" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="1440" DexInitMax="2160" VitInitMin="1440" VitInitMax="2160" EngInitMin="0" EngInitMax="0" SkillID1="1243" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3283" Name="Mật tịch Chùy Thiên Vương (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chùy Thiên Vương (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="4" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="480" DexInitMax="720" VitInitMin="2400" VitInitMax="3600" EngInitMin="0" EngInitMax="0" SkillID1="1244" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3284" Name="Mật tịch Hãm Tĩnh Đường Môn (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Hãm Tĩnh Đường Môn (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="5" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="2400" DexInitMax="3600" VitInitMin="2400" VitInitMax="3600" EngInitMin="0" EngInitMax="0" SkillID1="1245" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3285" Name="Mật tịch Tụ Tiễn Đường Môn (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Tụ Tiễn Đường Môn (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="6" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="2400" DexInitMax="3600" VitInitMin="2400" VitInitMax="3600" EngInitMin="0" EngInitMax="0" SkillID1="1246" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3286" Name="Mật tịch Đao Ngũ Độc (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Ngũ Độc (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="7" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="2400" StrInitMax="3600" DexInitMin="960" DexInitMax="1440" VitInitMin="1440" VitInitMax="2160" EngInitMin="0" EngInitMax="0" SkillID1="1247" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3287" Name="Mật tịch Chưởng Ngũ Độc (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Ngũ Độc (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="8" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1248" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3288" Name="Mật tịch Chưởng Nga My (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Nga My (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="9" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1249" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3289" Name="Mật tịch Phụ Trợ Nga My (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Phụ Trợ Nga My (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="10" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1250" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3290" Name="Mật tịch Kiếm Thúy Yên (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Thúy Yên (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="11" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1251" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3291" Name="Mật tịch Đao Thúy Yên (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Thúy Yên (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="12" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="960" DexInitMax="1440" VitInitMin="1920" VitInitMax="2880" EngInitMin="0" EngInitMax="0" SkillID1="1252" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3292" Name="Mật tịch Chưởng Cái Bang (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chưởng Cái Bang (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="13" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1253" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3293" Name="Mật tịch Côn Cái Bang (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Côn Cái Bang (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="14" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="2400" StrInitMax="3600" DexInitMin="960" DexInitMax="1440" VitInitMin="1440" VitInitMax="2160" EngInitMin="0" EngInitMax="0" SkillID1="1254" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3294" Name="Mật tịch Chiến Nhẫn (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chiến Nhẫn (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="15" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1440" StrInitMax="2160" DexInitMin="960" DexInitMax="1440" VitInitMin="2400" VitInitMax="3600" EngInitMin="0" EngInitMax="0" SkillID1="1255" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3295" Name="Mật tịch Ma Nhẫn (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Ma Nhẫn (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="16" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1256" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3296" Name="Mật tịch Khí Võ Đang (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Khí Võ Đang (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="17" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1257" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3297" Name="Mật tịch Kiếm Võ Đang (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Võ Đang (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="18" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="480" DexInitMax="720" VitInitMin="480" VitInitMax="720" EngInitMin="1920" EngInitMax="2880" SkillID1="1258" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3298" Name="Mật tịch Đao Côn Lôn (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Đao Côn Lôn (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="19" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="2400" StrInitMax="3600" DexInitMin="960" DexInitMax="1440" VitInitMin="1440" VitInitMax="2160" EngInitMin="0" EngInitMax="0" SkillID1="1259" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3299" Name="Mật tịch Kiếm Côn Lôn (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Côn Lôn (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="20" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1260" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3300" Name="Mật tịch Chùy Minh Giáo (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chùy Minh Giáo (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="21" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="960" DexInitMax="1440" VitInitMin="1920" VitInitMax="2880" EngInitMin="0" EngInitMax="0" SkillID1="1261" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3301" Name="Mật tịch Kiếm Minh Giáo (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Kiếm Minh Giáo (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="22" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1262" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3302" Name="Mật tịch Chỉ Đoàn Thị (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Chỉ Đoàn Thị (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="23" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="1920" StrInitMax="2880" DexInitMin="960" DexInitMax="1440" VitInitMin="1920" VitInitMax="2880" EngInitMin="0" EngInitMax="0" SkillID1="1263" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3303" Name="Mật tịch Khí Đoàn Thị (cao)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mật tịch Khí Đoàn Thị (cao)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="14" ParticularType="24" Level="3" SuiteID="0" Icon="book_gaojimiji" View="book_gaojimiji_s" Intro="" Help="" ObjID="33" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="0" ItemValue="100000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="3" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <BookAttr StrInitMin="0" StrInitMax="0" DexInitMin="0" DexInitMax="0" VitInitMin="2400" VitInitMax="3600" EngInitMin="2400" EngInitMax="3600" SkillID1="1264" SkillID2="-1" SkillID3="-1" SkillID4="-1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

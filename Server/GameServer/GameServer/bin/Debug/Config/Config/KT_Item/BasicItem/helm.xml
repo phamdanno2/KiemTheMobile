@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="3399" Name="Thanh Đồng Thúc Phát" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Đồng Thúc Phát" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="1" SuiteID="0" Icon="helm_m_kui_201" View="helm_m_kui_201_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="11" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="1" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="9" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3400" Name="Tinh Thiết Thúc Phát" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tinh Thiết Thúc Phát" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="2" SuiteID="0" Icon="helm_m_kui_202" View="helm_m_kui_202_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="11" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="6" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="19" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3401" Name="Song Diện Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Song Diện Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="3" SuiteID="0" Icon="helm_m_kui_203" View="helm_m_kui_203_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="12" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="11" BasicPropPA1Max="15" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="29" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3402" Name="Minh Quang Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Minh Quang Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="4" SuiteID="0" Icon="helm_m_kui_204" View="helm_m_kui_204_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="12" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="16" BasicPropPA1Max="20" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="39" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3403" Name="Tế Lân Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tế Lân Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="5" SuiteID="0" Icon="helm_m_kui_205" View="helm_m_kui_205_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="13" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="21" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="49" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3404" Name="Lôi Trì Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Lôi Trì Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="6" SuiteID="0" Icon="helm_m_kui_206" View="helm_m_kui_206_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="13" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="26" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="59" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3405" Name="Dị Thần Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Dị Thần Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="7" SuiteID="0" Icon="helm_m_kui_207" View="helm_m_kui_207_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="14" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="31" BasicPropPA1Max="35" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="69" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="80" EnhMAPA1Max="80" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="160" EnhMAPA1Max="160" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3406" Name="Thôn Long Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thôn Long Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="8" SuiteID="0" Icon="helm_m_kui_208" View="helm_m_kui_208_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="14" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="36" BasicPropPA1Max="40" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="79" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="22" EnhMAPA1Max="22" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="90" EnhMAPA1Max="90" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="170" EnhMAPA1Max="170" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3407" Name="Vũ Linh Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Vũ Linh Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="9" SuiteID="0" Icon="helm_m_kui_209" View="helm_m_kui_209_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="15" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="41" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="89" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="24" EnhMAPA1Max="24" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="6" EnhMAPA1Max="6" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="100" EnhMAPA1Max="100" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="180" EnhMAPA1Max="180" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3408" Name="Yểm Nhật Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Yểm Nhật Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="2" Level="10" SuiteID="0" Icon="helm_m_kui_210" View="helm_m_kui_210_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="15" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="46" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="99" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="26" EnhMAPA1Max="26" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="7" EnhMAPA1Max="7" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="120" EnhMAPA1Max="120" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="200" EnhMAPA1Max="200" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="damage_poison_resist" EnhMAPA1Min="150" EnhMAPA1Max="150" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="state_weak_resistrate" EnhMAPA1Min="175" EnhMAPA1Max="175" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <ActiveBySuit StrTimes="15" StrMAName="state_weak_resistrate" StrMAPA1Min="80" StrMAPA1Max="80" StrMAPA2Min="0" StrMAPA2Max="0" StrMAPA3Min="0" StrMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3409" Name="Nhược Thủy Lạp" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nhược Thủy Lạp" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="1" SuiteID="0" Icon="helm_m_pige_301" View="helm_m_pige_301_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="6" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="1" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="9" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3410" Name="Mãn Nguyệt Lạp" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Mãn Nguyệt Lạp" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="2" SuiteID="0" Icon="helm_m_pige_302" View="helm_m_pige_302_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="6" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="6" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="19" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3411" Name="Huyền Sa Cân" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Huyền Sa Cân" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="3" SuiteID="0" Icon="helm_m_pige_303" View="helm_m_pige_303_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="7" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="11" BasicPropPA1Max="15" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="29" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3412" Name="Hoa Dương Cân" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hoa Dương Cân" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="4" SuiteID="0" Icon="helm_m_pige_304" View="helm_m_pige_304_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="7" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="16" BasicPropPA1Max="20" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="39" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3413" Name="Phi Vân Thúc Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phi Vân Thúc Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="5" SuiteID="0" Icon="helm_m_pige_305" View="helm_m_pige_305_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="8" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="21" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="49" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3414" Name="Thần Mộc Thúc Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thần Mộc Thúc Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="6" SuiteID="0" Icon="helm_m_pige_306" View="helm_m_pige_306_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="8" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="26" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="59" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3415" Name="Thanh Sát Phát Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Sát Phát Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="7" SuiteID="0" Icon="helm_m_pige_307" View="helm_m_pige_307_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="9" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="31" BasicPropPA1Max="35" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="69" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="80" EnhMAPA1Max="80" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="160" EnhMAPA1Max="160" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3416" Name="Sơn Quỷ Phát Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Sơn Quỷ Phát Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="8" SuiteID="0" Icon="helm_m_pige_308" View="helm_m_pige_308_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="9" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="36" BasicPropPA1Max="40" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="79" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="22" EnhMAPA1Max="22" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="90" EnhMAPA1Max="90" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="170" EnhMAPA1Max="170" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3417" Name="Bách Độc Phát Kết" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bách Độc Phát Kết" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="9" SuiteID="0" Icon="helm_m_pige_309" View="helm_m_pige_309_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="10" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="41" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="89" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="24" EnhMAPA1Max="24" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="6" EnhMAPA1Max="6" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="100" EnhMAPA1Max="100" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="180" EnhMAPA1Max="180" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3418" Name="Tu La Phát Kết" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tu La Phát Kết" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="3" Level="10" SuiteID="0" Icon="helm_m_pige_310" View="helm_m_pige_310_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="10" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="46" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="99" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="26" EnhMAPA1Max="26" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="7" EnhMAPA1Max="7" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="120" EnhMAPA1Max="120" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="200" EnhMAPA1Max="200" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="damage_poison_resist" EnhMAPA1Min="150" EnhMAPA1Max="150" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="state_weak_resistrate" EnhMAPA1Min="175" EnhMAPA1Max="175" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <ActiveBySuit StrTimes="15" StrMAName="state_weak_resistrate" StrMAPA1Min="80" StrMAPA1Max="80" StrMAPA2Min="0" StrMAPA2Max="0" StrMAPA3Min="0" StrMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3419" Name="Nho Cân" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nho Cân" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="1" SuiteID="0" Icon="helm_m_bupi_401" View="helm_m_bupi_401_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="1" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="9" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3420" Name="Tiêu Dao Cân" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tiêu Dao Cân" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="2" SuiteID="0" Icon="helm_m_bupi_402" View="helm_m_bupi_402_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="6" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="19" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3421" Name="Kim Phong Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Phong Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="3" SuiteID="0" Icon="helm_m_bupi_403" View="helm_m_bupi_403_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="2" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="11" BasicPropPA1Max="15" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="29" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3422" Name="Tiến Hiền Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tiến Hiền Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="4" SuiteID="0" Icon="helm_m_bupi_404" View="helm_m_bupi_404_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="2" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="16" BasicPropPA1Max="20" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="39" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3423" Name="Việt Mỹ Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Việt Mỹ Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="5" SuiteID="0" Icon="helm_m_bupi_405" View="helm_m_bupi_405_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="5" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="21" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="49" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3424" Name="Lang Nha Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Lang Nha Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="6" SuiteID="0" Icon="helm_m_bupi_406" View="helm_m_bupi_406_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="5" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="26" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="59" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3425" Name="Tuyệt Ngọc Thúc Ngạch" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tuyệt Ngọc Thúc Ngạch" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="7" SuiteID="0" Icon="helm_m_bupi_407" View="helm_m_bupi_407_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="4" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="31" BasicPropPA1Max="35" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="69" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="80" EnhMAPA1Max="80" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="160" EnhMAPA1Max="160" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3426" Name="Tử Kim Thúc Ngạch" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tử Kim Thúc Ngạch" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="8" SuiteID="0" Icon="helm_m_bupi_408" View="helm_m_bupi_408_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="4" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="36" BasicPropPA1Max="40" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="79" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="22" EnhMAPA1Max="22" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="90" EnhMAPA1Max="90" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="170" EnhMAPA1Max="170" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3427" Name="Thất Bảo Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thất Bảo Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="9" SuiteID="0" Icon="helm_m_bupi_409" View="helm_m_bupi_409_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="3" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="41" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="89" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="24" EnhMAPA1Max="24" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="6" EnhMAPA1Max="6" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="100" EnhMAPA1Max="100" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="180" EnhMAPA1Max="180" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3428" Name="Thông Thiên Phát Quán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thông Thiên Phát Quán" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="4" Level="10" SuiteID="0" Icon="helm_m_bupi_410" View="helm_m_bupi_410_s" Intro="" Help="" ObjID="18" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="3" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="46" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="99" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="0" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="26" EnhMAPA1Max="26" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="7" EnhMAPA1Max="7" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="120" EnhMAPA1Max="120" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="200" EnhMAPA1Max="200" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="damage_poison_resist" EnhMAPA1Min="150" EnhMAPA1Max="150" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="state_weak_resistrate" EnhMAPA1Min="175" EnhMAPA1Max="175" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <ActiveBySuit StrTimes="15" StrMAName="state_weak_resistrate" StrMAPA1Min="80" StrMAPA1Max="80" StrMAPA2Min="0" StrMAPA2Max="0" StrMAPA3Min="0" StrMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3429" Name="Khinh Sa Ngọc Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Khinh Sa Ngọc Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="1" SuiteID="0" Icon="helm_f_kui_601" View="helm_f_kui_601_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="11" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="1" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="9" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3430" Name="Lục Điệp Ngọc Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Lục Điệp Ngọc Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="2" SuiteID="0" Icon="helm_f_kui_602" View="helm_f_kui_602_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="11" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="6" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="19" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3431" Name="Phỉ Thúy Trâm" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phỉ Thúy Trâm" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="3" SuiteID="0" Icon="helm_f_kui_603" View="helm_f_kui_603_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="12" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="11" BasicPropPA1Max="15" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="29" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3432" Name="Thiên Phong Trâm" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thiên Phong Trâm" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="4" SuiteID="0" Icon="helm_f_kui_604" View="helm_f_kui_604_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="12" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="16" BasicPropPA1Max="20" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="39" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3433" Name="Vân Mộng Trâm" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Vân Mộng Trâm" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="5" SuiteID="0" Icon="helm_f_kui_605" View="helm_f_kui_605_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="13" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="21" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="49" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3434" Name="Hý Thủy Trâm" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hý Thủy Trâm" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="6" SuiteID="0" Icon="helm_f_kui_606" View="helm_f_kui_606_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="13" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="26" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="59" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3435" Name="Long Lân Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Long Lân Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="7" SuiteID="0" Icon="helm_f_kui_607" View="helm_f_kui_607_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="14" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="31" BasicPropPA1Max="35" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="69" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="80" EnhMAPA1Max="80" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="160" EnhMAPA1Max="160" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3436" Name="Phượng Miên Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phượng Miên Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="8" SuiteID="0" Icon="helm_f_kui_608" View="helm_f_kui_608_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="14" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="36" BasicPropPA1Max="40" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="79" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="22" EnhMAPA1Max="22" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="90" EnhMAPA1Max="90" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="170" EnhMAPA1Max="170" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3437" Name="Kim Phượng Triển Sí Khôi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Phượng Triển Sí Khôi" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="9" SuiteID="0" Icon="helm_f_kui_609" View="helm_f_kui_609_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="15" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="41" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="89" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="24" EnhMAPA1Max="24" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="6" EnhMAPA1Max="6" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="100" EnhMAPA1Max="100" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="180" EnhMAPA1Max="180" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3438" Name="Song Phượng Triều Thiên Quan" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Song Phượng Triều Thiên Quan" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="6" Level="10" SuiteID="0" Icon="helm_f_kui_610" View="helm_f_kui_610_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="15" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="46" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="99" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="26" EnhMAPA1Max="26" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="7" EnhMAPA1Max="7" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="120" EnhMAPA1Max="120" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="200" EnhMAPA1Max="200" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="damage_poison_resist" EnhMAPA1Min="150" EnhMAPA1Max="150" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="state_weak_resistrate" EnhMAPA1Min="175" EnhMAPA1Max="175" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <ActiveBySuit StrTimes="15" StrMAName="state_weak_resistrate" StrMAPA1Min="80" StrMAPA1Max="80" StrMAPA2Min="0" StrMAPA2Max="0" StrMAPA3Min="0" StrMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3439" Name="Hoàng Bố Phát Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hoàng Bố Phát Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="1" SuiteID="0" Icon="helm_f_pige_701" View="helm_f_pige_701_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="6" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="1" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="9" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3440" Name="Lục Ngọc Phát Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Lục Ngọc Phát Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="2" SuiteID="0" Icon="helm_f_pige_702" View="helm_f_pige_702_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="6" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="6" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="19" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3441" Name="Bích Thủy Phát Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bích Thủy Phát Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="3" SuiteID="0" Icon="helm_f_pige_703" View="helm_f_pige_703_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="7" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="11" BasicPropPA1Max="15" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="29" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3442" Name="Thanh Lam Phát Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Lam Phát Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="4" SuiteID="0" Icon="helm_f_pige_704" View="helm_f_pige_704_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="7" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="16" BasicPropPA1Max="20" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="39" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3443" Name="Anh Vũ Phát Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Anh Vũ Phát Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="5" SuiteID="0" Icon="helm_f_pige_705" View="helm_f_pige_705_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="8" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="21" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="49" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3444" Name="Bạch Hồng Phát Đái" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bạch Hồng Phát Đái" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="6" SuiteID="0" Icon="helm_f_pige_706" View="helm_f_pige_706_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="8" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="26" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="59" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3445" Name="Xích Đồn Diện Tráo" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Xích Đồn Diện Tráo" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="7" SuiteID="0" Icon="helm_f_pige_707" View="helm_f_pige_707_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="9" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="31" BasicPropPA1Max="35" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="69" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="80" EnhMAPA1Max="80" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="160" EnhMAPA1Max="160" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3446" Name="Điêu Bì Diện Tráo" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Điêu Bì Diện Tráo" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="8" SuiteID="0" Icon="helm_f_pige_708" View="helm_f_pige_708_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="9" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="36" BasicPropPA1Max="40" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="79" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="22" EnhMAPA1Max="22" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="90" EnhMAPA1Max="90" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="170" EnhMAPA1Max="170" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3447" Name="Long Huyết Diện Tráo" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Long Huyết Diện Tráo" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="9" SuiteID="0" Icon="helm_f_pige_709" View="helm_f_pige_709_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="10" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="41" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="89" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="24" EnhMAPA1Max="24" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="6" EnhMAPA1Max="6" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="100" EnhMAPA1Max="100" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="180" EnhMAPA1Max="180" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3448" Name="Huyền Tê Diện Tráo" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Huyền Tê Diện Tráo" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="7" Level="10" SuiteID="0" Icon="helm_f_pige_710" View="helm_f_pige_710_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="10" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="46" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="99" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="26" EnhMAPA1Max="26" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="7" EnhMAPA1Max="7" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="120" EnhMAPA1Max="120" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="200" EnhMAPA1Max="200" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="damage_poison_resist" EnhMAPA1Min="150" EnhMAPA1Max="150" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="state_weak_resistrate" EnhMAPA1Min="175" EnhMAPA1Max="175" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <ActiveBySuit StrTimes="15" StrMAName="state_weak_resistrate" StrMAPA1Min="80" StrMAPA1Max="80" StrMAPA2Min="0" StrMAPA2Max="0" StrMAPA3Min="0" StrMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3449" Name="Phát Thoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phát Thoa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="1" SuiteID="0" Icon="helm_f_bupi_801" View="helm_f_bupi_801_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="3" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="1" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="9" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3450" Name="Ngân Linh Thoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngân Linh Thoa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="2" SuiteID="0" Icon="helm_f_bupi_802" View="helm_f_bupi_802_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="3" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="6" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="19" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3451" Name="Thú Cốt Thoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thú Cốt Thoa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="3" SuiteID="0" Icon="helm_f_bupi_803" View="helm_f_bupi_803_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="2" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="11" BasicPropPA1Max="15" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="29" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3452" Name="Thanh Tinh Thoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Tinh Thoa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="4" SuiteID="0" Icon="helm_f_bupi_804" View="helm_f_bupi_804_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="2" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="16" BasicPropPA1Max="20" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="39" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3453" Name="Kim Phượng Thoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Phượng Thoa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="5" SuiteID="0" Icon="helm_f_bupi_805" View="helm_f_bupi_805_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="4" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="21" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="49" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3454" Name="Đoạt Hồn Thoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đoạt Hồn Thoa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="6" SuiteID="0" Icon="helm_f_bupi_806" View="helm_f_bupi_806_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="4" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="26" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="59" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3455" Name="Chu Tước Phát Kết" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Chu Tước Phát Kết" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="7" SuiteID="0" Icon="helm_f_bupi_807" View="helm_f_bupi_807_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="5" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="31" BasicPropPA1Max="35" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="69" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="80" EnhMAPA1Max="80" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="160" EnhMAPA1Max="160" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3456" Name="Minh Điệp Phát Kết" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Minh Điệp Phát Kết" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="8" SuiteID="0" Icon="helm_f_bupi_808" View="helm_f_bupi_808_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="5" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="36" BasicPropPA1Max="40" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="79" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="22" EnhMAPA1Max="22" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="5" EnhMAPA1Max="5" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="90" EnhMAPA1Max="90" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="170" EnhMAPA1Max="170" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3457" Name="Phong Lôi Phát Kết" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phong Lôi Phát Kết" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="9" SuiteID="0" Icon="helm_f_bupi_809" View="helm_f_bupi_809_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="41" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="89" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="24" EnhMAPA1Max="24" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="6" EnhMAPA1Max="6" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="100" EnhMAPA1Max="100" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="180" EnhMAPA1Max="180" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3458" Name="Trường Sinh Phát Kết" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Trường Sinh Phát Kết" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="9" ParticularType="8" Level="10" SuiteID="0" Icon="helm_f_bupi_810" View="helm_f_bupi_810_s" Intro="" Help="" ObjID="19" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="-1" ResFemale="1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="damage_series_resist" BasicPropPA1Min="46" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="-1" BasicPropPA3Max="-1" Index="1" />
+    <ListReqProp ReqPropType="5" ReqPropValue="99" Index="1" />
+    <ListReqProp ReqPropType="8" ReqPropValue="1" Index="2" />
+    <ListEnhance EnhTimes="4" EnhMAName="lifereplenish_v" EnhMAPA1Min="26" EnhMAPA1Max="26" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="lifemax_p" EnhMAPA1Min="7" EnhMAPA1Max="7" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="lifemax_v" EnhMAPA1Min="120" EnhMAPA1Max="120" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="state_weak_resisttime" EnhMAPA1Min="200" EnhMAPA1Max="200" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="damage_poison_resist" EnhMAPA1Min="150" EnhMAPA1Max="150" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="state_weak_resistrate" EnhMAPA1Min="175" EnhMAPA1Max="175" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <ActiveBySuit StrTimes="15" StrMAName="state_weak_resistrate" StrMAPA1Min="80" StrMAPA1Max="80" StrMAPA2Min="0" StrMAPA2Max="0" StrMAPA3Min="0" StrMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

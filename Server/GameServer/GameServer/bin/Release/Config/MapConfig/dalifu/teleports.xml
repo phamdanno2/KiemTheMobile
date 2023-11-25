@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Nhĩ Hải Ma Nham[cấp 55]" Key="1" To="91" ToX="6589" ToY="1236" X="9830" Y="5590" Radius="50" />
+	<Teleport Code="2" Tip="Điểm Thương Sơn[cấp 65]" Key="2" To="98" ToX="6472" ToY="564" X="950" Y="4890" Radius="50" /> 
+	<Teleport Code="3" Tip="Thạch Cổ Trấn" Key="3" To="6" ToX="3270" ToY="4530" X="9310" Y="950" Radius="50" />
+	<Teleport Code="4" Tip="Đại Lý Đoàn Thị" Key="4" To="19" ToX="1397" ToY="4629" X="1754" Y="413" Radius="50" />
+	
+	
+	</Teleports>
+</Map>

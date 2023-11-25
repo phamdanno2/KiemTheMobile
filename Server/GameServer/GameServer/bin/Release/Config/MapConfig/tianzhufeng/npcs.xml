@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="412" Name="Lộ Hiểu Nhiên" MinimapName="" VisibleOnMinimap="1" Title="" X="6038" Y="2600" Dir="1" ScriptID="157"/>
+    
+  </NPCs>
+</Map>

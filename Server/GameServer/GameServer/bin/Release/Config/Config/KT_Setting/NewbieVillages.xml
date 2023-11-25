@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NewbieVillage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Village ID="1" PosX="3230"  PosY="3410" />
+	<Village ID="2" PosX="6970"  PosY="3130" />
+	<Village ID="3" PosX="3350"  PosY="3790" />
+	<!--<Village ID="4" PosX="5430"  PosY="3150" />-->
+	<Village ID="5" PosX="5090"  PosY="3270" />
+	<Village ID="6" PosX="2232"  PosY="2530" />
+	<Village ID="7" PosX="5370"  PosY="4010" />
+	<Village ID="8" PosX="5090"  PosY="3670" />
+</NewbieVillage>

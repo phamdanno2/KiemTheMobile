@@ -1,0 +1,7 @@
+2021-07-01 21:14:42: ##exception##
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tmsk.Tools.Tools.ConfigHelper.GetElementAttributeValue(XElement xml, String name, String attrName, String attrValue, String attribute, String defVal) in C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\Tmsk.Contract\Tools\ConfigHelper.cs:line 71   at KF.Remoting.KuaFuServerManager.LoadConfig() in C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Remoting\KuaFuServerManager.cs:line 233
+   at KF.Remoting.KuaFuServerManager..cctor() in C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Remoting\KuaFuServerManager.cs:line 133
+   at KF.Remoting.KuaFuServerManager.CheckConfig()
+   at KF.Hosting.HuanYingSiYuan.Program.Main(String[] args) in C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\Program.cs:line 128
+

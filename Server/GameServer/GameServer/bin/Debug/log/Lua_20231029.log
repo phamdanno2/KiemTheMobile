@@ -1,0 +1,112 @@
+2023-10-29 04:25:44: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:25:46: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:25:47: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:25:47: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:25:48: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:33: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:34: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:35: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:36: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:36: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:37: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:37: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:38: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406
+2023-10-29 04:26:39: [ERROR] Execute Lua Script function got error, Dir = 'NPC/BietKinhPhu/ThuongGiaTieuDao.lua', Function = 'Scripts[39]:OnSelection'
+Lua Message: chunk_16:(114,10-83): attempt to index a nil value
+Exception: MoonSharp.Interpreter.ScriptRuntimeException: attempt to index a nil value
+   at MoonSharp.Interpreter.Execution.VM.Processor.ExecIndex(Instruction i, Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 1349
+   at MoonSharp.Interpreter.Execution.VM.Processor.Processing_Loop(Int32 instructionPtr) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor_InstructionLoop.cs:line 279
+   at MoonSharp.Interpreter.Execution.VM.Processor.Call(DynValue function, DynValue[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\Execution\VM\Processor\Processor.cs:line 67
+   at MoonSharp.Interpreter.Closure.Call(Object[] args) in Z:\git\my\moonsharp\src\MoonSharp.Interpreter\DataTypes\Closure.cs:line 91
+   at GameServer.KiemThe.Entities.KTLuaScript.DoExecuteFunction(Script luaEnv, LuaScript script, String functionName, Object[] param) in C:\Gs_HaoKiemTkim_Open\GameServer\KTGameServer\GameServer\KiemThe\LuaSystem\KTLuaScript.cs:line 406

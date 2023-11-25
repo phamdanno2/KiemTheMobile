@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="3039" PosY="2707" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="3327" PosY="2512" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="3544" PosY="2338" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="3222" PosY="2239" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="2977" PosY="2054" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="3120" PosY="2410" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="2923" PosY="2538" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1552" Name="Địa Căn Thảo" PosX="2881" PosY="2288" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+
+	</GrowPoints>
+</Map>

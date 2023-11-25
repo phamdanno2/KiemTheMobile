@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>	       
+	 <Teleport Code="1" Tip="Thái Thạch Cơ" Key="1" To="92" ToX="7216" ToY="5887" X="2090" Y="1670" Radius="50" />
+	 <Teleport Code="2" Tip="Cửu Nghi Khê" Key="2" To="106" ToX="11250" ToY="7730" X="2210" Y="670" Radius="50" />
+	 <Teleport Code="3" Tip="Long Tuyền Thôn" Key="3" To="7" ToX="9270" ToY="2690" X="13370" Y="890" Radius="50" />
+	 <Teleport Code="4" Tip="Hổ Khâu Kiếm Trì" Key="4" To="96" ToX="5383" ToY="1014" X="13850" Y="7430" Radius="50" />
+	</Teleports>
+</Map>

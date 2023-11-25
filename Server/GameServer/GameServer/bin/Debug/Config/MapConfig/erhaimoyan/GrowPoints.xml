@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	
+	 <GrowPoint Code="1632" Name="Huyết Phong Đằng" PosX="3086" PosY="3890" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1632" Name="Huyết Phong Đằng" PosX="3418" PosY="4039" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1632" Name="Huyết Phong Đằng" PosX="3508" PosY="3738" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 
+	 
+	</GrowPoints>
+</Map>

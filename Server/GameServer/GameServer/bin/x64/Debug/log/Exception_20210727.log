@@ -1,0 +1,16 @@
+2021-07-27 12:18:15: ##exception##
+Exception [1]:
+Can't find files: Policy.xml
+
+ Message: CurrentDomain_UnhandledException
+    at GameServer.Program.InitServer() in D:\Dropbox\Client NEW\GameServer\KTGameServer\GameServer\Program.cs:line 986
+   at GameServer.Program.OnStartServer() in D:\Dropbox\Client NEW\GameServer\KTGameServer\GameServer\Program.cs:line 359
+   at GameServer.Program.Main(String[] args) in D:\Dropbox\Client NEW\GameServer\KTGameServer\GameServer\Program.cs:line 288
+2021-07-27 12:20:35: ##exception##
+Exception [1]:
+Can't find files: Policy.xml
+
+ Message: CurrentDomain_UnhandledException
+    at GameServer.Program.InitServer() in D:\Dropbox\Client NEW\GameServer\KTGameServer\GameServer\Program.cs:line 986
+   at GameServer.Program.OnStartServer() in D:\Dropbox\Client NEW\GameServer\KTGameServer\GameServer\Program.cs:line 359
+   at GameServer.Program.Main(String[] args) in D:\Dropbox\Client NEW\GameServer\KTGameServer\GameServer\Program.cs:line 288

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+   <NPC Code="3230" Name="Liễu Khoát" MinimapName="" VisibleOnMinimap="1" Title="&lt;color=green&gt;Tiệm thuốc&lt;/color&gt;" X="2502" Y="1367" Dir="1" ScriptID="27"/>
+  </NPCs>
+</Map>

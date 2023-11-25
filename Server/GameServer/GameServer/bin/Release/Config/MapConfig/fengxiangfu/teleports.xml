@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	 <Teleport Code="1" Tip="Đại Tán Quan [cấp 55]" Key="1" To="87" ToX="1727" ToY="4661" X="3785" Y="951" Radius="50" />
+     <Teleport Code="2" Tip="Cư Diên Trạch [cấp 65]" Key="2" To="94" ToX="4371" ToY="752" X="13900" Y="7691" Radius="50" />
+	 <Teleport Code="3" Tip="Mê Cung Sa Mạc [cấp 75]" Key="3" To="101" ToX="2500" ToY="644" X="15261" Y="7175" Radius="50" />
+	 <Teleport Code="4" Tip="Long Môn Trấn" Key="4" To="2" ToX="4064" ToY="763" X="2797" Y="7015" Radius="50" />
+	 <Teleport Code="5" Tip="Côn Lôn Phái" Key="5" To="12" ToX="5724" ToY="617" X="635" Y="5258" Radius="50" />
+		
+	
+	
+		
+	</Teleports>
+</Map>

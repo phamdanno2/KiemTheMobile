@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+  
+    <NPC Code="481"  Name="Đường Khuyết" MinimapName="" VisibleOnMinimap="1" Title="" X="6051" Y="3696" Dir="1" ScriptID="157"/>
+	<NPC Code="489"  Name="Ân Dã" MinimapName="" VisibleOnMinimap="1" Title="" X="6894" Y="4814" Dir="1" ScriptID="157"/>
+	<NPC Code="490"  Name="Hạ Băng Trần" MinimapName="" VisibleOnMinimap="1" Title="" X="6635" Y="4930" Dir="1" ScriptID="157"/>	
+	<NPC Code="493"  Name="Đường Phi" MinimapName="" VisibleOnMinimap="1" Title="" X="6399" Y="5149" Dir="7" ScriptID="157"/>
+	<NPC Code="495"  Name="Đường Trọng Lâu" MinimapName="" VisibleOnMinimap="1" Title="" X="6603" Y="5260" Dir="7" ScriptID="157"/>
+	<NPC Code="496"  Name="Đường Trọng Lam" MinimapName="" VisibleOnMinimap="1" Title="" X="6961" Y="5406" Dir="7" ScriptID="157"/>	
+    <NPC Code="492"  Name="Đường Ngộ" MinimapName="" VisibleOnMinimap="1" Title="" X="6033" Y="4890" Dir="5" ScriptID="157"/>
+	<NPC Code="497"  Name="Đường Như" MinimapName="" VisibleOnMinimap="1" Title="" X="6163" Y="4777" Dir="5" ScriptID="157"/>
+	<NPC Code="494"  Name="Đường Vũ" MinimapName="" VisibleOnMinimap="1" Title="" X="7150" Y="4795" Dir="0" ScriptID="157"/>
+	<NPC Code="498"  Name="Động Hư Chân Nhân" MinimapName="" VisibleOnMinimap="1" Title="" X="7477" Y="4906" Dir="7" ScriptID="157"/>
+	
+  </NPCs>
+</Map>

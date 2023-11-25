@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="3578" Name="Rương cũ nát" MinimapName="" VisibleOnMinimap="1" Title="" X="4341" Y="3456" Dir="1" ScriptID="157"/>	
+    <NPC Code="466" Name="Phó Thông" MinimapName="" VisibleOnMinimap="1" Title="" X="4639" Y="3404" Dir="1" ScriptID="157"/>
+    <NPC Code="464" Name="Lý Nguyên Khải" MinimapName="" VisibleOnMinimap="1" Title="" X="4116" Y="3199" Dir="7" ScriptID="157"/>
+	<NPC Code="280" Name="Ngô Hy" MinimapName="" VisibleOnMinimap="1" Title="" X="2877" Y="2150" Dir="7" ScriptID="157"/>
+	<NPC Code="467" Name="Vô Niệm Sư Thái" MinimapName="" VisibleOnMinimap="1" Title="" X="2555" Y="2022" Dir="0" ScriptID="157"/>
+	<NPC Code="463" Name="Vô Tâm Sư Thái" MinimapName="" VisibleOnMinimap="1" Title="" X="2196" Y="2050" Dir="0" ScriptID="157"/>
+  </NPCs>
+</Map>

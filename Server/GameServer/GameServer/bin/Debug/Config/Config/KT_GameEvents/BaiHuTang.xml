@@ -1,0 +1,274 @@
+<!-- Định nghĩa Bạch Hổ Đường -->
+<BaiHuTang ID="10">
+	<!-- Sự kiện chuẩn bị -->
+	<Prepare>
+		<Activity ActivityID="100" ActivityLevel="80" MapIDs="226;227;228;229;234;235;236;237" />
+	</Prepare>
+	
+	<!-- Bạch Hổ Đường 1 -->
+	<Round1>
+		<!-- Uy danh, danh vọng khi giết Boss -->
+		<ReputeInfo GuildKillBossPrestige="5" OtherPrestige="2" GuildKillBossRepute="4" OtherRepute="1" />
+	
+		<Activity ActivityID="101" ActivityLevel="80" MapIDs="226;227;228;229" />
+		<Activity ActivityID="106" ActivityLevel="120" MapIDs="234;235;236;237" />
+		
+		<Monsters>
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="969" PosY="1287" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="926" PosY="1488" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1117" PosY="1603" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1148" PosY="1433" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1146" PosY="1170" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1331" PosY="1076" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1361" PosY="1296" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1447" PosY="1576" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1497" PosY="1820" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1749" PosY="1963" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1800" PosY="1765" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1843" PosY="1539" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1897" PosY="1299" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1919" PosY="1081" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1919" PosY="890" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1919" PosY="715" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2241" PosY="571" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2269" PosY="829" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2449" PosY="974" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2561" PosY="753" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2568" PosY="533" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2965" PosY="494" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2953" PosY="747" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2985" PosY="991" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3274" PosY="797" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3414" PosY="642" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3590" PosY="839" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3412" PosY="1139" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3796" PosY="932" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3633" PosY="1318" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3977" PosY="1137" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="4384" PosY="1168" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3687" PosY="1546" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3973" PosY="1657" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="4352" PosY="1486" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3399" PosY="1756" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3507" PosY="1965" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3205" PosY="2100" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2907" PosY="1917" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2760" PosY="2278" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2569" PosY="2009" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2359" PosY="2197" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2380" PosY="1920" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1977" PosY="2026" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2146" PosY="1823" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1811" PosY="1939" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="1873" PosY="1703" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2695" PosY="1584" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2861" PosY="1519" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="3054" PosY="1436" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2878" PosY="1328" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2682" PosY="1448" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2498" PosY="1561" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2290" PosY="1450" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2480" PosY="1346" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="101_2660;106_2662;110_3683" Name="" Title="" PosX="2685" PosY="1234" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+		</Monsters>
+		
+		<Boss IDs="101_2661;106_2663;110_3684" Name="" Title="" RandomPos="2684_1441;2019_1810;1969_943;3432_974;3545_1794" BaseHP="10000" HPIncreaseEachLevel="100000" AIType="3" SpawnAfter="300000" AIScriptID="100000" />
+		
+		<Teleport ID="5340" Name="Bạch Hổ Đường [Tầng 2]" PosX="4240" PosY="2116" Radius="100" />
+		
+		<OutMapInfo>
+			<Map FromMapID="226" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="227" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="228" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="229" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			
+			<Map FromMapID="234" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="235" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="236" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="237" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+		</OutMapInfo>
+		
+		<NextMapInfo>
+			<Map FromMapID="226" NextMapID="230" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="227" NextMapID="231" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="228" NextMapID="230" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="229" NextMapID="231" NextPosX="1449" NextPosY="821" />
+			
+			<Map FromMapID="234" NextMapID="238" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="235" NextMapID="239" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="236" NextMapID="238" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="237" NextMapID="239" NextPosX="1449" NextPosY="821" />
+		</NextMapInfo>
+	</Round1>
+	
+	<!-- Bạch Hổ Đường 2 -->
+	<Round2>
+		<!-- Uy danh khi giết Boss -->
+		<ReputeInfo GuildKillBossPrestige="10" OtherPrestige="4" GuildKillBossRepute="7" OtherRepute="1" />
+		
+		<Activity ActivityID="102" ActivityLevel="80" MapIDs="230;231" />
+		<Activity ActivityID="107" ActivityLevel="120" MapIDs="238;239" />
+		
+		<Monsters>
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="969" PosY="1287" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="926" PosY="1488" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1117" PosY="1603" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1148" PosY="1433" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1146" PosY="1170" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1331" PosY="1076" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1361" PosY="1296" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1447" PosY="1576" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1497" PosY="1820" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1749" PosY="1963" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1800" PosY="1765" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1843" PosY="1539" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1897" PosY="1299" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1919" PosY="1081" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1919" PosY="890" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1919" PosY="715" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2241" PosY="571" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2269" PosY="829" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2449" PosY="974" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2561" PosY="753" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2568" PosY="533" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2965" PosY="494" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2953" PosY="747" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2985" PosY="991" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3274" PosY="797" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3414" PosY="642" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3590" PosY="839" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3412" PosY="1139" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3796" PosY="932" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3633" PosY="1318" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3977" PosY="1137" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="4384" PosY="1168" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3687" PosY="1546" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3973" PosY="1657" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="4352" PosY="1486" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3399" PosY="1756" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3507" PosY="1965" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3205" PosY="2100" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2907" PosY="1917" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2760" PosY="2278" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2569" PosY="2009" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2359" PosY="2197" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2380" PosY="1920" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1977" PosY="2026" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2146" PosY="1823" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1811" PosY="1939" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="1873" PosY="1703" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2695" PosY="1584" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2861" PosY="1519" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="3054" PosY="1436" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2878" PosY="1328" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2682" PosY="1448" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2498" PosY="1561" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2290" PosY="1450" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2480" PosY="1346" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="102_2681;107_2683;111_3685" Name="" Title="" PosX="2685" PosY="1234" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+		</Monsters>
+		
+		<Boss IDs="102_2682;107_2684;111_3686" Name="" Title="" RandomPos="2684_1441;2019_1810;1969_943;3432_974;3545_1794" BaseHP="30000" HPIncreaseEachLevel="150000" AIType="3" SpawnAfter="300000" AIScriptID="100000" />
+		
+		<Teleport ID="5340" Name="Bạch Hổ Đường [Tầng 3]" PosX="4240" PosY="2116" Radius="100" />
+		
+		<OutMapInfo>
+			<Map FromMapID="230" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="231" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			
+			<Map FromMapID="238" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+			<Map FromMapID="239" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+		</OutMapInfo>
+		
+		<NextMapInfo>
+			<Map FromMapID="230" NextMapID="232" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="231" NextMapID="232" NextPosX="1449" NextPosY="821" />
+			
+			<Map FromMapID="238" NextMapID="240" NextPosX="1449" NextPosY="821" />
+			<Map FromMapID="239" NextMapID="240" NextPosX="1449" NextPosY="821" />
+		</NextMapInfo>
+	</Round2>
+	
+	<!-- Bạch Hổ Đường 3 -->
+	<Round3>
+		<!-- Uy danh khi giết Boss -->
+		<ReputeInfo GuildKillBossPrestige="15" OtherPrestige="6" GuildKillBossRepute="10" OtherRepute="1" />
+		
+		<Activity ActivityID="103" ActivityLevel="80" MapIDs="232" />
+		<Activity ActivityID="108" ActivityLevel="120" MapIDs="240" />
+		
+		<Monsters>
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="969" PosY="1287" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="926" PosY="1488" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1117" PosY="1603" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1148" PosY="1433" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1146" PosY="1170" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1331" PosY="1076" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1361" PosY="1296" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1447" PosY="1576" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1497" PosY="1820" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1749" PosY="1963" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1800" PosY="1765" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1843" PosY="1539" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1897" PosY="1299" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1919" PosY="1081" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1919" PosY="890" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1919" PosY="715" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2241" PosY="571" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2269" PosY="829" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2449" PosY="974" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2561" PosY="753" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2568" PosY="533" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2965" PosY="494" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2953" PosY="747" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2985" PosY="991" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3274" PosY="797" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3414" PosY="642" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3590" PosY="839" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3412" PosY="1139" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3796" PosY="932" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3633" PosY="1318" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3977" PosY="1137" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="4384" PosY="1168" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3687" PosY="1546" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3973" PosY="1657" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="4352" PosY="1486" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3399" PosY="1756" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3507" PosY="1965" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3205" PosY="2100" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2907" PosY="1917" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2760" PosY="2278" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2569" PosY="2009" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2359" PosY="2197" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2380" PosY="1920" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1977" PosY="2026" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2146" PosY="1823" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1811" PosY="1939" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="1873" PosY="1703" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2695" PosY="1584" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2861" PosY="1519" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="3054" PosY="1436" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2878" PosY="1328" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2682" PosY="1448" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2498" PosY="1561" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2290" PosY="1450" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2480" PosY="1346" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+			<Monster IDs="103_2685;108_2687;112_3687" Name="" Title="" PosX="2685" PosY="1234" BaseHP="1000" HPIncreaseEachLevel="300" AIType="0" RespawnTick="10000" AIScriptID="100000" />
+		</Monsters>
+		
+		<Boss IDs="103_2686;108_2688;112_3688" Name="" Title="" RandomPos="2684_1441;2019_1810;1969_943;3432_974;3545_1794" BaseHP="50000" HPIncreaseEachLevel="200000" AIType="3" SpawnAfter="300000" AIScriptID="100000" />
+		
+		<Teleport ID="5340" Name="Đại điện Bạch Hổ Đường" PosX="4240" PosY="2116" Radius="100" />
+		
+		<OutMapInfo>
+			<Map FromMapID="232" OutMapID="225" OutPosX="4964" OutPosY="2357" />
+			
+			<Map FromMapID="240" OutMapID="233" OutPosX="4964" OutPosY="2357" />
+		</OutMapInfo>
+	</Round3>
+	
+	<!-- Sự kiện kết thúc -->
+	<End>
+		<Activity ActivityID="104" ActivityLevel="0" MapIDs="" />
+	</End>
+</BaiHuTang>

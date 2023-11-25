@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Biện Kinh Phủ" Key="1" To="23" ToX="8350" ToY="6850" X="2250" Y="1430" Radius="50" />
+	  <Teleport Code="2" Tip="Vân Trung Trấn" Key="2" To="1" ToX="8990" ToY="670" X="1070" Y="2690" Radius="50" />	  
+	  <Teleport Code="3" Tip="Hoàng Lăng Kim Quốc 1 [cấp 25] " Key="3" To="47" ToX="3826" ToY="2279" X="6001" Y="5098" Radius="50" />
+	 
+	  
+	</Teleports>
+</Map>

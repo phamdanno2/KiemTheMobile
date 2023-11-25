@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+   <Monster ID="1" Code="2077" X="4077" Y="677" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="2" Code="2077" X="5403" Y="681" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="3" Code="2077" X="2869" Y="741" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="4" Code="2077" X="1077" Y="1023" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="5" Code="2077" X="1339" Y="2603" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="6" Code="2077" X="1566" Y="3333" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="7" Code="2077" X="3589" Y="2387" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="8" Code="2077" X="3596" Y="3137" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />   
+   
+   <Monster ID="9" Code="2078" X="5686" Y="3666" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="10" Code="2078" X="6976" Y="4263" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="11" Code="2078" X="7227" Y="5488" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="12" Code="2078" X="6069" Y="5269" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="13" Code="2078" X="1909" Y="5694" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="14" Code="2078" X="4637" Y="5049" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="15" Code="2078" X="2820" Y="5599" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="16" Code="2078" X="2618" Y="6624" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+
+<!-- HT --> 
+	<Monster ID="22" Code="2973" X="1527" Y="6785" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="23" Code="2973" X="4904" Y="6686" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="24" Code="2973" X="1789" Y="2539" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="25" Code="2973" X="6501" Y="1915" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+<!-- Dương Liễu[Thủy 55] -->
+	<Monster ID="27" Code="2974" X="3337" Y="6869" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="28" Code="2974" X="1638" Y="5061" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="29" Code="2974" X="975" Y="617" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="30" Code="2974" X="3471" Y="595" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="31" Code="2974" X="6749" Y="3521" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	
+   
+   
+    
+  </Monsters>
+</Map>

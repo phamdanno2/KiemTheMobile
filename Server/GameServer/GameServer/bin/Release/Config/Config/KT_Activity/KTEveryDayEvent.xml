@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EveryDayOnLineEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Online nhận thưởng" IsOpen="true">
+  <Item StepID="1" TimeSecs="180">
+    <RollAwardItem ItemID="15003" Number="1" Rate="40" />
+    <RollAwardItem ItemID="15000" Number="2" Rate="30" />
+    <RollAwardItem ItemID="15005" Number="3" Rate="10" />
+    <RollAwardItem ItemID="184" Number="1" Rate="20" />
+  </Item>
+  <Item StepID="2" TimeSecs="600">
+    <RollAwardItem ItemID="15000" Number="2" Rate="40" />
+    <RollAwardItem ItemID="15005" Number="5" Rate="10" />
+    <RollAwardItem ItemID="184" Number="2" Rate="30" />
+    <RollAwardItem ItemID="185" Number="2" Rate="20" />
+  </Item>
+  <Item StepID="3" TimeSecs="1200">
+    <RollAwardItem ItemID="15005" Number="3" Rate="10" />
+    <RollAwardItem ItemID="15000" Number="1" Rate="40" />
+    <RollAwardItem ItemID="184" Number="2" Rate="30" />
+    <RollAwardItem ItemID="186" Number="1" Rate="20" />
+  </Item>
+  <Item StepID="4" TimeSecs="2400">
+    <RollAwardItem ItemID="15000" Number="5" Rate="80" />
+    <RollAwardItem ItemID="15005" Number="3" Rate="10" />
+    <RollAwardItem ItemID="185" Number="2" Rate="8" />
+    <RollAwardItem ItemID="186" Number="1" Rate="2" />
+  </Item>
+</EveryDayOnLineEvent>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1528" Name="Tử Ngọc" PosX="1611" PosY="3865" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1528" Name="Tử Ngọc" PosX="1359" PosY="3935" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1528" Name="Tử Ngọc" PosX="1115" PosY="4030" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1528" Name="Tử Ngọc" PosX="1331" PosY="4110" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1528" Name="Tử Ngọc" PosX="1474" PosY="4026" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	</GrowPoints>
+</Map>

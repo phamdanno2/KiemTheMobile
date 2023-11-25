@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+   
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="2810" Y="2150" Dir="7" ScriptID="12" />
+    <NPC Code="3593" Name="Tẩy Tủy Đại Sư" MinimapName="" VisibleOnMinimap="1" Title="Tẩy Tủy Đại Sư" X="1750" Y="1930" Dir="1" ScriptID="156" />
+    <NPC Code="3594" Name="Thương Nhân Tẩy Tủy Đảo" MinimapName="" VisibleOnMinimap="1" Title="Thương Nhân Tẩy Tủy Đảo" X="1590" Y="2170" Dir="1" ScriptID="27" />
+    <NPC Code="3595" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="Truyền Tống Môn Phái" X="2310" Y="2710" Dir="5" ScriptID="64" />
+	
+  </NPCs>
+</Map>

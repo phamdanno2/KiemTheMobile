@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	TẦN LĂNG
+	- Config: Thiết lập
+		- LimitLevel: Cấp độ tối thiểu vào
+		- DurationPerDay: Thời gian vào tối đa mỗi ngày
+		- NightPearlItemID: ID vật phẩm Tần Lăng Dạ Minh Châu
+		- MonsterLevel: Cấp độ quái
+	- Event: Thông tin sự kiện
+		- Relive: Thông tin điểm hồi sinh
+			- MapID: ID bản đồ hồi sinh
+			- PosX: Vị trí X điểm hồi sinh
+			- PosY: Vị trí Y điểm hồi sinh
+		- Stage: Thông tin tầng
+			- ID: Thứ tự tầng
+			- MapID: ID bản đồ tầng
+			- RequireNightPearl: Yêu cầu số lượng Tần Lăng Dạ Minh Châu mới có thể vào
+			- SafeZones: Danh sách khu an toàn
+				- PosX: Vị trí X
+				- PosY: Vị trí Y
+				- Radius: Bán kính vùng an toàn
+			- NPCs: Danh sách NPC
+				- ID: ID NPC
+				- PosX: Vị trí đứng X
+				- PosY: Vị trí đứng Y
+			- Monsters: Danh sách quái và Boss
+				- Monster: Thông tin quái
+					- ID: ID quái
+					- Name: Tên quái, bỏ trống sẽ lấy thông tin ở File cấu hình
+					- Title: Danh hiệu quái, bỏ trống sẽ lấy thông tin ở File cấu hình
+					- PosX: Vị trí X
+					- PosY: Vị trí Y
+					- BaseHP: Sinh lực cơ bản
+					- HPIncreaseEachLevel: Sinh lực tăng thêm với mỗi cấp
+					- AIType: Loại AI (0: Quái thường, 1: Quái tinh anh, 2: Quái thủ lĩnh, 3: Boss, 4: Hải tặc, 5: Quái chữ đỏ)
+					- Series: Ngũ hành (-1: Ngẫu nhiên, 1: Kim, 2: Mộc, 3: Thủy, 4: Hỏa, 5: Thổ)
+					- AIScriptID: IDScriptAI điều khiển
+						- Nếu có sử dụng các Skill đánh thì AIScriptID để bằng 100001, sẽ không sử dụng kỹ năng đánh thường của quái như ngoài Map mà thay vào bằng kỹ năng trong danh sách thiết lập (buộc phải thiết lập kỹ năng đánh, nếu không sẽ lỗi)
+					- RespawnTicks: Thời gian tái sinh
+					- Skills: Danh sách kỹ năng được sử dụng, gồm 2 tham biến, ngăn cách nhau bởi dấu ; giữa các loại kỹ năng
+						- ID_Cấp
+						- Kỹ năng sẽ được dùng theo thứ tự từ trái sang phải, nếu kỹ năng trước đang chờ hồi phục thì dùng kỹ năng sau
+					- Auras: Danh sách vòng sáng kích hoạt, gồm 2 tham biến, ngăn cách nhau bởi dấu ; giữa các loại vòng sáng
+						- ID_Cấp
+						- Tất cả quái xung quanh sẽ được vòng sáng tương ứng cho đến khi bản thân quái mang vòng sáng bị giết chết
+				- Boss: Tương tự quái
+					- SpawnAt: Xuất hiện vào giờ cố định tương ứng
+					- Prestige: Điểm uy danh cho bang hội đánh bại Boss
+				- MiniBoss: Danh sách Boss Mini, sẽ chọn ngẫu nhiên 1 trong số này để xuất hiện sau mỗi khoảng tương ứng
+					- MinDuration: Thời gian ngẫu nhiên tối thiểu sau khi Boss cũ bị giết
+					- MaxDuration: Thời gian ngẫu nhiên tối đa sau khi Boss cũ bị giết
+			- Teleport: Cổng dịch chuyển
+				- Name: Tên cổng
+				- PosX: Vị trí X
+				- PosY: Vị trí Y
+				- ToMapID: Vị trí bản đồ đích đến
+				- ToPosX: Vị trí đích đến X
+				- ToPosY: Vị trí đích đến Y
+			
+-->
+<EmperorTomb>
+	<Config LimitLevel="100" DurationPerDay="7200000" NightPearlItemID="796" MonsterLevel="115" />
+	<Event>
+		<Relive MapID="1536" PosX="3991" PosY="6362" />
+		
+		<Stage ID="1" MapID="1536" RequireNightPearl="0">
+			<SafeZones>
+				<Zone PosX="3991" PosY="6362" Radius="1000" />
+			</SafeZones>
+		
+			<NPCs>
+				<NPC ID="2443" PosX="3546" PosY="6608" ScriptID="27" />
+				<NPC ID="2599" PosX="4274" PosY="6399" ScriptID="12" />
+				<NPC ID="2446" PosX="3808" PosY="6448" ScriptID="400031" />
+				<NPC ID="3574" PosX="4579" PosY="6252" ScriptID="33" />
+				<NPC ID="3698" PosX="4038" PosY="6079" ScriptID="13" />
+			</NPCs>
+			
+			<Monsters>
+				<Monster ID="2270" Name="" Title="" PosX="6240" PosY="5275" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6569" PosY="5274" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6572" PosY="5445" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6881" PosY="5283" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6588" PosY="5084" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="7374" PosY="4587" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="7816" PosY="4806" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="8225" PosY="4590" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="7884" PosY="4407" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="7839" PosY="4582" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="9031" PosY="4111" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="8584" PosY="3882" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="9047" PosY="3902" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="9402" PosY="3889" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="9061" PosY="3701" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="9892" PosY="3146" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="10338" PosY="3352" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="10323" PosY="3143" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="10719" PosY="3135" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="10361" PosY="2926" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="9576" PosY="2537" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="9212" PosY="2366" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="9203" PosY="2569" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="9202" PosY="2763" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="8795" PosY="2567" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="7810" PosY="3056" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="8252" PosY="3251" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="7820" PosY="3272" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="7446" PosY="3260" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="7790" PosY="3494" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="6549" PosY="3762" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6995" PosY="3967" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6564" PosY="3974" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6556" PosY="4204" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="6163" PosY="3973" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2427" Name="" Title="" PosX="5312" PosY="4377" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="5313" PosY="4639" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="5305" PosY="4867" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="5745" PosY="4658" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2427" Name="" Title="" PosX="4923" PosY="4652" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<MiniBoss MinDuration="1200000" MaxDuration="3200000">
+					<Boss ID="2429" Name="" Title="" PosX="10639" PosY="5739" BaseHP="22222000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+					<Boss ID="2429" Name="" Title="" PosX="5403" PosY="2796" BaseHP="22222000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+				</MiniBoss>
+				
+				<Boss ID="2474" Name="" Title="" PosX="11928" PosY="1728" BaseHP="101100200" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" SpawnAt="9:00" Auras="106_10" Skills="" Prestige="1" />
+				
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Cửa 2" PosX="9792" PosY="524" ToMapID="1537" ToPosX="4887" ToPosY="6763" />
+				<Teleport Name="Cửa 2" PosX="14881" PosY="3317" ToMapID="1537" ToPosX="12903" ToPosY="2294" />
+			</Teleports>
+		</Stage>
+		
+		<Stage ID="2" MapID="1537" RequireNightPearl="1">
+			<SafeZones>
+				
+			</SafeZones>
+		
+			<NPCs>
+				
+			</NPCs>
+			
+			<Monsters>
+				<Monster ID="2430" Name="" Title="" PosX="4599" PosY="4253" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5057" PosY="4237" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4613" PosY="4481" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4200" PosY="4250" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4630" PosY="4011" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="3275" PosY="4251" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2936" PosY="4031" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2887" PosY="4236" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2855" PosY="4439" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2486" PosY="4275" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="2976" PosY="3528" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2956" PosY="3372" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3287" PosY="3368" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2962" PosY="3162" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2544" PosY="3336" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="818" PosY="4304" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1217" PosY="4092" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1209" PosY="4325" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1533" PosY="4283" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1185" PosY="4497" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="2893" PosY="5148" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2882" PosY="4934" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2528" PosY="5108" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2867" PosY="5304" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3282" PosY="5122" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="8282" PosY="7702" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8294" PosY="7516" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8601" PosY="7696" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8274" PosY="7902" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7910" PosY="7708" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="9949" PosY="6824" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9934" PosY="6620" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9564" PosY="6792" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9931" PosY="6979" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10327" PosY="6809" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="9929" PosY="7691" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9905" PosY="7422" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9456" PosY="7647" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9927" PosY="7914" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10419" PosY="7689" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="11668" PosY="7685" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11632" PosY="7456" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11296" PosY="7636" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11688" PosY="7864" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="12160" PosY="7701" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="9955" PosY="8638" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9946" PosY="8414" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10423" PosY="8595" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9956" PosY="8849" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9552" PosY="8647" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="14560" PosY="6160" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14564" PosY="5939" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="15052" PosY="6148" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14595" PosY="6449" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14100" PosY="6155" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="14610" PosY="5199" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14996" PosY="5144" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14704" PosY="4941" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14275" PosY="5166" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14578" PosY="5342" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="13260" PosY="5191" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="12904" PosY="5214" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="12939" PosY="5012" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="12428" PosY="5217" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="12852" PosY="5475" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="14687" PosY="4260" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14670" PosY="4462" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="15099" PosY="4262" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14696" PosY="4021" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="14211" PosY="4249" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="16009" PosY="5177" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="16406" PosY="5181" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="16418" PosY="5441" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="16940" PosY="5173" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="16461" PosY="4900" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="7868" PosY="2702" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7827" PosY="2970" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7348" PosY="2706" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7888" PosY="2491" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8419" PosY="2683" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="7828" PosY="1810" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7810" PosY="2028" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7393" PosY="1808" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7838" PosY="1599" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8294" PosY="1811" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="9507" PosY="1869" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9480" PosY="1654" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9081" PosY="1832" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9542" PosY="2124" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10056" PosY="1888" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="7846" PosY="1195" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7841" PosY="985" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7814" PosY="720" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8305" PosY="1011" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7336" PosY="975" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="6649" PosY="1857" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6188" PosY="1851" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6209" PosY="2111" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6193" PosY="1610" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5728" PosY="1856" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<MiniBoss MinDuration="1200000" MaxDuration="3200000">
+					<Boss ID="2432" Name="" Title="" PosX="11702" PosY="3389" BaseHP="4422000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+					<Boss ID="2432" Name="" Title="" PosX="9447" PosY="4666" BaseHP="4422000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+					<Boss ID="2432" Name="" Title="" PosX="6791" PosY="5737" BaseHP="4422000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+				</MiniBoss>
+				
+				<Boss ID="2475" Name="" Title="" PosX="8410" PosY="4714" BaseHP="101100200" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" SpawnAt="9:00" Auras="106_10" Skills="" Prestige="1" />
+				
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Cửa 3" PosX="11452" PosY="8289" ToMapID="1538" ToPosX="989" ToPosY="5059" />
+				<Teleport Name="Cửa 3" PosX="15838" PosY="5730" ToMapID="1538" ToPosX="3456" ToPosY="6276" />
+				
+				<Teleport Name="Cửa 1" PosX="4490" PosY="7061" ToMapID="1536" ToPosX="10058" ToPosY="762" />
+				<Teleport Name="Cửa 1" PosX="13251" PosY="2057" ToMapID="1536" ToPosX="14458" ToPosY="3464" />
+			</Teleports>
+		</Stage>
+		
+		<Stage ID="3" MapID="1538" RequireNightPearl="2">
+			<SafeZones>
+				
+			</SafeZones>
+			
+			<NPCs>
+				
+			</NPCs>
+			
+			<Monsters>
+				
+				<Monster ID="2433" Name="" Title="" PosX="5591" PosY="1258" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5589" PosY="1030" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5185" PosY="1248" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5573" PosY="1454" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6003" PosY="1250" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="5051" PosY="737" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4608" PosY="956" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4592" PosY="763" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4611" PosY="530" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4228" PosY="710" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="3629" PosY="1005" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3598" PosY="1260" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3210" PosY="1238" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3594" PosY="1473" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4037" PosY="1249" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="4605" PosY="1757" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4583" PosY="1526" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4210" PosY="1717" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4597" PosY="1960" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5027" PosY="1775" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="6503" PosY="2472" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6929" PosY="2693" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6511" PosY="2696" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6081" PosY="2689" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6473" PosY="2929" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="7035" PosY="2181" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7468" PosY="2215" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7466" PosY="2006" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7509" PosY="2422" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7901" PosY="2213" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="8428" PosY="2485" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8005" PosY="2683" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8418" PosY="2704" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8847" PosY="2706" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="8498" PosY="2904" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="7931" PosY="3192" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7506" PosY="2981" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7494" PosY="3215" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7051" PosY="3208" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="7471" PosY="3423" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="10234" PosY="3754" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10647" PosY="3760" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10655" PosY="3545" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11114" PosY="3789" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10673" PosY="4008" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="11181" PosY="4282" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11664" PosY="4048" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11659" PosY="4294" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="12134" PosY="4262" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="11677" PosY="4557" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="11148" PosY="4783" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10685" PosY="4570" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10675" PosY="4810" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10676" PosY="5044" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10229" PosY="4809" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="9166" PosY="4288" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9615" PosY="4295" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="10096" PosY="4288" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9660" PosY="4109" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="9644" PosY="4510" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="2690" PosY="3854" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2333" PosY="3871" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2328" PosY="3652" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1978" PosY="3824" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2335" PosY="4052" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="3323" PosY="4144" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3700" PosY="4353" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3288" PosY="4335" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2909" PosY="4325" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3262" PosY="4558" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="2721" PosY="4792" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2344" PosY="4794" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2334" PosY="4590" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="2331" PosY="4990" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1964" PosY="4788" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="1372" PosY="4520" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1821" PosY="4343" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1413" PosY="4334" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="1382" PosY="4115" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="948" PosY="4332" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="5135" PosY="5067" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4763" PosY="5088" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4746" PosY="4908" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4365" PosY="5064" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4777" PosY="5301" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="4255" PosY="5577" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3826" PosY="5567" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3785" PosY="5378" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3411" PosY="5551" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="3839" PosY="5760" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="4402" PosY="6041" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4774" PosY="6068" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4761" PosY="5840" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5155" PosY="6056" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="4788" PosY="6283" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<Monster ID="2430" Name="" Title="" PosX="5359" PosY="5558" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5725" PosY="5583" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5727" PosY="5355" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="6185" PosY="5576" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="2430" Name="" Title="" PosX="5743" PosY="5808" BaseHP="845440" HPIncreaseEachLevel="225" AIType="5" Series="1" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				
+				<MiniBoss MinDuration="1200000" MaxDuration="3200000">
+					<Boss ID="32428" Name="" Title="" PosX="6786" PosY="4532" BaseHP="60444000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+					<Boss ID="32428" Name="" Title="" PosX="4356" PosY="3345" BaseHP="60444000" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" Auras="106_10" Skills="" Prestige="1" />
+				</MiniBoss>
+				
+				<Boss ID="3223" Name="" Title="" PosX="8952" PosY="2002" BaseHP="101100200" HPIncreaseEachLevel="3100" AIType="3" Series="-1" AIScriptID="100000" SpawnAt="9:00" Auras="106_10" Skills="" Prestige="1" />
+				
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Cửa 2" PosX="659" PosY="5236" ToMapID="1537" ToPosX="10942" ToPosY="8038" />
+				<Teleport Name="Cửa 2" PosX="3088" PosY="6469" ToMapID="1537" ToPosX="15424" ToPosY="5533" />
+			</Teleports>
+		</Stage>
+	</Event>
+</EmperorTomb>

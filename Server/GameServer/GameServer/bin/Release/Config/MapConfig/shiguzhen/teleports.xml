@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>	       
+	 <Teleport Code="1" Tip="Đại Lý Phủ" Key="1" To="28" ToX="9110" ToY="1110" X="3030" Y="4630" Radius="50" />
+	 <Teleport Code="2" Tip="Miêu Lĩnh [cấp 95] " Key="2" To="119" ToX="2730" ToY="630" X="11030" Y="510" Radius="50" />
+	 <Teleport Code="3" Tip="Thị trấn Bạch Tộc [cấp 5] " Key="3" To="35" ToX="2218" ToY="689" X="10970" Y="5990" Radius="50" />
+	 <Teleport Code="4" Tip="Trà Mã Cổ Đạo [cấp 15] " Key="4" To="43" ToX="4145" ToY="749" X="7890" Y="5870" Radius="50" />
+	 <Teleport Code="5" Tip="Đại Lý Đoàn Thị" Key="5" To="19" ToX="1472" ToY="387" X="1245" Y="2684" Radius="50" />
+	 <Teleport Code="6" Tip="Thúy Yên Môn" Key="6" To="17" ToX="9392" ToY="1212" X="4703" Y="509" Radius="50" />
+	 
+	
+	</Teleports>
+</Map>

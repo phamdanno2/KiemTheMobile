@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	SỰ KIỆN ĐOÁN HOA ĐĂNG
+	- Config: Thiết lập chung
+		- LimitLevel: Cấp độ yêu cầu
+	- Questions: Danh sách câu hỏi
+		- Question: Thông tin câu hỏi tương ứng
+			- Content: Nội dung câu hỏi
+			- RightAnswer: Đáp án chính xác
+			- OtherAnswer_1: Đáp án sai 1
+			- OtherAnswer_2: Đáp án sai 2
+			- OtherAnswer_3: Đáp án sai 3
+	- Event: Thông tin sự kiện
+		- Config: Thiết lập sự kiện
+			- MaxQuestions: Số câu trả lời tối đa trong cả sự kiện
+			- NPCStandDuration: Tổng thời gian NPC đứng lại cho người chơi trả lời câu hỏi (mili-giây)
+			- DelayTicksEachQuestion: Thời gian giãn cách mỗi lần mở câu hỏi mới (mili-giây)
+		- NPC: Thông tin NPC
+			- ID: ID NPC
+			- Name: Tên NPC (bỏ trống sẽ lấy ở File cấu hình)
+			- Title: Danh hiệu NPC (bỏ trống sẽ lấy ở File cấu hình)
+			- VillagePosition: Các vị trí xuất hiện của NPC ở bản đồ tương ứng
+				- MapID: ID bản đồ
+				- Positions: Các vị trí sẽ xuất hiện và sẽ di chuyển đến ngẫu nhiên trong khi diễn ra sự kiện
+	- Award: Phần thưởng mỗi lượt trả lời đúng
+		- BoundToken: Đồng khóa
+		- BoundMoney: Bạc khóa
+		- Prestige: Uy danh
+		- Exp: Kinh nghiệm
+-->
+<KnowledgeChallenge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Config LimitLevel="80" />
+	
+	<Questions>
+		<Question Content="Vật phẩm nào giúp tăng điểm tiềm năng cho nhân vật?" RightAnswer="Tẩy Tủy Kinh (Sơ)" OtherAnswer_1="Võ Lâm Mật Tịch (Sơ)" OtherAnswer_2="Mật Tịch Cao" OtherAnswer_3="Mật Tịch Trung" />
+		<Question Content="Khi giao dịch với người chơi khác sẽ mất bao nhiêu % phí giao dịch?" RightAnswer="10" OtherAnswer_1="5" OtherAnswer_2="8" OtherAnswer_3="12" />
+		<Question Content="Mã bài (Thanh Mã) được bán ở đâu?" RightAnswer="NPC bán ngựa" OtherAnswer_1="Các thành thị" OtherAnswer_2="Kỳ trân các" OtherAnswer_3="Dây cương thần bí" />
+		<Question Content="Mỗi ngày có thể đánh mấy trận tống kim?" RightAnswer="3" OtherAnswer_1="4" OtherAnswer_2="5" OtherAnswer_3="6" />
+		<Question Content="Có bao nhiêu môn phái sử dụng kiếm?" RightAnswer="6" OtherAnswer_1="4" OtherAnswer_2="5" OtherAnswer_3="7" />
+		<Question Content="Kim sáng dược dùng để làm gì?" RightAnswer="Hồi sinh lực" OtherAnswer_1="Dùng làm nguyên liệu chế" OtherAnswer_2="Hồi nội lực" OtherAnswer_3="Dùng làm nhiệm vụ chính tuyến" />
+		<Question Content="Kiếm thế Mobile có tổng cộng bao nhiêu thôn?" RightAnswer="8" OtherAnswer_1="7" OtherAnswer_2="6" OtherAnswer_3="9" />
+		<Question Content="Kiếm thế Mobile có tổng cộng bao nhiêu thành thị?" RightAnswer="7" OtherAnswer_1="6" OtherAnswer_2="8" OtherAnswer_3="9" />
+		<Question Content="Thiếu lâm tọa lạc ở ngọn núi nào?" RightAnswer="Tung sơn" OtherAnswer_1="Thái sơn" OtherAnswer_2="Hằng sơn" OtherAnswer_3="Hoa sơn" />
+		<Question Content="Kiếm thế Mobile có bao nhiêu kênh tán gẫu?" RightAnswer="11" OtherAnswer_1="10" OtherAnswer_2="12" OtherAnswer_3="9" />
+		<Question Content="Điểm danh vọng có cấp độ tối đa là bao nhiêu?" RightAnswer="10" OtherAnswer_1="8" OtherAnswer_2="4" OtherAnswer_3="6" />
+		<Question Content="Kiếm thế Mobile có bao nhiêu NPC Long Ngũ?" RightAnswer="8" OtherAnswer_1="7" OtherAnswer_2="6" OtherAnswer_3="5" />
+		<Question Content="Nhân vật nữ có thể gia nhập được bao nhiêu môn phái?" RightAnswer="11" OtherAnswer_1="12" OtherAnswer_2="10" OtherAnswer_3="9" />
+		<Question Content="Nhân vật nam có thể gia nhập được bao nhiêu môn phái?" RightAnswer="11" OtherAnswer_1="10" OtherAnswer_2="12" OtherAnswer_3="9" />
+		<Question Content="Một ngày có thể khiêu chiến Du long bao nhiêu lần?" RightAnswer="20" OtherAnswer_1="40" OtherAnswer_2="15" OtherAnswer_3="30" />
+		<Question Content="Có bao nhiêu môn phái sử dụng Đao?" RightAnswer="5" OtherAnswer_1="4" OtherAnswer_2="6" OtherAnswer_3="7" />
+		<Question Content="Có bao nhiêu môn phái không phải xuống ngựa vẫn đánh được skill 90?" RightAnswer="6" OtherAnswer_1="5" OtherAnswer_2="4" OtherAnswer_3="3" />
+		<Question Content="Chưởng môn phái Nga My tên là gì?" RightAnswer="Vô tưởng sư thái" OtherAnswer_1="Vô niệm sư thái" OtherAnswer_2="Vô sân sư thái" OtherAnswer_3="Vô si sư thái" />
+		<Question Content="Chưởng môn phái Thiếu Lâm tên là gì?" RightAnswer="Huyền Từ" OtherAnswer_1="Huyền Khổ" OtherAnswer_2="Huyền Bi" OtherAnswer_3="Huyền Năng" />
+		<Question Content="Chưởng môn phái Thiên Vương tên là gì?" RightAnswer="Dương Thiết Tâm" OtherAnswer_1="Bùi Dực Phi" OtherAnswer_2="Lâu Nhất Quan" OtherAnswer_3="Quý Thúc Ban" />
+		<Question Content="Chưởng môn phái Ngũ Độc tên là gì?" RightAnswer="Cổ Yên Nhiên" OtherAnswer_1="Điệp Phiêu Phiêu" OtherAnswer_2="Lư Tiếu Bần" OtherAnswer_3="Hồ Hiến Cơ" />
+		<Question Content="Chưởng môn phái Đường Môn tên là gì?" RightAnswer="Đường Hiểu" OtherAnswer_1="Đường Ngộ" OtherAnswer_2="Đường Khuyết" OtherAnswer_3="Đường Như" />
+		<Question Content="Chưởng môn phái Thúy Yên tên là gì?" RightAnswer="Doãn Tiêu Vũ" OtherAnswer_1="Đan Bích Tú" OtherAnswer_2="Cô Nguyệt Hoa" OtherAnswer_3="Nhạn Xảo Vân" />
+		<Question Content="Chưởng môn phái Cái Bang tên là gì?" RightAnswer="Thạch Hiên Viên" OtherAnswer_1="Lãnh Thu Vân" OtherAnswer_2="La Phong" OtherAnswer_3="Củng Thiếu Trăn" />
+		<Question Content="Chưởng môn phái Thiên Nhẫn tên là gì?" RightAnswer="Hoàn Nhan Tương" OtherAnswer_1="Đoan Mộc Duệ" OtherAnswer_2="Ngột Tán" OtherAnswer_3="Bồ Sát Phong Nô" />
+		<Question Content="Chưởng môn phái Võ Đang tên là gì?" RightAnswer="Vương Trùng Dương" OtherAnswer_1="Nhất Diệp Chân Nhân" OtherAnswer_2="Động Hư Chân Nhân" OtherAnswer_3="Vương Chí Minh" />
+		<Question Content="Chưởng môn phái Côn Lôn tên là gì?" RightAnswer="Tống Thu Thạch" OtherAnswer_1="Gia Cát Trác Vân" OtherAnswer_2="Du Lạc Thiên" OtherAnswer_3="Du thanh Tố" />
+		<Question Content="Chưởng môn phái Minh Giáo tên là gì?" RightAnswer="Phương Hành Giác" OtherAnswer_1="Tạ Thư Dung" OtherAnswer_2="Mộ Dung Chiêu" OtherAnswer_3="Liễu Hà Đồ" />
+		<Question Content="Chưởng môn phái Đoàn Thị tên là gì?" RightAnswer="Đoàn Trí Hưng" OtherAnswer_1="Đoàn Trí Phong" OtherAnswer_2="Đoàn Trí Thuần" OtherAnswer_3="Đoàn Trí Bích" />
+		<Question Content="Cần bao nhiêu uy danh mới có thể Tạo Tộc?" RightAnswer="20" OtherAnswer_1="30" OtherAnswer_2="40" OtherAnswer_3="50" />
+		<Question Content="Cấp độ bao nhiêu có thể Tạo Tộc?" RightAnswer="30" OtherAnswer_1="20" OtherAnswer_2="40" OtherAnswer_3="50" />
+		<Question Content="Tạo Tộc cần bao nhiêu bạc thường?" RightAnswer="10 vạn" OtherAnswer_1="20 vạn" OtherAnswer_2="30 vạn" OtherAnswer_3="50 vạn" />
+		<Question Content="Cần bao nhiêu uy danh mới có thể Tạo Bang?" RightAnswer="50" OtherAnswer_1="20" OtherAnswer_2="100" OtherAnswer_3="30" />
+		<Question Content="Cấp độ bao nhiêu có thể Tạo Bang?" RightAnswer="50" OtherAnswer_1="30" OtherAnswer_2="60" OtherAnswer_3="40" />
+		<Question Content="Tạo Bang cần bao nhiêu bạc thường?" RightAnswer="100 vạn" OtherAnswer_1="80 vạn" OtherAnswer_2="1000 vạn" OtherAnswer_3="10 vạn" />
+		<Question Content="Một ngày có thể làm tối đa bao nhiêu nhiệm vụ Truy Nã Hải Tặc?" RightAnswer="6" OtherAnswer_1="8" OtherAnswer_2="10" OtherAnswer_3="14" />
+		<Question Content="Một ngày có thể làm tối đa bao nhiêu nhiệm vụ Bao Vạn Đồng?" RightAnswer="50" OtherAnswer_1="40" OtherAnswer_2="60" OtherAnswer_3="30" />
+		<Question Content="Một Tộc có tối đa bao nhiêu người chơi?" RightAnswer="30" OtherAnswer_1="50" OtherAnswer_2="100" OtherAnswer_3="150" />
+		<Question Content="Một Bang có tối đa bao nhiêu người chơi?" RightAnswer="150" OtherAnswer_1="5" OtherAnswer_2="50" OtherAnswer_3="100" />
+		<Question Content="Một Bang có tối đa bao nhiêu Tộc?" RightAnswer="5" OtherAnswer_1="150" OtherAnswer_2="30" OtherAnswer_3="15" />
+		<Question Content="Dùng bao nhiêu Danh Bổ Lệnh đổi Võ Lâm Mật Tịch(sơ)?" RightAnswer="300" OtherAnswer_1="200" OtherAnswer_2="400" OtherAnswer_3="100" />
+		<Question Content="Dùng bao nhiêu Danh Bổ Lệnh đổi Tẩy Tủy Kinh(sơ)?" RightAnswer="300" OtherAnswer_1="400" OtherAnswer_2="200" OtherAnswer_3="100" />
+		<Question Content="Vật phẩm nào giúp tăng điểm kỹ năng cho nhân vật?" RightAnswer="Võ Lâm Mật Tịch(sơ)" OtherAnswer_1="Võ Lâm Mật Tịch (Sơ)" OtherAnswer_2="Mật Tịch Trung" OtherAnswer_3="Mật Tịch Cao" />
+		<Question Content="Trong hệ thống ngũ hành tương sinh, thì hệ Kim tạo ra hệ gì?" RightAnswer="Thủy" OtherAnswer_1="Hỏa" OtherAnswer_2="Mộc" OtherAnswer_3="Thổ" />
+		<Question Content="Trong hệ thống ngũ hành tương sinh, thì hệ Mộc tạo ra hệ gì?" RightAnswer="Hỏa" OtherAnswer_1="Thủy" OtherAnswer_2="Thổ" OtherAnswer_3="Mộc" />
+		<Question Content="Trong hệ thống ngũ hành tương sinh, thì hệ Thủy tạo ra hệ gì?" RightAnswer="Mộc" OtherAnswer_1="Kim" OtherAnswer_2="Hỏa" OtherAnswer_3="Thổ" />
+		<Question Content="Trong hệ thống ngũ hành tương sinh, thì hệ Hỏa tạo ra hệ gì?" RightAnswer="Thổ" OtherAnswer_1="Thủy" OtherAnswer_2="Hỏa" OtherAnswer_3="Kim" />
+		<Question Content="Trong hệ thống ngũ hành tương sinh, thì hệ Thổ tạo ra hệ gì?" RightAnswer="Kim" OtherAnswer_1="Thủy" OtherAnswer_2="Hỏa" OtherAnswer_3="Mộc" />
+		<Question Content="Ngồi tù bao lâu thì giảm được 1 PK?" RightAnswer="1h" OtherAnswer_1="1,5h" OtherAnswer_2="2h" OtherAnswer_3="0,5h" />
+		<Question Content="Một ngày có bao nhiêu trận Bạch Hổ Đường?" RightAnswer="5" OtherAnswer_1="6" OtherAnswer_2="7" OtherAnswer_3="8" />
+		<Question Content="Thời gian diễn ra Tranh Đoạt Lãnh Thổ là vào giờ nào trong ngày?" RightAnswer="20:30 đến 21:30" OtherAnswer_1="20:00 đến 21:00" OtherAnswer_2="21:00 đến 22:00" OtherAnswer_3="21:30 đến 22:30" />
+		<Question Content="Mỗi ngày người chơi sẽ nhận được miễn phí bao nhiêu phút Tu Luyện châu?" RightAnswer="2h" OtherAnswer_1="3h" OtherAnswer_2="1,5h" OtherAnswer_3="2,5h" />
+		<Question Content="Nhân vật đạt cấp độ bao nhiêu có thể tham gia Tiêu Dao Cốc?" RightAnswer="80" OtherAnswer_1="70" OtherAnswer_2="60" OtherAnswer_3="50" />
+		<Question Content="Nhân vật đạt cấp độ bao nhiêu có thể tham gia Vượt ải Gia tộc?" RightAnswer="80" OtherAnswer_1="70" OtherAnswer_2="60" OtherAnswer_3="50" />
+		<Question Content="Nhân vật đạt cấp độ bao nhiêu có thể tham gia Nhiệm Vụ Truy Nã Hải Tặc?" RightAnswer="50" OtherAnswer_1="70" OtherAnswer_2="60" OtherAnswer_3="80" />
+		<Question Content="Nhân vật đạt cấp độ bao nhiêu có thể tham gia Nhiệm Vụ Thương Hội?" RightAnswer="60" OtherAnswer_1="70" OtherAnswer_2="50" OtherAnswer_3="80" />
+		<Question Content="Nhân vật đạt cấp độ bao nhiêu có thể gia nhập môn phái?" RightAnswer="10" OtherAnswer_1="11" OtherAnswer_2="9" OtherAnswer_3="12" />
+		<Question Content="Tổ đội đi bí cảnh có thể đi được tối đa bao nhiêu người?" RightAnswer="6" OtherAnswer_1="5" OtherAnswer_2="4" OtherAnswer_3="3" />
+		<Question Content="Một ngày tham gia được bao nhiêu lần Bí Cảnh?" RightAnswer="1" OtherAnswer_1="2" OtherAnswer_2="3" OtherAnswer_3="4" />
+		<Question Content="Một ngày tham gia được bao nhiêu lần Tiêu Dao Cốc?" RightAnswer="1" OtherAnswer_1="2" OtherAnswer_2="3" OtherAnswer_3="4" />
+		<Question Content="Một ngày tham gia được bao nhiêu lần Bạch Hổ Đường?" RightAnswer="1" OtherAnswer_1="2" OtherAnswer_2="3" OtherAnswer_3="4" />
+		<Question Content="Mỗi ngày người chơi có thể nhận được tối đa bao nhiêu giờ ủy thác Bạch Câu Hoàn?" RightAnswer="18h" OtherAnswer_1="16h" OtherAnswer_2="22h" OtherAnswer_3="20h" />
+		<Question Content="Kỹ năng sống tăng đến cấp bao nhiêu có thể chế tạo được vỏ sò vàng?" RightAnswer="80" OtherAnswer_1="60" OtherAnswer_2="100" OtherAnswer_3="70" />
+		<Question Content="Kỹ năng sống tăng đến cấp bao nhiêu có thể chế tạo được nguyên liệu Tần Lăng?" RightAnswer="100" OtherAnswer_1="90" OtherAnswer_2="80" OtherAnswer_3="60" />
+		<Question Content="Kỹ năng sống tăng đến cấp bao nhiêu có thể chế tạo được nguyên liệu Tiêu Dao Cốc?" RightAnswer="80" OtherAnswer_1="60" OtherAnswer_2="90" OtherAnswer_3="100" />
+		<Question Content="Kỹ năng sống tăng đến cấp bao nhiêu có thể chế tạo được nguyên liệu Tranh Đoạt Lãnh Thổ?" RightAnswer="80" OtherAnswer_1="60" OtherAnswer_2="90" OtherAnswer_3="100" />
+		<Question Content="Người chơi mới lần đầu đổi Coin ra Đồng ingame sẽ có thể nhận được bao nhiêu gói x2 ?" RightAnswer="6" OtherAnswer_1="4" OtherAnswer_2="8" OtherAnswer_3="7" />
+		<Question Content="Người chơi cần có thứ hạng Uy Danh vào top bao nhiêu mới có thể mua Tinh Hoạt lực giảm giá?" RightAnswer="100" OtherAnswer_1="80" OtherAnswer_2="120" OtherAnswer_3="150" />
+		<Question Content="Các vật phẩm không thể ném bỏ hoặc bán, làm sao có thể xóa khỏi túi đồ?" RightAnswer="Đến Bạch Thu Lâm xóa" OtherAnswer_1="Đến Dã Luyện Đại Sư xóa" OtherAnswer_2="Đến Tạp Hóa xóa" OtherAnswer_3="Đến Tiệm Binh Khí xóa" />
+		<Question Content="Tranh Đoạt Lãnh Thổ diễn ra vào những ngày nào trong tuần?" RightAnswer="Thứ 7 và Chủ Nhật" OtherAnswer_1="Thứ 3 và Thứ 5" OtherAnswer_2="Thứ 3 và Thứ 7" OtherAnswer_3="Thứ 5 và Chủ Nhật" />
+		<Question Content="Thi Đấu Môn Phái diễn ra vào ngày nào trong tuần?" RightAnswer="Thứ 3" OtherAnswer_1="Thứ 5" OtherAnswer_2="Thứ 2" OtherAnswer_3="Thứ 4" />
+		<Question Content="Mã bài Ức Vân yêu cầu cấp độ nhân vật bao nhiêu có thể sử dụng?" RightAnswer="50" OtherAnswer_1="60" OtherAnswer_2="120" OtherAnswer_3="90" />
+		<Question Content="Trang bị chế tạo từ kỹ năng sống có thể đổi ngũ hành hồn thạch ở NPC nào?" RightAnswer="Tiền Trang" OtherAnswer_1="Long Ngũ Thái Gia" OtherAnswer_2="Bạch Thu Lâm" OtherAnswer_3="Lễ Quan" />
+		<Question Content="NPC nào Bán Mật Tịch Cao các môn phái?" RightAnswer="Long Ngũ Thái Gia" OtherAnswer_1="Tiền Trang" OtherAnswer_2="Bạch Thu Lâm" OtherAnswer_3="Lễ Quan" />
+		<Question Content="NPC nào Bán Mật Tịch Trung các môn phái?" RightAnswer="Tiền Trang" OtherAnswer_1="Long Ngũ Thái Gia" OtherAnswer_2="Bạch Thu Lâm" OtherAnswer_3="Lễ Quan" />
+		<Question Content="Muốn Tạo Tộc cần đến NPC nào?" RightAnswer="Đặc Sứ Võ Lâm Minh Chủ" OtherAnswer_1="Chủ Thương Hội" OtherAnswer_2="Sứ Giả Thịnh Hạ" OtherAnswer_3="Bang Hội Liên Minh Sứ" />
+		<Question Content="Muốn giảm Pk cần đến NPC nào?" RightAnswer="Vân Du Tăng Nhân" OtherAnswer_1="Hình Bổ Đầu" OtherAnswer_2="Bạch Thu Lâm" OtherAnswer_3="Lễ Quan" />
+		<Question Content="Muốn cường hóa trang bị cần đến NPC nào?" RightAnswer="Dã Luyện Đại Sư" OtherAnswer_1="Thương Nhân Tiêu Dao" OtherAnswer_2="Quan Lãnh Thổ" OtherAnswer_3="Quan Liên Đấu" />
+		<Question Content="Muốn luyện hóa trang bị cần đến NPC nào?" RightAnswer="Dã Luyện Đại Sư" OtherAnswer_1="Thương Nhân Tiêu Dao" OtherAnswer_2="Quan Lãnh Thổ" OtherAnswer_3="Quan Liên Đấu" />
+		<Question Content="Muốn Lập lãnh thổ lên Thành Chính, thì cần những điều kiện gì?" RightAnswer="Có 1 thôn và 1 lãnh thổ" OtherAnswer_1="Có 1 thôn" OtherAnswer_2="Có 1 thôn và 2 lãnh thổ" OtherAnswer_3="Không cần thôn" />
+		<Question Content="Thôn Ba lăng huyện thông sang môn phái nào?" RightAnswer="Thiên Vương" OtherAnswer_1="Thiên Nhẫn" OtherAnswer_2="Võ Đang" OtherAnswer_3="Nga My" />
+		<Question Content="Thôn Ba lăng huyện thông sang môn phái nào?" RightAnswer="Minh Giáo" OtherAnswer_1="Thiên Nhẫn" OtherAnswer_2="Côn Lôn" OtherAnswer_3="Nga My" />
+		<Question Content="Giang Tân Thôn thông sang môn phái nào?" RightAnswer="Nga My" OtherAnswer_1="Thiếu Lâm" OtherAnswer_2="Cái Bang" OtherAnswer_3="Thúy Yên" />
+		<Question Content="Giang Tân Thôn thông sang môn phái nào?" RightAnswer="Đường Môn" OtherAnswer_1="Thiếu Lâm" OtherAnswer_2="Cái Bang" OtherAnswer_3="Thúy Yên" />
+		<Question Content="Long Môn Trấn thông sang môn phái nào?" RightAnswer="Côn Lôn" OtherAnswer_1="Cái Bang" OtherAnswer_2="Thúy Yên" OtherAnswer_3="Thiên Vương" />
+		<Question Content="Vĩnh Lạc Trấn thông sang môn phái nào?" RightAnswer="Võ Đang" OtherAnswer_1="Minh giáo" OtherAnswer_2="Đoàn Thị" OtherAnswer_3="Đường Môn" />
+		<Question Content="Vĩnh Lạc Trấn thông sang môn phái nào?" RightAnswer="Thiếu Lâm" OtherAnswer_1="Minh giáo" OtherAnswer_2="Đoàn Thị" OtherAnswer_3="Đường Môn" />
+		<Question Content="Thạch Cổ Trấn thông sang môn phái nào?" RightAnswer="Thúy Yên" OtherAnswer_1="Nga My" OtherAnswer_2="Côn Lôn" OtherAnswer_3="Thiên Nhẫn" />
+		<Question Content="Thạch Cổ Trấn thông sang môn phái nào?" RightAnswer="Đoàn Thị" OtherAnswer_1="Nga My" OtherAnswer_2="Côn Lôn" OtherAnswer_3="Thiên Nhẫn" />
+		<Question Content="Đạo Hương Thôn thông sang môn phái nào?" RightAnswer="Cái Bang" OtherAnswer_1="Ngũ Độc" OtherAnswer_2="Đoàn Thị" OtherAnswer_3="Võ Đang" />
+		<Question Content="Vân Trung Trấn thông sang môn phái nào?" RightAnswer="Thiên Nhẫn" OtherAnswer_1="Thiên Vương" OtherAnswer_2="Đoàn Thị" OtherAnswer_3="Đường Môn" />
+		<Question Content="Long Tuyền Thôn thông sang môn phái nào?" RightAnswer="Ngũ Độc" OtherAnswer_1="Thiếu Lâm" OtherAnswer_2="Minh Giáo" OtherAnswer_3="Cái Bang" />
+		
+	</Questions>
+	
+	<Event>
+		<Config MaxQuestions="30" NPCStandDuration="60000" DelayTicksEachQuestion="10000" />
+		<NPC NPCID="3690" MonsterID="3689" Name="Nhan Như Ngọc" Title="&lt;color=green&gt;Sứ giả Hoa Đăng&lt;/color&gt;">
+			<VillagePosition MapID="1" Positions="1083_3700;2145_3906;1914_3174;2732_3031;3031_3671;3837_3405;3391_4563;4991_4511;5025_3667;4861_3144;4321_2525;2767_2185;5505_1929;6762_1404;7823_835;8965_1520;9631_2248;8182_2169;8190_1583;7179_2441;6472_2036;6781_3084;5870_3855" />
+			<VillagePosition MapID="2" Positions="7889_3094;7669_2715;7032_2592;6312_2852;5660_3133;5442_2620;6097_2233;5351_1687;4288_1855;3139_1871;4301_2879;4828_3638;5792_4058;6646_4617;6625_4018;7496_4551;7447_3564;8534_3638;9407_2990;7325_1867;7446_1377;8299_2051;9080_1489;9513_2045;10355_2345" />
+			<VillagePosition MapID="3" Positions="3811_1884;2834_2013;1675_2579;1066_3036;2224_3247;2148_4041;3389_4202;3128_3728;4179_3694;5182_3802;4555_4270;6673_4431;7838_4036;8447_3392;6719_3273;7746_2776;8348_2048;7207_2103;6318_1483;5602_1815;6106_2507;4403_2473;3221_2988;8905_4877;7803_5329;10517_4975;10269_4108" />
+			<VillagePosition MapID="4" Positions="2401_3939;3806_4301;3250_4751;4783_5378;5665_5420;7034_5230;5732_4612;5627_4031;6259_3807;7236_4338;6611_4564;7984_4098;8750_3924;9015_3373;7980_2819;7104_3600;5524_3342;4726_3648;4440_3188;5407_2731;6546_3130;5390_2072;3863_2135;2790_2188;4228_1575;2587_1428" />
+			<VillagePosition MapID="5" Positions="2840_4220;2428_4630;1756_3206;1649_2357;2261_1657;3071_2000;3107_1237;4613_1659;5265_2378;5212_2985;4353_3183;5041_3363;4410_3784;4789_4288;5343_4013;6035_3829;5548_3400;6285_2977;6842_2512;6580_1234;7595_2867;6811_4182;6269_4901;6267_5580" />
+			<VillagePosition MapID="6" Positions="2266_3161;3146_2996;4117_3395;4512_3933;5759_4439;6628_4268;6774_4863;7655_5116;7776_4410;8191_3997;7549_3817;7497_3402;8070_3102;8729_3295;8970_2818;9644_3312;9057_3852;9928_4038;10967_4547;11978_5349;10073_3342;10633_2852;12092_2287;10177_1339;8073_2123;8349_1334;6758_2720;5647_2779;4386_2885;4724_1958;5284_1100;6394_1286" />
+			<VillagePosition MapID="7" Positions="7568_5492;6187_4676;6775_4150;7655_4342;6903_3849;5908_4015;5384_4745;4838_4361;5209_3728;5042_3007;4657_1684;5862_2167;7407_2935;6001_5488;5475_6014;4613_5854;3976_6089;3454_5321;2807_4781;2373_5166;2289_3797;1776_4458;2920_2868;2515_2139;1653_2001" />
+			<VillagePosition MapID="8" Positions="6830_5331;5922_4856;5397_5350;5016_5495;4341_5349;4430_5055;3576_5026;2901_5182;3063_5730;2142_4841;1384_4528;2124_3959;3140_4676;3814_4564;4604_4186;4982_4519;5535_4246;5872_3907;5341_3672;4618_3762;4153_3392;3925_2907;3036_3157;2644_3757;3306_4163;4744_2530;5601_2495;6253_2853;5998_3340;7071_3173;7770_3425;7227_3882;6743_4381;8434_3520;6289_1914" />
+		</NPC>
+	</Event>
+	
+	<Award BoundToken="25" BoundMoney="5000" Prestige="1" Exp="100000" />
+</KnowledgeChallenge>

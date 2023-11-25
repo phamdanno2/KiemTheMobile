@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="516"  Name="Nhạn Bắc Thiên" MinimapName="" VisibleOnMinimap="1" Title="" X="6110" Y="2570" Dir="1" ScriptID="157" />
+	<NPC Code="3490" Name="Ba Khắc Tây" MinimapName="" VisibleOnMinimap="1" Title="Chưởng giáo Tát Mãn" X="4510" Y="3010" Dir="7" ScriptID="157" />
+	<NPC Code="3486" Name="Hợp Đài Trác Mộc" MinimapName="" VisibleOnMinimap="1" Title="" X="2450" Y="2530" Dir="7" ScriptID="157" />
+	<NPC Code="3488" Name="Tang Cát Liệt" MinimapName="" VisibleOnMinimap="1" Title="" X="2650" Y="1190" Dir="7" ScriptID="157" />
+	<NPC Code="3487" Name="Sa Lỗ" MinimapName="" VisibleOnMinimap="1" Title="" X="1030" Y="2010" Dir="1" ScriptID="157"/>
+	
+  </NPCs>
+</Map>

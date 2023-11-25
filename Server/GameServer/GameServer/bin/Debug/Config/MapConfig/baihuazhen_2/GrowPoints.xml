@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="4785" PosY="3360" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="4980" PosY="3258" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="5280" PosY="3190" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="5397" PosY="3385" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="5056" PosY="2965" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="4713" PosY="2951" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1542" Name="Hài cốt nữ 1" PosX="4457" PosY="3094" RespawnTime="15000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	</GrowPoints>
+</Map>

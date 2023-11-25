@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="16421" Y="8266" Dir="3" ScriptID="12"/>	
+    <NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="15733" Y="8736" Dir="7" ScriptID="12"/>
+	<NPC Code="2507" Name="Quan Quân Nhu (Kim)" MinimapName="Quan Quân Nhu" VisibleOnMinimap="1" Title="" X="16192" Y="8991" Dir="7"  ScriptID="5000" />
+	<NPC Code="2507" Name="Quan Quân Nhu (Kim)" MinimapName="Quan Quân Nhu" VisibleOnMinimap="1" Title="" X="16999" Y="8596" Dir="2"  ScriptID="5000" />
+	
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="1673" Y="1480" Dir="7" ScriptID="12"/>
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="2453" Y="1055" Dir="2" ScriptID="12"/>
+	<NPC Code="2504" Name="Quan Quân Nhu (Tống)" MinimapName="Quan Quân Nhu" VisibleOnMinimap="1" Title="" X="1093" Y="1136" Dir="7"  ScriptID="5000" />
+	<NPC Code="2504" Name="Quan Quân Nhu (Tống)" MinimapName="Quan Quân Nhu" VisibleOnMinimap="1" Title="" X="1958" Y="698" Dir="3"  ScriptID="5000" />
+	
+	<NPC Code="2965" Name="Chủ Thương Hội" MinimapName="" VisibleOnMinimap="1" Title="" X="8354" Y="5223" Dir="7"  ScriptID="35"/>
+  </NPCs>
+</Map>

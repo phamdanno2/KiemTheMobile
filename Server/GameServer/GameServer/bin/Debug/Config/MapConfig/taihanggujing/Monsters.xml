@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+    <Monster ID="1" Code="2117" X="1014" Y="4834" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="2" Code="2117" X="1168" Y="3920" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="3" Code="2117" X="843" Y="3151" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="4" Code="2117" X="931" Y="1901" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+		
+	<Monster ID="5" Code="2118" X="6585" Y="1031" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="6" Code="2118" X="7554" Y="1513" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="7" Code="2118" X="7392" Y="2697" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	
+	<Monster ID="8" Code="2119" X="5255" Y="3931" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="9" Code="2119" X="6859" Y="3730" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="10" Code="2119" X="7055" Y="4687" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="11" Code="2119" X="4940" Y="5093" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="12" Code="2119" X="6402" Y="5625" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+
+<!--  Hai Tac   -->
+	<Monster ID="18" Code="2995" X="879" Y="1412" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="19" Code="2996" X="3785" Y="731" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="20" Code="2997" X="7945" Y="3940" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="21" Code="2998" X="5269" Y="3384" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+<!-- TH -->
+	<Monster ID="23" Code="2966" X="4012" Y="4758" Radius="100" Num="1" Timeslot="78" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="25" Code="2966" X="4415" Y="4590" Radius="100" Num="1" Timeslot="78" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="27" Code="2966" X="4105" Y="4314" Radius="100" Num="1" Timeslot="78" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	
+<!-- Monsster Nhiem vu -->
+    <Monster ID="22" Code="437" X="2017" Y="2906" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="23" Code="437" X="2494" Y="3053" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	
+	<Monster ID="24" Code="1218" X="2677" Y="2918" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="25" Code="1218" X="1933" Y="2768" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	
+	<Monster ID="26" Code="1219" X="2338" Y="4077" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="27" Code="1219" X="2634" Y="3884" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	
+    <Monster ID="28" Code="1220" X="2715" Y="4755" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="29" Code="1220" X="2676" Y="4540" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="30" Code="1220" X="2651" Y="4349" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	
+	<Monster ID="31" Code="1221" X="1950" Y="4919" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="32" Code="1221" X="2343" Y="4953" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="33" Code="1221" X="1878" Y="5107" Radius="100" Num="1" Timeslot="20" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+  </Monsters>
+</Map>

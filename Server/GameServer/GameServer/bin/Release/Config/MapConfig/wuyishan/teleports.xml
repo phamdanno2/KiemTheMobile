@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      	  <Teleport Code="1" Tip="Long Tuyền Thôn" Key="1" To="7" ToX="3790" ToY="1830" X="8047" Y="8664" Radius="50" />
+		  <Teleport Code="2" Tip="Cửu Nghi Khê [cấp 75] " Key="2" To="106" ToX="3930" ToY="730" X="658" Y="4267" Radius="50" />		   
+		<!--  <Teleport Code="3" Tip="Tỏa Vân Uyên [cấp 105] " Key="3" To="128" ToX="9030" ToY="6270" X="858" Y="574" Radius="50" />  -->
+		   
+	</Teleports>
+</Map>

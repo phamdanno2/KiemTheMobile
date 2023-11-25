@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>	       
+	 <Teleport Code="1" Tip="Long Tuyền Thôn" Key="1" To="7" ToX="1470" ToY="3430" X="4970" Y="790" Radius="50" />
+	 <Teleport Code="2" Tip="Bộ Lạc Nam Di [cấp 25]" Key="2" To="54" ToX="7447" ToY="5642" X="1525" Y="803" Radius="50" />
+	 
+	<!--
+	54 -> 20 / 1787,1011
+	-->
+	 
+	</Teleports>
+</Map>

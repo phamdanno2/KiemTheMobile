@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Lâm An Phủ" Key="1" To="29" ToX="2490" ToY="850" X="11550" Y="7870" Radius="100" />
+	  <Teleport Code="2" Tip="Vũ Di Sơn[cấp 95]" Key="2" To="120" ToX="830" ToY="4290" X="3710" Y="590" Radius="100" />
+	  <Teleport Code="3" Tip="Thái Thạch Cơ[cấp 55]" Key="3" To="92" ToX="3522" ToY="715" X="7230" Y="9170" Radius="100" />
+	  <Teleport Code="4" Tip="Bang Nguyên Bí Động[cấp 85]" Key="4" To="113" ToX="8702" ToY="8752" X="1173" Y="1383" Radius="100" />  
+	  <Teleport Code="5" Tip="Bành Lãi Cổ Trạch[cấp 65]" Key="5" To="99" ToX="11136" ToY="7616" X="1914" Y="9077" Radius="100" />
+	</Teleports>
+</Map>

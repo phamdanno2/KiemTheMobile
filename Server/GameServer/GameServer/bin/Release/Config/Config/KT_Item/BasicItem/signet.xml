@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="3864" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thiếu Lâm" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="1" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="1" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3865" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thiên Vương " QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="2" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="2" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3866" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Đường Môn" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="3" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="3" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3867" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Ngũ Độc" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="4" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="4" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3868" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Nga My" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="5" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="5" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3869" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thúy Yên" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="6" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="6" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3870" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Cái Bang" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="7" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="7" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3871" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thiên Nhẫn" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="8" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="8" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3872" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Võ Đang" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="9" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="9" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3873" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_ Côn Lôn " QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="10" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="10" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3874" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Minh Giáo " QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="11" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="11" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3875" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Đại Lý Đoàn Thị" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="12" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="12" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3876" Name="Ngọa Long Chi Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="14" Level="2" SuiteID="0" Icon="signet_wuxingyin2" View="signet_wuxingyin2_s" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="15" BasicPropPA1Max="15" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3877" Name="Ngọa Long Chi Ấn +1" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="15" Level="2" SuiteID="0" Icon="signet_wuxingyin2" View="signet_wuxingyin2_s" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="250" BasicPropPA1Max="250" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="20" BasicPropPA1Max="20" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3878" Name="Ngọa Long Chi Ấn +2" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="16" Level="2" SuiteID="0" Icon="signet_wuxingyin2" View="signet_wuxingyin2_s" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="330" BasicPropPA1Max="330" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="40" BasicPropPA1Max="40" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="250" BasicPropPA1Max="250" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="250" BasicPropPA1Max="250" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="250" BasicPropPA1Max="250" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="250" BasicPropPA1Max="250" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="250" BasicPropPA1Max="250" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="35" BasicPropPA1Max="35" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3879" Name="Ngọa Long Chi Ấn +3" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="17" Level="2" SuiteID="0" Icon="signet_wuxingyin2" View="signet_wuxingyin2_s" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="420" BasicPropPA1Max="420" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="300" BasicPropPA1Max="300" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="300" BasicPropPA1Max="300" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="300" BasicPropPA1Max="300" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="300" BasicPropPA1Max="300" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="300" BasicPropPA1Max="300" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3880" Name="Ngọa Long Chi Ấn +4" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="18" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="520" BasicPropPA1Max="520" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="60" BasicPropPA1Max="60" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="350" BasicPropPA1Max="350" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="350" BasicPropPA1Max="350" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="350" BasicPropPA1Max="350" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="350" BasicPropPA1Max="350" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="350" BasicPropPA1Max="350" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="55" BasicPropPA1Max="55" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3881" Name="Ngọa Long Chi Ấn +5" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="19" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="630" BasicPropPA1Max="630" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="400" BasicPropPA1Max="400" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="400" BasicPropPA1Max="400" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="400" BasicPropPA1Max="400" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="400" BasicPropPA1Max="400" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="400" BasicPropPA1Max="400" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3882" Name="Ngọa Long Chi Ấn +6" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="20" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="750" BasicPropPA1Max="750" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="450" BasicPropPA1Max="450" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="450" BasicPropPA1Max="450" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="450" BasicPropPA1Max="450" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="450" BasicPropPA1Max="450" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="450" BasicPropPA1Max="450" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3883" Name="Ngọa Long Chi Ấn +7" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="21" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="880" BasicPropPA1Max="880" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="500" BasicPropPA1Max="500" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="500" BasicPropPA1Max="500" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="500" BasicPropPA1Max="500" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="500" BasicPropPA1Max="500" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="500" BasicPropPA1Max="500" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3884" Name="Ngọa Long Chi Ấn +8" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="22" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="1020" BasicPropPA1Max="1020" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="115" BasicPropPA1Max="115" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="550" BasicPropPA1Max="550" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="550" BasicPropPA1Max="550" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="550" BasicPropPA1Max="550" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="550" BasicPropPA1Max="550" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="550" BasicPropPA1Max="550" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="115" BasicPropPA1Max="115" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3885" Name="Ngọa Long Chi Ấn +9" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="23" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="1170" BasicPropPA1Max="1170" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="600" BasicPropPA1Max="600" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="600" BasicPropPA1Max="600" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="600" BasicPropPA1Max="600" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="600" BasicPropPA1Max="600" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="600" BasicPropPA1Max="600" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="135" BasicPropPA1Max="135" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3886" Name="Ngọa Long Chi Ấn +10" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọa Long Chi Ấn_Tối đa 1500" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="24" Level="2" SuiteID="0" Icon="signet_View_LongTuAn" View="signet_Icon_LongTuAn" Intro="" Help="" ObjID="18" BindType="1" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="50000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="damage_all_resist" BasicPropPA1Min="1330" BasicPropPA1Max="1330" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="defencedeadlystrikedamagetrim" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListBasicProp BasicPropType="state_weak_resistrate" BasicPropPA1Min="650" BasicPropPA1Max="650" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="5" />
+    <ListBasicProp BasicPropType="state_slowall_resistrate" BasicPropPA1Min="650" BasicPropPA1Max="650" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="6" />
+    <ListBasicProp BasicPropType="state_stun_resistrate" BasicPropPA1Min="650" BasicPropPA1Max="650" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="7" />
+    <ListBasicProp BasicPropType="state_burn_resistrate" BasicPropPA1Min="650" BasicPropPA1Max="650" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="8" />
+    <ListBasicProp BasicPropType="state_hurt_resistrate" BasicPropPA1Min="650" BasicPropPA1Max="650" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="9" />
+    <ListBasicProp BasicPropType="deadlystrikedamageenhance_p" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="10" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	=== DANH SÁCH SỰ KIỆN TRONG GAME ===
+	
+	ID: ID sự kiện
+	Name: Tên sự kiện
+	Type: Loại thời gian
+			- -1: Đóng
+			- 0: 1 lần duy nhất sau khi khởi động lại Server
+			- 1: Mỗi ngày
+			- 2: Mỗi tuần
+			- 3: Mỗi tháng vào ngày chỉ định
+			- 4: Mỗi tháng vào tuần chỉ định
+			- 5: Thời gian cố định
+	Time: Thiết lập thời gian
+			- Nếu Type = 0 thì sẽ là chuỗi rỗng ""
+			- Nếu Type = 1, thì sẽ là dạng "HH;MM" tương ứng Giờ, phút
+			- Nếu Type = 2, thì sẽ là dạng "dd;HH;MM" tương ứng Thứ tự ngày trong tuần (0-6), Giờ, phút
+			- Nếu Type = 3, thì sẽ là dạng "DD;HH;MM" tương ứng Thứ tự ngày trong tháng (1-31), Giờ, phút
+			- Nếu Type = 4, thì sẽ là dạng "WW;dd;HH;MM" tương ứng Thứ tự tuần trong tháng (0-3), Thứ tự ngày trong tuần (0-6, tương ứng Chủ nhật - Thứ 7), Giờ, phút
+			- Nếu Type = 5, thì sẽ là dạng "DD;MM;YYYY;HH;MM" tương ứng Ngày, tháng, năm, Giờ, phút
+	DurationTicks: Thời gian duy trì sự kiện (đơn vị Mili-giây)
+	ScriptID: ID Script Lua điều khiển sự kiện
+-->
+
+<Activities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Activity ID="100" Name="Chuẩn bị Bạch Hổ Đường (sơ)" Type="-1" Time="15;41" DurationTicks="60000" ScriptID="400002" />
+	
+	<Activity ID="101" Name="Bắt đầu Bạch Hổ Đường - 1 (sơ)" Type="-1" Time="15;42" DurationTicks="1000000" ScriptID="400002" />
+	<Activity ID="102" Name="Bắt đầu Bạch Hổ Đường - 2 (sơ)" Type="-1" Time="15;47" DurationTicks="1000000" ScriptID="400002" />
+	<Activity ID="103" Name="Bắt đầu Bạch Hổ Đường - 3 (sơ)" Type="-1" Time="15;52" DurationTicks="1000000" ScriptID="400002" />
+	
+	<Activity ID="106" Name="Bắt đầu Bạch Hổ Đường - 1 (cao)" Type="-1" Time="15;42" DurationTicks="1000000" ScriptID="400002" />
+	<Activity ID="107" Name="Bắt đầu Bạch Hổ Đường - 2 (cao)" Type="-1" Time="15;47" DurationTicks="1000000" ScriptID="400002" />
+	<Activity ID="108" Name="Bắt đầu Bạch Hổ Đường - 3 (cao)" Type="-1" Time="15;52" DurationTicks="1000000" ScriptID="400002" />
+	
+	<Activity ID="112" Name="Kết thúc Bạch Hổ Đường" Type="-1" Time="" DurationTicks="60000" ScriptID="400002" />
+</Activities>

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "113b3410-db2d-481b-b47b-a4965e2238b0": {
+      "ProjectGuid": "113b3410-db2d-481b-b47b-a4965e2238b0",
+      "DisplayName": "KF.Remoting.HuanYingSiYuan",
+      "ColorIndex": 0
+    },
+    "a9cb8bc5-f139-490f-9ce9-1e26edce4103": {
+      "ProjectGuid": "a9cb8bc5-f139-490f-9ce9-1e26edce4103",
+      "DisplayName": "Tmsk.Contract",
+      "ColorIndex": 1
+    },
+    "f05b7877-d5bf-44f7-9190-d80e0c4a14af": {
+      "ProjectGuid": "f05b7877-d5bf-44f7-9190-d80e0c4a14af",
+      "DisplayName": "GameServer",
+      "ColorIndex": 2
+    },
+    "d84d7564-d459-4082-b4fb-7504939d1a3a": {
+      "ProjectGuid": "d84d7564-d459-4082-b4fb-7504939d1a3a",
+      "DisplayName": "KF.Server.Hosting",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Thành Cổ Liên Sever 1" Key="1" To="123" ToX="8157" ToY="7699" X="14724" Y="1347" Radius="100" />
+	<Teleport Code="2" Tip="Thành Cổ Liên Sever 2" Key="2" To="123" ToX="9190" ToY="768" X="13389" Y="939" Radius="100" />
+	<Teleport Code="3" Tip="Thành Cổ Liên Sever 3" Key="3" To="123" ToX="3027" ToY="6982" X="13979" Y="1232" Radius="100" />
+	
+	<Teleport Code="4" Tip="Hiệp Đạo Liên Sever 1" Key="4" To="126" ToX="7875" ToY="1367" X="13886" Y="7390" Radius="100" />
+	<Teleport Code="5" Tip="Hiệp Đạo Liên Sever 2" Key="5" To="126" ToX="1126" ToY="2941" X="13483" Y="7277" Radius="100" />  
+	<Teleport Code="6" Tip="Hiệp Đạo Liên Sever 3" Key="6" To="126" ToX="13569" ToY="1957" X="13991" Y="6997" Radius="100" /> 
+		
+	<Teleport Code="7" Tip="Tích Cung Liên Sever 1" Key="7" To="132" ToX="11337" ToY="7669" X="2242" Y="720" Radius="100" />
+	<Teleport Code="8" Tip="Tích Cung Liên Sever 2" Key="8" To="132" ToX="12800" ToY="2162" X="2123" Y="1621" Radius="100" />
+	<Teleport Code="9" Tip="Tích Cung Liên Sever 3" Key="9" To="132" ToX="902" ToY="3102" X="3821" Y="1002" Radius="100" />
+	
+	
+	
+	
+	</Teleports>
+</Map>

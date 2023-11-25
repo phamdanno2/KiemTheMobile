@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Cổng Ra Chiến Trường" Key="1" To="1635" ToX="3934" ToY="2271" X="2628" Y="1446" Radius="100" Camp="10" />
+	
+	
+	<Teleport Code="3" Tip="Cổng Ra Chiến Trường" Key="3" To="1635" ToX="14234" ToY="7439" X="15369" Y="8117" Radius="100" Camp="20" />
+	
+	
+	</Teleports>
+</Map>

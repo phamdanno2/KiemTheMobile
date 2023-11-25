@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+      
+   <Monster ID="1" Code="2240" X="3444" Y="2134" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="2" Code="2240" X="4746" Y="1719" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="3" Code="2240" X="2262" Y="1523" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="4" Code="2240" X="1135" Y="1346" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+      
+   <Monster ID="5" Code="2241" X="2783" Y="5593" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="6" Code="2241" X="3372" Y="3748" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="7" Code="2241" X="1585" Y="5484" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="8" Code="2241" X="5180" Y="5653" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+        
+   <Monster ID="9" Code="2079" X="7763" Y="4830" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="10" Code="2079" X="9552" Y="6369" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="11" Code="2079" X="8396" Y="7371" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+        
+   <Monster ID="12" Code="2080" X="6813" Y="3074" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="13" Code="2080" X="8933" Y="3880" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+   <Monster ID="14" Code="2080" X="8462" Y="2374" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+
+<!-- Boss The gioi -->
+<!-- Vạn Lão Điên[Hỏa 55] -->
+	<Monster ID="22" Code="2971" X="8030" Y="2030" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="23" Code="2971" X="7771" Y="4087" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="24" Code="2971" X="5559" Y="7472" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="25" Code="2971" X="1174" Y="6322" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="26" Code="2971" X="775" Y="2009" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />		
+<!-- Cao Sĩ Hiền[Thổ 55] -->
+	<Monster ID="27" Code="2972" X="9382" Y="3442" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="28" Code="2972" X="9800" Y="5601" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="29" Code="2972" X="2847" Y="7528" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="30" Code="2972" X="1237" Y="4279" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	<Monster ID="31" Code="2972" X="3280" Y="1487" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="02:35|09:35|12:35|15:35|18:35|22:35" BirthRate="1" />
+	
+	
+   
+  </Monsters>
+</Map>

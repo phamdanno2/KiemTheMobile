@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="1052" Name="Phương Trọng Sinh" MinimapName="" VisibleOnMinimap="1" Title="" X="4720" Y="2431" Dir="1" ScriptID="157"/>
+    <NPC Code="1052" Name="Tất Toàn" MinimapName="" VisibleOnMinimap="1" Title="Đại Tướng Quân" X="4444" Y="2552" Dir="1" ScriptID="157"/>	
+    <NPC Code="1053" Name="Đỗ Tân" MinimapName="" VisibleOnMinimap="1" Title="Quân Y" X="3750" Y="2922" Dir="1" ScriptID="157"/>
+    
+  </NPCs>
+</Map>

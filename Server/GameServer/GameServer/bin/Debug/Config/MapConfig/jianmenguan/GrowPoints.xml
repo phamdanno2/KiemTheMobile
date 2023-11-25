@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1807" Name="Tiên Mật Quả" PosX="1502" PosY="1632" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1807" Name="Tiên Mật Quả" PosX="2001" PosY="1361" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1807" Name="Tiên Mật Quả" PosX="2394" PosY="1178" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1807" Name="Tiên Mật Quả" PosX="2597" PosY="1762" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	</GrowPoints>
+</Map>

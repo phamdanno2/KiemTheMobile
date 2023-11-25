@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Giang Tân Thôn" Key="1" To="5" ToX="2870" ToY="890" X="9242" Y="5669" Radius="50" />
+	      
+	</Teleports>
+</Map>

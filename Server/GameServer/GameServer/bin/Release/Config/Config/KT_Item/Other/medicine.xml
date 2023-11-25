@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="100" Name="Kim Sáng Dược (tiểu)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Sáng Dược (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="1" Level="1" SuiteID="0" Icon="medicine_111_s" View="medicine_111_s" Intro="Thuốc thường, hồi phục ít sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="100" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="101" Name="Kim Sáng Dược (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Sáng Dược (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="1" Level="2" SuiteID="0" Icon="medicine_112_s" View="medicine_112_s" Intro="Thuốc thường, hồi phục ít sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="30" CDType="1" Price="20" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="200" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="102" Name="Kim Sáng Dược (đại)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Sáng Dược (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="1" Level="3" SuiteID="0" Icon="medicine_113_s" View="medicine_113_s" Intro="Thuốc thường, hồi phục nhiều sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="50" CDType="1" Price="60" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="103" Name="Hồi Thiên Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Thiên Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="1" Level="4" SuiteID="0" Icon="medicine_114_s" View="medicine_114_s" Intro="Thuốc cường hiệu, hồi phục nhiều sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="70" CDType="1" Price="120" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="104" Name="Cửu Chuyển Hoàn Hồn Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Cửu Chuyển Hoàn Hồn Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_115_s" View="medicine_115_s" Intro="Thần dược, hồi phục nhiều sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="200" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="105" Name="Linh Chi Tục Mệnh Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Linh Chi Tục Mệnh Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="1" Level="6" SuiteID="0" Icon="medicine_116_s" View="medicine_116_s" Intro="Thần dược, có thể khởi tử hồi sinh. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="100" CDType="1" Price="300" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="650" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="106" Name="Bánh ngô" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bánh ngô" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="2" Level="1" SuiteID="0" Icon="food_111_s" View="food_111_s" Intro="Làm bằng bột bắp, màu vàng, giống tổ ong." Help="" ObjID="32" BindType="0" Series="0" ReqLevel="0" CDType="3" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="15" Time="3240" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="15" Time="3240" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="107" Name="Cơm nắm" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Cơm nắm" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="2" Level="2" SuiteID="0" Icon="food_112_s" View="food_112_s" Intro="Cơm trắng nấu chín, nhúng nước muối vo thành nắm, có thể ăn ngay." Help="" ObjID="32" BindType="0" Series="0" ReqLevel="30" CDType="3" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="30" Time="3240" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="30" Time="3240" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="108" Name="Bánh màn thầu" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bánh màn thầu" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="2" Level="3" SuiteID="0" Icon="food_113_s" View="food_113_s" Intro="Bột trắng mịn, hấp nóng, nhìn thấy đã thèm." Help="" ObjID="32" BindType="0" Series="0" ReqLevel="50" CDType="3" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="45" Time="3240" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="45" Time="3240" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="109" Name="Bánh bột mì" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bánh bột mì" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="2" Level="4" SuiteID="0" Icon="food_114_s" View="food_114_s" Intro="Cho gia vị vào bột, làm vỏ, cuộn lại, đem hấp, thơm ngon, ăn không chán." Help="" ObjID="32" BindType="0" Series="0" ReqLevel="70" CDType="3" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="60" Time="3240" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="60" Time="3240" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="110" Name="Bánh bao nhân thịt" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bánh bao nhân thịt" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="1" ParticularType="2" Level="5" SuiteID="0" Icon="food_115_s" View="food_115_s" Intro="Nguyên liệu tuy bình thường, nhưng ăn vào mùi vị rất thơm ngon." Help="" ObjID="32" BindType="0" Series="0" ReqLevel="90" CDType="3" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="75" Time="3240" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="75" Time="3240" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="111" Name="Ngưng Thần Đơn (tiểu)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngưng Thần Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="1" Level="1" SuiteID="0" Icon="medicine_211_s" View="medicine_211_s" Intro="Thuốc thường, hồi phục ít nội lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="100" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="112" Name="Ngưng Thần Đơn (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngưng Thần Đơn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="1" Level="2" SuiteID="0" Icon="medicine_212_s" View="medicine_212_s" Intro="Thuốc thường, hồi phục ít nội lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="30" CDType="1" Price="20" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="200" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="113" Name="Ngưng Thần Đơn (đại)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngưng Thần Đơn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="1" Level="3" SuiteID="0" Icon="medicine_213_s" View="medicine_213_s" Intro="Thuốc thường, hồi phục nhiều nội lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="50" CDType="1" Price="60" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="114" Name="Đại Bổ Tán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đại Bổ Tán" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="1" Level="4" SuiteID="0" Icon="medicine_214_s" View="medicine_214_s" Intro="Thuốc cường hiệu, hồi phục nhiều nội lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="70" CDType="1" Price="120" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="115" Name="Thủ Ô Hoàn Thần Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thủ Ô Hoàn Thần Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_215_s" View="medicine_215_s" Intro="Thần dược, hồi phục nhiều nội lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="200" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="116" Name="Tuyết Tham Phản Khí Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tuyết Tham Phản Khí Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="1" Level="6" SuiteID="0" Icon="medicine_216_s" View="medicine_216_s" Intro="Thần dược, có thể hồi phục tinh khí.&lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="100" CDType="1" Price="300" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="650" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="117" Name="Thiêu Đao Tử" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thiêu Đao Tử" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="2" Level="1" SuiteID="0" Icon="food_211_s" View="food_211_s" Intro="Ủ bình thường, uống cay." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="10" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="118" Name="Nữ Nhi Hồng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nữ Nhi Hồng" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="2" Level="2" SuiteID="0" Icon="food_212_s" View="food_212_s" Intro="Người Giang Nam chôn rượu xuống đất khi đầy tháng con gái, lúc xuất giá đào lên uống." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="30" CDType="1" Price="2" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="25" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="119" Name="Đạo Hoa Hương" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đạo Hoa Hương" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="2" Level="3" SuiteID="0" Icon="food_213_s" View="food_213_s" Intro="Rượu Hồ Bắc, thơm ngào ngạt, uống vào cảm giác lâng lâng." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="50" CDType="1" Price="6" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="50" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="120" Name="Túy Sinh Mộng Tử" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Túy Sinh Mộng Tử" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="2" Level="4" SuiteID="0" Icon="food_214_s" View="food_214_s" Intro="Rượu Giang Nam, uống vào đầu óc tỉnh táo, khi say ngủ đến nửa tháng." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="70" CDType="1" Price="12" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="80" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="121" Name="Tây Bắc Vọng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tây Bắc Vọng" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="2" ParticularType="2" Level="5" SuiteID="0" Icon="food_215_s" View="food_215_s" Intro="Lấy từ câu &quot;Tây bắc vọng, xạ thiên lang&quot;, rượu phía bắc Trường Thành." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="20" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="100" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="122" Name="Thừa Tiên Mật (tiểu)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thừa Tiên Mật (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="1" Level="1" SuiteID="0" Icon="medicine_311_s" View="medicine_311_s" Intro="Thuốc thường, hồi phục ít nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="60" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="60" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="123" Name="Thừa Tiên Mật (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thừa Tiên Mật (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="1" Level="2" SuiteID="0" Icon="medicine_312_s" View="medicine_312_s" Intro="Thuốc thường, hồi phục ít nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="30" CDType="1" Price="20" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="120" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="120" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="124" Name="Thừa Tiên Mật (đại)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thừa Tiên Mật (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="1" Level="3" SuiteID="0" Icon="medicine_313_s" View="medicine_313_s" Intro="Thuốc thường, hồi phục nhiều nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="50" CDType="1" Price="60" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="180" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="180" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="125" Name="Thất Xảo Bổ Tâm Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thất Xảo Bổ Tâm Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="1" Level="4" SuiteID="0" Icon="medicine_314_s" View="medicine_314_s" Intro="Thuốc cường hiệu, hồi phục nhiều nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="70" CDType="1" Price="120" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="240" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="240" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="126" Name="Ngũ Hoa Ngọc Lộ Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hoa Ngọc Lộ Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_315_s" View="medicine_315_s" Intro="Thần dược, hồi phục nhiều nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="200" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="127" Name="Dao Trì Đại Hoàn Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Dao Trì Đại Hoàn Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="1" Level="6" SuiteID="0" Icon="medicine_316_s" View="medicine_316_s" Intro="Thần dược, có thể hồi phục nhanh nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="100" CDType="1" Price="300" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="390" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="390" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="128" Name="Thịt xào măng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thịt xào măng" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="1" SuiteID="0" Icon="food_311_s" View="food_311_s" Intro="Măng non trộn thịt xào với lửa lớn, thơm ngon. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="15" Time="32400" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="15" Time="32400" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="129" Name="Đậu tứ quý" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đậu tứ quý" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="2" SuiteID="0" Icon="food_312_s" View="food_312_s" Intro="Món ăn thường ngày, thơm ngon. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="30" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="30" Time="32400" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="30" Time="32400" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="130" Name="Đậu Hòa Lan xào" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đậu Hòa Lan xào" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="3" SuiteID="0" Icon="food_313_s" View="food_313_s" Intro="Đậu Hòa Lan xào với lửa lớn, có mùi sình, món ăn của nhà nông. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="50" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="45" Time="32400" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="45" Time="32400" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="131" Name="Cải xào tỏi" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Cải xào tỏi" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="4" SuiteID="0" Icon="food_314_s" View="food_314_s" Intro="Cải xào chung với tỏi, món ăn của nhà nông. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="70" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="60" Time="32400" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="60" Time="32400" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="132" Name="Ngọc Trúc Mai Hoa" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọc Trúc Mai Hoa" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="5" SuiteID="0" Icon="food_315_s" View="food_315_s" Intro="15 loại vật liệu, cùng 5 hoa mai 5 cánh, cọng thức ăn giống ống sáo, nên có tên như vậy. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="75" Time="32400" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="75" Time="32400" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="133" Name="Tam Hoa Tán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tam Hoa Tán" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="4" ParticularType="1" Level="1" SuiteID="0" Icon="medicine_411_s" View="medicine_411_s" Intro="Thuốc thường, hồi phục ít thể lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="50" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100027">
+    <MedicineProp MagicName="stamina_v" Value="50" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="134" Name="Ích Dương Tán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ích Dương Tán" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="4" ParticularType="1" Level="2" SuiteID="0" Icon="medicine_412_s" View="medicine_412_s" Intro="Thuốc thường, hồi phục một ít thể lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="30" CDType="1" Price="100" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100027">
+    <MedicineProp MagicName="stamina_v" Value="85" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="135" Name="Thiên Kim Tán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thiên Kim Tán" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="4" ParticularType="1" Level="3" SuiteID="0" Icon="medicine_413_s" View="medicine_413_s" Intro="Thuốc thường, hồi phục nhiều thể lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="50" CDType="1" Price="250" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100027">
+    <MedicineProp MagicName="stamina_v" Value="125" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="136" Name="Bổ Thiên Tán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bổ Thiên Tán" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="4" ParticularType="1" Level="4" SuiteID="0" Icon="medicine_414_s" View="medicine_414_s" Intro="Thuốc cường hiệu, hồi phục rất nhiều thể lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="70" CDType="1" Price="500" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100027">
+    <MedicineProp MagicName="stamina_v" Value="210" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="137" Name="Đại Nhật Viêm Dương Tán" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đại Nhật Viêm Dương Tán" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="4" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_415_s" View="medicine_415_s" Intro="Thần dược, hồi phục rất nhiều thể lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="2000" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100027">
+    <MedicineProp MagicName="stamina_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="138" Name="Thuốc giải độc (tiểu)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thuốc giải độc (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="5" ParticularType="1" Level="1" SuiteID="0" Icon="medicine_511_s" View="medicine_511_s" Intro="Đơn giản, ít tác dụng." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="50" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100028">
+    <MedicineProp MagicName="poisondamagereduce_v" Value="-1" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="139" Name="Thuốc giải độc (trung)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thuốc giải độc (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="5" ParticularType="1" Level="2" SuiteID="0" Icon="medicine_512_s" View="medicine_512_s" Intro="Có chút tác dụng." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="100" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100028">
+    <MedicineProp MagicName="poisondamagereduce_v" Value="-1" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="140" Name="Thuốc giải độc (đại)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thuốc giải độc (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="5" ParticularType="1" Level="3" SuiteID="0" Icon="medicine_513_s" View="medicine_513_s" Intro="Hiệu quả không tồi." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="250" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100028">
+    <MedicineProp MagicName="poisondamagereduce_v" Value="-1" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="141" Name="Ngân Kiều Khứ Độc Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngân Kiều Khứ Độc Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="5" ParticularType="1" Level="4" SuiteID="0" Icon="medicine_514_s" View="medicine_514_s" Intro="Hiệu quả rất tốt." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="500" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100028">
+    <MedicineProp MagicName="poisondamagereduce_v" Value="-1" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="142" Name="Long Diên Hóa Độc Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Long Diên Hóa Độc Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="5" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_515_s" View="medicine_515_s" Intro="Không độc không giải được." Help="" ObjID="36" BindType="0" Series="0" ReqLevel="0" CDType="1" Price="2000" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100028">
+    <MedicineProp MagicName="poisondamagereduce_v" Value="-1" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="143" Name="Hồi Huyết Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="1" Level="1" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Thuốc bổ bình thường, có thể hồi phục không ít sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="60" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="144" Name="Hồi Huyết Đơn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="1" Level="2" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Thuốc bổ cường hiệu, có thể hồi phục nhiều sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="145" Name="Hồi Huyết Đơn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="1" Level="3" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Đại bổ thần dược, có thể hồi phục rất nhiều sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="120" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="600" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="146" Name="Hồi Nội Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="2" Level="1" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Thuốc bổ bình thường, có thể hồi phục không ít nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="60" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="147" Name="Hồi Nội Đơn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="2" Level="2" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Thuốc bổ cường hiệu, có thể hồi phục nhiều nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="148" Name="Hồi Nội Đơn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="2" Level="3" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Đại bổ thần dược, có thể hồi phục rất nhiều nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="120" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="600" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="149" Name="Càn Khôn Tạo Hóa Hoàn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="3" Level="1" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Thuốc bổ bình thường, có thể đồng thời hồi phục không ít sinh lực và nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="60" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="240" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="240" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="150" Name="Càn Khôn Tạo Hóa Hoàn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="3" Level="2" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Thuốc bổ cường hiệu, có thể đồng thời hồi phục nhiều sinh lực và nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="151" Name="Càn Khôn Tạo Hóa Hoàn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="6" ParticularType="3" Level="3" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Thuốc chiến trường&lt;color&gt;&lt;enter&gt;Đại bổ thần dược, có thể đồng thời hồi phục rất nhiều sinh lực và nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="120" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="360" Time="180" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="360" Time="180" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="152" Name="Hồi Huyết Lãnh Thổ Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="1" Level="1" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Thuốc bổ bình thường, có thể hồi phục không ít sinh lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="153" Name="Hồi Huyết Lãnh Thổ Đơn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="1" Level="2" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Thuốc bổ cường hiệu, có thể hồi phục nhiều sinh lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="154" Name="Hồi Huyết Lãnh Thổ Đơn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="1" Level="3" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Đại bổ thần dược, có thể hồi phục rất nhiều sinh lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="600" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="155" Name="Hồi Nội Lãnh Thổ Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="2" Level="1" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Thuốc bổ bình thường, có thể hồi phục không ít nội lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="156" Name="Hồi Nội Lãnh Thổ Đơn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="2" Level="2" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Thuốc bổ cường hiệu, có thể hồi phục nhiều nội lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="157" Name="Hồi Nội Lãnh Thổ Đơn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="2" Level="3" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Đại bổ thần dược, có thể hồi phục rất nhiều nội lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="600" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="158" Name="Càn Khôn Lãnh Thổ Hoàn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="3" Level="1" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Thuốc bổ bình thường, có thể đồng thời hồi phục không ít sinh lực và nội lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="240" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="240" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="159" Name="Càn Khôn Lãnh Thổ Hoàn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="3" Level="2" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Thuốc bổ cường hiệu, có thể đồng thời hồi phục nhiều sinh lực và nội lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="160" Name="Càn Khôn Lãnh Thổ Hoàn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="7" ParticularType="3" Level="3" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Thuốc Tranh đoạt lãnh thổ&lt;color&gt;&lt;enter&gt;Đại bổ thần dược, có thể đồng thời hồi phục rất nhiều sinh lực và nội lực.&lt;enter&gt;Chỉ trong trạng thái chinh chiến mới sử dụng được" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="360" Time="180" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="360" Time="180" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="161" Name="Tiêu Dao Hồi Huyết Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="1" Level="1" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục không ít Sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="80" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="162" Name="Tiêu Dao Hồi Huyết Đơn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="1" Level="2" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục rất nhiều Sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="163" Name="Tiêu Dao Hồi Huyết Đơn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="1" Level="3" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục lượng lớn Sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="120" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="600" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="164" Name="Tiêu Dao Hồi Nội Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="2" Level="1" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục không ít Nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="80" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="400" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="165" Name="Tiêu Dao Hồi Nội Đơn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="2" Level="2" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục rất nhiều Nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="166" Name="Tiêu Dao Hồi Nội Đơn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="2" Level="3" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục lượng lớn Nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="120" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="600" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="167" Name="Tiêu Dao Càn Khôn Tạo Hóa Hoàn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="3" Level="1" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Đồng thời hồi phục không ít Sinh lực và Nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="80" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="240" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="240" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="168" Name="Tiêu Dao Càn Khôn Tạo Hóa Hoàn (trung)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (trung)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="3" Level="2" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Đồng thời hồi phục rất nhiều Sinh lực và Nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="169" Name="Tiêu Dao Càn Khôn Tạo Hóa Hoàn (đại)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (đại)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="3" Level="3" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Đồng thời hồi phục lượng lớn Sinh lực và Nội lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="120" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="360" Time="180" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="360" Time="180" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="170" Name="Cửu Chuyển Hoàn Hồn Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Cửu Chuyển Hoàn Hồn Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="9" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_115_s" View="medicine_115_s" Intro="Thần dược, hồi phục nhiều sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="80" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="171" Name="Linh Chi Tục Mệnh Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Linh Chi Tục Mệnh Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="9" ParticularType="1" Level="6" SuiteID="0" Icon="medicine_116_s" View="medicine_116_s" Intro="Thần dược, có thể khởi tử hồi sinh. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="100" CDType="1" Price="480" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="650" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="172" Name="Thủ Ô Hoàn Thần Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thủ Ô Hoàn Thần Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="9" ParticularType="2" Level="5" SuiteID="0" Icon="medicine_215_s" View="medicine_215_s" Intro="Thần dược, hồi phục nhiều nội lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="80" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="173" Name="Tuyết Tham Phản Khí Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tuyết Tham Phản Khí Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="9" ParticularType="2" Level="6" SuiteID="0" Icon="medicine_216_s" View="medicine_216_s" Intro="Thần dược, có thể hồi phục tinh khí.&lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="100" CDType="1" Price="480" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="650" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="174" Name="Ngũ Hoa Ngọc Lộ Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hoa Ngọc Lộ Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="9" ParticularType="3" Level="5" SuiteID="0" Icon="medicine_315_s" View="medicine_315_s" Intro="Thần dược, hồi phục nhiều nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="80" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="175" Name="Dao Trì Đại Hoàn Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Dao Trì Đại Hoàn Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="9" ParticularType="3" Level="6" SuiteID="0" Icon="medicine_316_s" View="medicine_316_s" Intro="Thần dược, có thể hồi phục nhanh nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="100" CDType="1" Price="480" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="390" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="390" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="176" Name="Ngọc Trúc Mai Hoa (tuần)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọc Trúc Mai Hoa" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="6" SuiteID="0" Icon="food_315_s" View="food_315_s" Intro="15 loại vật liệu, cùng 5 hoa mai 5 cánh, cọng thức ăn giống ống sáo, nên có tên như vậy. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="75" Time="10886400" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="75" Time="10886400" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="177" Name="Ngọc Trúc Mai Hoa (tháng)" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngọc Trúc Mai Hoa" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="3" ParticularType="2" Level="7" SuiteID="0" Icon="food_315_s" View="food_315_s" Intro="15 loại vật liệu, cùng 5 hoa mai 5 cánh, cọng thức ăn giống ống sáo, nên có tên như vậy. &lt;color=green&gt;Dùng cho luyện cấp.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="5" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100020">
+    <MedicineProp MagicName="lifegrow_v" Value="75" Time="46656000" Index="1" />
+    <MedicineProp MagicName="managrow_v" Value="75" Time="46656000" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="178" Name="Tiêu Dao Hồi Huyết Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Huyết Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="1" Level="4" SuiteID="0" Icon="zc_611_s" View="zc_611_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục sinh lực." Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="200" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="179" Name="Tiêu Dao Hồi Nội Đơn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồi Nội Đơn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="2" Level="4" SuiteID="0" Icon="zc_621_s" View="zc_621_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể hồi phục nội lực" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100022">
+    <MedicineProp MagicName="manapotion_v" Value="200" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="180" Name="Tiêu Dao Càn Khôn Tạo Hóa Hoàn (tiểu)" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Càn Khôn Tạo Hóa Hoàn (tiểu)" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="8" ParticularType="3" Level="4" SuiteID="0" Icon="zc_631_s" View="zc_631_s" Intro="&lt;color=gold&gt;Dùng trong Tiêu Dao Cốc&lt;color&gt;&lt;enter&gt;Có thể đồng thời hồi phục nội lực và sinh lực" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="50" CDType="1" Price="1" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="120" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="120" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="181" Name="Ngũ Hoa Ngọc Lộ Hoàn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hoa Ngọc Lộ Hoàn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="10" ParticularType="1" Level="1" SuiteID="0" Icon="medicine_315_s" View="medicine_315_s" Intro="Thần dược, hồi phục nhiều nội lực, sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="0" Series="0" ReqLevel="90" CDType="1" Price="0" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100023">
+    <MedicineProp MagicName="lifepotion_v" Value="300" Time="90" Index="1" />
+    <MedicineProp MagicName="manapotion_v" Value="300" Time="90" Index="2" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="182" Name="Cửu Chuyển Hoàn Hồn Đơn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Cửu Chuyển Hoàn Hồn Đơn" QualityPrefix="0" Category="0" Genre="17" Stack="100" DetailType="20000" ParticularType="1" Level="5" SuiteID="0" Icon="medicine_115_s" View="medicine_115_s" Intro="Thần dược, hồi phục nhiều sinh lực. &lt;color=green&gt;Dùng cho PK.&lt;color&gt;" Help="" ObjID="36" BindType="1" Series="0" ReqLevel="90" CDType="1" Price="0" ItemValue="0" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="true" BuffID="100021">
+    <MedicineProp MagicName="lifepotion_v" Value="500" Time="90" Index="1" />
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

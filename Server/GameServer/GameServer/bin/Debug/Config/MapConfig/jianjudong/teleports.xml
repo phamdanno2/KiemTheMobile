@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Đạo Hương Thôn" Key="1" To="4" ToX="9690" ToY="4570" X="2710" Y="1130" Radius="100" />
+	<Teleport Code="2" Tip="Thục Cương Bí Cảnh[cấp 95]" Key="2" To="117" ToX="6876" ToY="4746" X="910" Y="4770" Radius="100" />
+	<Teleport Code="3" Tip="Thục Cương Sơn[cấp 75]" Key="3" To="103" ToX="2521" ToY="4333" X="12759" Y="2096" Radius="100" />
+	<Teleport Code="4" Tip="Lương Sơn Bạc[cấp 115]" Key="4" To="133" ToX="12685" ToY="2167" X="12788" Y="7108" Radius="100" />
+	</Teleports>
+</Map>

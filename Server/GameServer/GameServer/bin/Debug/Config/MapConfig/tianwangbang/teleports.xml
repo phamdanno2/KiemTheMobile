@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Ba Lăng Huyện" Key="1" To="8" ToX="3634" ToY="2771" X="1238" Y="912" Radius="100" />
+	    <Teleport Code="2" Tip="Thanh Loa Đảo [cấp 25] " Key="2" To="55" ToX="7147" ToY="5891" X="7978" Y="1494" Radius="100" /> 
+		<Teleport Code="3" Tip="Tỏa Vân Uyên [cấp 105] " Key="3" To="128" ToX="1072" ToY="6225" X="1928" Y="520" Radius="100" />
+		
+	
+		
+	</Teleports>
+</Map>

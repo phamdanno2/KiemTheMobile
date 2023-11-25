@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="1922" PosY="2833" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2109" PosY="2956" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2253" PosY="3177" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2356" PosY="3646" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2290" PosY="3913" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2219" PosY="4205" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2212" PosY="4435" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1600" Name="Lương thảo bị cướp" PosX="2007" PosY="4846" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 
+	 <GrowPoint Code="1601" Name="Châu báu bị cướp" PosX="2617" PosY="4802" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1601" Name="Châu báu bị cướp" PosX="2670" PosY="4619" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1601" Name="Châu báu bị cướp" PosX="2754" PosY="4368" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1601" Name="Châu báu bị cướp" PosX="2773" PosY="4162" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1601" Name="Châu báu bị cướp" PosX="2578" PosY="4247" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1601" Name="Châu báu bị cướp" PosX="2329" PosY="4586" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+<!-- TH -->	 
+	 
+	 <GrowPoint Code="1630" Name="Sen Mẫu Đơn" PosX="4085" PosY="4622" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1630" Name="Sen Mẫu Đơn" PosX="4293" PosY="4445" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1630" Name="Sen Mẫu Đơn" PosX="3884" PosY="4402" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 
+	 
+	</GrowPoints>
+</Map>

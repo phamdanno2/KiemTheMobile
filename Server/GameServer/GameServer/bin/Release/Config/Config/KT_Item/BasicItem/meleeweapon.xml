@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="3727" Name="Thô Bố Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thô Bố Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="1" SuiteID="0" Icon="meleeweapon_n_chanshou_601" View="meleeweapon_n_chanshou_601_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3728" Name="La Hán Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="La Hán Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="2" SuiteID="0" Icon="meleeweapon_n_chanshou_602" View="meleeweapon_n_chanshou_602_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3729" Name="Quyền Tông Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quyền Tông Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="3" SuiteID="0" Icon="meleeweapon_n_chanshou_603" View="meleeweapon_n_chanshou_603_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="30" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3730" Name="Phi Ngư Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phi Ngư Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="4" SuiteID="0" Icon="meleeweapon_n_chanshou_604" View="meleeweapon_n_chanshou_604_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="40" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3731" Name="Xuyên Vân Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Xuyên Vân Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="5" SuiteID="0" Icon="meleeweapon_n_chanshou_605" View="meleeweapon_n_chanshou_605_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="50" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3732" Name="Hàm Quang Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hàm Quang Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="6" SuiteID="0" Icon="meleeweapon_n_chanshou_606" View="meleeweapon_n_chanshou_606_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3733" Name="Huyền Vũ Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Huyền Vũ Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="7" SuiteID="0" Icon="meleeweapon_n_chanshou_607" View="meleeweapon_n_chanshou_607_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="300" EnhMAPA1Max="300" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3734" Name="Chu Tước Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Chu Tước Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="8" SuiteID="0" Icon="meleeweapon_n_chanshou_608" View="meleeweapon_n_chanshou_608_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="80" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="310" EnhMAPA1Max="310" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3735" Name="Bạch Hổ Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bạch Hổ Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="9" SuiteID="0" Icon="meleeweapon_n_chanshou_609" View="meleeweapon_n_chanshou_609_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="90" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="320" EnhMAPA1Max="320" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="15" EnhMAPA1Max="15" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3736" Name="Thanh Long Triền Thủ" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Long Triền Thủ" QualityPrefix="0" Category="11" Genre="1" Stack="1" DetailType="1" ParticularType="1" Level="10" SuiteID="0" Icon="meleeweapon_n_chanshou_610" View="meleeweapon_n_chanshou_610_s" Intro="" Help="" ObjID="13" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="350" EnhMAPA1Max="350" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="allskill_v" EnhMAPA1Min="1" EnhMAPA1Max="1" EnhMAPA2Min="1" EnhMAPA2Max="1" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3737" Name="Đồng Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đồng Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="1" SuiteID="0" Icon="meleeweapon_n_jian_101" View="meleeweapon_n_jian_101_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="1" ResFemale="1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3738" Name="Tùng Văn Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tùng Văn Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="2" SuiteID="0" Icon="meleeweapon_n_jian_102" View="meleeweapon_n_jian_102_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="1" ResFemale="1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3739" Name="Thất Xích Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thất Xích Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="3" SuiteID="0" Icon="meleeweapon_n_jian_103" View="meleeweapon_n_jian_103_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="2" ResFemale="2" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="30" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3740" Name="Thanh Phong Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Phong Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="4" SuiteID="0" Icon="meleeweapon_n_jian_104" View="meleeweapon_n_jian_104_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="2" ResFemale="2" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="40" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3741" Name="Long Tuyền Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Long Tuyền Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="5" SuiteID="0" Icon="meleeweapon_n_jian_105" View="meleeweapon_n_jian_105_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="3" ResFemale="3" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="50" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3742" Name="Vạn Nhẫn Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Vạn Nhẫn Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="6" SuiteID="0" Icon="meleeweapon_n_jian_106" View="meleeweapon_n_jian_106_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="3" ResFemale="3" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3743" Name="Xích Tiêu Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Xích Tiêu Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="7" SuiteID="0" Icon="meleeweapon_n_jian_107" View="meleeweapon_n_jian_107_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="4" ResFemale="4" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="300" EnhMAPA1Max="300" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3744" Name="Thanh Sương Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thanh Sương Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="8" SuiteID="0" Icon="meleeweapon_n_jian_108" View="meleeweapon_n_jian_108_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="4" ResFemale="4" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="80" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="310" EnhMAPA1Max="310" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3745" Name="Huyền Thiết Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Huyền Thiết Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="9" SuiteID="0" Icon="meleeweapon_n_jian_109" View="meleeweapon_n_jian_109_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="5" ResFemale="5" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="90" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="320" EnhMAPA1Max="320" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="15" EnhMAPA1Max="15" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3746" Name="Long Uyên Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Long Uyên Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="2" Level="10" SuiteID="0" Icon="meleeweapon_n_jian_110" View="meleeweapon_n_jian_110_s" Intro="" Help="" ObjID="9" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="5" ResFemale="5" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="350" EnhMAPA1Max="350" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="allskill_v" EnhMAPA1Min="1" EnhMAPA1Max="1" EnhMAPA2Min="1" EnhMAPA2Max="1" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3747" Name="Đơn đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Đơn đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="1" SuiteID="0" Icon="meleeweapon_n_dao_201" View="meleeweapon_n_dao_201_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="7" ResFemale="7" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3748" Name="Quỷ Đầu Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quỷ Đầu Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="2" SuiteID="0" Icon="meleeweapon_n_dao_202" View="meleeweapon_n_dao_202_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="7" ResFemale="7" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3749" Name="Trảm Mã Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Trảm Mã Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="3" SuiteID="0" Icon="meleeweapon_n_dao_203" View="meleeweapon_n_dao_203_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="8" ResFemale="8" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="30" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3750" Name="Nhạn Linh Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nhạn Linh Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="4" SuiteID="0" Icon="meleeweapon_n_dao_204" View="meleeweapon_n_dao_204_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="8" ResFemale="8" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="40" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3751" Name="Nguyệt Nha Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nguyệt Nha Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="5" SuiteID="0" Icon="meleeweapon_n_dao_205" View="meleeweapon_n_dao_205_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="9" ResFemale="9" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="50" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3752" Name="Liệt Diệm Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Liệt Diệm Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="6" SuiteID="0" Icon="meleeweapon_n_dao_206" View="meleeweapon_n_dao_206_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="9" ResFemale="9" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3753" Name="Phách Phong Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phách Phong Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="7" SuiteID="0" Icon="meleeweapon_n_dao_207" View="meleeweapon_n_dao_207_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="10" ResFemale="10" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="300" EnhMAPA1Max="300" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3754" Name="Phá Sơn Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phá Sơn Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="8" SuiteID="0" Icon="meleeweapon_n_dao_208" View="meleeweapon_n_dao_208_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="10" ResFemale="10" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="80" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="310" EnhMAPA1Max="310" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3755" Name="Long Lân Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Long Lân Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="9" SuiteID="0" Icon="meleeweapon_n_dao_209" View="meleeweapon_n_dao_209_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="11" ResFemale="11" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="90" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="320" EnhMAPA1Max="320" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="15" EnhMAPA1Max="15" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3756" Name="Yển Nguyệt Đao" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Yển Nguyệt Đao" QualityPrefix="0" Category="13" Genre="1" Stack="1" DetailType="1" ParticularType="3" Level="10" SuiteID="0" Icon="meleeweapon_n_dao_210" View="meleeweapon_n_dao_210_s" Intro="" Help="" ObjID="10" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="11" ResFemale="11" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="350" EnhMAPA1Max="350" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="allskill_v" EnhMAPA1Min="1" EnhMAPA1Max="1" EnhMAPA2Min="1" EnhMAPA2Max="1" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3757" Name="Trọng Mộc Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Trọng Mộc Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="1" SuiteID="0" Icon="meleeweapon_n_gun_301" View="meleeweapon_n_gun_301_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="13" ResFemale="13" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3758" Name="Tề Mi Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tề Mi Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="2" SuiteID="0" Icon="meleeweapon_n_gun_302" View="meleeweapon_n_gun_302_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="13" ResFemale="13" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3759" Name="Tứ Bình Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tứ Bình Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="3" SuiteID="0" Icon="meleeweapon_n_gun_303" View="meleeweapon_n_gun_303_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="14" ResFemale="14" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="30" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3760" Name="Bàn Hoa Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bàn Hoa Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="4" SuiteID="0" Icon="meleeweapon_n_gun_304" View="meleeweapon_n_gun_304_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="14" ResFemale="14" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="40" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3761" Name="Phân Thủy Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phân Thủy Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="5" SuiteID="0" Icon="meleeweapon_n_gun_305" View="meleeweapon_n_gun_305_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="15" ResFemale="15" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="50" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3762" Name="Hổ Vĩ Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hổ Vĩ Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="6" SuiteID="0" Icon="meleeweapon_n_gun_306" View="meleeweapon_n_gun_306_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="15" ResFemale="15" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3763" Name="Tử Kim Lương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tử Kim Lương" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="7" SuiteID="0" Icon="meleeweapon_n_gun_307" View="meleeweapon_n_gun_307_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="16" ResFemale="16" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="300" EnhMAPA1Max="300" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3764" Name="Phổ Độ Côn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phổ Độ Côn" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="8" SuiteID="0" Icon="meleeweapon_n_gun_308" View="meleeweapon_n_gun_308_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="16" ResFemale="16" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="80" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="310" EnhMAPA1Max="310" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3765" Name="Giác Hải Bổng" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Giác Hải Bổng" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="9" SuiteID="0" Icon="meleeweapon_n_gun_309" View="meleeweapon_n_gun_309_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="17" ResFemale="17" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="90" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="320" EnhMAPA1Max="320" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="15" EnhMAPA1Max="15" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3766" Name="Kim Cô Bổng" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Cô Bổng" QualityPrefix="0" Category="14" Genre="1" Stack="1" DetailType="1" ParticularType="4" Level="10" SuiteID="0" Icon="meleeweapon_n_gun_310" View="meleeweapon_n_gun_310_s" Intro="" Help="" ObjID="11" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="17" ResFemale="17" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="350" EnhMAPA1Max="350" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="allskill_v" EnhMAPA1Min="1" EnhMAPA1Max="1" EnhMAPA2Min="1" EnhMAPA2Max="1" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3767" Name="Trường Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Trường Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="1" SuiteID="0" Icon="meleeweapon_n_qiang_401" View="meleeweapon_n_qiang_401_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="19" ResFemale="19" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3768" Name="Hồng Anh Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hồng Anh Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="2" SuiteID="0" Icon="meleeweapon_n_qiang_402" View="meleeweapon_n_qiang_402_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="19" ResFemale="19" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3769" Name="Điểm Cang Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Điểm Cang Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="3" SuiteID="0" Icon="meleeweapon_n_qiang_403" View="meleeweapon_n_qiang_403_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="20" ResFemale="20" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="30" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3770" Name="Hoàn Tử Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hoàn Tử Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="4" SuiteID="0" Icon="meleeweapon_n_qiang_404" View="meleeweapon_n_qiang_404_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="20" ResFemale="20" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="40" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3771" Name="Kim Câu Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Câu Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="5" SuiteID="0" Icon="meleeweapon_n_qiang_405" View="meleeweapon_n_qiang_405_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="21" ResFemale="21" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="50" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3772" Name="Báo Vĩ Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Báo Vĩ Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="6" SuiteID="0" Icon="meleeweapon_n_qiang_406" View="meleeweapon_n_qiang_406_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="21" ResFemale="21" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3773" Name="Hỏa Tiêm Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Hỏa Tiêm Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="7" SuiteID="0" Icon="meleeweapon_n_qiang_407" View="meleeweapon_n_qiang_407_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="22" ResFemale="22" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="300" EnhMAPA1Max="300" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3774" Name="Thấu Cốt Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Thấu Cốt Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="8" SuiteID="0" Icon="meleeweapon_n_qiang_408" View="meleeweapon_n_qiang_408_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="22" ResFemale="22" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="80" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="310" EnhMAPA1Max="310" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3775" Name="Kinh Lôi Thương" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kinh Lôi Thương" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="9" SuiteID="0" Icon="meleeweapon_n_qiang_409" View="meleeweapon_n_qiang_409_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="23" ResFemale="23" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="90" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="320" EnhMAPA1Max="320" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="15" EnhMAPA1Max="15" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3776" Name="Phá Thiên Kích" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phá Thiên Kích" QualityPrefix="0" Category="15" Genre="1" Stack="1" DetailType="1" ParticularType="5" Level="10" SuiteID="0" Icon="meleeweapon_n_qiang_410" View="meleeweapon_n_qiang_410_s" Intro="" Help="" ObjID="12" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="23" ResFemale="23" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="350" EnhMAPA1Max="350" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="allskill_v" EnhMAPA1Min="1" EnhMAPA1Max="1" EnhMAPA2Min="1" EnhMAPA2Max="1" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3777" Name="Chiến Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Chiến Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="1" SuiteID="0" Icon="meleeweapon_n_chui_501" View="meleeweapon_n_chui_501_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="25" ResFemale="25" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3778" Name="Bát Lăng Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Bát Lăng Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="2" SuiteID="0" Icon="meleeweapon_n_chui_502" View="meleeweapon_n_chui_502_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="25" ResFemale="25" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="25" BasicPropPA1Max="25" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="30" BasicPropPA1Max="30" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="20" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3779" Name="Ngũ Tinh Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Tinh Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="3" SuiteID="0" Icon="meleeweapon_n_chui_503" View="meleeweapon_n_chui_503_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="26" ResFemale="26" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="45" BasicPropPA1Max="45" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="50" BasicPropPA1Max="50" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="30" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3780" Name="Lượng Ngân Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Lượng Ngân Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="4" SuiteID="0" Icon="meleeweapon_n_chui_504" View="meleeweapon_n_chui_504_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="26" ResFemale="26" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="65" BasicPropPA1Max="65" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="70" BasicPropPA1Max="70" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="40" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3781" Name="Tích Lịch Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Tích Lịch Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="5" SuiteID="0" Icon="meleeweapon_n_chui_505" View="meleeweapon_n_chui_505_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="27" ResFemale="27" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="85" BasicPropPA1Max="85" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="90" BasicPropPA1Max="90" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="50" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3782" Name="Lang Nha Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Lang Nha Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="6" SuiteID="0" Icon="meleeweapon_n_chui_506" View="meleeweapon_n_chui_506_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="27" ResFemale="27" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="100" BasicPropPA1Max="100" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="110" BasicPropPA1Max="110" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3783" Name="Liệt Tâm Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Liệt Tâm Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="7" SuiteID="0" Icon="meleeweapon_n_chui_507" View="meleeweapon_n_chui_507_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="28" ResFemale="28" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="120" BasicPropPA1Max="120" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="130" BasicPropPA1Max="130" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="70" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="300" EnhMAPA1Max="300" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3784" Name="Kim Qua Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kim Qua Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="8" SuiteID="0" Icon="meleeweapon_n_chui_508" View="meleeweapon_n_chui_508_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="28" ResFemale="28" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="140" BasicPropPA1Max="140" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="150" BasicPropPA1Max="150" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="80" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="310" EnhMAPA1Max="310" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="55" EnhMAPA1Max="55" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3785" Name="Nghiệt Long Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nghiệt Long Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="9" SuiteID="0" Icon="meleeweapon_n_chui_509" View="meleeweapon_n_chui_509_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="29" ResFemale="29" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="160" BasicPropPA1Max="160" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="170" BasicPropPA1Max="170" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="90" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="320" EnhMAPA1Max="320" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="60" EnhMAPA1Max="60" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="15" EnhMAPA1Max="15" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3786" Name="Phá Thiên Chùy" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Phá Thiên Chùy" QualityPrefix="0" Category="16" Genre="1" Stack="1" DetailType="1" ParticularType="6" Level="10" SuiteID="0" Icon="meleeweapon_n_chui_510" View="meleeweapon_n_chui_510_s" Intro="" Help="" ObjID="14" BindType="2" Series="-1" ReqLevel="0" CDType="0" Price="1" ItemValue="1" MakeCost="-1" ResMale="29" ResFemale="29" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="190" BasicPropPA1Max="190" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="200" BasicPropPA1Max="200" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="100" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <ListEnhance EnhTimes="8" EnhMAName="deadlystrikeenhance_r" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="2" />
+    <ListEnhance EnhTimes="10" EnhMAName="weaponbasedamagetrim" EnhMAPA1Min="350" EnhMAPA1Max="350" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="3" />
+    <ListEnhance EnhTimes="12" EnhMAName="deadlystrikedamageenhance_p" EnhMAPA1Min="65" EnhMAPA1Max="65" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="4" />
+    <ListEnhance EnhTimes="14" EnhMAName="skilldamageptrim" EnhMAPA1Min="20" EnhMAPA1Max="20" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="5" />
+    <ListEnhance EnhTimes="16" EnhMAName="allskill_v" EnhMAPA1Min="1" EnhMAPA1Max="1" EnhMAPA2Min="1" EnhMAPA2Max="1" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="6" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3787" Name="Nhuyễn Đồng Kiếm" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Nhuyễn Đồng Kiếm" QualityPrefix="0" Category="12" Genre="1" Stack="1" DetailType="1" ParticularType="7" Level="1" SuiteID="0" Icon="meleeweapon_n_jian_101" View="meleeweapon_n_jian_101_s" Intro="" Help="" ObjID="9" BindType="2" Series="3" ReqLevel="0" CDType="0" Price="0" ItemValue="1" MakeCost="-1" ResMale="1" ResFemale="1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="weapondamagemin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="weapondamagemax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListBasicProp BasicPropType="weaponmagicmin_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="3" />
+    <ListBasicProp BasicPropType="weaponmagicmax_v" BasicPropPA1Min="10" BasicPropPA1Max="10" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="4" />
+    <ListReqProp ReqPropType="5" ReqPropValue="10" Index="1" />
+    <ListEnhance EnhTimes="4" EnhMAName="staminareplenish_v" EnhMAPA1Min="50" EnhMAPA1Max="50" EnhMAPA2Min="0" EnhMAPA2Max="0" EnhMAPA3Min="0" EnhMAPA3Max="0" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

@@ -1,0 +1,339 @@
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+I:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+G:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+F:\mu\mu2.1\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+F:\mu\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+F:\mu\mu2.1\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+Z:\server\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+Z:\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+Z:\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+Z:\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+H:\考试类\毛概\2016 秋季概论实践课作业\server\server\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+H:\考试类\毛概\2016 秋季概论实践课作业\server\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+H:\考试类\毛概\2016 秋季概论实践课作业\server\server\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+E:\全民奇迹私服\apk\210移植\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+Z:\Src2.6\Servern\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+Z:\Src2.6\Servern\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+Z:\Src2.6\Servern\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\MuMobile\2.6\New\Srouce MU 2.6_BANGOC\Srouce MU 2.6\Servernewst\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\MuMobile\2.6\New\Srouce MU 2.6_BANGOC\Srouce MU 2.6\Servernewst\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\MuMobile\2.6\New\Srouce MU 2.6_BANGOC\Srouce MU 2.6\Servernewst\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\OneDriver\OneDrive\PROJECT_MUMOBILE\MU2.6SOURCE\Soure26\GameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\GSFIX\GameServer_PHAI\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\GSFIX\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\config.xml
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\App.config
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\config.xml
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\App.config
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+C:\Users\hopel\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Client NEW\GAME_SERVER_FIXSYMBOY_21_11_2020\GAME_SERVER_FIXSYMBOY\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csprojAssemblyReference.cache
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+C:\Users\hopel\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.AssemblyReference.cache
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+D:\Dropbox\Client NEW\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+C:\Users\Administrator\Downloads\GsSource\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\config.xml
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\App.config
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe.config
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.exe
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Server.Hosting.pdb
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySQLDriverCS.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\zlib.net.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\protobuf-net.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\KF.Remoting.HuanYingSiYuan.pdb
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\bin\Debug\Tmsk.Contract.pdb
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.csproj.CopyComplete
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.exe
+C:\Users\Administrator\Downloads\Gs_HaoKiem\Gs_loiMap\GameServer\KTGameServer\KF.CenterServer.Hosting\obj\Debug\KF.Server.Hosting.pdb

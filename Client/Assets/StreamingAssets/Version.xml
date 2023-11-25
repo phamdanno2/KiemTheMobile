@@ -1,0 +1,8 @@
+﻿<Config URL="http://103.48.194.142:8888/">
+  <CdnUrl Url="http://103.48.194.142:8888/" />
+  <Application VerText="KT 2009 Beta - 1" VerCode="21" />
+  <Resource VerText="KT 2009 Beta - 1" VerCode="128" />
+  <LoadingResourceScreen FileName="Data/Resources/UI/LoadingResources.unity3d" MD5="d74fd7ea64e7e39d0761f3593d8955582" />
+  <Store AppsIosUrl="https://testflight.apple.com/join/0G9G3eNc" AppsAndroidUrl="http://taigame.kiemthe2009.mobi/KiemThe2009.apk" Msg="Đã có phiên bản mới. Vui lòng tải về và cài đè lên phiên bản hiện tại để có được trải nghiệm tốt nhất." />
+  <UpdateInfo PushVoiceUrl="http://103.48.194.142/ChatVoiceService.aspx" GetVoiceUrl="http://103.48.194.142/GetVoiceChat.aspx" ServerListUrl="http://103.48.194.142:8887/GetServerListTest.aspx" ServerListUrlBackUp="http://103.48.194.142:8887/GetServerListTest.aspx" VerifyAccountSDK="http://103.48.194.142:8887/VerifyAccount.aspx" LoginAccountSDK="http://103.48.194.142:8887/LoginSDK.aspx" RegisterAccountSDK="http://103.48.194.142:8887/RegisterSDK.aspx" FileUpdateUrl="UpdateList.xml" />
+</Config>

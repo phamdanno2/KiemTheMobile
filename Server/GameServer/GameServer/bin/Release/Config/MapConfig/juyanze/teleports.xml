@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Phượng Tường Phủ" Key="1" To="24" ToX="14017" ToY="7475" X="4400" Y="557" Radius="50" />
+	  <Teleport Code="2" Tip="Gia Dụ Quan[cấp 95]" Key="2" To="115" ToX="9430" ToY="3179" X="793" Y="2197" Radius="50" />
+	  <Teleport Code="3" Tip="Mê Cung Sa Mạc[cấp 75]" Key="3" To="101" ToX="1470" ToY="6828" X="9576" Y="6199" Radius="50" />
+	</Teleports>
+</Map>

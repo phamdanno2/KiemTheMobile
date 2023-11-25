@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+   <NPC Code="438"  Name="Nguyệt Ảnh Sa Khâu" MinimapName="" VisibleOnMinimap="1" Title="" X="3052" Y="5632" Dir="1" ScriptID="157"/>
+   <NPC Code="439"  Name="Vương Phó Tướng" MinimapName="" VisibleOnMinimap="1" Title="" X="3358" Y="5460" Dir="1" ScriptID="157" />
+   <NPC Code="1243"  Name="Ma Bổ Đầu" MinimapName="" VisibleOnMinimap="1" Title="" X="3156" Y="5224" Dir="3" ScriptID="157" />
+   
+  </NPCs>
+</Map>

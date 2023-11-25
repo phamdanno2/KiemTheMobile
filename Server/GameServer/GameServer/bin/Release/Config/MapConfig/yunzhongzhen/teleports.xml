@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Thiên Nhẫn Giáo" Key="1" To="10" ToX="1330" ToY="2530" X="9070" Y="430" Radius="50" />
+		<Teleport Code="2" Tip="Trấn Đông Mộ Viên [cấp 15] " Key="2" To="38" ToX="970" ToY="1023" X="10250" Y="830" Radius="50" />
+		<Teleport Code="3" Tip="Chiến Trường Cổ [cấp 5] " Key="3" To="30" ToX="2676" ToY="1779" X="10250" Y="1310" Radius="50" />
+		<Teleport Code="4" Tip="Biện Kinh Phủ" Key="4" To="23" ToX="8334" ToY="6893" X="570" Y="2350" Radius="50" />
+		<Teleport Code="5" Tip="Sắc Lặc Xuyên [cấp 95] " Key="5" To="114" ToX="10421" ToY="1785" X="3170" Y="4910" Radius="50" />
+		<Teleport Code="6" Tip="Tát Mãn Giáo" Key="6" To="11" ToX="6030" ToY="670" X="1950" Y="4850" Radius="50" />
+		
+	</Teleports>
+</Map>

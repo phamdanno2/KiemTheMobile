@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+     <Teleport Code="1" Tip="Cửu Nghi Khê [cấp 75] " Key="1" To="106" ToX="1496" ToY="1221" X="9070" Y="8810" Radius="50" />
+	 <Teleport Code="2" Tip="Long Tuyền Thôn" Key="2" To="7" ToX="870" ToY="4870" X="8550" Y="6290" Radius="50" />
+	</Teleports>
+</Map>

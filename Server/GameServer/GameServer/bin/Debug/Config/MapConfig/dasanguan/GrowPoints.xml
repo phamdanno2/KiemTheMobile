@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	
+	 <GrowPoint Code="1633" Name="Hắc Tinh Thạch" PosX="3629" PosY="2385" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1633" Name="Hắc Tinh Thạch" PosX="3532" PosY="2099" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="1633" Name="Hắc Tinh Thạch" PosX="3041" PosY="2048" RespawnTime="60000" CollectTick="10000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 
+	 
+	</GrowPoints>
+</Map>

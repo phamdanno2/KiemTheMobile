@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BattleName="Phượng Tường" MapID="1635" RegisterDualtion="120" BattleDualtion="1200" ReviceAwardDualtion = "120" MinLevel="90" MaxLevel="120">
+  
+  
+  <!-- Ngày trong tuần sẽ có sự kiện-->
+  <DayOfWeek>1</DayOfWeek>
+  <DayOfWeek>2</DayOfWeek>
+  <DayOfWeek>3</DayOfWeek>
+  <DayOfWeek>4</DayOfWeek>
+  <DayOfWeek>5</DayOfWeek>
+  <DayOfWeek>6</DayOfWeek>
+  <DayOfWeek>7</DayOfWeek>
+  
+  
+  <!-- Khung giờ nào sẽ có sự kiện-->
+  <OpenTime Hours="11" Minute="0" />
+  <OpenTime Hours="13" Minute="0" />
+  <OpenTime Hours="15" Minute="0" />
+  <OpenTime Hours="17" Minute="0" />
+  <OpenTime Hours="19" Minute="0" />
+  <OpenTime Hours="21" Minute="0" />
+  <OpenTime Hours="23" Minute="0" />
+  
+  
+    <!-- Danh sách quái bên Tống-->
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="4560" PosY="4247" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="4253" PosY="4175" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="4477" PosY="4092" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="4054" PosY="4253" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="3901" PosY="4100" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="4012" PosY="3912" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="4340" PosY="4308" AIType="0" RespawnTick="18000" Camp="10" />
+
+  
+  <BattelMonster ID="2513" IsBoss="true" RebornTime="600000" Name="Tống Đại Tướng" PosX="5094" PosY="4505" AIType="0" RespawnTick="-1" Camp="10" />
+  <BattelMonster ID="2513" IsBoss="true" RebornTime="600000" Name="Tống Đại Tướng" PosX="7749" PosY="4718" AIType="0" RespawnTick="-1" Camp="10" />
+  <BattelMonster ID="2513" IsBoss="true" RebornTime="600000" Name="Tống Đại Tướng" PosX="9134" PosY="4117" AIType="0" RespawnTick="-1" Camp="10" />
+  <BattelMonster ID="2513" IsBoss="true" RebornTime="600000" Name="Tống Đại Tướng" PosX="7953" PosY="2744" AIType="0" RespawnTick="-1" Camp="10" />
+  <BattelMonster ID="2513" IsBoss="true" RebornTime="600000" Name="Tống Đại Tướng" PosX="7037" PosY="3783" AIType="0" RespawnTick="-1" Camp="10" />
+  
+  <BattelMonster ID="2514" IsBoss="true" RebornTime="900000" Name="Tống Nguyên Soái" PosX="4452" PosY="2550" AIType="0" RespawnTick="-1" Camp="10" />
+  
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="6152" PosY="5093" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="6134" PosY="5400" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="5972" PosY="5226" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="6369" PosY="5254" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="6268" PosY="5293" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="6380" PosY="5481" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="6523" PosY="5353" AIType="0" RespawnTick="18000" Camp="10" />
+  
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="7872" PosY="4795" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="7565" PosY="4535" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="7830" PosY="4507" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="7491" PosY="4761" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="7731" PosY="4687" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="7322" PosY="4634" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="7717" PosY="4917" AIType="0" RespawnTick="18000" Camp="10" />
+  
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="9383" PosY="4160" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="9386" PosY="3988" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="9211" PosY="4230" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="8950" PosY="4115" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="9178" PosY="4080" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="9089" PosY="3902" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="9353" PosY="3920" AIType="0" RespawnTick="18000" Camp="10" />
+  
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="8740" PosY="3352" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="8306" PosY="3217" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="8543" PosY="3299" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="8538" PosY="3039" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="8314" PosY="3093" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="8845" PosY="3083" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="9135" PosY="3256" AIType="0" RespawnTick="18000" Camp="10" />
+  
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="6888" PosY="2133" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="6504" PosY="1945" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="6805" PosY="1910" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="6451" PosY="2073" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="7034" PosY="2011" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="6601" PosY="2194" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="8693" PosY="2252" AIType="0" RespawnTick="18000" Camp="10" />
+  
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="6142" PosY="3126" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Sĩ Binh" PosX="5921" PosY="3243" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="5869" PosY="3417" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2510" IsBoss="false" RebornTime="0" Name="Tống Hiệu Úy" PosX="6134" PosY="3384" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2511" IsBoss="false" RebornTime="0" Name="Tống Thống Lĩnh" PosX="6193" PosY="3563" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2509" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="6392" PosY="3528" AIType="0" RespawnTick="18000" Camp="10" />
+  <BattelMonster ID="2512" IsBoss="false" RebornTime="0" Name="Tống Phó Tướng" PosX="6620" PosY="3399" AIType="0" RespawnTick="18000" Camp="10" />
+  
+  
+   <!-- Danh sách quái bên KIM-->
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="10265" PosY="4719" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="10216" PosY="4904" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="10515" PosY="4709" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="10300" PosY="5044" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="10731" PosY="4848" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="10598" PosY="5022" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="10793" PosY="4548" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  <BattelMonster ID="2519" IsBoss="true" RebornTime="600000" Name="Kim Đại Tướng" PosX="10445" PosY="4861" AIType="0" RespawnTick="-1" Camp="20" />
+  <BattelMonster ID="2519" IsBoss="true" RebornTime="600000" Name="Kim Đại Tướng" PosX="13277" PosY="5166" AIType="0" RespawnTick="-1" Camp="20" />
+  <BattelMonster ID="2519" IsBoss="true" RebornTime="600000" Name="Kim Đại Tướng" PosX="9137" PosY="5577" AIType="0" RespawnTick="-1" Camp="20" />
+  <BattelMonster ID="2519" IsBoss="true" RebornTime="600000" Name="Kim Đại Tướng" PosX="9679" PosY="7081" AIType="0" RespawnTick="-1" Camp="20" />
+  <BattelMonster ID="2519" IsBoss="true" RebornTime="600000" Name="Kim Đại Tướng" PosX="11058" PosY="5866" AIType="0" RespawnTick="-1" Camp="20" />
+  
+  <BattelMonster ID="2520" IsBoss="true" RebornTime="900000" Name="Kim Nguyên Soái" PosX="13645" PosY="7234" AIType="0" RespawnTick="-1" Camp="20" />
+  
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="11785" PosY="4409" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="12035" PosY="4476" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="12174" PosY="4625" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="11965" PosY="4619" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="11739" PosY="4707" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="12168" PosY="4829" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="11952" PosY="4807" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="14150" PosY="5668" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="14329" PosY="5600" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="14579" PosY="5716" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="14604" PosY="5939" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="14382" PosY="5822" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="14140" PosY="5931" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="14358" PosY="6029" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="8857" PosY="5555" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="8990" PosY="5418" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="9251" PosY="5305" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="9248" PosY="5622" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="9486" PosY="5497" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="9351" PosY="5679" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="9057" PosY="5750" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="8391" PosY="6271" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="9002" PosY="6424" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="8927" PosY="6575" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="8708" PosY="6705" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="8477" PosY="6648" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="8809" PosY="6287" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="8554" PosY="6227" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="10988" PosY="7738" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="10897" PosY="7888" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="11241" PosY="7738" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="11170" PosY="7920" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="11030" PosY="8027" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="11251" PosY="8055" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="11464" PosY="8023" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="11934" PosY="6320" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2515" IsBoss="false" RebornTime="0" Name="Kim Sĩ Binh" PosX="12227" PosY="6264" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="11950" PosY="6127" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2516" IsBoss="false" RebornTime="0" Name="Kim Hiệu Úy" PosX="11716" PosY="6214" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2517" IsBoss="false" RebornTime="0" Name="Kim Thống Lĩnh" PosX="11698" PosY="6391" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="11883" PosY="6515" AIType="0" RespawnTick="18000" Camp="20" />
+  <BattelMonster ID="2518" IsBoss="false" RebornTime="0" Name="Kim Phó Tướng" PosX="12188" PosY="6456" AIType="0" RespawnTick="18000" Camp="20" />
+  
+  
+  
+   <!-- Điểm cần để thăng cấp -->
+	 
+  <Rank RankID="1" RankTitle="Binh sĩ" Color="ffffff" Score="0" />
+  <Rank RankID="2" RankTitle="Hiệu Úy" Color="109de8" Score="1000" />
+  <Rank RankID="3" RankTitle="Thống Lĩnh" Color="b268c4" Score="3000" />
+  <Rank RankID="4" RankTitle="Phó Tướng" Color="fac241" Score="6000" />
+  <Rank RankID="5" RankTitle="Đại Tướng" Color="f2fa00" Score="10000" />
+  <Rank RankID="6" RankTitle="Nguyên Soái" Color="f2fa00" Score="20000" />
+  
+  
+  
+   <!-- Rank của quái theo ID -->
+	 
+  <MonsterRank MonsterID="2509" RankID="1" RankTitle="Binh sĩ" />
+  <MonsterRank MonsterID="2510" RankID="2" RankTitle="Hiệu Úy" />
+  <MonsterRank MonsterID="2511" RankID="3" RankTitle="Thống Lĩnh" />
+  <MonsterRank MonsterID="2512" RankID="4" RankTitle="Phó Tướng" />
+  <MonsterRank MonsterID="2513" RankID="5" RankTitle="Đại Tướng" />
+  <MonsterRank MonsterID="2514" RankID="6" RankTitle="Nguyên Soái" />
+  <MonsterRank MonsterID="2515" RankID="1" RankTitle="Binh sĩ" />
+  <MonsterRank MonsterID="2516" RankID="2" RankTitle="Hiệu Úy" />
+  <MonsterRank MonsterID="2517" RankID="3" RankTitle="Thống Lĩnh" />
+  <MonsterRank MonsterID="2518" RankID="4" RankTitle="Phó Tướng" />
+  <MonsterRank MonsterID="2519" RankID="5" RankTitle="Đại Tướng" />
+  <MonsterRank MonsterID="2520" RankID="6" RankTitle="Nguyên Soái" />
+  
+  <!-- Vùng hồi sinh -->
+  <Region Name="Tống" RegionCamp="10" PosX="1891" PosY="1178" />
+  <Region Name="Kim" RegionCamp="20" PosX="16245" PosY="8555" />
+  
+  
+  
+   <!-- Phần thưởng theo tích lũy -->
+  <BattelAward Score="8000" Point="50" PointType="202" Money="100000" />
+  <BattelAward Score="7000" Point="40" PointType="202" Money="90000" />
+  <BattelAward Score="6000" Point="30" PointType="202" Money="80000" />
+  <BattelAward Score="5000" Point="25" PointType="202" Money="60000" />
+  <BattelAward Score="4000" Point="20" PointType="202" Money="40000" />
+  <BattelAward Score="3000" Point="15" PointType="202" Money="30000" />
+  <BattelAward Score="2000" Point="10" PointType="202" Money="20000" />
+  <BattelAward Score="1000" Point="5" PointType="202" Money="10000" />
+  
+  
+  
+   <!-- Phần thưởng thêm cho những người top -->
+  <BattelAwardExtras Rank="1" Point="45" PointType="202" />
+  <BattelAwardExtras Rank="2" Point="40" PointType="202" />
+  <BattelAwardExtras Rank="3" Point="35" PointType="202" />
+  <BattelAwardExtras Rank="4" Point="30" PointType="202" />
+  
+  
+  
+  
+  
+</BattleConfig>

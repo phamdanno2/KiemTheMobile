@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	 <NPC Code="2441" Name="Lương Tiếu Tiếu" MinimapName="" VisibleOnMinimap="1" Title="" X="12224" Y="6050" Dir="0" ScriptID="400030"/>
+  </NPCs>
+</Map>

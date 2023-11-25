@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="3325" Name="Quan Ấn Trí Sự" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 1 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="1" SuiteID="0" Icon="chop_guanyin1" View="chop_guanyin1_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="400000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3326" Name="Quan Ấn Tư Mã" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 2 hệ kim" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="2" SuiteID="0" Icon="chop_guanyin2" View="chop_guanyin2_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="600000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3327" Name="Quan Ấn Thái Thú" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 3 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="3" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3328" Name="Quan Ấn Thiếu Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 4 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="4" SuiteID="0" Icon="chop_guanyin4" View="chop_guanyin4_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="3000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="6" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3329" Name="Quan Ấn Thượng Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 5 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="5" SuiteID="0" Icon="chop_guanyin5" View="chop_guanyin5_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="6000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="9" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="3" BasicPropPA1Max="3" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3330" Name="Quan Ấn Quốc Công" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 6 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="6" SuiteID="0" Icon="chop_guanyin6" View="chop_guanyin6_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="10000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="12" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="4" BasicPropPA1Max="4" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3331" Name="Quan Ấn Thừa Tướng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 7 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="7" SuiteID="0" Icon="chop_guanyin7" View="chop_guanyin7_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="18000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="20" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3332" Name="Quan Ấn Hoàng Đế" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 8 (Kim)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="1" Level="8" SuiteID="0" Icon="chop_guanyin8" View="chop_guanyin8_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="42000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="30" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="6" BasicPropPA1Max="6" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3333" Name="Quan Ấn Trí Sự" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 1 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="1" SuiteID="0" Icon="chop_guanyin1" View="chop_guanyin1_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="400000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3334" Name="Quan Ấn Tư Mã" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 2 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="2" SuiteID="0" Icon="chop_guanyin2" View="chop_guanyin2_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="600000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3335" Name="Quan Ấn Thái Thú" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 3 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="3" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3336" Name="Quan Ấn Thiếu Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 4 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="4" SuiteID="0" Icon="chop_guanyin4" View="chop_guanyin4_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="3000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="6" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3337" Name="Quan Ấn Thượng Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 5 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="5" SuiteID="0" Icon="chop_guanyin5" View="chop_guanyin5_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="6000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="9" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="3" BasicPropPA1Max="3" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3338" Name="Quan Ấn Quốc Công" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 6 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="6" SuiteID="0" Icon="chop_guanyin6" View="chop_guanyin6_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="10000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="12" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="4" BasicPropPA1Max="4" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3339" Name="Quan Ấn Thừa Tướng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 7 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="7" SuiteID="0" Icon="chop_guanyin7" View="chop_guanyin7_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="18000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="20" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3340" Name="Quan Ấn Hoàng Đế" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 8 (Mộc)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="2" Level="8" SuiteID="0" Icon="chop_guanyin8" View="chop_guanyin8_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="42000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="30" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="6" BasicPropPA1Max="6" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3341" Name="Quan Ấn Trí Sự" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 1 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="1" SuiteID="0" Icon="chop_guanyin1" View="chop_guanyin1_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="400000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3342" Name="Quan Ấn Tư Mã" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 2 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="2" SuiteID="0" Icon="chop_guanyin2" View="chop_guanyin2_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="600000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3343" Name="Quan Ấn Thái Thú" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 3 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="3" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3344" Name="Quan Ấn Thiếu Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 4 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="4" SuiteID="0" Icon="chop_guanyin4" View="chop_guanyin4_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="3000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="6" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3345" Name="Quan Ấn Thượng Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 5 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="5" SuiteID="0" Icon="chop_guanyin5" View="chop_guanyin5_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="6000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="9" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="3" BasicPropPA1Max="3" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3346" Name="Quan Ấn Quốc Công" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 6 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="6" SuiteID="0" Icon="chop_guanyin6" View="chop_guanyin6_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="10000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="12" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="4" BasicPropPA1Max="4" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3347" Name="Quan Ấn Thừa Tướng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 7 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="7" SuiteID="0" Icon="chop_guanyin7" View="chop_guanyin7_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="18000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="20" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3348" Name="Quan Ấn Hoàng Đế" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 8 (Thủy)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="3" Level="8" SuiteID="0" Icon="chop_guanyin8" View="chop_guanyin8_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="42000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="30" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="6" BasicPropPA1Max="6" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3349" Name="Quan Ấn Trí Sự" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 1 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="1" SuiteID="0" Icon="chop_guanyin1" View="chop_guanyin1_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="400000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3350" Name="Quan Ấn Tư Mã" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 2 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="2" SuiteID="0" Icon="chop_guanyin2" View="chop_guanyin2_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="600000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3351" Name="Quan Ấn Thái Thú" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 3 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="3" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3352" Name="Quan Ấn Thiếu Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 4 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="4" SuiteID="0" Icon="chop_guanyin4" View="chop_guanyin4_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="3000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="6" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3353" Name="Quan Ấn Thượng Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 5 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="5" SuiteID="0" Icon="chop_guanyin5" View="chop_guanyin5_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="6000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="9" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="3" BasicPropPA1Max="3" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3354" Name="Quan Ấn Quốc Công" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 6 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="6" SuiteID="0" Icon="chop_guanyin6" View="chop_guanyin6_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="10000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="12" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="4" BasicPropPA1Max="4" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3355" Name="Quan Ấn Thừa Tướng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 7 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="7" SuiteID="0" Icon="chop_guanyin7" View="chop_guanyin7_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="18000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="20" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3356" Name="Quan Ấn Hoàng Đế" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 8 (Hỏa)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="4" Level="8" SuiteID="0" Icon="chop_guanyin8" View="chop_guanyin8_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="42000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="30" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="6" BasicPropPA1Max="6" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3357" Name="Quan Ấn Trí Sự" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 1 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="1" SuiteID="0" Icon="chop_guanyin1" View="chop_guanyin1_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="400000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="1" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3358" Name="Quan Ấn Tư Mã" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 2 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="2" SuiteID="0" Icon="chop_guanyin2" View="chop_guanyin2_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="600000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="2" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3359" Name="Quan Ấn Thái Thú" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 3 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="3" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3360" Name="Quan Ấn Thiếu Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 4 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="4" SuiteID="0" Icon="chop_guanyin4" View="chop_guanyin4_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="3000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="6" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3361" Name="Quan Ấn Thượng Khanh" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 5 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="5" SuiteID="0" Icon="chop_guanyin5" View="chop_guanyin5_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="6000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="9" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="3" BasicPropPA1Max="3" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3362" Name="Quan Ấn Quốc Công" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 6 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="6" SuiteID="0" Icon="chop_guanyin6" View="chop_guanyin6_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="10000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="12" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="4" BasicPropPA1Max="4" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3363" Name="Quan Ấn Thừa Tướng" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 7 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="7" SuiteID="0" Icon="chop_guanyin7" View="chop_guanyin7_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="18000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="20" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="5" BasicPropPA1Max="5" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3364" Name="Quan Ấn Hoàng Đế" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Quan ấn cấp 8 (Thổ)" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="5" Level="8" SuiteID="0" Icon="chop_guanyin8" View="chop_guanyin8_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="42000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="30" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="6" BasicPropPA1Max="6" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3365" Name="Kiếm Vũ Cửu Thiên Ấn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kiếm Vũ Cửu Thiên Ấn_Hệ Kim" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="6" Level="1" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="1" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3366" Name="Kiếm Vũ Cửu Thiên Ấn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kiếm Vũ Cửu Thiên Ấn_Hệ Mộc" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="7" Level="1" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="2" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3367" Name="Kiếm Vũ Cửu Thiên Ấn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kiếm Vũ Cửu Thiên Ấn_Hệ Thủy" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="8" Level="1" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="3" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3368" Name="Kiếm Vũ Cửu Thiên Ấn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kiếm Vũ Cửu Thiên Ấn_Hệ Hỏa" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="9" Level="1" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="4" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3369" Name="Kiếm Vũ Cửu Thiên Ấn" IconBundleDir="Icon/EquipIcon2.unity3d" IconAtlasName="EquipIcon2" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Kiếm Vũ Cửu Thiên Ấn_Hệ Thổ" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="18" ParticularType="10" Level="1" SuiteID="0" Icon="chop_guanyin3" View="chop_guanyin3_s" Intro="" Help="" ObjID="32" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="1000000" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="4" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="2" BasicPropPA1Max="2" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="allskill_v" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="0" BasicPropPA2Max="0" BasicPropPA3Min="899" BasicPropPA3Max="899" Index="2" />
+    <ListReqProp ReqPropType="7" ReqPropValue="5" Index="1" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

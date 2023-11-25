@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+    <Teleport Code="1" Tip="Đạo Hương Thôn" Key="1" To="4" ToX="6250" ToY="1310" X="750" Y="870" Radius="50" />
+	<Teleport Code="2" Tip="Dương Châu Phủ" Key="2" To="26" ToX="2890" ToY="1270" X="3530" Y="3530" Radius="50" />	
+	<Teleport Code="3" Tip="Cô Tô Thủy Tạ [cấp 25]" Key="3" To="50" ToX="4355" ToY="4975" X="4651" Y="637" Radius="50" />	  
+	
+    
+		
+	</Teleports>
+</Map>

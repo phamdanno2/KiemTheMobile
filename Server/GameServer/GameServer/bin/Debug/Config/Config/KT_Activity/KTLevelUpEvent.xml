@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LevelUpGiftConfig>
+	<LevelUpItem ID="1" ToLevel="90" LevelUpGift="187,5|15000,20" />
+	<LevelUpItem ID="2" ToLevel="100" LevelUpGift="188,4|15005,10" />
+	<LevelUpItem ID="3" ToLevel="110" LevelUpGift="189,3|15000,30" />
+	<LevelUpItem ID="4" ToLevel="120" LevelUpGift="190,2|15005,15" />
+	<LevelUpItem ID="5" ToLevel="130" LevelUpGift="191,1|15000,40" />
+	<LevelUpItem ID="6" ToLevel="140" LevelUpGift="1074,1000|15005,20" />
+	<LevelUpItem ID="7" ToLevel="150" LevelUpGift="192,1|15000,50" />
+</LevelUpGiftConfig>

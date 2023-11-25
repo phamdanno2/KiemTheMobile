@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Thạch Cổ Trấn" Key="1" To="6" ToX="4974" ToY="685" X="9660" Y="943" Radius="50" />
+		<Teleport Code="2" Tip="Bách Hoa Cốc [cấp 25] " Key="2" To="52" ToX="7185" ToY="1049" X="4161" Y="6013" Radius="50" />
+	<!--
+	52 -> 17 / 3683,5686
+		
+	-->
+		
+	</Teleports>
+</Map>

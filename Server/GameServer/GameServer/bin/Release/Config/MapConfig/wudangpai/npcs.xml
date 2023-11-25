@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="414"  Name="Nhất Diệp Chân Nhân" MinimapName="" VisibleOnMinimap="1" Title="" X="5910" Y="3450" Dir="7" ScriptID="72" />
+	<NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="5470" Y="3110" Dir="1" ScriptID="64" />
+	<NPC Code="2538" Name="Tổng Quản Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="5290" Y="2550" Dir="0" ScriptID="65" />
+	<NPC Code="3554" Name="Vương Trùng Dương" MinimapName="Chưởng môn Vương Trùng Dương" VisibleOnMinimap="1" Title="Chưởng giáo Võ Đang" X="4010" Y="3730" Dir="7" ScriptID="152" />
+	<NPC Code="426" Name="Động Hư Chân Nhân" MinimapName="" VisibleOnMinimap="1" Title="" X="6450" Y="1890" Dir="7" ScriptID="74" />
+	<NPC Code="3553" Name="Chung Chí Minh" MinimapName="" VisibleOnMinimap="1" Title="" X="8490" Y="2710" Dir="1" ScriptID="73" />
+	<NPC Code="412" Name="Lộ Hiểu Nhiên" MinimapName="" VisibleOnMinimap="1" Title="" X="2230" Y="3030" Dir="7" ScriptID="75" />
+	
+	<NPC Code="6782" Name="Đại Lão Bạch" MinimapName="Tửu Lầu" VisibleOnMinimap="1" Title="Chủ Tửu Lầu" X="4930" Y="1270" Dir="7" ScriptID="24"/>
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="4370" Y="1250" Dir="1" ScriptID="27"/>
+	<NPC Code="6777" Name="Điềm Tửu Thúc" MinimapName="Binh Khí" VisibleOnMinimap="1" Title="Chủ Tiệm Binh Khí" X="5590" Y="790" Dir="1" ScriptID="29" />
+	<NPC Code="6778" Name="Thẩm Hà Diệp" MinimapName="Phòng Cụ" VisibleOnMinimap="1" Title="Chủ Tiệm Phòng Cụ" X="5010" Y="590" Dir="7" ScriptID="25"/>	
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="4630" Y="2830" Dir="7" ScriptID="12" />
+	
+	
+  </NPCs>
+</Map>

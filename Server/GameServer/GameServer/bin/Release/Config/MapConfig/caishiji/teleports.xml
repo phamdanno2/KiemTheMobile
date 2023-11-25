@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      	  <Teleport Code="1" Tip="Hoàng Hạc Lâu[cấp 85]" Key="1" To="109" ToX="5086" ToY="564" X="857" Y="2125" Radius="50" />
+		  <Teleport Code="2" Tip="Lâm An Phủ" Key="2" To="29" ToX="2410" ToY="1490" X="7453" Y="5994" Radius="50" />
+		  <Teleport Code="3" Tip="Hổ Khâu Kiếm Trì[cấp 65]" Key="3" To="96" ToX="886" ToY="5170" X="7461" Y="2648" Radius="50" />
+		  <Teleport Code="4" Tip="Cửu Nghi Khê[cấp 75]" Key="4" To="106" ToX="7090" ToY="8970" X="3592" Y="439" Radius="50" />
+		  
+	</Teleports>
+</Map>

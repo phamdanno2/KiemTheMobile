@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+     <Teleport Code="1" Tip="Cán Hoa Khê[Cấp 55]" Key="1" To="90" ToX="8701" ToY="6497" X="730" Y="4910" Radius="50" />
+	 <Teleport Code="2" Tip="Kiếm Các Thục Đạo[Cấp 75]" Key="2" To="104" ToX="8270" ToY="6010" X="8730" Y="4970" Radius="50" />
+	</Teleports>
+</Map>

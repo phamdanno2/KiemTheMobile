@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	 <Teleport Code="1" Tip="Côn Lôn Phái" Key="1" To="12" ToX="1066" ToY="2725" X="8394" Y="750" Radius="50" />
+	 <Teleport Code="2" Tip="Mê Cung Băng Huyệt 1[Cấp 35]" Key="2" To="58" ToX="7911" ToY="857" X="8668" Y="5349" Radius="50" />
+	 
+	 
+	 
+	</Teleports>
+</Map>

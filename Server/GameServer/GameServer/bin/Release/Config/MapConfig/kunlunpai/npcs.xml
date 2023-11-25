@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="4157" Y="2450" Dir="0" ScriptID="12" />
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="6707" Y="2324" Dir="3" ScriptID="27"/>
+	<NPC Code="6777" Name="Điềm Tửu Thúc" MinimapName="Binh Khí" VisibleOnMinimap="1" Title="Chủ Tiệm Binh Khí" X="5990" Y="2216" Dir="7" ScriptID="29" />
+	<NPC Code="6782" Name="Đại Lão Bạch" MinimapName="Tửu Lầu" VisibleOnMinimap="1" Title="Chủ Tửu Lầu" X="6963" Y="2823" Dir="3" ScriptID="24"/>
+	<NPC Code="6781" Name="Bất Động Tiên Sinh" MinimapName="Tạp Hóa" VisibleOnMinimap="1" Title="Chủ Tiệm Tạp Hóa" X="6829" Y="1620" Dir="7" ScriptID="28"/>
+	<NPC Code="6778" Name="Thẩm Hà Diệp" MinimapName="Phòng Cụ" VisibleOnMinimap="1" Title="Chủ Tiệm Phòng Cụ" X="5951" Y="2589" Dir="7" ScriptID="25"/>
+	
+	<NPC Code="3560" Name="Tống Thu Thạch" MinimapName="Chưởng môn Tống Thu Thạch" VisibleOnMinimap="1" Title="Chưởng môn Côn Lôn" X="2302" Y="3043" Dir="1" ScriptID="152"/>
+	<NPC Code="3556" Name="Du Lạc Thiên" MinimapName="" VisibleOnMinimap="1" Title="" X="875" Y="1927" Dir="7" ScriptID="107"/>
+	<NPC Code="3558" Name="Du Thanh Tố" MinimapName="" VisibleOnMinimap="1" Title="" X="3922" Y="3647" Dir="1" ScriptID="108" />
+	<NPC Code="3559" Name="Gia Cát Trác Vân" MinimapName="" VisibleOnMinimap="1" Title="" X="5829" Y="1215" Dir="1" ScriptID="109" />
+	<NPC Code="3557" Name="Tạ Vũ Điền" MinimapName="" VisibleOnMinimap="1" Title="" X="4622" Y="4504" Dir="5" ScriptID="110" />
+	<NPC Code="2538" Name="Tổng Quản Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="3188" Y="2130" Dir="7" ScriptID="65" />
+	<NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="4855" Y="2004" Dir="3" ScriptID="64" />
+	<NPC Code="3692" Name="Hạo Vũ Công Chúa" MinimapName="" VisibleOnMinimap="1" Title="Võ lâm đệ nhất mỹ nữ" X="5920" Y="4780" Dir="2" ScriptID="111" />
+  </NPCs>
+</Map>

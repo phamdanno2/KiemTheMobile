@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+    <Monster ID="1" Code="2284" X="2610" Y="4390" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="2" Code="2284" X="2869" Y="2054" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="3" Code="2284" X="976" Y="2283" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="4" Code="2284" X="5060" Y="5153" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="5" Code="2284" X="4088" Y="6326" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="6" Code="2284" X="1067" Y="6364" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+		
+	<Monster ID="7" Code="2281" X="8510" Y="2550" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="8" Code="2281" X="10606" Y="2604" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="9" Code="2281" X="10016" Y="1079" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="10" Code="2281" X="6366" Y="1400" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="11" Code="2281" X="4656" Y="1461" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	 	
+	<Monster ID="12" Code="2282" X="7950" Y="6070" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="13" Code="2282" X="7924" Y="4611" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="14" Code="2282" X="9839" Y="4626" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="15" Code="2282" X="11381" Y="5774" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="16" Code="2282" X="9790" Y="6361" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="17" Code="2282" X="9847" Y="7364" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	<Monster ID="18" Code="2282" X="8430" Y="7521" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="" BirthRate="1" />
+	
+<!-- HT -->
+	<Monster ID="23" Code="3135" X="3432" Y="2857" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="24" Code="3136" X="3713" Y="5109" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="25" Code="3137" X="6278" Y="7139" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />
+	<Monster ID="26" Code="3138" X="11351" Y="3632" Radius="100" Num="1" Timeslot="300" PursuitRadius="10" BirthType="0" TimePoints="0" BirthRate="1" />  
+<!-- Boss The gioi -->
+<!-- Nhu Tiểu Thúy[Kim 95] -->
+	<Monster ID="27" Code="2934" X="1087" Y="3714" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="12:35|15:35|18:35|22:35" BirthRate="1" />
+<!-- Ô Sơn Thanh[Hỏa 95] -->
+	<Monster ID="28" Code="2937" X="3351" Y="1203" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="12:35|15:35|18:35|22:35" BirthRate="1" />
+<!-- Giả Dật Sơn[Thủy 95] -->
+	<Monster ID="29" Code="2936" X="8816" Y="897" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="12:35|15:35|18:35|22:35" BirthRate="1" />
+<!-- Trần Vô Mệnh[Thổ 95] -->
+	<Monster ID="30" Code="2938" X="3547" Y="7135" Radius="100" Num="1" Timeslot="" PursuitRadius="200" BirthType="1" TimePoints="12:35|15:35|18:35|22:35" BirthRate="1" />
+	  
+    
+  </Monsters>
+</Map>

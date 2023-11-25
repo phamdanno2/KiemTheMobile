@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+          <Teleport Code="1" Tip="Long Tuyền Thôn" Key="1" To="7" ToX="8730" ToY="2330" X="1101" Y="853" Radius="50" />
+	      
+	</Teleports>
+</Map>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Giang Tân Thôn" Key="1" To="5" ToX="1530" ToY="3450" X="1730" Y="790" Radius="100" />
+		<Teleport Code="2" Tip="Thành Đô Phủ" Key="2" To="27" ToX="2010" ToY="1010" X="5150" Y="7430" Radius="100" />
+		<Teleport Code="3" Tip="Cửu Lão Động 1[Cấp 25]" Key="3" To="51" ToX="3187" ToY="1243" X="1514" Y="6054" Radius="100" />
+		
+	
+		
+	</Teleports>
+</Map>

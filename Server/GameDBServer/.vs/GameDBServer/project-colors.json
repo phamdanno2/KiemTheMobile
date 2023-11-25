@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d49a3fbd-cb43-4389-9ade-5564cbf3c737": {
+      "ProjectGuid": "d49a3fbd-cb43-4389-9ade-5564cbf3c737",
+      "DisplayName": "GameDBServer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

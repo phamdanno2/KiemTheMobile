@@ -1,0 +1,3581 @@
+﻿using System.Text;
+using HSGameEngine.GameEngine.Network;
+using Server.Tools;
+
+namespace FSPlay.GameEngine.Network
+{
+	/// <summary>
+	/// ID gói tin đăng nhập
+	/// </summary>
+	public enum TCPLoginServerCmds { CMD_LOGIN_ON1 = 1, CMD_LOGIN_ON2 = 20 };
+
+    /// <summary>
+    /// ID gói tin
+    /// </summary>
+    public enum TCPGameServerCmds
+    {
+        CMD_LOGIN_ON1 = 1,
+        CMD_LOGIN_ON2 = 20,
+        CMD_NTF_CMD_BASE_ID = 21,
+        CMD_LOG_OUT = 22,
+        CMD_SPR_CLIENTHEART = 23,
+        /// <summary>
+        /// Truy vấn tham biến hệ thống
+        /// </summary>
+        CMD_DB_QUERY_SYSPARAM = 25,
+
+        /// <summary>
+        /// Truy vấn Võ lâm liên đấu
+        /// </summary>
+        CMD_DB_TEAMBATTLE = 26,
+
+        CMD_PREREMOVE_ROLE = 98, // 增加预删除角色消息
+        CMD_UNREMOVE_ROLE = 99, // 恢复预删除的角色
+        CMD_LOGIN_ON = 100,
+        CMD_ROLE_LIST, CMD_CREATE_ROLE, CMD_REMOVE_ROLE,
+        CMD_INIT_GAME, CMD_SYNC_TIME, CMD_PLAY_GAME, CMD_SPR_MOVE, CMD_SPR_MOVEEND, CMD_SPR_MOVE2,
+        CMD_OTHER_ROLE, CMD_OTHER_ROLE_DATA, CMD_SPR_POSITION, CMD_SPR_PETPOS, CMD_SPR_ACTTION, CMD_SPR_ACTTION2,
+        CMD_SPR_MAGICCODE, CMD_SPR_ATTACK, CMD_SPR_INJURE,
+        CMD_SPR_REALIVE, CMD_SPR_RELIFE, CMD_SPR_CLICKON, CMD_SYSTEM_MONSTER,
+        CMD_SPR_MAPCHANGE, CMD_SPR_ENTERMAP, CMD_SPR_NEWTASK, CMD_SPR_GETATTRIB2,
+        CMD_SPR_LEAVE, CMD_SPR_NPC_BUY, CMD_SPR_NPC_SALEOUT, CMD_SPR_ADD_GOODS, CMD_SPR_MOD_GOODS,
+        CMD_SPR_MERGE_GOODS, CMD_SPR_SPLIT_GOODS, CMD_SPR_GET_MERGETYPES, CMD_SPR_GET_MERGEITEMS, CMD_SPR_GET_MERGENEWGOODS,
+        CMD_SPR_CHGCODE, CMD_SPR_MONEYCHANGE, CMD_SPR_MODTASK, CMD_SPR_COMPTASK, CMD_SPR_EXPCHANGE,
+        CMD_SPR_GETFRIENDS, CMD_SPR_ADDFRIEND, CMD_SPR_REMOVEFRIEND, CMD_SPR_REJECTFRIEND, CMD_SPR_ASKFRIEND,
+        CMD_SPR_NEWGOODSPACK, CMD_SPR_DELGOODSPACK, CMD_SPR_CLICKONGOODSPACK,
+        CMD_SPR_GETTHING, CMD_SPR_CHGPKMODE, CMD_SPR_CHGPKVAL, CMD_SPR_UPDATENPCSTATE, CMD_SPR_NPCSTATELIST, CMD_SPR_GETNEWTASKDATA,
+        CMD_SPR_ABANDONTASK, CMD_SPR_HITED, CMD_SPR_MODKEYS, CMD_SPR_CHAT,
+        CMD_SPR_USEGOODS, CMD_SPR_CHANGEPOS, CMD_SPR_NOTIFYCHGMAP, CMD_SPR_FORGE, CMD_SPR_ENCHANCE,
+        CMD_SPR_GETOTHERATTRIB, CMD_SPR_UPDATE_ROLEDATA, CMD_SPR_REMOVE_COOLDOWN,
+        CMD_SPR_MALL_BUY, CMD_SPR_BoundToken_BUY, CMD_SPR_TokenCHANGE, CMD_SPR_USERBoundTokenCHANGE, CMD_SPR_GOODSEXCHANGE, CMD_SPR_EXCHANGEDATA,
+        CMD_SPR_MOVEGOODSDATA, CMD_SPR_GOODSSTALL, CMD_SPR_STALLDATA, CMD_SPR_STALLNAME,
+        CMD_SPR_TEAM, CMD_SPR_TEAMDATA, CMD_SPR_TEAMID, CMD_SPR_BATTLE, CMD_SPR_NPCSCRIPT,
+        CMD_SPR_DEAD, CMD_SPR_AUTOFIGHT, CMD_SPR_HORSE, CMD_SPR_PET,
+        CMD_SPR_DIANJIANGLIST, CMD_SPR_DIANJIANGDATA, CMD_SPR_DJROOMROLESDATA, CMD_SPR_DIANJIANG, CMD_SPR_DIANJIANGFIGHT,
+        CMD_SPR_DIANJIANGPOINT, CMD_SPR_GETDJPOINTS, CMD_SPR_UPDATEINTERPOWER,
+        CMD_SPR_GOTOMAP, CMD_SPR_NOTIFYMSG, CMD_SPR_QUERYIDBYNAME, CMD_ADDHORSE, CMD_ADDPET, CMD_GETHORSELIST, CMD_GETOTHERHORSELIST, CMD_GETPETLIST,
+        CMD_MODHORSE, CMD_MODPET, CMD_SELECTHORSE, CMD_GETGOODSLISTBYSITE, CMD_GETLINEINFO, CMD_GETJINGMAILIST, CMD_UP_JINGMAI_LEVEL,
+        CMD_GETOTHERJINGMAILIST, CMD_SPR_LOADALREADY, CMD_SPR_BULLETINMSG, CMD_SPR_GMAUTH, CMD_SPR_EQUIPUPGRADE, CMD_SPR_ENCHASEJEWEL,
+        CMD_SPR_SHOWBIGUAN, CMD_SPR_GETBIGUAN, CMD_SPR_UPSKILLLEVEL, CMD_SPR_ADD_SKILL, CMD_SPR_JINGMAI_INFO, CMD_SPR_HORSEENCHANCE,
+        CMD_SPR_HORSEUPGRADE, CMD_SPR_SALEGOODS, CMD_SPR_SELFSALEGOODSLIST, CMD_SPR_OTHERSALEGOODSLIST, CMD_SPR_MARKETROLELIST,
+        CMD_SPR_MARKETGOODSLIST, CMD_SPR_MARKETBUYGOODS, CMD_SPR_MODDEFSKILLID, CMD_SPR_MODAUTODRINK, CMD_SPR_PLAYDECO, CMD_SPR_BUFFERDATA,
+        CMD_SPR_RUNTOMAP, CMD_SPR_SEARCHROLES, CMD_SPR_LISTROLES, CMD_SPR_LISTTEAMS, CMD_SPR_RESETBAG, CMD_SPR_DAILYTASKDATA, CMD_SPR_DAILYJINGMAIDATA,
+        CMD_SPR_CHGNUMSKILLID, CMD_SPR_GETSKILLUSEDNUM, CMD_SPR_CHGHORSEBODY, CMD_SPR_PORTABLEBAGDATA, CMD_SPR_RESETPORTABLEBAG,
+        CMD_SPR_EXECWABAO, CMD_SPR_GETWABAODATA, CMD_SPR_GETHUODONGDATA, CMD_SPR_GETWLOGINGIFT, CMD_SPR_GETNEWSTEPGIFT, CMD_SPR_GETMTIMEGIFT,
+        CMD_SPR_GETBIGGIFT, CMD_SPR_GETSONGLIGIFT, CMD_SPR_CHGHUODONGID, CMD_SPR_FUBENDATA, CMD_SPR_ENTERFUBEN, CMD_SPR_NOTIFYENTERFUBEN,
+        CMD_SPR_CLIENTHEART_OLD, CMD_SPR_OHTERJINGMAIEXP, CMD_GETRANDOMNAME, CMD_SKILLUSEDNUMFULL, CMD_SPR_GETFUBENHISTDATA, CMD_SPR_GETFUBENBEGININFO,
+        CMD_SPR_COPYMAPMONSTERSNUM, CMD_SPR_FINDMONSTER, CMD_SPR_BATCHYINPIAO, CMD_SPR_FORCETOLAOFANG, CMD_SPR_CHGPURPLENAME, CMD_SPR_CHGLIANZHAN,
+        CMD_SPR_GETROLEDAILYDATA, CMD_SPR_GETBOSSINFODICT, CMD_SPR_GETPAIHANGLIST, CMD_SPR_YABIAODATA, CMD_SPR_STARTYABIAO, CMD_SPR_ENDYABIAO,
+        CMD_SPR_YABIAOTAKEGOODS, CMD_SPR_TOUBAO, CMD_SPR_GETOTHERATTRIB2, CMD_SPR_NEWBIAOCHE, CMD_SPR_DELBIAOCHE, CMD_SPR_FINDBIAOCHE,
+        CMD_SPR_CHGBIAOCHELIFEV, CMD_SPR_NOTIFYENDCHONGXUE, CMD_SPR_ADDHORSELUCKY, CMD_SPR_BATTLEKILLEDNUM, CMD_SPR_CHGBATTLENAMEINFO,
+        CMD_SPR_NOFITYPOPUPWIN, CMD_SPR_NOTIFYBATTLEROLEINFO, CMD_SPR_NOTIFYBATTLEENDINFO, CMD_SPR_GETCHONGZHIJIFEN, CMD_SPR_NOTIFYTEAMCHGLEVEL,
+        CMD_SPR_GETFUBENHISTLISTDATA, CMD_SPR_CHGHEROINDEX, CMD_GETOTHERHORSEDATA, CMD_UPDATEALLTHINGINDEXS, CMD_SPR_CHGHALFBoundTokenPERIOD,
+        CMD_SPR_GETBANGHUILIST, CMD_SPR_CREATEBANGHUI, CMD_SPR_CHGBANGHUIINFO, CMD_SPR_QUERYBANGHUIDETAIL, CMD_SPR_UPDATEBANGHUIBULLETIN,
+        CMD_SPR_GETBHMEMBERDATALIST, CMD_SPR_UPDATEBHVERIFY, CMD_SPR_APPLYTOBHMEMBER, CMD_SPR_ADDBHMEMBER, CMD_SPR_REMOVEBHMEMBER,
+        CMD_SPR_QUITFROMBANGHUI, CMD_SPR_DESTROYBANGHUI, CMD_SPR_BANGHUIVERIFY, CMD_SPR_INVITETOBANGHUI, CMD_SPR_CHGBHMEMBERZHIWU,
+        CMD_SPR_CHGBHMEMBERCHENGHAO, CMD_SPR_SEARCHROLESFROMDB, CMD_SPR_AGREETOTOBANGHUI, CMD_SPR_REFUSEAPPLYTOBH, CMD_SPR_GETBANGGONGHIST,
+        CMD_SPR_DONATEBGMONEY, CMD_SPR_DONATEBGGOODS, CMD_SPR_BANGGONGCHANGE, CMD_SPR_GETBANGQIINFO, CMD_SPR_RENAMEBANGQI, CMD_SPR_UPLEVELBANGQI,
+        CMD_SPR_CHGJUNQILIFEV, CMD_SPR_NEWJUNQI, CMD_SPR_DELJUNQI, CMD_SPR_LINGDIFORBH, CMD_SPR_CHGHUANGDIROLEID, CMD_SPR_GETBHLINGDIINFODICTBYBHID,
+        CMD_SPR_SETLINGDITAX, CMD_SPR_TAKELINGDITAXMONEY, CMD_SPR_GETHUANGDIBHINFO, CMD_SPR_NOTIFYBHZHIWU, CMD_SPR_OPENYANGGONGBK, CMD_SPR_REFRESHYANGGONGBK,
+        CMD_SPR_CLICKYANGGONGBK, CMD_SPR_REFRESHQIZHENGE, CMD_SPR_QIZHEGEBUY, CMD_SPR_QUERYQIZHEGEBUYHIST, CMD_SPR_QUICKJINGMAI, CMD_SPR_QUICKHORSEENCHANCE,
+        CMD_SPR_QUICKEQUIPENHANCE, CMD_SPR_QUICKEQUIPFORGE, CMD_SPR_GETHUANGDIROLEDATA, CMD_SPR_ADDHUANGFEI, CMD_SPR_REMOVEHUANGFEI, CMD_SPR_GETHUANGFEIDATA,
+        CMD_SPR_SENDTOLAOFANG, CMD_SPR_TAKEOUTLAOFANG, CMD_SPR_BANCHAT, CMD_SPR_CHGHUANGHOU, CMD_SPR_GETLINGDIMAPINFO, CMD_SPR_GETHUANGCHENGMAPINFO,
+        CMD_SPR_ADDLINGDITAXMONEY, CMD_SPR_INVITEADDHUANGFEI, CMD_SPR_AGREEADDHUANGFEI, CMD_SPR_TASKTRANSPORT, CMD_SPT_LINGLIGUANZHU, CMD_SPR_GETGOODSBYDBID,
+        CMD_SPR_QUICKCOMPLETETASK, CMD_SPR_QUERYCHONGZHIMONEY, CMD_SPR_GETFIRSTCHONGZHIDALI, CMD_SPR_NOTIFYBATTLESIDE, CMD_SPR_NOTIFYBATTLEAWARD, CMD_SPR_EXECWABAOBYYAOSHI,
+        CMD_SPR_SUBFORGE, CMD_SPR_GETUSERMAILLIST, CMD_SPR_GETUSERMAILDATA, CMD_SPR_FETCHMAILGOODS, CMD_SPR_DELETEUSERMAIL, CMD_SPR_GETMAILSENDCODE,
+        CMD_SPR_SENDUSERMAIL, CMD_SPR_RECEIVELASTMAIL, CMD_SPR_EQUIPBORNINDEXUPDATE, CMD_SPR_EQUIPINHERIT, CMD_SPR_QUERYINPUTFANLI,
+        CMD_SPR_QUERYINPUTJIASONG, CMD_SPR_QUERYINPUTKING, CMD_SPR_QUERYLEVELKING, CMD_SPR_QUERYEQUIPKING, CMD_SPR_QUERYHORSEKING, CMD_SPR_QUERYJINGMAIKING,
+        CMD_SPR_QUERYAWARDHIST, CMD_SPR_EXECUTEINPUTFANLI, CMD_SPR_EXECUTEINPUTJIASONG, CMD_SPR_EXECUTEINPUTKING, CMD_SPR_EXECUTELEVELKING, CMD_SPR_EXECUTEEQUIPKING,
+        CMD_SPR_EXECUTEHORSEKING, CMD_SPR_EXECUTEJINGMAIKING, CMD_SPR_MALLZHENQIBUY, CMD_SPR_FETCHACTIVITYAWARD, CMD_SPR_VIPDAILYDATA, CMD_SPR_USEVIPDAILYPRIORITY,
+        CMD_SPR_ACTIVITYTRANSPORT, CMD_SPR_YANGGONGBKDAILYDATA, CMD_SPR_FETCHYANGGONGBKJIFENAWARD, CMD_SPR_QUERYSHILIANTAAWARDINFO, CMD_SPR_FETCHSHILIANTAAWARD,
+        CMD_SPR_COMPLETETINYCLIENT, CMD_SPR_USERBoundMoneyCHANGE, CMD_SPR_NOTIFYSHENGXIAOGUESSSTAT, CMD_SPR_NOTIFYSHENGXIAOGUESSRESULT, CMD_SPR_ADDSHENGXIAOMORTGAGE,
+        CMD_SPR_QUERYROLESHENGXIAOGUESSLIST, CMD_SPR_QUERYSHENGXIAOGUESSHISTORY, CMD_SPR_QUERYSHENGXIAORECENTRESULTLIST, CMD_SPR_QUERYSHENGXIAOGUESSSELFHISTORY,
+        CMD_SPR_UPDATETENGXUNFCMRATE, CMD_SPR_NEWNPC, CMD_SPR_DELNPC, CMD_SPR_EXTGRIDBYYUANBAO, CMD_SPR_SUBMONEY, CMD_SPR_EXTBAGNUMBYYUANBAO, CMD_SPR_STOPMOVE,
+        CMD_SPR_NOTIFYEQUIPSTRONG,
+        CMD_SPR_EXCUTENPCLUATALK, CMD_SPR_EXCUTENPCLUAFUNCTION, CMD_SPR_ARENABATTLE, CMD_SPR_ARENABATTLEKILLEDNUM, CMD_SPR_CITYWARREQUEST, CMD_SPR_TAKELINGDIDAILYAWARD,
+        CMD_SPR_NOTIFYOPENWINDOW, CMD_SPR_CHENGJIUDATA, CMD_SPR_FETCHCHENGJIUAWARD, CMD_SPR_DSHIDECMD, CMD_SPR_NEWDECO, CMD_SPR_DELDECO, CMD_SPR_MENDEQUIPMENT,
+        CMD_SPR_NOTIFYGOODSINFO, CMD_SPR_ROLEPARAMSCHANGE, CMD_SPR_EQUIPFENJIE, CMD_SPR_JINGYUANEXCHANGE, CMD_SPR_HUIZHANGEXCHANGE, CMD_SPR_ACTIVATNEXTLEVELJINGMAI,
+        CMD_SPR_FETCHVIPONCEAWARD, CMD_SPR_TASKTRANSPORT2, CMD_SPR_ACTIVATNEXTLEVELWUXUE, CMD_SPR_CAIJI, CMD_SPR_RUNTASKPLOTLUA,
+        CMD_SPR_PLAYGAMEEFFECT, CMD_SPR_TRANSFERSOMETHING, CMD_SPR_CHANGEPETAITYPE, CMD_SPR_FETCHMALLDATA, CMD_SPR_MALLQIANGGOUBUYGOODS,
+        CMD_SPR_FETCHZUANHUANGAWARD, CMD_SPR_SETSYSTEMOPENPARAMS, CMD_SPR_ENTERTASKFUBEN, CMD_SPR_GETUPLEVELGIFTOK, CMD_SPR_UPDATEWEIGHTS,
+        CMD_SPR_GETTASKAWARDS, CMD_SPR_NOTIFYGETGOODSPACK, CMD_SPR_RESETJINDANBAG, CMD_SPR_GETJINDANGOODSLIST, CMD_SPR_ZAJINDAN, CMD_SPR_QUERYZAJINDANHISTORY,
+        CMD_SPR_QUERYSELFZAJINDANHISTORY, CMD_SPR_GETWANGCHENGMAPINFO, CMD_SPR_GETLIMITTIMELOGINGIFT, CMD_SPR_ROLESTATUSCMD, CMD_SPR_GETTO60AWARD, CMD_SPR_GETKAIFUONLINEINFO,
+        CMD_SPR_GETDAYCHONGZHIDALI, CMD_SPR_GETJIERIXMLDATA, CMD_SPR_QUERYJIERIDALIBAO, CMD_SPR_QUERYJIERIDENGLU, CMD_SPR_QUERYJIERIVIP, CMD_SPR_QUERYJIERICZSONG, CMD_SPR_QUERYJIERICZLEIJI,
+        CMD_SPR_QUERYJIERIZIKA, CMD_SPR_QUERYJIERIXIAOFEIKING, CMD_SPR_QUERYJIERICZKING, CMD_SPR_EXECUTEJIERIDALIBAO, CMD_SPR_EXECUTEJIERIDENGLU, CMD_SPR_EXECUTEJIERIVIP, CMD_SPR_EXECUTEJIERICZSONG, CMD_SPR_EXECUTEJIERICZLEIJI,
+        CMD_SPR_EXECUTEJIERIZIKA, CMD_SPR_EXECUTEJIERIXIAOFEIKING, CMD_SPR_EXECUTEJIERICZKING, CMD_SPR_CHGJIERICHENGHAO, CMD_SPR_FACTIVITIESDATA, CMD_SPR_YUANBAOCOMPLETETASK,
+        CMD_SPR_QUERYHEFUDALIBAO, CMD_SPR_QUERYHEFUVIP, CMD_SPR_QUERYHEFUCZSONG, CMD_SPR_QUERYHEFUFANLI, CMD_SPR_QUERYHEFUPKKING, CMD_SPR_QUERYHEFUWCKING, CMD_SPR_QUERYXINFANLI,
+        CMD_SPR_EXECUHEFUDALIBAO, CMD_SPR_EXECUHEFUVIP, CMD_SPR_EXECUHEFUCZSONG, CMD_SPR_EXECUHEFUFANLI, CMD_SPR_EXECUHEFUPKKING, CMD_SPR_EXECUHEFUWCKING, CMD_SPR_EXECUXINFANLI,
+        CMD_SPR_ONEKEYQUICKSALEOUT, CMD_SPR_ACTIVATNEXTLEVELZHANHUN, CMD_SPR_ACTIVATNEXTLEVELRONGYU, CMD_SPR_ACTIVATRONGYUBUFFER, CMD_SPR_LIANLUJINGLIAN, CMD_SPR_ZJDJIFEN,
+        CMD_SPR_FETCHZJDJIFENAWARD,
+        CMD_SPR_QUERYACTIVITYINFO,  // 客户端请求活动的相关信息 -- 比如冲级豪礼名额 神装领取名额 幸运抽奖次数[7/18/2013 LiaoWei]
+        CMD_SPR_XINGYUNCHOUJIANG,   // 幸运抽奖 [7/18/2013 LiaoWei]
+        CMD_SPR_QUERYYUEDUCHOUJIANGHISTORY,         // 客户端请求月度抽奖历史(全服玩家)[7/23/2013 LiaoWei]
+        CMD_SPR_QUERYSELFQUERYYUEDUCHOUJIANGHISTORY,// 客户端请求月度抽奖历史(玩家自己) [7/23/2013 LiaoWei]
+        CMD_SPR_EXECUTEYUEDUCHOUJIANG,              // 客户端点击月度抽奖 [7/23/2013 LiaoWei]
+        CMD_SPR_QUERYYUEDUCHOUJIANGINFO,            // 客户端请求月度抽奖信息--能玩的次数和活动期间充值的元宝数 [7/23/2013 LiaoWei]
+        CMD_SPR_EXECUTEHUNQIEXCHANGE,               // 客户端发起魂器卖出操作 [8/7/2013 LiaoWei]
+        CMD_SPR_EXECUTECHANGEOCCUPATION,            // 客户端发起转职操作  [9/28/2013 LiaoWei]
+        CMD_SPR_EXECUTECHANGELIFE,                  // 客户端发起转生操作  [9/28/2013 LiaoWei]
+        CMD_SPR_BEGINBLINK,                         // 闪现开始 [10/28/2013 LiaoWei]
+        CMD_SPR_ENDBLINK,                           // 闪现结束 [10/28/2013 LiaoWei]
+        CMD_SPR_GETROLEUSINGGOODSDATALIST,
+        CMD_SPR_EXECUTEPROPADDPOINT,                // 属性加点 [10/31/2013 LiaoWei]
+        CMD_SPR_EXECUTERECOMMENDPROPADDPOINT,       // 推荐属性加点 [10/31/2013 LiaoWei]
+        CMD_SPR_EXECUTERECLEANPROPADDPOINT,         // 清除属性加点 [10/31/2013 LiaoWei]
+        CMD_SPR_QUERYCLEANPROPADDPOINT,             // 请求清除属性加点信息 [2/11/2014 LiaoWei]
+        CMD_SPR_BLOODCASTLEBEGINFIGHT,              // 血色堡垒开始战斗 -- 客户端把桥头的阻挡去掉 [11/7/2013 LiaoWei]
+        CMD_SPR_BLOODCASTLEKILLMONSTERAHASDONE,     // 血色堡垒断桥怪击杀到达限额 -- 客户端把桥尾的阻挡去掉 [11/7/2013 LiaoWei]
+        CMD_SPR_BLOODCASTLEENDFIGHT,                // 血色堡垒结束战斗 -- 客户端显示倒计时界面 [11/7/2013 LiaoWei]
+        CMD_SPR_FUBENCLEANOUT,                      // 副本扫荡 [11/15/2013 LiaoWei]
+        CMD_SPR_FUBENPASSNOTIFY,                    // 副本通关通告 [11/15/2013 LiaoWei]
+        CMD_SPR_QUERYFUBENINFO,                    // 客户端请求副本信息 [11/15/2013 LiaoWei]
+        CMD_SPR_ATTACK2,                           // 2号攻击请求 针对于黑龙波等特殊技能 [11/22/2013 LiaoWei]
+        CMD_SPR_COMPLETEFLASHSCENE,                // 完成新手场景 [11/30/2013 LiaoWei]
+        CMD_SPR_FRESHPLAYERSCENEKILLMONSTERAHASDONE,// 新手场景断桥怪击杀到达限额 -- 客户端把桥尾的阻挡去掉 [12/1/2013 LiaoWei]
+        CMD_SPR_REFURBISHTASKSTARLEVEL,             // 客户端刷新任务星级 [12/3/2013 LiaoWei]
+        CMD_SPR_COMPLETEDAILYCIRCLETASKFORONCECLICK,// 一键完成日常跑环任务 [12/5/2013 LiaoWei]
+        CMD_SPR_ADMIREDPLAYER,                      // 客户端点击崇拜某人的操作 [12/10/2013 LiaoWei]
+        CMD_SPR_QUERYBLOODCASTLEINFO,               // 请求血色堡垒基本信息 [12/14/2013 LiaoWei]
+        CMD_SPR_EQUIPAPPENDPROP,                    // 装备追加消息 [12/18/2013 LiaoWei]
+        CMD_SPR_BLOODCASTLEPREPAREFIGHT,            // 血色堡垒准备战斗 -- 客户端显示战斗倒计时 [12/20/2013 LiaoWei]
+        CMD_SPR_BLOODCASTLECOMBATPOINT,             // 血色堡垒战斗积分 -- 客户端显示战斗积分 [12/20/2013 LiaoWei]
+        CMD_SPR_BLOODCASTLEKILLMONSTERSTATUS,       // 血色堡垒杀怪状态 -- 客户端显示杀怪的状态 [12/20/2013 LiaoWei]
+        CMD_SPR_QUERYCAMPBATTLEINFO,                // 请求阵营战场基本信息 [12/23/2013 LiaoWei]
+        CMD_SPR_QUERYDAIMONSQUAREINFO,              // 请求恶魔广场基本信息 [12/25/2013 LiaoWei]
+        CMD_SPR_QUERYDAIMONSQUARETIMERINFO,         // 恶魔广场时间信息 [12/25/2013 LiaoWei]
+        CMD_SPR_QUERYDAIMONSQUAREMONSTERWAVEANDPOINTRINFO,// 恶魔广场怪物和得分信息 [12/25/2013 LiaoWei]
+        CMD_SPR_DAIMONSQUAREENDFIGHT,                // 恶魔广场结束 [12/25/2013 LiaoWei]
+        CMD_SPR_UPDATEEVERYDAYONLINEAWARDGIFTINFO,    // 更新玩家的每日在线信息 [1/12/2014 LiaoWei]
+        CMD_SPR_GETEVERYDAYONLINEAWARDGIFT,          // 领取每日在线奖励 [1/12/2014 LiaoWei]
+        CMD_SPR_UPDATEEVERYDAYSERIESLOGININFO,      // 更新玩家的连续登陆信息 [1/12/2014 LiaoWei]
+        CMD_SPR_GETEVERYDAYSERIESLOGINAWARDGIFT,    // 领取连续登陆奖励 [1/12/2014 LiaoWei]
+        CMD_SPR_FRESHPLAYERSCENEOVERTIME,           // 新手场景超时 通知客户端 [1/16/2014 LiaoWei]
+        CMD_SPR_UPDATEGETTHINGSFLAG,                // 更新拾取设置
+        CMD_SPR_BLOODCASTLEPLAYERNUMNOTIFY,         // 血色堡垒人数通知 [1/20/2014 LiaoWei]
+        CMD_SPR_DAIMONSQUAREPLAYERNUMNOTIFY,        // 恶魔广场人数通知 [1/20/2014 LiaoWei]
+        CMD_SPR_BATTLEPLAYERNUMNOTIFY,              // 阵营战人数通知  [1/20/2014 LiaoWei]
+        CMD_SPR_EXCHANGEMOJINGANDQIFU,              // 魔晶和祈福兑换 [1/23/2014 LiaoWei]
+        CMD_SPR_GETMEDITATEEXP,                     // 获取冥想经验 [1/24/2014 LiaoWei]
+        CMD_SPR_GETMEDITATETIMEINFO,                // 获取冥想时间信息 [1/24/2014 LiaoWei]
+        CMD_SPR_QUERYTOTALLOGININFO,                // 请求累计登陆数据 [2/11/2014 LiaoWei]
+        CMD_SPR_GETTOTALLOGINAWARD,                 // 领取累计登陆奖励 [2/11/2014 LiaoWei]
+        CMD_SPR_CHANGELIFEFOREQUIP,                 // 客户端装备转生操作 [2/15/2014 LiaoWei]
+        CMD_SPR_FLAKEOFFCHANGELIFEFOREQUIP,         // 客户端装备转生剥离操作 [2/15/2014 LiaoWei]
+        CMD_SPR_ONEKEYFINDFRIEND,                   // 点击一键征友 [2/15/2014 LiaoWei]
+        CMD_SPR_ONEKEYADDFRIEND,                    // 点击一键加友 [2/15/2014 LiaoWei]
+        CMD_SPR_GETVIPAWARD,                        // 获得VIP奖励 [2/20/2014 LiaoWei]
+        CMD_SPR_DAILYACTIVEDATA,                    // 获取每日活跃信息 [2/25/2014 LiaoWei]
+        CMD_SPR_GETDAILYACTIVEAWARD,                // 获取每日活跃奖励 [2/25/2014 LiaoWei]
+        CMD_SPR_SETAUTOASSIGNPROPERTYPOINT,         // 设置自动分配点设置 [3/3/2014 LiaoWei]
+        CMD_SPR_GETBLOODCASTLEAWARD,                // 领取血色堡垒的奖励 [3/8/2014 LiaoWei]
+        CMD_SPR_GETDAIMONSQUAREAWARD,               // 领取恶魔广场的奖励 [3/8/2014 LiaoWei]
+        CMD_SPR_GETCOPYMAPAWARD,                    // 领取副本奖励 [3/5/2014 LiaoWei]
+        CMD_SPR_GETSKILLINFO,                       // 客户端请求技能信息 [3/17/2014 LiaoWei]
+        CMD_SPR_EXPERIENCECOPYMAPINFO,              // 经验副本信息 [3/18/2014 LiaoWei]
+        CMD_SPR_ZHANMENGSHIJIAN_DETAIL,             // 战盟事件详情 [3/14/2014 JinJieLong]
+        CMD_SPR_KAIFUACTIVITYINFO,                  // 开服活动信息 [3/20/2014 LiaoWei]
+        CMD_SPR_GETTHEKINGOFPKINFO,                 // 请求PK之王基本信息 [3/22/2014 LiaoWei]
+        CMD_SPR_NOTIFYTHEKINGOFPKAWARDINFO,         // PK之王奖励信息 [3/22/2014 LiaoWei]
+        CMD_SPR_ANGELTEMPLETIMERINFO,               // 天使神殿时间信息(准备战斗、开始战斗、结束战斗) [12/20/2013 LiaoWei]
+        CMD_SPR_ANGELTEMPLEFIGHTEND,                // 天使神殿结束--显示奖励[12/20/2013 LiaoWei]
+        CMD_SPR_ANGELTEMPLEFIGHTINFOALL,            // 天使神殿战斗信息--群发 [3/23/2014 LiaoWei]
+        CMD_SPR_ANGELTEMPLEFIGHTINFOSINGLE,         // 天使神殿战斗信息--给自己 [3/23/2014 LiaoWei]
+        CMD_SPR_ANGELTEMPLESPARK,                   // 天使神殿战力鼓舞 [3/23/2014 LiaoWei]
+        CMD_SPR_GETANGELTEMPLEBASEINFO,             // 天使神殿基本信息[3/23/2014 LiaoWei]
+        CMD_SPR_QUERYADRATIONPKKINGINFO,            // 请求PK之王崇拜信息[3/23/2014 LiaoWei]
+        CMD_SPR_ADRATIONPKKING,                     // PK之王崇拜[3/23/2014 LiaoWei]
+        CMD_SPR_JINGJI_DETAIL,                      // 竞技场详情 [3/24/2014 JinJieLong]   
+        CMD_SPR_JINGJI_REQUEST_CHALLENGE,           // 竞技场请求挑战 [3/24/2014 JinJieLong]
+        CMD_SPR_JINGJI_CHALLENGE_END,               // 竞技场挑战结束弹出奖励窗口[3/24/2014 JinJieLong]
+        CMD_SPR_JINGJI_NOTIFY_START,                // 竞技场通知开始倒计时
+        CMD_SPR_JINGJI_CHALLENGEINFO,                // 竞技场战报[3/25/2014 JinJieLong]
+        CMD_SPR_JINGJI_RANKING_REWARD,              // 竞技场领取排行榜奖励[3/25/2014 JinJieLong]
+        CMD_SPR_JINGJICHANG_REMOVE_CD,              // 竞技场消除挑战CD [3/25/2014 JinJieLong]
+        CMD_SPR_JINGJICHANG_GET_BUFF,               // 竞技场领取Buff [3/25/2014 JinJieLong]
+        CMD_SPR_JINGJICHANG_JUNXIAN_LEVELUP,        // 竞技场升级军衔 [3/25/2014 JinJieLong]
+        CMD_SPR_JINGJICHANG_LEAVE,                  // 离开竞技场消息[3/29/2014 JinJieLong]
+        CMD_SPR_CHGFAKEROLELIFEV,                   //假人的血量修改
+        CMD_SPR_NEWFAKEROLE,                        //新假人通知
+        CMD_SPR_DELFAKEROLE,                        //删除假人
+        CMD_SPR_OPENMARKET,                         //打开交易市场
+        CMD_SPR_MARKETSALEMONEY,                    //交易市场中上架金币
+        CMD_SPR_GETVIPINFO,                         // 玩家请求VIP信息 [3/28/2014 LiaoWei]
+        CMD_SPR_GETVIPLEVELAWARD,                   // 玩家领取VIP等级奖励 [3/28/2014 LiaoWei]
+        CMD_SPR_VIPLEVELUP,                         // 玩家VIP等级升级 [3/28/2014 LiaoWei]
+        CMD_SPR_GETLIXIANBAITANTICKS,               // 获取离线摆摊时长(毫秒)
+        CMD_SPR_UPDATELIXIANBAITANTICKS,            // 修改离线摆摊时长(毫秒)
+        CMD_SPR_QUERYOPENGRIDTICK,                  // 请求开背包格子时间戳 [4/7/2014 LiaoWei]
+        CMD_SPR_QUERYOPENPORTABLEGRIDTICK,          // 请求开随身仓库包裹的时间戳 [4/7/2014 LiaoWei]
+        CMD_SPR_STARTMEDITATE,                      // 开始冥想
+        CMD_SPR_ZHANMENGBUILDUPLEVEL,               // 战盟建筑升级
+        CMD_SPR_ZHANMENGBUILDGETBUFFER,             // 领取战盟建筑的buffer
+        CMD_SPR_GETBAITANLOG,                       // 获取摆摊日志
+        CMD_SPR_GETPUSHMESSAGEINFO,                 // 客户端把推送信息发给服务器[4/23/2014 LiaoWei]
+        CMD_SPR_ACTIVATIONPICTUREJUDGE,             // 激活图鉴 [5/3/2014 LiaoWei]
+        CMD_SPR_GETNPICTUREJUDGEINFO,               // 取得图鉴信息 [5/3/2014 LiaoWei]
+        CMD_SPR_MUEQUIPUPGRADE,                     // 装备进阶 [4/30/2014 LiaoWei]
+        CMD_SPR_WINGUPSTAR,                         // 翅膀升星 [5/4/2014 liuhuicheng]
+        CMD_SPR_WINGUPGRADE,                        // 翅膀进阶 [5/4/2014 liuhuicheng]
+        CMD_SPR_WINGOFFON,                          // 翅膀佩戴/卸载 [5/4/2014 liuhuicheng]
+        CMD_SPR_CHECK,                              // 与服务器心跳，每两秒发一次，校验是否加速
+        CMD_SPR_REFERPICTUREJUDGE,                  // 提交图鉴信息 [5/17/2014 LiaoWei]
+        CMD_SPR_GETMOJINGEXCHANGEINFO,              // 客户端请求魔晶钻石兑换信息 [5/21/2014 LiaoWei]
+        CMD_SPR_REFRESH_ICON_STATE,                 // 刷新图标状态信息 [5/21/2014 ChenXiaojun]
+        CMD_SPR_EQUIPAPPENDINHERIT,                 // 追加传承 [5/24/2014 LiaoWei]
+        CMD_SPR_SWEEP_WANMOTA,                      // 扫荡万魔塔 [6/5/2014 ChenXiaojun]
+        CMD_SPR_UPDATE_SWEEP_STATE,                 // 更新扫荡状态 [6/5/2014 ChenXiaojun]
+        CMD_SPR_GET_WANMOTA_DETAIL,                 // 获取万魔塔信息 [6/5/2014 ChenXiaojun]
+        CMD_SPR_GET_SWEEP_REWARD,                   // 领取扫荡奖励 [6/5/2014 ChenXiaojun]
+        CMD_SPR_LISTCOPYTEAMS,                      // 搜索副本队伍 [6/5/2014 LiTeng]
+        CMD_SPR_COPYTEAM,                           // 副本组队命令 [6/5/2014 LiTeng]
+        CMD_SPR_COPYTEAMDATA,                       // 副本队伍信息 [6/5/2014 LiTeng]
+        CMD_SPR_COPYTEAMSTATE,                      // 副本队伍成员状态变更 [6/5/2014 LiTeng]
+        CMD_SPR_REGEVENTNOTIFY,                     // 注册事件通知(副本组队) [6/5/2014 LiTeng]
+        CMD_SPR_LISTCOPYTEAMDATA,                   // 队伍列表中的队伍信息变化 [6/5/2014 LiTeng]
+        CMD_SPR_COPYTEAMDAMAGEINFO,                 // 队伍成员伤害信息 [6/6/2014 LiTeng]
+        CMD_SPR_BoundMoneyCOPYSCENEPREPAREFIGHT,          // 金币副本准备战斗 -- 客户端显示战斗倒计时 [6/11/2014 LiaoWei]
+        CMD_SPR_BoundMoneyCOPYSCENEMONSTERWAVE,           // 金币副本刷怪波数 [6/11/2014 LiaoWei]
+        CMD_SPR_GETNEWZONEACTIVEAWARD,              // 获取新区活动奖 [6/10/2014 gwz]
+        CMD_SPR_QUERYUPLEVELMADMAN,                 // 冲级狂人 [6/10/2014 gwz]
+        CMD_SPR_QUERYNEWZONEACTIVE,                 // 新区活动 [6/10/2014 gwz]
+        CMD_SPR_QUERYUPLEVELGIFTINFO,               // 请求等级奖励领取信息 [6/16/2014 LiTeng]
+        CMD_SPR_GETUPLEVELGIFTAWARD,                // 领取等级奖励奖励 [6/16/2014 LiTeng]
+        CMD_SPR_JINGJI_START_FIGHT,                 // 竞技场战斗开始消息[6/17/2014 ChenXiaojun]
+        CMD_SPR_QUERY_REPAYACTIVEINFO,              // 查询回馈活动信息 [6/17/2014 gwz]
+        CMD_SPR_GET_REPAYACTIVEAWARD,               // 获取回馈活动奖励 [6/17/2014 gwz]
+        CMD_SPR_QUERY_ALLREPAYACTIVEINFO,           // 获取所有回馈信息，充值和消费值 [6/19/2014 gwz]
+        CMD_SPR_QUERYACTIVITYSOMEINFO,              // 请求活动(血色城堡、恶魔广场)的一些信息 [7/8/2014 LiaoWei]
+        //CMD_SPR_DESTROYGOODS,                     //摧毁物品
+        CMD_SPR_PLAYBOSSANIMATION,                  //boss出生前通知播放动画
+        CMD_SPR_ENDBOSSANIMATION,                   //客户端通知服务器端开始刷新boss（防止外挂，参数有校验）
+        CMD_SPR_QUERY_TODAYCANDOINFO,               //查询今日可做 [7/9/2014 gwz]
+        CMD_SPR_QUERY_GETOLDRESINFO,                //查询资源找回信息 [7/9/2014 gwz]
+        CMD_SPR_GET_OLDRESOURCE,                    //资源找回，领取资源 [7/9/2014 gwz]
+        CMD_SPR_EXTENSIONPROPSHITED,                //拓展属性命中通知
+        CMD_SPR_EXEC_WASHPROPS,                     //执行装备洗练
+        CMD_SPR_EXEC_WASHPROPSINHERIT,              //执行装备洗练传承
+        CMD_SPR_BATTLE_SCORE_LIST,                  //阵营战积分排名信息 [7/23/2014 lt]
+        CMD_SPR_STORYCOPYMAPINFO,                   // 剧情副本信息 [7/24/2014 LiaoWei]
+        CMD_SPR_GETUSERMAILCOUNT,                   //获取邮件数量 [7/28/2014 lt]
+        CMD_SPR_QUERYIMPETRATEINFO,                 // 请求祈福数据 [7/30/2014 LiaoWei]
+        CMD_SPR_EXECUTEIMPETRATE,                   // 执行祈福 [7/30/2014 LiaoWei]
+        CMD_SPR_OPENMARKET2,                        //打开交易市场 MU交易所功能修改的第二套交易类指令开始
+        CMD_SPR_MARKETSALEMONEY2,                   //交易市场中上架金币
+        CMD_SPR_SALEGOODS2,
+        CMD_SPR_SELFSALEGOODSLIST2,
+        CMD_SPR_OTHERSALEGOODSLIST2,
+        CMD_SPR_MARKETROLELIST2,
+        CMD_SPR_MARKETGOODSLIST2,
+        CMD_SPR_MARKETBUYGOODS2,                    //MU交易所功能修改的第二套交易类指令结束
+        CMD_SPR_QUERYSTARCONSTELLATIONINFO,         // 请求星座数据 [8/1/2014 LiaoWei]
+        CMD_SPR_EXECUTEACTIVATIONSTARCONSTELLATION, // 激活星座 [8/1/2014 LiaoWei]
+        CMD_SPR_CHANGEANGLE, // 修改角色的360角度
+
+
+        CMD_SPR_UPDATESHARESTATE,                   // 处理分享[8/6/2014 gwz]
+        CMD_SPR_GETSHAREAWARD,                      // 发放分享奖励[8/6/2014 gwz]
+        CMD_SPR_GETSHARESTATE,                      //获取分享状态
+        CMD_SPR_BROADSPECIALHINTTEXT,               // 播放特殊的提示信息，例如boss AI描述
+        CMD_SPR_MAPAIEVENT,                         // 发送地图事件，例如清除光幕
+        CMD_SPR_EXEC_LIANZHI,                       // 执行炼制
+        CMD_SPR_QUERY_LIANZHICOUNT,                 // 查询炼制次数
+        CMD_SPR_UPGRADE_CHENGJIU,                   // 提升成就 [9/15/2014 ChenXiaojun]
+        CMD_SPR_GETFIRSTCHARGEINFO,                 //获得各个充值档首次充值信息
+        CMD_SPR_BATCHFETCHMAILGOODS,                //批量提取邮件
+        CMD_SPR_PUSH_VERSION,                       //报告客户端代码版本号
+        CMD_SPR_NOTIFYTEAMCHGZHANLI,                 //通知组队队员战力变化
+        CMD_SPR_NOTIFYSELFCHGZHANLI,                 //通知自己战力变化
+        CMD_SPR_NOTIFYOTHERBUFFERDATA,               //通知他人Buff变化变化
+        CMD_SPR_NOTIFYSHOWGONGGAO,                   //登录后获取公告显示信息 [10/28/2014 ChenXiaojun]
+        CMD_SPR_GETWINGINFO,                        //获取翅膀信息
+        CMD_SPR_EMOLAIXIMONSTERINFO,                //恶魔来袭副本怪物数信息 [11/18/2014 LiTeng]
+        CMD_SPR_CAIJI_START,                        //开始采集
+        CMD_SPR_CAIJI_FINISH,                       //完成采集
+        CMD_SPR_CAIJI_LASTNUM,                      //水晶幻境采集剩余次数
+        CMD_SPR_QUERYJIERITOTALCONSUME,
+        CMD_SPR_EXECUTEJIERITOTALCONSUME,
+        CMD_MAP_TELEPORT,                           //地图传送点状态列表
+        CMD_SPR_SPECIALMACHINE,                     // 是否特殊的机器
+        CMD_SPR_EXTRADATA,                          // 报告特殊信息
+
+        // 避免Client和GameServer、GameServer和GameDBServer之间协议号出错的问题
+        // 从1.3.0开始，协议号都要自己制定枚举值！！！！！
+        CMD_SPR_GE = 699,
+        CMD_SPR_CHENGZHAN_JINGJIA = 700,            //罗兰城战竞价进攻方资格
+        CMD_SPR_GET_CHENGZHAN_DAILY_AWARD = 701,    //罗兰城战胜利战盟成员领取每日奖励
+        CMD_SPR_LUOLANCHENGZHAN = 702,              //罗兰城战进入指令
+        CMD_SPR_LUOLANCHENGZHAN_LONGTA_ROLEINFO = 703,    //罗兰城战龙塔内人数信息列表
+        CMD_SPR_LUOLANCHENGZHAN_QIZHI_OWNERINFO = 704,    //罗兰城战旗帜拥有者列表
+        CMD_SPR_LUOLANCHENGZHAN_LONGTA_OWNERINFO = 705,   //龙塔占有者信息
+        CMD_SPR_GET_LUOLANCHENGZHU_INFO = 706,              //获取罗兰城主战盟信息
+        CMD_SPR_LUOLANCHENGZHAN_RESULT_INFO = 707,         //罗兰城战结果和奖励信息
+        CMD_SPR_GET_LUOLANCHENGZHAN_REQUEST_INFO_LIST = 708, //请求帮会领地信息，主要用来获取竞价信息
+        CMD_SPR_SERVERUPDATE_ZHANMENGZIJIN = 709,         //服务器发送战盟当前资金信息
+        CMD_SPR_MODIFY_FASHION = 710,                       //使用和卸下时装
+        CMD_SPR_GETBANGHUIFUBEN = 711,                    // 取得帮会副本的信息
+        CMD_SPR_GETBANGHUIFUBENAWARD = 712,               // 取得帮会副本的奖励
+
+        CMD_SPR_GET_ELEMENTHRT_SLIST = 720,               //申请元素数据
+        CMD_SPR_GET_ELEMENTHRTS_INFO = 721,               //申请获取猎取元素相关信息,
+        CMD_SPR_USE_ELEMENTHRT = 722,                     //佩戴/卸下元素之心
+        CMD_SPR_GET_SOMEELEMENTHRTS = 723,                //执行猎取操作
+        CMD_SPR_POWER_ELEMENTHRT = 724,                   //强化元素之心
+        CMD_SPR_RESET_EHRTSBAG = 725,                    //整理背包
+        CMD_SPR_GET_USINGELEMENTHRT_SLIST = 726,          //申请元素装备栏数据
+
+        CMD_SPR_HOLD_QINGGONGYAN = 730,                   // 申请举办庆功宴
+        CMD_SPR_GET_QINGGONGYAN = 731,                    // 申请庆功宴信息
+        CMD_SPR_JOIN_QINGGONGYAN = 732,                   // 申请参加庆功宴
+        CMD_SPR_IFQINGGONGYANOPEN = 733,                  // 当前是否开启了庆功宴
+
+        CMD_SPR_GETDAMONGOODSLIST = 740,                  //精灵系统获取备战的精灵列表  
+        CMD_SPR_GET_PET_LIST = 750,                       // 申请精灵背包数据
+        CMD_SPR_GET_PET_INFO = 751,                       // 申请召唤精灵界面信息
+        CMD_SPR_CALL_PET = 752,                           // 请求精灵召唤
+        CMD_SPR_MOVE_PET = 753,                           // 从精灵背包中拿出精灵
+        CMD_SPR_RESET_PETBAG = 754,                       // 整理精灵背包
+
+        CMD_SPR_FAZHEN_BOSS = 760,                         //罗兰法阵BOSS信息
+        CMD_SPR_GET_STORE_BoundToken = 761,                 // 取得仓库金币
+        CMD_SPR_GET_STORE_MONEY = 762,                    // 取得仓库绑定金币
+        CMD_SPR_STORE_BoundToken_CHANGE = 763,              // 通知客户端仓库金币改变
+        CMD_SPR_STORE_MONEY_CHANGE = 764,                 // 通知客户端仓库绑定金币改变
+
+        CMD_SPR_JIERIACT_STATE = 770,                       // 通知客户端节日活动开启或结束
+        //节日活动修改方案
+        CMD_SPR_GETJIERIFANBEI_INFO = 771,                  // 客户端请求节日活动翻倍的类型
+
+        CMD_SPR_ACHIEVEMENT_RUNE_INFO = 780,                 //成就符文——提升信息
+        CMD_SPR_ACHIEVEMENT_RUNE_UP = 781,                   //成就符文——提升
+        CMD_SPR_PRESTIGE_MEDAL_INFO = 782,                   // 声望勋章信息
+        CMD_SPR_PRESTIGE_MEDAL_UP = 783,                     // 勋章属性提升
+
+        CMD_SPR_ARTIFACT_UP = 791,                        //神器再造
+
+        CMD_SPR_GET_LINGYU_LIST = 800,                      // 查看翎羽信息
+        CMD_SPR_ADVANCE_LINGYU_LEVEL = 801,                 // 提升翎羽等级
+        CMD_SPR_ADVANCE_LINGYU_SUIT = 802,                  // 提升翎羽品阶
+
+        CMD_SPR_WING_ZHULING = 810,                         // 请求翅膀注灵
+        CMD_SPR_WING_ZHUHUN = 811,                          // 请求翅膀注魂
+
+        CMD_SPR_HYSY_LIANSHA = 818,                         // 幻影寺院连杀信息
+        CMD_SPR_HYSY_STOP_LIANSHA = 819,                    // 幻影寺院终结连杀
+        CMD_SPR_HYSY_ENQUEUE = 820,                         // 幻影寺院加入自动匹配队列
+        CMD_SPR_HYSY_DEQUEUE = 821,                         // 幻影寺院离开自动匹配队列
+        CMD_SPR_HYSY_QUEUE_PLAYER_NUM = 822,                // 幻影寺院等待队列玩家数（有效值：0-10）
+        CMD_SPR_HYSY_ENTER_NOTIFY = 823,                    // 幻影寺院通知自动匹配成功
+        CMD_SPR_HYSY_ENTER_RESPOND = 824,                   // 幻影寺院自动匹配回应，立即开始或暂不进入
+        CMD_SPR_HYSY_AWARD = 825,                           // 幻影寺院活动结果奖励信息
+        CMD_SPR_HYSY_SCORE_INFO = 826,                      // 幻影寺院通知活动双方得分状态
+        CMD_SPR_NOTIFY_TIME_STATE = 827,                    // 通知活动状态和时间(通用)
+        CMD_SPR_HYSY_SUCCESS_COUNT = 828,                   // 幻影寺院查询/通知今日获胜次数
+        CMD_SPR_HYSY_ADD_SCORE = 829,                       // 幻影寺院通知分数增加
+
+        CMD_SPR_REGION_EVENT = 830,                         // 地图区域事件报告
+        CMD_SYNC_TIME_BY_CLIENT = 831,                      // 客户端每2分钟校验时间消息
+        CMD_SYNC_TIME_BY_SERVER = 832,                      // 服务器向客户端发送时间消息
+
+        CMD_SPR_GETLUOLANCHENGZHU = 840,                    // 请求罗兰城主基本信息
+        CMD_SPR_QUERYADRATIONLANCHENGZHUO = 841,            // 请求罗兰城主崇拜信息
+        CMD_SPR_ADRATIONLANCHENGZHU = 842,                  // 罗兰城主崇拜
+
+        CMD_SPR_GET_YUEKA_DATA = 850,                       //月卡信息请求
+        CMD_SPR_GET_YUEKA_AWARD = 851,                      //领取月卡奖励请求
+
+        CMD_SECOND_PASSWORD_CHECK_STATE = 860,              //登录时请求账号下所有角色的二级密码
+        CMD_SECOND_PASSWORD_SET = 861,                //设置密码
+        CMD_SECOND_PASSWORD_VERIFY = 862,              //验证二级密码
+        CMD_SECOND_PASSWORD_CANCEL = 863,             // 客户端请求取消二级密码
+
+        CMD_SPR_MARRY_FUBEN = 870,                          //[bing] 情侣副本协议
+        CMD_SPR_MARRY_ROSE = 871,                           //[bing] 情侣献花
+        CMD_SPR_MARRY_RING = 872,                           //[bing] 婚戒替换
+        CMD_SPR_MARRY_MESSAGE = 873,                        //[bing] 爱情宣言更新
+        CMD_SPR_MARRY_PARTY_QUERY = 880,                    // 获取婚宴列表
+        CMD_SPR_MARRY_PARTY_CREATE = 881,                   // 举行婚宴
+        CMD_SPR_MARRY_PARTY_CANCEL = 882,                   // 取消婚宴
+        CMD_SPR_MARRY_PARTY_JOIN = 883,                     // 參加婚宴
+        CMD_SPR_MARRY_PARTY_JOIN_LIST = 884,                //参加婚宴次数数据
+
+        CMD_SPR_MARRY_INIT = 890,                           //求婚发起
+        CMD_SPR_MARRY_REPLY = 891,                          //求婚回复
+        CMD_SPR_MARRY_DIVORCE = 892,                        //离婚或离婚回复
+        CMD_SPR_MARRY_AUTO_REJECT = 893,                    //自动拒绝求婚
+        CMD_SPR_MARRY_NOTIFY = 894,                         //回复求婚离婚通知对方
+        CMD_SPR_MARRY_UPDATE = 895,                         //婚姻状态更新
+        CMD_SPR_MARRY_SPOUSE_DATA = 896,                    //结婚对象数据
+
+        CMD_SPR_QUERY_JIERI_GIVE_INFO = 920,                //查询节日赠送信息
+        CMD_SPR_JIERI_GIVE_TO_OTHER = 921,                  //赠送礼物
+        CMD_SPR_GET_JIERI_GIVE_AWARD = 922,                 //节日赠送，领取奖励
+        CMD_SPR_QUERY_JIERI_GIVE_KING_INFO = 923,           //查询节日赠送王数据
+        CMD_SPR_GET_JIERI_GIVE_KING_AWARD = 924,           //领取节日赠送王奖励
+        CMD_SPR_QUERY_JIERI_RECV_KING_INFO = 925,           //查询节日收取王数据
+        CMD_SPR_GET_JIERI_RECV_KING_AWARD = 926,            //领取节日收取王奖励
+        CMD_DB_EXECUXJIERIFANLI = 927,                      //查询节日通用返利信息
+
+        CMD_SPR_QUERY_LIANXU_CHARGE_INFO = 940,             //查询连续充值活动信息
+        CMD_SPR_GET_LIANXU_CHARGE_AWARD = 941,              //领取连续充值活动奖励
+        CMD_SPR_QUERY_JIERI_RECV_INFO = 944,                //查询节日收礼信息
+        CMD_SPR_GET_JIERI_RECV_AWARD = 945,                 //领取节日收礼奖励
+        CMD_SPR_GETINPUT_POINTS_EXCHGINFO = 1500,           //获得充值积分相关数据 
+        CMD_SPR_SYNCINPUT_POINTS_ONLY = 1502,               //同步充值点积分
+
+        CMD_SPR_TIANTI_JOIN = 950,  //开始匹配
+        CMD_SPR_TIANTI_QUIT = 951, //取消匹配
+        CMD_SPR_TIANTI_ENTER = 952, //匹配成功，通知进入活动
+        CMD_SPR_TIANTI_AWARD = 953, //结果和奖励信息
+        CMD_SPR_TIANTI_DAY_DATA = 954, //角色天梯数据
+        CMD_SPR_TIANTI_MONTH_PAIHANG = 955, //获取月段位排行榜.
+        CMD_SPR_TIANTI_GET_PAIMING_AWARDS = 956, //领取上月段位排行奖励
+        CMD_SPR_ROLE_ATTRIBUTE_VALUE = 968, //通知角色货币变化(当前值和增减量)
+        CMD_SPR_TIANTI_GET_LOG = 969, //获取战报列表
+        CMD_SPR_EFFECT_HIDE_FLAGS = 970, //(客户端)效果屏蔽选项
+
+        CMD_SPR_TALENT_GET_DATA = 1000,                 //获取天赋数据
+        CMD_SPR_TALENT_ADD_EXP = 1001,                 //注入经验
+        CMD_SPR_TALENT_WASH = 1002,                 //洗点
+        CMD_SPR_TALENT_ADD_EFFECT = 1003,                 //效果升级
+
+        #region 1100-1199-lt
+
+        CMD_SPR_YONGZHEZHANCHANG_JOIN = 1100, //勇者战场报名
+        CMD_SPR_YONGZHEZHANCHANG_ENTER = 1101, //勇者战场进入
+        CMD_SPR_YONGZHEZHANCHANG_AWARD = 1102, //勇者战场结束及奖励(通知客户端可以领取)
+        CMD_SPR_YONGZHEZHANCHANG_STATE = 1103, //勇者战场报名状态
+        CMD_SPR_YONGZHEZHANCHANG_SIDE_SCORE = 1104, //勇者战场分数信息
+        CMD_SPR_YONGZHEZHANCHANG_SELF_SCORE = 1105, //勇者战场自己分数增加信息
+        CMD_SPR_YONGZHEZHANCHANG_LIANSHA = 1106, //勇者战场连杀信息
+        CMD_SPR_YONGZHEZHANCHANG_STOP_LIANSHA = 1107, //勇者战场终结连杀
+        CMD_SPR_YONGZHEZHANCHANG_AWARD_GET = 1108, //领取奖励
+
+        CMD_SPR_KUAFU_BOSS_JOIN = 1120, //跨服BOSS报名
+        CMD_SPR_KUAFU_BOSS_ENTER = 1121, //跨服BOSS进入
+        CMD_SPR_KUAFU_BOSS_DATA = 1122, //跨服BOSS场景数据
+        CMD_SPR_KUAFU_BOSS_STATE = 1123, //跨服BOSS报名状态
+
+        // 王者战场相关 所有消息结构模仿勇者战场
+        CMD_SPR_KINGOFBATTLE_JOIN = 1180, //王者战场报名 1
+        CMD_SPR_KINGOFBATTLE_ENTER = 1181, //王者战场进入 1
+        CMD_SPR_KINGOFBATTLE_AWARD = 1182, //王者战场结束及奖励(通知客户端可以领取) 2
+        CMD_SPR_KINGOFBATTLE_STATE = 1183, //王者战场报名状态 1
+        CMD_SPR_KINGOFBATTLE_SIDE_SCORE = 1184, //王者战场分数信息
+        CMD_SPR_KINGOFBATTLE_SELF_SCORE = 1185, //王者战场自己分数增加信息
+        CMD_SPR_KINGOFBATTLE_LIANSHA = 1186, //王者战场连杀信息
+        CMD_SPR_KINGOFBATTLE_STOP_LIANSHA = 1187, //王者战场终结连杀
+        CMD_SPR_KINGOFBATTLE_AWARD_GET = 1188, //领取奖励
+        CMD_SPR_KINGOFBATTLE_TELEPORT = 1189, // 王者战场传送门数据
+        CMD_SPR_KINGOFBATTLE_MALL_DATA = 1190, // 获取王者商店数据
+        CMD_SPR_KINGOFBATTLE_MALL_BUY = 1191, // 王者商店购买
+        CMD_SPR_KINGOFBATTLE_MALL_REFRESH = 1192, // 王者商店刷新
+
+        CMD_SPR_KUAFU_MAP_INFO = 1140, //跨服主线地图线路状态信息
+        CMD_SPR_KUAFU_MAP_ENTER = 1141, //跨服主线地图进入
+
+        CMD_SPR_LANGHUNLINGYU_LONGTA_ROLEINFO = 1150,    //龙塔内人数信息列表
+        CMD_SPR_LANGHUNLINGYU_QIZHI_OWNERINFO = 1151,    //旗帜拥有者列表
+        CMD_SPR_LANGHUNLINGYU_LONGTA_OWNERINFO = 1152,   //龙塔占有者信息
+        CMD_SPR_LANGHUNLINGYU_JOIN = 1153,               //报名
+        CMD_SPR_LANGHUNLINGYU_DATA = 1154,               //请求玩家自己的狼魂领域数据
+        CMD_SPR_LANGHUNLINGYU_CITY_DATA = 1155,          //请求城池占领、进攻信息数据
+        CMD_SPR_LANGHUNLINGYU_WORLD_DATA = 1156,         //请求玩家自己的狼魂领域数据
+        CMD_SPR_LANGHUNLINGYU_ENTER = 1157,              //进入城池
+        CMD_SPR_LANGHUNLINGYU_GET_DAY_AWARD = 1158,      //获取每日奖励
+        CMD_SPR_LANGHUNLINGYU_AWARD = 1159,              //服务器推送战斗结果和奖励信息
+
+        CMD_SPR_LANGHUNLINGYU_ADMIRE_DATA = 1160,        //获取当前圣域城主基本信息-膜拜
+        CMD_SPR_LANGHUNLINGYU_ADMIRE_HIST = 1161,        //获取历届圣域城主膜拜信息
+        CMD_SPR_LANGHUNLINGYU_ADMIRE = 1162,             //膜拜圣域城主
+
+        #endregion 1100-1199-lt
+
+
+        CMD_SPR_QUERY_JIERI_PLAT_CHARGE_KING = 1300,
+        CMD_SPR_MORI_JOIN = 1301, //开始匹配末日审判
+        CMD_SPR_MORI_QUIT = 1302, //取消匹配
+        CMD_MORI_NTF_ROLE_COUNT = 1303, // 服务器通知客户端队伍人数
+        CMD_MORI_NTF_ENTER = 1304, // 服务器通知客户端可以进入末日审判了
+        CMD_NTF_MORI_MONSTER_EVENT = 1305, //服务器通知客户端boss事件(出生，死亡)
+        CMD_NTF_MORI_COPY_CANCEL = 1306, // 副本取消
+
+
+
+
+        CMD_SPR_ELEMENT_WAR_JOIN = 1010,                         // 元素试炼——开始匹配
+        CMD_SPR_ELEMENT_WAR_QUIT = 1011,                         // 元素试炼——取消匹配
+        CMD_SPR_ELEMENT_WAR_ENTER = 1012,                        // 元素试炼——匹配成功进入
+        CMD_SPR_ELEMENT_WAR_PLAYER_NUM = 1013,                   // 元素试炼——匹配人数变化   
+        CMD_SPR_ELEMENT_WAR_SCORE_INFO = 1014,                   // 元素试炼——得分信息
+        CMD_SPR_ELEMENT_WAR_AWARD = 1015,                        // 元素试炼——领奖信息
+        CMD_SPR_ELEMENT_WAR_CANCEL = 1016,                        // 元素试炼——副本取消
+
+        CMD_SPR_COPY_WOLF_SCORE_INFO = 1025,//狼魂要塞——得分信息
+        CMD_SPR_COPY_WOLF_AWARD = 1026,//狼魂要塞——领奖信息
+
+
+
+
+
+        CMD_SPR_TASKLIST_DATA = 29900,
+        CMD_SPR_TASKLIST_KEY = 30000,						//服务端发给客戶端的密钥消息 
+        CMD_SPR_TASKLIST_NOTIFY = 30001,					//客戶端定时发给服务端的进程列表
+
+        CMD_DB_START_CMD = 10000,//数据库命令
+        CMD_DB_UPDATE_POS, CMD_DB_UPDATE_EXPLEVEL, CMD_DB_UPDATE_INTERPOWER,
+        CMD_DB_UPDATEMoney_CMD, CMD_DB_ADDGOODS_CMD, CMD_DB_UPDATEGOODS_CMD,
+        CMD_DB_UPDATETASK_CMD, CMD_DB_UPDATEPKMODE_CMD, CMD_DB_UPDATEPKVAL_CMD, CMD_DB_UPDATEKEYS,
+        CMD_DB_UPDATEToken_CMD, CMD_DB_UPDATEUSERBoundToken_CMD, CMD_DB_MOVEGOODS_CMD, CMD_DB_UPDATE_LEFTFIGHTSECS,
+        CMD_DB_ROLE_ONLINE, CMD_DB_ROLE_HEART, CMD_DB_ROLE_OFFLINE, CMD_DB_GET_CHATMSGLIST,
+        CMD_DB_HORSEON, CMD_DB_HORSEOFF, CMD_DB_PETOUT, CMD_DB_PETIN, CMD_DB_ADDDJPOINT, CMD_DB_UPJINGMAI_LEVEL,
+        CMD_DB_REGUSERID, CMD_DB_BANROLENAME, CMD_DB_BANROLECHAT, CMD_DB_GETBANROLECATDICT, CMD_DB_ADDBULLMSG, CMD_DB_REMOVEBULLMSG,
+        CMD_DB_GETBULLMSGDICT, CMD_DB_UPDATEONLINETIME, CMD_DB_GAMECONFIGDICT, CMD_DB_GAMECONIFGITEM, CMD_DB_RESETBIGUAN,
+        CMD_DB_ADDSKILL, CMD_DB_UPSKILLINFO, CMD_DB_UPDATEJINGMAIEXP, CMD_DB_UPDATEDEFSKILLID, CMD_DB_UPDATEAUTODRINK,
+        CMD_DB_UPDATEDAILYTASKDATA, CMD_DB_UPDATEDAILYJINGMAI, CMD_DB_UPDATENUMSKILLID, CMD_DB_UPDATEPBINFO, CMD_DB_UPDATHUODONGINFO,
+        CMD_DB_SUBCHONGZHIJIFEN, CMD_DB_USELIPINMA, CMD_DB_UPDATEFUBENDATA, CMD_DB_GETFUBENSEQID, CMD_DB_UPDATEROLEDAILYDATA,
+        CMD_DB_UPDATEBUFFERITEM, CMD_DB_UNDELROLENAME, CMD_DB_ADDFUBENHISTDATA, CMD_DB_UPDATELIANZHAN, CMD_DB_UPDATEKILLBOSS, CMD_DB_UPDATEROLESTAT,
+        CMD_DB_UPDATEYABIAODATA, CMD_DB_UPDATEYABIAODATASTATE, CMD_DB_UPDATEBATTLENAME, CMD_DB_ADDMALLBUYITEM, CMD_DB_GETLIPINMAINFO,
+        CMD_DB_UPDATECZTASKID, CMD_DB_GETTOTALONLINENUM, CMD_DB_UPDATEBATTLENUM, CMD_DB_UPDATEHEROINDEX, CMD_DB_FORCERELOADPAIHANG, CMD_DB_ADDYINPIAOBUYITEM,
+        CMD_DB_DELROLENAME, CMD_SPR_QUERYUMBYNAME, CMD_DB_QUERYBHMGRLIST, CMD_DB_UPDATEBANGGONG_CMD, CMD_DB_UPDATEBHTONGQIAN_CMD, CMD_DB_GETBHJUNQILIST,
+        CMD_DB_GETBHLINGDIDICT, CMD_DB_UPDATELINGDIFORBH, CMD_DB_GETLEADERROLEIDBYBHID, CMD_DB_ADDBHTONGQIAN_CMD, CMD_DB_ADDQIZHENGEBUYITEM,
+        CMD_DB_UPDATEJIEBIAOINFO, CMD_DB_ADDREFRESHQIZHENREC, CMD_DB_CLEARCACHINGROLEIDATA, CMD_DB_ADDMONEYWARNING, CMD_DB_QUERYCHONGZHIMONEY,
+        CMD_DB_ADDBoundTokenBUYITEM, CMD_DB_ADDBANGGONGBUYITEM, CMD_DB_SENDUSERMAIL, CMD_DB_GETUSERMAILDATA, CMD_DB_FINDROLEID_BYROLENAME, CMD_DB_QUERYLIMITGOODSUSEDNUM,
+        CMD_DB_UPDATELIMITGOODSUSEDNUM, CMD_DB_UPDATEDAILYVIPDATA, CMD_DB_UPDATEDAILYYANGGONGBKJIFENDATA, CMD_DB_UPDATESINGLETIMEAWARDFLAG, CMD_DB_ADDSHENGXIAOGUESSHIST,
+        CMD_DB_UPDATEUSERBoundMoney_CMD, CMD_DB_ADDBoundMoneyBUYITEM, CMD_DB_UPDATEROLEBAGNUM, CMD_DB_SETLINGDIWARREQUEST, CMD_DB_UPDATEGOODSLIMIT, CMD_DB_UPDATEROLEPARAM,
+        CMD_DB_ADDQIANGGOUBUYITEM, CMD_DB_ADDQIANGGOUITEM, CMD_DB_QUERYCURRENTQIANGGOUITEM, CMD_DB_QUERYQIANGGOUBUYITEMS, CMD_DB_UPDATEQIANGGOUTIMEOVER,
+        CMD_DB_GETBANGHUIMINIDATA, CMD_DB_ADDBUYITEMFROMNPC, CMD_DB_ADDZAJINDANHISTORY, CMD_DB_QUERYQIANGGOUBUYITEMINFO, CMD_DB_QUERYFIRSTCHONGZHIBYUSERID,
+        CMD_DB_QUERYKAIFUONLINEAWARDROLEID, CMD_DB_ADDKAIFUONLINEAWARD, CMD_DB_ADDGIVETokenITEM, CMD_DB_QUERYKAIFUONLINEAWARDLIST,
+        CMD_DB_ADDEXCHANGE1ITEM, CMD_DB_ADDEXCHANGE2ITEM, CMD_DB_ADDEXCHANGE3ITEM, CMD_DB_ADDFALLGOODSITEM, CMD_DB_UPDATEROLEPROPS, CMD_DB_QUERYTODAYCHONGZHIMONEY,
+        CMD_DB_QUERYDAYCHONGZHIBYUSERID, CMD_DB_CLEARALLCACHINGROLEDATA,
+        CMD_DB_QUERYXINGYUNORYUEDUCHOUJIANGINFO,    // GS-DB 询问幸运或月度抽奖信息 [7/17/2013 LiaoWei]
+        CMD_DB_EXECUXINGYUNORYUEDUCHOUJIANGINFO,    // GS-DB 更新幸运或月度抽奖信息 [7/17/2013 LiaoWei]
+        CMD_DB_ADDYUEDUCHOUJIANGHISTORY,            // GS-DB 增加月度抽奖历史信息 [7/23/2013 LiaoWei]
+        CMD_DB_EXECUTECHANGEOCCUPATION,             // GS-DB 转职操作  [9/28/2013 LiaoWei]
+        CMD_DB_QUERYBLOODCASTLEENTERCOUNT,          // GS-DB 请求血色堡垒进入次数[11/6/2013 LiaoWei]
+        CMD_DB_UPDATEBLOODCASTLEENTERCOUNT,         // GS-DB 更新血色堡垒进入次数[11/6/2013 LiaoWei]
+        CMD_DB_QUERYFUBENHISINFO,                   // GS-DB 请求副本历史信息 [11/16/2013 LiaoWei] 
+        CMD_DB_CLEANDATAWHENFRESHPLAYERLOGOUT,      // GS-DB 在新手阶段掉线处理 [12/2/2013 LiaoWei]
+        CMD_DB_FINISHFRESHPLAYERSTATUS,             // GS-DB 结束新手阶段 [12/2/2013 LiaoWei]
+        CMD_DB_EXECUTECHANGETASKSTARLEVEL,          // GS-DB 改变任务星级等级[12/3/2013 LiaoWei]
+        CMD_DB_EXECUTEUPDATEROLESOMEINFO,           // GS-DB 更新角色的一些信息 [12/17/2013 LiaoWei]
+        CMD_DB_QUERYDAYACTIVITYTOTALPOINT,          // GS-DB 请求日常活动最高积分信息 [12/24/2013 LiaoWei]
+        CMD_DB_QUERYDAYACTIVITYSELFPOINT,           // GS-DB 请求自己的日常活动积分信息 [12/24/2013 LiaoWei]
+        CMD_DB_UPDATEDAYACTIVITYSELFPOINT,          // GS-DB 更新自己的日常活动积分信息 [12/24/2013 LiaoWei]
+        CMD_DB_QUERYEVERYDAYONLINEAWARDGIFTINFO,    // GS-DB 请求每日在线奖励信息 [1/12/2014 LiaoWei]
+        CMD_DB_ADD_ZHANMENGSHIJIAN,                 // GS-DB 请求请求添加战盟事件 [3/14/2014 JinJieLong]
+        CMD_DB_ZHANMENGSHIJIAN_DETAIL,              // GS-DB 请求战盟事件详情 [3/14/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_GET_DATA,                // GS-DB 请求获取玩家竞技场数据 [3/21/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_GET_CHALLENGE_DATA,      // GS-DB 请求获取竞技场被挑战者mini数据 [3/21/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_CREATE_DATA,             // GS-DB 请求创建竞技场数据 [3/22/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_REQUEST_CHALLENGE,       // GS-DB 竞技场请求挑战 [3/22/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_CHALLENGE_END,           // GS-DB 竞技场挑战结束 [3/22/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_SAVE_DATA,               // GS-DB 保存竞技场数据 [3/22/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_ZHANBAO_DATA,            // GS-DB 获取竞技场战报数据 [3/22/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_REMOVE_CD,               // GS-DB 消除挑战CD [3/25/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_GET_RANKING_AND_NEXTREWARDTIME,// GS-DB 获取排名和下次领取奖励时间 [3/25/2014 JinJieLong]
+        CMD_DB_JINGJICHANG_UPDATE_NEXTREWARDTIME,   // GS-DB  更新下次领取竞技场排行榜奖励时间 [3/25/2014 JinJieLong]
+        CMD_DB_ADD_BAITANLOG,                       // GS-DB 请求请求添加摆摊日志
+        CMD_DB_UPDATEPUSHMESSAGEINFO,               // GS-DB 更新推送信息 [4/23/2014 LiaoWei]
+        CMD_DB_QUERYPUSHMESSAGEUSERLIST,            // GS-DB 请求要推送的玩家列表 [4/23/2014 LiaoWei]
+        CMD_DB_ADDWING,                             // GS-DB 请求得到第一个翅膀[4/30/2014, liuhuicheng]
+        CMD_DB_MODWING,                             // GS-DB 请求修改翅膀[4/30/2014, liuhuicheng]
+        CMD_DB_REFERPICTUREJUDGE,                   // GS-DB 提交图鉴信息 [5/18/2014 LiaoWei]
+        CMD_DB_QUERYMOJINGEXCHANGEINFO,             // GS-DB 请求绑定钻石兑换信息 [5/21/2014 LiaoWei]
+        CMD_DB_UPDATEMOJINGEXCHANGEINFO,            // GS-DB 更新绑定钻石兑换信息 [5/21/2014 LiaoWei]
+        CMD_DB_MODIFY_WANMOTA,                      // GS-DB 修改万魔塔表数据 [6/6/2014 ChenXiaojun]
+        CMD_DB_GET_WANMOTA_DETAIL,                  // GS-DB 获取万魔塔信息 [6/6/2014 ChenXiaojun]
+        CMD_DB_QUERY_REPAYACTIVEINFO,               // GS-DB 查询回馈活动信息
+        CMD_DB_GET_REPAYACTIVEAWARD,                // GS-DB 获取回馈活动奖励
+        CMD_DB_UPDATE_ACCOUNT_ACTIVE,               // GS-DB 更新帐户活跃信息  [7/9/2014 ChenXiaojun]
+        CMD_DB_QUERY_GETOLDRESINFO,                 // GS-DB 查询资源找回信息 [7/11/2014 gwz]
+        CMD_DB_UPDATE_OLDRESOURCE,                  // GS-DB 资源找回，领取资源 [7/11/2014 gwz]
+        CMD_DB_UPDATEGOODS_CMD2,                    // GS-DB 更新物品扩展信息(装备洗练等)
+        CMD_DB_UPDATESTARCONSTELLATION,             // GS-DB 激活星座更新星座信息 [8/1/2014 LiaoWei]
+        CMD_DB_SAVECONSUMELOG,                      // GS-DB 保存钻石消费信息 [8/19/2014 gwz]
+        CMD_DB_QUERYVIPLEVELAWARDFLAG,              // GS-DB 玩家领取VIP等级奖励 [8/21/2014 LiaoWei]
+        CMD_DB_UPDATEVIPLEVELAWARDFLAG,             // GS-DB 玩家更新VIP等级奖励标记信息 [8/21/2014 LiaoWei]
+        CMD_DB_UPDATEFIRSTCHARGE,                   // GS-DB 玩家更新首充信息 [9/16/2014 gwz]
+
+
+        CMD_DB_GET_SERVERLIST = 11000,
+        CMD_DB_ONLINE_SERVERHEART,
+        CMD_NAME_REGISTERNAME = 12000,             //注册名字到名字服务器
+        CMD_SPR_GM_SET_MAIN_TASK = 13000,          //GM命令设置任务
+
+        CMD_SPR_KF_SWITCH_SERVER = 14000,           //跨服_通知客户端切换服务器(包含跨服登录Token)
+        CMD_LOGDB_ADD_ITEM_LOG = 20000,             // 向日志数据库服务器添加物品操作日志
+
+        // 老玩家召回系统
+        //CMD_SPR_RETURN_RECRUIT_INFO = 900,                // 当前推荐人信息——获取信息
+        //CMD_SPR_RETURN_RECRUIT_SET = 901,                 // 当前推荐人信息——设置
+        //CMD_SPR_RETURN_AWARD_INFO = 902,                  // 回归礼包——获取信息
+        //CMD_SPR_RETURN_AWARD_SET = 903,                   // 回归礼包——领取
+        //CMD_SPR_RETURN_CHECK_INFO = 904,                  // 签到信息——获取信息
+        //CMD_SPR_RETURN_CHECK_SET = 905,                   // 签到信息——签到
+        //CMD_SPR_RETURN_RECRUIT_AWARD_INFO = 906,          // 召回奖励——获取信息
+        //CMD_SPR_RETURN_RECRUIT_AWARD_SET = 907,           // 召回奖励——设置
+        //CMD_SPR_RETURN_RECRUIT_EXTRA_AWARD = 908,         // 召回奖励——额外奖励领取
+        CMD_SPR_RETURN_DATA = 900,                  // (获取召回活动信息) 新1655
+        CMD_SPR_RETURN_CHECK = 901,                 // (校验回归资格)
+        CMD_SPR_RETURN_AWARD = 902,                 // (领取奖励)
+
+        // 守护雕像
+        CMD_SPR_QUERY_GUARD_POINT_RECOVER = 930,  // 查询守护点信息
+        CMD_SPR_GUARD_POINT_RECOVER = 931,        // 回收守护点
+        CMD_SPR_QUERY_GUARD_STATUE_INFO = 932,    // 查询守护雕像信息
+        CMD_SPR_GUARD_STATUE_LEVEL_UP = 933,      // 升级守护雕像
+        CMD_SPR_GUARD_STATUE_SUIT_UP = 934,       // 升阶守护雕像
+        CMD_SPR_MOD_GUARD_SOUL_EQUIP = 935,       // 穿戴、卸下守护之灵
+
+
+        //改名服务 @wanggc
+        CMD_NTF_EACH_ROLE_ALLOW_CHANGE_NAME = 14002,
+        CMD_SPR_CHANGE_NAME = 14001,                         // 客户端向服务器端发送的角色请求改名
+        CMD_NTF_CANNOT_JOIN_KUAFU_FU_BEN_END_TICKS = 14003, //服务器通知客户端更新禁止参与跨服副本的结束时间, DateTime.Now.Ticks
+        CMD_PLEASE_TELL_ME = 14004,
+
+        CMD_SPR_CHANGE_BANGHUI_NAME = 14006, // 更改帮会名字
+        CMD_NTF_BANGHUI_CHANGE_NAME = 1315, // 通知帮会改名客户端访问参数
+
+        //圣物系统 @wanggc
+        CMD_DB_UPDATE_HOLYITEM = 10206,                    //  生物升级
+        CMD_SPR_HOLYITEM_DATA = 1200,             // 玩家登陆时返回整个圣物字典 一共4个圣物和所有部件信息
+        CMD_SPR_HOLYITEM_PART_DATA = 1201,        // 当部件信息改变时发送改变的圣物部件信息(比如碎片数量改变 或者圣物升级)
+
+
+
+
+
+        CMD_SPR_MERLIN_QUERY = 981,    // 客户端请求梅林魔法书数据 [XSea 2015/6/23]
+        CMD_SPR_MERLIN_STAR_UP = 982, // 客户端请求梅林魔法书升星 [XSea 2015/6/23]
+        CMD_SPR_MERLIN_LEVEL_UP = 983, // 客户端请求梅林魔法书升阶 [XSea 2015/6/24]
+        CMD_SPR_MERLIN_SECRET_ATTR_UPDATE = 984,    // 客户端请求擦拭梅林魔法书秘语 [XSea 2015/6/25]
+        CMD_SPR_MERLIN_SECRET_ATTR_REPLACE = 985,    // 客户端请求替换梅林魔法书秘语 [XSea 2015/6/25]
+        CMD_SPR_MERLIN_SECRET_ATTR_NOT_REPLACE = 986,    // 客户端请求放弃替换梅林魔法书秘语 [XSea 2015/6/25]
+
+        CMD_SPR_GET_FASHION_SLIST = 946, // 时装
+        CMD_SPR_LOGIN_WAITING_INFO = 971,// 通知客户端排队信息
+
+        // 荧光宝石
+        CMD_SPR_FLUORESCENT_GEM_RESET_BAG = 991,    // 整理荧光宝石背包
+        CMD_SPR_FLUORESCENT_GEM_EQUIP = 992,        // 镶嵌荧光宝石
+        CMD_SPR_FLUORESCENT_GEM_UN_EQUIP = 993,     // 卸下荧光宝石
+        CMD_SPR_FLUORESCENT_GEM_LEVEL_UP = 994,     // 升级荧光宝石
+        CMD_SPR_FLUORESCENT_GEM_DIG = 995,          // 挖掘荧光宝石
+        CMD_SPR_FLUORESCENT_GEM_RESOLVE = 996,      // 分解荧光宝石
+        CMD_SPR_FLUORESCENT_GEM_EQUIP_CHANGES = 997, // 通知客户端荧光宝石装备栏变动
+
+        // 推广系统
+        CMD_SPR_SPREAD_SIGN = 1017,         // 成为推广员
+        CMD_SPR_SPREAD_AWARD = 1018,        // 领取奖励
+        CMD_SPR_SPREAD_ROLE = 1019,         // 填写推荐人
+        CMD_SPR_SPREAD_CODE_GET = 1020,     // 获取验证码
+        CMD_SPR_SPREAD_CODE_VARIFY = 1021,  // 确认验证码
+        CMD_SPR_SPREAD_INFO = 1022,         // 推广信息
+
+        //领地
+        CMD_SPR_BUILD_GET_LIST = 1550,                          // 获得领地所有信息
+        CMD_SPR_BUILD_EXCUTE = 1551,	                        // 执行开发任务
+        CMD_SPR_BUILD_FINISH = 1552,                            // 一键完成开发任务
+        CMD_SPR_BUILD_REFRESH = 1553,                           // 刷新开发任务
+        CMD_SPR_BUILD_GET_ALLLEVEL_AWARD = 1554,                // 获取总等级奖励
+        CMD_SPR_BUILD_GET_AWARD = 1555,                         // 获取开发奖励
+        CMD_SPR_BUILD_OPEN_QUEUE = 1556,                        // 开启收费开发队列
+        CMD_SPR_BUILD_GET_QUEUE = 1557,
+        // 获得开发队列数据
+        CMD_SPR_BUILD_GET_STATE = 1558,                         //客户端获取建筑状态
+        CMD_SPR_BUILD_GET_ALLLEVEL_AWARD_STATE = 1559,         // 同步总等级奖励领取状态
+        CMD_SPR_BUILD_SYNC_SINGLE = 1560,                      // 同步单个建筑物数据
+
+
+        //警告提示信息 @wangnl
+        CMD_SPR_WARN_INFO = 1004,
+
+        CMD_DB_ERR_RETURN = 30767, // MAX 任何消息定义请不要超过这个值
+
+        CMD_SPR_GETWEEKEND_INPUT_DATA = 1501,         //获得周末充值相关数据
+
+        // 七日狂欢活动
+
+        CMD_SPR_SEVEN_DAY_ACT_QUERY = 1310, // 查询七日活动信息  客户端访问参数：角色ID (roleid)
+        CMD_SPR_SEVEN_DAY_ACT_GET_AWARD = 1311, // 领取七日活动奖励 (七日登录，七日充值，七日目标)   客户端访问参数：roleid:actType:id	角色id：活动类型：领取的那一项的ID
+
+        CMD_SPR_SEVEN_DAY_ACT_QIANG_GOU = 1312, // 抢购物品 (七日抢购)          客户端访问参数：roleid:id:cnt	角色id：领取的那一项的ID：抢购数量
+
+        CMD_SPR_TODAY_DATA = 1030,              //每日专项——获取数据
+        CMD_SPR_TODAY_AWARD = 1031,             //每日专项——领取奖励
+        CMD_SYNC_CHANGE_DAY_SERVER = 833,       //服务器通知客户端跨天了      
+        //藏宝秘境
+        CMD_SPR_ONEPIECE_GET_INFO = 1600,               // c2s 获取藏宝秘境相关信息
+        CMD_SPR_ONEPIECE_ROLL,                          // c2s 扔骰子
+        CMD_SPR_ONEPIECE_TRIGGER_EVENT,                 // c2s 客户端触发事件 
+        CMD_SPR_ONEPIECE_SYNC_EVENT,                    // s2c 服务器向客户端同步当前事件信息
+        CMD_SPR_ONEPIECE_MOVE,                          // c2s 请求移动
+        CMD_SPR_ONEPIECE_ROLL_MIRACLE,                  // c2s 扔奇迹骰子
+        CMD_SPR_ONEPIECE_DICE_BUY,                      // c2s 购买骰子
+        CMD_SPR_ONEPIECE_SYNC_DICE,                      // 同步骰子数
+        // 魂石
+        CMD_SPR_SOUL_STONE_QUERY_GET = 1320,    //查询魂石随机信息
+        CMD_SPR_SOUL_STONE_GET = 1321,          //获取魂石
+        CMD_SPR_SOUL_STONE_LVL_UP = 1322,       //魂石升级
+        CMD_SPR_SOUL_STONE_MOD_EQUIP = 1323,    //穿戴或卸下
+        CMD_SPR_SOUL_STONE_RESET_BAG = 1324,    //整理魂石背包
+
+        //成长基金   
+        CMD_SPR_FUND_INFO = 1032,   // 获取基金信息
+        CMD_SPR_FUND_BUY = 1033,    // 购买基金
+        CMD_SPR_FUND_AWARD = 1034,    // 领取奖励
+
+        CMD_SPR_SET_FUNCTION_OPEN = 1330, // 设置二态功能的开启或关闭
+        //服务器通知客户端退出客户端 
+        CMD_NTF_MAGIC_CRASH_UNITY = 14010,
+
+        //时装隐藏功能增加3个消息，罗兰城主，PKKing，竞技场人物雕像信息采用保存的数据，不实时更新，与原有消息进行区分，服务器返回消息结构不变、
+        CMD_SPR_JINGJICHANG_GET_ROLE_LOOKS = 1340,   // 竞技场排行界面中查看角色外貌
+        CMD_SPR_PKKING_GET_ROLE_LOOKS = 1341, // 查看PKKing角色
+        CMD_SPR_LUOLANKING_GET_ROLE_LOOKS = 1342, // 查看罗兰城主
+
+        //众神争霸
+        CMD_SPR_ZHENGBA_GET_MAIN_INFO = 1350, //获取主信息
+        CMD_SPR_ZHENGBA_GET_ALL_PK_LOG = 1351, //查看全部战报
+        CMD_SPR_ZHENGBA_GET_ALL_PK_STATE = 1352, //查看全部参赛
+        CMD_SPR_ZHENGBA_GET_16_PK_STATE = 1353, //获取16强中的两两pk状态
+        CMD_SPR_ZHENGBA_SUPPORT = 1354,             // 赞、贬、押注
+                                                    //  CMD_SPR_ZHENGBA_YA_ZHU = 1355,              // 众神争霸 --- 押注
+        CMD_NTF_ZHENGBA_CAN_ENTER = 1356, //服务器通知客户端可以进入
+        CMD_SPR_ZHENGBA_ENTER = 1357,               //进入
+        CMD_NTF_ZHENGBA_PK_RESULT = 1358,           // 众神争霸 --- pk结果
+        CMD_SPR_ZHENGBA_GET_MINI_STATE = 1359,   //// 获取活动mini进度
+        CMD_SPR_ZHENGBA_QUERY_JOIN_HINT = 1360,      //是否提示参与框
+        //精灵技能
+        CMD_SPR_PET_SKILL_UP = 1037,//宠物技能槽提升
+        CMD_SPR_PET_SKILL_AWAKE = 1038,// 宠物技能领悟
+        CMD_SPR_PET_SKILL_AWAKE_COST = 1039, //宠物技能领悟消耗灵晶数量
+                                             //账号绑定
+        CMD_SPR_ACTIVATE_INFO = 1040,//1、	获取信息
+        CMD_SPR_ACTIVATE_AWARD = 1041,//2、	领取奖励
+                                      //专享活动
+        CMD_SPR_SPECIALACTIVITY_GETXMLDATA = 1510,          // 获取专享活动xml配置文件
+        CMD_SPR_SPECIALACTIVITY_QUERY = 1511,               // 查询专享活动数据
+        CMD_SPR_SPECIALACTIVITY_FETCHAWARD = 1512,          // 领取专享活动奖励   
+
+        //战盟神殿
+        CMD_SPR_UNION_PALACE_DATA = 1035,   //  获取战盟神殿信息
+        CMD_SPR_UNION_PALACE_UP = 1036,     // 守护提升
+        //亲加视频
+        CMD_SPR_VIDEO_OPEN = 1700,       //获取登陆视频数据
+
+
+
+
+        CMD_SPR_TAROT_UPORINIT = 1701,// 1、	塔罗牌——塔罗牌激活
+        CMD_SPR_SET_TAROTPOS = 1702,   //  1、	塔罗牌——塔罗牌佩戴
+        CMD_SPR_USE_TAROTKINGPRIVILEGE = 1703,   //塔罗牌——使用国王特权
+        CMD_SPR_TAROT_DATA = 1704, //   塔罗牌——发送塔罗牌数据
+
+        CMD_SPR_FASHION_FORGE = 1610,                   // 时装强化
+        CMD_SPR_FASHION_ACTIVE = 1611,                  // 时装激活
+
+
+        #region 战盟外交相关消息
+        CMD_SPR_UNION_ALLY_REQUEST = 1042,      //发起战盟结盟请求
+        CMD_SPR_UNION_ALLY_CANCEL = 1043,       //取消战盟结盟请求
+        CMD_SPR_UNION_ALLY_REMOVE = 1044,      //解除结盟
+        CMD_SPR_UNION_ALLY_AGREE = 1045,         //同意、拒绝结盟
+        CMD_SPR_UNION_ALLY_DATA = 1046,          //结盟数据，我的盟友数据、结盟请求数据，合在一起
+        CMD_SPR_UNION_ALLY_LOG = 1047,           //结盟请求日志数据
+        CMD_SPR_UNION_ALLY_NUM = 1048,         //刷新盟友请求界面数据
+        #endregion 战盟外交相关消息
+        //夫妻竞技场
+        CMD_COUPLE_ARENA_GET_MAIN_DATA = 1370,   //注：此消息用于客户端打开主界面时，查询信息
+
+        /* 
+         *  注：客户端打开主界面时，注册状态关注。关闭主界面时，取消状态关注。
+            该消息是为了保证客户端一直打开主界面的时候，配偶状态变更了，服务器能够主动推送给客户端，这样客户端无须重新打开主界面。
+            打开主界面时，一定要先发送CMD_COUPLE_ARENA_GET_MAIN_DATA，在发送本消息，保证客户端收到本消息的回复时，已经收到了主界面信息。
+        */
+        CMD_COUPLE_ARENA_REG_STATE_WATCHER = 1380,
+        CMD_COUPLE_ARENA_GET_ZHAN_BAO = 1371,    //战报
+        CMD_COUPLE_ARENA_GET_PAI_HANG = 1372,   //排行榜
+        CMD_COUPLE_ARENA_SET_READY = 1373,      //设置准备状态
+        CMD_COUPLE_ARENA_SINGLE_JOIN = 1374,    //单人匹配
+
+        /*
+         注：无论是单人匹配还是双人匹配，客户端均通过此消息主动请求取消匹配。
+	     注：双人匹配中，如果夫妻一方主动取消匹配，那么会通过此消息主动通知配偶，配偶收到此消息后要结束倒计时匹配界面。
+         */
+        CMD_COUPLE_ARENA_QUIT = 1375,        // 取消匹配
+        CMD_COUPLE_ARENA_NTF_CAN_ENTER = 1376,  //单向消息，服务器主动通知客户端可以进入对战
+        CMD_COUPLE_ARENA_ENTER = 1377,   //  进入或者取消
+        CMD_COUPLE_ARENA_NTF_PK_RESULT = 1378,   //单向消息，服务器通知战斗结果
+        CMD_COUPLE_ARENA_NTF_COUPLE_STATE = 1379,   //单向消息，服务器通知状态变更
+        CMD_COUPLE_ARENA_NTF_BUFF_HOLDER = 1381,   //单向消息，通知buff持有信息
+
+        #region 夫妻祝福榜
+
+        CMD_COUPLE_WISH_GET_MAIN_DATA = 1390,   // 注：此消息用于客户端打开主界面时，查询信息
+        CMD_COUPLE_WISH_GET_WISH_RECORD = 1391,   // 点击祝福记录按钮
+        CMD_COUPLE_WISH_WISH_OTHER_ROLE = 1392,    //请求祝福他人
+        CMD_COUPLE_WISH_NTF_WISH_EFFECT = 1393,    //单向消息，服务器通知客户端祝福特效
+        CMD_COUPLE_WISH_GET_ADMIRE_DATA = 1394,    //客户端查看情侣雕像数据
+        CMD_COUPLE_WISH_ADMIRE_STATUE = 1395,    // 客户端请求膜拜雕像
+        CMD_COUPLE_WISH_GET_PARTY_DATA = 1396,   // 客户端查看宴会数据
+        CMD_COUPLE_WISH_JOIN_PARTY = 1397,    //  客户端点击参加宴会
+
+        #endregion 夫妻祝福榜
+
+        CMD_SPR_TALENT_OTHER = 999,         //获取天赋数据——他人
+
+        CMD_SPR_GETATTRIBALL = 30100,   // 获取装备二级属性
+
+
+        #region Kiếm Thế
+        #region CreateRole
+        /// <summary>
+        /// Lấy danh sách Tân Thủ Thôn
+        /// </summary>
+        CMD_KT_GET_NEWBIE_VILLAGES = 40000,
+        #endregion
+
+        #region Skill
+        /// <summary>
+        /// Gói tin gửi về Client làm mới lại danh sách kỹ năng
+        /// </summary>
+        CMD_KT_G2C_RENEW_SKILLLIST = 45000,
+
+        /// <summary>
+        /// Gói tin gửi về Server yêu cầu cộng điểm kỹ năng của Client
+        /// </summary>
+        CMD_KT_C2G_SKILL_ADDPOINT = 45001,
+
+        /// <summary>
+        /// Gói tin gửi từ Client lên Server lưu thiết lập kỹ năng tay vào khung sử dụng
+        /// </summary>
+        CMD_KT_C2G_SET_SKILL_TO_QUICKKEY = 45002,
+
+        /// <summary>
+        /// Gói tin gửi từ Client lên Server lưu thiết lập và kích hoạt vòng sáng tại ô tương ứng
+        /// </summary>
+        CMD_KT_C2G_SET_AND_ACTIVATE_AURA = 45003,
+
+
+
+        /// <summary>
+        /// Gói tin gửi từ Client về Server yêu cầu sử dụng kỹ năng
+        /// </summary>
+        CMD_KT_C2G_USESKILL = 45009,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo đối tượng sử dụng kỹ năng
+        /// </summary>
+        CMD_KT_G2C_USESKILL = 45010,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo kỹ năng thiết lập trạng thái chờ phục hồi
+        /// </summary>
+        CMD_KT_G2C_NOTIFYSKILLCOOLDOWN = 45011,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo tạo đạn
+        /// </summary>
+        CMD_KT_G2C_CREATEBULLET = 45012,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo đạn nổ
+        /// </summary>
+        CMD_KT_G2C_BULLETEXPLODE = 45013,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo đạn nổ
+        /// </summary>
+        CMD_KT_G2C_SKILLRESULT = 45014,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo thao tác Buff
+        /// </summary>
+        CMD_KT_G2C_SPRITEBUFF = 45015,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo đối tượng tốc biến tới vị trí chỉ định
+        /// </summary>
+        CMD_KT_G2C_BLINKTOPOSITION = 45016,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo tạo nhiều tia đạn
+        /// </summary>
+        CMD_KT_G2C_CREATEBULLETS = 45017,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo đạn nổ nhiều vị trí
+        /// </summary>
+        CMD_KT_G2C_BULLETEXPLODES = 45018,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo tốc độ di chuyển của đối tượng thay đổi
+        /// </summary>
+        CMD_KT_G2C_MOVESPEEDCHANGED = 45019,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo đối tượng khinh công tới vị trí chỉ định
+        /// </summary>
+        CMD_KT_G2C_FLYTOPOSITION = 45020,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo trạng thái ngũ hành của đối tượng thay đổi
+        /// </summary>
+        CMD_KT_G2C_SPRITESERIESSTATE = 45021,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo danh sách kết quả kỹ năng
+        /// </summary>
+        CMD_KT_G2C_SKILLRESULTS = 45022,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo trạng thái tàng hình của đối tượng thay đổi
+        /// </summary>
+        CMD_KT_G2C_OBJECTINVISIBLESTATECHANGED = 45023,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo làm mới tất cả thời gian hồi kỹ năng
+        /// </summary>
+        CMD_KT_G2C_RESETSKILLCOOLDOWN = 45024,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo tốc độ xuất chiêu của đối tượng thay đổi
+        /// </summary>
+        CMD_KT_G2C_ATTACKSPEEDCHANGED = 45025,
+        #endregion
+
+        /// <summary>
+        /// Lệnh GM
+        /// </summary>
+        CMD_KT_GM_COMMAND = 50000,
+
+        #region RoleAttributes
+        /// <summary>
+        /// Lấy thông tin thuộc tính nhân vật
+        /// </summary>
+        CMD_KT_ROLE_ATRIBUTES = 50001,
+        #endregion
+
+        #region Notification Tips
+        /// <summary>
+        /// Hiển thị NotificationTip
+        /// </summary>
+        CMD_KT_SHOW_NOTIFICATIONTIP = 50002,
+        #endregion
+
+        #region Faction and Route changed
+        /// <summary>
+        /// Thông báo môn phái người chơi đã thay đổi
+        /// </summary>
+        CMD_KT_FACTIONROUTE_CHANGED = 50003,
+        #endregion
+
+        #region Click NPC
+        /// <summary>
+        /// Người chơi ấn vào NPC
+        /// </summary>
+        CMD_KT_CLICKON_NPC = 50004,
+        #endregion
+
+        #region NPCDialog
+        /// <summary>
+        /// Server gửi lệnh mở khung NPC Dialog cho Client
+        /// </summary>
+        CMD_KT_G2C_NPCDIALOG = 50005,
+
+        /// <summary>
+        /// Client phản hồi về Server về sự lựa chọn của người chơi vào thành phần trong khung (nếu có)
+        /// </summary>
+        CMD_KT_C2G_NPCDIALOG = 50006,
+        #endregion
+
+        #region Change Action
+        /// <summary>
+        /// Server gửi lệnh cho Client thay đổi động tác
+        /// </summary>
+        CMD_KT_G2C_CHANGEACTION = 50007,
+
+        /// <summary>
+        /// Client gửi yêu cầu thay đổi động tác cho Server
+        /// </summary>
+        CMD_KT_C2G_CHANGEACTION = 50008,
+        #endregion
+
+        #region Debug
+        /// <summary>
+        /// Server gửi lệnh cho Client hiện khối Debug Object ở các vị trí
+        /// </summary>
+        CMD_KT_G2C_SHOWDEBUGOBJECTS = 50009,
+        #endregion
+
+        #region UI
+        /// <summary>
+        /// Server gửi lệnh cho Client hiện khung hồi sinh
+        /// </summary>
+        CMD_KT_G2C_SHOWREVIVEFRAME = 50010,
+
+        /// <summary>
+        /// Gói tin phản hồi từ Client về Server phương thức hồi sinh được người chơi lựa chọn
+        /// </summary>
+        CMD_KT_C2G_CLIENTREVIVE = 50011,
+        #endregion
+
+        #region Trap
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo có bẫy tại vị trí tương ứng
+        /// </summary>
+        CMD_KT_SPR_NEWTRAP = 50012,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo có bẫy tại vị trí tương ứng
+        /// </summary>
+        CMD_KT_SPR_DELTRAP = 50013,
+        #endregion
+
+        #region Settings
+        /// <summary>
+        /// Gói tin phản hồi từ Client về Server lưu thiết lập hệ thống
+        /// </summary>
+        CMD_KT_C2G_SAVESYSTEMSETTINGS = 50014,
+
+        /// <summary>
+        /// Gói tin phản hồi từ Client về Server lưu thiết lập Auto
+        /// </summary>
+        CMD_KT_C2G_SAVEAUTOSETTINGS = 50015,
+        #endregion
+
+        #region Team
+        /// <summary>
+        /// Gói tin thông báo mời vào nhóm
+        /// </summary>
+        CMD_KT_INVITETOTEAM = 50016,
+        /// <summary>
+        /// Gói tin yêu cầu tạo nhóm
+        /// </summary>
+        CMD_KT_CREATETEAM = 50017,
+        /// <summary>
+        /// Gói tin đồng ý thêm vào nhóm tương ứng
+        /// </summary>
+        CMD_KT_AGREEJOINTEAM = 50018,
+        /// <summary>
+        /// Gói tin từ chối thêm vào nhóm tương ứng
+        /// </summary>
+        CMD_KT_REFUSEJOINTEAM = 50019,
+        /// <summary>
+        /// Gói tin lấy thông tin nhóm tương ứng
+        /// </summary>
+        CMD_KT_GETTEAMINFO = 50020,
+        /// <summary>
+        /// Gói tin trục xuất người chơi khỏi nhóm
+        /// </summary>
+        CMD_KT_KICKOUTTEAMMATE = 50021,
+        /// <summary>
+        /// Gói tin bổ nhiệm đội trưởng
+        /// </summary>
+        CMD_KT_APPROVETEAMLEADER = 50022,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo thay đổi thông tin đội viên
+        /// </summary>
+        CMD_KT_REFRESHTEAMMEMBERATTRIBUTES = 50023,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo thành viên thay đổi
+        /// </summary>
+        CMD_KT_TEAMMEMBERCHANGED = 50024,
+        /// <summary>
+        /// Gói tin thông báo bản thân rời nhóm
+        /// </summary>
+        CMD_KT_LEAVETEAM = 50025,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo cập nhật thông tin tổi đội của người chơi tương ứng
+        /// </summary>
+        CMD_KT_G2C_UPDATESPRITETEAMDATA = 50026,
+        /// <summary>
+        /// Gói tin thông báo yêu cầu xin vào nhóm của người chơi tương ứng
+        /// </summary>
+        CMD_KT_ASKTOJOINTEAM = 50027,
+        #endregion
+
+        #region ItemDialog
+        /// <summary>
+        /// Server gửi lệnh mở khung Item Dialog cho Client
+        /// </summary>
+        CMD_KT_G2C_ITEMDIALOG = 50030,
+
+        /// <summary>
+        /// Client phản hồi về Server về sự lựa chọn của người chơi vào thành phần trong khung Item Dialog (nếu có)
+        /// </summary>
+        CMD_KT_C2G_ITEMDIALOG = 50031,
+        #endregion
+
+        #region SHOPCMD
+        /// <summary>
+        /// Gói tin gửi từ Client lên Server yêu cầu mở Shop tương ứng
+        /// </summary>
+        CMD_KT_C2G_OPENSHOP = 50032,
+        #endregion
+
+        /// <summary>
+        /// Server lệnh cho Client đóng khung NPCDialog hoặc ItemDialog
+        /// </summary>
+        CMD_KT_G2C_CLOSENPCITEMDIALOG = 50033,
+
+        #region Tỷ thí
+        /// <summary>
+        /// Gói tin thông báo mời tỷ thí
+        /// </summary>
+        CMD_KT_ASK_CHALLENGE = 50034,
+        /// <summary>
+        /// Gói tin thông báo nhận lời mời tỷ thí
+        /// </summary>
+        CMD_KT_C2G_RESPONSE_CHALLENGE = 50035,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client bắt đầu thiết lập trạng thái tỷ thí
+        /// </summary>
+        CMD_KT_G2C_START_CHALLENGE = 50036,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo kết thúc tỷ thí
+        /// </summary>
+        CMD_KT_G2C_STOP_CHALLENGE = 50037,
+        #endregion
+
+        #region Auto Path
+        /// <summary>
+        /// Gói tin gửi từ Client lên Server do Auto tìm đường gửi, yêu cầu dịch chuyển đến vị trí tương ứng
+        /// </summary>
+        CMD_KT_C2G_AUTOPATH_CHANGEMAP = 50038,
+        #endregion
+
+        #region GrowPoint
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo có điểm thu thập mới
+        /// </summary>
+        CMD_KT_G2C_NEW_GROWPOINT = 50039,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo xóa điểm thu thập
+        /// </summary>
+        CMD_KT_G2C_DEL_GROWPOINT = 50040,
+        /// <summary>
+        /// Gói tin gửi từ Client về Server thông báo người chơi ấn vào điểm thu thập
+        /// </summary>
+        CMD_KT_C2G_GROWPOINT_CLICK = 50041,
+        #endregion
+
+        #region Progress Bar
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo cập nhật trạng thái chạy thanh Progess
+        /// </summary>
+        CMD_KT_G2C_UPDATE_PROGRESSBAR = 50042,
+        #endregion
+
+        #region Kỳ Trân Các
+        /// <summary>
+        /// Gói tin gửi từ Client lên Server yêu cầu mở Kỳ Trân Các
+        /// </summary>
+        CMD_KT_OPEN_TOKENSHOP = 50043,
+        #endregion
+
+        #region Mở/đóng khung bất kỳ
+        /// <summary>
+        /// Gói tin gửi từ Server về Client yêu cầu mở khung bất kỳ
+        /// </summary>
+        CMD_KT_G2C_OPEN_UI = 50044,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client yêu cầu đóng khung bất kỳ
+        /// </summary>
+        CMD_KT_G2C_CLOSE_UI = 50045,
+        #endregion
+
+        #region Chuyển trạng thái cưỡi
+        /// <summary>
+        /// Gói tin thông báo trạng thái cưỡi thay đổi
+        /// </summary>
+        CMD_KT_TOGGLE_HORSE_STATE = 50046,
+        #endregion
+
+        #region Cường hóa trang bị
+        /// <summary>
+        /// Gói tin cường hóa trang bị
+        /// </summary>
+        CMD_KT_EQUIP_ENHANCE = 50047,
+        /// <summary>
+        /// Gói tin ghép Huyền Tinh
+        /// </summary>
+        CMD_KT_COMPOSE_CRYSTALSTONES = 50048,
+        /// <summary>
+        /// Gói tin tách Huyền Tinh
+        /// </summary>
+        CMD_KT_SPLIT_CRYSTALSTONES = 50049,
+        #endregion
+
+        #region Khu vực động
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo có khu vực động mới
+        /// </summary>
+        CMD_KT_G2C_NEW_DYNAMICAREA = 50050,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo xóa khu vực động
+        /// </summary>
+        CMD_KT_G2C_DEL_DYNAMICAREA = 50051,
+        #endregion
+
+        #region Tuyên chiến
+        /// <summary>
+        /// Gói tin thông báo tuyên chiến
+        /// </summary>
+        CMD_KT_ASK_ACTIVEFIGHT = 50052,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client bắt đầu thiết lập trạng thái tuyên chiến
+        /// </summary>
+        CMD_KT_G2C_START_ACTIVEFIGHT = 50053,
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo kết thúc tuyên chiến
+        /// </summary>
+        CMD_KT_G2C_STOP_ACTIVEFIGHT = 50054,
+        #endregion
+
+        #region Avarta 
+        /// <summary>
+        /// Gói tin thông báo Avarta nhân vật thay đổi
+        /// </summary>
+        CMD_KT_CHANGE_AVARTA = 50055,
+        #endregion
+
+        #region Tinh hoạt lực, kỹ năng sống
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo giá trị Tinh lực, hoạt lực nhân vật thay đổi
+        /// </summary>
+        CMD_KT_G2C_UPDATE_ROLE_GATHERMAKEPOINT = 50056,
+        /// <summary>
+        /// Gói tin từ Server gửi về Client thông báo cấp độ kỹ năng sống và kinh nghiệm thay đổi
+        /// </summary>
+        CMD_KT_G2C_UPDATE_LIFESKILL_LEVEL = 50057,
+        #endregion
+
+        #region Chế đồ
+        /// <summary>
+        /// Gói tin bắt đầu chế đồ
+        /// </summary>
+        CMD_KT_BEGIN_CRAFT = 50058,
+        /// <summary>
+        /// Gói tin kết thúc chế đồ
+        /// </summary>
+        CMD_KT_G2C_FINISH_CRAFT = 50059,
+        #endregion
+
+        #region Message Box
+        /// <summary>
+        /// Hiển thị bảng thông báo về Client
+        /// </summary>
+        CMD_KT_SHOW_MESSAGEBOX = 50060,
+        #endregion
+
+        #region BATTLE 
+        /// <summary>
+        /// Thông báo Text sự kiện hoạt động phụ bản
+        /// </summary>
+        CMD_KT_EVENT_NOTIFICATION = 50061,
+        /// <summary>
+        /// Thông báo số liên trảm
+        /// </summary>
+        CMD_KT_KILLSTREAK = 50062,
+        /// <summary>
+        /// Thông báo trạng thái đóng mở khung Mini sự kiện hoạt động phụ bản
+        /// </summary>
+        CMD_KT_EVENT_STATE = 50063,
+        #endregion
+
+        #region Hoạt động đặc biệt
+        /// <summary>
+        /// Bảng điểm Tống Kim
+        /// </summary>
+        CMD_KT_SONGJINBATTLE_RANKING = 50064,
+        #endregion
+
+        #region Tìm người chơi
+        /// <summary>
+        /// Gói tin tìm kiếm người chơi
+        /// </summary>
+        CMD_KT_BROWSE_PLAYER = 50065,
+
+        /// <summary>
+        /// Gói tin kiểm tra vị trí người chơi
+        /// </summary>
+        CMD_KT_CHECK_PLAYER_LOCATION = 50066,
+
+        /// <summary>
+        /// Gói tin kiểm tra thông tin người chơi
+        /// </summary>
+        CMD_KT_GET_PLAYER_INFO = 50099,
+        #endregion
+
+        #region Danh hiệu
+        /// <summary>
+        /// Cập nhật hiển thị danh hiệu
+        /// </summary>
+        CMD_KT_UPDATE_TITLE = 50067,
+        /// <summary>
+        /// Cập nhật hiển thị tên
+        /// </summary>
+        CMD_KT_UPDATE_NAME = 50068,
+        #endregion
+
+        #region Danh vọng
+        /// <summary>
+        /// Cập nhật danh vọng
+        /// </summary>
+        CMD_KT_UPDATE_REPUTE = 50069,
+        /// <summary>
+        /// Cập nhật giá trị tài phú
+        /// </summary>
+        CMD_KT_UPDATE_TOTALVALUE = 50070,
+        #endregion
+
+        #region Quà Downlaod
+        /// <summary>
+        /// Gói tin thao tác với sự kiện tải lần đầu nhận quà
+        /// </summary>
+        CMD_KT_GET_BONUS_DOWNLOAD = 50071,
+        #endregion
+
+        #region Bách Bảo Rương
+        /// <summary>
+        /// Gói tin thao tác với hoạt động Bách Bảo Rương
+        /// </summary>
+        CMD_KT_SEASHELL_CIRCLE = 50072,
+        #endregion
+
+        #region BOT
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo có BOT mới
+        /// </summary>
+        CMD_KT_G2C_NEW_BOT = 50073,
+
+        /// <summary>
+        /// Gói tin gửi từ Server về Client thông báo xóa BOT
+        /// </summary>
+        CMD_KT_G2C_DEL_BOT = 50074,
+        #endregion
+
+        #region Cường hóa Ngũ hành ấn
+        /// <summary>
+        /// Gói tin cường hóa Ngũ hành ấn
+        /// </summary>
+        CMD_KT_SIGNET_ENHANCE = 50075,
+        #endregion
+
+        #region Bảng xếp hạng
+        /// <summary>
+        /// Gói tin truy vấn bảng xếp hạng
+        /// </summary>
+        CMD_KT_QUERY_PLAYERRANKING = 50076,
+        #endregion
+
+        #region Set dự phòng
+        /// <summary>
+        /// Đổi set dự phòng
+        /// </summary>
+        CMD_KT_C2G_CHANGE_SUBSET = 50077,
+        #endregion
+
+        #region Khung nhập vật phẩm
+        /// <summary>
+        /// Nhập danh sách vật phẩm
+        /// </summary>
+        CMD_KT_SHOW_INPUTITEMS = 50078,
+
+        /// <summary>
+        /// Nhập danh sách vật phẩm
+        /// </summary>
+        CMD_KT_SHOW_INPUTEQUIPANDMATERIALS = 50079,
+        #endregion
+
+        #region Thi Đấu môn phái
+        /// <summary>
+        /// Bảng Điểm Thi Đấu môn Phái
+        /// </summary>
+        CMD_KT_FACTION_PVP_RANKING_INFO = 50081,
+        #endregion
+
+        #region Gia tộc
+        /// <summary>
+        /// Tạo tộc
+        /// </summary>
+        CMD_KT_FAMILY_CREATE = 50082,
+
+        /// <summary>
+        /// Yêu cầu vào tộc
+        /// </summary>
+        CMD_KT_FAMILY_REQUESTJOIN = 50083,
+
+        /// <summary>
+        /// Đuổi thành viên khỏi tộc
+        /// </summary>
+        CMD_KT_FAMILY_KICKMEMBER = 50084,
+
+        /// <summary>
+        /// Lấy danh sách tộc
+        /// </summary>
+        CMD_KT_FAMILY_GETLISTFAMILY = 50085,
+
+        /// <summary>
+        /// Giải tán tộc
+        /// </summary>
+        CMD_KT_FAMILY_DESTROY = 50086,
+
+        /// <summary>
+        /// Đổi tôn chỉ tộc
+        /// </summary>
+        CMD_KT_FAMILY_CHANGENOTIFY = 50087,
+
+        /// <summary>
+        /// Đổi thông báo gia nhập tộc
+        /// </summary>
+        CMD_KT_FAMILY_CHANGE_REQUESTJOIN_NOTIFY = 50088,
+
+        /// <summary>
+        /// Đổi chức vị thành viên
+        /// </summary>
+        CMD_KT_FAMILY_CHANGE_RANK = 50089,
+
+        /// <summary>
+        /// Phản hồi yêu cầu vào tộc
+        /// </summary>
+        CMD_KT_FAMILY_RESPONSE_REQUEST = 50090,
+
+        /// <summary>
+        /// Thoát gia tộc
+        /// </summary>
+        CMD_KT_FAMILY_QUIT = 50091,
+
+        /// <summary>
+        /// Mở giao diện gia tộc
+        /// </summary>
+        CMD_KT_FAMILY_OPEN = 50092,
+        #endregion
+
+        #region Bang hội
+        /// <summary>
+        /// Tạo 1 bang hội
+        /// </summary>
+        CMD_KT_GUILD_CREATE = 50100,
+
+        /// <summary>
+        /// Lấy thông tin bang hội
+        /// </summary>
+        CMD_KT_GUILD_GETINFO = 50101,
+
+        /// <summary>
+        /// Lấy ra thành viên bang hội
+        /// </summary>
+        CMD_KT_GUILD_GETMEMBERLIST = 50102,
+        /// <summary>
+        /// Thay đổi chức vị của 1 thành viên
+        /// Thay đổi chức của 1 thành viên
+        /// </summary>
+        CMD_KT_GUILD_CHANGERANK = 50103,
+        /// <summary>
+        /// Kick 1 gia tộc
+        /// Packet khi ấn vào ĐUỔI 1 tộc ở khung thành viên
+        /// </summary>
+        CMD_KT_GUILD_KICKFAMILY = 50104,
+
+        /// <summary>
+        /// Trả về danh sách ưu tú
+        /// Packet khi mở khung ưu tú
+        /// </summary>
+        CMD_KT_GUILD_GETGIFTED = 50105,
+
+        /// <summary>
+        /// Packet khi mở giao diện quan hàm
+        /// </summary>
+        CMD_KT_GUILD_OFFICE_RANK = 50106,
+
+        /// <summary>
+        /// Packet bầu ưu tú cho 1 thành viên
+        /// </summary>
+
+        CMD_KT_GUILD_VOTEGIFTED = 50107,
+
+        /// <summary>
+        /// Cống hiến vào bang
+        /// </summary>
+        CMD_KT_GUILD_DONATE = 50108,
+
+        /// <summary>
+        /// Khi click vào khung hoạt động tranh đoạt lãnh thổ
+        /// </summary>
+        CMD_KT_GUILD_TERRITORY = 50109,
+
+        /// <summary>
+        /// PACKET SET THÀNH CHÍNH
+        /// </summary>
+        CMD_KT_GUILD_SETCITY = 50110,
+
+        /// <summary>
+        /// PACKET THIẾT LẬP THUẾ
+        /// </summary>
+        CMD_KT_GUILD_SETTAX = 50111,
+
+        /// <summary>
+        /// Thoát bang
+        /// </summary>
+        CMD_KT_GUILD_QUIT = 50112,
+
+        /// <summary>
+        /// ĐIỀU CHỈNH QUỸ THƯỞNG
+        /// </summary>
+        CMD_KT_GUILD_CHANGE_MAXWITHDRAW = 50113,
+
+        /// <summary>
+        /// Đổi tôn chỉ bang hội
+        /// </summary>
+        CMD_KT_GUILD_CHANGE_NOTIFY = 50114,
+
+        /// <summary>
+        /// MỞ UI CỔ TỨC
+        /// </summary>
+        CMD_KT_GUILD_GETSHARE = 50115,
+
+        /// <summary>
+        /// Xin gia nhập bang hội
+        /// </summary>
+        CMD_KT_GUILD_ASKJOIN = 50116,
+
+        /// <summary>
+        /// Trả lời đơn xin gia nhập
+        /// </summary>
+        CMD_KT_GUILD_RESPONSEASK = 50117,
+
+        /// <summary>
+        /// Mời vào bang
+        /// </summary>
+        CMD_KT_GUILD_INVITE = 50118,
+
+        /// <summary>
+        /// Phản hồi yêu cầu mời vào bang
+        /// </summary>
+        CMD_KT_GUILD_RESPONSEINVITE = 50119,
+
+        /// <summary>
+        /// Rút tài sản cá nhân
+        /// </summary>
+        CMD_KT_GUILD_DOWTIHDRAW = 50120,
+
+        /// <summary>
+        /// Gia tộc rời khỏi bang hội
+        /// </summary>
+        CMD_KT_GUILD_FAMILYQUIT = 50121,
+
+        /// <summary>
+        /// Cập nhật thông tin hạng bang hội và gia tộc
+        /// </summary>
+        CMD_KT_UPDATE_GUILDANDFAMILY_RANK = 50122,
+
+        /// <summary>
+        /// Dữ liệu lãnh thổ
+        /// </summary>
+        CMD_KT_GETTERRORY_DATA = 50123,
+
+        /// <summary>
+        /// Lấy thông tin bảng chiến công Tranh đoạt lãnh thổ
+        /// </summary>
+        CMD_KT_GUILDWAR_RANKING = 50124,
+        #endregion
+
+        #region Khung Du Long Các
+        /// <summary>
+        /// Gói tin thông tin Du Long Các
+        /// </summary>
+        CMD_KT_YOULONG = 50095,
+        #endregion
+
+        #region Danh hiệu nhân vật
+        /// <summary>
+        /// Gói tin thông báo thay đổi danh hiệu nhân vật hiện tại
+        /// </summary>
+        CMD_KT_UPDATE_CURRENT_ROLETITLE = 50130,
+
+        /// <summary>
+        /// Gói tin thông báo thêm/xóa danh hiệu nhân vật
+        /// </summary>
+        CMD_KT_G2C_MOD_ROLETITLE = 50131,
+        #endregion
+
+        /// <summary>
+        /// Gói tin gửi lưu tích lũy nạp
+        /// </summary>
+        CMD_KT_G2C_RECHAGE = 50132,
+
+        #region Uy danh và vinh dự thay đổi
+        /// <summary>
+        /// Cập nhật thông tin uy danh và vinh dự thay đổi
+        /// </summary>
+        CMD_KT_G2C_UPDATE_PRESTIGE_AND_HONOR = 50133,
+        #endregion
+
+        #region Thông báo cập nhật thông tin người chơi khác
+        /// <summary>
+        /// Gói tin cập nhật thông tin trang bị người chơi khác
+        /// </summary>
+        CMD_KT_G2C_UPDATE_OTHERROLE_EQUIP = 50134,
+        #endregion
+
+        #region Chúc phúc
+        /// <summary>
+        /// Chúc phúc
+        /// </summary>
+        CMD_KT_G2C_PLAYERPRAY = 50135,
+        #endregion
+
+        #region Lua
+        /// <summary>
+        /// Giao tiếp giữa Lua ở Client với Server
+        /// </summary>
+        CMD_KT_CLIENT_SERVER_LUA = 50136,
+        #endregion
+
+        #region Luyện hóa trang bị
+        /// <summary>
+        /// Gói tin luyện hóa trang bị
+        /// </summary>
+        CMD_KT_CLIENT_DO_REFINE = 50137,
+        #endregion
+
+        #region Tách Ngũ Hành Hồn Thạch từ trang bị
+        /// <summary>
+        /// Gói tin luyện hóa trang bị
+        /// </summary>
+        CMD_KT_C2G_SPLIT_EQUIP_INTO_FS = 50138,
+        #endregion
+
+        #region Báo cho đối phương đang bị tấn công,
+        /// <summary>
+        /// Thông báo đang bị tấn công
+        /// </summary>
+        CMD_KT_TAKEDAMAGE = 50139,
+        #endregion
+
+        #region Nhập mật khẩu cấp 2
+        /// <summary>
+        /// Thông báo nhập mật khẩu cấp 2
+        /// </summary>
+        CMD_KT_INPUT_SECONDPASSWORD = 50140,
+        #endregion
+
+        #region GuildUpdateMoney
+
+        /// <summary>
+        /// Cập nhật tài sản cá nhân
+        /// </summary>
+        CMD_KT_UPDATE_ROLEGUILDMONEY = 50141,
+
+        #endregion GuildUpdateMoney
+
+        /// <summary>
+        /// Kiểm tra thứ hạng bản thân
+        /// </summary>
+        CMD_KT_RANKING_CHECKING = 50142,
+
+        #region GHICHEP_RECRORE
+
+        /// <summary>
+        /// Lấy ra 1 biến đánh dấu theo time ranger
+        /// </summary>
+        CMD_KT_GETMARKVALUE = 50143,
+
+        /// <summary>
+        /// Update 1 biến đánh dấu theo time Ranger
+        /// </summary>
+        CMD_KT_UPDATEMARKVALUE = 50144,
+
+        /// <summary>
+        /// Lấy ra tổng giá trị đã ghi chép trong 1 khoảng thời gain
+        /// </summary>
+        CMD_KT_GET_RECORE_BYTYPE = 50145,
+
+        /// <summary>
+        /// Thêm vào 1 biến ghi chép trong 1 khoảng thời gian
+        /// </summary>
+        CMD_KT_ADD_RECORE_BYTYPE = 50146,
+
+        /// <summary>
+        /// Lấy ra bảng xếp hạng đã ghic hép trong 1 khoảng thời gian
+        /// </summary>
+        CMD_KT_GETRANK_RECORE_BYTYPE = 50147,
+
+        /// <summary>
+        /// Đổi xếp hạng GM
+        /// </summary>
+        CMD_KT_GMCHANGERANK = 50148,
+
+        /// <summary>
+        /// Tranh đoạt lãnh thổ
+        /// </summary>
+        CMD_KT_GUILD_ALLTERRITORY = 50149,
+
+        #endregion GHICHEP_RECRORE
+
+        #region Quái đặc biệt - Bản đồ khu vực
+        /// <summary>
+        /// Thông tin quái ở bản đồ khu vực
+        /// </summary>
+        CMD_KT_UPDATE_LOCALMAP_MONSTER = 50150,
+        #endregion
+
+        #region Captcha
+        /// <summary>
+        /// Captcha chống BOT
+        /// </summary>
+        CMD_KT_CAPTCHA = 50153,
+        #endregion
+
+        #region Vòng quay may mắn
+        /// <summary>
+        /// Vòng quay may mắn
+        /// </summary>
+        CMD_KT_LUCKYCIRCLE = 50154,
+        #endregion
+
+        #endregion
+
+
+
+        #region Test
+        /// <summary>
+        /// Gói tin Test
+        /// </summary>
+        CMD_KT_TESTPACKET = 32123,
+        #endregion
+    };
+
+    /// <summary>
+    /// Quản lý TCPPacket
+    /// </summary>
+    public class TCPCmdHandler
+    {
+        /// <summary>
+        /// Xử lý gói tin tử Server gửi về
+        /// </summary>
+        /// <param name="nID"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static bool ProcessServerCmd(TCPClient client, int nID, byte[] data, int count)
+        {
+            if (nID == (int) (TCPGameServerCmds.CMD_SPR_CLIENTHEART) || nID == (int) (TCPGameServerCmds.CMD_SPR_POSITION))
+            {
+                TCPPing.RecordRecCmd(nID);
+            }
+
+            bool ret = false;
+            switch (nID)
+            {
+                // ------------------------ 数据流 -----------------------
+                case (int) (TCPLoginServerCmds.CMD_LOGIN_ON1):
+                case (int) (TCPLoginServerCmds.CMD_LOGIN_ON2):
+                {
+                    ret = ProcessUserInfoCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) (TCPGameServerCmds.CMD_LOGIN_ON):
+                case (int) (TCPGameServerCmds.CMD_ROLE_LIST):
+                case (int) (TCPGameServerCmds.CMD_CREATE_ROLE):
+
+                case (int) (TCPGameServerCmds.CMD_PREREMOVE_ROLE):
+                case (int) (TCPGameServerCmds.CMD_UNREMOVE_ROLE):
+
+                case (int) (TCPGameServerCmds.CMD_REMOVE_ROLE):
+                case (int) (TCPGameServerCmds.CMD_SYNC_TIME):
+                case (int) (TCPGameServerCmds.CMD_SYNC_TIME_BY_CLIENT):
+                case (int) (TCPGameServerCmds.CMD_SYNC_TIME_BY_SERVER):
+                case (int) (TCPGameServerCmds.CMD_PLAY_GAME):
+                case (int) (TCPGameServerCmds.CMD_SPR_POSITION):
+                // 				case (int)(TCPGameServerCmds.CMD_SPR_ACTTION):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_MAGICCODE):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_ATTACK):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_INJURE):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_REALIVE):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_RELIFE):
+                case (int) (TCPGameServerCmds.CMD_LOG_OUT):
+                //case (int)(TCPGameServerCmds.CMD_SPR_MAPCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTEPROPADDPOINT):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTERECOMMENDPROPADDPOINT):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTERECLEANPROPADDPOINT):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYCLEANPROPADDPOINT):             // 请求清除属性加点信息 [2/11/2014 LiaoWei]
+                                                                                           //				case (int)(TCPGameServerCmds.CMD_SPR_GETATTRIB2):
+                case (int) (TCPGameServerCmds.CMD_SPR_LEAVE):
+                case (int) (TCPGameServerCmds.CMD_SPR_NPC_BUY):
+                //case (int)(TCPGameServerCmds.CMD_SPR_MOD_GOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_MONEYCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_MODTASK):
+                //case (int)(TCPGameServerCmds.CMD_SPR_COMPTASK):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_ADD_GOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXPCHANGE):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_NEWGOODSPACK):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELGOODSPACK):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETTHING):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGPKMODE):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGPKVAL):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATENPCSTATE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ABANDONTASK):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_HITED):
+                //case (int)(TCPGameServerCmds.CMD_SPR_USEGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHANGEPOS):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYCHGMAP):
+                case (int) (TCPGameServerCmds.CMD_SPR_FORGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_SUBFORGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_EQUIPBORNINDEXUPDATE):
+                case (int) (TCPGameServerCmds.CMD_SPR_EQUIPINHERIT):
+                case (int) (TCPGameServerCmds.CMD_SPR_ENCHANCE):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETOTHERATTRIB):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_UPDATE_ROLEDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_REMOVE_COOLDOWN):
+                case (int) (TCPGameServerCmds.CMD_SPR_MERGE_GOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_MALL_BUY):
+                case (int) (TCPGameServerCmds.CMD_SPR_BoundToken_BUY):
+                case (int) (TCPGameServerCmds.CMD_SPR_TokenCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_USERBoundTokenCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_GOODSEXCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_MOVEGOODSDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GOODSSTALL):
+                case (int) (TCPGameServerCmds.CMD_SPR_STALLNAME):
+                case (int) (TCPGameServerCmds.CMD_SPR_TEAM):
+                case (int) (TCPGameServerCmds.CMD_SPR_TEAMID):
+                case (int) (TCPGameServerCmds.CMD_SPR_BATTLE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ARENABATTLE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ARENABATTLEKILLEDNUM):
+                case (int) (TCPGameServerCmds.CMD_SPR_CITYWARREQUEST):
+                case (int) (TCPGameServerCmds.CMD_SPR_TAKELINGDIDAILYAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYOPENWINDOW):
+                case (int) (TCPGameServerCmds.CMD_SPR_DEAD):
+                //case (int)(TCPGameServerCmds.CMD_SPR_AUTOFIGHT):
+                case (int) (TCPGameServerCmds.CMD_SPR_HORSE):
+                case (int) (TCPGameServerCmds.CMD_SPR_PET):
+                case (int) (TCPGameServerCmds.CMD_SPR_DIANJIANG):
+                case (int) (TCPGameServerCmds.CMD_SPR_DIANJIANGFIGHT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GOTOMAP):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYMSG):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYIDBYNAME):
+                case (int) (TCPGameServerCmds.CMD_GETLINEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATEINTERPOWER):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_MERGENEWGOODS):
+                case (int) (TCPGameServerCmds.CMD_UP_JINGMAI_LEVEL):
+                //				case (int)(TCPGameServerCmds.CMD_SPR_LOADALREADY):
+                case (int) (TCPGameServerCmds.CMD_SPR_GMAUTH):
+                case (int) (TCPGameServerCmds.CMD_SPR_EQUIPUPGRADE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ENCHASEJEWEL):
+                case (int) (TCPGameServerCmds.CMD_SPR_SHOWBIGUAN):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBIGUAN):
+                //case (int)(TCPGameServerCmds.CMD_SPR_UPSKILLLEVEL):
+                case (int) (TCPGameServerCmds.CMD_SPR_ADD_SKILL):
+                case (int) (TCPGameServerCmds.CMD_SPR_HORSEENCHANCE):
+                case (int) (TCPGameServerCmds.CMD_SPR_HORSEUPGRADE):
+                case (int) (TCPGameServerCmds.CMD_SPR_SALEGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_SALEGOODS2):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETBUYGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETBUYGOODS2):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPGRADE_CHENGJIU):
+                case (int) (TCPGameServerCmds.CMD_SPR_MODDEFSKILLID):
+                case (int) (TCPGameServerCmds.CMD_SPR_MODAUTODRINK):
+                case (int) (TCPGameServerCmds.CMD_SPR_PLAYDECO):
+                case (int) (TCPGameServerCmds.CMD_SPR_RUNTOMAP):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGNUMSKILLID):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETSKILLUSEDNUM):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGHORSEBODY):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETWABAODATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETWLOGINGIFT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETNEWSTEPGIFT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETMTIMEGIFT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBIGGIFT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETSONGLIGIFT):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGHUODONGID):
+                case (int) (TCPGameServerCmds.CMD_SPR_ENTERFUBEN):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYENTERFUBEN):
+                case (int) (TCPGameServerCmds.CMD_SPR_OHTERJINGMAIEXP):
+                case (int) (TCPGameServerCmds.CMD_GETRANDOMNAME):
+                case (int) (TCPGameServerCmds.CMD_SKILLUSEDNUMFULL):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETFUBENBEGININFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_COPYMAPMONSTERSNUM):
+                //case (int)(TCPGameServerCmds.CMD_SPR_FINDMONSTER):
+                case (int) (TCPGameServerCmds.CMD_SPR_BATCHYINPIAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGPURPLENAME):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGLIANZHAN):
+                case (int) (TCPGameServerCmds.CMD_SPR_STARTYABIAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_ENDYABIAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_YABIAOTAKEGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_TOUBAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELBIAOCHE):
+                case (int) (TCPGameServerCmds.CMD_SPR_FINDBIAOCHE):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGBIAOCHELIFEV):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYENDCHONGXUE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ADDHORSELUCKY):
+                case (int) (TCPGameServerCmds.CMD_SPR_BATTLEKILLEDNUM):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGBATTLENAMEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOFITYPOPUPWIN):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYBATTLEROLEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETCHONGZHIJIFEN):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYTEAMCHGLEVEL):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGHEROINDEX):
+                case (int) (TCPGameServerCmds.CMD_UPDATEALLTHINGINDEXS):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGHALFBoundTokenPERIOD):
+                case (int) (TCPGameServerCmds.CMD_SPR_CREATEBANGHUI):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGBANGHUIINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATEBANGHUIBULLETIN):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATEBHVERIFY):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGBHMEMBERZHIWU):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGBHMEMBERCHENGHAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_REMOVEBHMEMBER):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUITFROMBANGHUI):
+                case (int) (TCPGameServerCmds.CMD_SPR_DESTROYBANGHUI):
+                case (int) (TCPGameServerCmds.CMD_SPR_APPLYTOBHMEMBER):
+                case (int) (TCPGameServerCmds.CMD_SPR_INVITETOBANGHUI):
+                case (int) (TCPGameServerCmds.CMD_SPR_BANGGONGCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_DONATEBGMONEY):
+                case (int) (TCPGameServerCmds.CMD_SPR_DONATEBGGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_RENAMEBANGQI):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPLEVELBANGQI):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGJUNQILIFEV):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELJUNQI):
+                case (int) (TCPGameServerCmds.CMD_SPR_LINGDIFORBH):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGHUANGDIROLEID):
+                case (int) (TCPGameServerCmds.CMD_SPR_SETLINGDITAX):
+                case (int) (TCPGameServerCmds.CMD_SPR_TAKELINGDITAXMONEY):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYBHZHIWU):
+                case (int) (TCPGameServerCmds.CMD_SPR_CLICKYANGGONGBK):
+                case (int) (TCPGameServerCmds.CMD_SPR_QIZHEGEBUY):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUICKJINGMAI):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUICKHORSEENCHANCE):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUICKEQUIPENHANCE):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUICKEQUIPFORGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ADDHUANGFEI):
+                case (int) (TCPGameServerCmds.CMD_SPR_REMOVEHUANGFEI):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGHUANGHOU):
+                case (int) (TCPGameServerCmds.CMD_SPR_SENDTOLAOFANG):
+                case (int) (TCPGameServerCmds.CMD_SPR_TAKEOUTLAOFANG):
+                case (int) (TCPGameServerCmds.CMD_SPR_BANCHAT):
+                case (int) (TCPGameServerCmds.CMD_SPR_INVITEADDHUANGFEI):
+                case (int) (TCPGameServerCmds.CMD_SPR_AGREEADDHUANGFEI):
+                case (int) (TCPGameServerCmds.CMD_SPT_LINGLIGUANZHU):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUICKCOMPLETETASK):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYCHONGZHIMONEY):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETFIRSTCHONGZHIDALI):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYBATTLESIDE):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHMAILGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELETEUSERMAIL):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETMAILSENDCODE):
+                case (int) (TCPGameServerCmds.CMD_SPR_SENDUSERMAIL):
+                case (int) (TCPGameServerCmds.CMD_SPR_RECEIVELASTMAIL):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYBATTLEAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_MALLZHENQIBUY):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYINPUTFANLI):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYINPUTJIASONG):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYAWARDHIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHACTIVITYAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_USEVIPDAILYPRIORITY):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHYANGGONGBKJIFENAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHSHILIANTAAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_COMPLETETINYCLIENT):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHVIPONCEAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_USERBoundMoneyCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYSHENGXIAOGUESSSTAT):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYSHENGXIAOGUESSRESULT):
+                case (int) (TCPGameServerCmds.CMD_SPR_ADDSHENGXIAOMORTGAGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELNPC):
+                case (int) (TCPGameServerCmds.CMD_SPR_SUBMONEY):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXTBAGNUMBYYUANBAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYEQUIPSTRONG):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHCHENGJIUAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_DSHIDECMD):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELDECO):
+                case (int) (TCPGameServerCmds.CMD_SPR_MENDEQUIPMENT):
+                case (int) (TCPGameServerCmds.CMD_SPR_ROLEPARAMSCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_EQUIPFENJIE):
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGYUANEXCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_HUIZHANGEXCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATNEXTLEVELJINGMAI):
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATNEXTLEVELWUXUE):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHANGEPETAITYPE):
+                case (int) (TCPGameServerCmds.CMD_SPR_PLAYGAMEEFFECT):
+                case (int) (TCPGameServerCmds.CMD_SPR_MALLQIANGGOUBUYGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHZUANHUANGAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_SETSYSTEMOPENPARAMS):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETUPLEVELGIFTOK):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATEWEIGHTS):
+                //case (int)(TCPGameServerCmds.CMD_SPR_CLIENTHEART):
+                case (int) (TCPGameServerCmds.CMD_SPR_ZAJINDAN):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETLIMITTIMELOGINGIFT):
+                case (int) (TCPGameServerCmds.CMD_SPR_ROLESTATUSCMD):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETDAYCHONGZHIDALI):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERIDALIBAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERIDENGLU):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERIVIP):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERICZSONG):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERICZLEIJI):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERITOTALCONSUME):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERIZIKA):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGJIERICHENGHAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHEFUDALIBAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHEFUVIP):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHEFUCZSONG):
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATNEXTLEVELZHANHUN):
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATNEXTLEVELRONGYU):
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATRONGYUBUFFER):
+                case (int) (TCPGameServerCmds.CMD_SPR_LIANLUJINGLIAN):
+                case (int) (TCPGameServerCmds.CMD_SPR_ZJDJIFEN):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHZJDJIFENAWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_XINGYUNCHOUJIANG):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTEYUEDUCHOUJIANG):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYYUEDUCHOUJIANGINFO): // 客户端点击月度抽奖 [7/23/2013 LiaoWei]	
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTECHANGELIFE)://转生
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTECHANGEOCCUPATION)://转职
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYFUBENINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_FUBENCLEANOUT):
+                case (int) (TCPGameServerCmds.CMD_SPR_FRESHPLAYERSCENEKILLMONSTERAHASDONE): // 新手场景断桥怪击杀到达限额 -- 客户端把桥尾的阻挡去掉 [12/1/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_REFURBISHTASKSTARLEVEL): // 新手场景断桥怪击杀到达限额 -- 客户端把桥尾的阻挡去掉 [12/1/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_COMPLETEDAILYCIRCLETASKFORONCECLICK): // 新手场景断桥怪击杀到达限额 -- 客户端把桥尾的阻挡去掉 [12/1/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ADMIREDPLAYER):                      // 客户端点击崇拜某人的操作 [12/10/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYBLOODCASTLEINFO):               // 请求血色堡垒基本信息 [12/14/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLEBEGINFIGHT):       // 血色堡垒开始战斗 -- 客户端把桥头的阻挡去掉 [11/7/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLEKILLMONSTERAHASDONE):     // 血色堡垒断桥怪击杀到达限额 -- 客户端把桥尾的阻挡去掉 [11/7/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLEENDFIGHT):  // 血色堡垒结束战斗 -- 客户端显示倒计时界面 [11/7/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_EQUIPAPPENDPROP):      // 装备追加消息 [12/18/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLEPREPAREFIGHT):  // 血色堡垒准备战斗 -- 客户端显示战斗倒计时 [12/20/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLECOMBATPOINT):   // 血色堡垒战斗积分 -- 客户端显示战斗积分 [12/20/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLEKILLMONSTERSTATUS):       // 血色堡垒杀怪状态 -- 客户端显示杀怪的状态 [12/20/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYCAMPBATTLEINFO):                // 请求阵营战场基本信息 [12/23/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYDAIMONSQUAREINFO):                    // 请求恶魔广场基本信息 [12/25/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYDAIMONSQUARETIMERINFO):               // 恶魔广场时间信息 [12/23/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYDAIMONSQUAREMONSTERWAVEANDPOINTRINFO):// 恶魔广场怪物和得分信息 [12/23/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_DAIMONSQUAREENDFIGHT):                // 恶魔广场结束 [12/25/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETEVERYDAYONLINEAWARDGIFT):          // 领取每日在线奖励 [1/12/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETEVERYDAYSERIESLOGINAWARDGIFT):    // 领取连续登陆奖励 [1/12/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_FRESHPLAYERSCENEOVERTIME):           // 新手场景超时 通知客户端 [1/16/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BLOODCASTLEPLAYERNUMNOTIFY):         // 血色堡垒人数通知 [1/20/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_DAIMONSQUAREPLAYERNUMNOTIFY):        // 恶魔广场人数通知 [1/20/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_BATTLEPLAYERNUMNOTIFY):              // 阵营战人数通知  [1/20/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_EXCHANGEMOJINGANDQIFU):             // 魔晶和祈福兑换 [1/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETMEDITATEEXP):                     // 获取冥想经验 [1/24/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETMEDITATETIMEINFO):                // 获取冥想时间信息 [1/24/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETTOTALLOGINAWARD):                 // 领取累计登陆奖励 [2/11/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_CHANGELIFEFOREQUIP):                 // 客户端装备转生操作 [2/15/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_FLAKEOFFCHANGELIFEFOREQUIP):         // 客户端装备转生剥离操作 [2/15/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEKEYADDFRIEND):                    // 点击一键加友 [2/15/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETVIPAWARD):                        // 获得VIP奖励 [2/20/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETDAILYACTIVEAWARD):                // 获取每日活跃奖励 [2/25/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_SETAUTOASSIGNPROPERTYPOINT):         // 设置自动分配点设置 [3/3/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBLOODCASTLEAWARD):                // 领取血色堡垒的奖励 [3/8/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETDAIMONSQUAREAWARD):               // 领取恶魔广场的奖励 [3/8/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETCOPYMAPAWARD):                    // 领取副本奖励 [3/5/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_EXPERIENCECOPYMAPINFO):              // 经验副本信息 [3/18/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETTHEKINGOFPKINFO):                 // 请求PK之王基本信息 [3/22/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYTHEKINGOFPKAWARDINFO):         // PK之王奖励信息 [3/22/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ANGELTEMPLETIMERINFO):               // 天使神殿时间信息(准备战斗、开始战斗、结束战斗) [12/20/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ANGELTEMPLEFIGHTEND):                // 天使神殿结束--显示奖励[12/20/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ANGELTEMPLEFIGHTINFOALL):            // 天使神殿战斗信息--群发 [3/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ANGELTEMPLEFIGHTINFOSINGLE):         // 天使神殿战斗信息--给自己 [3/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ANGELTEMPLESPARK):                   // 天使神殿战力鼓舞 [3/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETANGELTEMPLEBASEINFO):             // 天使神殿基本信息[3/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYADRATIONPKKINGINFO):            // 请求PK之王崇拜信息[3/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ADRATIONPKKING):                     // PK之王崇拜[3/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_CHALLENGE_END):                // 竞技场挑战结束弹出奖励窗口[3/24/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_START_FIGHT):                 // 场景加载完毕，通知服务器可以开始战斗[6/16/2014 Shizhu]
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGFAKEROLELIFEV):
+                case (int) (TCPGameServerCmds.CMD_SPR_DELFAKEROLE):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETSALEMONEY):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETSALEMONEY2):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETVIPINFO):                         // 玩家请求VIP信息 [3/28/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETVIPLEVELAWARD):                   // 玩家领取VIP等级奖励 [3/28/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_VIPLEVELUP):                         // 玩家VIP等级升级 [3/28/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_OPENMARKET):                         // 开放交易市场
+                case (int) (TCPGameServerCmds.CMD_SPR_GETLIXIANBAITANTICKS):               // 获取离线摆摊时长(毫秒)
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATELIXIANBAITANTICKS):            // 修改离线摆摊时长(毫秒)
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYOPENGRIDTICK):                  // 请求开背包格子时间戳 [4/7/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYOPENPORTABLEGRIDTICK):          // 请求开随身仓库包裹的时间戳 [4/7/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_STARTMEDITATE):                      // 开始冥想                    
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHANMENGBUILDUPLEVEL):               // 战盟建筑升级
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHANMENGBUILDGETBUFFER):             // 领取战盟建筑的buffer
+                case (int) (TCPGameServerCmds.CMD_SPR_GETPUSHMESSAGEINFO):                 // 客户端把推送信息发给服务器[4/23/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATIONPICTUREJUDGE):             // 激活图鉴 [5/3/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_MUEQUIPUPGRADE):                     // 装备进阶 [4/30/2014 LiaoWei]
+                //case (int)(TCPGameServerCmds.CMD_SPR_WINGUPSTAR):                         // 翅膀升星 [5/5/2014 ChenXiaojun]
+                case (int) (TCPGameServerCmds.CMD_SPR_WINGUPGRADE):                        // 翅膀进阶 [5/5/2014 ChenXiaojun]
+                case (int) (TCPGameServerCmds.CMD_SPR_WINGOFFON):                          // 翅膀佩戴/卸载 [5/5/2014 ChenXiaojun]
+                case (int) (TCPGameServerCmds.CMD_SPR_CHECK):                              // 与服务器心跳，每两秒发一次，
+                case (int) (TCPGameServerCmds.CMD_SPR_EQUIPAPPENDINHERIT):                 // 追加传承 [5/24/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_COPYTEAM):                           // 副本组队指令 [6/6/2014 LiTeng]
+                case (int) (TCPGameServerCmds.CMD_SPR_LISTCOPYTEAMDATA):                   // 队伍列表中的队伍信息变化 [6/6/2014 LiTeng]
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_WANMOTA_DETAIL):                 // 请求万魔塔信息 [6/9/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_SWEEP_WANMOTA):                      // 扫荡万魔塔 [6/9/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_SWEEP_REWARD):                   // 获取万魔塔奖励 [6/9/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_COPYTEAMSTATE):                      // 副本组队成员状态信息变更 [6/6/2014 LiTeng]   
+                case (int) (TCPGameServerCmds.CMD_SPR_GETNEWZONEACTIVEAWARD):              //获取新区活动奖 [6/10/2014 gwz]    
+                case (int) (TCPGameServerCmds.CMD_SPR_BoundMoneyCOPYSCENEPREPAREFIGHT):          // 金币副本准备战斗 -- 客户端显示战斗倒计时 [6/11/2014 LiaoWei]
+
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_REPAYACTIVEAWARD):				  // 领取充值奖励 [liubaiqiang]
+                case (int) (TCPGameServerCmds.CMD_SPR_BoundMoneyCOPYSCENEMONSTERWAVE):           // 金币副本刷怪波数 [6/11/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETUPLEVELGIFTAWARD):                //领取等级奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_ALLREPAYACTIVEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYACTIVITYSOMEINFO):              // 请求活动(血色城堡、恶魔广场)的一些信息 [7/8/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_PLAYBOSSANIMATION):                  //boss出生前通知播放动画
+                case (int) (TCPGameServerCmds.CMD_SPR_ENDBOSSANIMATION):                   //boss（防止外挂，参数有校验）
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_OLDRESOURCE):                   //资源找回,获得资源 返回结果【7/9/2014 gwz】
+                case (int) (TCPGameServerCmds.CMD_SPR_EXTENSIONPROPSHITED):
+                case (int) (TCPGameServerCmds.CMD_SPR_STORYCOPYMAPINFO):                  // 剧情副本信息 [7/24/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYIMPETRATEINFO):                // 请求祈福数据 [7/30/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTEIMPETRATE):                  // 执行祈福 [7/30/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_CHANGEANGLE):                      // 修改角色的360角度
+                case (int) (TCPGameServerCmds.CMD_SPR_BROADSPECIALHINTTEXT):             // 播放特殊的提示信息，例如boss AI描述
+                case (int) (TCPGameServerCmds.CMD_SPR_GETSHAREAWARD):                   //获得分享奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATESHARESTATE):                    //分享状态
+                case (int) (TCPGameServerCmds.CMD_SPR_GETSHARESTATE):                    //获取分享状态
+                case (int) (TCPGameServerCmds.CMD_SPR_MAPAIEVENT):                       //发送地图事件，例如清除光幕
+                case (int) (TCPGameServerCmds.CMD_SPR_GETFIRSTCHARGEINFO):               //首次充值信息
+                case (int) (TCPGameServerCmds.CMD_SPR_BATCHFETCHMAILGOODS):              //批量提取邮件物品
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYTEAMCHGZHANLI):              //通知组队队员战力变化
+                case (int) (TCPGameServerCmds.CMD_SPR_PUSH_VERSION):                     //服务器发送版本号验证消息
+                case (int) (TCPGameServerCmds.CMD_SPR_CAIJI_LASTNUM):                    //请求查询水晶幻境当日的剩余采集次数           
+                case (int) (TCPGameServerCmds.CMD_SPR_CAIJI_START):                      //请求开始采集 [11/19/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_CAIJI_FINISH):                     //请求完成采集 [11/19/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_EMOLAIXIMONSTERINFO):              //发送恶魔来袭更新信息[11/25/2014 MaYongwei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBANGHUIFUBEN):                  //请求战盟boss信息[12/25/2014 myw]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBANGHUIFUBENAWARD):             //请求领取战盟奖励[12/26/2014 myw]
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_SOMEELEMENTHRTS):              //元素之心提炼
+                case (int) (TCPGameServerCmds.CMD_SPR_USE_ELEMENTHRT):                   //佩戴、卸下元素之心        
+                case (int) (TCPGameServerCmds.CMD_SPR_POWER_ELEMENTHRT):                 //强化元素之心         
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_ELEMENTHRTS_INFO):             //获取元素相关信息                            
+                case (int) (TCPGameServerCmds.CMD_SPR_HOLD_QINGGONGYAN):              //举办宴会
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_QINGGONGYAN):              //查询宴会
+                case (int) (TCPGameServerCmds.CMD_SPR_JOIN_QINGGONGYAN):             //参加宴会
+                case (int) (TCPGameServerCmds.CMD_SPR_IFQINGGONGYANOPEN):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHENGZHAN_JINGJIA):             //罗兰城战竞价进攻方资格
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_CHENGZHAN_DAILY_AWARD):    //罗兰城战胜利战盟成员领取每日奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_LUOLANCHENGZHAN):             //罗兰城战进入指令
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_PET_INFO):                 //申请召唤精灵界面信息
+                case (int) (TCPGameServerCmds.CMD_SPR_CALL_PET):                     // 请求精灵召唤
+                case (int) (TCPGameServerCmds.CMD_SPR_SERVERUPDATE_ZHANMENGZIJIN):   // 通知更新战盟资金
+                case (int) (TCPGameServerCmds.CMD_SPR_FAZHEN_BOSS):                      //申请罗兰法阵BOSS信息
+                case (int) (TCPGameServerCmds.CMD_SPR_MODIFY_FASHION):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_STORE_BoundToken):           // 存取仓库金币
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_STORE_MONEY):              // 存取仓库绑定金币
+                case (int) (TCPGameServerCmds.CMD_SPR_STORE_BoundToken_CHANGE):        // 通知客户端仓库金币改变
+                case (int) (TCPGameServerCmds.CMD_SPR_STORE_MONEY_CHANGE):           // 通知客户端仓库绑定金币改变
+                case (int) (TCPGameServerCmds.CMD_SPR_JIERIACT_STATE):               //控制主界面活动ICON                
+                case (int) (TCPGameServerCmds.CMD_SPR_WING_ZHULING):               //处理注灵命令
+                case (int) (TCPGameServerCmds.CMD_SPR_WING_ZHUHUN):               //处理注魂命令
+                case (int) (TCPGameServerCmds.CMD_SPR_ADVANCE_LINGYU_LEVEL):        //翎羽升级
+                case (int) (TCPGameServerCmds.CMD_SPR_ADVANCE_LINGYU_SUIT):        //翎羽升阶      
+                case (int) (TCPGameServerCmds.CMD_SPR_ARTIFACT_UP):                  //神器再造
+                case (int) (TCPGameServerCmds.CMD_SPR_GETLUOLANCHENGZHU):            // 请求罗兰城主基本信息
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYADRATIONLANCHENGZHUO):    // 请求罗兰城主崇拜信息
+                case (int) (TCPGameServerCmds.CMD_SPR_ADRATIONLANCHENGZHU):          // 罗兰城主崇拜
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_ADMIRE):           //膜拜圣域城主
+                case (int) (TCPGameServerCmds.CMD_SECOND_PASSWORD_CHECK_STATE):            //登录时请求账号下所有角色的二级密码
+                case (int) (TCPGameServerCmds.CMD_SECOND_PASSWORD_SET):              //设置密码
+                case (int) (TCPGameServerCmds.CMD_SECOND_PASSWORD_VERIFY):             //验证二级密码
+                case (int) (TCPGameServerCmds.CMD_SECOND_PASSWORD_CANCEL):            //取消二级密码
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_NOTIFY): //求婚通知
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_PARTY_CANCEL)://取消婚宴
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_PARTY_CREATE): //婚宴创建消息更新
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_PARTY_JOIN)://加入婚宴
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_INIT):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_REPLY):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_AUTO_REJECT):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_DIVORCE):  //发起求婚请求 以及答复求婚请求、离婚请求
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_RECRUIT_INFO):               // 当前推荐人信息——获取信息
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_RECRUIT_SET):                // 当前推荐人信息——设置
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_AWARD_INFO):                 // 回归礼包——获取信息
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_AWARD_SET):                  // 回归礼包——领取
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_CHECK_INFO):                 // 签到信息——获取信息
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_CHECK_SET):                  // 签到信息——签到
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_RECRUIT_AWARD_INFO):         // 召回奖励——获取信息
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_RECRUIT_AWARD_SET):          // 召回奖励——设置
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_RECRUIT_EXTRA_AWARD):        // 召回奖励——额外奖励领取
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_DATA):        //  = 900 ,                  // (获取召回活动信息) 新1655
+                //case (int)(TCPGameServerCmds.CMD_SPR_RETURN_CHECK):        //  = 901 ,                 // (校验回归资格)
+                case (int) (TCPGameServerCmds.CMD_SPR_RETURN_AWARD):        //  = 903 ,                 // (领取奖励)
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_YUEKA_AWARD):              //月卡获取奖励请求回复
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_JIERI_GIVE_INFO):             //节日赠送信息   
+                case (int) (TCPGameServerCmds.CMD_SPR_JIERI_GIVE_TO_OTHER):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_JIERI_GIVE_AWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_JIERI_GIVE_KING_AWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_JIERI_RECV_KING_AWARD):
+                case (int) (TCPGameServerCmds.CMD_DB_EXECUXJIERIFANLI):
+                case (int) (TCPGameServerCmds.CMD_SPR_TASKLIST_KEY):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_JIERI_RECV_INFO):            //节日收礼
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_JIERI_RECV_AWARD):             //领取收礼
+                case (int) (TCPGameServerCmds.CMD_SPR_GETINPUT_POINTS_EXCHGINFO):        //获得充值积分相关数据
+                case (int) (TCPGameServerCmds.CMD_SPR_SYNCINPUT_POINTS_ONLY):            //同步充值点积分
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_LIANXU_CHARGE_INFO):         //查询连续充值活动信息
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_LIANXU_CHARGE_AWARD):          //领取连续充值活动奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_GUARD_POINT_RECOVER):        // 查询守护点信息
+                case (int) (TCPGameServerCmds.CMD_SPR_GUARD_POINT_RECOVER):              // 回收守护点
+                case (int) (TCPGameServerCmds.CMD_SPR_GUARD_STATUE_LEVEL_UP):            // 升级守护雕像
+                case (int) (TCPGameServerCmds.CMD_SPR_GUARD_STATUE_SUIT_UP):             // 升阶守护雕像
+                case (int) (TCPGameServerCmds.CMD_SPR_HOLYITEM_PART_DATA):     //圣物系统
+                case (int) (TCPGameServerCmds.CMD_DB_UPDATE_HOLYITEM):    // 圣物系统
+                case (int) (TCPGameServerCmds.CMD_SPR_MERLIN_SECRET_ATTR_REPLACE):
+                case (int) (TCPGameServerCmds.CMD_SPR_MERLIN_SECRET_ATTR_UPDATE):
+                case (int) (TCPGameServerCmds.CMD_SPR_MERLIN_LEVEL_UP):
+                case (int) (TCPGameServerCmds.CMD_SPR_MERLIN_STAR_UP):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_QUIT):
+                case (int) (TCPGameServerCmds.CMD_SPR_MERLIN_SECRET_ATTR_NOT_REPLACE):
+                case (int) (TCPGameServerCmds.CMD_SPR_LOGIN_WAITING_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_EQUIP):          // 镶嵌荧光宝石
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_UN_EQUIP):     // 卸下荧光宝石
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_RESOLVE):        // 分解荧光宝石
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_LEVEL_UP):     // 升级荧光宝石
+                case (int) (TCPGameServerCmds.CMD_SPR_MORI_JOIN):
+                case (int) (TCPGameServerCmds.CMD_SPR_MORI_QUIT):
+                case (int) (TCPGameServerCmds.CMD_MORI_NTF_ROLE_COUNT):
+                case (int) (TCPGameServerCmds.CMD_MORI_NTF_ENTER):
+                case (int) (TCPGameServerCmds.CMD_NTF_MORI_MONSTER_EVENT):
+                case (int) (TCPGameServerCmds.CMD_NTF_MORI_COPY_CANCEL):
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_EXCUTE): // 执行开发任务
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_FINISH): // 一键完成开发任务
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_REFRESH): // 刷新开发任务
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_GET_ALLLEVEL_AWARD): // 获取总等级奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_GET_AWARD): // 获取开发奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_OPEN_QUEUE): // 开启收费开发队列
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_GET_STATE): // 获得建筑物状态数据
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_GET_ALLLEVEL_AWARD_STATE): // 同步总等级奖励领取
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_GET_QUEUE): // 获得开发队列数据
+
+
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_JOIN):
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_QUIT):
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_PLAYER_NUM):
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_ENTER):
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_CANCEL):
+                case (int) (TCPGameServerCmds.CMD_PLEASE_TELL_ME):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETWEEKEND_INPUT_DATA): // 获得周末充值相关数据
+                case (int) (TCPGameServerCmds.CMD_SPR_SEVEN_DAY_ACT_GET_AWARD):   // 领取七日活动奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_SEVEN_DAY_ACT_QIANG_GOU):    // 抢购物品
+                case (int) (TCPGameServerCmds.CMD_SPR_TODAY_DATA):                 //每日专享——获取数据
+                case (int) (TCPGameServerCmds.CMD_SPR_TODAY_AWARD):                //每日专享——领取奖励
+
+                case (int) (TCPGameServerCmds.CMD_SYNC_CHANGE_DAY_SERVER):         //服务器通知客户端跨天了
+                case (int) (TCPGameServerCmds.CMD_SPR_CHANGE_BANGHUI_NAME):      // 战盟x帮会改名
+                case (int) (TCPGameServerCmds.CMD_NTF_BANGHUI_CHANGE_NAME):    // 通知帮会改名客户端访问参数
+
+                case (int) (TCPGameServerCmds.CMD_SPR_SPREAD_SIGN): // 成为推广员 
+                case (int) (TCPGameServerCmds.CMD_SPR_SPREAD_ROLE): // 填写推荐人 
+                case (int) (TCPGameServerCmds.CMD_SPR_SPREAD_CODE_GET): // 获取验证码 
+                case (int) (TCPGameServerCmds.CMD_SPR_SPREAD_CODE_VARIFY): // 确认验证码 
+
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_GET_DAY_AWARD):   // 狼魂领域获取每日奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_ROLL):   // 藏宝秘境 扔骰子
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_TRIGGER_EVENT):   // 藏宝秘境 客户端触发事件
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_MOVE):   // 藏宝秘境 移动
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_ROLL_MIRACLE):   //扔奇迹骰子
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_DICE_BUY):   //购买骰子
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_SYNC_DICE):   //购买骰子
+
+                case (int) (TCPGameServerCmds.CMD_SPR_SOUL_STONE_LVL_UP):       //魂石升级
+                case (int) (TCPGameServerCmds.CMD_SPR_SOUL_STONE_MOD_EQUIP):    //穿戴或卸下
+                case (int) (TCPGameServerCmds.CMD_SPR_SET_FUNCTION_OPEN):    //隐藏功能
+                case (int) (TCPGameServerCmds.CMD_NTF_ZHENGBA_CAN_ENTER): //服务器通知客户端可以进入
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_ENTER):      //进入
+                case (int) (TCPGameServerCmds.CMD_NTF_MAGIC_CRASH_UNITY)://服务器通知客户端退出客户端 
+                case (int) (TCPGameServerCmds.CMD_SPR_SPECIALACTIVITY_FETCHAWARD): //领取专享奖励                case (int)(TCPGameServerCmds.CMD_SPR_PET_SKILL_AWAKE):
+                case (int) (TCPGameServerCmds.CMD_SPR_PET_SKILL_AWAKE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_QUERY_JOIN_HINT):    // 是否提示参与框
+                case (int) (TCPGameServerCmds.CMD_SPR_VIDEO_OPEN):                //获取亲加视频登陆参数
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_SUPPORT):       // 赞、贬，押注
+                case (int) (TCPGameServerCmds.CMD_SPR_FASHION_FORGE): //时装强化
+                case (int) (TCPGameServerCmds.CMD_SPR_FASHION_ACTIVE): //时装激活
+
+                //战盟外交相关请求CMD
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_REQUEST):
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_CANCEL):
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_REMOVE):
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_AGREE):
+
+                //夫妻竞技场
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_REG_STATE_WATCHER):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_NTF_CAN_ENTER):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_SET_READY):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_SINGLE_JOIN):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_QUIT):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_ENTER):
+
+                //王者战场
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_MALL_BUY)://= 1191, // 王者商店购买
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_MALL_REFRESH)://= 1192, // 王者商店刷新
+
+                //塔罗牌升级、国王特权
+                case (int) (TCPGameServerCmds.CMD_SPR_TAROT_UPORINIT):
+                case (int) (TCPGameServerCmds.CMD_SPR_USE_TAROTKINGPRIVILEGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_SET_TAROTPOS):
+
+                //夫妻祝福榜
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_WISH_OTHER_ROLE):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_ADMIRE_STATUE):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_JOIN_PARTY):
+
+                //战盟外交，刷新盟友请求界面底部盟友数量
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_NUM):
+                {    //字符串消息                                                               
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                // ------------------------实例化 对象 -----------------------
+                case (int) (TCPGameServerCmds.CMD_SPR_USEGOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_CLIENTHEART):
+                case (int) (TCPGameServerCmds.CMD_SPR_FINDMONSTER):
+                case (int) (TCPGameServerCmds.CMD_SPR_MOVEEND):
+                case (int) (TCPGameServerCmds.CMD_SPR_MAPCHANGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_COMPTASK):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPSKILLLEVEL):
+                case (int) (TCPGameServerCmds.CMD_SPR_MOD_GOODS):
+                case (int) (TCPGameServerCmds.CMD_SPR_WINGUPSTAR):
+                case (int) (TCPGameServerCmds.CMD_SPR_AUTOFIGHT):
+                // ----------------------------------------------------------------
+
+                case (int) (TCPGameServerCmds.CMD_SPR_ACHIEVEMENT_RUNE_INFO):         //获取当前成就符文提升信息
+                case (int) (TCPGameServerCmds.CMD_SPR_ACHIEVEMENT_RUNE_UP):              //成就符文提升
+                case (int) (TCPGameServerCmds.CMD_INIT_GAME):
+                case (int) (TCPGameServerCmds.CMD_OTHER_ROLE):
+                case (int) (TCPGameServerCmds.CMD_OTHER_ROLE_DATA):
+                case (int) (TCPGameServerCmds.CMD_SYSTEM_MONSTER):
+                case (int) (TCPGameServerCmds.CMD_SPR_CLICKON):
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWTASK):
+                case (int) (TCPGameServerCmds.CMD_SPR_CLICKONGOODSPACK):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETNEWTASKDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXCHANGEDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_STALLDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_TEAMDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_DIANJIANGLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_DIANJIANGDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_DJROOMROLESDATA):
+                case (int) (TCPGameServerCmds.CMD_DB_GET_SERVERLIST):
+                case (int) (TCPGameServerCmds.CMD_ADDHORSE):
+                case (int) (TCPGameServerCmds.CMD_ADDPET):
+                case (int) (TCPGameServerCmds.CMD_GETHORSELIST):
+                case (int) (TCPGameServerCmds.CMD_GETOTHERHORSELIST):
+                case (int) (TCPGameServerCmds.CMD_GETPETLIST):
+                case (int) (TCPGameServerCmds.CMD_MODHORSE):
+                case (int) (TCPGameServerCmds.CMD_MODPET):
+                case (int) (TCPGameServerCmds.CMD_GETGOODSLISTBYSITE):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETJINDANGOODSLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_DIANJIANGPOINT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETDJPOINTS):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_MERGETYPES):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_MERGEITEMS):
+                case (int) (TCPGameServerCmds.CMD_GETJINGMAILIST):
+                case (int) (TCPGameServerCmds.CMD_GETOTHERJINGMAILIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_NPCSTATELIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_BULLETINMSG):
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGMAI_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_SELFSALEGOODSLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_SELFSALEGOODSLIST2):
+                case (int) (TCPGameServerCmds.CMD_SPR_OTHERSALEGOODSLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETROLELIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETGOODSLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_BUFFERDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_SEARCHROLES):
+                case (int) (TCPGameServerCmds.CMD_SPR_SEARCHROLESFROMDB):
+                case (int) (TCPGameServerCmds.CMD_SPR_LISTROLES):
+                case (int) (TCPGameServerCmds.CMD_SPR_LISTTEAMS):
+                case (int) (TCPGameServerCmds.CMD_SPR_RESETBAG):
+                case (int) (TCPGameServerCmds.CMD_SPR_DAILYTASKDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_DAILYJINGMAIDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_PORTABLEBAGDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_RESETPORTABLEBAG):
+                case (int) (TCPGameServerCmds.CMD_SPR_RESETJINDANBAG):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECWABAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECWABAOBYYAOSHI):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETHUODONGDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_FUBENDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETFUBENHISTDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETROLEDAILYDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBOSSINFODICT):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETPAIHANGLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_YABIAODATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETOTHERATTRIB2):
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWBIAOCHE):
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYBATTLEENDINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETFUBENHISTLISTDATA):
+                case (int) (TCPGameServerCmds.CMD_GETOTHERHORSEDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBANGHUILIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYBANGHUIDETAIL):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBHMEMBERDATALIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBANGGONGHIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBANGQIINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWJUNQI):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBHLINGDIINFODICTBYBHID):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETHUANGDIBHINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_OPENYANGGONGBK):
+                case (int) (TCPGameServerCmds.CMD_SPR_REFRESHYANGGONGBK):
+                case (int) (TCPGameServerCmds.CMD_SPR_REFRESHQIZHENGE):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYQIZHEGEBUYHIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETHUANGDIROLEDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETHUANGFEIDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETLINGDIMAPINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETHUANGCHENGMAPINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETUSERMAILLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETUSERMAILDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETGOODSBYDBID):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYINPUTKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYLEVELKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYEQUIPKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHORSEKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJINGMAIKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_VIPDAILYDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_YANGGONGBKDAILYDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYSHILIANTAAWARDINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYROLESHENGXIAOGUESSLIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYSHENGXIAOGUESSHISTORY):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYSHENGXIAOGUESSSELFHISTORY):
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWNPC):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXCUTENPCLUATALK):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXCUTENPCLUAFUNCTION):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHENGJIUDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWDECO):
+                case (int) (TCPGameServerCmds.CMD_SPR_FETCHMALLDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETTASKAWARDS):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYZAJINDANHISTORY):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYSELFZAJINDANHISTORY):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETWANGCHENGMAPINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETKAIFUONLINEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETJIERIXMLDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_FACTIVITIESDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERIXIAOFEIKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYJIERICZKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHEFUFANLI):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYXINFANLI):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHEFUPKKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYHEFUWCKING):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYACTIVITYINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYYUEDUCHOUJIANGHISTORY):         // 客户端请求月度抽奖历史(全服玩家)[7/23/2013 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYSELFQUERYYUEDUCHOUJIANGHISTORY):// 客户端请求月度抽奖历史(玩家自己) [7/23/2013 LiaoWei]					
+                case (int) (TCPGameServerCmds.CMD_SPR_GETROLEUSINGGOODSDATALIST):// 客户端请求月度抽奖历史(玩家自己) [7/23/2013 LiaoWei]					
+                case (int) (TCPGameServerCmds.CMD_SPR_FUBENPASSNOTIFY):
+                case (int) (TCPGameServerCmds.CMD_SPR_CHGCODE): //换装挪到这里来
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEKEYFINDFRIEND):                   // 点击一键征友 [2/15/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_DAILYACTIVEDATA):                      // 获取每日活跃信息 [2/25/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHANMENGSHIJIAN_DETAIL):             // 战盟事件详情 [3/14/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETSKILLINFO):                       // 客户端请求技能信息 [3/17/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_KAIFUACTIVITYINFO):                  // 开服活动信息 [3/20/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_DETAIL):                       // 竞技场详情 [3/24/2014 JinJieLong]   
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_REQUEST_CHALLENGE):            // 竞技场请求挑战 [3/24/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_NOTIFY_START):                 // 竞技场倒计时开始[3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_CHALLENGEINFO):               // 竞技场战报[3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJI_RANKING_REWARD):               // 竞技场领取排行榜奖励[3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJICHANG_REMOVE_CD):               // 竞技场消除挑战CD [3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJICHANG_GET_BUFF):                // 竞技场领取Buff [3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJICHANG_JUNXIAN_LEVELUP):         // 竞技场升级军衔 [3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJICHANG_LEAVE):         // 离开竞技场 [3/25/2014 JinJieLong]
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWFAKEROLE):                           //新假人通知
+                case (int) (TCPGameServerCmds.CMD_SPR_GETBAITANLOG):                       // 领取战盟建筑的buffer         
+                case (int) (TCPGameServerCmds.CMD_SPR_MOVE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTTION):
+                case (int) (TCPGameServerCmds.CMD_SPR_INJURE):
+                case (int) (TCPGameServerCmds.CMD_SPR_ATTACK):
+                case (int) (TCPGameServerCmds.CMD_SPR_MAGICCODE):
+                case (int) (TCPGameServerCmds.CMD_SPR_HITED):
+                case (int) (TCPGameServerCmds.CMD_SPR_RELIFE):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATE_ROLEDATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETNPICTUREJUDGEINFO):                 // 取得图鉴信息 [5/3/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_REFERPICTUREJUDGE):                    // 提交图鉴信息 [5/17/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_GETMOJINGEXCHANGEINFO):                // 客户端请求魔晶兑换信息 [5/21/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_COPYTEAMDATA):                         // 刷新副本队伍信息 [6/6/2014 LiTeng]
+                case (int) (TCPGameServerCmds.CMD_SPR_LISTCOPYTEAMS):                        // 搜索副本队伍列表 [6/6/2014 LiTeng]
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATE_SWEEP_STATE):                   // 更新扫荡万魔塔 [6/9/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_COPYTEAMDAMAGEINFO):                   // 队伍列表中的队员伤害信息 [6/6/2014 LiTeng]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYUPLEVELMADMAN):                 //冲级狂人 [6/10/2014 gwz]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYNEWZONEACTIVE):                 //新区活动 [6/10/2014 gwz]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_TODAYCANDOINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_GETOLDRESINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_EXEC_WASHPROPS):                    //装备洗炼[7/15/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_EXEC_WASHPROPSINHERIT):             //装备洗炼传承[7/17/2014 DuHai]
+                case (int) (TCPGameServerCmds.CMD_SPR_BATTLE_SCORE_LIST):                 //阵营战积分排名信息 [7/23/2014 lt]
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYSTARCONSTELLATIONINFO):        // 请求星座数据 [8/1/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_EXECUTEACTIVATIONSTARCONSTELLATION):// 激活星座 [8/1/2014 LiaoWei]
+                case (int) (TCPGameServerCmds.CMD_SPR_MARKETGOODSLIST2):                 // 交易所返回的物品列表 [8/1/2014 lt]        
+                case (int) (TCPGameServerCmds.CMD_SPR_EXEC_LIANZHI):                     //炼制
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_LIANZHICOUNT):               //查询炼制次数                
+                case (int) (TCPGameServerCmds.CMD_SPR_REALIVE):                          //复活指令改为data数据格式
+                case (int) (TCPGameServerCmds.CMD_SPR_LOADALREADY):                      //改为data数据格式
+                case (int) (TCPGameServerCmds.CMD_SPR_GETATTRIB2):                      //改为data数据格式
+                case (int) (TCPGameServerCmds.CMD_SPR_NEWGOODSPACK):                     //改为data数据格式
+                case (int) (TCPGameServerCmds.CMD_SPR_ADD_GOODS):                     //改为data数据格式
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYOTHERBUFFERDATA):            //通知他人Buff变化变化
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYSHOWGONGGAO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETWINGINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_ELEMENTHRT_SLIST):             //查询元素背包
+                case (int) (TCPGameServerCmds.CMD_SPR_RESET_EHRTSBAG):                   //整理元素背包
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_USINGELEMENTHRT_SLIST):        //查询身上装备的元素 
+                case (int) (TCPGameServerCmds.CMD_SPR_LUOLANCHENGZHAN_LONGTA_ROLEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_LUOLANCHENGZHAN_QIZHI_OWNERINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_LUOLANCHENGZHAN_LONGTA_OWNERINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_LUOLANCHENGZHU_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_LUOLANCHENGZHAN_RESULT_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_LUOLANCHENGZHAN_REQUEST_INFO_LIST):
+                case (int) (TCPGameServerCmds.CMD_SPR_GETDAMONGOODSLIST):              //精灵战备列表
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_PET_LIST):                  //申请精灵背包数据
+                case (int) (TCPGameServerCmds.CMD_SPR_RESET_PETBAG):                  //整理精灵背包
+                case (int) (TCPGameServerCmds.CMD_MAP_TELEPORT):                         //罗兰法阵传送门信息           
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_LINGYU_LIST):              //翎羽信息
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_SCORE_INFO):              //通知双方得分状态
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_AWARD):                   //活动结果奖励信息
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_ENQUEUE):                //跨服战-幻影寺院 申请加入自动匹配列
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_DEQUEUE):                //跨服战-幻影寺院 申请退出自动匹配列
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_ENTER_RESPOND):          //跨服战-幻影寺院 回应是否立即开始或暂不进入
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_ENTER_NOTIFY):          //跨服战-幻影寺院 通知进入活动
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_QUEUE_PLAYER_NUM):          //跨服战-幻影寺院 等待玩家数量
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFY_TIME_STATE):          //跨服战-幻影寺院 通知活动状态，时间     
+                case (int) (TCPGameServerCmds.CMD_SPR_KF_SWITCH_SERVER):          //切换服务器
+                case (int) (TCPGameServerCmds.CMD_SPR_PRESTIGE_MEDAL_INFO):         //获取当前声望勋章提升信息
+                case (int) (TCPGameServerCmds.CMD_SPR_PRESTIGE_MEDAL_UP):           //声望勋章提升
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_SUCCESS_COUNT):           //跨服-幻影寺院  胜利次数
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_ADD_SCORE):           //跨服-幻影寺院  胜利次数
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_LIANSHA):               //跨服-幻影寺院连杀信息
+                case (int) (TCPGameServerCmds.CMD_SPR_HYSY_STOP_LIANSHA):          //跨服-幻影寺院终结连杀
+
+
+
+                case (int) (TCPGameServerCmds.CMD_SPR_TALENT_GET_DATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_ROLE_ATTRIBUTE_VALUE):
+                case (int) (TCPGameServerCmds.CMD_SPR_TALENT_ADD_EXP):
+                case (int) (TCPGameServerCmds.CMD_SPR_TALENT_WASH):
+                case (int) (TCPGameServerCmds.CMD_SPR_TALENT_ADD_EFFECT):
+
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_UPDATE):                 //结婚状态更新
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_SPOUSE_DATA):            //结婚对象玩家数据
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_ROSE):      //献花消息回复
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_RING):  //更换戒指  
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_PARTY_JOIN_LIST)://婚宴列表数据参加次数
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_PARTY_QUERY):  //婚宴列表
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_JIERI_GIVE_KING_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_JIERI_RECV_KING_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_MARRY_FUBEN): //情侣副本消息更新
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_GUARD_STATUE_INFO):      // 查询守护雕像信息
+                case (int) (TCPGameServerCmds.CMD_SPR_MOD_GUARD_SOUL_EQUIP):         // 穿戴、卸下守护之灵
+                case (int) (TCPGameServerCmds.CMD_NTF_EACH_ROLE_ALLOW_CHANGE_NAME):            // 服务器向客户端主动推送每个角色的允许改名信息
+                case (int) (TCPGameServerCmds.CMD_SPR_CHANGE_NAME):                         //    客户端向服务器发送 角色请求改名
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_FASHION_SLIST):    // 时装列表
+                case (int) (TCPGameServerCmds.CMD_SPR_HOLYITEM_DATA):     //圣物系统
+
+                case (int) (TCPGameServerCmds.CMD_SPR_MERLIN_QUERY):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_JOIN):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_DAY_DATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_ENTER):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_MONTH_PAIHANG):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_GET_PAIMING_AWARDS):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_GET_LOG):
+                case (int) (TCPGameServerCmds.CMD_SPR_TIANTI_AWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_DIG):          // 挖掘荧光宝石
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_RESET_BAG):    // 整理荧光宝石背包  
+                case (int) (TCPGameServerCmds.CMD_SPR_FLUORESCENT_GEM_EQUIP_CHANGES): //通知客户端荧光宝石装备栏变动
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_JOIN):    // 勇者战场
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_ENTER):    // 勇者战场
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_STATE):
+
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_AWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_SPREAD_AWARD): // 领取奖励 
+                case (int) (TCPGameServerCmds.CMD_SPR_SPREAD_INFO): // 推广信息 
+
+                case (int) (TCPGameServerCmds.CMD_SPR_COPY_WOLF_SCORE_INFO): //狼魂要塞——得分信息
+                case (int) (TCPGameServerCmds.CMD_SPR_COPY_WOLF_AWARD): //狼魂要塞——领奖信息
+
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_SIDE_SCORE):
+
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_SELF_SCORE):
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_LIANSHA):
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_STOP_LIANSHA):
+                case (int) (TCPGameServerCmds.CMD_SPR_YONGZHEZHANCHANG_AWARD_GET):
+                case (int) (TCPGameServerCmds.CMD_SPR_WARN_INFO):                                  // 警告提示信息
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_GET_LIST): // 获得领地所有信息
+                case (int) (TCPGameServerCmds.CMD_SPR_BUILD_SYNC_SINGLE)://    同步单个建筑物数据
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_GET_INFO)://// c2s 获取藏宝秘境相关信息
+                case (int) (TCPGameServerCmds.CMD_SPR_ONEPIECE_SYNC_EVENT):   // 藏宝秘境 服务器向客户端同步当前事件信息
+
+                case (int) (TCPGameServerCmds.CMD_SPR_KUAFU_BOSS_JOIN)://    跨服BOSS报名
+                case (int) (TCPGameServerCmds.CMD_SPR_KUAFU_BOSS_ENTER)://    跨服BOSS进入
+                case (int) (TCPGameServerCmds.CMD_SPR_KUAFU_BOSS_DATA)://    跨服BOSS场景数据
+                case (int) (TCPGameServerCmds.CMD_SPR_KUAFU_BOSS_STATE)://    跨服BOSS报名状态
+
+                // 王者战场相关 所有消息结构模仿勇者战场
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_JOIN):// = 1180, //王者战场报名
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_ENTER):// = 1181, //王者战场进入
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_AWARD):// = 1182, //王者战场结束及奖励(通知客户端可以领取)
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_STATE):// = 1183, //王者战场报名状态
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_SIDE_SCORE):// = 1184, //王者战场分数信息
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_SELF_SCORE):// = 1185, //王者战场自己分数增加信息
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_LIANSHA)://= 1186, //王者战场连杀信息
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_STOP_LIANSHA):// = 1187, //王者战场终结连杀
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_AWARD_GET)://= 1188, //领取奖励
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_TELEPORT)://= 1189, // 王者战场传送门数据
+                case (int) (TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_MALL_DATA):// = 1190, // 获取王者商店数据
+                //case (int)(TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_MALL_BUY )://= 1191, // 王者商店购买
+                //case (int)(TCPGameServerCmds.CMD_SPR_KINGOFBATTLE_MALL_REFRESH)://= 1192, // 王者商店刷新
+
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_AWARD):
+                case (int) (TCPGameServerCmds.CMD_SPR_ELEMENT_WAR_SCORE_INFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_JIERI_PLAT_CHARGE_KING): //平台充值王
+
+                case (int) (TCPGameServerCmds.CMD_SPR_SEVEN_DAY_ACT_QUERY):    // 查询七日活动信息
+
+                case (int) (TCPGameServerCmds.CMD_SPR_KUAFU_MAP_ENTER):         // 跨服主线地图进入
+                case (int) (TCPGameServerCmds.CMD_SPR_KUAFU_MAP_INFO):  // 跨服主线地图
+
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_ENTER):    // 狼魂领域(进入城池)
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_JOIN):     // 狼魂领域报名
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_DATA):   // 狼魂领域申请玩家自己信息
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_CITY_DATA):   // 狼魂领域请求城池信息
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_WORLD_DATA):   // 狼魂领域世界地图信息
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_AWARD):    // 狼魂领域服务器推送战斗结果和奖励信息
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_LONGTA_ROLEINFO):   // 狼魂领域龙塔内人数信息列表)
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_LONGTA_OWNERINFO):    // 狼魂领域(龙塔占有者信息)
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_QIZHI_OWNERINFO):    //  狼魂领域旗帜拥有者列表
+                case (int) (TCPGameServerCmds.CMD_SPR_SOUL_STONE_QUERY_GET):    //查询魂石随机信息
+                case (int) (TCPGameServerCmds.CMD_SPR_SOUL_STONE_GET):          //获取魂石
+                case (int) (TCPGameServerCmds.CMD_SPR_SOUL_STONE_RESET_BAG):    //整理魂石背包
+
+                case (int) (TCPGameServerCmds.CMD_SPR_FUND_INFO):    //获取基金信息,成长基金
+                case (int) (TCPGameServerCmds.CMD_SPR_FUND_BUY):    //购买基金，成长基金
+                case (int) (TCPGameServerCmds.CMD_SPR_FUND_AWARD):    //领取奖励，成长基金
+                case (int) (TCPGameServerCmds.CMD_SPR_JINGJICHANG_GET_ROLE_LOOKS):
+                case (int) (TCPGameServerCmds.CMD_SPR_PKKING_GET_ROLE_LOOKS):
+                case (int) (TCPGameServerCmds.CMD_SPR_LUOLANKING_GET_ROLE_LOOKS):
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_GET_MAIN_INFO):     //获取主信息
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_GET_ALL_PK_LOG):   //查看全部战报
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_GET_ALL_PK_STATE): //查看全部参赛
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_GET_16_PK_STATE):   //获取16强中的两两pk状态
+                                                                                  //  case (int)(TCPGameServerCmds.CMD_SPR_ZHENGBA_YA_ZHU):    // 众神争霸 --- 押注
+
+                case (int) (TCPGameServerCmds.CMD_NTF_ZHENGBA_PK_RESULT):    // 众神争霸 --- pk结果
+                case (int) (TCPGameServerCmds.CMD_SPR_ZHENGBA_GET_MINI_STATE):  // 获取活动mini进度
+                case (int) (TCPGameServerCmds.CMD_SPR_SPECIALACTIVITY_QUERY):  //查询当前的专享活动数据
+                case (int) (TCPGameServerCmds.CMD_SPR_SPECIALACTIVITY_GETXMLDATA): //查询XML配置
+                case (int) (TCPGameServerCmds.CMD_SPR_PET_SKILL_AWAKE_COST):
+                case (int) (TCPGameServerCmds.CMD_SPR_PET_SKILL_UP):
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_ADMIRE_HIST):      //获取历届圣域城主膜拜信息
+                case (int) (TCPGameServerCmds.CMD_SPR_LANGHUNLINGYU_ADMIRE_DATA):      //获取当前圣域城主数据-膜拜
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATE_INFO):// 账号绑定获取信息
+                case (int) (TCPGameServerCmds.CMD_SPR_ACTIVATE_AWARD):// 账号绑定	领取奖励
+                                                                      //战盟神殿协议
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_PALACE_DATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_PALACE_UP):
+
+                //塔罗牌
+                case (int) (TCPGameServerCmds.CMD_SPR_TAROT_DATA):
+
+
+                //夫妻竞技场
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_GET_MAIN_DATA):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_GET_ZHAN_BAO):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_GET_PAI_HANG):
+
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_NTF_PK_RESULT):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_NTF_COUPLE_STATE):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_ARENA_NTF_BUFF_HOLDER):
+                //战盟外交对象处理
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_DATA):
+                case (int) (TCPGameServerCmds.CMD_SPR_UNION_ALLY_LOG):
+
+                //夫妻祝福榜
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_GET_MAIN_DATA):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_GET_WISH_RECORD):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_NTF_WISH_EFFECT):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_GET_ADMIRE_DATA):
+                case (int) (TCPGameServerCmds.CMD_COUPLE_WISH_GET_PARTY_DATA):
+
+                //老玩家 
+                case (int) (TCPGameServerCmds.CMD_SPR_RETURN_DATA):        //  = 900 ,                  // (获取召回活动信息) 新1655
+                case (int) (TCPGameServerCmds.CMD_SPR_RETURN_CHECK):        //  = 901 ,                 // (校验回归资格)
+
+                //节日活动修改方案
+                case (int) (TCPGameServerCmds.CMD_SPR_GETJIERIFANBEI_INFO): //客户端请求节日活动翻倍的类型
+
+                //获取其他玩家天赋
+                case (int) (TCPGameServerCmds.CMD_SPR_TALENT_OTHER):  // 获取装备二级属性
+
+
+                case (int) (TCPGameServerCmds.CMD_SPR_NOTIFYGOODSINFO):
+
+                case (int) (TCPGameServerCmds.CMD_SPR_GETATTRIBALL):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                #region Kiếm Thế
+                #region RoleAttribute
+                case ((int) TCPGameServerCmds.CMD_KT_ROLE_ATRIBUTES):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Danh sách Tân Thủ Thôn
+                case (int) TCPGameServerCmds.CMD_KT_GET_NEWBIE_VILLAGES:             /// Lấy danh sách Tân Thủ Thôn
+                {
+                    //ret = ProcessGameStreamCmd(client, nID, data, count);     // => Dạng Byte
+                    ret = ProcessGameCmd(client, nID, data, count);       // => Dạng String ngăn cách bằng dấu : ({0}:{1}:{2})
+                    break;
+                }
+                #endregion
+
+                #region NotificationTip
+                case (int) TCPGameServerCmds.CMD_KT_SHOW_NOTIFICATIONTIP:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Thông báo môn phái và nhánh tu luyện thay đổi
+                case (int) TCPGameServerCmds.CMD_KT_FACTIONROUTE_CHANGED:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region NPC Dialog
+                case (int) TCPGameServerCmds.CMD_KT_G2C_NPCDIALOG:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Item Dialog
+                case (int) TCPGameServerCmds.CMD_KT_G2C_ITEMDIALOG:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Skill
+                case (int) TCPGameServerCmds.CMD_KT_C2G_SET_SKILL_TO_QUICKKEY:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_RENEW_SKILLLIST:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_USESKILL:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_C2G_USESKILL:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_NOTIFYSKILLCOOLDOWN:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_CREATEBULLET:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_BULLETEXPLODE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_SKILLRESULT:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_SKILLRESULTS:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_OBJECTINVISIBLESTATECHANGED:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_SPRITEBUFF:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_BLINKTOPOSITION:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_FLYTOPOSITION:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_CREATEBULLETS:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_BULLETEXPLODES:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_MOVESPEEDCHANGED:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_ATTACKSPEEDCHANGED:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_CHANGEACTION:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_C2G_CHANGEACTION:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_SPRITESERIESSTATE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_SHOWDEBUGOBJECTS:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_SHOWREVIVEFRAME:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_SPR_NEWTRAP:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_SPR_DELTRAP:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_SPR_STOPMOVE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_SPR_CHAT:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_INVITETOTEAM:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_CREATETEAM:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_AGREEJOINTEAM:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_REFUSEJOINTEAM:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_GETTEAMINFO:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_KICKOUTTEAMMATE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_APPROVETEAMLEADER:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_REFRESHTEAMMEMBERATTRIBUTES:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_TEAMMEMBERCHANGED:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_LEAVETEAM:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_UPDATESPRITETEAMDATA:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_ASKTOJOINTEAM:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_RESETSKILLCOOLDOWN:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_CLOSENPCITEMDIALOG:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_ASK_CHALLENGE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_START_CHALLENGE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) TCPGameServerCmds.CMD_KT_G2C_STOP_CHALLENGE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region OPENSHOP
+                case ((int) TCPGameServerCmds.CMD_KT_C2G_OPENSHOP):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) (TCPGameServerCmds.CMD_SPR_NPC_SALEOUT):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Grow Point
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_NEW_GROWPOINT):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_DEL_GROWPOINT):
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Dynamic Area
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_NEW_DYNAMICAREA):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_DEL_DYNAMICAREA):
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Bot
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_NEW_BOT):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_DEL_BOT):
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Tuyên chiến
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_START_ACTIVEFIGHT):
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) (TCPGameServerCmds.CMD_KT_G2C_STOP_ACTIVEFIGHT):
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Progress Bar
+                case (int) TCPGameServerCmds.CMD_KT_G2C_UPDATE_PROGRESSBAR:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Kỳ Trân Các
+                case (int) TCPGameServerCmds.CMD_KT_OPEN_TOKENSHOP:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Mở/đóng khung bất kỳ
+                case (int) TCPGameServerCmds.CMD_KT_G2C_OPEN_UI:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_G2C_CLOSE_UI:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Chuyển trạng thái cưỡi
+                case (int) TCPGameServerCmds.CMD_KT_TOGGLE_HORSE_STATE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Cường hóa trang bị
+                case (int) TCPGameServerCmds.CMD_KT_EQUIP_ENHANCE:
+                case (int) TCPGameServerCmds.CMD_KT_COMPOSE_CRYSTALSTONES:
+                case (int) TCPGameServerCmds.CMD_KT_SPLIT_CRYSTALSTONES:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Cường hóa Ngũ hành ấn
+                case (int) TCPGameServerCmds.CMD_KT_SIGNET_ENHANCE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Thay đổi Avarta
+                case (int) TCPGameServerCmds.CMD_KT_CHANGE_AVARTA:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Thay đổi Tinh hoạt lực, cấp độ kỹ năng sống
+                case (int) TCPGameServerCmds.CMD_KT_G2C_UPDATE_ROLE_GATHERMAKEPOINT:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_G2C_UPDATE_LIFESKILL_LEVEL:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Chế đồ
+                case (int) TCPGameServerCmds.CMD_KT_BEGIN_CRAFT:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_G2C_FINISH_CRAFT:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Bạn bè
+                case (int) TCPGameServerCmds.CMD_SPR_GETFRIENDS:
+                case (int) TCPGameServerCmds.CMD_SPR_ASKFRIEND:
+                case (int) TCPGameServerCmds.CMD_SPR_ADDFRIEND:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_SPR_REMOVEFRIEND:
+                case (int) TCPGameServerCmds.CMD_SPR_REJECTFRIEND:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Message Box
+                case (int) TCPGameServerCmds.CMD_KT_SHOW_MESSAGEBOX:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Battle
+                case (int) TCPGameServerCmds.CMD_KT_EVENT_NOTIFICATION:
+                case (int) TCPGameServerCmds.CMD_KT_KILLSTREAK:
+                case (int) TCPGameServerCmds.CMD_KT_EVENT_STATE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Hoạt động đặc biệt
+                case (int) TCPGameServerCmds.CMD_KT_SONGJINBATTLE_RANKING:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Tìm người chơi
+                case (int) TCPGameServerCmds.CMD_KT_BROWSE_PLAYER:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_CHECK_PLAYER_LOCATION:
+                case (int) TCPGameServerCmds.CMD_KT_GET_PLAYER_INFO:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Danh hiệu, tên thay đổi
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_TITLE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_NAME:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Danh vọng, vinh dự
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_TOTALVALUE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_REPUTE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Phúc lợi
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERY_REPAYACTIVEINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATEEVERYDAYONLINEAWARDGIFTINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_UPDATEEVERYDAYSERIESLOGININFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYTOTALLOGININFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_QUERYUPLEVELGIFTINFO):
+                case (int) (TCPGameServerCmds.CMD_SPR_GET_YUEKA_DATA):
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Quản lý ICON
+                case (int) TCPGameServerCmds.CMD_SPR_REFRESH_ICON_STATE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Sự kiện quà tải tài nguyên lần đầu vào Game
+                case (int) TCPGameServerCmds.CMD_KT_GET_BONUS_DOWNLOAD:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Bách Bảo Rương
+                case (int) TCPGameServerCmds.CMD_KT_SEASHELL_CIRCLE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Võ lâm liên đấu
+                case (int) TCPGameServerCmds.CMD_DB_TEAMBATTLE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Ranking
+                case (int) TCPGameServerCmds.CMD_KT_QUERY_PLAYERRANKING:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Nhập danh sách vật phẩm
+                case (int) TCPGameServerCmds.CMD_KT_SHOW_INPUTITEMS:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Du Long Các
+                case (int) TCPGameServerCmds.CMD_KT_YOULONG:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Bang hội
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_CREATE:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_CHANGE_MAXWITHDRAW:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_DOWTIHDRAW:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_CHANGERANK:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_KICKFAMILY:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_VOTEGIFTED:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_DONATE:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_SETCITY:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_SETTAX:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_RESPONSEASK:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_INVITE:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_ASKJOIN:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_GETINFO:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_CHANGE_NOTIFY:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_GETMEMBERLIST:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_GETSHARE:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_OFFICE_RANK:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_GETGIFTED:
+                case (int) TCPGameServerCmds.CMD_KT_GUILD_TERRITORY:
+                case (int) TCPGameServerCmds.CMD_KT_GETTERRORY_DATA:
+                case (int) TCPGameServerCmds.CMD_KT_GUILDWAR_RANKING:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Gia Tộc
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_CREATE:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_REQUESTJOIN:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_KICKMEMBER:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_CHANGE_RANK:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_QUIT:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_RESPONSE_REQUEST:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_DESTROY:
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_GUILDANDFAMILY_RANK:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_GETLISTFAMILY:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_OPEN:
+                case (int) TCPGameServerCmds.CMD_KT_FAMILY_CHANGENOTIFY:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                #region Danh hiệu nhân vật
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_CURRENT_ROLETITLE:
+                case (int) TCPGameServerCmds.CMD_KT_G2C_MOD_ROLETITLE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Uy danh và vinh dự võ lâm
+                case (int) TCPGameServerCmds.CMD_KT_G2C_UPDATE_PRESTIGE_AND_HONOR:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Thi đấu môn phái
+                case (int) TCPGameServerCmds.CMD_KT_FACTION_PVP_RANKING_INFO:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Cập nhật thông tin người chơi khác
+                case (int) TCPGameServerCmds.CMD_KT_G2C_UPDATE_OTHERROLE_EQUIP:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Cập nhật thông tin người chơi khác
+                case (int) TCPGameServerCmds.CMD_KT_G2C_PLAYERPRAY:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Cập nhật thông tin người chơi khác
+                case (int) TCPGameServerCmds.CMD_KT_CLIENT_SERVER_LUA:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Luyện hóa trang bị
+                case (int) TCPGameServerCmds.CMD_KT_CLIENT_DO_REFINE:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+
+                #region Nhận thông tin bị tấn công
+                case (int)TCPGameServerCmds.CMD_KT_TAKEDAMAGE:
+                    {
+                        ret = ProcessGameCmd(client, nID, data, count);
+                        break;
+                    }
+                #endregion
+
+                #region Tách Ngũ Hành Hồn Thạch từ trang bị
+                case (int) TCPGameServerCmds.CMD_KT_C2G_SPLIT_EQUIP_INTO_FS:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Nhập Mật khẩu cấp 2
+                case (int) TCPGameServerCmds.CMD_KT_INPUT_SECONDPASSWORD:
+                {
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Cập nhật vị trí quái trên bản đồ khu vực
+                case (int) TCPGameServerCmds.CMD_KT_UPDATE_LOCALMAP_MONSTER:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Captcha
+                case (int) TCPGameServerCmds.CMD_KT_CAPTCHA:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+
+                #region Captcha
+                case (int) TCPGameServerCmds.CMD_KT_LUCKYCIRCLE:
+                {
+                    ret = ProcessGameStreamCmd(client, nID, data, count);
+                    break;
+				}
+                #endregion
+                #endregion
+
+                #region Test
+                case (int) TCPGameServerCmds.CMD_KT_TESTPACKET:
+                {
+                    /// Giải mã gói tin xem là loại gì (String hay Bytes array), trường hợp này là do GS gửi về
+                    ret = ProcessGameCmd(client, nID, data, count);
+                    break;
+                }
+                #endregion
+
+                default:
+                {
+                    break;
+                }
+            }
+
+            if (!ret)
+            {
+                ret = true;
+                KTDebug.LogError("Client received packet ID = " + (TCPGameServerCmds) nID);
+            }
+
+            return ret;
+        }
+
+        /// <summary>
+        /// Xác thực tài khoản vả mật khẩu
+        /// </summary>
+        /// <param name="pool"></param>
+        /// <param name="nID"></param>
+        /// <param name="data"></param>
+        /// <param name="count"></param>
+        private static bool ProcessUserInfoCmd(TCPClient client, int nID, byte[] data, int count)
+        {
+            string strData = new UTF8Encoding().GetString(data, 0, count);
+            string[] fields = strData.Split(':');
+            if (fields.Length < 2)
+            {
+                return false;
+            }
+
+            client.NotifyRecvData(new SocketConnectEventArgs()
+            {
+                RemoteEndPoint = client.GetRemoteEndPoint(),
+                Error = "Success",
+                NetSocketType = (int) NetSocketTypes.SOCKT_CMD,
+                CmdID = nID,
+                fields = fields
+            });
+            return true;
+        }
+
+        /// <summary>
+        /// Đọc packet dưới dạng String, ngăn cách bởi ký tự ':'
+        /// </summary>
+        /// <param name="pool"></param>
+        /// <param name="nID"></param>
+        /// <param name="data"></param>
+        /// <param name="count"></param>
+        private static bool ProcessGameCmd(TCPClient client, int nID, byte[] data, int count)
+        {
+            string strData = new UTF8Encoding().GetString(data, 0, count);
+            string[] fields = strData.Split(':');
+            client.NotifyRecvData(new SocketConnectEventArgs()
+            {
+                RemoteEndPoint = client.GetRemoteEndPoint(),
+                Error = "Success",
+                NetSocketType = (int) NetSocketTypes.SOCKT_CMD,
+                CmdID = (int) nID,
+                fields = fields
+            });
+            return true;
+        }
+
+        /// <summary>
+        /// Đọc Packet dưới dạng chuỗi Byte
+        /// </summary>
+        /// <param name="pool"></param>
+        /// <param name="nID"></param>
+        /// <param name="data"></param>
+        /// <param name="count"></param>
+        private static bool ProcessGameStreamCmd(TCPClient client, int nID, byte[] data, int count)
+        {
+            byte[] bytesData = new byte[count];
+            DataHelper.CopyBytes(bytesData, 0, data, 0, count);
+            client.NotifyRecvData(new SocketConnectEventArgs()
+            {
+                RemoteEndPoint = client.GetRemoteEndPoint(),
+                Error = "Success",
+                NetSocketType = (int) NetSocketTypes.SOCKT_CMD,
+                CmdID = (int) nID,
+                fields = null,
+                bytesData = bytesData,
+            });
+            return true;
+        }
+    }
+}

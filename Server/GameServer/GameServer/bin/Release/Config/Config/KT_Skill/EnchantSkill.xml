@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EnchantSkill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Skill ID="1" Name="Hàm Sa Xạ Ảnh">
+		<RelatedSkill ID="64">
+			<Symbol Name="skill_param1_v">
+				<Value ID="1" Type="2">
+					<SkillLevelValue Level="1" Value="20" />
+					<SkillLevelValue Level="10" Value="50" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="72">
+			<Symbol Name="skill_attackradius">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="30" />
+					<SkillLevelValue Level="10" Value="80" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="69">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+					<SkillLevelValue Level="11" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="73">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+					<SkillLevelValue Level="11" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="71">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+					<SkillLevelValue Level="11" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="263">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+					<SkillLevelValue Level="11" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="74">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+					<SkillLevelValue Level="11" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="2" Name="Mãn Thiên Hoa Vũ">
+		<RelatedSkill ID="64">
+			<Symbol Name="skill_param1_v">
+				<Value ID="1" Type="2">
+					<SkillLevelValue Level="1" Value="10" />
+					<SkillLevelValue Level="10" Value="30" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="266">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="15" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_missilenum_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="4" Value="2" />
+					<SkillLevelValue Level="5" Value="4" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-90" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-90" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="63">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="4" />
+					<SkillLevelValue Level="10" Value="10" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="3" Name="Hóa Huyết Tiệt Mạch">
+		<RelatedSkill ID="269">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-106" />
+					<SkillLevelValue Level="10" Value="-270" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-106" />
+					<SkillLevelValue Level="10" Value="-270" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="82">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="78">
+			<Symbol Name="fastmanareplenish_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-30" />
+					<SkillLevelValue Level="10" Value="-70" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="4" Name="Nhân Huân Tử Khí">
+		<RelatedSkill ID="207">
+			<Symbol Name="ignoreskill">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="5" />
+					<SkillLevelValue Level="10" Value="10" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="210">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-108" />
+					<SkillLevelValue Level="10" Value="-270" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-108" />
+					<SkillLevelValue Level="10" Value="-270" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="205">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="208">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="771">
+			<Symbol Name="fastlifereplenish_v">
+				<Value ID="1" Type="2">
+					<SkillLevelValue Level="1" Value="10" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="770">
+			<Symbol Name="fastmanareplenish_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-100" />
+					<SkillLevelValue Level="10" Value="-300" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="5" Name="Kim Đỉnh Miên Chưởng">
+		<RelatedSkill ID="480">
+			<Symbol Name="lifereplenish_p">
+				<Value ID="1" Type="2">
+					<SkillLevelValue Level="1" Value="10" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="104">
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="6" Name="Độ Nguyên Công">
+		<RelatedSkill ID="107">
+			<Symbol Name="state_slowall_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="15" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="98">
+			<Symbol Name="lifereplenish_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="20" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="101">
+			<Symbol Name="lifemax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="50" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="manamax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="7" />
+					<SkillLevelValue Level="10" Value="25" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="276">
+			<Symbol Name="lifemax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="50" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="manamax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="7" />
+					<SkillLevelValue Level="10" Value="25" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="110">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-216" />
+					<SkillLevelValue Level="10" Value="-540" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-216" />
+					<SkillLevelValue Level="10" Value="-540" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="7" Name="Đạt Ma Bế Tức Công">
+		<RelatedSkill ID="24">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="251">
+			<Symbol Name="state_slowall_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="7" />
+					<SkillLevelValue Level="10" Value="25" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="8" Name="Đạp Tuyết Vô Ngấn">
+		<RelatedSkill ID="120">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="15" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="123">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="125">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="9" Name="Thần Long Bài Vĩ">
+		<RelatedSkill ID="128">
+			<Symbol Name="missile_ablility">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+				
+				<Value ID="2" Type="3">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="10" Value="0" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="131">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="15" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_ablility">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+				
+				<Value ID="2" Type="3">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="489">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-90" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-90" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="134">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="15" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="135">
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="10" Name="Bích Nguyệt Phi Tinh">
+		<RelatedSkill ID="787">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="492">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="148">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="11" Name="Huyền Minh Hấp Tinh">
+		<RelatedSkill ID="494">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_lifetime_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="18" />
+					<SkillLevelValue Level="10" Value="90" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="151">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="153">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="5" Value="-18" />
+					<SkillLevelValue Level="10" Value="-27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="12" Name="Lưỡng Nghi Chân Khí">
+		<RelatedSkill ID="178">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="181">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="6" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="13" Name="Hóa Tủy Vô Ý">
+		<RelatedSkill ID="188">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="190">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="10" Value="-18" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="699">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="234">
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="14" Name="Phi Kinh Trảm Thích">
+		<RelatedSkill ID="41">
+			<Symbol Name="skill_attackradius">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="25" />
+					<SkillLevelValue Level="10" Value="250" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_param1_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="18" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="15" Name="Truy Phong Độc Thích">
+		<RelatedSkill ID="273">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="4" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="88">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="16" Name="Lưu Tinh Chùy">
+		<RelatedSkill ID="198">
+			<Symbol Name="skill_attackradius">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="12" />
+					<SkillLevelValue Level="10" Value="120" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-54" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-54" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="791">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="5" />
+					<SkillLevelValue Level="10" Value="20" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_ablility">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="10" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+				
+				<Value ID="2" Type="3">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="17" Name="Bách Bộ Xuyên Dương">
+		<RelatedSkill ID="216">
+			<Symbol Name="skill_attackradius">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="48" />
+					<SkillLevelValue Level="10" Value="200" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-54" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="237">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="8" />
+					<SkillLevelValue Level="10" Value="35" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="18" Name="Bách Hồng Thực Nhật">
+		<RelatedSkill ID="226">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_ablility">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+				
+				<Value ID="2" Type="3">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="10" Value="0" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="229">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="15" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_ablility">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="100" />
+				</Value>
+				
+				<Value ID="2" Type="3">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="19" Name="Cơ Quan Bí Thuật">
+		<RelatedSkill ID="69">
+			<Symbol Name="skill_maxmissile">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="4" />
+					<SkillLevelValue Level="6" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_lifetime_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="180" />
+					<SkillLevelValue Level="10" Value="360" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="71">
+			<Symbol Name="skill_maxmissile">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="2" Value="1" />
+					<SkillLevelValue Level="7" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_lifetime_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="2" Value="180" />
+					<SkillLevelValue Level="10" Value="360" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="263">
+			<Symbol Name="skill_maxmissile">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="2" Value="0" />
+					<SkillLevelValue Level="3" Value="1" />
+					<SkillLevelValue Level="8" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_lifetime_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="2" Value="0" />
+					<SkillLevelValue Level="3" Value="180" />
+					<SkillLevelValue Level="10" Value="360" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="73">
+			<Symbol Name="skill_maxmissile">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="3" Value="0" />
+					<SkillLevelValue Level="4" Value="1" />
+					<SkillLevelValue Level="9" Value="2" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_lifetime_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="3" Value="0" />
+					<SkillLevelValue Level="4" Value="180" />
+					<SkillLevelValue Level="10" Value="360" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="74">
+			<Symbol Name="skill_maxmissile">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="4" Value="0" />
+					<SkillLevelValue Level="5" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="missile_lifetime_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="0" />
+					<SkillLevelValue Level="4" Value="0" />
+					<SkillLevelValue Level="5" Value="180" />
+					<SkillLevelValue Level="10" Value="360" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="20" Name="Trảo Long Công">
+		<RelatedSkill ID="490">
+			<Symbol Name="state_palsy_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="7" />
+					<SkillLevelValue Level="10" Value="20" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="27" />
+					<SkillLevelValue Level="10" Value="45" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="21" Name="Thừa Sương Thức">
+		<RelatedSkill ID="1300">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1301">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="60" />
+					<SkillLevelValue Level="2" Value="6" />
+					<SkillLevelValue Level="3" Value="12" />
+					<SkillLevelValue Level="4" Value="18" />
+					<SkillLevelValue Level="5" Value="24" />
+					<SkillLevelValue Level="6" Value="30" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1302">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1304">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1306">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1308">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1309">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="22" Name="Hiệu quả bao tay Đả Tuyết Trượng Thủ">
+		<RelatedSkill ID="1300">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1301">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="60" />
+					<SkillLevelValue Level="2" Value="6" />
+					<SkillLevelValue Level="3" Value="12" />
+					<SkillLevelValue Level="4" Value="18" />
+					<SkillLevelValue Level="5" Value="24" />
+					<SkillLevelValue Level="6" Value="30" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1302">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1304">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1306">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1308">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="1309">
+			<Symbol Name="missile_speed_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="40" />
+					<SkillLevelValue Level="2" Value="4" />
+					<SkillLevelValue Level="3" Value="8" />
+					<SkillLevelValue Level="4" Value="12" />
+					<SkillLevelValue Level="5" Value="16" />
+					<SkillLevelValue Level="6" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="23" Name="Mật Tịch Chưởng Độc (cao)">
+		<RelatedSkill ID="93">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="3" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="94">
+			<Symbol Name="missile_range">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="24" Name="Mật Tịch Phụ Nga (cao)">
+		<RelatedSkill ID="98">
+			<Symbol Name="fastlifereplenish_v">
+				<Value ID="1" Type="2">
+					<SkillLevelValue Level="1" Value="6" />
+					<SkillLevelValue Level="10" Value="20" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="101">
+			<Symbol Name="lifemax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="50" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="manamax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="7" />
+					<SkillLevelValue Level="10" Value="25" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="276">
+			<Symbol Name="lifemax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="14" />
+					<SkillLevelValue Level="10" Value="50" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="manamax_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="7" />
+					<SkillLevelValue Level="10" Value="25" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="108">
+			<Symbol Name="allseriesstateresisttime">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="15" />
+					<SkillLevelValue Level="10" Value="45" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="278">
+			<Symbol Name="allseriesstateresisttime">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="12" />
+					<SkillLevelValue Level="10" Value="35" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="482">
+			<Symbol Name="damage_all_resist">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="10" />
+					<SkillLevelValue Level="10" Value="30" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="882">
+			<Symbol Name="damage_all_resist">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="5" />
+					<SkillLevelValue Level="10" Value="25" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="25" Name="Mật Tịch Chiến Nhẫn (cao)">
+		<RelatedSkill ID="492">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="10" Value="-45" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-9" />
+					<SkillLevelValue Level="10" Value="-45" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="148">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-180" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="847">
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-270" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercastonhorse_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-18" />
+					<SkillLevelValue Level="10" Value="-270" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="26" Name="Lôi Đình Quyết">
+		<RelatedSkill ID="234">
+			<Symbol Name="appenddamage_p">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="10" />
+					<SkillLevelValue Level="10" Value="55" />
+					<SkillLevelValue Level="14" Value="66" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="27" Name="Mật Tịch Kiếm Minh (cao)">
+		<RelatedSkill ID="205">
+			<Symbol Name="state_fixed_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="5" />
+					<SkillLevelValue Level="11" Value="5" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="27" />
+					<SkillLevelValue Level="10" Value="27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="208">
+			<Symbol Name="state_fixed_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="3" />
+					<SkillLevelValue Level="10" Value="25" />
+					<SkillLevelValue Level="11" Value="26" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="27" />
+					<SkillLevelValue Level="10" Value="27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="248">
+			<Symbol Name="state_fixed_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="3" />
+					<SkillLevelValue Level="10" Value="25" />
+					<SkillLevelValue Level="11" Value="26" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="27" />
+					<SkillLevelValue Level="10" Value="27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="211">
+			<Symbol Name="state_fixed_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="10" />
+					<SkillLevelValue Level="11" Value="11" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="27" />
+					<SkillLevelValue Level="10" Value="27" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="28" Name="Hãm Tĩnh 120">
+		<RelatedSkill ID="64">
+			<Symbol Name="skill_param1_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="50" />
+					<SkillLevelValue Level="10" Value="50" />
+				</Value>
+			</Symbol>
+			
+			<Symbol Name="skill_mintimepercast_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="-90" />
+					<SkillLevelValue Level="10" Value="-90" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="29" Name="Côn Cái 120">
+		<RelatedSkill ID="141">
+			<Symbol Name="state_knock_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="7" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="10" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="26" />
+					<SkillLevelValue Level="10" Value="26" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="817">
+			<Symbol Name="state_drag_attack">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="2" />
+					<SkillLevelValue Level="10" Value="20" />
+					<SkillLevelValue Level="11" Value="20" />
+				</Value>
+				
+				<Value ID="2" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="10" />
+				</Value>
+				
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="32" />
+					<SkillLevelValue Level="10" Value="32" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="30" Name="Kiếm Minh 120">
+		<RelatedSkill ID="205">
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+					<SkillLevelValue Level="11" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="248">
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+					<SkillLevelValue Level="11" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+		
+		<RelatedSkill ID="211">
+			<Symbol Name="missile_range">
+				<Value ID="3" Type="1">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="2" />
+					<SkillLevelValue Level="11" Value="2" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="31" Name="Kiếm Thúy 110">
+		<RelatedSkill ID="117">
+			<Symbol Name="keephide">
+				<Value ID="1" Type="2">
+					<SkillLevelValue Level="1" Value="1" />
+					<SkillLevelValue Level="10" Value="1" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+	
+	<Skill ID="32" Name="Tăng khinh công mất thể lực">
+		<RelatedSkill ID="10">
+			<Symbol Name="skill_cost_v">
+				<Value ID="1" Type="1">
+					<SkillLevelValue Level="1" Value="9951" />
+					<SkillLevelValue Level="10" Value="9951" />
+				</Value>
+			</Symbol>
+		</RelatedSkill>
+	</Skill>
+</EnchantSkill>

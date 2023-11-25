@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	
+	 
+	 <GrowPoint Code="584" Name="Sinh Thiết Khoáng Thạch" PosX="6440" PosY="4568" RespawnTime="60000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="584" Name="Sinh Thiết Khoáng Thạch" PosX="6190" PosY="4745" RespawnTime="60000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="584" Name="Sinh Thiết Khoáng Thạch" PosX="5975" PosY="4948" RespawnTime="60000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="584" Name="Sinh Thiết Khoáng Thạch" PosX="5849" PosY="5132" RespawnTime="60000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	
+	 <GrowPoint Code="584" Name="Sinh Thiết Khoáng Thạch" PosX="6452" PosY="5034" RespawnTime="60000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	
+	 
+	 
+	 
+	</GrowPoints>
+</Map>

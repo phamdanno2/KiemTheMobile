@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TotalConsume>
+	<ConsumeAward ID="1" MinYuanBao="1000" GoodsIDs="15005,2" />
+	<ConsumeAward ID="2" MinYuanBao="2000" GoodsIDs="15005,4|15000,5" />
+	<ConsumeAward ID="3" MinYuanBao="4000" GoodsIDs="188,3" />
+	<ConsumeAward ID="4" MinYuanBao="8000" GoodsIDs="189,1|402,4" />
+	<ConsumeAward ID="5" MinYuanBao="16000" GoodsIDs="190,1|403,1" />
+</TotalConsume>

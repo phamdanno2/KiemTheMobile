@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Phượng Tường Phủ" Key="1" To="24" ToX="14645" ToY="6979" X="2290" Y="470" Radius="50" />
+	  <Teleport Code="2" Tip="Cư Diên Trạch[cấp 65]" Key="2" To="94" ToX="9240" ToY="6071" X="1198" Y="6942" Radius="50" />
+	  <Teleport Code="3" Tip="Phong Lăng Độ[cấp 75]" Key="3" To="100" ToX="1152" ToY="4569" X="8243" Y="502" Radius="50" />
+	  <Teleport Code="4" Tip="Hoàng Lăng Tây Hạ[cấp 85]" Key="4" To="108" ToX="1150" ToY="2170" X="8460" Y="4093" Radius="50" />
+	</Teleports>
+</Map>

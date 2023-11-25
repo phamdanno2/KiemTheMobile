@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+     <Monster ID="1" Code="3596" X="2550" Y="1720" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="2" Code="3596" X="2800" Y="1565" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="3" Code="3596" X="3050" Y="1410" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="4" Code="3596" X="3300" Y="1250" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="5" Code="3596" X="2950" Y="1950" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="6" Code="3596" X="3200" Y="1795" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="7" Code="3596" X="3509" Y="1623" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="8" Code="3596" X="3746" Y="1456" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+     <Monster ID="9" Code="3596" X="3450" Y="2200" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="10" Code="3596" X="3665" Y="2045" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="11" Code="3596" X="3958" Y="1866" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="12" Code="3596" X="4208" Y="1674" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="13" Code="3596" X="3900" Y="2420" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="14" Code="3596" X="4100" Y="2265" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="15" Code="3596" X="4361" Y="2077" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="16" Code="3596" X="4647" Y="1892" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="17" Code="3596" X="4350" Y="2650" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="18" Code="3596" X="4533" Y="2495" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="19" Code="3596" X="4801" Y="2305" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="20" Code="3596" X="5031" Y="2090" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="21" Code="3596" X="4800" Y="2860" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="22" Code="3596" X="4960" Y="2705" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="23" Code="3596" X="5202" Y="2518" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="24" Code="3596" X="5464" Y="2301" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+     
+	 <Monster ID="25" Code="3596" X="5200" Y="3050" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="26" Code="3596" X="5365" Y="2895" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="27" Code="3596" X="5615" Y="2714" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="28" Code="3596" X="5894" Y="2525" Radius="0" Num="1" Timeslot="10" PursuitRadius="0" BirthType="0" TimePoints="0" BirthRate="1" />
+   
+  </Monsters>
+</Map>

@@ -1,0 +1,65 @@
+2021-07-01 15:58:39: Cross-service center server start!
+2021-07-01 15:58:56: Cross-service center server start!
+2021-07-01 15:58:56: InitializeClient服务器连接1.ServerId:9001,ClientId:1625122503,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [Service首次连接过来]
+2021-07-01 15:58:56: InitializeClient服务器连接1.ServerId:1,ClientId:1625122706,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [Service首次连接过来]
+2021-07-01 15:58:56: InitializeClient服务器连接3.ServerId:1,ClientId:1625122706,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 15:58:56: InitializeClient服务器连接3.ServerId:9001,ClientId:1625122503,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [中心重启]
+2021-07-01 15:58:56: InitializeClient服务器连接3.ServerId:1,ClientId:1625122706,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [中心重启]
+2021-07-01 15:58:56: InitializeClient服务器连接3.ServerId:9001,ClientId:1625122503,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 15:58:56: InitializeClient服务器连接3.ServerId:9001,ClientId:1625122503,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [中心重启]
+2021-07-01 15:58:57: InitializeClient服务器连接3.ServerId:1,ClientId:1625122706,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 15:58:57: InitializeClient服务器连接3.ServerId:9001,ClientId:1625122503,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 15:58:57: InitializeClient服务器连接3.ServerId:1,ClientId:1625122706,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 15:58:57: InitializeClient服务器连接3.ServerId:9001,ClientId:1625122503,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 15:58:57: InitializeClient服务器连接3.ServerId:1,ClientId:1625122706,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:00:53: Cross-service center server start!
+2021-07-01 16:00:54: InitializeClient服务器连接1.ServerId:9001,ClientId:1625126336,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [Service首次连接过来]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126336,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126336,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126336,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126336,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126336,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接1.ServerId:1,ClientId:1625126337,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [Service首次连接过来]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:1,ClientId:1625126337,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:1,ClientId:1625126337,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:1,ClientId:1625126337,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 16:00:54: InitializeClient服务器连接3.ServerId:1,ClientId:1625126337,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [中心重启]
+2021-07-01 16:02:17: Cross-service center server start!
+2021-07-01 16:02:17: InitializeClient服务器连接1.ServerId:1,ClientId:1625126337,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [Service首次连接过来]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:1,ClientId:1625126455,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:1,ClientId:1625126455,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:1,ClientId:1625126455,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接1.ServerId:9001,ClientId:1625126454,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [Service首次连接过来]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126454,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126454,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126454,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126454,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:1,ClientId:1625126455,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126454,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 16:02:17: InitializeClient服务器连接3.ServerId:1,ClientId:1625126455,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:02:43: Cross-service center server start!
+2021-07-01 16:02:43: InitializeClient服务器连接1.ServerId:9001,ClientId:1625126538,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [Service首次连接过来]
+2021-07-01 16:02:43: InitializeClient服务器连接1.ServerId:1,ClientId:1625126537,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [Service首次连接过来]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:1,ClientId:1625126537,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126538,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:1,ClientId:1625126537,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:HuanYingSiYuan [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:1,ClientId:1625126537,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126538,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126538,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126538,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:9001,ClientId:1625126538,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:TianTi [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:1,ClientId:1625126537,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Ally [中心重启]
+2021-07-01 16:02:43: InitializeClient服务器连接3.ServerId:1,ClientId:1625126537,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:Spread [中心重启]
+2021-07-01 17:49:52: Cross-service center server start!
+2021-07-01 17:52:20: Cross-service center server start!
+2021-07-01 18:11:52: Cross-service center server start!
+2021-07-01 18:16:35: InitializeClient服务器连接1.ServerId:1,ClientId:0,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [Service首次连接过来]
+2021-07-01 18:16:47: InitializeClient服务器连接2.ServerId:1,ClientId:0,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [Service非首次连接过来]
+2021-07-01 18:24:18: InitializeClient服务器连接1.ServerId:1,ClientId:0,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:YongZheZhanChang [Service首次连接过来]
+2021-07-01 18:24:18: InitializeClient服务器连接2.ServerId:1,ClientId:0,info:192.168.242.1_192.168.6.1_192.168.1.121,GameType:KuaFuCopy [Service非首次连接过来]
+2021-07-01 21:14:18: Cross-service center server start!
+2021-07-01 21:15:08: Cross-service center server start!
+2021-07-01 21:15:34: Cross-service center server start!
+2021-07-01 21:16:23: Cross-service center server start!
+2021-07-01 21:17:02: Cross-service center server start!
+2021-07-01 21:17:39: Cross-service center server start!

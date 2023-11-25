@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Thiếu Lâm Phái" Key="1" To="9" ToX="6810" ToY="5210" X="950" Y="950" Radius="100" />
+		<Teleport Code="2" Tip="Long Môn Thạch Quật [cấp 85]" Key="2" To="107" ToX="9502" ToY="4926" X="1450" Y="1430" Radius="100" />
+		<Teleport Code="3" Tip="Phục Ngưu Sơn [cấp 65]" Key="3" To="95" ToX="7686" ToY="4238" X="1830" Y="550" Radius="100" />
+		<Teleport Code="4" Tip="Thái Hành Cổ Kính [cấp 55]" Key="4" To="86" ToX="7428" ToY="5151" X="2590" Y="5570" Radius="100" />
+		<Teleport Code="5" Tip="Thiên Nhẫn Giáo" Key="5" To="10" ToX="2510" ToY="1570" X="8670" Y="6910" Radius="100" />
+		<Teleport Code="6" Tip="Vân Trung Trấn" Key="6" To="1" ToX="845" ToY="2638" X="8230" Y="7050" Radius="100" />
+	</Teleports>
+</Map>

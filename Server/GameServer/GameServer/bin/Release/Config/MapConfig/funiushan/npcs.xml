@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+   <NPC Code="667" Name="Mại Thán Ông" MinimapName="" VisibleOnMinimap="1" Title="" X="6364" Y="4648" Dir="7" ScriptID="157"/>
+   <NPC Code="608" Name="Nhậm Ngọc Anh" MinimapName="" VisibleOnMinimap="1" Title="" X="6596" Y="4842" Dir="7" ScriptID="157"/>
+   <NPC Code="610" Name="Đại Cô" MinimapName="" VisibleOnMinimap="1" Title="" X="6948" Y="4979" Dir="7" ScriptID="157"/>
+   <NPC Code="632" Name="Đồng Gia Dư" MinimapName="" VisibleOnMinimap="1" Title="" X="7408" Y="5130" Dir="1" ScriptID="157"/>
+   <NPC Code="645" Name="Lão Mặc Nhĩ" MinimapName="" VisibleOnMinimap="1" Title="" X="7598" Y="4978" Dir="1" ScriptID="157"/>
+   <NPC Code="978" Name="Lý Cổ Nạp Tư" MinimapName="" VisibleOnMinimap="1" Title="" X="6975" Y="4456" Dir="1" ScriptID="157"/>
+
+  </NPCs>
+</Map>

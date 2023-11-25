@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="3496" Name="Đại Giới Thiền Sư" MinimapName="" VisibleOnMinimap="1" Title="" X="8226" Y="2561" Dir="1" ScriptID="116" />
+	<NPC Code="6777" Name="Điềm Tửu Thúc" MinimapName="Binh Khí" VisibleOnMinimap="1" Title="Chủ Tiệm Binh Khí" X="4181" Y="1533" Dir="1" ScriptID="29" />
+	<NPC Code="3497" Name="Cao Vệ Bích" MinimapName="" VisibleOnMinimap="1" Title="" X="2920" Y="2327" Dir="1" ScriptID="115" />
+	
+	<NPC Code="2538" Name="Tổng Quản Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="4986" Y="2478" Dir="1" ScriptID="65" />
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="5294" Y="2305" Dir="7" ScriptID="12" />	
+	<NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="3826" Y="3256" Dir="1" ScriptID="64" />
+	
+	<NPC Code="3524" Name="Đoàn Trí Hưng" MinimapName="Chưởng môn Đoàn Trí Hưng" VisibleOnMinimap="1" Title="Gia chủ Đại Lý Đoàn Thị" X="6195" Y="3289" Dir="1" ScriptID="152" />
+	<NPC Code="3498" Name="Vũ Thanh Phong" MinimapName="" VisibleOnMinimap="1" Title="" X="4691" Y="1508" Dir="1" ScriptID="113" />
+	<NPC Code="3499" Name="Kiều Tang Tử" MinimapName="" VisibleOnMinimap="1" Title="" X="4919" Y="4048" Dir="7" ScriptID="114" />
+	
+	<NPC Code="6778" Name="Thẩm Hà Diệp" MinimapName="Phòng Cụ" VisibleOnMinimap="1" Title="Chủ Tiệm Phòng Cụ" X="3943" Y="811" Dir="5" ScriptID="25" />
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="6206" Y="1386" Dir="3" ScriptID="27"/>
+	<NPC Code="6782" Name="Đại Lão Bạch" MinimapName="Tửu Lầu" VisibleOnMinimap="1" Title="Chủ Tửu Lầu" X="6742" Y="1653" Dir="1" ScriptID="24"/>	
+	<NPC Code="6781" Name="Bất Động Tiên Sinh" MinimapName="Tạp Hóa" VisibleOnMinimap="1" Title="Chủ Tiệm Tạp Hóa" X="5490" Y="1606" Dir="7" ScriptID="28"/>
+	<NPC Code="7161" Name="[Trần] Vô Song Muội Muội" MinimapName="[Trần] Vô Song Muội Muội" VisibleOnMinimap="1" Title="Nữ anh hùng" X="8337" Y="3681" Dir="1" ScriptID="117" />
+	
+  </NPCs>
+</Map>

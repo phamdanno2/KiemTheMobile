@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Thiên Vương Bang" Key="1" To="22" ToX="1674" ToY="690" X="738" Y="6436" Radius="100" />
+	<Teleport Code="2" Tip="Vũ Di Sơn[cấp 95]" Key="2" To="120" ToX="986" ToY="993" X="7891" Y="1827" Radius="100" />
+	<Teleport Code="3" Tip="Đào Hoa Nguyên[cấp 115]" Key="3" To="137" ToX="12685" ToY="2167" X="690" Y="4189" Radius="100" />
+	<Teleport Code="4" Tip="Cổ Lãng Dữ[cấp 115]" Key="4" To="136" ToX="12685" ToY="2167" X="4816" Y="6252" Radius="100" />
+	
+	
+	
+	</Teleports>
+</Map>

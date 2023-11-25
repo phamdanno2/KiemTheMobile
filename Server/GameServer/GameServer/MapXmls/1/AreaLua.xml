@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--区域脚本-->
+<Map>
+  <Areas>
+	<Area ID="1" X="3904" Y="5472" Radius="400" LuaScriptFile="rmtempcunmin.lua"/>
+	<Area ID="2" X="5312" Y="2408" Radius="1024" LuaScriptFile="caijiyaocao.lua"/>
+  </Areas>
+</Map>

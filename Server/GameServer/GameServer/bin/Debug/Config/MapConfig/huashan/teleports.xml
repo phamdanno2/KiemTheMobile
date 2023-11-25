@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Vĩnh Lạc Trấn" Key="1" To="3" ToX="7010" ToY="5670" X="7292" Y="824" Radius="100" />
+	  <Teleport Code="2" Tip="Tàn Tích Cung A Phòng [cấp 115] " Key="2" To="131" ToX="12685" ToY="2167" X="1021" Y="2573" Radius="100" /> 
+	  <Teleport Code="3" Tip="Long Môn Thạch Quật [cấp 85] " Key="3" To="107" ToX="5726" ToY="754" X="9894" Y="4735" Radius="100" />
+	  <Teleport Code="4" Tip="Phong Lăng Độ [cấp 75] " Key="4" To="100" ToX="3171" ToY="664" X="9609" Y="7796" Radius="100" />
+	</Teleports>
+</Map>

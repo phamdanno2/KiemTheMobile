@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	SỰ KIỆN VÕ LÂM LIÊN ĐẤU
+	- Config: Thiết lập sự kiện
+		- EventID: ID sự kiện
+		- EnterMapID: ID bản đồ hội trường
+		- EnterPosX: Vị trí X vào bản đồ hội trường
+		- EnterPosY: Vị trí Y vào bản đồ hội trường
+		- MinLevel: Cấp độ tối thiểu tham gia
+	- RegisterConfig: Thiết báo danh
+		- FromDay: Ngày bắt đầu báo danh trong tháng
+		- ToDay: Ngày kết thúc báo danh trong tháng
+		- TeamCapacity: Số thành viên nhóm yêu cầu (tối thiểu 1 và tối đa 4, -1 nếu ngẫu nhiên trong khoảng [1..4])
+	- Battle: Thi đấu
+		- Config: Thiết lập thi đấu
+			- Duration: Thời gian mỗi hiệp đấu (đơn vị Mili-giây)
+			- FinishWaitDuration: Thời gian chờ sau khi phân thắng bại mỗi hiệp đấu để tự đẩy ra khỏi đấu trường (đơn vị Mili-giây)
+			- MapID: ID bản đồ thi đấu
+			- PosX: Vị trí X vào bản đồ thi đấu
+			- PosY: Vị trí Y vào bản đồ thi đấu
+			- MaxCircleRoundBattles: Tổng số trận đấu vòng tròn tối đa được tham dự
+			- ToFinalRoundTotalTeams: Tổng số đội được chọn vào vòng chung kết
+			- ArrangeToFinalRoundAtDay: Tự xếp hạng các chiến đội vào vòng sau lúc 0:00 ngày tương ứng
+		- EventTimes: Thời gian sự kiện
+			- Time: Thông tin mốc thời gian
+				- Day: Ngày diễn ra trong tháng
+				- Times: Danh sách các múi giờ diễn ra trong ngày
+				- Stage: Hạng của trận (0: Vòng hỗn chiến, 1..N: Vòng chung kết)
+				- IncreaseStageForWinnerTeam: Có tăng bậc của chiến đội cho đội thắng cuộc không (Tại vòng hỗn chiến sẽ không tăng, còn các vòng ở chung kết sẽ tăng để loại trực tiếp luôn)
+	- Award: Phần thưởng
+		- Config: Thiết lập nhận thưởng
+			- FromDay: Ngày bắt đầu nhận thưởng trong tháng
+			- ToDay: Ngày kết thúc nhận thưởng trong tháng
+		- WinRound: Phần thưởng khi chiến thắng trong lượt đấu bất kỳ
+			- Exp: Kinh nghiệm
+			- BoundMoney: Bạc khóa
+			- Repute: Danh vọng
+		- EnterRound: Phần thưởng khi bắt đầu lượt đấu
+			- Exp: Kinh nghiệm
+			- BoundMoney: Bạc khóa
+			- Repute: Danh vọng
+		- FinalRank: Phần thưởng theo thứ hạng
+			- RankInfo: Thông tin hạng
+				- FromRank: Từ thứ hạng
+				- ToRank: Đến thứ hạng
+				- Exp: Kinh nghiệm
+				- Repute: Danh vọng
+				- Items: Vật phẩm nhận được ngăn cách nhau bởi dấu ; giữa các món
+					- Gồm 2 giá trị ID_Số lượng
+-->
+<TeamBattle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- Thiết lập -->
+	<Config EventID="15" EnterMapID="1401" EnterPosX="1895" EnterPosY="3138" MinLevel="100" />
+
+	<!-- Đăng ký -->
+	<RegisterConfig FromDay="7" ToDay="7" TeamCapacity="-1" />
+	
+	<!-- Thi đấu -->
+	<Battle>
+		<Config Duration="600000" FinishWaitDuration="30000" MapID="1425" PosX="1602" PosY="1108" MaxCircleRoundBattles="48" ToFinalRoundTotalTeams="8" ArrangeToFinalRoundAtDay="28" />
+		
+		<EventTimes>
+			<Time Day="11" Times="14:35" Stage="0" IncreaseStageForWinnerTeam="false" />
+			<Time Day="11" Times="14:45" Stage="0" IncreaseStageForWinnerTeam="false" />
+			<Time Day="11" Times="14:55" Stage="0" IncreaseStageForWinnerTeam="false" />
+		</EventTimes>
+	</Battle>
+	
+	<!-- Phần thưởng -->
+	<Award>
+		<Config FromDay="1" ToDay="29" />
+	
+		<WinRound Exp="7560" BoundMoney="1890" Repute="1" />
+		<EnterRound Exp="7560" BoundMoney="1890" Repute="1" />
+		
+		<FinalRank>
+			<RankInfo FromRank="1" ToRank="1" Exp="50000000" Repute="5000" Items="530_5" />
+			<RankInfo FromRank="2" ToRank="2" Exp="45000000" Repute="4800" Items="530_3" />
+			<RankInfo FromRank="3" ToRank="3" Exp="40000000" Repute="4700" Items="530_2" />
+			<RankInfo FromRank="4" ToRank="10" Exp="30000000" Repute="4500" Items="530_1" />
+			<RankInfo FromRank="11" ToRank="50" Exp="25000000" Repute="3500" Items="529_1" />
+			<RankInfo FromRank="51" ToRank="100" Exp="20000000" Repute="2000" Items="528_1" />
+			<RankInfo FromRank="101" ToRank="150" Exp="16000000" Repute="1500" Items="527_1" />
+		</FinalRank>
+	</Award>
+</TeamBattle>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Phong Đô Quỷ Thành[cấp 95]" Key="1" To="118" ToX="4532" ToY="6853" X="11745" Y="7861" Radius="100" />
+	<Teleport Code="2" Tip="Vũ Lăng Sơn[cấp 95]" Key="2" To="121" ToX="9223" ToY="7578" X="13285" Y="2101" Radius="100" />
+	<Teleport Code="3" Tip="Tam Hiệp Sạn Đạo[cấp 105]" Key="3" To="127" ToX="13504" ToY="1982" X="590" Y="2821" Radius="100" />
+	<Teleport Code="4" Tip="Hán Thủy Cổ Độ[cấp 55]" Key="4" To="88" ToX="2421" ToY="872" X="3590" Y="3821" Radius="100" />
+	
+	
+	</Teleports>
+</Map>

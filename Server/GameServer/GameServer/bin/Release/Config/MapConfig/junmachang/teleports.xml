@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Vĩnh Lạc Trấn" Key="1" To="3" ToX="12010" ToY="5010" X="8047" Y="473" Radius="50" />
+		
+	</Teleports>
+</Map>

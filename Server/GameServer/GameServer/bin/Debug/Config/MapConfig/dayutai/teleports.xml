@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Thục Cương Bí Cảnh[cấp 95]" Key="1" To="117" ToX="1072" ToY="6085" X="4628" Y="4530" Radius="100" />
+	<Teleport Code="2" Tip="Lương Sơn Bạc[cấp 115]" Key="2" To="133" ToX="12685" ToY="2167" X="8717" Y="4606" Radius="100" />
+	
+	
+	
+	</Teleports>
+</Map>

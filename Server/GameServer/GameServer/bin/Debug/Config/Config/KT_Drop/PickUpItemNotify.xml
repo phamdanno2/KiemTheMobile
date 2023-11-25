@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	DANH SÁCH CÁC VẬT PHẨM SẼ THÔNG BÁO KHI NGƯỜI CHƠI NHẶT
+	Item: Thông tin vật phẩm
+		- ID: ID vật phẩm
+		- BossOnly: Chỉ thông báo khi nhặt vật phẩm rơi từ Boss
+-->
+<PickUpItemNotify xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- Huyền tinh (cấp 6 trở lên) -->
+	<Item ID="188" BossOnly="true" />
+	<Item ID="189" BossOnly="true" />
+	<Item ID="190" BossOnly="true" />
+	<Item ID="191" BossOnly="true" />
+	<Item ID="192" BossOnly="true" />
+	<Item ID="193" BossOnly="true" />
+	<Item ID="194" BossOnly="true" />
+	<Item ID="390" BossOnly="true" />
+	<Item ID="391" BossOnly="true" />
+	<Item ID="392" BossOnly="true" />
+	<Item ID="393" BossOnly="true" />
+	<Item ID="394" BossOnly="true" />
+	<Item ID="395" BossOnly="true" />
+	<Item ID="396" BossOnly="true" />
+	<!-- End - Huyền Tinh -->
+	
+	<!-- Lệnh bài Gia Tộc -->
+	<Item ID="373" BossOnly="true" />
+	<Item ID="374" BossOnly="true" />
+	<Item ID="375" BossOnly="true" />
+	<!-- End -->
+	
+	<!-- Lệnh bài Bạch Hổ Đường -->
+	<Item ID="376" BossOnly="true" />
+	<Item ID="377" BossOnly="true" />
+	<Item ID="378" BossOnly="true" />
+	<!-- End -->
+	
+	<!-- Lệnh bài Chiến trường -->
+	<Item ID="379" BossOnly="true" />
+	<Item ID="380" BossOnly="true" />
+	<Item ID="381" BossOnly="true" />
+	<!-- End -->
+	
+	<!-- Lệnh bài Thi đấu môn phái -->
+	<Item ID="338" BossOnly="true" />
+	<Item ID="339" BossOnly="true" />
+	<Item ID="340" BossOnly="true" />
+	<!-- End -->
+	
+	<!-- Lệnh bài Võ lâm liên đấu -->
+	<Item ID="528" BossOnly="true" />
+	<Item ID="529" BossOnly="true" />
+	<Item ID="530" BossOnly="true" />
+	<!-- End -->
+</PickUpItemNotify>

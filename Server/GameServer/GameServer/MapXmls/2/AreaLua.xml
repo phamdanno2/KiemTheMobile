@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--区域脚本-->
+<Map>
+  <Areas>
+	<Area ID="1" X="6112" Y="2660" Radius="1200" LuaScriptFile="gouhuo.lua"/>
+  </Areas>
+</Map>

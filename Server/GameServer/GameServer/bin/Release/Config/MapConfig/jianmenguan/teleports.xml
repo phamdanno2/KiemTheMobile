@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+   <!--  <Teleport Code="1" Tip="Tàn Tích Cung A Phòng" Key="1" To="132" ToX="2210" ToY="610" X="9410" Y="7910" Radius="50" />  -->
+	  <Teleport Code="2" Tip="Tương Dương Phủ" Key="2" To="25" ToX="2050" ToY="7430" X="7510" Y="790" Radius="50" />
+	  <Teleport Code="3" Tip="Đại Tán Quan[Cấp 55]" Key="3" To="87" ToX="8055" ToY="1089" X="5286" Y="7251" Radius="50" />
+	  <Teleport Code="4" Tip="Kiếm Các Thục Đạo[Cấp 75]" Key="4" To="104" ToX="9467" ToY="2472" X="11333" Y="1968" Radius="50" />
+	  
+	  
+	</Teleports>
+</Map>

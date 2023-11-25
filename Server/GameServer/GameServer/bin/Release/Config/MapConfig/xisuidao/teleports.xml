@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	
+	<Teleport Code="2" Tip="Tẩy Tủy Đảo Sơn Động" Key="2" To="256" ToX="1636" ToY="906" X="3610" Y="4010" Radius="50" />
+		
+	</Teleports>
+</Map>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Minh Giáo" Key="1" To="224" ToX="8414" ToY="2770" X="606" Y="3684" Radius="50" />
+	  <Teleport Code="2" Tip="Ngũ Độc Giáo" Key="2" To="20" ToX="1787" ToY="1011" X="7720" Y="5842" Radius="50" />
+	  <Teleport Code="3" Tip="Đông Rừng Nguyên Sinh[cấp 35]" Key="3" To="64" ToX="7373" ToY="5647" X="3828" Y="466" Radius="50" />
+	  
+	
+	  
+	  
+	</Teleports>
+</Map>

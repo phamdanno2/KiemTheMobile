@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBulletinMsg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BulletinMsg ID="0" ServerID="-1" Messenger="Đại chiến &lt;color=#00ff2a&gt;Tống Kim Liên Máy Chủ&lt;/color&gt; sắp bắt đầu, hãy mau di chuyển tới &lt;color=#00ff2a&gt;Hoàng Thành Liên Máy Chủ&lt;/color&gt; để báo danh!">
+    <DayOfWeek>6</DayOfWeek>
+    <DayOfWeek>7</DayOfWeek>
+    <NotifyTimes Hours="21" Minute="0" />
+  </BulletinMsg>
+</ArrayOfBulletinMsg>

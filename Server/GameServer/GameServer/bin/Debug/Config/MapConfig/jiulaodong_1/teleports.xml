@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Nga My Phái" Key="1" To="16" ToX="1838" ToY="6038" X="2710" Y="1130" Radius="100" />
+	<Teleport Code="2" Tip="Cửu Lão Động 2[Cấp 35]" Key="2" To="61" ToX="3187" ToY="1243" X="12051" Y="5265" Radius="100" />
+	
+	</Teleports>
+</Map>

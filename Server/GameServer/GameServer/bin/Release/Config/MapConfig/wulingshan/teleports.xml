@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Ba Lăng Huyện" Key="1" To="8" ToX="810" ToY="4610" X="7510" Y="790" Radius="50" />
+	  
+	</Teleports>
+</Map>

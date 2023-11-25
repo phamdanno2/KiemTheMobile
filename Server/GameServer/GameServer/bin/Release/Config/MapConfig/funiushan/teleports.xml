@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Biện Kinh Phủ" Key="1" To="23" ToX="1770" ToY="690" X="7809" Y="4428" Radius="50" />
+	  <Teleport Code="2" Tip="Long Môn Thạch Quật[cấp 85]" Key="2" To="107" ToX="756" ToY="6667" X="756" Y="5661" Radius="50" />
+	  <Teleport Code="3" Tip="Hán Thủy Cổ Độ[cấp 55]" Key="3" To="88" ToX="8276" ToY="6610" X="4832" Y="528" Radius="50" /> 
+	  <Teleport Code="4" Tip="Hoàng Hạc Lâu[cấp 85]" Key="4" To="109" ToX="6005" ToY="6131" X="7835" Y="1196" Radius="50" />
+	  <Teleport Code="5" Tip="Kê Quán Động[cấp 75]" Key="5" To="102" ToX="5945" ToY="1122" X="576" Y="473" Radius="50" />  
+	  <Teleport Code="6" Tip="Thục Cương Bí Cảnh [cấp 95]" Key="6" To="117" ToX="1125" ToY="3395" X="4828" Y="7031" Radius="50" />
+	</Teleports>
+</Map>

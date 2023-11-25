@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+      <Teleport Code="1" Tip="Đại Lý Phủ" Key="1" To="28" ToX="1379" ToY="4609" X="6660" Y="373" Radius="100" />
+	  <Teleport Code="2" Tip="Hoàng Lăng Đoàn Thị[Cấp 75]" Key="2" To="105" ToX="3826" ToY="2279" X="600" Y="2163" Radius="100" />	  
+	  <Teleport Code="3" Tip="Nhĩ Hải Ma Nham[Cấp 55]" Key="3" To="91" ToX="1365" ToY="966" X="3451" Y="5008" Radius="100" />
+	  <!-- <Teleport Code="4" Tip="Thiên Long Tự" Key="4" To="112" ToX="2910" ToY="1630" X="10709" Y="9365" Radius="100" />
+	  10425,9023 -->
+	      
+	</Teleports>
+</Map>

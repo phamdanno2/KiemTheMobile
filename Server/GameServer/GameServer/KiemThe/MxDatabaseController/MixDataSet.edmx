@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KiemTheMixDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="RoleParamInt">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="int" Nullable="false" />
+          <Property Name="ZoneID" Type="int" />
+          <Property Name="ParamID" Type="int" />
+          <Property Name="ParamValue" Type="int" />
+        </EntityType>
+        <EntityType Name="RoleParamString">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="int" Nullable="false" />
+          <Property Name="ZoneID" Type="int" />
+          <Property Name="ParamID" Type="int" />
+          <Property Name="ParamValue" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityContainer Name="KiemTheMixDbModelStoreContainer">
+          <EntitySet Name="RoleParamInt" EntityType="Self.RoleParamInt" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RoleParamString" EntityType="Self.RoleParamString" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KiemTheMixDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="RoleParamInt">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" />
+          <Property Name="ZoneID" Type="Int32" />
+          <Property Name="ParamID" Type="Int32" />
+          <Property Name="ParamValue" Type="Int32" />
+        </EntityType>
+        <EntityType Name="RoleParamString">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" />
+          <Property Name="ZoneID" Type="Int32" />
+          <Property Name="ParamID" Type="Int32" />
+          <Property Name="ParamValue" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="KiemTheMixDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RoleParamInts" EntityType="Self.RoleParamInt" />
+          <EntitySet Name="RoleParamStrings" EntityType="Self.RoleParamString" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KiemTheMixDbModelStoreContainer" CdmEntityContainer="KiemTheMixDbEntities">
+          <EntitySetMapping Name="RoleParamInts">
+            <EntityTypeMapping TypeName="KiemTheMixDbModel.RoleParamInt">
+              <MappingFragment StoreEntitySet="RoleParamInt">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="ZoneID" ColumnName="ZoneID" />
+                <ScalarProperty Name="ParamID" ColumnName="ParamID" />
+                <ScalarProperty Name="ParamValue" ColumnName="ParamValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RoleParamStrings">
+            <EntityTypeMapping TypeName="KiemTheMixDbModel.RoleParamString">
+              <MappingFragment StoreEntitySet="RoleParamString">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="ZoneID" ColumnName="ZoneID" />
+                <ScalarProperty Name="ParamID" ColumnName="ParamID" />
+                <ScalarProperty Name="ParamValue" ColumnName="ParamValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
