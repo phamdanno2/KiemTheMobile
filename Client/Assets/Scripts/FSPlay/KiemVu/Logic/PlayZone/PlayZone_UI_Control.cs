@@ -4,7 +4,10 @@ using FSPlay.GameFramework.Controls;
 using FSPlay.GameFramework.Logic;
 using FSPlay.KiemVu;
 using FSPlay.KiemVu.Control.Component;
+using FSPlay.KiemVu.Entities.Config;
+using FSPlay.KiemVu.Loader;
 using FSPlay.KiemVu.Logic;
+using FSPlay.KiemVu.Logic.Settings;
 using FSPlay.KiemVu.Network;
 using FSPlay.KiemVu.Network.Skill;
 using FSPlay.KiemVu.UI;
@@ -83,6 +86,37 @@ public partial class PlayZone
         CanvasManager canvas = Global.MainCanvas.GetComponent<CanvasManager>();
         this.UIBottomBar = canvas.LoadUIPrefab<UIBottomBar>("MainGame/MainUI/UIBottomBar");
         canvas.AddMainUI(this.UIBottomBar);
+
+        this.UIBottomBar.UISkillBar.UseMedicine = (itemGD) => {
+            /// Nếu đang trong trạng thái bị khống chế
+            if (!Global.Data.Leader.CanDoLogic)
+            {
+                KTGlobal.AddNotification("Trong trạng thái bị khống chế không thể sử dụng vật phẩm!");
+                return;
+            }
+
+            /// Cấu hình vật phẩm
+            ItemData itemData = null;
+            if (!Loader.Items.TryGetValue(itemGD.GoodsID, out itemData))
+            {
+                KTGlobal.AddNotification("Vật phẩm bị lỗi, hãy thông báo với hỗ trợ để được xử lý!");
+                return;
+            }
+
+            /// Nếu không thể sử dụng, và không phải thuốc
+            if (!itemData.IsScriptItem && !itemData.IsMedicine)
+            {
+                KTGlobal.AddNotification("Vật phẩm này không thể sử dụng được!");
+                return;
+            }
+
+            /// Sử dụng
+            GameInstance.Game.SpriteUseGoods(itemGD.Id);
+        };
+        this.UIBottomBar.UISkillBar.MedicineSelected = (itemGD1, itemGD2) => {
+            /// Lưu thiết lập vào hệ thống
+            KTAutoAttackSetting.SaveSettings();
+        };
 
         this.InitSkillBar();
         this.InitControlButtons();

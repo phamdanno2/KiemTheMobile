@@ -1,0 +1,8 @@
+2023-11-26 19:06:42: 
+AuxiliaryTimer took much times to process: 75052ms
+2023-11-26 19:12:09: 
+AuxiliaryTimer took much times to process: 2998ms
+2023-11-26 19:20:52: 
+AuxiliaryTimer took much times to process: 1402ms
+2023-11-26 20:52:35: Packet length is not correct, Cmd=51400, Length=-1027552319, offset=55289856, count=26
+2023-11-26 23:35:41: Packet length is not correct, Cmd=63716, Length=-1395078709, offset=55289856, count=169

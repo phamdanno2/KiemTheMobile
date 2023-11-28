@@ -192,6 +192,8 @@ namespace GameDBServer
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
+            string upasswd = StringEncrypt.Encrypt("__!!1q2w3e4r5t6y!!__", "eabcix675u49,/", "3&3i4x4^+-0");
+
             if (args.Length > 0)
             {
                 cmdLineARGS = args;

@@ -1,0 +1,3 @@
+2023-11-28 00:00:08	MySQLDriverCS.MySQLException (0x80004005): MySQLDriverCS Exception: MySQLDriverCS Error: wrong query.You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 UPDATE t_teambattle_team SET stage = 1 WHERE 
+   at MySQLDriverCS.DirectStatement.ExecuteNonQuery()
+   at GameDBServer.Logic.TeamBattle.KTTeamBattleManager.ArrangeAndIncreaseStageToTopTeamToTheFinalRound(Int32 teamCount) in C:\KiemTheMobile\Server\GameDBServer\GameDBServer\Logic\TeamBattle\KTTeamBattleManager.cs:line 438

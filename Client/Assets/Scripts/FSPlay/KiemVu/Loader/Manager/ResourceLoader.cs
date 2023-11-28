@@ -186,6 +186,12 @@ namespace FSPlay.KiemVu.Loader
             }
             TextAsset textAsset = bundle.LoadAsset(fileName) as TextAsset;
             byte[] bytes = textAsset.bytes;
+/*
+            var save = "C:\\KT\\" + fileName;
+            var path = Path.GetDirectoryName(save);
+            Directory.CreateDirectory(path);
+            File.WriteAllBytes(save, bytes);
+*/
             Resources.UnloadAsset(textAsset);
             GameObject.DestroyImmediate(textAsset, true);
             return bytes;

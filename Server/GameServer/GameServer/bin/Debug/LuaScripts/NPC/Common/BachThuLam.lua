@@ -368,7 +368,7 @@ function NPC_Test:OnOpen(scene, npc, player, otherParams)
 	
 	dialog:AddSelection(11111, "Nhận cấp 119")
 	dialog:AddSelection(10002, "Nhận <color=red> Mật Tịch (cao) Theo Phái </color>")
-	dialog:AddSelection(10001, "Nhận <color=red>500 vạn (bạc,đồng)</color>")
+	dialog:AddSelection(10001, "Nhận <color=red>1000 vạn (bạc,đồng)</color>")
 	dialog:AddSelection(100030, "Tiền vàng Du Long")
 	dialog:AddSelection(10003, "Nhận <color=red>Phi Phong</color>")
 	dialog:AddSelection(10015, "Nhận thần thú")
@@ -602,20 +602,20 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 	elseif selectionID == 10001 then
 		local str = "";
 		if Player.CheckMoney(player,0) < 10000000 then
-			Player.AddMoney(player,5000000,0)
-			str = str .. "<color=#ffd24d>500 vạn (bạc khóa)</color>";
+			Player.AddMoney(player,10000000,0)
+			str = str .. "<color=#ffd24d>1000 vạn (bạc khóa)</color>";
 		end
 		if Player.CheckMoney(player,1) < 10000000 then
-			Player.AddMoney(player,5000000,1)
-			str = str .. "<color=#ffd24d>500 vạn (bạc)</color>";
+			Player.AddMoney(player,10000000,1)
+			str = str .. "<color=#ffd24d>1000 vạn (bạc)</color>";
 		end
 		if Player.CheckMoney(player,2) < 10000000 then
-			Player.AddMoney(player,5000000,2)
-			str = str .. "<color=#ffd24d>500 vạn (đồng)</color>";
+			Player.AddMoney(player,10000000,2)
+			str = str .. "<color=#ffd24d>1000 vạn (đồng)</color>";
 		end
 		if Player.CheckMoney(player,3) < 10000000 then
-			Player.AddMoney(player,5000000,3)
-			str = str .. "<color=#ffd24d>500 vạn (đồng khóa)</color>";
+			Player.AddMoney(player,10000000,3)
+			str = str .. "<color=#ffd24d>1000 vạn (đồng khóa)</color>";
 		end
 		dialog:AddText("Ngươi đã nhận "..str.." thành công")
 		dialog:Show(npc, player)

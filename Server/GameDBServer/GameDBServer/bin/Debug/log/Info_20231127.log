@@ -1,0 +1,30 @@
+2023-11-27 00:26:22	Release unused role: 200003
+2023-11-27 00:36:23	Release unused role: 200000
+2023-11-27 00:36:23	Release unused role: 200001
+2023-11-27 00:39:51	Query role info from DB: 1_testtest
+2023-11-27 00:39:51	Load role data from DB: 200000
+2023-11-27 00:39:51	Load role data from DB: 200001
+2023-11-27 00:46:59	Query role info from DB: 2_motcaiten
+2023-11-27 00:46:59	Load role data from DB: 200003
+2023-11-27 01:11:25	Release unused role: 200000
+2023-11-27 01:11:25	Release unused role: 200001
+2023-11-27 01:46:28	Release unused role: 200003
+2023-11-27 10:30:08	Query role info from DB: 1_testtest
+2023-11-27 10:30:08	Load role data from DB: 200000
+2023-11-27 10:30:08	Load role data from DB: 200001
+2023-11-27 11:02:32	Release unused role: 200001
+2023-11-27 11:07:13	Load role data from DB: 200001
+2023-11-27 12:22:59	Release unused role: 200001
+2023-11-27 12:27:59	Release unused role: 200000
+2023-11-27 16:26:21	Query role info from DB: 1_testtest
+2023-11-27 16:26:21	Load role data from DB: 200000
+2023-11-27 16:26:22	Load role data from DB: 200001
+2023-11-27 16:49:57	Query role info from DB: 2_motcaiten
+2023-11-27 16:49:57	Load role data from DB: 200003
+2023-11-27 17:23:53	Release unused role: 200003
+2023-11-27 17:38:54	Release unused role: 200000
+2023-11-27 17:38:54	Release unused role: 200001
+2023-11-27 17:59:30	Query role info from DB: 1_testtest
+2023-11-27 17:59:30	Load role data from DB: 200000
+2023-11-27 17:59:30	Load role data from DB: 200001
+2023-11-27 18:34:11	Release unused role: 200001

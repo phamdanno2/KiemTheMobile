@@ -4,6 +4,7 @@ using FSPlay.GameFramework.Logic;
 using FSPlay.KiemVu.Control.Component;
 using FSPlay.KiemVu.Entities.Config;
 using FSPlay.KiemVu.Network.Skill;
+using FSPlay.KiemVu.UI.Main.MainUI.RadarMap;
 using FSPlay.KiemVu.UI.Main.MainUI.SkillBar;
 using FSPlay.KiemVu.Utilities.UnityUI;
 using Server.Data;
@@ -282,6 +283,19 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         [SerializeField]
         TMPro.TextMeshProUGUI ui_text;
 
+        [SerializeField]
+        private UIRadarMap_QuickMedicineBox UIMedicineBox;
+
+        /// <summary>
+        /// Sự kiện ấn dùng thuốc ở khay
+        /// </summary>
+        public Action<GoodsData> UseMedicine { get; set; }
+
+        /// <summary>
+        /// Sự kiện thuốc được chọn
+        /// </summary>
+        public Action<GoodsData, GoodsData> MedicineSelected { get; set; }
+
         #region Code UI
         /// <summary>
         /// Khởi tạo ban đầu
@@ -306,6 +320,9 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
 
             this.RefreshSkillIcon();
             this.RefreshCooldowns();
+
+            this.UIMedicineBox.UseMedicine = this.UseMedicine;
+            this.UIMedicineBox.MedicineSelected = this.MedicineSelected;
         }
         private bool ignoreTarget = false;
         private void ToggleChangeSkill_Selected()
