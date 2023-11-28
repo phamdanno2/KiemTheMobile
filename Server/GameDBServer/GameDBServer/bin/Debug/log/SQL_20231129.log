@@ -4906,3 +4906,441 @@
 2023-11-29 00:25:22	DO update PaiHangWorker!
 2023-11-29 00:25:22	DO DoUpdateItem...........DONE!
 2023-11-29 00:25:22	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:23	DO update PaiHangWorker!
+2023-11-29 00:25:23	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:23	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:24	DO update PaiHangWorker!
+2023-11-29 00:25:24	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:24	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:25	DO update PaiHangWorker!
+2023-11-29 00:25:25	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:25	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:26	DO update PaiHangWorker!
+2023-11-29 00:25:26	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:26	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:27	UPDATE UpdateHuoDong DATA :UPDATE t_huodong SET loginweekid='1',logindayid='333',loginnum=3,newstep=0,steptime='2023-11-26 19:42:05',lastmtime=0,curmid='',curmtime=0,songliid=0,logingiftstate=0,onlinegiftstate=0,lastlimittimehuodongid=1,lastlimittimedayid=333,limittimeloginnum=4,limittimegiftstate=0,everydayonlineawardstep=0,geteverydayonlineawarddayid=0,serieslogingetawardstep=0,seriesloginawarddayid=0,seriesloginawardgoodsid='',everydayonlineawardgoodsid=''  WHERE rid=200003
+2023-11-29 00:25:27	DO update PaiHangWorker!
+2023-11-29 00:25:27	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:27	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:27	[Family]Update Online Status
+2023-11-29 00:25:27	[GUILD]Update Online Status
+2023-11-29 00:25:28	DO update PaiHangWorker!
+2023-11-29 00:25:28	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:28	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:29	DO update PaiHangWorker!
+2023-11-29 00:25:29	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:29	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:30	DO update PaiHangWorker!
+2023-11-29 00:25:30	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:30	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:31	DO update PaiHangWorker!
+2023-11-29 00:25:31	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:31	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:32	DO update PaiHangWorker!
+2023-11-29 00:25:32	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:32	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:33	DO update PaiHangWorker!
+2023-11-29 00:25:33	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:33	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:34	DO update PaiHangWorker!
+2023-11-29 00:25:34	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:34	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:35	DO update PaiHangWorker!
+2023-11-29 00:25:35	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:35	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:36	DO update PaiHangWorker!
+2023-11-29 00:25:36	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:36	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:37	DO update PaiHangWorker!
+2023-11-29 00:25:37	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:37	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:37	[GUILD]Update Online Status
+2023-11-29 00:25:37	[Family]Update Online Status
+2023-11-29 00:25:38	DO update PaiHangWorker!
+2023-11-29 00:25:38	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:38	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:39	DO update PaiHangWorker!
+2023-11-29 00:25:39	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:39	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:40	DO update PaiHangWorker!
+2023-11-29 00:25:40	CLEAR ROLE LastReleaseMemoryTicks
+2023-11-29 00:25:40	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:40	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:40	CLEAR ROLE LastReleaseMemoryTicks==> DONE
+2023-11-29 00:25:41	DO update PaiHangWorker!
+2023-11-29 00:25:41	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:41	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:42	DO update PaiHangWorker!
+2023-11-29 00:25:42	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:42	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:43	DO update PaiHangWorker!
+2023-11-29 00:25:43	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:43	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:44	DO update PaiHangWorker!
+2023-11-29 00:25:44	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:44	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:45	DO update PaiHangWorker!
+2023-11-29 00:25:45	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:45	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:46	DO update PaiHangWorker!
+2023-11-29 00:25:46	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:46	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:47	DO update PaiHangWorker!
+2023-11-29 00:25:47	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:47	[Family]Update Online Status
+2023-11-29 00:25:47	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:47	[GUILD]Update Online Status
+2023-11-29 00:25:48	DO update PaiHangWorker!
+2023-11-29 00:25:48	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:48	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:48	[GUILD]Update Share Status
+2023-11-29 00:25:49	DO update PaiHangWorker!
+2023-11-29 00:25:49	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:49	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:50	DO update PaiHangWorker!
+2023-11-29 00:25:50	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:50	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:51	DO update PaiHangWorker!
+2023-11-29 00:25:51	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:51	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:52	DO update PaiHangWorker!
+2023-11-29 00:25:52	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:52	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:53	DO update PaiHangWorker!
+2023-11-29 00:25:53	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:53	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:54	DO update PaiHangWorker!
+2023-11-29 00:25:54	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:54	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:55	DO update PaiHangWorker!
+2023-11-29 00:25:55	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:55	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:56	DO update PaiHangWorker!
+2023-11-29 00:25:56	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:56	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:57	DO update PaiHangWorker!
+2023-11-29 00:25:57	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:57	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:57	[Family]Update Online Status
+2023-11-29 00:25:57	[GUILD]Update Online Status
+2023-11-29 00:25:58	DO update PaiHangWorker!
+2023-11-29 00:25:58	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:58	DO DelayUpdateManager...........DONE!
+2023-11-29 00:25:59	DO update PaiHangWorker!
+2023-11-29 00:25:59	DO DoUpdateItem...........DONE!
+2023-11-29 00:25:59	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:00	DO update PaiHangWorker!
+2023-11-29 00:26:00	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:00	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:01	DO update PaiHangWorker!
+2023-11-29 00:26:01	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:01	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:02	DO update PaiHangWorker!
+2023-11-29 00:26:02	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:02	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:03	DO update PaiHangWorker!
+2023-11-29 00:26:03	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:03	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:04	DO update PaiHangWorker!
+2023-11-29 00:26:04	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:04	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:05	DO update PaiHangWorker!
+2023-11-29 00:26:05	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:05	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:06	DO update PaiHangWorker!
+2023-11-29 00:26:06	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:06	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:07	DO update PaiHangWorker!
+2023-11-29 00:26:07	[Family]Update Online Status
+2023-11-29 00:26:07	[GUILD]Update Online Status
+2023-11-29 00:26:07	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:07	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:08	DO update PaiHangWorker!
+2023-11-29 00:26:08	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:08	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:09	DO update PaiHangWorker!
+2023-11-29 00:26:09	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:09	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:10	DO update PaiHangWorker!
+2023-11-29 00:26:10	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:10	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:11	DO update PaiHangWorker!
+2023-11-29 00:26:11	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:11	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:12	DO update PaiHangWorker!
+2023-11-29 00:26:12	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:12	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:13	DO update PaiHangWorker!
+2023-11-29 00:26:13	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:13	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:14	DO update PaiHangWorker!
+2023-11-29 00:26:14	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:14	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:15	DO update PaiHangWorker!
+2023-11-29 00:26:15	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:15	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:16	DO update PaiHangWorker!
+2023-11-29 00:26:16	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:16	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:17	DO update PaiHangWorker!
+2023-11-29 00:26:17	[GUILD]Update Online Status
+2023-11-29 00:26:17	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:17	[Family]Update Online Status
+2023-11-29 00:26:17	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:18	DO update PaiHangWorker!
+2023-11-29 00:26:18	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:18	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:19	DO update PaiHangWorker!
+2023-11-29 00:26:19	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:19	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:20	DO update PaiHangWorker!
+2023-11-29 00:26:20	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:20	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:21	DO update PaiHangWorker!
+2023-11-29 00:26:21	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:21	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:22	DO update PaiHangWorker!
+2023-11-29 00:26:22	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:22	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:23	DO update PaiHangWorker!
+2023-11-29 00:26:23	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:23	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:24	DO update PaiHangWorker!
+2023-11-29 00:26:24	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:24	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:25	DO update PaiHangWorker!
+2023-11-29 00:26:25	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:25	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:26	DO update PaiHangWorker!
+2023-11-29 00:26:26	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:26	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:27	DO update PaiHangWorker!
+2023-11-29 00:26:27	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:27	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:27	[GUILD]Update Online Status
+2023-11-29 00:26:27	[Family]Update Online Status
+2023-11-29 00:26:28	DO update PaiHangWorker!
+2023-11-29 00:26:28	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:28	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:29	DO update PaiHangWorker!
+2023-11-29 00:26:29	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:29	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:30	DO update PaiHangWorker!
+2023-11-29 00:26:30	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:30	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:31	DO update PaiHangWorker!
+2023-11-29 00:26:31	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:31	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:32	DO update PaiHangWorker!
+2023-11-29 00:26:32	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:32	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:33	DO update PaiHangWorker!
+2023-11-29 00:26:33	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:33	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:34	DO update PaiHangWorker!
+2023-11-29 00:26:34	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:34	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:35	DO update PaiHangWorker!
+2023-11-29 00:26:35	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:35	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:36	DO update PaiHangWorker!
+2023-11-29 00:26:36	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:36	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:37	DO update PaiHangWorker!
+2023-11-29 00:26:37	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:37	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:37	[GUILD]Update Online Status
+2023-11-29 00:26:37	[Family]Update Online Status
+2023-11-29 00:26:38	DO update PaiHangWorker!
+2023-11-29 00:26:38	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:38	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:39	DO update PaiHangWorker!
+2023-11-29 00:26:39	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:39	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:40	DO update PaiHangWorker!
+2023-11-29 00:26:40	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:40	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:41	DO update PaiHangWorker!
+2023-11-29 00:26:41	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:41	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:42	DO update PaiHangWorker!
+2023-11-29 00:26:42	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:42	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:43	DO update PaiHangWorker!
+2023-11-29 00:26:43	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:43	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:44	DO update PaiHangWorker!
+2023-11-29 00:26:44	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:44	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:45	DO update PaiHangWorker!
+2023-11-29 00:26:45	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:45	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:46	DO update PaiHangWorker!
+2023-11-29 00:26:46	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:46	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:47	DO update PaiHangWorker!
+2023-11-29 00:26:47	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:47	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:47	[Family]Update Online Status
+2023-11-29 00:26:47	[GUILD]Update Online Status
+2023-11-29 00:26:48	DO update PaiHangWorker!
+2023-11-29 00:26:48	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:48	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:49	DO update PaiHangWorker!
+2023-11-29 00:26:49	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:49	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:50	DO update PaiHangWorker!
+2023-11-29 00:26:50	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:50	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:51	DO update PaiHangWorker!
+2023-11-29 00:26:51	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:51	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:52	DO update PaiHangWorker!
+2023-11-29 00:26:52	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:52	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:53	DO update PaiHangWorker!
+2023-11-29 00:26:53	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:53	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:53	[GUILD]Update Share Status
+2023-11-29 00:26:54	DO update PaiHangWorker!
+2023-11-29 00:26:54	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:54	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:55	DO update PaiHangWorker!
+2023-11-29 00:26:55	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:55	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:56	DO update PaiHangWorker!
+2023-11-29 00:26:56	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:56	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:57	DO update PaiHangWorker!
+2023-11-29 00:26:57	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:57	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:57	[GUILD]Update Online Status
+2023-11-29 00:26:57	[Family]Update Online Status
+2023-11-29 00:26:58	DO update PaiHangWorker!
+2023-11-29 00:26:58	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:58	DO DelayUpdateManager...........DONE!
+2023-11-29 00:26:59	DO update PaiHangWorker!
+2023-11-29 00:26:59	DO DoUpdateItem...........DONE!
+2023-11-29 00:26:59	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:00	DO update PaiHangWorker!
+2023-11-29 00:27:00	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:00	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:01	DO update PaiHangWorker!
+2023-11-29 00:27:01	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:01	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:02	DO update PaiHangWorker!
+2023-11-29 00:27:02	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:02	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:03	DO update PaiHangWorker!
+2023-11-29 00:27:03	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:03	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:04	DO update PaiHangWorker!
+2023-11-29 00:27:04	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:04	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:05	DO update PaiHangWorker!
+2023-11-29 00:27:05	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:05	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:06	DO update PaiHangWorker!
+2023-11-29 00:27:06	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:06	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:07	DO update PaiHangWorker!
+2023-11-29 00:27:07	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:07	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:07	[GUILD]Update Online Status
+2023-11-29 00:27:07	[Family]Update Online Status
+2023-11-29 00:27:08	DO update PaiHangWorker!
+2023-11-29 00:27:08	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:08	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:09	DO update PaiHangWorker!
+2023-11-29 00:27:09	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:09	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:10	DO update PaiHangWorker!
+2023-11-29 00:27:10	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:10	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:11	DO update PaiHangWorker!
+2023-11-29 00:27:11	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:11	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:12	DO update PaiHangWorker!
+2023-11-29 00:27:12	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:12	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:13	DO update PaiHangWorker!
+2023-11-29 00:27:13	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:13	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:14	DO update PaiHangWorker!
+2023-11-29 00:27:14	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:14	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:15	DO update PaiHangWorker!
+2023-11-29 00:27:15	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:15	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:16	DO update PaiHangWorker!
+2023-11-29 00:27:16	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:16	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:17	DO update PaiHangWorker!
+2023-11-29 00:27:17	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:17	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:17	[GUILD]Update Online Status
+2023-11-29 00:27:17	[Family]Update Online Status
+2023-11-29 00:27:18	DO update PaiHangWorker!
+2023-11-29 00:27:18	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:18	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:19	DO update PaiHangWorker!
+2023-11-29 00:27:19	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:19	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:20	DO update PaiHangWorker!
+2023-11-29 00:27:20	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:20	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:21	DO update PaiHangWorker!
+2023-11-29 00:27:21	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:21	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:22	DO update PaiHangWorker!
+2023-11-29 00:27:22	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:22	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:23	DO update PaiHangWorker!
+2023-11-29 00:27:23	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:23	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:24	DO update PaiHangWorker!
+2023-11-29 00:27:24	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:24	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:25	DO update PaiHangWorker!
+2023-11-29 00:27:25	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:25	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:26	DO update PaiHangWorker!
+2023-11-29 00:27:26	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:26	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:27	DO update PaiHangWorker!
+2023-11-29 00:27:27	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:27	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:27	[GUILD]Update Online Status
+2023-11-29 00:27:27	[Family]Update Online Status
+2023-11-29 00:27:28	DO update PaiHangWorker!
+2023-11-29 00:27:28	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:28	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:29	DO update PaiHangWorker!
+2023-11-29 00:27:29	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:29	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:30	DO update PaiHangWorker!
+2023-11-29 00:27:30	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:30	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:31	DO update PaiHangWorker!
+2023-11-29 00:27:31	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:31	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:32	DO update PaiHangWorker!
+2023-11-29 00:27:32	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:32	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:33	DO update PaiHangWorker!
+2023-11-29 00:27:33	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:33	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:34	DO update PaiHangWorker!
+2023-11-29 00:27:34	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:34	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:35	DO update PaiHangWorker!
+2023-11-29 00:27:35	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:35	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:36	DO update PaiHangWorker!
+2023-11-29 00:27:36	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:36	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:37	DO update PaiHangWorker!
+2023-11-29 00:27:37	DO DoUpdateItem...........DONE!
+2023-11-29 00:27:37	DO DelayUpdateManager...........DONE!
+2023-11-29 00:27:37	[Family]Update Online Status
+2023-11-29 00:27:37	[GUILD]Update Online Status
