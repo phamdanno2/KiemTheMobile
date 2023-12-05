@@ -7870,4 +7870,8 @@
     <ListExtPram Pram="7" Index="1" />
     <UnLockInterval>0</UnLockInterval>
 	</ItemData>	
+	
+  <ItemData ItemID="16000" Name="Phiếu Bạc Khóa - 10 Vạn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Sau khi sử dụng sẽ nhận được 10 Vạn (100.000) bạc khóa" QualityPrefix="0" Category="0" Genre="18" Stack="100" DetailType="1" ParticularType="1600" Level="1" SuiteID="0" Icon="1vanbac" View="1vanbac_nho" Intro="Sau khi sử dụng sẽ nhận được 10 Vạn (100.000) bạc khóa" Help="" ObjID="32" BindType="0" Series="0" ReqLevel="0" CDType="0" Price="1" ItemValue="100000" MakeCost="-1" ResMale="0" ResFemale="0" FightPower="0" ScriptID="200032" DeductOnUse="false" BuffID="-1">
+    <UnLockInterval>0</UnLockInterval>
+  </ItemData>	
 </ArrayOfItemData>

@@ -35,11 +35,18 @@ function TuiTanThu:OnUse(scene, item, player, otherParams)
 	-- ************************** --
 	local dialog = GUI.CreateItemDialog()
 	local record2 = Player.GetValueForeverRecore(player, Record2)
+	local record3 = Player.GetValueForeverRecore(player, Record3)
 	dialog:AddText(": xin chào "..player:GetName().." !") ---"..player:GetName().."
+	if record2 ~= 1 then
+		dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
+	end
+	if record3 ~= 1 then
+		dialog:AddSelection(39902, "Vật Phẩm Tân Thủ")
+	end
+
 	if player:GetFactionID()==0 then
 	dialog:AddSelection(1,"Gia nhập Môn Phái.")
-	end
-	dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
+	end	
 	-- dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
 	dialog:AddSelection(100030, "  GiftCode  ")
 	-- dialog:AddSelection(30000, "Ta muốn đổi tên")
@@ -1476,6 +1483,8 @@ local SetDoTanThuTheoHeCoNgua ={
 --		selectionID: number - ID chức năng
 --		otherParams: Key-Value {number, string} - Danh sách các tham biến khác
 -- ****************************************************** --
+function TuiTanThu:ItemSet()
+end
 function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 
 	-- ************************** --
@@ -1516,21 +1525,523 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 	end
 	-- ************************** --
 	if selectionID == 39901 then
-	local record2 = Player.GetValueForeverRecore(player, Record2)
-	local record3 = Player.GetValueForeverRecore(player, Record3)
-	local dialog = GUI.CreateItemDialog()
-		dialog:AddText("<color=green>Hỗ Trợ Tân Thủ KT 2009 Mobile</color>")
-	if player:GetLevel() < 80 then
-		dialog:AddSelection(11111, "Nhận <color=green>Nhận hỗ trợ cấp độ Tân Thủ </color>")
+		--local record2 = Player.GetValueForeverRecore(player, Record2)
+		--local record3 = Player.GetValueForeverRecore(player, Record3)
+		GUI.CloseDialog(player)
+		--	dialog:AddText("<color=green>Hỗ Trợ Tân Thủ KT 2009 Mobile</color>")
+		--	if player:GetLevel() < 80 then
+		--		dialog:AddSelection(11111, "Nhận <color=green>Nhận hỗ trợ cấp độ Tân Thủ </color>")
+		--	end
+		--	if Record3 ~= 1  then
+		--		dialog:AddSelection(17023, "Nhận Set Đồ Theo Hệ </color>")
+		--	end
+			-- dialog:AddSelection(999998, "Nhận Kỹ Năng Sống (Cấp 60)")
+		--	dialog:AddSelection(77777, "Ta sẽ quay lại sau !!!")
+			-- dialog:AddSelection(10023, "Nhận Set Đồ Theo Hệ </color>")
+		--	dialog:Show(item, player)
+		player:SetLevel(90)		
+		Player.AddItemLua(player,3484,1,-1,1)--Hy Hy--Okie
+		Player.AddItemLua(player,583,1,-1,1)--Ruong Hon Thach
+		Player.AddItemLua(player,348,5,-1,1)--Tinh Khi Tan
+		Player.AddItemLua(player,351,5,-1,1)--Hoat Khi Tan
+		Player.AddItemLua(player,538,1,-1,1)--Cuu Chuyen Tuc Menh Hoan
+		Player.AddItemLua(player,344,1,-1,1)--Can Khon Phu (10)
+		Player.AddItemLua(player,336,1,-1,1)--Lenh bai Tay Tuy Dao
+		Player.AddItemLua(player,555,1,-1,1)--Vo Han Truyen Tong Phu
+		Player.AddItemLua(player,2167,1,-1,1)--The Doi Ten
+		
+		Player.AddItemLua(player,15000,10,-1,1)--Phieu Bac Khoa 1 van
+		Player.AddItemLua(player,15001,1,-1,1)--Phieu Dong Khoa 1 van
+
+		player:AddNotification(""..player:GetName().."  Nhận Hỗ Trợ Tân Thủ Thành Công")
+		Player.SetValueOfForeverRecore(player, Record2, 1)
+		return;
 	end
-	if Record3 ~= 1  then
-		dialog:AddSelection(17023, "Nhận Set Đồ Theo Hệ </color>")
-	end
-	-- dialog:AddSelection(999998, "Nhận Kỹ Năng Sống (Cấp 60)")
-	dialog:AddSelection(77777, "Ta sẽ quay lại sau !!!")
-		-- dialog:AddSelection(10023, "Nhận Set Đồ Theo Hệ </color>")
-	dialog:Show(item, player)
-	end
+	if selectionID == 39902 then
+		if player:GetFactionID()==0 then
+			dialog:AddText(""..player:GetName()..": Bạn chưa gia nhập phái ,hãy gia nhập <color=red> môn phái</color> rồi quay lại <color=red> nhận Nhận Hỗ Trợ Đồ Tân Thủ.</color>")
+			dialog:Show(item, player)
+		elseif player:GetFactionID()~=0 then
+			GUI.CloseDialog(player)
+			if player:GetFactionID()==1 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==2 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==3 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)				
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==4 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					-- TuiTanThu:SetBelonging89CH7(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1)
+					-- TuiTanThu:SetBelonging89CH7(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==5 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==6 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==7 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==8 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==9 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==10 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==11 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+			elseif player:GetFactionID()==12 then
+				if player:GetSex()==0 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID3,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID4,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID5,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID6,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				elseif player:GetSex()==1 then
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID19,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
+					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
+					Player.SetValueOfForeverRecore(player, Record3, 1)
+				else
+					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+					dialog:Show(item, player)
+				end
+
+			
+			end
+		else
+			dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
+			dialog:Show(item, player)
+		end
+		return
+	end	
 	-- ************************** --	
 	if selectionID == 999998 then
 	 for i=1,10 do 

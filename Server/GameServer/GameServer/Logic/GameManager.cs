@@ -65,7 +65,7 @@ namespace GameServer.Logic
 
         public static string ActiveGiftCodeUrl = "";
 
-        public static string KTCoinService = "http://sdk.kt2009.mobi:8887/UserKTCoinService.aspx";
+        public static string KTCoinService = "http://sdk.kiemthemobile.net/UserKTCoinService.aspx";
 
 
         /// <summary>

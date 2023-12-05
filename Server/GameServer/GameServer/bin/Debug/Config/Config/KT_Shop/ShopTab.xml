@@ -3998,7 +3998,7 @@
     <ShopItem>3693</ShopItem>
     <ShopItem>3723</ShopItem>
     <ShopItem>3725</ShopItem>
-    <ShopItem>3760</ShopItem>
+    <!--ShopItem>3760</ShopItem-->
     <ShopItem>3761</ShopItem>
     <!-- <ShopItem>20001</ShopItem> -->
     <ShopItem>4064</ShopItem>
@@ -4370,9 +4370,9 @@
 		<ShopItem>5193</ShopItem>-->
 	</ShopTab>
 	<ShopTab ShopName="Huyền Tinh" ShopID="212" MoneyType="2" Discount="0" TimeSaleStart="" TimeSaleEnd="">	
-		<ShopItem>5194</ShopItem>
+		<!--ShopItem>5194</ShopItem>
 		<ShopItem>5195</ShopItem>
-		<ShopItem>5196</ShopItem>
+		<ShopItem>5196</ShopItem-->
 		<ShopItem>5198</ShopItem>
 		<ShopItem>5199</ShopItem>
 		<ShopItem>5554</ShopItem>
@@ -4386,19 +4386,19 @@
 		<ShopItem>5204</ShopItem>
 		<ShopItem>5205</ShopItem>
 		<ShopItem>5206</ShopItem>
-		<ShopItem>5207</ShopItem>
+		<ShopItem>5207</ShopItem-->
 		<ShopItem>5208</ShopItem>
-		<ShopItem>5209</ShopItem>
+	<!--ShopItem>5209</ShopItem>
 		<ShopItem>5210</ShopItem>
 		<ShopItem>5211</ShopItem>
 		<ShopItem>5212</ShopItem>
 		<ShopItem>5213</ShopItem>-->
 	</ShopTab>
 	<ShopTab ShopName="Huyền Tinh" ShopID="214" MoneyType="3" Discount="0" TimeSaleStart="" TimeSaleEnd="">	
-		<ShopItem>5214</ShopItem>
+		<!--ShopItem>5214</ShopItem>
 		<ShopItem>5215</ShopItem>
 		<ShopItem>5216</ShopItem>
-		<!-- <ShopItem>5217</ShopItem> -->
+		<ShopItem>5217</ShopItem-->
 		<ShopItem>5218</ShopItem>
 		<ShopItem>5219</ShopItem>
 	</ShopTab>

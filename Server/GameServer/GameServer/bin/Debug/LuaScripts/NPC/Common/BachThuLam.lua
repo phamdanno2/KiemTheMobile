@@ -369,12 +369,15 @@ function NPC_Test:OnOpen(scene, npc, player, otherParams)
 	dialog:AddSelection(11111, "Nhận cấp 119")
 	dialog:AddSelection(10002, "Nhận <color=red> Mật Tịch (cao) Theo Phái </color>")
 	dialog:AddSelection(10001, "Nhận <color=red>1000 vạn (bạc,đồng)</color>")
-	dialog:AddSelection(100030, "Tiền vàng Du Long")
+	dialog:AddSelection(10016, "Tiền vàng Du Long")
 	dialog:AddSelection(10003, "Nhận <color=red>Phi Phong</color>")
 	dialog:AddSelection(10015, "Nhận thần thú")
     dialog:AddSelection(10005, "Nhận <color=red>Nhận 1000 uy danh </color>")
 	dialog:AddSelection(10014, "500 vỏ sò")
-
+	dialog:AddSelection(10025, "Nhận Full Danh Vọng")
+	dialog:AddSelection(100030, "GiftCode")
+	dialog:AddSelection(100033, "Thuong Tai Phu")
+dialog:AddSelection(100034, "Phieu bac 10v")
 	-- dialog:AddSelection(10023, "Nhận <color=red>Nhận set đồ theo hệ 89 +12</color>")
 	-- dialog:AddSelection(10025, "Nhận <color=red>Nhận set đồ theo hệ 89 +8</color>")	
 	-- dialog:AddSelection(10004, "Nhận <color=red>Nhận set đồ theo hệ 119 +14</color>")
@@ -517,6 +520,59 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		GUI.CloseDialog(player)
 		
 	end
+	if selectionID == 10025 then
+		Player.AddRetupeValue(player,504,10000)   --DV Chúc Phúc
+		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
+		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
+		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
+		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
+		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
+		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
+		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT		
+		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
+		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,506,10000)   -- Danh Vọng Di Tích Hàn Vũ
+		Player.AddRetupeValue(player,1201,10000)  -- Liên đấu liên server
+		Player.AddRetupeValue(player,1101,10000)  --DV Đại Hội Võ Lâm
+		
+		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
+		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
+		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
+		Player.AddRetupeValue(player,902,10000)   -- Tần Lăng Phát Khấu Môn
+		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
+		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
+		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
+		
+		Player.AddRetupeValue(player,601,10000)  --- VLCT Kim
+		Player.AddRetupeValue(player,602,10000)  --- VLCT Mộc
+		Player.AddRetupeValue(player,603,10000)  --- VLCT Thủy
+		Player.AddRetupeValue(player,604,10000)  --- VLCT Hỏa
+		Player.AddRetupeValue(player,605,10000)  --- VLCT Thổ
+		
+		-- Player.AddRetupeValue(player,201,10000)
+		-- Player.AddRetupeValue(player,202,10000)
+		-- Player.AddRetupeValue(player,203,10000)
+
+		-- Player.AddRetupeValue(player,300 + player:GetFactionID(),10000)
+		-- Player.AddRetupeValue(player,401,10000)
+		-- Player.AddRetupeValue(player,402,10000)
+		
+
+		-- Player.AddRetupeValue(player,501,10000)
+		-- Player.AddRetupeValue(player,503,10000)
+		
+
+		
+		
+		
+		player:AddNotification(""..player:GetName().."Nhận Danh Vọng Các Loại Thành Công")
+		GUI.CloseDialog(player)
+		return
+	end
 	if selectionID == 10014 then
 		--player:SetPrayTimes(100)
 		--dialog:AddText("nhận 100 lượt quay chúc chúc phúc thành công !")
@@ -526,13 +582,21 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		dialog:Show(npc, player)
 		return
 	end
+	if selectionID == 100034 then
+		Player.AddItemLua(player,16000,1,-1,1)
+		GUI.CloseDialog(player)
+		return
+	end
 	if selectionID == 10015 then
-		Player.AddItemLua(player,3508,1,-1,1)
-		Player.AddItemLua(player,3509,1,-1,1)
-		Player.AddItemLua(player,3510,1,-1,1)
-		Player.AddItemLua(player,3511,1,-1,1)
-		Player.AddItemLua(player,3512,1,-1,1)
-		Player.AddItemLua(player,3597,1,-1,1)
+		Player.AddItemLua(player,3459,1,-1,1)--Ma bai--
+		Player.AddItemLua(player,3483,1,-1,1)--Hoan Hoan--Hoan Hoan
+		Player.AddItemLua(player,3484,1,-1,1)--Hy Hy--Okie
+		Player.AddItemLua(player,3485,1,-1,1)--Ho Cat Tuong--Okie
+		Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
+		Player.AddItemLua(player,3501,1,-1,1)--Tuyet Hon--Okie
+		Player.AddItemLua(player,3502,1,-1,1)--Su Gia Truy Phong--Okie
+		Player.AddItemLua(player,3508,1,-1,1)--Hoa Ky Lan--Okie
+		Player.AddItemLua(player,3523,1,-1,1)--Linh Vuong Giap Vang
 		dialog:AddText(""..npc:GetName().."Bạn đã nhận </color=red>thần thú </color>thành công")
 		dialog:Show(npc, player)
 		return
@@ -544,14 +608,65 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		dialog:Show(npc, player)
 		return
 	end
-	if selectionID == 100030 then
-		--GUI.OpenUI(player, "UIGiftCode")
-		--GUI.CloseDialog(player)
+	if selectionID == 10016 then
 		Player.AddItemLua(player,1033,10,-1,1)
 		Player.AddItemLua(player,1034,10,-1,1)		
 		Player.AddItemLua(player,1074,10000,-1,1)
 		dialog:AddText(""..npc:GetName().." nhận Tiền Vàng Du Long thành công")
 		dialog:Show(npc, player)
+		return
+	end
+	if selectionID == 100030 then
+		GUI.CloseDialog(player)
+		GUI.OpenUI(player, "UIGiftCode")
+		return
+	end
+	if selectionID == 100033 then
+		GUI.CloseDialog(player)
+		local rank = player:GetTaiPhu()
+		if rank == 1 then
+			Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
+			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,30,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,1034,20,-1,1)-- Dinh vang Du Long
+		elseif rank == 2 then
+			Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
+			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,6,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,1034,10,-1,1)-- Dinh vang Du Long
+		elseif rank == 3 then
+			Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
+			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,3,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,1034,4,-1,1)-- Dinh vang Du Long
+		elseif rank <= 10 then
+			Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
+			Player.AddItemLua(player,492,4,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,4,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,2,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+		elseif rank <= 20 then
+			Player.AddItemLua(player,492,2,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,2,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,7,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,2,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+		elseif rank <= 30 then
+			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+		elseif rank <= 100 then
+			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+		else
+			player:AddNotification(""..player:GetName().." không trong danh sách nhận thưởng")
+		end
 		return
 	end
 	if selectionID == 10002 then

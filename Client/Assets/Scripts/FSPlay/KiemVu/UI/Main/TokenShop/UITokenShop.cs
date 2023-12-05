@@ -240,6 +240,9 @@ namespace FSPlay.KiemVu.UI.Main
 #else
             this.UIToggle_OpenBuyStoreProductFrame.gameObject.SetActive(false);
 #endif
+
+            //always off
+            this.UIToggle_OpenBuyStoreProductFrame.gameObject.SetActive(false);
         }
 
         /// <summary>

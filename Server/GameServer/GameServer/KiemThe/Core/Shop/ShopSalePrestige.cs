@@ -252,10 +252,8 @@ namespace GameServer.KiemThe.Core.Shop
         /// </summary>
         /// <param name="client"></param>
         /// <returns></returns>
-        public static int GetRankOfPlayerFromDatabase(KPlayer client)
+        public static int GetRankOfPlayerFromDatabase(KPlayer client, int RankType = (int)RankMode.UyDanh)
         {
-            int RankType = (int)RankMode.UyDanh;
-
             int RoleID = client.RoleID;
 
             string CMDBUILD = RankType + ":" + RoleID;

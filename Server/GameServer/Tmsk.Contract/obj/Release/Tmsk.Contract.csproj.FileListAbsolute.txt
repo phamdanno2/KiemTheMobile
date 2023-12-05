@@ -44,3 +44,12 @@ F:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\Tmsk.Contract\obj\Release\
 F:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.csproj.CopyComplete
 F:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.dll
 F:\Dropbox\Dropbox\Client NEW\GameServer\KTGameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.pdb
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\bin\Release\Tmsk.Contract.dll
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\bin\Release\Tmsk.Contract.pdb
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\bin\Release\protobuf-net.dll
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\bin\Release\zlib.net.dll
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.csproj.AssemblyReference.cache
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.csproj.CoreCompileInputs.cache
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.csproj.CopyComplete
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.dll
+C:\KiemTheMobile\Server\GameServer\Tmsk.Contract\obj\Release\Tmsk.Contract.pdb

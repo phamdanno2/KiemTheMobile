@@ -869,7 +869,6 @@ GameObject:
   - component: {fileID: 2684574334042675243}
   - component: {fileID: 2684574334042675241}
   - component: {fileID: 2684574334042675237}
-  - component: {fileID: 5310592869565020340}
   m_Layer: 5
   m_Name: Button Open Activity List
   m_TagString: Untagged
@@ -995,76 +994,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIButton: {fileID: 2684574334042675241}
   HintDecoration: {fileID: 4800084853521055107}
---- !u!114 &5310592869565020340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2684574334042675247}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d6f3ec6245d9c8428041793a1f3afd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIImage: {fileID: 0}
-  _Duration: 3
-  _Scale: 1
-  _PixelPerfect: 1
-  _BundleDir: MainGame/TopFunctionButtons.unity3d
-  _AtlasName: TopFunctionButtons
-  _SpriteNames:
-  - Trum_00000
-  - Trum_00003
-  - Trum_00004
-  - Trum_00005
-  - Trum_00006
-  - Trum_00010
-  - Trum_00011
-  - Trum_00012
-  - Trum_00013
-  - Trum_00014
-  - Trum_00016
-  - Trum_00018
-  - Trum_00020
-  - Trum_00022
-  - Trum_00024
-  - Trum_00025
-  - Trum_00026
-  - Trum_00027
-  - Trum_00028
-  - Trum_00029
-  - Trum_00030
-  - Trum_00031
-  - Trum_00032
-  - Trum_00033
-  - Trum_00034
-  - Trum_00036
-  - Trum_00038
-  - Trum_00040
-  - Trum_00043
-  - Trum_00045
-  - Trum_00046
-  - Trum_00047
-  - Trum_00048
-  - Trum_00049
-  - Trum_00055
-  - Trum_00056
-  - Trum_00057
-  - Trum_00058
-  - Trum_00059
-  - Trum_00065
-  - Trum_00066
-  - Trum_00067
-  - Trum_00068
-  - Trum_00069
-  - Trum_00070
-  - Trum_00071
-  - Trum_00072
-  - Trum_00073
-  - Trum_00074
-  _AutoPlay: 0
-  _Loop: 0
 --- !u!1 &2684574334406226064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1145,6 @@ GameObject:
   - component: {fileID: 2684574334544891290}
   - component: {fileID: 2684574334544891288}
   - component: {fileID: 2684574334544891284}
-  - component: {fileID: 6312637932232606275}
   m_Layer: 5
   m_Name: Button Open Welfare First Recharge
   m_TagString: Untagged
@@ -1342,42 +1270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIButton: {fileID: 2684574334544891288}
   HintDecoration: {fileID: 4800084854912395742}
---- !u!114 &6312637932232606275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2684574334544891294}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d6f3ec6245d9c8428041793a1f3afd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIImage: {fileID: 0}
-  _Duration: 2
-  _Scale: 1
-  _PixelPerfect: 1
-  _BundleDir: MainGame/TopFunctionButtons.unity3d
-  _AtlasName: TopFunctionButtons
-  _SpriteNames:
-  - Comp 1_00000
-  - Comp 1_00002
-  - Comp 1_00004
-  - Comp 1_00006
-  - Comp 1_00008
-  - Comp 1_00010
-  - Comp 1_00012
-  - Comp 1_00014
-  - Comp 1_00016
-  - Comp 1_00018
-  - Comp 1_00020
-  - Comp 1_00022
-  - Comp 1_00024
-  - Comp 1_00026
-  - Comp 1_00028
-  _AutoPlay: 0
-  _Loop: 0
 --- !u!1 &2684574335003541805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,7 +1421,6 @@ GameObject:
   - component: {fileID: 2684574335526277966}
   - component: {fileID: 2684574335526277964}
   - component: {fileID: 2684574335526277960}
-  - component: {fileID: 7145441407214553077}
   m_Layer: 5
   m_Name: Button Open Seashell Circle
   m_TagString: Untagged
@@ -1656,50 +1547,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIButton: {fileID: 2684574335526277964}
   HintDecoration: {fileID: 4800084855059202627}
---- !u!114 &7145441407214553077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2684574335526277938}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d6f3ec6245d9c8428041793a1f3afd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIImage: {fileID: 0}
-  _Duration: 3
-  _Scale: 1
-  _PixelPerfect: 1
-  _BundleDir: MainGame/TopFunctionButtons.unity3d
-  _AtlasName: TopFunctionButtons
-  _SpriteNames:
-  - So0
-  - So1
-  - So2
-  - So3
-  - So4
-  - So5
-  - So6
-  - So7
-  - So8
-  - So9
-  - So10
-  - So11
-  - So12
-  - So13
-  - So14
-  - So15
-  - So16
-  - So17
-  - So18
-  - So19
-  - So20
-  - So21
-  - So22
-  _AutoPlay: 0
-  _Loop: 0
 --- !u!1 &4344251015517965297
 GameObject:
   m_ObjectHideFlags: 0

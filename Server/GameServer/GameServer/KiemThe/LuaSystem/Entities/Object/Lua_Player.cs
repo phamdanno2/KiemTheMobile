@@ -1,12 +1,15 @@
 ﻿using GameServer.KiemThe.CopySceneEvents;
 using GameServer.KiemThe.Core.Activity.PlayerPray;
 using GameServer.KiemThe.Core.Item;
+using GameServer.KiemThe.Core.Shop;
+using GameServer.KiemThe.Core.Task;
 using GameServer.KiemThe.Entities;
 using GameServer.KiemThe.Logic;
 using GameServer.KiemThe.LuaSystem.Entities.Math;
 using GameServer.KiemThe.Utilities;
 using GameServer.Logic;
 using MoonSharp.Interpreter;
+using UnityEngine;
 
 namespace GameServer.KiemThe.LuaSystem.Entities
 {
@@ -86,7 +89,10 @@ namespace GameServer.KiemThe.LuaSystem.Entities
         }
         #endregion
 
-
+        public int GetTaiPhu()
+        {
+            return ShopSalePrestige.GetRankOfPlayerFromDatabase(this.RefObject, (int) RankMode.TaiPhu);
+        }
         /// <summary>
         /// Trả về ID môn phái của người chơi
         /// </summary>

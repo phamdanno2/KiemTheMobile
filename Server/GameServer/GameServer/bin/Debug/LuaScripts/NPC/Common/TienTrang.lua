@@ -40,23 +40,18 @@ function TienTrang:OnSelection(scene, npc, player, selectionID, otherParams)
 		dialog:Show(npc, player)
 	elseif selectionID == 2 then
 		if player:GetLevel() >= 10 then
+			GUI.CloseDialog(player)
 			if player:GetFactionID()== 1 or player:GetFactionID()== 2 then
-				Player.OpenShop(npc, player,140)
-				GUI.CloseDialog(player)
+				Player.OpenShop(npc, player,140)				
 			elseif player:GetFactionID()== 3 or player:GetFactionID()== 4 or player:GetFactionID()== 11  then
 				Player.OpenShop(npc, player,141)
-				GUI.CloseDialog(player)
 			elseif player:GetFactionID()== 5 or player:GetFactionID()== 6 or player:GetFactionID()== 12 then
 				Player.OpenShop(npc, player,142)
-				GUI.CloseDialog(player)
 			elseif player:GetFactionID()== 7 or player:GetFactionID()== 8 then
 				Player.OpenShop(npc, player,143)
-				GUI.CloseDialog(player)
 			elseif player:GetFactionID()== 9 or player:GetFactionID()== 10 then
 				Player.OpenShop(npc, player,144)
-				GUI.CloseDialog(player)
 			end
-			GUI.CloseDialog(player)
 		else
 			dialog:AddText("Chưa đủ cấp !")
 			dialog:Show(npc, player)

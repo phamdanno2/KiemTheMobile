@@ -78,7 +78,7 @@ end
 function PlayerEvent:OnEnterScene(scene, player)
 	
 	-- ************************** --
-	--System.WriteToConsole("PlayerEvent:OnEnterScene => " .. player:GetName())
+	System.WriteToConsole("PlayerEvent:OnEnterScene => " .. player:GetName())
 	-- ************************** --
 	
 end
