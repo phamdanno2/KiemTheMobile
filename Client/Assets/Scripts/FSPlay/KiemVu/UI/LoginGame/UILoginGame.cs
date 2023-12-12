@@ -156,7 +156,9 @@ namespace FSPlay.KiemVu.UI.LoginGame
             this.RegisterCallBack = () => {
                 Super.ShowMessageBox("Đăng ký thành công", "Đăng ký tài khoản thành công.", true);
             };
-            this.RequestRegister(account, password, "unknow@email.com", "01234567891");
+
+            string vgin = MD5Helper.get_md5_string(string.Format("{0}KTM{1}", account, password));
+            this.RequestRegister(account, password, vgin, "0909123456");
         }
         #endregion
 
@@ -263,12 +265,14 @@ namespace FSPlay.KiemVu.UI.LoginGame
         private IEnumerator DoLogin(string UserName, string Password, int LoginType)
         {
             string url = MainGame.GameInfo.LoginAccountSDK;
+            string vgin = MD5Helper.get_md5_string(string.Format("{0}KTM{1}", UserName, Password));
 
             WWWForm wwwForm = new WWWForm();
 
             wwwForm.AddField("UserName", UserName);
             wwwForm.AddField("Password", Password);
-            wwwForm.AddField("LoginType", LoginType);
+            //wwwForm.AddField("LoginType", LoginType);
+            wwwForm.AddField("LoginType", vgin);
 
             UnityWebRequest www = UnityWebRequest.Post(url, wwwForm);
             yield return www.SendWebRequest();

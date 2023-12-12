@@ -44,13 +44,14 @@ namespace FSPlay.KiemVu.Logic.Settings
             _AutoConfig._QickItemConfig.QuickKeySlot2 = -1;
 
             _AutoConfig._AutoTrainConfig.AttackMode = 1;
-            _AutoConfig._AutoTrainConfig.IsAutoFireCamp = false;
+            _AutoConfig._AutoTrainConfig.IsAutoFireCamp = true;
             _AutoConfig._AutoTrainConfig.IsLowHpSelect = false;
             _AutoConfig._AutoTrainConfig.IsRadius = true;
             _AutoConfig._AutoTrainConfig.IsSkipBoss = false;
-            _AutoConfig._AutoTrainConfig.Raidus = 200;
+            _AutoConfig._AutoTrainConfig.Raidus = 800;
             _AutoConfig._AutoTrainConfig.SkillSelect = new List<int>();
             _AutoConfig._AutoTrainConfig.UseNewbieSkill = true;
+            _AutoConfig._AutoTrainConfig.AutoDrinkWine = true;
 
             // add vào 5 skill rỗng
             _AutoConfig._AutoTrainConfig.SkillSelect.Add(-1);
@@ -63,15 +64,16 @@ namespace FSPlay.KiemVu.Logic.Settings
             _AutoConfig._PickItemConfig.IsAutoPickUp = true;
             _AutoConfig._PickItemConfig.IsAutoSellItem = true;
             _AutoConfig._PickItemConfig.IsAutoSort = true;
-            _AutoConfig._PickItemConfig.IsOnlyPickCrytal = false;
-            _AutoConfig._PickItemConfig.IsOnlyPickEquip = false;
-            _AutoConfig._PickItemConfig.RadiusPick = 100;
+            _AutoConfig._PickItemConfig.IsOnlyPickCrytal = true;
+            _AutoConfig._PickItemConfig.IsOnlyPickEquip = true;
+            _AutoConfig._PickItemConfig.PickUpOtherItems = true;
+            _AutoConfig._PickItemConfig.RadiusPick = 800;
             _AutoConfig._PickItemConfig.StarPick = 1;
-            _AutoConfig._PickItemConfig.StarWillSell = 4;
+            _AutoConfig._PickItemConfig.StarWillSell = 1;
 
             _AutoConfig._AutoPKConfig.AutoNMPercent = 20;
             _AutoConfig._AutoPKConfig.HpPercent = 50;
-            _AutoConfig._AutoPKConfig.IsAutoEat = true;
+            _AutoConfig._AutoPKConfig.IsAutoEat = false;
             _AutoConfig._AutoPKConfig.IsAutoHp = true;
             _AutoConfig._AutoPKConfig.IsAutoPKAgain = true;
             _AutoConfig._AutoPKConfig.IsAutoReviceTeam = true;
@@ -80,9 +82,9 @@ namespace FSPlay.KiemVu.Logic.Settings
             _AutoConfig._AutoPKConfig.IsLowHpSelect = false;
             _AutoConfig._AutoPKConfig.MpPercent = 50;
             _AutoConfig._AutoPKConfig.SkillPKSelect = new List<int>();
-            _AutoConfig._AutoPKConfig.AutoAccect = false;
-            _AutoConfig._AutoPKConfig.AutoInviter = false;
-            _AutoConfig._AutoPKConfig.DisplayEnemyUI = false;
+            _AutoConfig._AutoPKConfig.AutoAccect = true;
+            _AutoConfig._AutoPKConfig.AutoInviter = true;
+            _AutoConfig._AutoPKConfig.DisplayEnemyUI = true;
 
             // add vào 5 skill rỗng
             _AutoConfig._AutoPKConfig.SkillPKSelect.Add(-1);

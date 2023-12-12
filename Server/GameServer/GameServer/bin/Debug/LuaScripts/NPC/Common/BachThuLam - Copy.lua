@@ -23,74 +23,51 @@ local secretID = {
 	[1] = {
 		ItemID1 = 3280,			-- Thiếu Lâm Phái
 		ItemID2 = 3281,
-		ItemID3 = 3256,		---Mật Tịch Trung
-		ItemID4 = 3257,		---Mật Tịch Trung	
+		
 	},
 	[2] = {
 		ItemID1 = 3282,			-- Thiên Vương Bang
 		ItemID2 = 3283,
-		ItemID3 = 3258,		---Mật Tịch Trung
-		ItemID4 = 3259,		---Mật Tịch Trung
 	},
 	[3] = {
 		ItemID1 = 3284,			-- Đường Môn
 		ItemID2 = 3285,
-		ItemID3 = 3261,		---Mật Tịch Trung
-		ItemID4 = 3260,		---Mật Tịch Trung
 	},
 	[4] = {
 		ItemID1 = 3286,			-- Ngũ Độc Giáo
 		ItemID2 = 3287,
-		ItemID3 = 3262,		---Mật Tịch Trung
-		ItemID4 = 3263,		---Mật Tịch Trung
 	},
 	[5] = {
 		ItemID1 = 3288,			-- Nga My Phái
 		ItemID2 = 3289,
-		ItemID3 = 3256,		---Mật Tịch Trung
-		ItemID4 = 3264,		---Mật Tịch Trung
 	},
 	[6] = {
 		ItemID1 = 3290,			-- Thúy Yên Môn
 		ItemID2 = 3291,
-		ItemID3 = 3256,		---Mật Tịch Trung
-		ItemID4 = 3264,		---Mật Tịch Trung
 	},
 	[7] = {
 		ItemID1 = 3292,			-- Cái Bang Phái
 		ItemID2 = 3293,
-		ItemID3 = 3268,		---Mật Tịch Trung
-		ItemID4 = 3269,		---Mật Tịch Trung
 	},
 	[8] = {
 		ItemID1 = 3294,			-- Thiên Nhẫn Giáo
 		ItemID2 = 3295,
-		ItemID3 = 3270,		---Mật Tịch Trung
-		ItemID4 = 3271,		---Mật Tịch Trung
 	},
 	[9] = {
 		ItemID1 = 3296,			-- Võ Đang Phái
 		ItemID2 = 3297,
-		ItemID3 = 3272,		---Mật Tịch Trung
-		ItemID4 = 3273,		---Mật Tịch Trung
 	},
 	[10] = {
 		ItemID1 = 3298,			-- Côn Lôn Phái
 		ItemID2 = 3299,
-		ItemID3 = 3274,		---Mật Tịch Trung
-		ItemID4 = 3275,		---Mật Tịch Trung
 	},
 	[11] = {
 		ItemID1 = 3300,			-- Minh Giáo
 		ItemID2 = 3301,
-		ItemID3 = 3276,		---Mật Tịch Trung
-		ItemID4 = 3277,		---Mật Tịch Trung
 	},
 	[12] = {
 		ItemID1 = 3302,			-- Đoàn Thị Phái
 		ItemID2 = 3303,
-		ItemID3 = 3278,		---Mật Tịch Trung
-		ItemID4 = 3279,		---Mật Tịch Trung
 	},
 	
 }
@@ -377,38 +354,33 @@ local Record1 = 101119
 local Record2 = 101120
 local Record3 = 101121
 local Record4 = 101122
-local Record5 = 101123
 function NPC_Test:OnOpen(scene, npc, player, otherParams)
 
 	-- ************************** --
 	local dialog = GUI.CreateNPCDialog()
-	dialog:AddText(npc:GetName()..": xin chào "..player:GetName().." !")	
-	
-	if player:GetFactionID()==0 then
-		dialog:AddSelection(1,"Gia nhập Môn Phái.")
-	else
-		dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
-
-		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
-		dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
-		dialog:AddSelection(100030, "GiftCode")
-
-		--dialog:AddSelection(30000, "Ta muốn đổi tên")
-		dialog:AddSelection(30001, "Xóa vật phẩm")
-		dialog:AddSelection(30002, "Ghép vật phẩm")
-	end
-	
-	if player:IsGM() == 1 then
-		dialog:AddSelection(100031, "Lưu danh sach top")
-	end
-	
-	dialog:AddSelection(77777, "Kết thúc đối thoại")
-	
-	--local record2 = Player.GetValueForeverRecore(player, Record2)
+	local record2 = Player.GetValueForeverRecore(player, Record2)
+	dialog:AddText(npc:GetName()..": xin chào "..player:GetName().." !")
+	-- if player:GetFactionID()==0 then
+	-- dialog:AddSelection(1,"Gia nhập Môn Phái.")
+	-- end
+	dialog:AddSelection(30000, "Ta muốn đổi tên")
+	dialog:AddSelection(30001, "Xóa vật phẩm")
+	dialog:AddSelection(30002, "Ghép vật phẩm")
 	-- dialog:AddSelection(10012, "Nhận cấp 89")
 	-- dialog:AddSelection(10024, "Nhận cấp 99")
 	-- dialog:AddSelection(10000, "Nhận cấp 109")
 	
+	dialog:AddSelection(11111, "Nhận cấp 119")
+	dialog:AddSelection(10002, "Nhận <color=red> Mật Tịch (cao) Theo Phái </color>")
+	dialog:AddSelection(10001, "Nhận <color=red>1000 vạn (bạc,đồng)</color>")
+	dialog:AddSelection(10016, "Tiền vàng Du Long")
+	dialog:AddSelection(10003, "Nhận <color=red>Phi Phong</color>")
+	dialog:AddSelection(10015, "Nhận thần thú")
+    dialog:AddSelection(10005, "Nhận <color=red>Nhận 1000 uy danh </color>")
+	dialog:AddSelection(10014, "500 vỏ sò")
+	dialog:AddSelection(10025, "Nhận Full Danh Vọng")
+	dialog:AddSelection(100030, "GiftCode")
+	dialog:AddSelection(100034, "Nhận huyền tinh")
 	-- dialog:AddSelection(10023, "Nhận <color=red>Nhận set đồ theo hệ 89 +12</color>")
 	-- dialog:AddSelection(10025, "Nhận <color=red>Nhận set đồ theo hệ 89 +8</color>")	
 	-- dialog:AddSelection(10004, "Nhận <color=red>Nhận set đồ theo hệ 119 +14</color>")
@@ -442,39 +414,12 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 	-- ************************** --
 	local dialog = GUI.CreateNPCDialog()
 	local TotalPrestige = player:GetPrestige()
-	if selectionID == 77777 then
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 100031 then
-		GUI.CloseDialog(player)
-		player:ExportTop()
-		return
-	end
 	if selectionID == 30000 then
 		-- Gọi hàm đổi tên
 		GUI.OpenChangeName(player)
 		
 		-- Đóng khung
 		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 39900 then
-		dialog:AddText("<color=red>Nhận hỗ trợ Alpha Test Kiếm Thế Mobile</color>")
-		dialog:AddSelection(979797, "Nhận <color=green>cấp 119</color>")
-		dialog:AddSelection(989898, "Nhận <color=green>mật tịch theo phái</color>")
-		dialog:AddSelection(10001, "Nhận <color=green>tiền tệ các loại</color>")
-		dialog:AddSelection(10015, "Nhận <color=green>thần thú</color>")
-		dialog:AddSelection(10016, "Nhận <color=green>tiền vàng Du Long</color>")
-		dialog:AddSelection(10003, "Nhận <color=green>phi phong</color>")
-		dialog:AddSelection(10005, "Nhận <color=red>1000 uy danh</color>")
-		dialog:AddSelection(10014, "Nhận <color=red>500 vỏ sò</color>")
-		dialog:AddSelection(999999, "Nhận <color=blue>huyền tinh</color>")
-		dialog:AddSelection(10025, "Nhận <color=blue>danh vọng</color>")	
-	
-		--dialog:AddSelection(999998, "Nhận Kỹ Năng Sống (Cấp 60)")		
-		--dialog:AddSelection(22222, "Nhận Max Kinh Nghiệm Mật Tịch")
-		dialog:Show(npc, player)
 		return
 	end
 	-- ************************** --
@@ -509,10 +454,11 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		return
 	end
 	if selectionID == 10005 then
-		GUI.CloseDialog(player)
-
+	
 		player:SetPrestige(1000)
-		player:AddNotification(""..player:GetName().."Bạn đã nhận <color=red>1000 uy danh</color> thành công")		
+		dialog:AddText(""..npc:GetName().."Bạn đã nhận </color=red>1000 uy danh </color>thành công")
+		
+		dialog:Show(npc, player)
 		return
 	end
 	
@@ -574,7 +520,8 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 	end
 	if selectionID == 10013 then
 		Player.OpenShop(npc, player, 226)
-		GUI.CloseDialog(player)	
+		GUI.CloseDialog(player)
+		
 	end
 	if selectionID == 10025 then
 		Player.AddRetupeValue(player,504,10000)   --DV Chúc Phúc
@@ -630,95 +577,87 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		return
 	end
 	if selectionID == 10014 then
-		GUI.CloseDialog(player)
+		--player:SetPrayTimes(100)
+		--dialog:AddText("nhận 100 lượt quay chúc chúc phúc thành công !")
+		--dialog:Show(npc, player)
 		Player.AddItemLua(player,746,500,-1,1)
-		--Player.AddItemLua(player,337,50,-1,1)
-		--Player.AddItemLua(player,796,500,-1,1)
-		--Player.AddItemLua(player,3344,1,-1,1)		
-		
-		-- Player.AddItemLua(player,3345,1,-1,1)
-		-- Player.AddItemLua(player,3346,1,-1,1)
-		-- Player.AddItemLua(player,3347,1,-1,1)
-		-- Player.AddItemLua(player,3348,1,-1,1)
-		-- Player.AddItemLua(player,337,50,-1,1)
-		-- Player.AddItemLua(player,337,50,-1,1)
-		
-		player:AddNotification("Nhận 500 Vỏ Sò Vàng Thành Công")
+		dialog:AddText(""..npc:GetName().."nhận 500 vỏ sò !")
+		dialog:Show(npc, player)
 		return
 	end	
-	if selectionID == 999999 then
+	if selectionID == 100034 then
 		dialog:AddText(""..npc:GetName().." vui lòng chọn loại bạn cần")
-		dialog:AddSelection(9999991, "Nhận huyền tinh cấp 1")
-		dialog:AddSelection(9999992, "Nhận huyền tinh cấp 2")
-		dialog:AddSelection(9999993, "Nhận huyền tinh cấp 3")
-		dialog:AddSelection(9999994, "Nhận huyền tinh cấp 4")
-		dialog:AddSelection(9999995, "Nhận huyền tinh cấp 5")
-		dialog:AddSelection(9999996, "Nhận huyền tinh cấp 6")
-		dialog:AddSelection(9999997, "Nhận huyền tinh cấp 7")
-		dialog:AddSelection(9999998, "Nhận huyền tinh cấp 8")
-		dialog:AddSelection(9999999, "Nhận huyền tinh cấp 9")
-		dialog:AddSelection(99999910, "Nhận huyền tinh cấp 10")
-		dialog:AddSelection(99999911, "Nhận huyền tinh cấp 11")
-		dialog:AddSelection(99999912, "Nhận huyền tinh cấp 12")
+		dialog:AddSelection(1000341, "Nhận huyền tinh cấp 1")
+		dialog:AddSelection(1000342, "Nhận huyền tinh cấp 2")
+		dialog:AddSelection(1000343, "Nhận huyền tinh cấp 3")
+		dialog:AddSelection(1000344, "Nhận huyền tinh cấp 4")
+		dialog:AddSelection(1000345, "Nhận huyền tinh cấp 5")
+		dialog:AddSelection(1000346, "Nhận huyền tinh cấp 6")
+		dialog:AddSelection(1000347, "Nhận huyền tinh cấp 7")
+		dialog:AddSelection(1000348, "Nhận huyền tinh cấp 8")
+		dialog:AddSelection(1000349, "Nhận huyền tinh cấp 9")
+		dialog:AddSelection(10003410, "Nhận huyền tinh cấp 10")
+		dialog:AddSelection(10003411, "Nhận huyền tinh cấp 11")
+		dialog:AddSelection(10003412, "Nhận huyền tinh cấp 12")
 		dialog:Show(npc, player)
 		return
 	end
-	if selectionID == 9999991 then
+	if selectionID == 1000341 then
 		Player.AddItemLua(player,385,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999992 then
+	if selectionID == 1000342 then
 		Player.AddItemLua(player,386,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999993 then
+	if selectionID == 1000343 then
 		Player.AddItemLua(player,387,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999994 then
+	if selectionID == 1000344 then
 		Player.AddItemLua(player,388,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999995 then
+	if selectionID == 1000345 then
 		Player.AddItemLua(player,389,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999996 then
+	if selectionID == 1000346 then
 		Player.AddItemLua(player,390,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999997 then
+	if selectionID == 1000347 then
 		Player.AddItemLua(player,391,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999998 then
+	if selectionID == 1000348 then
 		Player.AddItemLua(player,392,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 9999999 then
+	if selectionID == 1000349 then
 		Player.AddItemLua(player,393,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 99999910 then
+	if selectionID == 10003410 then
 		Player.AddItemLua(player,394,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 99999911 then
+	if selectionID == 10003411 then
 		Player.AddItemLua(player,395,10,-1,1)
 		GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 99999912 then
+	if selectionID == 10003412 then
 		Player.AddItemLua(player,396,10,-1,1)
 		GUI.CloseDialog(player)
 		return
@@ -732,9 +671,9 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		Player.AddItemLua(player,3501,1,-1,1)--Tuyet Hon--Okie
 		Player.AddItemLua(player,3502,1,-1,1)--Su Gia Truy Phong--Okie
 		Player.AddItemLua(player,3508,1,-1,1)--Hoa Ky Lan--Okie
-		
-		GUI.CloseDialog(player)
-		player:AddNotification(""..player:GetName().."Bạn đã nhận <color=red>thần thú</color> thành công")	
+		Player.AddItemLua(player,3523,1,-1,1)--Linh Vuong Giap Vang
+		dialog:AddText(""..npc:GetName().."Bạn đã nhận </color=red>thần thú </color>thành công")
+		dialog:Show(npc, player)
 		return
 	end
 	if selectionID == 100020 then
@@ -748,9 +687,8 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		Player.AddItemLua(player,1033,10,-1,1)
 		Player.AddItemLua(player,1034,10,-1,1)		
 		Player.AddItemLua(player,1074,10000,-1,1)
-		
-		GUI.CloseDialog(player)
-		player:AddNotification(""..player:GetName().." nhận Tiền Vàng Du Long thành công")
+		dialog:AddText(""..npc:GetName().." nhận Tiền Vàng Du Long thành công")
+		dialog:Show(npc, player)
 		return
 	end
 	if selectionID == 100030 then
@@ -758,75 +696,52 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		GUI.OpenUI(player, "UIGiftCode")
 		return
 	end
-	if selectionID == 989898 then
-		GUI.CloseDialog(player)
-		local factions = player:GetFactionID()
-		local series = Player.GetSeries(player)
-		if factions == 1 then
-			Player.AddItemLua(player,secretID[1].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[1].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[1].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[1].ItemID4,1,series,1)
-		elseif factions == 2 then
-			Player.AddItemLua(player,secretID[2].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[2].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[2].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[2].ItemID4,1,series,1)
-		elseif factions == 3 then
-			Player.AddItemLua(player,secretID[3].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[3].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[3].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[3].ItemID4,1,series,1)
-		elseif factions == 4 then
-			Player.AddItemLua(player,secretID[4].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[4].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[4].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[4].ItemID4,1,series,1)
-		elseif factions == 5 then
-			Player.AddItemLua(player,secretID[5].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[5].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[5].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[5].ItemID4,1,series,1)
-		elseif factions == 6 then
-			Player.AddItemLua(player,secretID[6].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[6].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[6].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[6].ItemID4,1,series,1)
-		elseif factions == 7 then
-			Player.AddItemLua(player,secretID[7].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[7].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[7].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[7].ItemID4,1,series,1)
-		elseif factions == 8 then
-			Player.AddItemLua(player,secretID[8].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[8].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[8].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[8].ItemID4,1,series,1)
-		elseif factions == 9 then
-			Player.AddItemLua(player,secretID[9].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[9].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[9].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[9].ItemID4,1,series,1)
-		elseif factions == 10 then
-			Player.AddItemLua(player,secretID[10].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[10].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[10].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[10].ItemID4,1,series,1)
-		elseif factions == 11 then
-			Player.AddItemLua(player,secretID[11].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[11].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[11].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[11].ItemID4,1,series,1)
-		else--if player:GetFactionID() == 12 then
-			Player.AddItemLua(player,secretID[12].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[12].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[12].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[12].ItemID4,1,series,1)
+	if selectionID == 10002 then
+		if player:GetFactionID()==0 then
+			dialog:AddText(""..npc:GetName()..": Bạn chưa gia nhập phái ,hãy gia nhập <color=red> môn phái</color> rồi quay lại <color=red> nhận Nhận Mật Tịch (cao).</color>")
+			dialog:Show(npc, player)
+		else
+			if player:GetFactionID() == 1 then
+				Player:AddItemLua(player,secretID[1].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[1].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 2 then
+				Player:AddItemLua(player,secretID[2].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[2].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 3 then
+				Player:AddItemLua(player,secretID[3].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[3].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 4 then
+				Player:AddItemLua(player,secretID[4].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[4].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 5 then
+				Player:AddItemLua(player,secretID[5].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[5].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 6 then
+				Player:AddItemLua(player,secretID[6].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[6].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 7 then
+				Player:AddItemLua(player,secretID[7].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[7].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 8 then
+				Player:AddItemLua(player,secretID[8].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[8].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 9 then
+				Player:AddItemLua(player,secretID[9].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[9].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 10 then
+				Player:AddItemLua(player,secretID[10].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[10].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 11 then
+				Player:AddItemLua(player,secretID[11].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[11].ItemID2,1,Player.GetSeries(player),1)
+			elseif player:GetFactionID() == 12 then
+				Player:AddItemLua(player,secretID[12].ItemID1,1,Player.GetSeries(player),1)
+				Player:AddItemLua(player,secretID[12].ItemID2,1,Player.GetSeries(player),1)
+			end
+			dialog:AddText(""..npc:GetName().."Bạn đã nhận </color=red>Mật tịch (cao)</color>thành công")
+			dialog:Show(npc, player)
 		end
-		player:AddNotification("Chúc mừng "..player:GetName().."  nhận hỗ trợ mật tịch thành công")
-		return
-	end
-	if selectionID == 10001 then
+	elseif selectionID == 10001 then
 		local str = "";
 		if Player.CheckMoney(player,0) < 10000000 then
 			Player.AddMoney(player,10000000,0)
@@ -846,50 +761,19 @@ function NPC_Test:OnSelection(scene, npc, player, selectionID, otherParams)
 		end
 		dialog:AddText("Ngươi đã nhận "..str.." thành công")
 		dialog:Show(npc, player)
-		return
-	end
-	if selectionID == 979797 then
-		player:SetLevel(119)
-
-		GUI.CloseDialog(player)
-		player:AddNotification("Chúc mừng "..player:GetName().."  nhận hỗ trợ cấp thành công")
-		return
-	end
-	if selectionID == 10003 then
-		GUI.CloseDialog(player)
-		local series = Player.GetSeries(player)
-		if series == 1 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3628,1,-1,1)--vo song vuong gia kim nam
-			else
-				Player.AddItemLua(player,3638,1,-1,1)--vo song vuong gia kim nu
-			end
-		elseif series == 2 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3648,1,-1,1)--vo song vuong gia moc nam
-			else
-				Player.AddItemLua(player,3658,1,-1,1)--vo song vuong gia moc nu
-			end
-		elseif series == 3 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3668,1,-1,1)--vo song vuong gia thuy nam
-			else
-				Player.AddItemLua(player,3678,1,-1,1)--vo song vuong gia thuy nu
-			end
-		elseif series == 4 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3688,1,-1,1)--vo song vuong gia hoa nam
-			else
-				Player.AddItemLua(player,3698,1,-1,1)--vo song vuong gia hoa nu
-			end
-		else
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3708,1,-1,1)--vo song vuong gia hoa nam
-			else
-				Player.AddItemLua(player,3718,1,-1,1)--vo song vuong gia hoa nu
-			end
-		end
-		return
+	elseif selectionID == 10000 then
+			player:SetLevel(109)
+			dialog:AddText("Thiết lập cấp độ 109 thành công")
+			dialog:Show(npc, player)
+	elseif selectionID == 11111 then
+			player:SetLevel(119)
+			dialog:AddText("Thiết lập cấp độ 109 thành công")
+			dialog:Show(npc, player)
+	elseif selectionID == 10003 then
+		Player:AddItemLua(player,3619,1,-1,1)--Sieu Pham Kim-Nam
+		Player:AddItemLua(player,3629,1,-1,1)--Sieu Pham Kim-Nu
+		dialog:AddText("Bạn dã nhận được Phi Phong")
+		dialog:Show(npc, player)
 	elseif selectionID == 10004 then--NPC_Test:SetBelonging(npc, player, ItemID,Number,Series,LockStatus) set do +14
 			if player:GetFactionID()==0 then
 				dialog:AddText(""..npc:GetName()..": Bạn chưa gia nhập phái ,hãy gia nhập <color=red> môn phái</color> rồi quay lại <color=red> nhận Nhận Mật Tịch (cao).</color>")

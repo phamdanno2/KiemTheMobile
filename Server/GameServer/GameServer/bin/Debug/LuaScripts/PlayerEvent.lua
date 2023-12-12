@@ -9,11 +9,21 @@ local PlayerEvent = Scripts[999999]
 --		scene: Scene - Bản đồ hiện tại
 --		player: Player - NPC tương ứng
 -- ****************************************************** --
-function PlayerEvent:OnLogin(scene, player)
+local Record1 = 101119
+local Record2 = 101120
+local Record3 = 101121
+local Record4 = 101122
+function PlayerEvent:OnLogin(scene, player, first)
 	
 	-- ************************** --
-	System.WriteToConsole("PlayerEvent:OnLogin => " .. player:GetName())
+	--System.WriteToConsole("PlayerEvent:OnLogin => " .. player:GetName())
 	-- ************************** --
+
+	local record1 = Player.GetValueForeverRecore(player, Record1)
+	if record1 ~= 1 then
+		Player.AddItemLua(player,781,1,-1,1)
+		Player.SetValueOfForeverRecore(player, Record1, 1)
+	end
 	
 end
 

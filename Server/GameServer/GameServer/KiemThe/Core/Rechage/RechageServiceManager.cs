@@ -272,7 +272,16 @@ namespace GameServer.KiemThe.Core.Rechage
                         if (_KTCoinResponse.Status < 0)
                         {
                             KT_TCPHandler.CloseDialog(client);
-                            PlayerManager.ShowMessageBox(client, "Thông báo", _KTCoinResponse.Msg);
+                            //PlayerManager.ShowMessageBox(client, "Thông báo", _KTCoinResponse.Msg);
+                            if (_KTCoinResponse.Status == -1)
+                            {
+                                byte[] cmdData = new ASCIIEncoding().GetBytes(string.Format("{0}:{1}", _KTCoinResponse.Status, client.strUserID.Split('_')[1]));
+                                client.SendPacket((int)TCPGameServerCmds.CMD_KT_GOI_COIN, cmdData);
+                            }
+                            else
+                            {
+                                PlayerManager.ShowMessageBox(client, "Thông báo", _KTCoinResponse.Msg);
+                            } 
                         }
                         else
                         {
@@ -311,6 +320,102 @@ namespace GameServer.KiemThe.Core.Rechage
                 Action<int> ActionWork = (number) => DoExChange(client, npc, number);
 
                 PlayerManager.ShowInputNumberBox(client, "Nhập số KTCOIN muốn đổi :", ActionWork);
+            }
+        }
+
+        /// <summary>
+        /// API client gửi packet yêu cầu đổi KTCOIN -> KNB
+        /// </summary>
+        /// <param name="client"></param>
+        /// <param name="PackageName"></param>
+        public static void ApiGoiKTCoin(KPlayer client, string PackageName)
+        {
+            if (GameServer.Logic.GameManager.IsKuaFuServer)
+            {
+                PlayerManager.ShowMessageBox(client, "Thông báo", "Máy chủ Liên Server không thể thao tác này.");
+                return;
+            }
+            long Now = TimeUtil.NOW();
+            if (Now - client.LastRequestKTCoin > 10000)
+            {
+                // Set số lần gần đây nhất mới thao tác
+                client.LastRequestKTCoin = Now;
+
+                if (PackageName != "")
+                {
+                    TokenShopStoreProduct _Find = ShopManager.GetProductByID(PackageName);
+                    if (_Find != null)
+                    {
+                        int KTCoinNeed = _Find.Token;
+                        KTCoinRequest _Request = new KTCoinRequest();
+                        _Request.RoleID = client.RoleID;
+                        _Request.RoleName = client.RoleName;
+                        _Request.SeverID = client.ZoneID;
+                        _Request.Type = 2;
+                        _Request.UserID = Int32.Parse(client.strUserID.Split('_')[0]);
+                        _Request.Value = KTCoinNeed;
+                        byte[] SendDATA = DataHelper.ObjectToBytes<KTCoinRequest>(_Request);
+                        WebClient wwc = new WebClient();
+                        try
+                        {
+                            byte[] VL = wwc.UploadData(GameManager.KTCoinService, SendDATA);
+
+                            KTCoinResponse _KTCoinResponse = DataHelper.BytesToObject<KTCoinResponse>(VL, 0, VL.Length);
+
+                            if (_KTCoinResponse.Status < 0)
+                            {
+                                if (_KTCoinResponse.Status == -1)
+                                {
+                                    //string strcmd = string.Format("{0}:{1}", _KTCoinResponse.Status, 1);
+                                    //client.SendPacket((int)TCPGameServerCmds.CMD_KT_GOI_COIN, strcmd);
+                                    byte[] cmdData = new ASCIIEncoding().GetBytes(string.Format("{0}:{1}", _KTCoinResponse.Status, client.strUserID.Split('_')[1]));
+                                    client.SendPacket((int)TCPGameServerCmds.CMD_KT_GOI_COIN, cmdData);
+                                }
+                                else
+                                {
+                                    PlayerManager.ShowMessageBox(client, "Thông báo", _KTCoinResponse.Msg);
+                                }
+
+                            }
+                            else
+                            {
+                                long TimeBuy = TimeUtil.NOW();
+
+                                string TransID = RechageServiceManager.MakeMD5Hash(TimeBuy + PackageName + _Request.RoleID);
+
+                                string SingCreate = RechageServiceManager.MakeMD5Hash(PackageName + _Request.RoleID + TimeBuy + TransID);
+
+                                RechageModel _RechageModel = new RechageModel();
+                                _RechageModel.ActiveCardMonth = false;
+                                _RechageModel.PackageName = PackageName;
+                                _RechageModel.RoleID = _Request.RoleID;
+                                _RechageModel.Sing = SingCreate;
+                                _RechageModel.TimeBuy = TimeBuy + "";
+                                _RechageModel.TransID = TransID;
+
+                                LogManager.WriteLog(LogTypes.Rechage, "[PackageName] Add yêu cầu mua gói :" + PackageName + "|RoleId :" + _Request.RoleID);
+                                RechageServiceManager.ReachageData.Add(_RechageModel);
+                                PlayerManager.ShowNotification(client, "Mua gói :" + KTGlobal.CreateStringByColor(_Find.Name, ColorType.Green) + " thành công");
+
+                                //string strcmd = string.Format("{0}:{1}", _KTCoinResponse.Status, 0);
+                                //client.SendPacket((int)TCPGameServerCmds.CMD_KT_GOI_COIN, strcmd);
+                                byte[] cmdData = new ASCIIEncoding().GetBytes(string.Format("{0}:{1}", _KTCoinResponse.Status, "OK"));
+                                client.SendPacket((int)TCPGameServerCmds.CMD_KT_GOI_COIN, cmdData);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            PlayerManager.ShowNotification(client, "Có lỗi khi thực hiện mua gói\nVui lòng liên hệ ADM để báo lỗi");
+                            LogManager.WriteLog(LogTypes.Error, "ACTIVE GIFTCODE BUG :" + ex.ToString());
+                        }
+                    }
+                }
+            }
+            else
+            {
+                long DIV = Now - client.LastRequestKTCoin;
+                float TimeLess = (10000 - DIV) / 1000;
+                PlayerManager.ShowMessageBox(client, "Thông báo", "Thao tác quá nhanh chờ: " + TimeLess + " giây");
             }
         }
 

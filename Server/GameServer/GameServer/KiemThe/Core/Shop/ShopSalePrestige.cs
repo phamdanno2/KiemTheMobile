@@ -272,5 +272,13 @@ namespace GameServer.KiemThe.Core.Shop
 
             return RANKRETURN;
         }
+        public static void ExportRank(KPlayer client, int RankType = (int)RankMode.UyDanh)
+        {
+            int RoleID = client.RoleID;
+
+            string CMDBUILD = RoleID + ":" + RankType +":-1";
+
+            Global.ExecuteDBCmd((int)TCPGameServerCmds.CMD_KT_QUERY_PLAYERRANKING, CMDBUILD, GameManager.ServerId);
+        }
     }
 }

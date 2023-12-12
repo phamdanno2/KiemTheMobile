@@ -754,7 +754,7 @@ namespace GameServer.KiemThe.Logic
                 //}
 
                 //Kích hoạt sự kiện đăng nhập t
-                GlobalEventSource.getInstance().fireEvent(new PlayerInitGameEventObject(gameClient));
+                GlobalEventSource.getInstance().fireEvent(new PlayerInitGameEventObject(gameClient, isFirstLogin));
 
                 socket.session.SetSocketTime(3);
 

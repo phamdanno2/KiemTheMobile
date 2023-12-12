@@ -36,45 +36,40 @@ function TuiTanThu:OnUse(scene, item, player, otherParams)
 
 	-- ************************** --
 	local dialog = GUI.CreateItemDialog()
-	dialog:AddText("Xin chào "..player:GetName().." !")
+	local record2 = Player.GetValueForeverRecore(player, Record2)
+	local record3 = Player.GetValueForeverRecore(player, Record3)
+	local record4 = Player.GetValueForeverRecore(player, Record4)
+	local record5 = Player.GetValueForeverRecore(player, Record5)
 
+	dialog:AddText("Xin chào "..player:GetName().." !") ---"..player:GetName().."
+
+	if record2 ~= 1 then
+		dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
+	end
+	if record3 ~= 1 then
+		dialog:AddSelection(39902, "Vật Phẩm Tân Thủ")
+	end
+	dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
+	if record4 ~= 1 then
+		dialog:AddSelection(100033, "Nhận thưởng Top Tài Phú")
+	end	
+	dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
+	if record5 ~= 1 then
+		dialog:AddSelection(100035, "Nhận thưởng Top Cấp Độ")
+	end	
+	if player:IsGM() == 1 then
+		dialog:AddSelection(100031, "Lwu danh sach top")
+	end
 	if player:GetFactionID()==0 then
 		dialog:AddSelection(1,"Gia nhập Môn Phái.")
-	else
-		dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
-		
-		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
-		dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
-		dialog:AddSelection(100030, "GiftCode")
-		
-		--dialog:AddSelection(30000, "Ta muốn đổi tên")
-		dialog:AddSelection(30001, "Xóa vật phẩm")
-		dialog:AddSelection(30002, "Ghép vật phẩm")
-
-	--local record2 = Player.GetValueForeverRecore(player, Record2)
-	--local record3 = Player.GetValueForeverRecore(player, Record3)
-	--local record4 = Player.GetValueForeverRecore(player, Record4)
-	--local record5 = Player.GetValueForeverRecore(player, Record5)
-
-	--if record2 ~= 1 then
-	--	dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
-	--end
-	--if record3 ~= 1 then
-	--	dialog:AddSelection(39902, "Vật Phẩm Tân Thủ")
-	--end
-	--if record4 ~= 1 then
-	--	dialog:AddSelection(100033, "Nhận thưởng Top Tài Phú")
-	--end	
-	--if record5 ~= 1 then
-	--	dialog:AddSelection(100035, "Nhận thưởng Top Cấp Độ")
-	--end	
 	end	
 	
-	if player:IsGM() == 1 then
-		dialog:AddSelection(100031, "Lưu danh sach top")
-	end
-	dialog:AddSelection(77777, "Kết thúc đối thoại")
-	
+	-- dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
+	dialog:AddSelection(100030, "  GiftCode  ")
+	-- dialog:AddSelection(30000, "Ta muốn đổi tên")
+	dialog:AddSelection(30001, "Xóa vật phẩm")
+	dialog:AddSelection(30002, "Ghép vật phẩm")
+	dialog:AddSelection(77777, "Ta sẽ quay lại sau !!!")
 
 --	dialog:AddSelection(10011, "Dịch chuyển đến Hoàng Thành liên Server")
 	
@@ -1512,15 +1507,6 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 	-- ************************** --
 	local dialog = GUI.CreateItemDialog()
 	local TotalPrestige = player:GetPrestige()
-	if selectionID == 77777 then
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 100031 then
-		GUI.CloseDialog(player)
-		player:ExportTop()
-		return
-	end
 	if selectionID == 30000 then
 		-- Gọi hàm đổi tên
 		GUI.OpenChangeName(player)
@@ -1529,333 +1515,32 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		GUI.CloseDialog(player)
 		return
 	end
+	if selectionID == 77777 then
+		-- Đóng khung
+		GUI.CloseDialog(player)
+		return
+	end
 	-- ************************** --
 	if selectionID == 39900 then
-		dialog:AddText("<color=red>Nhận hỗ trợ Alpha Test Kiếm Thế Mobile</color>")
-		dialog:AddSelection(979797, "Nhận <color=green>cấp 119</color>")
-		dialog:AddSelection(989898, "Nhận <color=green>mật tịch theo phái</color>")
-		dialog:AddSelection(10001, "Nhận <color=green>tiền tệ các loại</color>")
-		dialog:AddSelection(10015, "Nhận <color=green>thần thú</color>")
-		dialog:AddSelection(10016, "Nhận <color=green>tiền vàng Du Long</color>")
-		dialog:AddSelection(10003, "Nhận <color=green>phi phong</color>")
-		dialog:AddSelection(10005, "Nhận <color=red>1000 uy danh</color>")
-		dialog:AddSelection(10014, "Nhận <color=red>500 vỏ sò</color>")
-		dialog:AddSelection(999999, "Nhận <color=blue>huyền tinh</color>")
-		dialog:AddSelection(10025, "Nhận <color=blue>danh vọng</color>")
+	local dialog = GUI.CreateItemDialog()
+		dialog:AddText("<color=green>Hỗ Trợ Tân Thủ KT 2009 Mobile</color>")
+		dialog:AddSelection(979797, "Hỗ Trợ Test Lộ Trình 89")
+		dialog:AddSelection(989898, "Hỗ Trợ Test Lộ Trình 100")
+		dialog:AddSelection(999999, "Hỗ Trợ Test Lộ Trình 130")
+		dialog:AddSelection(999998, "Nhận Kỹ Năng Sống (Cấp 60)")
+		dialog:AddSelection(10025, "Nhận Full Danh Vọng</color>")	
+		dialog:AddSelection(10001, "Nhận Tiền Tệ Các Loại</color>")
+		dialog:AddSelection(22222, "Nhận Max Kinh Nghiệm Mật Tịch")
+		dialog:AddSelection(10003, "Nhận Vật Phẩm Khác</color>")
+		dialog:AddSelection(77777, "Ta sẽ quay lại sau !!!")
+	dialog:Show(item, player)
+	-- ************************** --
 		
-		--dialog:AddSelection(999998, "Nhận Kỹ Năng Sống (Cấp 60)")		
-		--dialog:AddSelection(22222, "Nhận Max Kinh Nghiệm Mật Tịch")
-		dialog:Show(item, player)
+		-- Đóng khung
+		-- GUI.CloseDialog(player)
 		return
 	end
-	if selectionID == 10025 then	
-		GUI.CloseDialog(player)
-		Player.AddRetupeValue(player,504,10000)   --DV Chúc Phúc
-		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
-		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
-		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
-		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
-		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
-		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
-		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
-		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT		
-		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
-		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
-		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
-		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
-		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
-		Player.AddRetupeValue(player,506,10000)   -- Danh Vọng Di Tích Hàn Vũ
-		Player.AddRetupeValue(player,1201,10000)  -- Liên đấu liên server
-		Player.AddRetupeValue(player,1101,10000)  --DV Đại Hội Võ Lâm
-		
-		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
-		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
-		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
-		Player.AddRetupeValue(player,902,10000)   -- Tần Lăng Phát Khấu Môn
-		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
-		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
-		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
-		
-		Player.AddRetupeValue(player,601,10000)  --- VLCT Kim
-		Player.AddRetupeValue(player,602,10000)  --- VLCT Mộc
-		Player.AddRetupeValue(player,603,10000)  --- VLCT Thủy
-		Player.AddRetupeValue(player,604,10000)  --- VLCT Hỏa
-		Player.AddRetupeValue(player,605,10000)  --- VLCT Thổ
-		
-		-- Player.AddRetupeValue(player,201,10000)
-		-- Player.AddRetupeValue(player,202,10000)
-		-- Player.AddRetupeValue(player,203,10000)
-
-		-- Player.AddRetupeValue(player,300 + player:GetFactionID(),10000)
-		-- Player.AddRetupeValue(player,401,10000)
-		-- Player.AddRetupeValue(player,402,10000)
-		
-
-		-- Player.AddRetupeValue(player,501,10000)
-		-- Player.AddRetupeValue(player,503,10000)
-		
-		
-		player:AddNotification(""..player:GetName().."Nhận Danh Vọng Các Loại Thành Công")
-		return
-	end
-	if selectionID == 999999 then
-		dialog:AddText("Vui lòng chọn loại bạn cần")
-		dialog:AddSelection(9999991, "Nhận huyền tinh cấp 1")
-		dialog:AddSelection(9999992, "Nhận huyền tinh cấp 2")
-		dialog:AddSelection(9999993, "Nhận huyền tinh cấp 3")
-		dialog:AddSelection(9999994, "Nhận huyền tinh cấp 4")
-		dialog:AddSelection(9999995, "Nhận huyền tinh cấp 5")
-		dialog:AddSelection(9999996, "Nhận huyền tinh cấp 6")
-		dialog:AddSelection(9999997, "Nhận huyền tinh cấp 7")
-		dialog:AddSelection(9999998, "Nhận huyền tinh cấp 8")
-		dialog:AddSelection(9999999, "Nhận huyền tinh cấp 9")
-		dialog:AddSelection(99999910, "Nhận huyền tinh cấp 10")
-		dialog:AddSelection(99999911, "Nhận huyền tinh cấp 11")
-		dialog:AddSelection(99999912, "Nhận huyền tinh cấp 12")
-		dialog:Show(item, player)
-		return
-	end
-	if selectionID == 9999991 then
-		Player.AddItemLua(player,385,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999992 then
-		Player.AddItemLua(player,386,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999993 then
-		Player.AddItemLua(player,387,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999994 then
-		Player.AddItemLua(player,388,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999995 then
-		Player.AddItemLua(player,389,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999996 then
-		Player.AddItemLua(player,390,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999997 then
-		Player.AddItemLua(player,391,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999998 then
-		Player.AddItemLua(player,392,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 9999999 then
-		Player.AddItemLua(player,393,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 99999910 then
-		Player.AddItemLua(player,394,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 99999911 then
-		Player.AddItemLua(player,395,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end
-	if selectionID == 99999912 then
-		Player.AddItemLua(player,396,10,-1,1)
-		GUI.CloseDialog(player)
-		return
-	end	
-	if selectionID == 979797 then
-		player:SetLevel(119)
-
-		GUI.CloseDialog(player)
-		player:AddNotification("Chúc mừng "..player:GetName().."  nhận hỗ trợ cấp thành công")
-		return
-	end
-	if selectionID == 989898 then
-		GUI.CloseDialog(player)
-		local factions = player:GetFactionID()
-		local series = Player.GetSeries(player)
-		if factions == 1 then
-			Player.AddItemLua(player,secretID[1].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[1].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[1].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[1].ItemID4,1,series,1)
-		elseif factions == 2 then
-			Player.AddItemLua(player,secretID[2].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[2].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[2].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[2].ItemID4,1,series,1)
-		elseif factions == 3 then
-			Player.AddItemLua(player,secretID[3].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[3].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[3].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[3].ItemID4,1,series,1)
-		elseif factions == 4 then
-			Player.AddItemLua(player,secretID[4].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[4].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[4].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[4].ItemID4,1,series,1)
-		elseif factions == 5 then
-			Player.AddItemLua(player,secretID[5].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[5].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[5].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[5].ItemID4,1,series,1)
-		elseif factions == 6 then
-			Player.AddItemLua(player,secretID[6].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[6].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[6].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[6].ItemID4,1,series,1)
-		elseif factions == 7 then
-			Player.AddItemLua(player,secretID[7].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[7].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[7].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[7].ItemID4,1,series,1)
-		elseif factions == 8 then
-			Player.AddItemLua(player,secretID[8].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[8].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[8].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[8].ItemID4,1,series,1)
-		elseif factions == 9 then
-			Player.AddItemLua(player,secretID[9].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[9].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[9].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[9].ItemID4,1,series,1)
-		elseif factions == 10 then
-			Player.AddItemLua(player,secretID[10].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[10].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[10].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[10].ItemID4,1,series,1)
-		elseif factions == 11 then
-			Player.AddItemLua(player,secretID[11].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[11].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[11].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[11].ItemID4,1,series,1)
-		else--if player:GetFactionID() == 12 then
-			Player.AddItemLua(player,secretID[12].ItemID1,1,series,1)
-			Player.AddItemLua(player,secretID[12].ItemID2,1,series,1)
-			Player.AddItemLua(player,secretID[12].ItemID3,1,series,1)
-			Player.AddItemLua(player,secretID[12].ItemID4,1,series,1)
-		end
-		player:AddNotification("Chúc mừng "..player:GetName().."  nhận hỗ trợ mật tịch thành công")
-		return
-	end
-	if selectionID == 10001 then
-		local str = "";
-		if Player.CheckMoney(player,0) < 10000000 then
-			Player.AddMoney(player,10000000,0)
-			str = str .. "<color=#ffd24d>1000 vạn (bạc khóa)</color>";
-		end
-		if Player.CheckMoney(player,1) < 10000000 then
-			Player.AddMoney(player,10000000,1)
-			str = str .. "<color=#ffd24d>1000 vạn (bạc)</color>";
-		end
-		if Player.CheckMoney(player,2) < 10000000 then
-			Player.AddMoney(player,10000000,2)
-			str = str .. "<color=#ffd24d>1000 vạn (đồng)</color>";
-		end
-		if Player.CheckMoney(player,3) < 10000000 then
-			Player.AddMoney(player,10000000,3)
-			str = str .. "<color=#ffd24d>1000 vạn (đồng khóa)</color>";
-		end
-		dialog:AddText("Ngươi đã nhận "..str.." thành công")
-		dialog:Show(item, player)
-		return
-	end
-	if selectionID == 10015 then
-		Player.AddItemLua(player,3459,1,-1,1)--Ma bai--
-		Player.AddItemLua(player,3483,1,-1,1)--Hoan Hoan--Hoan Hoan
-		Player.AddItemLua(player,3484,1,-1,1)--Hy Hy--Okie
-		Player.AddItemLua(player,3485,1,-1,1)--Ho Cat Tuong--Okie
-		Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
-		Player.AddItemLua(player,3501,1,-1,1)--Tuyet Hon--Okie
-		Player.AddItemLua(player,3502,1,-1,1)--Su Gia Truy Phong--Okie
-		Player.AddItemLua(player,3508,1,-1,1)--Hoa Ky Lan--Okie
-
-		GUI.CloseDialog(player)
-		player:AddNotification(""..player:GetName().."Bạn đã nhận <color=red>thần thú</color> thành công")		
-		return
-	end
-	if selectionID == 10016 then
-		Player.AddItemLua(player,1033,10,-1,1)
-		Player.AddItemLua(player,1034,10,-1,1)		
-		Player.AddItemLua(player,1074,10000,-1,1)
-
-		GUI.CloseDialog(player)
-		player:AddNotification(""..player:GetName().." nhận Tiền Vàng Du Long thành công")
-		return
-	end
-	if selectionID == 10003 then
-		GUI.CloseDialog(player)
-		local series = Player.GetSeries(player)
-		if series == 1 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3628,1,-1,1)--vo song vuong gia kim nam
-			else
-				Player.AddItemLua(player,3638,1,-1,1)--vo song vuong gia kim nu
-			end
-		elseif series == 2 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3648,1,-1,1)--vo song vuong gia moc nam
-			else
-				Player.AddItemLua(player,3658,1,-1,1)--vo song vuong gia moc nu
-			end
-		elseif series == 3 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3668,1,-1,1)--vo song vuong gia thuy nam
-			else
-				Player.AddItemLua(player,3678,1,-1,1)--vo song vuong gia thuy nu
-			end
-		elseif series == 4 then
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3688,1,-1,1)--vo song vuong gia hoa nam
-			else
-				Player.AddItemLua(player,3698,1,-1,1)--vo song vuong gia hoa nu
-			end
-		else
-			if player:GetSex()==0 then
-				Player.AddItemLua(player,3708,1,-1,1)--vo song vuong gia hoa nam
-			else
-				Player.AddItemLua(player,3718,1,-1,1)--vo song vuong gia hoa nu
-			end
-		end
-		return
-	end
-	if selectionID == 10005 then
-		GUI.CloseDialog(player)
-
-		player:SetPrestige(1000)
-		player:AddNotification(""..player:GetName().."Bạn đã nhận <color=red>1000 uy danh</color> thành công")		
-		return
-	end
-	if selectionID == 10014 then
-		GUI.CloseDialog(player)
-		Player.AddItemLua(player,746,500,-1,1)
-		--Player.AddItemLua(player,337,50,-1,1)
-		--Player.AddItemLua(player,796,500,-1,1)
-		--Player.AddItemLua(player,3344,1,-1,1)		
-		
-		-- Player.AddItemLua(player,3345,1,-1,1)
-		-- Player.AddItemLua(player,3346,1,-1,1)
-		-- Player.AddItemLua(player,3347,1,-1,1)
-		-- Player.AddItemLua(player,3348,1,-1,1)
-		-- Player.AddItemLua(player,337,50,-1,1)
-		-- Player.AddItemLua(player,337,50,-1,1)
-		
-		player:AddNotification("Nhận 500 Vỏ Sò Vàng Thành Công")
-		return
-	end
-
+	-- ************************** --
 	if selectionID == 100034 then
 		dialog:AddText("<color=green>Đại hiệp muốn xem phần thưởng cấp độ hạng mấy ?</color>")
 		dialog:AddSelection(1000341, "Thưởng hạng 1")
@@ -2086,6 +1771,11 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		else
 			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
 		end
+		return
+	end
+	if selectionID == 100031 then
+		GUI.CloseDialog(player)
+		player:ExportTop()
 		return
 	end
 	if selectionID == 39901 then
@@ -2615,6 +2305,59 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 	player:AddNotification(""..player:GetName().."Bạn đã nhận cấp 50 cho tất cả </color=red>Kỹ Năng Sống </color>thành công")
 	GUI.CloseDialog(player)
 	end
+	if selectionID == 10025 then
+		
+		Player.AddRetupeValue(player,504,10000)   --DV Chúc Phúc
+		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
+		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
+		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
+		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
+		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
+		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
+		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT		
+		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
+		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,506,10000)   -- Danh Vọng Di Tích Hàn Vũ
+		Player.AddRetupeValue(player,1201,10000)  -- Liên đấu liên server
+		Player.AddRetupeValue(player,1101,10000)  --DV Đại Hội Võ Lâm
+		
+		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
+		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
+		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
+		Player.AddRetupeValue(player,902,10000)   -- Tần Lăng Phát Khấu Môn
+		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
+		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
+		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
+		
+		Player.AddRetupeValue(player,601,10000)  --- VLCT Kim
+		Player.AddRetupeValue(player,602,10000)  --- VLCT Mộc
+		Player.AddRetupeValue(player,603,10000)  --- VLCT Thủy
+		Player.AddRetupeValue(player,604,10000)  --- VLCT Hỏa
+		Player.AddRetupeValue(player,605,10000)  --- VLCT Thổ
+		
+		-- Player.AddRetupeValue(player,201,10000)
+		-- Player.AddRetupeValue(player,202,10000)
+		-- Player.AddRetupeValue(player,203,10000)
+
+		-- Player.AddRetupeValue(player,300 + player:GetFactionID(),10000)
+		-- Player.AddRetupeValue(player,401,10000)
+		-- Player.AddRetupeValue(player,402,10000)
+		
+
+		-- Player.AddRetupeValue(player,501,10000)
+		-- Player.AddRetupeValue(player,503,10000)
+		
+
+		
+		
+		
+		player:AddNotification(""..player:GetName().."Nhận Danh Vọng Các Loại Thành Công")
+		GUI.CloseDialog(player)
+	end
 	if selectionID == 10012 then--TuiTanThu:SetBelonging(item, player, ItemID,Number,Series,LockStatus) set do +12
 		if player:GetFactionID()==0 then
 			dialog:AddText(""..player:GetName()..": Bạn chưa gia nhập phái ,hãy gia nhập <color=red> môn phái</color> rồi quay lại <color=red> nhận Nhận Mật Tịch (cao).</color>")
@@ -3111,7 +2854,9 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 				else
 					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
 					dialog:Show(item, player)
-				end			
+				end
+
+			
 			end
 		else
 			dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
@@ -3148,6 +2893,14 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		Player.SetValueOfForeverRecore(player, Record2, 1)
 		Player.AddItemLua(player,2167,1,-1,1)
 		TuiTanThu:ShowDialog(item, player, "Nhận <color=green>Thẻ đổi tên</color> thành công. Rất cảm ơn bằng hữu đã luôn đồng hành cùng <color=green>Kiếm Thế 2009 - Mobile</color>!")
+		return
+	end
+	if selectionID == 10005 then
+	
+		player:SetPrestige(1000)
+		player:AddNotification(""..player:GetName().."Bạn đã nhận </color=red>1000 uy danh </color>thành công")
+		
+		GUI.CloseDialog(player)
 		return
 	end
 	
@@ -3210,16 +2963,47 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		player:AddNotification("Thiết lập cấp độ 89 thành công")
 		GUI.CloseDialog(player)
 	end
+	if selectionID == 10024 then
+		Player.AddItemLua(player,746,500,-1,1)
+		Player.AddItemLua(player,337,50,-1,1)
+		Player.AddItemLua(player,796,500,-1,1)
+		Player.AddItemLua(player,3344,1,-1,1)
+		
+		
+		-- Player.AddItemLua(player,3345,1,-1,1)
+		-- Player.AddItemLua(player,3346,1,-1,1)
+		-- Player.AddItemLua(player,3347,1,-1,1)
+		-- Player.AddItemLua(player,3348,1,-1,1)
+		-- Player.AddItemLua(player,337,50,-1,1)
+		-- Player.AddItemLua(player,337,50,-1,1)
+		
+		player:AddNotification("Nhận 500 Vỏ Sò Vàng Thành Công")
+		GUI.CloseDialog(player)
+	end
 	if selectionID == 10013 then
 		Player.OpenShop(item, player, 226)
 		GUI.CloseDialog(player)
 		
 	end
-	if selectionID == 10024 then
+	if selectionID == 10014 then
 		player:SetPrayTimes(100)
 		player:AddNotification("nhận 100 lượt quay chúc chúc phúc thành công !")
 		GUI.CloseDialog(player)
-	end	
+	end
+	if selectionID == 10015 then
+		Player.AddItemLua(player,3466,1,-1,1)
+		Player.AddItemLua(player,3465,1,-1,1)
+		Player.AddItemLua(player,3482,1,-1,1)
+		
+		Player.AddItemLua(player,3464,1,-1,1)
+		Player.AddItemLua(player,3463,1,-1,1)
+		Player.AddItemLua(player,3467,1,-1,1)
+		
+		Player.AddItemLua(player,15020,1,-1,1)
+		player:AddNotification(""..player:GetName().."Bạn đã nhận </color=red>thần thú </color>thành công")
+		GUI.CloseDialog(player)
+		return
+	end
 	if selectionID == 100020 then
 		Player.AddCurGatherPoint(player,10000)
 		Player.AddMakePoint(player,10000)
@@ -3360,6 +3144,66 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 			dialog:AddText(""..player:GetName().."Bạn đã nhận </color=red>Mật tịch (trung)(cao)</color>thành công")
 			dialog:Show(item, player)
 		end
+	elseif selectionID == 10001 then
+		if Player.CheckMoney(player,0) >= 10000000 then
+			dialog:AddText("Trên người ngươi quá nhiều <color=#ffd24d>(Bạc)</color>không thể nhân được nữa.")
+			dialog:Show(item, player)
+		else
+			Player.AddMoney(player,5000000,0)
+			dialog:AddText("Ngươi đã nhận <color=#ffd24d>500 vạn (bạc)</color>thành công")
+			dialog:Show(item, player)
+		end
+		if Player.CheckMoney(player,1) >= 10000000 then
+			dialog:AddText("Trên người ngươi quá nhiều <color=#ffd24d>(Đồng)Khóa</color>không thể nhân được nữa.")
+			dialog:Show(item, player)
+		else
+			Player.AddMoney(player,5000000,1)
+			dialog:AddText("Ngươi đã nhận <color=#ffd24d>500 vạn (đồng)Khóa</color>thành công")
+			dialog:Show(item, player)
+		end
+		if Player.CheckMoney(player,2) >= 10000000 then
+			dialog:AddText("Trên người ngươi quá nhiều <color=#ffd24d>(Đồng)</color>không thể nhân được nữa.")
+			dialog:Show(item, player)
+		else
+			Player.AddMoney(player,5000000,2)
+			dialog:AddText("Ngươi đã nhận <color=#ffd24d>500 vạn (đồng)</color>thành công")
+			dialog:Show(item, player)
+		end
+		if Player.CheckMoney(player,3) >= 10000000 then
+			dialog:AddText("Trên người ngươi quá nhiều <color=#ffd24d>(Đồng)Khóa</color>không thể nhân được nữa.")
+			dialog:Show(item, player)
+		else
+			Player.AddMoney(player,5000000,3)
+			dialog:AddText("Ngươi đã nhận <color=#ffd24d>500 vạn (đồng) khóa</color>thành công")
+			dialog:Show(item, player)
+		end
+		-------lộ trình 89
+	elseif selectionID == 979797 then
+		-- Gọi hàm đổi tên
+	local dialog = GUI.CreateItemDialog()
+		dialog:AddText("<color=green>Hỗ Trợ Tân Thủ Lộ Trình Test 89</color>")
+		dialog:AddSelection(11111, "Nhận cấp 89")
+		dialog:AddSelection(10023, "Nhận Set Đồ Theo Hệ 89 +12</color>")
+	dialog:Show(item, player)
+	-- ************************** --	
+		-------lộ trình 99-100
+	elseif selectionID == 989898 then
+		-- Gọi hàm đổi tên
+	local dialog = GUI.CreateItemDialog()
+		dialog:AddText("<color=green>Hỗ Trợ Tân Thủ Lộ Trình Test 99-119</color>")
+		dialog:AddSelection(111111, "Nhận cấp 119")
+		dialog:AddSelection(10004, "Nhận Set Đồ Theo Hệ 119 +14</color>")
+	dialog:Show(item, player)
+	-- ************************** --
+		-------lộ trình 130
+	elseif selectionID == 999999 then
+		-- Gọi hàm đổi tên
+	local dialog = GUI.CreateItemDialog()
+		dialog:AddText("<color=green>Hỗ Trợ Tân Thủ Lộ Trình Test 130</color>")
+		dialog:AddSelection(111112, "Nhận cấp 130")
+		dialog:AddSelection(10012, "Nhận Set Đồ Hoàng Kim Theo Hệ +14</color>")
+	dialog:Show(item, player)
+	-- ************************** --
 	elseif selectionID == 10000 then
 			player:SetLevel(109)
 			dialog:AddText("Thiết lập cấp độ 109 thành công")
@@ -3399,7 +3243,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		dialog:AddSelection(10002, "Nhận <color=red> Mật Tịch (trung)(cao) Theo Phái </color>")
 		dialog:AddSelection(19080, "Nhận <color=green>Huyền Tinh Các Cấp</color>")
 		dialog:AddSelection(10005, "Nhận <color=red> 1000 uy danh </color>")
-		dialog:AddSelection(10014, "Nhận Vỏ Sò Vàng</color>")
+		dialog:AddSelection(10024, "Nhận Vỏ Sò Vàng</color>")
 		dialog:AddSelection(10006, "Làm mới số lượt đi phụ bản trong ngày")
 		dialog:AddSelection(10007, "Quan Ấn Hoàng Đế")
 		dialog:AddSelection(10008, "Nhận 500 Hòa Thị Bích")

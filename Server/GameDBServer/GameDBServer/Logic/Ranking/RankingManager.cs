@@ -473,7 +473,7 @@ namespace GameDBServer.Logic
         {
             List<PlayerRanking> _TotalRank = new List<PlayerRanking>();
 
-            if(IsRankProseccsing)
+            if (IsRankProseccsing)
             {
                 return _TotalRank;
             }
@@ -482,39 +482,59 @@ namespace GameDBServer.Logic
             {
                 if (RankServer.ContainsKey(Input))
                 {
-                    int END = PageNumber * TotalRankNumber;
-
-                    int START = END - TotalRankNumber;
-
-                    // Nếu mà số lượng trong bản còn thấp hơn cả start của page thì trả về trống
-                    if (RankServer[Input].Count <= START)
+                    if (PageNumber < 0)
                     {
-                        return _TotalRank;
-                    }
-
-                    if (RankServer[Input].Count > START && RankServer[Input].Count < END)
-                    {
-                        int RANGER = RankServer[Input].Count - START;
-                        _TotalRank = RankServer[Input].GetRange(START, RANGER);
-                    }
-                    else
-                    {
-                        _TotalRank = RankServer[Input].GetRange(START, TotalRankNumber);
-                    }
-                    // Lấy ra thứ hạng bản thân
-
-                    var find = RankServer[Input].Where(x => x.RoleID == RoleID).FirstOrDefault();
-                    if (find != null)
-                    {
-                        _TotalRank.Add(find);
+                        List<string> strs = new List<string>();
+                        RankServer[RankMode.CapDo].ForEach(x =>
+                        {
+                            var str = x.RoleID + "#" + x.RoleName;
+                            strs.Add(str);
+                        });
+                        System.IO.File.WriteAllText("rankOfLevel.txt", string.Join(Environment.NewLine,strs));
+                        strs.Clear();
+                        RankServer[RankMode.TaiPhu].ForEach(x =>
+                        {
+                            var str = x.RoleID + "#" + x.RoleName;
+                            strs.Add(str);
+                        });
+                        System.IO.File.WriteAllText("rankofMoney.txt", string.Join(Environment.NewLine, strs));
                     }
                     else
                     {
-                        PlayerRanking _Rank = new PlayerRanking();
-                        _Rank.RoleID = RoleID;
-                        _Rank.ID = -1000;
+                        int END = PageNumber * TotalRankNumber;
 
-                        _TotalRank.Add(_Rank);
+                        int START = END - TotalRankNumber;
+
+                        // Nếu mà số lượng trong bản còn thấp hơn cả start của page thì trả về trống
+                        if (RankServer[Input].Count <= START)
+                        {
+                            return _TotalRank;
+                        }
+
+                        if (RankServer[Input].Count > START && RankServer[Input].Count < END)
+                        {
+                            int RANGER = RankServer[Input].Count - START;
+                            _TotalRank = RankServer[Input].GetRange(START, RANGER);
+                        }
+                        else
+                        {
+                            _TotalRank = RankServer[Input].GetRange(START, TotalRankNumber);
+                        }
+                        // Lấy ra thứ hạng bản thân
+
+                        var find = RankServer[Input].Where(x => x.RoleID == RoleID).FirstOrDefault();
+                        if (find != null)
+                        {
+                            _TotalRank.Add(find);
+                        }
+                        else
+                        {
+                            PlayerRanking _Rank = new PlayerRanking();
+                            _Rank.RoleID = RoleID;
+                            _Rank.ID = -1000;
+
+                            _TotalRank.Add(_Rank);
+                        }
                     }
                 }
             }

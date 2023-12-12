@@ -2997,7 +2997,27 @@ public partial class PlayZone
             /// Mở khung Kỳ Trân Các
             this.OpenTokenShop(tokenShop);
         }
-
+        else if (e.CmdID == (int)(TCPGameServerCmds.CMD_KT_GOI_COIN))
+        {
+            try
+            {
+                //if (!AssertNetworkException(e.fields.Length == 2, e.fields.Length, (TCPGameServerCmds)e.CmdID))
+                //{
+                //    return;
+                //}
+                int res = Convert.ToInt32(e.fields[0]);
+                string account = e.fields[1];
+                //KTGlobal.AddNotification("ID: " + res + " " + msg);
+                if (res == -1)      //---------không còn KTCoin
+                {
+                    KTGlobal.ShowMessageBox("Nạp tiền", string.Format("Hiện tại <color=#66daf4>Xu</color> không đủ, đồng ý nạp tiền thêm không?"), () =>
+                    {
+                        DongYNapTien(account);
+                    }, true);
+                }
+            }
+            catch (Exception) { }
+        }
         else if (e.CmdID == (int)(TCPGameServerCmds.CMD_KT_G2C_OPEN_UI))
         {
             KT_TCPHandler.ReceiveOpenUI(e.CmdID, e.bytesData, e.bytesData.Length);
@@ -4238,5 +4258,40 @@ public partial class PlayZone
         GameInstance.Game.Disconnect();
     }
 
+    private AndroidJavaObject AndroidUri(string url)
+    {
+        AndroidJavaClass uriClass = new AndroidJavaClass("android.net.Uri");
+        return uriClass.CallStatic<AndroidJavaObject>("parse", url);
+    }
+    protected void DongYNapTien(string account)
+    {
+        try
+        {
+            string accsesstoken = SDKSession.AccessToken;
+            byte[] bytesToEncode = Encoding.UTF8.GetBytes(string.Format("{0};{1}", account, accsesstoken));
+            string base64String = Convert.ToBase64String(bytesToEncode);
+            string websiteURL = string.Format("http://id.kiemthemobile.net/nap.php?data={0}", base64String);
+            //KTGlobal.AddNotification("Link: " + websiteURL);
+            if (Global.GetDeviceForWebURL() == "androidsub")
+            {
+                AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
+                AndroidJavaObject intentObject = new AndroidJavaObject("android.content.Intent");
+                intentObject.Call<AndroidJavaObject>("setAction", intentClass.GetStatic<string>("ACTION_VIEW"));
+                intentObject.Call<AndroidJavaObject>("setData", AndroidUri(websiteURL));
+
+                AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+                AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+                currentActivity.Call("startActivity", intentObject);
+            }
+            else if (Global.GetDeviceForWebURL() == "ios")
+            {
+                Application.OpenURL(websiteURL);
+            }
+        }
+        catch
+        {
+            KTGlobal.ShowMessageBox("Nạp tiền", "Token của bạn không đủ vui lòng nạp thêm tại http://id.kiemthemobile.net/", true);
+        }
+    }
     #endregion
 }

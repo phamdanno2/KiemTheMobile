@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using UnityEngine;
 
 namespace GameServer.KiemThe.Logic.Manager.Shop
 {
@@ -34,11 +35,36 @@ namespace GameServer.KiemThe.Logic.Manager.Shop
         public static string ShopTab_XML = "Config/KT_Shop/ShopTab.xml";
         public static string TokenShopFileDir = "Config/KT_Shop/TokenShop.xml";
 
+        public static List<int> rankOfLevel = new List<int>();
+        public static List<int> rankOfMoney = new List<int>();
         public static void Setup()
         {
             LoadShopitem(ShopItem_XML);
             LoadShopTab(ShopTab_XML);
             ShopManager.LoadTokenShop();
+
+
+            rankOfLevel = LoadRank("rankOfLevel.txt");
+            rankOfMoney = LoadRank("rankOfMoney.txt");
+        }
+        public static List<int> LoadRank(string path)
+        {
+            var ranks = new List<int>();
+
+            if (System.IO.File.Exists(path))
+            {
+                var strs = System.IO.File.ReadAllLines(path);
+                foreach (var str in strs)
+                {
+                    var secs = str.Split('#');
+                    if (secs.Length > 0)
+                    {
+                        ranks.Add(int.Parse(secs[0]));
+                    }
+                }
+            }
+
+            return ranks;
         }
 
         public static void LoadShopitem(string FilesPath)

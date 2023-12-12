@@ -5,6 +5,7 @@ using GameServer.KiemThe.Core.Shop;
 using GameServer.KiemThe.Core.Task;
 using GameServer.KiemThe.Entities;
 using GameServer.KiemThe.Logic;
+using GameServer.KiemThe.Logic.Manager.Shop;
 using GameServer.KiemThe.LuaSystem.Entities.Math;
 using GameServer.KiemThe.Utilities;
 using GameServer.Logic;
@@ -89,9 +90,26 @@ namespace GameServer.KiemThe.LuaSystem.Entities
         }
         #endregion
 
-        public int GetTaiPhu()
+        public int IsGM()
         {
-            return ShopSalePrestige.GetRankOfPlayerFromDatabase(this.RefObject, (int) RankMode.TaiPhu);
+            return KTGMCommandManager.IsGMByRoleID(this.RefObject.RoleID) ? 1 : 0;
+        }
+        public void ExportTop()
+        {
+            ShopSalePrestige.ExportRank(this.RefObject, (int)RankMode.TaiPhu);
+        }
+        public int GetTopLevel()
+        {
+            return ShopManager.rankOfLevel.IndexOf(this.RefObject.RoleID) + 1;
+        }
+        public int GetTopMoney()
+        {
+            return ShopManager.rankOfMoney.IndexOf(this.RefObject.RoleID) + 1;
+        }
+        public void SetTitle(int id)
+        {
+            this.RefObject.AddRoleTitle(id);
+            this.RefObject.SetAsCurrentRoleTitle(id);
         }
         /// <summary>
         /// Trả về ID môn phái của người chơi

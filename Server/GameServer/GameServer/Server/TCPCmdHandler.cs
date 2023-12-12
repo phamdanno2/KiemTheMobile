@@ -1358,6 +1358,7 @@ namespace GameServer.Server
         /// Gói tin yêu cầu mở Kỳ Trân Các
         /// </summary>
         CMD_KT_OPEN_TOKENSHOP = 50043,
+        CMD_KT_GOI_COIN = 50200,
 
         #endregion Kỳ Trân Các
 
@@ -2638,7 +2639,12 @@ namespace GameServer.Server
                             result = KT_TCPHandler.ResponseOpenTokenShop(tcpMgr, socket, tcpClientPool, tcpRandKey, pool, nID, data, count, out tcpOutPacket);
                             break;
                         }
-
+                    case (int)TCPGameServerCmds.CMD_KT_GOI_COIN:
+                        {
+                            result = KT_TCPHandler.ResponseMuaGoiKTCoin(tcpMgr, socket, tcpClientPool, tcpRandKey, pool,
+                                nID, data, count, out tcpOutPacket);
+                            break;
+                        }
                     case (int)TCPGameServerCmds.CMD_KT_TOGGLE_HORSE_STATE:
                         {
                             result = KT_TCPHandler.ResponseToggleHorseState(tcpMgr, socket, tcpClientPool, tcpRandKey, pool, nID, data, count, out tcpOutPacket);

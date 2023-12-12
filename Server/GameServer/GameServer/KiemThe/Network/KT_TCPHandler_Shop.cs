@@ -88,6 +88,71 @@ namespace GameServer.KiemThe.Logic
             return TCPProcessCmdResults.RESULT_FAILED;
         }
 
+        /// <summary>
+        /// Phản hồi sự kiện mua gói KTCOIN
+        /// </summary>
+        /// <param name="tcpMgr"></param>
+        /// <param name="socket"></param>
+        /// <param name="tcpClientPool"></param>
+        /// <param name="tcpRandKey"></param>
+        /// <param name="pool"></param>
+        /// <param name="nID"></param>
+        /// <param name="data"></param>
+        /// <param name="count"></param>
+        /// <param name="tcpOutPacket"></param>
+        /// <returns></returns>
+        public static TCPProcessCmdResults ResponseMuaGoiKTCoin(TCPManager tcpMgr, TMSKSocket socket, TCPClientPool tcpClientPool, TCPRandKey tcpRandKey, TCPOutPacketPool pool, int nID, byte[] data, int count, out TCPOutPacket tcpOutPacket)
+        {
+            tcpOutPacket = null;
+
+            string cmdData = "";
+            try
+            {
+                /// Giải mã gói tin đẩy về dạng string
+                cmdData = new ASCIIEncoding().GetString(data);
+            }
+            catch (Exception)
+            {
+                LogManager.WriteLog(LogTypes.Error, string.Format("Error while getting DATA, CMD={0}, Client={1}", (TCPGameServerCmds)nID, Global.GetSocketRemoteEndPoint(socket)));
+                return TCPProcessCmdResults.RESULT_FAILED;
+            }
+
+            try
+            {
+                /// Tìm chủ nhân của gói tin tương ứng
+                KPlayer client = GameManager.ClientMgr.FindClient(socket);
+                if (null == client)
+                {
+                    LogManager.WriteLog(LogTypes.Error, string.Format("Không tìm thấy thông tin người chơi, CMD={0}, Client={1}", (TCPGameServerCmds)nID, Global.GetSocketRemoteEndPoint(socket)));
+                    return TCPProcessCmdResults.RESULT_FAILED;
+                }
+                string[] fields = cmdData.Split(':');
+                if (fields.Length != 2)
+                {
+                    LogManager.WriteLog(LogTypes.Error, string.Format("Có lỗi ở tham số gửi lên, CMD={0}, Client={1}, Recv={2}", (TCPGameServerCmds)nID, Global.GetSocketRemoteEndPoint(socket), fields.Length));
+                    return TCPProcessCmdResults.RESULT_FAILED;
+                }
+                int nBien = Int32.Parse(fields[0]);
+                if (nBien != 2024)
+                {
+                    LogManager.WriteLog(LogTypes.Error, string.Format("Có lỗi ở tham số gửi lên, CMD={0}, Client={1}, Recv={2}", (TCPGameServerCmds)nID, Global.GetSocketRemoteEndPoint(socket), fields.Length));
+                    return TCPProcessCmdResults.RESULT_FAILED;
+                }
+                string goiktcoin = fields[1];
+                //Console.WriteLine("Click KTCOIN {0} {1}", client.RoleID, goiktcoin);
+
+                //------------trả lời client
+                GameServer.KiemThe.Core.Rechage.RechageServiceManager.ApiGoiKTCoin(client, goiktcoin);
+                return TCPProcessCmdResults.RESULT_OK;
+            }
+            catch (Exception ex)
+            {
+                DataHelper.WriteFormatExceptionLog(ex, Global.GetDebugHelperInfo(socket), false);
+            }
+
+            return TCPProcessCmdResults.RESULT_FAILED;
+        }
+
         #endregion Shop
 
         #region Buy items

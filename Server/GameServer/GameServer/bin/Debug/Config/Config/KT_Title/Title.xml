@@ -8,7 +8,9 @@
 -->
 <Titles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Title ID="0" Text="Pew Pew Pew Pew" Description="Danh hiệu Test" Duration="-1" />
-	<Title ID="1" Text="Danh hiệu có thời hạn" Description="Danh hiệu Test 22" Duration="1" />
+	<Title ID="1" Text="Minh Chủ Võ Lâm" Description="đua top tài phú" Duration="-1" />
+	<Title ID="2" Text="Xưng Bá Một Phương" Description="đua top tài phú" Duration="-1" />
+	<Title ID="3" Text="Võ Công Cái Thế" Description="đua top tài phú" Duration="-1" />
 	
 	<Title ID="100" Text="Tân nhân vương - Thiếu Lâm" Description="Danh hiệu dành cho quán quân vô địch đấu trường thi đấu môn phái Thiếu Lâm. Có hiệu lực trong vòng 1 tuần." Duration="168" />
 	<Title ID="101" Text="Tân nhân vương - Thiên Vương" Description="Danh hiệu dành cho quán quân vô địch đấu trường thi đấu môn phái Thiên Vương. Có hiệu lực trong vòng 1 tuần." Duration="168" />
@@ -22,4 +24,10 @@
 	<Title ID="109" Text="Tân nhân vương - Ngũ Độc" Description="Danh hiệu dành cho quán quân vô địch đấu trường thi đấu môn phái Ngũ Độc. Có hiệu lực trong vòng 1 tuần." Duration="168" />
 	<Title ID="110" Text="Tân nhân vương - Đường Môn" Description="Danh hiệu dành cho quán quân vô địch đấu trường thi đấu môn phái Đường Môn. Có hiệu lực trong vòng 1 tuần." Duration="168" />
 	<Title ID="111" Text="Tân nhân vương - Minh Giáo" Description="Danh hiệu dành cho quán quân vô địch đấu trường thi đấu môn phái Minh Giáo. Có hiệu lực trong vòng 1 tuần." Duration="168" />
+
+	<Title ID="112" Text="Quán Quân Liên Đấu - Đơn Đấu" Description="Danh hiệu dành cho quán quân vô địch đấu trường liên đấu. Có hiệu lực trong vòng 1 tháng." Duration="720" />
+	<Title ID="113" Text="Quán Quân Liên Đấu - Song Đấu" Description="Danh hiệu dành cho quán quân vô địch đấu trường liên đấu. Có hiệu lực trong vòng 1 tháng." Duration="720" />
+	<Title ID="114" Text="Quán Quân Liên Đấu - Tam Đấu" Description="Danh hiệu dành cho quán quân vô địch đấu trường liên đấu. Có hiệu lực trong vòng 1 tháng." Duration="720" />
+	<Title ID="115" Text="Quán Quân Liên Đấu - Tứ Đấu" Description="Danh hiệu dành cho quán quân vô địch đấu trường liên đấu. Có hiệu lực trong vòng 1 tháng." Duration="720" />
+	
 </Titles>

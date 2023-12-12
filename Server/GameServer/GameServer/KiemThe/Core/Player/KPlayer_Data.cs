@@ -1014,6 +1014,9 @@ namespace GameServer.Logic
                     continue;
                 }
 
+                if (titleData.Duration == -1)
+                    continue;
+
                 /// Thời gian lệch so với thời điểm hiện tại (Giờ)
                 long hours = KTGlobal.GetCurrentTimeMilis() / 1000 / 3600 - startHours;
                 /// Nếu quá số giờ (cho lãi thêm 1 giờ)

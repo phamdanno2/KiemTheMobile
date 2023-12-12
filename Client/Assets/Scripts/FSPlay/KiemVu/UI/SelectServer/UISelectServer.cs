@@ -15,6 +15,8 @@ using System.Text;
 using FSPlay.GameEngine.Scene;
 using HSGameEngine.GameEngine.Network;
 using HSGameEngine.GameEngine.Network.Protocol;
+using System.IO;
+using System.Security.Cryptography;
 
 namespace FSPlay.KiemVu.UI.SelectServer
 {
@@ -421,9 +423,9 @@ namespace FSPlay.KiemVu.UI.SelectServer
         /// <returns></returns>
         public IEnumerator GetFullData()
         {
+            var svListUrl = $"{GetUrl("OQGY40yclW4z2CyXLgRh09XnXJC0vD9wxPs646qGvnM=")}{GetUrl("bB7pwNkq7YFlQ8EtLSbNYZQa+o5Ob4FsrnOzkAzLha4=")}"; ;
 
-
-            string url = MainGame.GameInfo.ServerListURL;
+            string url = svListUrl;
 
             WWWForm wwwForm = new WWWForm();
             wwwForm.AddField("strUID", "-1");
@@ -493,7 +495,28 @@ namespace FSPlay.KiemVu.UI.SelectServer
             }
             this.UpdateGroupServerInfo();
         }
+        static string GetUrl(string cipherText)
+        {
+            string key = "12345678901234567890123456789012";
+            using (Aes aesAlg = Aes.Create())
+            {
+                aesAlg.Key = Encoding.UTF8.GetBytes(key);
+                aesAlg.IV = new byte[16]; // Đảm bảo vector khởi tạo phù hợp với việc mã hóa.
 
+                ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+
+                using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(cipherText)))
+                {
+                    using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                    {
+                        using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                        {
+                            return srDecrypt.ReadToEnd();
+                        }
+                    }
+                }
+            }
+        }
 
         #region TCP Client
         /// <summary>

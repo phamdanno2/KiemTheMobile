@@ -226,23 +226,31 @@ namespace FSPlay.KiemVu.UI.Main
             this.UI_StoreProductBuy.Data = this.Data.StoreProducts;
             this.UI_StoreProductBuy.Click = (productData) => {
                 /// Nếu IAP chưa được khởi tạo
-                if (!IAPManager.Instance.IsInitialized())
-                {
-                    this.StartCoroutine(this.InitializeIAPManager(() => {
-                        this.StoreBuyItem?.Invoke(productData);
-                    }));
-                }
-                else
-                {
-                    this.StoreBuyItem?.Invoke(productData);
-                }
+                //if (!IAPManager.Instance.IsInitialized())
+                //{
+                //    this.StartCoroutine(this.InitializeIAPManager(() => {
+                //        this.StoreBuyItem?.Invoke(productData);
+                //    }));
+                //}
+                //else
+                //{
+                //    this.StoreBuyItem?.Invoke(productData);
+                //}
+                //------------fix shop click nap
+                FSPlay.KiemVu.Network.KT_TCPHandler.SendMuaGoiKTCoin(productData.ID);
             };
 #else
-            this.UIToggle_OpenBuyStoreProductFrame.gameObject.SetActive(false);
+            //this.UIToggle_OpenBuyStoreProductFrame.gameObject.SetActive(false);
+            this.UI_StoreProductBuy.Data = this.Data.StoreProducts;
+            this.UI_StoreProductBuy.Click = (productData) => {
+                /// Nếu IAP chưa được khởi tạo
+                //------------fix shop click nap
+                FSPlay.KiemVu.Network.KT_TCPHandler.SendMuaGoiKTCoin(productData.ID);
+            };
 #endif
 
             //always off
-            this.UIToggle_OpenBuyStoreProductFrame.gameObject.SetActive(false);
+            ///this.UIToggle_OpenBuyStoreProductFrame.gameObject.SetActive(false);
         }
 
         /// <summary>

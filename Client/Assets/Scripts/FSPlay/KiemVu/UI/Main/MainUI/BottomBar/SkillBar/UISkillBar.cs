@@ -80,6 +80,12 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// Button mở Auto Farm
         /// </summary>
         [SerializeField]
+        private UnityEngine.UI.Button UIButton_AutoConfig;
+
+        /// <summary>
+        /// Button mở Auto Farm
+        /// </summary>
+        [SerializeField]
         private UIButtonSprite UIButton_AutoFarm;
 
         /// <summary>
@@ -207,27 +213,27 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// Kích hoạt Auto PK
         /// </summary>
         public bool AutoPKEnable
-		{
-			get
-			{
+        {
+            get
+            {
                 return this._AutoPKEnable;
-			}
-			set
-			{
+            }
+            set
+            {
                 this._AutoPKEnable = value;
 
                 if (value)
-				{
+                {
                     this.UIButton_AutoPK.NormalSpriteName = this.AutoPKSprite_Enable;
                     this.UIButton_AutoPK.Refresh(true);
                 }
-				else
-				{
+                else
+                {
                     this.UIButton_AutoPK.NormalSpriteName = this.AutoPKSprite_Disable;
                     this.UIButton_AutoPK.Refresh(true);
                 }
-			}
-		}
+            }
+        }
 
         /// <summary>
         /// Kích hoạt vòng sáng đang được thiết lập
@@ -261,7 +267,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
         /// </summary>
         private void Awake()
         {
-            
+
         }
 
         /// <summary>
@@ -307,6 +313,7 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
             this.UIButton_Jump.onClick.AddListener(this.ButtonJump_Clicked);
             this.UIButton_Sit.onClick.AddListener(this.ButtonSit_Clicked);
             this.UIButton_ToggleMount.onClick.AddListener(this.ButtonToggleMount_Clicked);
+            this.UIButton_AutoConfig.onClick.AddListener(this.ButtonToggleConfig_Clicked);
             this.UIButton_AutoFarm.Click = this.ButtonAutoFarm_Selected;
             this.UIButton_AutoPK.Click = this.ButtonAutoPK_Selected;
             this.UIToggle_LockJoyStickMove.OnSelected = this.ToggleLockJoyStickMove_Selected;
@@ -375,6 +382,10 @@ namespace FSPlay.KiemVu.UI.Main.MainUI
             this.SkillButtonHeld?.Invoke(position);
         }
 
+        private void ButtonToggleConfig_Clicked()
+        {
+            this.OpenAutoSetting?.Invoke();
+        }
         /// <summary>
         /// Sự kiện khi Button Auto Farm
         /// </summary>

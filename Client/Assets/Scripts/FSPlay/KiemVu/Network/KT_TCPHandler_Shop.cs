@@ -27,6 +27,17 @@ namespace FSPlay.KiemVu.Network
             byte[] bytes = new ASCIIEncoding().GetBytes(strCmd);
             GameInstance.Game.GameClient.SendData(TCPOutPacket.MakeTCPOutPacket(GameInstance.Game.GameClient.OutPacketPool, bytes, 0, bytes.Length, (int) (TCPGameServerCmds.CMD_KT_OPEN_TOKENSHOP)));
         }
+
+        public static void SendMuaGoiKTCoin(string goiid)
+        {
+            if (!Global.Data.PlayGame)
+            {
+                return;
+            }
+            string strCmd = string.Format("{0}:{1}", 2024, goiid);
+            byte[] bytes = new ASCIIEncoding().GetBytes(strCmd);
+            GameInstance.Game.GameClient.SendData(TCPOutPacket.MakeTCPOutPacket(GameInstance.Game.GameClient.OutPacketPool, bytes, 0, bytes.Length, (int)(TCPGameServerCmds.CMD_KT_GOI_COIN)));
+        }
         #endregion
     }
 }

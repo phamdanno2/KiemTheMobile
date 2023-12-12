@@ -1174,6 +1174,7 @@ namespace FSPlay.GameEngine.Network
         /// Gói tin gửi từ Client lên Server yêu cầu mở Kỳ Trân Các
         /// </summary>
         CMD_KT_OPEN_TOKENSHOP = 50043,
+        CMD_KT_GOI_COIN = 50200,
         #endregion
 
         #region Mở/đóng khung bất kỳ
@@ -3095,6 +3096,11 @@ namespace FSPlay.GameEngine.Network
                     ret = ProcessGameStreamCmd(client, nID, data, count);
                     break;
                 }
+                case (int)TCPGameServerCmds.CMD_KT_GOI_COIN:
+                    {
+                        ret = ProcessGameCmd(client, nID, data, count);
+                        break;
+                    }
                 #endregion
 
                 #region Mở/đóng khung bất kỳ
