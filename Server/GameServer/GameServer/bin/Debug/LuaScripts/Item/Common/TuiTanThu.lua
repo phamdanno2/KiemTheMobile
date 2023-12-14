@@ -444,78 +444,125 @@ local SetTanThu80CoNgua ={
 }
 local secretID = {
 	[1] = {
-		ItemID1 = 3280,			-- Thiếu Lâm Phái
-		ItemID2 = 3281,
+		ItemID1 = 3232,			-- Thiếu Lâm Phái - so
+		ItemID2 = 3233,
+		
 		ItemID3 = 3256,		---Mật Tịch Trung
 		ItemID4 = 3257,		---Mật Tịch Trung	
+		
+		ItemID5 = 3280, -- Cao
+		ItemID6 = 3281,
 	},
 	[2] = {
-		ItemID1 = 3282,			-- Thiên Vương Bang
-		ItemID2 = 3283,
+		ItemID1 = 3234,			-- Thiên Vương Bang
+		ItemID2 = 3235,
+		
 		ItemID3 = 3258,		---Mật Tịch Trung
 		ItemID4 = 3259,		---Mật Tịch Trung
+
+		ItemID5 = 3282, -- Cao
+		ItemID6 = 3283,
 	},
 	[3] = {
-		ItemID1 = 3284,			-- Đường Môn
-		ItemID2 = 3285,
+		ItemID1 = 3236,			-- Đường Môn
+		ItemID2 = 3237,
+		
 		ItemID3 = 3261,		---Mật Tịch Trung
 		ItemID4 = 3260,		---Mật Tịch Trung
+
+		ItemID5 = 3284, -- Cao
+		ItemID6 = 3285,
 	},
 	[4] = {
-		ItemID1 = 3286,			-- Ngũ Độc Giáo
-		ItemID2 = 3287,
+		ItemID1 = 3238,			-- Ngũ Độc Giáo
+		ItemID2 = 3239,
+		
 		ItemID3 = 3262,		---Mật Tịch Trung
 		ItemID4 = 3263,		---Mật Tịch Trung
+
+		ItemID5 = 3286, -- Cao
+		ItemID6 = 3287,
 	},
 	[5] = {
-		ItemID1 = 3288,			-- Nga My Phái
-		ItemID2 = 3289,
-		ItemID3 = 3256,		---Mật Tịch Trung
-		ItemID4 = 3264,		---Mật Tịch Trung
+		ItemID1 = 3240,			-- Nga My Phái
+		ItemID2 = 3241,
+		
+		ItemID3 = 3264,		---Mật Tịch Trung
+		ItemID4 = 3265,		---Mật Tịch Trung
+
+		ItemID5 = 3288, -- Cao
+		ItemID6 = 3289,
 	},
 	[6] = {
-		ItemID1 = 3290,			-- Thúy Yên Môn
-		ItemID2 = 3291,
-		ItemID3 = 3256,		---Mật Tịch Trung
-		ItemID4 = 3264,		---Mật Tịch Trung
+		ItemID1 = 3242,			-- Thúy Yên Môn
+		ItemID2 = 3243,
+		
+		ItemID3 = 3266,		---Mật Tịch Trung
+		ItemID4 = 3267,		---Mật Tịch Trung
+
+		ItemID5 = 3290, -- Cao
+		ItemID6 = 3291,
 	},
 	[7] = {
-		ItemID1 = 3292,			-- Cái Bang Phái
-		ItemID2 = 3293,
+		ItemID1 = 3244,			-- Cái Bang Phái
+		ItemID2 = 3245,
+		
 		ItemID3 = 3268,		---Mật Tịch Trung
 		ItemID4 = 3269,		---Mật Tịch Trung
+
+		ItemID5 = 3292, -- Cao
+		ItemID6 = 3293,
 	},
 	[8] = {
-		ItemID1 = 3294,			-- Thiên Nhẫn Giáo
-		ItemID2 = 3295,
+		ItemID1 = 3246,			-- Thiên Nhẫn Giáo
+		ItemID2 = 3247,
+		
 		ItemID3 = 3270,		---Mật Tịch Trung
 		ItemID4 = 3271,		---Mật Tịch Trung
+
+		ItemID5 = 3294, -- Cao
+		ItemID6 = 3295,
 	},
 	[9] = {
-		ItemID1 = 3296,			-- Võ Đang Phái
-		ItemID2 = 3297,
+		ItemID1 = 3248,			-- Võ Đang Phái
+		ItemID2 = 3249,
+		
 		ItemID3 = 3272,		---Mật Tịch Trung
 		ItemID4 = 3273,		---Mật Tịch Trung
+
+		ItemID5 = 3296, -- Cao
+		ItemID6 = 3297,
 	},
 	[10] = {
-		ItemID1 = 3298,			-- Côn Lôn Phái
-		ItemID2 = 3299,
+		ItemID1 = 3250,			-- Côn Lôn Phái
+		ItemID2 = 3251,
+		
 		ItemID3 = 3274,		---Mật Tịch Trung
 		ItemID4 = 3275,		---Mật Tịch Trung
+
+		ItemID5 = 3298, -- Cao
+		ItemID6 = 3299,
 	},
 	[11] = {
-		ItemID1 = 3300,			-- Minh Giáo
-		ItemID2 = 3301,
+		ItemID1 = 3252,			-- Minh Giáo
+		ItemID2 = 3253,
+		
 		ItemID3 = 3276,		---Mật Tịch Trung
 		ItemID4 = 3277,		---Mật Tịch Trung
+
+		ItemID5 = 3300, -- Cao
+		ItemID6 = 3301,
 	},
 	[12] = {
-		ItemID1 = 3302,			-- Đoàn Thị Phái
-		ItemID2 = 3303,
+		ItemID1 = 3254,			-- Đoàn Thị Phái
+		ItemID2 = 3255,
+		
 		ItemID3 = 3278,		---Mật Tịch Trung
 		ItemID4 = 3279,		---Mật Tịch Trung
+
+		ItemID5 = 3302, -- Cao
+		ItemID6 = 3303,
 	},
-	
 }
 local SetBelongings ={
 	[1] = {
@@ -1538,40 +1585,92 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		dialog:AddSelection(10015, "Nhận <color=green>thần thú</color>")
 		dialog:AddSelection(10016, "Nhận <color=green>tiền vàng Du Long</color>")
 		dialog:AddSelection(10003, "Nhận <color=green>phi phong</color>")
-		dialog:AddSelection(10005, "Nhận <color=red>1000 uy danh</color>")
-		dialog:AddSelection(10014, "Nhận <color=red>500 vỏ sò</color>")
-		dialog:AddSelection(999999, "Nhận <color=blue>huyền tinh</color>")
-		dialog:AddSelection(10025, "Nhận <color=blue>danh vọng</color>")
+		dialog:AddSelection(10005, "Nhận <color=green>1000 uy danh</color>")
+		dialog:AddSelection(10014, "Nhận <color=green>500 vỏ sò</color>")
+		dialog:AddSelection(999999, "Nhận <color=green>huyền tinh</color>")
+		dialog:AddSelection(10025, "Nhận <color=green>danh vọng</color>")
+		dialog:AddSelection(22222, "Nhận <color=green>ngũ hành ấn</color>")
 		
 		--dialog:AddSelection(999998, "Nhận Kỹ Năng Sống (Cấp 60)")		
-		--dialog:AddSelection(22222, "Nhận Max Kinh Nghiệm Mật Tịch")
 		dialog:Show(item, player)
 		return
 	end
+	if selectionID == 22222 then
+		local factions = player:GetFactionID()
+		if factions == 1 then
+			Player.AddItemLua(player,3864,1,-1,1)
+		elseif factions == 2 then
+			Player.AddItemLua(player,3865,1,-1,1)
+		elseif factions == 3 then
+			Player.AddItemLua(player,3866,1,-1,1)
+		elseif factions == 4 then
+			Player.AddItemLua(player,3867,1,-1,1)
+		elseif factions == 5 then
+			Player.AddItemLua(player,3868,1,-1,1)
+		elseif factions == 6 then
+			Player.AddItemLua(player,3869,1,-1,1)
+		elseif factions == 7 then
+			Player.AddItemLua(player,3870,1,-1,1)
+		elseif factions == 8 then
+			Player.AddItemLua(player,3871,1,-1,1)
+		elseif factions == 9 then
+			Player.AddItemLua(player,3872,1,-1,1)
+		elseif factions == 10 then
+			Player.AddItemLua(player,3873,1,-1,1)
+		elseif factions == 11 then
+			Player.AddItemLua(player,3874,1,-1,1)
+		elseif factions == 12 then
+			Player.AddItemLua(player,3875,1,-1,1)
+		end
+		player:AddNotification("Nhận <color=green>ngũ hành ấn</color> thành công")
+		GUI.CloseDialog(player)
+		return
+	end
+
 	if selectionID == 10025 then	
 		GUI.CloseDialog(player)
+		Player.AddRetupeValue(player,504,300)   --DV Chúc Phúc
+		Player.AddRetupeValue(player,504,300)   --DV Chúc Phúc
+		Player.AddRetupeValue(player,504,8000)   --DV Chúc Phúc
 		Player.AddRetupeValue(player,504,10000)   --DV Chúc Phúc
+		Player.AddRetupeValue(player,504,50000)   --DV Chúc Phúc
+		
 		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
 		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
 		Player.AddRetupeValue(player,502,10000)   --Thịnh Hạ 2008
 		Player.AddRetupeValue(player,505,10000)   --Thịnh Hạ 2010
+
 		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
-		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
 		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
-		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT		
 		Player.AddRetupeValue(player,1001,10000)  --DV Đoàn Viên Gia Tộc
-		Player.AddRetupeValue(player,801,10000)   -- Danh Vọng TDLT
+
+		Player.AddRetupeValue(player,801,1500)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,801,3000)   -- Danh Vọng TDLT		
+		Player.AddRetupeValue(player,801,4500)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,801,35000)   -- Danh Vọng TDLT
+		Player.AddRetupeValue(player,801,70000)   -- Danh Vọng TDLT
+		
+		Player.AddRetupeValue(player,701,3000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,6000)   -- Danh Vọng VLLD
 		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
-		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
-		Player.AddRetupeValue(player,701,10000)   -- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,75000)	-- Danh Vọng VLLD
+		Player.AddRetupeValue(player,701,150000)-- Danh Vọng VLLD
+		
 		Player.AddRetupeValue(player,506,10000)   -- Danh Vọng Di Tích Hàn Vũ
-		Player.AddRetupeValue(player,1201,10000)  -- Liên đấu liên server
-		Player.AddRetupeValue(player,1101,10000)  --DV Đại Hội Võ Lâm
+		
+		Player.AddRetupeValue(player,1201,4800)  -- Liên đấu liên server
+		Player.AddRetupeValue(player,1201,9600)  -- Liên đấu liên server
+		
+		Player.AddRetupeValue(player,1101,4800)  --DV Đại Hội Võ Lâm
+		Player.AddRetupeValue(player,1101,9600)  --DV Đại Hội Võ Lâm
 		
 		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
 		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
 		Player.AddRetupeValue(player,901,10000)   -- Tần Lăng Quan Phủ
-		Player.AddRetupeValue(player,902,10000)   -- Tần Lăng Phát Khấu Môn
+		
+		Player.AddRetupeValue(player,902,20000)	  -- Tần Lăng Phát Khấu Môn
+		Player.AddRetupeValue(player,902,30000)   -- Tần Lăng Phát Khấu Môn
+		
 		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
 		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
 		Player.AddRetupeValue(player,503,10000)   -- Tiêu Dao Cốc
@@ -1691,61 +1790,85 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 			Player.AddItemLua(player,secretID[1].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[1].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[1].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[1].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[1].ItemID6,1,series,1)
 		elseif factions == 2 then
 			Player.AddItemLua(player,secretID[2].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[2].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[2].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[2].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[2].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[2].ItemID6,1,series,1)
 		elseif factions == 3 then
 			Player.AddItemLua(player,secretID[3].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[3].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[3].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[3].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[3].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[3].ItemID6,1,series,1)
 		elseif factions == 4 then
 			Player.AddItemLua(player,secretID[4].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[4].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[4].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[4].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[4].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[4].ItemID6,1,series,1)
 		elseif factions == 5 then
 			Player.AddItemLua(player,secretID[5].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[5].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[5].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[5].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[5].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[5].ItemID6,1,series,1)
 		elseif factions == 6 then
 			Player.AddItemLua(player,secretID[6].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[6].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[6].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[6].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[6].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[6].ItemID6,1,series,1)
 		elseif factions == 7 then
 			Player.AddItemLua(player,secretID[7].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[7].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[7].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[7].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[7].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[7].ItemID6,1,series,1)
 		elseif factions == 8 then
 			Player.AddItemLua(player,secretID[8].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[8].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[8].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[8].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[8].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[8].ItemID6,1,series,1)
 		elseif factions == 9 then
 			Player.AddItemLua(player,secretID[9].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[9].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[9].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[9].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[9].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[9].ItemID6,1,series,1)
 		elseif factions == 10 then
 			Player.AddItemLua(player,secretID[10].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[10].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[10].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[10].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[10].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[10].ItemID6,1,series,1)
 		elseif factions == 11 then
 			Player.AddItemLua(player,secretID[11].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[11].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[11].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[11].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[11].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[11].ItemID6,1,series,1)
 		else--if player:GetFactionID() == 12 then
 			Player.AddItemLua(player,secretID[12].ItemID1,1,series,1)
 			Player.AddItemLua(player,secretID[12].ItemID2,1,series,1)
 			Player.AddItemLua(player,secretID[12].ItemID3,1,series,1)
 			Player.AddItemLua(player,secretID[12].ItemID4,1,series,1)
+			Player.AddItemLua(player,secretID[12].ItemID5,1,series,1)
+			Player.AddItemLua(player,secretID[12].ItemID6,1,series,1)
 		end
 		player:AddNotification("Chúc mừng "..player:GetName().."  nhận hỗ trợ mật tịch thành công")
 		return
@@ -3150,14 +3273,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		TuiTanThu:ShowDialog(item, player, "Nhận <color=green>Thẻ đổi tên</color> thành công. Rất cảm ơn bằng hữu đã luôn đồng hành cùng <color=green>Kiếm Thế 2009 - Mobile</color>!")
 		return
 	end
-	
-	if selectionID == 22222 then
-		Player.SetBookLevelAndExp(player, 100, 0)
-		player:AddNotification("Nhận thành công Kinh Nghiệm Mật Tịch")
-		GUI.CloseDialog(player)
-		return
-	end
-	
+		
 	if selectionID == 10006 then
 		player:ResetCopySceneEnterTimes(11111)
 		player:ResetCopySceneEnterTimes(11112)

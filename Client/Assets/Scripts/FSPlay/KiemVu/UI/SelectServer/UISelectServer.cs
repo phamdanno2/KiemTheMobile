@@ -414,7 +414,7 @@ namespace FSPlay.KiemVu.UI.SelectServer
                 toggleListServerByGroup.Active = false;
             }
         }
-        #endregion
+#endregion
 
         #region Network
         /// <summary>

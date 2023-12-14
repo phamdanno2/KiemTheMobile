@@ -4272,7 +4272,7 @@ public partial class PlayZone
             string base64String = Convert.ToBase64String(bytesToEncode);
             string websiteURL = string.Format("http://id.kiemthemobile.net/nap.php?data={0}", base64String);
             //KTGlobal.AddNotification("Link: " + websiteURL);
-            if (Global.GetDeviceForWebURL() == "androidsub")
+            if (Global.GetDeviceForWebURL() == "android"/*"androidsub"*/)
             {
                 AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
                 AndroidJavaObject intentObject = new AndroidJavaObject("android.content.Intent");

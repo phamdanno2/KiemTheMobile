@@ -73,7 +73,7 @@ namespace FSPlay.KiemVu.Logic.Settings
 
             _AutoConfig._AutoPKConfig.AutoNMPercent = 20;
             _AutoConfig._AutoPKConfig.HpPercent = 50;
-            _AutoConfig._AutoPKConfig.IsAutoEat = false;
+            _AutoConfig._AutoPKConfig.IsAutoEat = true;
             _AutoConfig._AutoPKConfig.IsAutoHp = true;
             _AutoConfig._AutoPKConfig.IsAutoPKAgain = true;
             _AutoConfig._AutoPKConfig.IsAutoReviceTeam = true;
