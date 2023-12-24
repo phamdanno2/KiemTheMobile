@@ -87,7 +87,7 @@ namespace GameServer.KiemThe.Logic
                 }
 
                 // Kiểm tra xem có tiền không
-                if (!KTGlobal.IsHaveMoney(client, 1000000, Entities.MoneyType.Bac))
+                if (!KTGlobal.IsHaveMoney(client, 1, Entities.MoneyType.Bac))//1000000
                 {
                     PlayerManager.ShowNotification(client, "Bạc trên người không đủ");
                     return TCPProcessCmdResults.RESULT_OK;
@@ -105,11 +105,11 @@ namespace GameServer.KiemThe.Logic
                     return TCPProcessCmdResults.RESULT_OK;
                 }
                 // Yêu cầu 50 uy danh mới có thể đăng nhập bang hội
-                if (client.Prestige <= 50)
-                {
-                    PlayerManager.ShowNotification(client, "50 điểm uy danh mới có thể tạo bang hội");
-                    return TCPProcessCmdResults.RESULT_OK;
-                }
+                //if (client.Prestige < 50)
+                //{
+                //   PlayerManager.ShowNotification(client, "50 điểm uy danh mới có thể tạo bang hội");
+                //    return TCPProcessCmdResults.RESULT_OK;
+                //}
                 //-200 Cấp độ không đủ
                 if (client.m_Level < 30)
                 {
@@ -150,7 +150,7 @@ namespace GameServer.KiemThe.Logic
                         }
                         else if (Status == 0)
                         {
-                            KTGlobal.SubMoney(client, 1000000, Entities.MoneyType.Bac, "CREATE GUILD");
+                            KTGlobal.SubMoney(client, 1, Entities.MoneyType.Bac, "CREATE GUILD");
                             PlayerManager.ShowMessageBox(client, "Thông báo", "Tạo bang hội thành công");
                             int GUILDID = Int32.Parse(Pram[1]);
                             string GUILDSTR = Pram[2];

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="3582" Name="Thẩm Thiết Thạch" MinimapName="" VisibleOnMinimap="1" Title="&lt;color=green&gt;Thợ săn độc hành&lt;/color&gt;" X="2969" Y="5691" Dir="1" ScriptID = "144" />
+	<NPC Code="3583" Name="Hứa Sĩ Vĩ" MinimapName="" VisibleOnMinimap="1" Title="&lt;color=green&gt;Học trò thầy thuốc&lt;/color&gt;" X="3431" Y="5481" Dir="1" ScriptID = "145" />	
+   
+  </NPCs>
+</Map>

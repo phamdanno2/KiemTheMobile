@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="2655" Name="Môn đồ Bạch Hổ Đường [Đông]" MinimapName="Báo danh Bạch Hổ Đường [Đông]" VisibleOnMinimap="1" Title="Báo danh Bạch Hổ Đường [Đông]" X="7779" Y="2534" Dir="1" ScriptID="400007" />
+	<NPC Code="2656" Name="Môn đồ Bạch Hổ Đường [Nam]" MinimapName="Báo danh Bạch Hổ Đường [Nam]" VisibleOnMinimap="1" Title="Báo danh Bạch Hổ Đường [Nam]" X="5076" Y="1052" Dir="4" ScriptID="400010" />
+	<NPC Code="2657" Name="Môn đồ Bạch Hổ Đường [Tây]" MinimapName="Báo danh Bạch Hổ Đường [Tây]" VisibleOnMinimap="1" Title="Báo danh Bạch Hổ Đường [Tây]" X="2110" Y="2529" Dir="5" ScriptID="400009" />
+	<NPC Code="2658" Name="Môn đồ Bạch Hổ Đường [Bắc]" MinimapName="Báo danh Bạch Hổ Đường [Bắc]" VisibleOnMinimap="1" Title="Báo danh Bạch Hổ Đường [Bắc]" X="4943" Y="3989" Dir="7" ScriptID="400008" />
+	<NPC Code="3698" Name="Xa Phu" MinimapName="" VisibleOnMinimap="1" Title="" X="4585" Y="2462" Dir="0" ScriptID="400011" />
+	<NPC Code="3698" Name="Xa Phu" MinimapName="" VisibleOnMinimap="1" Title="" X="5394" Y="2476" Dir="0" ScriptID="400011" />
+  </NPCs>
+</Map>

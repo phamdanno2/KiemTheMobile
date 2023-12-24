@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>	      
+	    <Teleport Code="1" Tip="Mê Cung Sa Mạc [cấp 75] " Key="1" To="101" ToX="8190" ToY="3876" X="870" Y="2050" Radius="100" />
+	</Teleports>
+</Map>

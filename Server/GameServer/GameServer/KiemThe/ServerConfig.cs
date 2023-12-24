@@ -27,10 +27,16 @@ namespace GameServer.KiemThe
 		/// </summary>
 		public int MaxCCU { get; set; }
 
-		/// <summary>
-		/// Giới hạn tài khoản trên địa chỉ IP
-		/// </summary>
-		public int LimitAccountPerIPAddress { get; set; }
+		//tỷ lệ bạc drop
+        public double MoneyRate { get; set; }
+
+		//tỷ lệ exp
+        public double ExpRate { get; set; }
+
+        /// <summary>
+        /// Giới hạn tài khoản trên địa chỉ IP
+        /// </summary>
+        public int LimitAccountPerIPAddress { get; set; }
 
 		/// <summary>
 		/// Mở luồng thực thi di chuyển ngẫu nhiên của quái
@@ -129,7 +135,10 @@ namespace GameServer.KiemThe
 			XElement xmlNode = XElement.Parse(File.ReadAllText("ServerConfig.xml"));
 			ServerConfig.Instance = new ServerConfig()
 			{
-				MaxCCU = int.Parse(xmlNode.Element("LimitAccount").Attribute("MaxCCU").Value),
+                MoneyRate = double.Parse(xmlNode.Element("ServerRate").Attribute("MoneyRate").Value),
+                ExpRate = double.Parse(xmlNode.Element("ServerRate").Attribute("ExpRate").Value),
+
+                MaxCCU = int.Parse(xmlNode.Element("LimitAccount").Attribute("MaxCCU").Value),
 				LimitAccountPerIPAddress = int.Parse(xmlNode.Element("LimitAccount").Attribute("LimitAccountPerIPAddress").Value),
 				EnableMonsterAIRandomMove = bool.Parse(xmlNode.Element("MonsterAI").Attribute("EnableMonsterAIRandomMove").Value),
 				EnableMonsterAI = bool.Parse(xmlNode.Element("MonsterAI").Attribute("EnableMonsterAI").Value),
@@ -149,6 +158,9 @@ namespace GameServer.KiemThe
 				CaptchaBoundMoneyAddPerLevel = int.Parse(xmlNode.Element("Captcha").Attribute("CaptchaBoundMoneyAddPerLevel").Value),
 				EnableCaptchaForBattle = bool.Parse(xmlNode.Element("Captcha").Attribute("EnableCaptchaForBattle").Value),
 			};
+
+            //---------------fix jackson Load Config
+            Console.WriteLine("MoneyRate: " + ServerConfig.Instance.MoneyRate + " ExpRate: " + ServerConfig.Instance.ExpRate + "");
 
             /// Thời gian bắt đầu xuất hiện
             {

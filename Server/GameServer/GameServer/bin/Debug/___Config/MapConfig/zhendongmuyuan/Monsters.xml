@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Monsters>
+     <Monster ID="1" Code="2204" X="6120" Y="1406" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="2" Code="2204" X="5348" Y="2203" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="3" Code="2204" X="7274" Y="2125" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="4" Code="2204" X="6011" Y="3859" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="5" Code="2203" X="4114" Y="4254" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="6" Code="2203" X="4780" Y="3496" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="7" Code="2203" X="2715" Y="3076" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="8" Code="2025" X="1399" Y="4839" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="9" Code="2025" X="878" Y="3539" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="10" Code="2025" X="2465" Y="5687" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 
+	 <Monster ID="11" Code="2026" X="4349" Y="5798" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="12" Code="2026" X="3288" Y="5179" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+	 <Monster ID="13" Code="2026" X="5829" Y="5906" Radius="300" Num="20" Timeslot="10" PursuitRadius="60" BirthType="0" TimePoints="0" BirthRate="1" />
+ 
+  </Monsters>
+</Map>

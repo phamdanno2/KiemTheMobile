@@ -775,17 +775,21 @@ namespace GameServer.KiemThe.Logic
 
                         double EXPDAIBCH = 0;
 
+                        //-------------fix jackson ủy thác BCH X2
                         if (TIMEPRO > 0)
                         {
-                            EXPGIAN = (TIMEPRO * 60) * EXPPERSECON * 1.3;
-
-                            EXPDAIBCH = EXPGIAN;
+                            //EXPGIAN = (TIMEPRO * 60) * EXPPERSECON * 1.3;
+                            //EXPDAIBCH = EXPGIAN;
+                            EXPDAIBCH = ((TIMEPRO * 60) * EXPPERSECON * 1.3) * 2;
+                            EXPGIAN = EXPGIAN + EXPDAIBCH;
                         }
 
                         if (TIMENORMAL > 0)
                         {
-                            EXPBCH = (TIMENORMAL * 60) * EXPPERSECON;
-                            EXPGIAN += (TIMENORMAL * 60) * EXPPERSECON;
+                            //EXPBCH = (TIMENORMAL * 60) * EXPPERSECON;
+                            //EXPGIAN += (TIMENORMAL * 60) * EXPPERSECON;
+                            EXPBCH = ((TIMENORMAL * 60) * EXPPERSECON) * 2;
+                            EXPGIAN = EXPGIAN + EXPBCH;
                         }
 
                         var ActivExpLoginMap = KTKTAsyncTask.Instance.ScheduleExecuteAsync(new DelayFuntionAsyncTask("ExpCallAddDelay", new Action(() => PlayerManager.NotifyBCH(client, EXPGIAN, EXPBCH, EXPDAIBCH, TIMEPRO, TIMENORMAL, TOTALOFFFMIN))), 10 * 1000);

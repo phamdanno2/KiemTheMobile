@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Vĩnh Lạc Trấn" Key="1" To="3" ToX="2723" ToY="5050" X="13285" Y="2101" Radius="100" />
+	<Teleport Code="2" Tip="Đại Tán Quan[cấp 55]" Key="2" To="87" ToX="8086" ToY="6320" X="590" Y="2821" Radius="100" />
+	<Teleport Code="3" Tip="Kiếm Môn Quan[cấp 85]" Key="3" To="111" ToX="9273" ToY="7621" X="3352" Y="444" Radius="100" />
+	<Teleport Code="4" Tip="Hoa Sơn[cấp 95]" Key="4" To="116" ToX="1745" ToY="2691" X="11745" Y="7861" Radius="100" />
+<!--	
+	1 12685,2167
+	2 873,2415
+	3 3268,767
+	4 11136,7616
+	Tần Lăng 12376,6192
+-->
+	</Teleports>
+</Map>

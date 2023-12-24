@@ -319,6 +319,7 @@ namespace GameServer.Logic
             return (int)ValueAdd;
         }
 
+        /// Tính toán lượng kinh nghiệm nhận được khi người chơi giết quái
         public static int _CalcPlayerExpByLevel(int nExp, int nSelfLevel, int nTarLevel)
         {
             int nSubLevel = nSelfLevel - nTarLevel;
@@ -355,6 +356,10 @@ namespace GameServer.Logic
 
             if (nGetExp <= 0)  // Nếu EXP chia ra nhỏ hơn 0 thì expx nhận được là 1
                 nGetExp = 1;
+
+            //-------------fix jackson thêm tỷ lệ EXP train quái
+            if(ServerConfig.Instance.ExpRate > 0)
+                nGetExp = (int)(nGetExp * ServerConfig.Instance.ExpRate);
 
             return nGetExp;
         }

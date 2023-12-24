@@ -48,7 +48,7 @@ namespace GameServer.KiemThe.GameEvents.EmperorTomb
             if (activityID == 400)
             {
                 float durationHourPerDay = EmperorTomb.Config.DurationPerDay / 3600000f;
-                KTGlobal.SendSystemEventNotification(string.Format("Tần Lăng đã khai mở. Trong thời gian từ 9:00 đến 23:00, anh hùng hào kiệt cấp {0} trở lên có thể thông qua Lương Tiếu Tiếu ở Tàn Tích Cung A Phòng tiến vào. Lưu ý mỗi ngày chỉ được vào tối đa {1} giờ.", EmperorTomb.Config.LimitLevel, Utils.Truncate(durationHourPerDay, 1)));
+                KTGlobal.SendSystemEventNotification(string.Format("Tần Lăng đã khai mở. Trong thời gian từ 18:00 đến 16:00 hôm sau, anh hùng hào kiệt cấp {0} trở lên có thể thông qua Lương Tiếu Tiếu ở Tàn Tích Cung A Phòng tiến vào. Lưu ý mỗi 1 chu kỳ hoạt động chỉ được vào tối đa {1} giờ.", EmperorTomb.Config.LimitLevel, Utils.Truncate(durationHourPerDay, 1)));
 
                 /// Làm rỗng Script
                 this.scripts.Clear();
@@ -80,6 +80,8 @@ namespace GameServer.KiemThe.GameEvents.EmperorTomb
             /// Nếu là kết thúc Tần Lăng
             else if (activityID == 402)
             {
+                //--------------fix jackson đóng tần lăng
+                KTActivityManager.StopActivity(400);
                 KTGlobal.SendSystemEventNotification("Tần Lăng đã đóng lại, hẹn quý bằng hữu lần tới!");
             }
         }
@@ -183,7 +185,7 @@ namespace GameServer.KiemThe.GameEvents.EmperorTomb
             /// Nếu Tần Lăng chưa mở
             if (GameMapEventsManager.GetActivityScript(400) == null)
             {
-                return "Tần Lăng hiện chưa mở, hãy quay lại sau !!!!<br><br>Thời gian mở của Tần Lăng 09h00<br><br>Thời gian đóng của Tần Lăng 23h59";
+                return "Tần Lăng hiện chưa mở, hãy quay lại sau !!!!<br><br>Thời gian mở của Tần Lăng 18h00 đến 16h00 hôm sau.";
             }
             /// Nếu đã hết thời gian được ở trong Tần Lăng
             else if (EmperorTomb_ActivityScript.GetTodayTotalSecLeft(player) <= 0)

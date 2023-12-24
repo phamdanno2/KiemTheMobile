@@ -35,9 +35,14 @@
     <NPC Code="3555" Name="Quy Kinh Tinh" MinimapName="Côn Lôn" VisibleOnMinimap="1" Title="Đệ tử Tiếp Dẫn Côn Lôn" X="3479" Y="3326" Dir="7" ScriptID="58"/>
 	
 	<NPC Code="2601" Name="Lễ Quan" MinimapName="" VisibleOnMinimap="1" Title="" X="2910" Y="3930" Dir="7" ScriptID="149" />
+	<NPC Code="2601" Name="Lễ Quan" MinimapName="" VisibleOnMinimap="1" Title="" X="7500" Y="3500" Dir="7" ScriptID="149" />
 
 	<NPC Code="3574" Name="Dã Luyện Đại Sư" MinimapName="" VisibleOnMinimap="1" Title="" X="7600" Y="3600" Dir="2" ScriptID="33"/>
+	<NPC Code="3574" Name="Dã Luyện Đại Sư" MinimapName="" VisibleOnMinimap="1" Title="" X="4970" Y="2890" Dir="7" ScriptID="33"/>
+	
 	<NPC Code="6783" Name="Tạ Hiền" MinimapName="Tiền Trang" VisibleOnMinimap="1" Title="Chủ Tiền Trang" X="7600" Y="3200" Dir="0" ScriptID="14"/>
+	<NPC Code="6783" Name="Tạ Hiền" MinimapName="Tiền Trang" VisibleOnMinimap="1" Title="Chủ Tiền Trang" X="5810" Y="1330" Dir="7" ScriptID="14"/>
+
 	<NPC Code="2993" Name="Thương Gia Tiêu Dao" MinimapName="" VisibleOnMinimap="1" Title="" X="8000" Y="3200" Dir="1" ScriptID="39"/>
 
 	<NPC Code="3571" Name="Long Ngũ Thái Gia" MinimapName="Long Ngũ Thái Gia" VisibleOnMinimap="1" Title="Nguyên Lão Nghĩa Quân" X="6523" Y="2996" Dir="1"  ScriptID="148"/>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+     <Teleport Code="1" Tip="Phục Ngưu Sơn[cấp 65] " Key="1" To="95" ToX="1037" ToY="478" X="6229" Y="779" Radius="100" />
+	 
+	</Teleports>
+</Map>

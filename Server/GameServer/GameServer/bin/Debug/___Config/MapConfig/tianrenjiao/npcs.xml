@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="6778" Name="Thẩm Hà Diệp" MinimapName="Phòng Cụ" VisibleOnMinimap="1" Title="Chủ Tiệm Phòng Cụ" X="3430" Y="1590" Dir="1" ScriptID="25"/>
+	<NPC Code="6777" Name="Điềm Tửu Thúc" MinimapName="Binh Khí" VisibleOnMinimap="1" Title="Chủ Tiệm Binh Khí" X="2510" Y="2050" Dir="1"  ScriptID="29" />
+	<NPC Code="6781" Name="Bất Động Tiên Sinh" MinimapName="Tạp Hóa" VisibleOnMinimap="1" Title="Chủ Tiệm Tạp Hóa" X="2930" Y="2990" Dir="7" ScriptID="28"/>
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="4210" Y="3210" Dir="1" ScriptID="27"/>
+	<NPC Code="6782" Name="Đại Lão Bạch" MinimapName="Tửu Lầu" VisibleOnMinimap="1" Title="Chủ Tửu Lầu" X="4870" Y="2870" Dir="1" ScriptID="24"/>
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="2590" Y="4610" Dir="7" ScriptID="12" />
+	
+    <NPC Code="3545" Name="Ngột Tán" MinimapName="" VisibleOnMinimap="1" Title="" X="4210" Y="5450" Dir="7" ScriptID="76" />
+	<NPC Code="3548" Name="Hoàn Nhan Tương" MinimapName="Giáo Chủ Hoàn Nhan Tương" VisibleOnMinimap="1" Title="Giáo chủ Thiên Nhẫn" X="7510" Y="4770" Dir="1" ScriptID="152" />
+	<NPC Code="3547" Name="Vinh Đồ" MinimapName="" VisibleOnMinimap="1" Title="" X="6770" Y="2170" Dir="7" ScriptID="79" />
+	<NPC Code="3544" Name="Đoan Mộc Duệ" MinimapName="" VisibleOnMinimap="1" Title="" X="8570" Y="2770" Dir="1" ScriptID="78" />	
+	<NPC Code="3546" Name="Bồ Sát Phong Nô" MinimapName="" VisibleOnMinimap="1" Title="" X="970" Y="3990" Dir="7" ScriptID="80" />
+	<NPC Code="2538" Name="Tổng Quản Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="4686" Y="2276" Dir="1" ScriptID="65" />
+	<NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="3510" Y="4070" Dir="1" ScriptID="64" />  	
+	<NPC Code="5068" Name="Thiên Nhẫn Âm Hỏa" MinimapName="" VisibleOnMinimap="1" Title="" X="6810" Y="970" Dir="1" ScriptID="157"/>
+	<NPC Code="5068" Name="Thiên Nhẫn Âm Hỏa" MinimapName="" VisibleOnMinimap="1" Title="" X="5770" Y="1510" Dir="1" ScriptID="157"/>
+	
+	
+	
+	
+  </NPCs>
+</Map>

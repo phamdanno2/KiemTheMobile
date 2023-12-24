@@ -114,7 +114,46 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
         #region Battel Register
 
         /// <summary>
-        /// Đăng ký vào tống kim
+        /// </summary>
+        /// Trạng thái trận đấu
+        public int StateBattle(KPlayer KPlayer)
+        {
+            int check = 0;
+            if (BATTLESTATE == BattelStatus.STATUS_PREPARE)         //đang báo danh
+                check = 1;
+            else if (BATTLESTATE == BattelStatus.STATUS_START)      //đang trận đấu
+                check = 2;
+            else if (BATTLESTATE == BattelStatus.STATUS_PREPAREEND)      //chờ KQ BXH
+                check = 3;
+            else if (BATTLESTATE == BattelStatus.STATUS_END)        //đang chờ nhận phần thường khu vực báo danh
+                check = 4;
+            else if (BATTLESTATE == BattelStatus.STATUS_CLEAR)      //đang chờ clear KQ (lúc này đã out hết role)
+                check = 5;
+            return check;
+        }
+
+        /// <summary>
+        /// </summary>
+        /// Số lượng 2 bên lúc đang ký báo danh
+        public int CountBattle(KPlayer KPlayer, int camp)
+        {
+            int check = 0;
+            if (BATTLESTATE == BattelStatus.STATUS_PREPARE || BATTLESTATE == BattelStatus.STATUS_START || BATTLESTATE == BattelStatus.STATUS_PREPAREEND)         //đang báo danh
+            {
+                if (camp == 10)
+                {
+                    check = SongCampRegister.Count;
+                }
+                else if (camp == 20)
+                {
+                    check = JinCampRegister.Count;
+                }
+            }
+            return check;
+        }
+
+        /// <summary>
+        /// Đăng ký vào tống kim  ------fix nguyên hàm báo danh, tham gia và kết thúc tống kim
         /// </summary>
         /// <param name="KPlayer"></param>
         /// <param name="Camp"></param>
@@ -132,24 +171,45 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     }
                     else
                     {
+                        //if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
+                        //{
+                        //    BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 10, 0);
+                        //    SongCampRegister.TryAdd(KPlayer.RoleID, _Battle);
+                        //    this.MovePlayerToArena(KPlayer, Camp);
+                        //    return 0;
+                        //}
+                        //else
+                        //{
+                        //    if (SongCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                        //    {
+                        //        _Battle.Player = KPlayer;
+                        //        this.MovePlayerToArena(KPlayer, Camp);
+                        //        return 0;
+                        //    }
+                        //}
+
+                        //Kiểm tra đăng ký phe tống
                         if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
                         {
-                            BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 10, 0);
-
-                            SongCampRegister.TryAdd(KPlayer.RoleID, _Battle);
-
-                            this.MovePlayerToArena(KPlayer, Camp);
-
-                            return 0;
+                            //Kiểm tra đăng ký phe liêu chưa
+                            if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
+                            {
+                                BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 10, 0);
+                                SongCampRegister.TryAdd(KPlayer.RoleID, _Battle);
+                                this.MovePlayerToArena(KPlayer, Camp);
+                                return 0;
+                            }
+                            else
+                            {
+                                return -5;
+                            }
                         }
                         else
                         {
                             if (SongCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
                             {
                                 _Battle.Player = KPlayer;
-
                                 this.MovePlayerToArena(KPlayer, Camp);
-
                                 return 0;
                             }
                         }
@@ -163,24 +223,45 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     }
                     else
                     {
+                        //if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
+                        //{
+                        //    BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 20, 0);
+                        //    JinCampRegister.TryAdd(KPlayer.RoleID, _Battle);
+                        //    this.MovePlayerToArena(KPlayer, Camp);
+                        //    return 0;
+                        //}
+                        //else
+                        //{
+                        //    if (JinCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                        //    {
+                        //        _Battle.Player = KPlayer;
+                        //        this.MovePlayerToArena(KPlayer, Camp);
+                        //        return 0;
+                        //    }
+                        //}
+
+                        //Kiểm tra đăng ký phe liêu
                         if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
                         {
-                            BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 20, 0);
-
-                            JinCampRegister.TryAdd(KPlayer.RoleID, _Battle);
-
-                            this.MovePlayerToArena(KPlayer, Camp);
-
-                            return 0;
+                            //Kiểm tra đăng ký phe tống chưa
+                            if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
+                            {
+                                BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 20, 0);
+                                JinCampRegister.TryAdd(KPlayer.RoleID, _Battle);
+                                this.MovePlayerToArena(KPlayer, Camp);
+                                return 0;
+                            }
+                            else
+                            {
+                                return -5;
+                            }
                         }
                         else
                         {
                             if (JinCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
                             {
                                 _Battle.Player = KPlayer;
-
                                 this.MovePlayerToArena(KPlayer, Camp);
-
                                 return 0;
                             }
                         }
@@ -191,42 +272,176 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     return -3;
                 }
             } // Nếu chiến trường đang diễn ra
-            else if (BATTLESTATE == BattelStatus.STATUS_START)
+            //else if (BATTLESTATE == BattelStatus.STATUS_START)
+            //{
+            //    if (Camp == 10)
+            //    {
+            //        if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
+            //        {
+            //            return -4;
+            //        }
+            //        if (SongCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+            //        {
+            //            _Battle.Player = KPlayer;
+            //            this.MovePlayerToArena(KPlayer, Camp);
+            //            return 0;
+            //        }
+            //    }
+            //    else if (Camp == 20)
+            //    {
+            //        if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
+            //        {
+            //            return -4;
+            //        }
+            //        if (JinCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+            //        {
+            //            _Battle.Player = KPlayer;
+            //            this.MovePlayerToArena(KPlayer, Camp);
+            //            return 0;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        return -3;
+            //    }
+            //}
+            // Nếu chiến trường đang diễn ra
+            else if (BATTLESTATE == BattelStatus.STATUS_START || BATTLESTATE == BattelStatus.STATUS_PREPAREEND)
             {
+                // Nếu Camp = 10 thì là đăng ký bên tống
                 if (Camp == 10)
                 {
+                    //Kiểm tra đăng ký phe tống
                     if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
                     {
-                        return -4;
+                        //Kiểm tra đăng ký phe liêu chưa
+                        if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
+                        {
+                            //Kiểm tra thời gian trước 5 phút cuối cho báo danh
+                            if (BATTLESTATE == BattelStatus.STATUS_START)
+                            {
+                                /// Nếu số lượng lệch quá 3 người thì thông báo là ko được
+                                if (SongCampRegister.Count - JinCampRegister.Count >= 3)
+                                {
+                                    return -100;
+                                }
+                                else
+                                {
+                                    BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 10, 0);
+                                    SongCampRegister.TryAdd(KPlayer.RoleID, _Battle);
+                                    this.MovePlayerToArena(KPlayer, Camp);
+                                    return 0;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            return -5;
+                        }
                     }
-                    if (SongCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                    else
                     {
-                        _Battle.Player = KPlayer;
-
-                        this.MovePlayerToArena(KPlayer, Camp);
-
-                        return 0;
+                        if (SongCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                        {
+                            _Battle.Player = KPlayer;
+                            this.MovePlayerToArena(KPlayer, Camp);
+                            return 0;
+                        }
                     }
                 }
                 else if (Camp == 20)
                 {
+                    //Kiểm tra đăng ký phe liêu
                     if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
                     {
-                        return -4;
+                        //Kiểm tra đăng ký phe tống chưa
+                        if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
+                        {
+                            //Kiểm tra thời gian trước 5 phút cuối cho báo danh
+                            if (BATTLESTATE == BattelStatus.STATUS_START)
+                            {
+                                /// Nếu số lượng lệch quá 3 người thì thông báo là ko được
+                                if (JinCampRegister.Count - SongCampRegister.Count >= 3)
+                                {
+                                    return -200;
+                                }
+                                else
+                                {
+                                    BattlePlayer _Battle = new BattlePlayer(KPlayer, 0, 0, 1, 0, 0, 20, 0);
+                                    JinCampRegister.TryAdd(KPlayer.RoleID, _Battle);
+                                    this.MovePlayerToArena(KPlayer, Camp);
+                                    return 0;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            return -5;
+                        }
                     }
-
-                    if (JinCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                    else
                     {
-                        _Battle.Player = KPlayer;
+                        if (JinCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                        {
+                            _Battle.Player = KPlayer;
+                            this.MovePlayerToArena(KPlayer, Camp);
+                            return 0;
+                        }
+                    }
+                }
+            }
+            else if (BATTLESTATE == BattelStatus.STATUS_END)    //------fix thêm vào nhận thưởng khi out tống kim
+            {
+                // Nếu Camp = 10 thì là đăng ký bên tống
+                if (Camp == 10)
+                {
+                    //-------fix chưa đăng ký
+                    if (!JinCampRegister.ContainsKey(KPlayer.RoleID) && !SongCampRegister.ContainsKey(KPlayer.RoleID))
+                    {
+                        return -300;
+                    }
+                    if (!SongCampRegister.ContainsKey(KPlayer.RoleID))
+                    {
+                        return -301;
+                    }
+                    else
+                    {
+                        if (SongCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                        {
+                            _Battle.Player = KPlayer;
 
-                        this.MovePlayerToArena(KPlayer, Camp);
+                            this.MovePlayerToArena(KPlayer, Camp);
 
-                        return 0;
+                            return 0;
+                        }
+                    }
+                }
+                else if (Camp == 20)
+                {
+                    //-------fix chưa đăng ký
+                    if (!JinCampRegister.ContainsKey(KPlayer.RoleID) && !SongCampRegister.ContainsKey(KPlayer.RoleID))
+                    {
+                        return -300;
+                    }
+                    if (!JinCampRegister.ContainsKey(KPlayer.RoleID))
+                    {
+                        return -301;
+                    }
+                    else
+                    {
+                        if (JinCampRegister.TryGetValue(KPlayer.RoleID, out BattlePlayer _Battle))
+                        {
+                            _Battle.Player = KPlayer;
+
+                            this.MovePlayerToArena(KPlayer, Camp);
+
+                            return 0;
+                        }
                     }
                 }
                 else
                 {
-                    return -3;
+                    return -300;
                 }
             }
             else
@@ -363,9 +578,8 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
                     foreach (KPlayer _Player in friends)
                     {
-                        string NotifyProtect = "Ngươi có công bảo vệ " + _Monster.MonsterInfo.Name + ", nhận được <color=yellow>15</color> điểm tích lũy";
-
-                        PlayerManager.ShowNotification(_Player, NotifyProtect);
+                        //string NotifyProtect = "Ngươi có công bảo vệ " + _Monster.MonsterInfo.Name + ", nhận được <color=yellow>15</color> điểm tích lũy";
+                        //PlayerManager.ShowNotification(_Player, NotifyProtect);
 
                         BattlePlayer _FindKill = null;
 
@@ -380,26 +594,31 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
                         if (_FindKill != null)
                         {
+                            //-----------fix điểm tích lũy dưới 1k mới đc cộng 15 điểm bảo vệ Đại Tướng và Nguyên Soái (IsBoss="true" Battle_SongJin_Mid.xml)
                             int KillCurenScore = _FindKill.Score;
-
-                            int ScoreGet = 15;
-
-                            int TotalScore = KillCurenScore + ScoreGet;
-
-                            _FindKill.Score = TotalScore;
-
-                            if (_Player.Camp == 10)
+                            if (KillCurenScore < 1000)
                             {
-                                TotalSongScore += ScoreGet;
-                            }
-                            else if (_Player.Camp == 20)
-                            {
-                                TotalJinScore += ScoreGet;
-                            }
-                            UpdateTitleRank(_FindKill.Player, _FindKill.Rank);
+                                int ScoreGet = 15;
+                                string NotifyProtect = "Ngươi có công bảo vệ " + _Monster.MonsterInfo.Name + ", nhận được <color=yellow>" + ScoreGet + "</color> điểm tích lũy";
+                                PlayerManager.ShowNotification(_Player, NotifyProtect);
 
-                            // Gửi notify cho thằng giết
-                            NotifySocreForPlayer(_FindKill, true);
+                                int TotalScore = KillCurenScore + ScoreGet;
+
+                                _FindKill.Score = TotalScore;
+
+                                if (_Player.Camp == 10)
+                                {
+                                    TotalSongScore += ScoreGet;
+                                }
+                                else if (_Player.Camp == 20)
+                                {
+                                    TotalJinScore += ScoreGet;
+                                }
+                                UpdateTitleRank(_FindKill.Player, _FindKill.Rank);
+
+                                // Gửi notify cho thằng giết
+                                NotifySocreForPlayer(_FindKill, true);
+                            }
                         }
                     }
                 }
@@ -464,6 +683,8 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                 var serializer = new XmlSerializer(typeof(BattleConfig));
                 _BattleConfig = serializer.Deserialize(stream) as BattleConfig;
             }
+
+            SysConOut.WriteLine("Tong Kim Khoi Tao: " + Battle_Config+ " MinLevel: " + _BattleConfig.MinLevel+ " MaxLevel: " + _BattleConfig.MaxLevel);
         }
 
         public bool initialize(int Level)
@@ -471,7 +692,7 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
             this.BattleLevel = Level;
 
             string TimerName = "Battle_SongJin_" + Level;
-
+          
             intBattle(Level);
 
             //        Thread t = new Thread(() => {
@@ -808,6 +1029,33 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
             }
         }
 
+        /// <summary>
+        ///  Cấp độ thấp nhất
+        /// </summary>
+        /// <returns></returns>
+        public int GetMinLevelJoin()
+        {
+            return _BattleConfig.MinLevel;
+        }
+
+        /// <summary>
+        /// Cấp độ cao nhất
+        /// </summary>
+        /// <returns></returns>
+        public int GetMaxLevelJoin()
+        {
+            return _BattleConfig.MaxLevel;
+        }
+
+        /// <summary>
+        /// Lấy ra tên của chiến trường
+        /// </summary>
+        /// <returns></returns>
+        public string GetBattleName()
+        {
+            return _BattleConfig.BattleName;
+        }
+
         public void NotifyAllBattle(string MSG)
         {
             foreach (KeyValuePair<int, BattlePlayer> entry in SongCampRegister)
@@ -1034,41 +1282,92 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
                     if (_FindExtrass != null)
                     {
-                        MoreAwardExtras = "Thưởng Top :" + PlayRank + "<br><br>" + "Danh Vọng Chiến Trường:" + _FindExtrass.Point + "<br>" + "Đồng khóa:" + _FindExtrass.BindCoinRank;
+                        MoreAwardExtras = "Thưởng Top :" + PlayRank + "<br>" + "Danh Vọng Chiến Trường:" + _FindExtrass.Point;
                     }
 
                     if (_Find != null)
                     {
-                        MoreAward = "Bạc khóa:" + _Find.Money + "<br>" + "Danh Vọng Chiến Trường:" + _Find.Point;
+                        MoreAward = "Danh Vọng Chiến Trường:" + _Find.Point;
                     }
 
                     string UYDANH = "";
-
+                    //---------------fix jackson phần thưởng top tống kim
                     if (PlayRank == 1)
                     {
                         UYDANH = "Uy danh +10";
-                        //if (GameManager.IsKuaFuServer)
+                        if (GameManager.IsKuaFuServer)
                         {
-                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 7x1</color></b>";
-                            UYDANH += "<br><b><color=#00ff2a>Bạc 10v</color></b>";
+                        }
+                        else
+                        {
+                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 7</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Đồng khóa 1 vạn</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Bạc 50vạn</color></b>";
                         }
                     }
-                    else if (PlayRank >= 2 && PlayRank <= 10)
+                    else if (PlayRank == 2)
                     {
                         UYDANH = "Uy danh +8";
-                        // if (GameManager.IsKuaFuServer)
+                        if (GameManager.IsKuaFuServer)
                         {
-                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 6x1</color></b>";
-                            UYDANH += "<br><b><color=#00ff2a>Bạc 5v</color></b>";
+                        }
+                        else
+                        {
+                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 6</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Đồng khóa 5000</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Bạc 40vạn</color></b>";
                         }
                     }
-                    else if (PlayRank >= 11 && PlayRank <= 20)
+                    else if (PlayRank == 3)
+                    {
+                        UYDANH = "Uy danh +8";
+                        if (GameManager.IsKuaFuServer)
+                        {
+                        }
+                        else
+                        {
+                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 6</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Đồng khóa 5000</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Bạc 30vạn</color></b>";
+                        }
+                    }
+                    else if (PlayRank >= 4 && PlayRank <= 10)
+                    {
+                        UYDANH = "Uy danh +8";
+                        if (GameManager.IsKuaFuServer)
+                        {
+                        }
+                        else
+                        {
+                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 6</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Đồng khóa 3000</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Bạc 10vạn</color></b>";
+                        }
+                    }
+                    else if (PlayRank >= 11 && PlayRank <= 50)
                     {
                         UYDANH = "Uy danh +6";
-                        //  if (GameManager.IsKuaFuServer)
+                        if (GameManager.IsKuaFuServer)
                         {
-                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 5x1</color></b>";
-                            UYDANH += "<br><b><color=#00ff2a>Bạc 2v</color></b>";
+                        }
+                        else
+                        {
+                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 5</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Đồng khóa 2000</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Bạc 5vạn</color></b>";
+                        }
+                    }
+                    else if (PlayRank >= 51 && PlayRank <= 300)
+                    {
+                        UYDANH = "Uy danh +6";
+                        if (GameManager.IsKuaFuServer)
+                        {
+                        }
+                        else
+                        {
+                            UYDANH += "<br><b><color=#00ff2a>Huyền Tinh 5</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Đồng khóa 1000</color></b>";
+                            UYDANH += "<br><b><color=#00ff2a>Bạc 1vạn</color></b>";
                         }
                     }
                     else if (_FindPlayer.Score > 800 && _FindPlayer.Score <= 1200)
@@ -1087,10 +1386,10 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     {
                         UYDANH = "Uy danh +5";
                     }
-
+                    //----------------------
                     if (_FindPlayer.Score >= 1000 || _FindPlayer.IsReviceAward == false)
                     {
-                        Text = "Điểm tích lũy của người là :" + _FindPlayer.Score + "<br><br>Đã giết : " + _FindPlayer.Kill + " quẩn địch!<br>Xếp hạng của ngươi : " + GetRankInBxh(_FindPlayer.Player.RoleID) + "<br>Phần thưởng :<br>Exp :" + GetExpReward(_FindPlayer.Player.m_Level, _FindPlayer.Score) + "<br>" + MoreAward + "<br>" + MoreAwardExtras + "<br>" + UYDANH;
+                        Text = "Điểm tích lũy của người là :" + _FindPlayer.Score + "<br><br>Đã giết : " + _FindPlayer.Kill + " quẩn địch!<br>Xếp hạng của ngươi : " + (GetRankInBxh(_FindPlayer.Player.RoleID)+1) + "<br>Phần thưởng :<br>Exp :" + GetExpReward(_FindPlayer.Player.m_Level, _FindPlayer.Score) + "<br>" + MoreAward + "<br>" + MoreAwardExtras + "<br>" + UYDANH;
 
                         if (!_FindPlayer.IsReviceAward)
                         {
@@ -1100,7 +1399,7 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     }
                     else
                     {
-                        Text = "Điểm tích lũy của người là :" + _FindPlayer.Score + "<br><br>Đã giết : " + _FindPlayer.Kill + " quẩn địch!<br>Xếp hạng của ngươi : " + GetRankInBxh(_FindPlayer.Player.RoleID) + "<br>Phần thưởng :<br>" + KTGlobal.CreateStringByColor("Không đủ điều kiện nhận thưởng", ColorType.Importal);
+                        Text = "Điểm tích lũy của người là :" + _FindPlayer.Score + "<br><br>Đã giết : " + _FindPlayer.Kill + " quẩn địch!<br>Xếp hạng của ngươi : " + (GetRankInBxh(_FindPlayer.Player.RoleID)+1) + "<br>Phần thưởng :<br>" + KTGlobal.CreateStringByColor("Không đủ điều kiện nhận thưởng", ColorType.Importal);
                     }
                 }
             }
@@ -1217,28 +1516,33 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
         {
             if (PlayerBattle.Player.Camp == 10)
             {
-                if (SongCampRegister.TryRemove(PlayerBattle.Player.RoleID, out BattlePlayer Remove))
-                {
+                //-----------fix không xóa đăng ký
+                //if (SongCampRegister.TryRemove(PlayerBattle.Player.RoleID, out BattlePlayer Remove))
+                //{
+                    PlayerBattle.Player.Camp = -1;
+                    PlayerBattle.Player.TempTitle = "";
                     KT_TCPHandler.GetPlayerCopySceneInfoFromDB(PlayerBattle.Player, out int copySceneID, out int preMapCode, out int prePosX, out int prePosY, out long copySceneCreateTicks);
-
                     GameManager.ClientMgr.NotifyChangeMap(TCPManager.getInstance().MySocketListener, TCPOutPacketPool.getInstance(), PlayerBattle.Player, preMapCode, prePosX, prePosY, 0, false);
                     // Set lại camp cho người chơi về -1
                     PlayerBattle.Player.Camp = -1;
                     PlayerBattle.Player.TempTitle = "";
-                }
+                //}
             }
             else if (PlayerBattle.Player.Camp == 20)
             {
-                if (JinCampRegister.TryRemove(PlayerBattle.Player.RoleID, out BattlePlayer Remove))
-                {
+                //-----------fix không xóa đăng ký
+                //if (JinCampRegister.TryRemove(PlayerBattle.Player.RoleID, out BattlePlayer Remove))
+                //{
+                PlayerBattle.Player.Camp = -1;
+                    PlayerBattle.Player.TempTitle = "";
                     KT_TCPHandler.GetPlayerCopySceneInfoFromDB(PlayerBattle.Player, out int copySceneID, out int preMapCode, out int prePosX, out int prePosY, out long copySceneCreateTicks);
-
                     GameManager.ClientMgr.NotifyChangeMap(TCPManager.getInstance().MySocketListener, TCPOutPacketPool.getInstance(), PlayerBattle.Player, preMapCode, prePosX, prePosY, 0, false);
                     // Set lại camp cho người chơi về -1
                     PlayerBattle.Player.Camp = -1;
                     PlayerBattle.Player.TempTitle = "";
-                }
+                //}
             }
+            LogManager.WriteLog(LogTypes.SongJinBattle, "[" + PlayerBattle.Player.RoleID + "][" + PlayerBattle.Player.RoleName + "] thoat NPC");
         }
 
         /// <summary>
@@ -1279,9 +1583,7 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
                     int Money = _Find.Money;
                     int Point = _Find.Point;
-
                     int PointType = _Find.PointType;
-
                     int PlayRank = GetRankInBxh(_Player.Player.RoleID) + 1;
 
                     // Nhận thêm phần quà thưởng thêm
@@ -1291,74 +1593,113 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     {
                         Point = Point + _FindExtrass.Point;
                     }
-					int BindCoinRank = _FindExtrass.BindCoinRank;
                     long ExpRecvice = (long)GetExpReward(_Player.Player.m_Level, Score);
 
                     if (ExpRecvice > 0)
                     {
                         GameManager.ClientMgr.ProcessRoleExperience(_Player.Player, ExpRecvice, true, false, true, "BATTLE_SONG_JIN");
+                        LogManager.WriteLog(LogTypes.SongJinBattle, "TongKim [" + _Player.Player.strUserID + "][" + _Player.Player.RoleID + "][" + _Player.Player.RoleName + "] Rank: " + PlayRank + " Exp: " + ExpRecvice);
                     }
 
-                    KTGlobal.AddRepute(_Player.Player, PointType, Point);
+                    // Nhận xong set lại điểm cho thằng này về 0
+                    _Player.IsReviceAward = true;
 
-                    KTGlobal.AddMoney(_Player.Player, Money, MoneyType.BacKhoa, "BATTLE_SONG_JIN");
-
-					KTGlobal.AddMoney(_Player.Player, BindCoinRank, MoneyType.DongKhoa, "BATTLE_SONG_JIN");
+                    if (Point > 0)
+                        KTGlobal.AddRepute(_Player.Player, PointType, Point);
+                    if(Money > 0)
+                        KTGlobal.AddMoney(_Player.Player, Money, MoneyType.BacKhoa, "BATTLE_SONG_JIN");
 					
                     int MoneyPresinal = 0;
                     int MoneyGuild = 0;
-
+                    //---------------fix jackson phần thưởng top tống kim
                     if (PlayRank == 1)
                     {
                         MoneyPresinal = 1000;
-
                         MoneyGuild = 150;
-
                         _Player.Player.Prestige = _Player.Player.Prestige + 10;
-                        // if (GameManager.IsKuaFuServer)
+                        if (GameManager.IsKuaFuServer)
                         {
-                            if (!ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 189, 1, 0, "SONGJINBATTLE", false, 1, false, Global.ConstGoodsEndTime))
-                            {
-                                PlayerManager.ShowNotification(_Player.Player, "Có lỗi khi nhận phần thưởng");
-                            }
-
-                            KTGlobal.AddMoney(_Player.Player, 100000, MoneyType.Bac, "SONGJINBATTLE");
+                        }   
+                        else
+                        {
+                            ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 189, 1, 0, "SONGJINBATTLETOP1", false, 1, false, Global.ConstGoodsEndTime);
+                            KTGlobal.AddMoney(_Player.Player, 500000, MoneyType.Bac, "SONGJINBATTLETOP1");
+                            KTGlobal.AddMoney(_Player.Player, 10000, MoneyType.DongKhoa, "SONGJINBATTLETOP1");
                         }
                     }
-                    else if (PlayRank >= 2 && PlayRank <= 10)
+                    else if (PlayRank == 2)
                     {
                         MoneyPresinal = 700;
-
                         MoneyGuild = 150;
-
                         _Player.Player.Prestige = _Player.Player.Prestige + 8;
-
-                        // if (GameManager.IsKuaFuServer)
+                        if (GameManager.IsKuaFuServer)
                         {
-                            if (!ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 188, 1, 0, "SONGJINBATTLE", false, 1, false, Global.ConstGoodsEndTime))
-                            {
-                                PlayerManager.ShowNotification(_Player.Player, "Có lỗi khi nhận phần thưởng");
-                            }
-
-                            KTGlobal.AddMoney(_Player.Player, 50000, MoneyType.Bac, "SONGJINBATTLE");
+                        }   
+                        else
+                        {
+                            ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 188, 1, 0, "SONGJINBATTLETOP2", false, 1, false, Global.ConstGoodsEndTime);
+                            KTGlobal.AddMoney(_Player.Player, 400000, MoneyType.Bac, "SONGJINBATTLETOP2");
+                            KTGlobal.AddMoney(_Player.Player, 5000, MoneyType.DongKhoa, "SONGJINBATTLETOP2");
                         }
                     }
-                    else if (PlayRank >= 11 && PlayRank <= 20)
+                    else if (PlayRank == 3)
+                    {
+                        MoneyPresinal = 700;
+                        MoneyGuild = 150;
+                        _Player.Player.Prestige = _Player.Player.Prestige + 8;
+                        if (GameManager.IsKuaFuServer)
+                        {
+                        }
+                        else
+                        {
+                            ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 188, 1, 0, "SONGJINBATTLETOP3", false, 1, false, Global.ConstGoodsEndTime);
+                            KTGlobal.AddMoney(_Player.Player, 300000, MoneyType.Bac, "SONGJINBATTLETOP3");
+                            KTGlobal.AddMoney(_Player.Player, 5000, MoneyType.DongKhoa, "SONGJINBATTLETOP3");
+                        }
+                    }
+                    else if (PlayRank >= 4 && PlayRank <= 10)
+                    {
+                        MoneyPresinal = 700;
+                        MoneyGuild = 150;
+                        _Player.Player.Prestige = _Player.Player.Prestige + 8;
+                        if (GameManager.IsKuaFuServer)
+                        {
+                        }
+                        else
+                        {
+                            ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 188, 1, 0, "SONGJINBATTLETOP4", false, 1, false, Global.ConstGoodsEndTime);
+                            KTGlobal.AddMoney(_Player.Player, 100000, MoneyType.Bac, "SONGJINBATTLETOP4");
+                            KTGlobal.AddMoney(_Player.Player, 3000, MoneyType.DongKhoa, "SONGJINBATTLETOP4");
+                        }
+                    }
+                    else if (PlayRank >= 11 && PlayRank <= 50)
                     {
                         MoneyPresinal = 500;
-
                         MoneyGuild = 150;
-
                         _Player.Player.Prestige = _Player.Player.Prestige + 6;
-
-                        // if (GameManager.IsKuaFuServer)
+                        if (GameManager.IsKuaFuServer)
                         {
-                            if (!ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 187, 1, 0, "SONGJINBATTLE", false, 1, false, Global.ConstGoodsEndTime))
-                            {
-                                PlayerManager.ShowNotification(_Player.Player, "Có lỗi khi nhận phần thưởng");
-                            }
-
-                            KTGlobal.AddMoney(_Player.Player, 20000, MoneyType.Bac, "SONGJINBATTLE");
+                        }   
+                        else
+                        {
+                            ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 187, 1, 0, "SONGJINBATTLETOP11", false, 1, false, Global.ConstGoodsEndTime);
+                            KTGlobal.AddMoney(_Player.Player, 50000, MoneyType.Bac, "SONGJINBATTLETOP11");
+                            KTGlobal.AddMoney(_Player.Player, 2000, MoneyType.DongKhoa, "SONGJINBATTLETOP11");
+                        }
+                    }
+                    else if (PlayRank >= 51 && PlayRank <= 300)
+                    {
+                        MoneyPresinal = 500;
+                        MoneyGuild = 150;
+                        _Player.Player.Prestige = _Player.Player.Prestige + 6;
+                        if (GameManager.IsKuaFuServer)
+                        {
+                        }
+                        else
+                        {
+                            ItemManager.CreateItem(Global._TCPManager.TcpOutPacketPool, _Player.Player, 187, 1, 0, "SONGJINBATTLETOP51", false, 1, false, Global.ConstGoodsEndTime);
+                            KTGlobal.AddMoney(_Player.Player, 10000, MoneyType.Bac, "SONGJINBATTLETOP51");
+                            KTGlobal.AddMoney(_Player.Player, 1000, MoneyType.DongKhoa, "SONGJINBATTLETOP51");
                         }
                     }
                     else if (_Player.Score > 800 && _Player.Score <= 1200)
@@ -1368,9 +1709,7 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     else if (_Player.Score > 1200 && _Player.Score <= 1800)
                     {
                         MoneyPresinal = 200;
-
                         MoneyGuild = 50;
-
                         _Player.Player.Prestige = _Player.Player.Prestige + 3;
                     }
                     else if (_Player.Score > 1800 && _Player.Score <= 3000)
@@ -1382,14 +1721,12 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     else if (_Player.Score > 3000 && _Player.Score <= 4500)
                     {
                         MoneyPresinal = 500;
-
                         MoneyGuild = 150;
                         _Player.Player.Prestige = _Player.Player.Prestige + 5;
                     }
                     else if (_Player.Score > 4500)
                     {
                         MoneyPresinal = 500;
-
                         MoneyGuild = 150;
                     }
 
@@ -1405,9 +1742,6 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                         //Update tài sản bang hội
                         KTGlobal.UpdateGuildMoney(MoneyGuild, _Player.Player.GuildID, _Player.Player);
                     }
-
-                    // Nhận xong set lại điểm cho thằng này về 0
-                    _Player.IsReviceAward = true;
                 }
                 else
                 {
@@ -1623,8 +1957,8 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
                     if (TimeUtil.NOW() >= LastTick + _BattleConfig.RegisterDualtion * 1000 && BATTLESTATE == BattelStatus.STATUS_PREPARE)
                     {
                         LastTick = TimeUtil.NOW();
-
-                        if (JinCampRegister.Count >= 1 && SongCampRegister.Count >= 1)
+                        //---------------fix jackson run chiến trường không cần có người
+                        if (JinCampRegister.Count >= 0 && SongCampRegister.Count >= 0)
                         {
                             BATTLESTATE = BattelStatus.STATUS_START;
 
@@ -1679,6 +2013,16 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
                         // Gọi Update Bảng xếp hạng lần cuối
                         UpadateBXH();
+
+                        //-------fix Ghi log BXH
+                        LogManager.WriteLog(LogTypes.SongJinBattle, "[" + _BattleConfig.BattleName + "] BXH TOP 50");
+                        List<BattlePlayer> _Soft = SongJinRankking.Take(50).ToList();
+                        for (int i = 0; i < _Soft.Count; i++)
+                        {
+                            BattlePlayer _Player = _Soft[i];
+                            int rank = i + 1;
+                            LogManager.WriteLog(LogTypes.SongJinBattle, "[" + _Player.Player.strUserID + "][" + _Player.Player.RoleID + "][" + _Player.Player.RoleName + "] Rank[" + rank + "] Score[" + _Player.Score + "] Camp[" + _Player.Camp + "]");
+                        }
 
                         if (TotalSongScore > TotalJinScore)
                         {

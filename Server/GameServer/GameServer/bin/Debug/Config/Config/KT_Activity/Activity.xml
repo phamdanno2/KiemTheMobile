@@ -25,7 +25,7 @@
 
 <Activities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<!-- Bạch Hổ Đường -->
-	<Activity ID="100" Name="Chuẩn bị Bạch Hổ Đường" Type="1" Time="02;50_08;50_11;50_14;50_19;50" DurationTicks="600000" CoreScript="BaiHuTang" />
+	<Activity ID="100" Name="Chuẩn bị Bạch Hổ Đường" Type="1" Time="08;50_11;50_14;50_19;50" DurationTicks="600000" CoreScript="BaiHuTang" />
 	
 	<Activity ID="101" Name="Bắt đầu Bạch Hổ Đường - 1 (sơ)" Type="1" Time="09;00_12;00_15;00_20;00" DurationTicks="1200000" CoreScript="BaiHuTang" />
 	<Activity ID="102" Name="Bắt đầu Bạch Hổ Đường - 2 (sơ)" Type="1" Time="09;10_12;10_15;10_20;10" DurationTicks="1200000" CoreScript="BaiHuTang" />
@@ -68,8 +68,8 @@
 	<!-- End -->
 	
 	<!-- Tần Lăng -->
-	<!-- <Activity ID="400" Name="Khai mở Tần Lăng" Type="1" Time="00;00" DurationTicks="50400000" CoreScript="EmperorTomb" /> -->
-	<!-- <Activity ID="401" Name="Thông báo xuất hiện Boss Tần Thủy Hoàng" Type="1" Time="15;30_21;30" DurationTicks="60000" CoreScript="EmperorTomb" /> -->
-	<!-- <Activity ID="402" Name="Đóng Tần Lăng" Type="1" Time="23;59" DurationTicks="60000" CoreScript="EmperorTomb" /> -->
+	<Activity ID="400" Name="Khai mở Tần Lăng" Type="1" Time="14;42_14;15" DurationTicks="300000" CoreScript="EmperorTomb" />
+	<Activity ID="401" Name="Thông báo xuất hiện Boss Tần Thủy Hoàng" Type="1" Time="15;30_21;30" DurationTicks="60000" CoreScript="EmperorTomb" />
+	<Activity ID="402" Name="Đóng Tần Lăng" Type="1" Time="14;47_14;20" DurationTicks="60000" CoreScript="EmperorTomb" />
 	<!-- End -->
 </Activities>

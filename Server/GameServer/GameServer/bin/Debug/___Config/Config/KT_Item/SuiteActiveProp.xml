@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSuiteActiveProp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SuiteActiveProp SuiteID="1" Name="Bộ Tiêu Dao" Head="" Body="" Belt="" Weapon="" Foot="Tiêu Dao Ngoa" Cuff="Tiêu Dao Hộ Uyển" Amulet="" Ring="" Necklace="" Pendant="Tiêu Dao Ngọc Bội">
+    <ListActive Index="1" RequestNum="2" SuiteName="adddefense_v" SuiteMAPA1="100" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikeenhance_r" SuiteMAPA1="35" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="2" Name="Bộ Tiêu Dao (Nữ)" Head="" Body="" Belt="" Weapon="" Foot="Tiêu Dao Đạp Lãng Ngoa" Cuff="Tiêu Dao Tường Phượng Thủ Trạc" Amulet="" Ring="" Necklace="" Pendant="Tiêu Dao Băng Nguyệt Hương Nang">
+    <ListActive Index="1" RequestNum="2" SuiteName="adddefense_v" SuiteMAPA1="100" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikeenhance_r" SuiteMAPA1="35" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="3" Name="Bộ Võ Lâm Liên Đấu" Head="" Body="Vũ Uy Y" Belt="" Weapon="" Foot="" Cuff="" Amulet="Vũ Uy Hộ Thân Phù" Ring="Vũ Uy Giới" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="lifemax_v" SuiteMAPA1="150" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="damage_all_resist" SuiteMAPA1="45" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="4" Name="Bộ Tranh đoạt lãnh thổ" Head="Trục Lộc Thương Khung Quán" Body="" Belt="Trục Lộc Hoàng Long Triền Yêu" Weapon="" Foot="" Cuff="" Amulet="" Ring="" Necklace="Trục Lộc Thiên Hựu Liên" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="lifemax_p" SuiteMAPA1="8" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikedamageenhance_p" SuiteMAPA1="15" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="5" Name="Bộ Thủy Hoàng" Head="" Body="Thủy Hoàng Y" Belt="" Weapon="" Foot="" Cuff="Thủy Hoàng Hộ Uyển" Amulet="" Ring="" Necklace="" Pendant="Thủy Hoàng Yêu Trụy">
+    <ListActive Index="1" RequestNum="2" SuiteName="allseriesstateresisttime" SuiteMAPA1="50" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="damage_all_resist" SuiteMAPA1="45" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="6" Name="Bộ Bá Vương" Head="" Body="Bá Vương Giáp" Belt="" Weapon="" Foot="" Cuff="" Amulet="Bá Vương Phù" Ring="Bá Vương Giới Chỉ" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="damage_all_resist" SuiteMAPA1="150" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="allseriesstateresisttime" SuiteMAPA1="100" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="7" Name="Bộ Kim Long" Head="Kim Long Quán" Body="" Belt="" Weapon="" Foot="" Cuff="" Amulet="" Ring="" Necklace="Kim Long Hạng Liên" Pendant="Kim Long Bội(Hương Nang) ">
+    <ListActive Index="1" RequestNum="2" SuiteName="lifemax_p" SuiteMAPA1="15" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikedamageenhance_p" SuiteMAPA1="30" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="8" Name="Bộ Huyết Phụng" Head="" Body="" Belt="Huyết Phụng Triền Yêu" Weapon="" Foot="Huyết Phụng Lữ" Cuff="Huyết Phụng Luân" Amulet="" Ring="" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="adddefense_v" SuiteMAPA1="210" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikeenhance_r" SuiteMAPA1="100" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="9" Name="Bộ Sát Thần" Head="" Body="Sát Thần Giáp" Belt="" Weapon="" Foot="" Cuff="" Amulet="Sát Thần Phù" Ring="Sát Thần Giới Chỉ" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="damage_all_resist" SuiteMAPA1="270" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="allseriesstateresisttime" SuiteMAPA1="190" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="10" Name="Bộ Linh Quy " Head="Linh Quy  Quán" Body="" Belt="" Weapon="" Foot="" Cuff="" Amulet="" Ring="" Necklace="Linh Quy  Hạng Liên" Pendant="Linh Quy  Bội(Hương Nang)">
+    <ListActive Index="1" RequestNum="2" SuiteName="lifemax_p" SuiteMAPA1="20" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikedamageenhance_p" SuiteMAPA1="45" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="11" Name="Bộ Hỏa Lân" Head="" Body="" Belt="Hỏa Lân Triền Yêu" Weapon="" Foot="Hỏa Lân Lữ" Cuff="Hỏa Lân Luân" Amulet="" Ring="" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="adddefense_v" SuiteMAPA1="400" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikeenhance_r" SuiteMAPA1="190" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="12" Name="Bộ Long Hồn" Head="" Body="Long Hồn Huyền Viên Giáp" Belt="" Weapon="" Foot="" Cuff="" Amulet="Long Hồn Tam Giới Phù" Ring="Long Hồn Càn Khôn Giới Chỉ" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="damage_all_resist" SuiteMAPA1="150" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="allseriesstateresisttime" SuiteMAPA1="100" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="13" Name="Bộ Tuyệt Sát" Head="Tuyệt Sát Vô Tâm Quán" Body="" Belt="" Weapon="" Foot="" Cuff="" Amulet="" Ring="" Necklace="Tuyệt Sát Tuyết Giới Liên" Pendant="Tuyệt Sát Bội(Hương Nang) ">
+    <ListActive Index="1" RequestNum="2" SuiteName="lifemax_p" SuiteMAPA1="15" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikedamageenhance_p" SuiteMAPA1="30" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+  <SuiteActiveProp SuiteID="14" Name="Bộ Kê Huyết" Head="" Body="" Belt="Kê Huyết Thạch Yêu Đái" Weapon="" Foot="Kê Huyết Long Phụng Lữ" Cuff="Kê Huyết Hộ Uyển" Amulet="" Ring="" Necklace="" Pendant="">
+    <ListActive Index="1" RequestNum="2" SuiteName="adddefense_v" SuiteMAPA1="210" SuiteMAPA2="0" SuiteMAPA3="0" />
+    <ListActive Index="2" RequestNum="3" SuiteName="deadlystrikeenhance_r" SuiteMAPA1="100" SuiteMAPA2="0" SuiteMAPA3="0" />
+  </SuiteActiveProp>
+</ArrayOfSuiteActiveProp>

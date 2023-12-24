@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		<Teleport Code="1" Tip="Nga My Phái" Key="1" To="16" ToX="4930" ToY="7270" X="1750" Y="870" Radius="100" />
+		<Teleport Code="2" Tip="Giang Tân Thôn" Key="2" To="5" ToX="3710" ToY="5050" X="9370" Y="1610" Radius="100" />
+		<Teleport Code="3" Tip="Cán Hoa Khê [cấp 55]" Key="3" To="90" ToX="6184" ToY="783" X="1830" Y="5310" Radius="100" />
+		<Teleport Code="4" Tip="Kiếm Các Thục Đạo [cấp 75]" Key="4" To="104" ToX="890" ToY="2950" X="7750" Y="5490" Radius="100" />
+	</Teleports>
+</Map>

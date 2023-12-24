@@ -154,6 +154,13 @@ namespace GameServer.Logic.Name
                 return;
             }
 
+            //---------------fix jackson kiểm tra đổi tên có ký tự ; _ làm lỗi công thành chiến
+            if (newName.Contains(";") || newName.Contains("_"))
+            {
+                PlayerManager.ShowNotification(player, "Tên có chứa ký tự đặc biệt, không thể đổi...001");
+                return;
+            }
+
             /// Nếu sử dụng đa luồng
             if (NameManager.UseMultiThread)
 			{

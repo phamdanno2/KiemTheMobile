@@ -1,0 +1,353 @@
+{
+    "Language": "Lua",
+    "Suggestions": [
+        {
+            "Name": "math",
+            "Pseudo": "math: object",
+            "Type": "Object",
+            "TokenStyle": "Special",
+            "Parameters": [],
+            "Description": "Thư viện toán học",
+            "Dependencies": [
+                {
+                    "Name": "fmod",
+                    "Pseudo": "math.fmod(x: number, y: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số bị chia"
+                        },
+                        {
+                            "Name": "y",
+                            "Type": "number",
+                            "Description": "Số chia"
+                        }
+                    ],
+                    "Description": "Chia x cho y, kết quả thu được lấy phần dư.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "modf",
+                    "Pseudo": "math.modf(x: number, y: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số bị chia"
+                        },
+                        {
+                            "Name": "y",
+                            "Type": "number",
+                            "Description": "Số chia"
+                        }
+                    ],
+                    "Description": "Chia x cho y, lấy giá trị thập phân của kết quả.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "max",
+                    "Pseudo": "math.max(...num: number[]): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "num",
+                            "Type": "...number[]",
+                            "Description": "Tập hợp các giá trị đầu vào."
+                        }
+                    ],
+                    "Description": "Trả về giá trị lớn nhất trong tập hợp các giá trị đầu vào tương ứng.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "min",
+                    "Pseudo": "math.min(...num: number[]): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "num",
+                            "Type": "...number[]",
+                            "Description": "Tập hợp các giá trị đầu vào."
+                        }
+                    ],
+                    "Description": "Trả về giá trị nhỏ nhất trong tập hợp các giá trị đầu vào tương ứng.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "floor",
+                    "Pseudo": "math.floor(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về số nguyên bằng cách bỏ đi phần thập phân của số x ban đầu.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "ceil",
+                    "Pseudo": "math.ceil(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về số nguyên nhỏ nhất lớn hơn hoặc bằng x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "pow",
+                    "Pseudo": "math.pow(x: number, y: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        },
+                        {
+                            "Name": "y",
+                            "Type": "number",
+                            "Description": "Lũy thừa tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về lũy thừa của số x cho y.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "abs",
+                    "Pseudo": "math.abs(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị tuyệt đối của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "sqrt",
+                    "Pseudo": "math.sqrt(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị căn bậc hai của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "acos",
+                    "Pseudo": "math.acos(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị arc-cos của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "asin",
+                    "Pseudo": "math.asin(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị arc-sin của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "atan",
+                    "Pseudo": "math.atan(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị arc-tan của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "cos",
+                    "Pseudo": "math.cos(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị cos của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "sin",
+                    "Pseudo": "math.sin(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị sin của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "tan",
+                    "Pseudo": "math.tan(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị tan của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "deg",
+                    "Pseudo": "math.deg(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị độ của góc có số đo x (radian) tương ứng.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "rad",
+                    "Pseudo": "math.rad(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị radian của góc có số đo x (độ) tương ứng.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "exp",
+                    "Pseudo": "math.exp(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị lũy thừa tự nhiên x tương ứng e^x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "log",
+                    "Pseudo": "math.log(x: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Số tương ứng"
+                        }
+                    ],
+                    "Description": "Trả về giá trị logarit tự nhiên của số x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "random",
+                    "Pseudo": "math.random(x: number, y: number): number",
+                    "Type": "StaticMethod",
+                    "TokenStyle": "Special",
+                    "Parameters": [
+                        {
+                            "Name": "x",
+                            "Type": "number",
+                            "Description": "Khoảng x"
+                        },
+                        {
+                            "Name": "y",
+                            "Type": "number",
+                            "Description": "Khoảng y"
+                        }
+                    ],
+                    "Description": "Trả về giá trị ngẫu nhiên trong khoảng từ x đến y. Nếu y = nil thì sẽ lấy giá trị trong khoảng từ 1 đến x.",
+                    "Dependencies": []
+                },
+                {
+                    "Name": "huge",
+                    "Pseudo": "math.huge: number",
+                    "Type": "Constant",
+                    "TokenStyle": "Special2",
+                    "Description": "Biểu diễn giá trị dương vô cùng.",
+                    "Parameters": [],
+                    "Dependencies": []
+                },
+                {
+                    "Name": "pi",
+                    "Pseudo": "math.pi: number",
+                    "Type": "Constant",
+                    "TokenStyle": "Special2",
+                    "Description": "Biểu diễn giá trị hằng số pi.",
+                    "Parameters": [],
+                    "Dependencies": []
+                }
+            ]
+        }
+    ]
+}

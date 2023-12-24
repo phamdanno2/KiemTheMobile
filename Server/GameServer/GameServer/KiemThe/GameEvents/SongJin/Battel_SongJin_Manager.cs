@@ -12,8 +12,6 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
         public static void BattleStatup()
         {
-
-
             // Nếu là liên máy chủ
             if (GameManager.IsKuaFuServer)
             {
@@ -83,6 +81,103 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
             }
         }
 
+        /// <summary>
+        /// </summary>
+        /// Trạng thái trận đấu
+        public static int StateBattle(KPlayer player, int Level)
+        {
+            int BattleLevel = GetBattleLevel(player.m_Level);
+
+            if (BattleLevel != Level)
+            {
+                return -1000;
+            }
+            else
+            {
+                if (BattleLevel != -1)
+                {
+                    Battle_SongJin _Battle = _TotalBattle[BattleLevel];
+
+                    return _Battle.StateBattle(player);
+                }
+                else
+                {
+                    return -10;
+                }
+            }
+        }
+
+        /// <summary>
+        /// </summary>
+        /// Số lượng 2 bên lúc đang ký báo danh
+        public static int CountBattle(KPlayer player, int Level, int Camp)
+        {
+            int BattleLevel = GetBattleLevel(player.m_Level);
+
+            if (BattleLevel != Level)
+            {
+                return -1000;
+            }
+            else
+            {
+                if (BattleLevel != -1)
+                {
+                    Battle_SongJin _Battle = _TotalBattle[BattleLevel];
+
+                    return _Battle.CountBattle(player, Camp);
+                }
+                else
+                {
+                    return -10;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Kiểm tra đăng ký
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="Camp"></param>
+        /// <param name="Level"></param>
+        /// <returns></returns>
+        public static int CheckBaoDanhPhe(KPlayer player, int Level)
+        {
+            int BattleLevel = GetBattleLevel(player.m_Level);
+            if (BattleLevel != Level)
+            {
+                return 0;
+            }
+            else
+            {
+                if (BattleLevel != -1)
+                {
+                    Battle_SongJin _Battle = _TotalBattle[BattleLevel];
+                    if (_Battle.BATTLESTATE == BattelStatus.STATUS_PREPARE || _Battle.BATTLESTATE == BattelStatus.STATUS_START || _Battle.BATTLESTATE == BattelStatus.STATUS_PREPAREEND || _Battle.BATTLESTATE == BattelStatus.STATUS_END)
+                    {
+                        //Kiểm tra đăng ký phe tống
+                        if (_Battle.SongCampRegister.ContainsKey(player.RoleID))
+                        {
+                            return 1;
+                        }
+                        //Kiểm tra đăng ký phe Kim
+                        if (_Battle.JinCampRegister.ContainsKey(player.RoleID))
+                        {
+                            return 2;
+                        }
+                        return 0;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+
         public static int BattleRegister(KPlayer player, int Camp, int Level)
         {
             int BattleLevel = GetBattleLevel(player.m_Level);
@@ -106,31 +201,58 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
             }
         }
 
-        public static int GetBattleLevel(int InputLevel)
+        public static int GetBattleLevelBK(int InputLevel)
         {
             if (GameManager.IsKuaFuServer)
             {
-                return 3;
+                return 4;
             }
             else
             {
-                if (InputLevel < 90)
-                {
-                    return 1;
-                }
-                else if (InputLevel >= 90 && InputLevel < 120)
+                //if (InputLevel < 90)
+                //{
+                //    return 1;
+                //}
+                //else if (InputLevel >= 90 && InputLevel < 120)
+                //{
+                //    return 2;
+                //}
+                //else if (InputLevel >= 120)
+                //{
+                //    return 3;
+                //}
+                //else
+                //{
+                //    return -1;
+                //}
+                if (InputLevel >= 60 && InputLevel <= 200)
                 {
                     return 2;
-                }
-                else if (InputLevel >= 120)
-                {
-                    return 3;
                 }
                 else
                 {
                     return -1;
                 }
             }
+        }
+
+        public static int GetBattleLevel(int InputLevel)
+        {
+            if (GameManager.IsKuaFuServer)
+            {
+                return 4;
+            }
+            else
+            {
+                foreach (KeyValuePair<int, Battle_SongJin> Battle in _TotalBattle)
+                {
+                    if (Battle.Value.GetMinLevelJoin() <= InputLevel && InputLevel <= Battle.Value.GetMaxLevelJoin())
+                    {
+                        return Battle.Key;
+                    }
+                }
+                return -1;
+            }    
         }
 
         public static SongJinBattleRankingInfo GetRanking(KPlayer _Player)

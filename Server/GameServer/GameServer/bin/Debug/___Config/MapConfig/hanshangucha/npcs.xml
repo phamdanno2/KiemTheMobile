@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="566"  Name="Hứa Học Viện" MinimapName="" VisibleOnMinimap="1" Title="" X="8020" Y="4735" Dir="1" ScriptID="157"/>
+    <NPC Code="557"  Name="Tiền Khán Thủ" MinimapName="" VisibleOnMinimap="1" Title="" X="7055" Y="4655" Dir="7" ScriptID="157"/>
+    <NPC Code="559"  Name="Trương Hàn" MinimapName="" VisibleOnMinimap="1" Title="" X="7397" Y="4893" Dir="7" ScriptID="157"/>
+	<NPC Code="827"  Name="Triệu Thịnh" MinimapName="" VisibleOnMinimap="1" Title="" X="6689" Y="4449" Dir="7" ScriptID="157"/>
+	
+  </NPCs>
+</Map>

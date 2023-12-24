@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	PHỤ BẢN QUÂN DOANH
+	- EventID: ID sự kiện
+	
+	- Condition: Điều kiện tham dự
+		- RequireLevel: Yêu cầu cấp độ
+		- LimitMembers: Số thành viên tối thiểu
+		- RoundsPerWeek: Số lượt tham gia trong tuần
+		
+	- FootHills: PHỤ BẢN HẬU SƠN PHỤC NGƯU
+	- MountainPeak: PHỤ BẢN BÁCH MAN SƠN
+	- RoyalTomb: PHỤ BẢN HẢI LĂNG VƯƠNG MỘ
+		- Name: Tên phụ bản
+		- Duration: Thời gian tồn tại (đơn vị Mili-giây)
+		- Config: Thiết lập
+			- MapID: ID bản đồ phụ bản
+			- EnterPosX: Tọa độ tiến vào X
+			- EnterPosY: Tọa độ tiến vào Y
+			- RelivePosX: Tọa độ hồi sinh X
+			- RelivePosY: Tọa độ hồi sinh Y
+			- OutMapID: ID bản đồ báo danh
+			- OutPosX: Vị trí X đẩy ra ở bản đồ báo danh
+			- OutPosY: Vị trí Y đẩy ra ở bản đồ báo danh
+		- NPCs: Danh sách NPC
+			- NPC: Thông tin NPC
+				- ID: ID NPC (xem ở File Npc)
+				- Name: Tên NPC, bỏ trống sẽ lấy thông tin ở File cấu hình
+				- Title: Danh hiệu NPC, bỏ trống sẽ lấy thông tin ở File cấu hình
+				- PosX: Vị trí X
+				- PosY: Vị trí Y
+				- ScriptID: ID script Lua điều khiển (-1 nếu không có)
+		- Stage: Thông tin tầng
+			- ID: Thứ tự, bắt đầu từ 1, yêu cầu thực hiện tuần tự
+			- Tasks: Danh sách nhiệm vụ
+				- Task: Thông tin nhiệm vụ
+					- ID: ID nhiệm vụ
+					- RequireTasks: Yêu cầu các nhiệm vụ trước đó phải hoàn thành, ngăn cách bởi dấu ;
+					- Type: Loại nhiệm vụ
+						- 1: Thu thập nguyên liệu từ điểm thu thập
+						- 2: Giết Boss
+						- 3: Giao vật phẩm cho NPC
+						- 4: Mở cơ quan tiêu diệt quái
+						- 5: Hộ tống NPC
+						- 6: Mở toàn bộ cơ quan theo thứ tự
+						- 7: Mở cơ quan
+						- 8: Đoán số
+						- 9: Mở toàn bộ cơ quan cùng lúc
+						- 10: Mở toàn bộ cơ quan, dập lửa
+					- Config: Thiết lập nhiệm vụ (chỉ có tác dụng với loại nhiệm vụ đoán số)
+						- MinNumber: Giá trị tối thiểu
+						- MaxNumber: Giá trị tối đa
+						- MaxTurns: Số lượt đoán tối đa
+					- Target: Mục tiêu nhiệm vụ (chỉ có tác dụng với loại nhiệm vụ thu thập nguyên liệu, giao vật phẩm cho NPC)
+						- Items: Thông tin vật phẩm yêu cầu, ngăn cách bởi dấu ;
+							- Định dạng: ID_Số lượng
+						- RequireAllMembers: Yêu cầu tất cả thành viên phải có đủ số lượng tương ứng
+					- GrowPoints: Danh sách điểm thu thập (chỉ có tác dụng với loại nhiệm vụ thu thập nguyên liệu)
+						- GrowPoint: Thông tin điểm thu thập
+							- ID: ID điểm thu thập (xem ở File Npc)
+							- Name: Tên điểm thu thập
+							- DisapearAfterBeenCollected: Biến mất sau khi bị thu thập (true/false)
+							- ItemID: ID vật phẩm thu thập
+							- BoundAfterBeenCollected: Vật phẩm thu thập sẽ khóa sau khi thu thập (true/false)
+							- CollectTick: Thời gian mở (mili-giây)
+							- RespawnTicks: Thời gian tái sinh (đơn vị Mili-giây, -1 sẽ không tái sinh, nếu DisapearAfterBeenCollected = true thì không có tác dụng)
+							- Count: Tổng số điểm thu thập (nếu ít hơn số lượng điểm thu thập thì sẽ chọn ngẫu nhiên trong danh sách, nếu ít hơn số lượng thì sẽ xếp đè các điểm thu thập lên nhau)
+							- Position: Thông tin vị trí
+								- PosX: Tọa độ X
+								- PosY: Tọa độ Y
+					- Trigger: Thông tin cơ quan (chỉ có tác dụng với loại nhiệm vụ mở cơ quan tiêu diệt quái)
+						- ID: ID cơ quan (xem ở File Npc)
+						- Name: Tên cơ quan
+						- CollectTick: Thời gian mở (mili-giây)
+						- PosX: Tọa độ X
+						- PosY: Tọa độ Y
+					- IndexTriggers: Danh sách cơ quan mở theo thứ tự (chỉ có tác dụng với loại nhiệm vụ mở cơ quan theo thứ tự, mở cơ quan cùng lúc)
+						- Positions: Các vị trí xuất hiện (nếu ít hơn số lượng cơ quan thì sẽ chọn ngẫu nhiên trong danh sách, nếu ít hơn số lượng thì sẽ xếp đè các cơ quan lên nhau)
+							- Position: Thông tin vị trí
+								- PosX: Tọa độ X
+								- PosY: Tọa độ Y
+						- Trigger: Thông tin cơ quan
+							- ID: ID cơ quan (xem ở File Npc)
+							- Order: Thứ tự (chỉ có tác dụng với loại nhiệm vụ mở cơ quan theo thứ tự)
+							- Name: Tên cơ quan
+							- CollectTick: Thời gian mở (mili-giây)
+					- ProtectTriggers: Danh sách cơ quan cần bảo vệ
+						- Tương tự Trigger thường
+						- HolyFire: Thánh hỏa phá hủy cơ quan
+							- ID: ID (xem ở File Npc)
+							- Name: Tên
+							- CollectTick: Thời gian mở (mili-giây)
+							- ActivateTicks: Thời gian dập (mili-giây)
+							- SpawnEveryTicks: Thời gian xuất hiện liên tục (mili-giây)
+							- RandomRadiusMin: Phạm vi sinh xung quanh cơ quan (tối thiểu)
+							- RandomRadiusMax: Phạm vi sinh xung quanh cơ quan (tối đa)
+					- NPC: Thông tin NPC (chỉ có tác dụng với loại nhiệm vụ giao vật phẩm cho NPC)
+						- ID: ID NPC (xem ở File Npc)
+						- Name: Tên NPC, bỏ trống sẽ lấy thông tin ở File cấu hình
+						- Title: Danh hiệu NPC, bỏ trống sẽ lấy thông tin ở File cấu hình
+						- PosX: Tọa độ X
+						- PosY: Tọa độ Y
+					- MovingNPC: Thông tin NPC di chuyển (chỉ có tác dụng với loại nhiệm vụ hộ tống NPC)
+						- ID: ID NPC (xem ở File Monster)
+						- Name: Tên NPC
+						- PosX: Tọa độ X
+						- PosY: Tọa độ Y
+						- ToPosX: Vị trí đích đến X
+						- ToPosY: Vị trí đích đến Y
+						- Radius: Bán kính hộ tống
+					- Monsters: Danh sách quái (chỉ có tác dụng với loại nhiệm vụ mở cơ quan tiêu diệt quái)
+						- Monster: Thông tin quái
+					- Boss: Thông tin Boss (chỉ có tác dụng với loại nhiệm vụ giết Boss)
+						- ID: ID Boss (xem ở File Monster)
+						- Name: Tên Boss, bỏ trống sẽ lấy thông tin ở File cấu hình
+						- Title: Danh hiệu, bỏ trống sẽ lấy thông tin ở File cấu hình
+						- PosX: Tọa độ X
+						- PosY: Tọa độ Y
+						- BaseHP: Sinh lực cơ bản
+						- HPIncreaseEachLevel: Sinh lực tăng thêm với mỗi cấp
+						- AIType: Loại AI (0: Quái thường, 1: Quái tinh anh, 2: Quái thủ lĩnh, 3: Boss, 4: Hải tặc, 5: Quái chữ đỏ)
+						- AIScriptID: IDScriptAI điều khiển
+							- Nếu có sử dụng các Skill đánh thì AIScriptID để bằng 100001, sẽ không sử dụng kỹ năng đánh thường của quái như ngoài Map mà thay vào bằng kỹ năng trong danh sách thiết lập (buộc phải thiết lập kỹ năng đánh, nếu không sẽ lỗi)
+						- Skills: Danh sách kỹ năng được sử dụng, gồm 2 tham biến, ngăn cách nhau bởi dấu ; giữa các loại kỹ năng
+							- ID_Cấp
+							- Kỹ năng sẽ được dùng theo thứ tự từ trái sang phải, nếu kỹ năng trước đang chờ hồi phục thì dùng kỹ năng sau
+						- Auras: Danh sách vòng sáng kích hoạt, gồm 2 tham biến, ngăn cách nhau bởi dấu ; giữa các loại vòng sáng
+							- ID_Cấp
+							- Tất cả quái xung quanh sẽ được vòng sáng tương ứng cho đến khi bản thân quái mang vòng sáng bị giết chết
+					- ChildBoss: Thông tin Boss con, có thể không cần giết vẫn hoàn thành nhiệm vụ (chỉ có tác dụng với loại nhiệm vụ giết Boss)
+						- Thiết lập chỉ số giống Boss thường
+			- Monsters: Danh sách quái
+				- Monster: Thông tin quái
+					- ID: ID quái (xem ở File Monster)
+					- Name: Tên quái, bỏ trống sẽ lấy thông tin ở File cấu hình
+					- Title: Danh hiệu quái, bỏ trống sẽ lấy thông tin ở File cấu hình
+					- PosX: Vị trí X
+					- PosY: Vị trí Y
+					- BaseHP: Sinh lực cơ bản
+					- HPIncreaseEachLevel: Sinh lực tăng thêm với mỗi cấp
+					- AIType: Loại AI (0: Quái thường, 1: Quái tinh anh, 2: Quái thủ lĩnh, 3: Boss, 4: Hải tặc, 5: Quái chữ đỏ)
+					- AIScriptID: IDScriptAI điều khiển
+						- Nếu có sử dụng các Skill đánh thì AIScriptID để bằng 100001, sẽ không sử dụng kỹ năng đánh thường của quái như ngoài Map mà thay vào bằng kỹ năng trong danh sách thiết lập (buộc phải thiết lập kỹ năng đánh, nếu không sẽ lỗi)
+					- RespawnTicks: Thời gian tái sinh
+					- Skills: Danh sách kỹ năng được sử dụng, gồm 2 tham biến, ngăn cách nhau bởi dấu ; giữa các loại kỹ năng
+						- ID_Cấp
+						- Kỹ năng sẽ được dùng theo thứ tự từ trái sang phải, nếu kỹ năng trước đang chờ hồi phục thì dùng kỹ năng sau
+					- Auras: Danh sách vòng sáng kích hoạt, gồm 2 tham biến, ngăn cách nhau bởi dấu ; giữa các loại vòng sáng
+						- ID_Cấp
+						- Tất cả quái xung quanh sẽ được vòng sáng tương ứng cho đến khi bản thân quái mang vòng sáng bị giết chết
+			- Triggers: Danh sách cơ quan
+				- KeyTrigger: Cơ quan mở đường
+					- ID: ID cơ quan (xem ở File Npc)
+					- TriggerID: ID cơ quan trong bản đồ (không trùng nhau giữa các cơ quan)
+					- ObstacleTriggerID: ID cơ quan trong bản đồ sẽ khai mở
+					- Name: Tên cơ quan
+					- PosX: Vị trí X
+					- PosY: Vị trí Y
+					- CollectTick: Thời gian mở (mili-giây)
+				- ObstacleTrigger: Cơ quan cản đường
+					- ID: ID cơ quan (xem ở File Npc)
+					- TriggerID: ID cơ quan trong bản đồ (không trùng nhau giữa các cơ quan)
+					- Name: Tên cơ quan
+					- PosX: Vị trí X
+					- PosY: Vị trí Y
+					- ToX: Dịch tới vị trí X (sau khi được khai mở)
+					- ToY: Dịch tới vị trí Y (sau khi được khai mở)
+				- Trap: Cạm bẫy (dẵm phải sẽ bị đẩy về vị trí vào phụ bản)
+					- ID: ID bẫy (xem ở File Npc)
+					- Name: Tên bẫy
+					- PosX: Vị trí X
+					- PosY: Vị trí Y
+					- Radius: Bán kính tác dụng
+					- TouchMessage: Thông báo khi bị kích hoạt
+			- Teleports: Danh sách cổng dịch chuyển
+				- Teleport: Thông tin cổng dịch chuyển
+					- Name: Tên cổng
+					- PosX: Vị trí X
+					- PosY: Vị trí Y
+					- ToPosX: Vị trí đích đến X
+					- ToPosY: Vị trí đích đến Y
+					- SpawnImmediate: Xuất hiện ngay lập tức khi mở Stage, nếu không sẽ chỉ xuất hiện sau khi hoàn thành Stage (true/false)
+			
+-->
+<MilitaryCamp EventID="16">
+	<!-- Điều kiện -->
+	<Condition RequireLevel="90" LimitMembers="1" RoundsPerWeek="2" />
+	<!-- End -->
+	
+	<!-- Hậu Sơn Phục Ngưu -->
+	<FootHills Name="Hậu Sơn Phục Ngưu" Duration="5400000">
+		<Config MapID="2" EnterPosX="200" EnterPosY="200" RelivePosX="100" RelivePosY="100" OutMapID="1" OutPosX="100" OutPosY="100" />
+		
+		<NPCs>
+			<NPC ID="108" Name="" Title="" PosX="700" PosY="700" ScriptID="-1" />
+		</NPCs>
+	
+		<!-- Rừng lá phong -->
+		<Stage ID="1">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Thu thập thảo dược" Type="1">
+					<Target Items="10000_10" RequireAllMembers="true" />
+					
+					<GrowPoints ID="100" Name="Thảo dược" RespawnTicks="30000" CollectTick="5000" DisapearAfterBeenCollected="true" ItemID="10000" BoundAfterBeenCollected="true" Count="10">
+						<Position PosX="100" PosY="100" />
+						<Position PosX="200" PosY="200" />
+					</GrowPoints>
+				</Task>
+				
+				<Task ID="2" RequireTasks="-1" Name="Thu thập gỗ phong" Type="1">
+					<Target Items="10000_10" RequireAllMembers="true" />
+					
+					<GrowPoints ID="101" Name="Cây phong" RespawnTicks="-1" CollectTick="5000" DisapearAfterBeenCollected="false" ItemID="10000" BoundAfterBeenCollected="true" Count="1">
+						<Position PosX="100" PosY="100" />
+					</GrowPoints>
+				</Task>
+				
+				<Task ID="3" RequireTasks="-1" Name="Thu thập hoa rừng" Type="1">
+					<Target Items="10000_10" RequireAllMembers="true" />
+					
+					<GrowPoints ID="102" Name="Hoa rừng" RespawnTicks="30000" CollectTick="5000" DisapearAfterBeenCollected="true" ItemID="10000" BoundAfterBeenCollected="true" Count="10">
+						<Position PosX="100" PosY="100" />
+						<Position PosX="200" PosY="200" />
+					</GrowPoints>
+				</Task>
+				
+				<Task ID="4" RequireTasks="1;2;3" Name="Tiêu diệt Thủ Lĩnh Lâu La" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Tê giác khoáng" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		<!-- End -->
+		
+		<!-- Tê giác khoáng -->
+		<Stage ID="2">
+			<Triggers>
+				<KeyTrigger ID="106" TriggerID="1" ObstacleTriggerID="2" Name="Cơ quan" PosX="100" PosY="100" CollectTick="10000" />
+				<ObstacleTrigger ID="107" TriggerID="2" Name="Cửa" PosX="100" PosY="100" ToX="200" ToY="200" />
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Thu thập dây thừng" Type="1">
+					<Target Items="10000_20" RequireAllMembers="false" />
+					
+					<GrowPoints ID="100" Name="Dây thừng" RespawnTicks="30000" CollectTick="5000" DisapearAfterBeenCollected="true" ItemID="10000" BoundAfterBeenCollected="false" Count="10">
+						<Position PosX="100" PosY="100" />
+						<Position PosX="200" PosY="200" />
+					</GrowPoints>
+				</Task>
+				
+				<Task ID="2" RequireTasks="-1" Name="Thu thập tấm gỗ" Type="1">
+					<Target Items="10001_20" RequireAllMembers="false" />
+					
+					<GrowPoints ID="100" Name="Tấm gỗ" RespawnTicks="30000" CollectTick="5000" DisapearAfterBeenCollected="true" ItemID="10001" BoundAfterBeenCollected="false" Count="10">
+						<Position PosX="100" PosY="100" />
+						<Position PosX="200" PosY="200" />
+					</GrowPoints>
+				</Task>
+				
+				<Task ID="3" RequireTasks="-1" Name="Tiêu diệt Thủ Lĩnh Giám Công" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+				
+				<Task ID="4" RequireTasks="1;2;3" Name="Tu sửa thuyền gỗ" Type="3">
+					<Target Items="10000_20;10001_20" RequireAllMembers="false" />
+					
+					<NPC ID="107" Name="Thuyền gỗ" Title="" PosX="300" PosY="300" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Loan thạch than" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		<!-- End -->
+		
+		<!-- Loan Thạch Than -->
+		<Stage ID="3">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Tu sửa dụng cụ đẽo đá" Type="3">
+					<Target Items="10001_20" RequireAllMembers="false" />
+					
+					<NPC ID="108" Name="Dụng cụ đẽo đá" Title="" PosX="300" PosY="300" />
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Thợ Cả" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+			</Teleports>
+		</Stage>
+		<!-- End -->
+	</FootHills>
+	<!-- End -->
+	
+	<!-- Bách Man Sơn -->
+	<MountainPeak Name="Bách Man Sơn" Duration="5400000">
+		<Config MapID="2" EnterPosX="200" EnterPosY="200" RelivePosX="100" RelivePosY="100" OutMapID="1" OutPosX="100" OutPosY="100" />
+		
+		<NPCs>
+			<NPC ID="108" Name="" Title="" PosX="700" PosY="700" ScriptID="-1" />
+		</NPCs>
+		
+		<!-- Chuẩn bị -->
+		<Stage ID="1">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Thu thập Nhiếp Không Thảo" Type="3">
+					<Target Items="10001_20" RequireAllMembers="false" />
+					
+					<NPC ID="108" Name="Cửu Ngưng Đỉnh" Title="" PosX="300" PosY="300" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Đỉnh núi" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Khu 1 -->
+		<Stage ID="2">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Tiêu diệt Đào Hoa Sứ" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+					<ChildBoss ID="104" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+			</Teleports>
+		</Stage>
+		
+		<!-- Khu 2 -->
+		<Stage ID="3">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Phá hủy Cổ Ung" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Tiêu diệt Bích Ngô Sứ" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+					<ChildBoss ID="104" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+			</Teleports>
+		</Stage>
+		
+		<!-- Khu 3 -->
+		<Stage ID="4">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Gõ chiêng (lần 1)" Type="4">
+					<Trigger ID="100" Name="Chiêng" CollectTick="5000" PosX="200" PosY="200" />
+					
+					<Monsters>
+						<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="-1" Auras="106_10" Skills="" />
+					</Monsters>
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Gõ chiêng (lần 2)" Type="4">
+					<Trigger ID="100" Name="Chiêng" CollectTick="5000" PosX="200" PosY="200" />
+					
+					<Monsters>
+						<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="-1" Auras="106_10" Skills="" />
+					</Monsters>
+				</Task>
+				
+				<Task ID="3" RequireTasks="2" Name="Gõ chiêng (lần 3)" Type="4">
+					<Trigger ID="100" Name="Chiêng" CollectTick="5000" PosX="200" PosY="200" />
+					
+					<Monsters>
+						<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="-1" Auras="106_10" Skills="" />
+					</Monsters>
+				</Task>
+				
+				<Task ID="4" RequireTasks="3" Name="Gõ chiêng (lần 4)" Type="4">
+					<Trigger ID="100" Name="Chiêng" CollectTick="5000" PosX="200" PosY="200" />
+					
+					<Monsters>
+						<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="-1" Auras="106_10" Skills="" />
+					</Monsters>
+				</Task>
+				
+				<Task ID="5" RequireTasks="4" Name="Gõ chiêng (lần 5)" Type="4">
+					<Trigger ID="100" Name="Chiêng" CollectTick="5000" PosX="200" PosY="200" />
+					
+					<Monsters>
+						<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="-1" Auras="106_10" Skills="" />
+					</Monsters>
+				</Task>
+				
+				<Task ID="6" RequireTasks="5" Name="Gõ trống" Type="7">
+					<Trigger ID="100" Name="Trống" CollectTick="5000" PosX="200" PosY="200" />
+				</Task>
+				
+				<Task ID="7" RequireTasks="6" Name="Tiêu diệt Thần Chu Sứ" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+					<ChildBoss ID="104" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+			</Teleports>
+		</Stage>
+		
+		<!-- Khu 4 -->
+		<Stage ID="5">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Thu thập Đuôi bọ cạp" Type="3">
+					<Target Items="10001_20" RequireAllMembers="false" />
+					
+					<NPC ID="108" Name="Thiết Trảo Kim Kê" Title="" PosX="300" PosY="300" />
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Hộ tống Thiết Trảo Kim Kê" Type="5">
+					<MovingNPC ID="108" Name="Thiết Trảo Kim Kê" Title="" PosX="300" PosY="300" ToPosX="100" ToPosY="200" Radius="1000" />
+				</Task>
+				
+				<Task ID="3" RequireTasks="2" Name="Tiêu diệt Linh Hạt Sứ" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+					<ChildBoss ID="104" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+			</Teleports>
+		</Stage>
+		
+		<!-- Khu 5 -->
+		<Stage ID="6">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Đả thông Huyễn Ảnh Phù Đăng" Type="6">
+					<IndexTriggers>
+						<Positions>
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+						</Positions>
+						
+						<Trigger ID="100" Order="1" Name="Huyễn Ảnh Phù Đăng (Kim)" CollectTick="5000" />
+						<Trigger ID="100" Order="2" Name="Huyễn Ảnh Phù Đăng (Mộc)" CollectTick="5000" />
+						<Trigger ID="100" Order="3" Name="Huyễn Ảnh Phù Đăng (Thổ)" CollectTick="5000" />
+						<Trigger ID="100" Order="4" Name="Huyễn Ảnh Phù Đăng (Thủy)" CollectTick="5000" />
+						<Trigger ID="100" Order="5" Name="Huyễn Ảnh Phù Đăng (Hỏa)" CollectTick="5000" />
+					</IndexTriggers>
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Tiêu diệt Cổ Vương" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+					<ChildBoss ID="104" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+				<Monster ID="104" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+				<Monster ID="105" Name="" Title="" PosX="400" PosY="400" BaseHP="1000" HPIncreaseEachLevel="100" AIType="5" AIScriptID="100000" RespawnTicks="40000" Auras="106_10" Skills="" />
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Cửa 1" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Cửa 2" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Cửa 3" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Cửa 4" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Cửa 5" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Chính giữa" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Chính giữa" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Chính giữa" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Chính giữa" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+				<Teleport Name="Chính giữa" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="true" />
+			</Teleports>
+		</Stage>
+	</MountainPeak>
+	<!-- End -->
+	
+	<!-- Hải Lăng Vương Mộ -->
+	<RoyalTomb Name="Hải Lăng Vương Mộ" Duration="5400000">
+		<Config MapID="2" EnterPosX="200" EnterPosY="200" RelivePosX="100" RelivePosY="100" OutMapID="1" OutPosX="100" OutPosY="100" />
+	
+		<NPCs>
+			<NPC ID="108" Name="" Title="" PosX="700" PosY="700" ScriptID="-1" />
+		</NPCs>
+		
+		<!-- Rừng gai -->
+		<Stage ID="1">
+			<Triggers>
+				<Trap ID="5340" Name="Gai có độc" PosX="100" PosY="100" Radius="50" TouchMessage="Độc tính trên gai phát tác, ngươi phải trở lại dưỡng thương." />
+				<Trap ID="5340" Name="Gai có độc" PosX="200" PosY="200" Radius="50" TouchMessage="Độc tính trên gai phát tác, ngươi phải trở lại dưỡng thương." />
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Khai mở Chú Phù Ấn" Type="7">
+					<Trigger ID="100" Name="Chú Phù Ấn" CollectTick="10000" PosX="200" PosY="200" />
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Tiêu diệt Hoàn Nhan Tôn Thất" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Huyệt mộ (1)" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Huyệt mộ 1 -->
+		<Stage ID="2">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Đả thông Kinh Thiên Trụ" Type="6">
+					<IndexTriggers>
+						<Positions>
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+						</Positions>
+						
+						<Trigger ID="100" Order="1" Name="Kinh Thiên Trụ (Phong)" CollectTick="5000" />
+						<Trigger ID="100" Order="2" Name="Kinh Thiên Trụ (Lâm)" CollectTick="5000" />
+						<Trigger ID="100" Order="3" Name="Kinh Thiên Trụ (Hỏa)" CollectTick="5000" />
+						<Trigger ID="100" Order="4" Name="Kinh Thiên Trụ (Sơn)" CollectTick="5000" />
+					</IndexTriggers>
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Đoán số" Type="8">
+					<Config MinNumber="1" MaxNumber="100" MaxTurns="6" />
+				
+					<NPC ID="100" Name="Du long" Title="" PosX="100" PosY="100" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Huyệt mộ (2)" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Huyệt mộ 2 -->
+		<Stage ID="3">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Khai mở Chú Phù Ấn" Type="7">
+					<Trigger ID="100" Name="Chú Phù Ấn" CollectTick="10000" PosX="200" PosY="200" />
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Tiêu diệt Hoàn Nhan Bất Phá" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Huyệt mộ (3)" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Huyệt mộ 3 -->
+		<Stage ID="4">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Khai mở Quang Ảnh Thạch" Type="9">
+					<IndexTriggers>
+						<Positions>
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+							<Position PosX="100" PosY="100" />
+						</Positions>
+						
+						<Trigger ID="100" Order="-1" Name="Quang Ảnh Thạch" CollectTick="2000" />
+						<Trigger ID="100" Order="-1" Name="Quang Ảnh Thạch" CollectTick="2000" />
+						<Trigger ID="100" Order="-1" Name="Quang Ảnh Thạch" CollectTick="2000" />
+						<Trigger ID="100" Order="-1" Name="Quang Ảnh Thạch" CollectTick="2000" />
+					</IndexTriggers>
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Đoán số" Type="8">
+					<Config MinNumber="1" MaxNumber="100" MaxTurns="6" />
+				
+					<NPC ID="100" Name="Du long" Title="" PosX="100" PosY="100" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Huyệt mộ (4)" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Huyệt mộ 4 -->
+		<Stage ID="5">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Khai mở Chú Phù Ấn" Type="7">
+					<Trigger ID="100" Name="Chú Phù Ấn" CollectTick="10000" PosX="200" PosY="200" />
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Tiêu diệt Hoàn Nhan Tông Bạt" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Huyệt mộ (5)" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Huyệt mộ 5 -->
+		<Stage ID="6">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Khai mở Hồng Liên Cơ Quan" Type="10">
+					<ProtectTriggers>
+						<Trigger ID="100" Name="Hồng Liên Cơ Quan" CollectTick="5000" PosX="200" PosY="200" />
+						<Trigger ID="100" Name="Hồng Liên Cơ Quan" CollectTick="5000" PosX="200" PosY="200" />
+						<Trigger ID="100" Name="Hồng Liên Cơ Quan" CollectTick="5000" PosX="200" PosY="200" />
+						<Trigger ID="100" Name="Hồng Liên Cơ Quan" CollectTick="5000" PosX="200" PosY="200" />
+						
+						<HolyFire ID="100" Name="Thánh hỏa" CollectTick="1000" ActivateTicks="5000" SpawnEveryTicks="5000" RandomRadiusMin="100" RandomRadiusMax="500" />
+					</ProtectTriggers>
+				</Task>
+				
+				<Task ID="2" RequireTasks="1" Name="Tiêu diệt Địa Ngục Khuyển" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+				<Teleport Name="Huyệt mộ (6)" PosX="300" PosY="300" ToPosX="500" ToPosY="500" SpawnImmediate="false" />
+			</Teleports>
+		</Stage>
+		
+		<!-- Huyệt mộ 6 -->
+		<Stage ID="7">
+			<Triggers>
+			</Triggers>
+			
+			<Tasks>
+				<Task ID="1" RequireTasks="-1" Name="Tiêu diệt Hoàn Nhan Lượng" Type="2">
+					<Boss ID="103" Name="" Title="" PosX="300" PosY="300" BaseHP="1000" HPIncreaseEachLevel="1000" AIType="3" AIScriptID="100000" Auras="106_10" Skills="" />
+				</Task>
+			</Tasks>
+			
+			<Monsters>
+			</Monsters>
+			
+			<Teleports>
+			</Teleports>
+		</Stage>
+	</RoyalTomb>
+	<!-- End -->
+</MilitaryCamp>

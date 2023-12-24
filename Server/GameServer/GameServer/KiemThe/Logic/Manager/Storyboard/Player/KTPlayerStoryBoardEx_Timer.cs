@@ -235,8 +235,9 @@ namespace GameServer.KiemThe.Logic
 						storyBoard.LastTickTimer = KTGlobal.GetCurrentTimeMilis();
 						/// Thực thi sự kiện Tick
 						this.ExecuteAction(() => {
-							Console.WriteLine("TICK START AT:" + storyBoard.Owner._DebugTime.Elapsed.TotalMilliseconds);
-							this.TickStoryBoard(storyBoard);
+                            //-----fix jackson đóng thông báo
+                            //Console.WriteLine("TICK START AT:" + storyBoard.Owner._DebugTime.Elapsed.TotalMilliseconds);
+                            this.TickStoryBoard(storyBoard);
 						}, (ex) => {
 							/// Thực thi sự kiện Destroy
 							this.StopStoryBoard(storyBoard);

@@ -161,6 +161,11 @@ namespace Server.Tools
         /// </summary>
         SpecialEvent = 39,
 
+        /// <summary>
+        /// GM log
+        /// </summary>
+        GMLog = 54,
+
         //这是最后一个，永远都是最大的
         //有新加的加在前面，这个数值要变大
         Fatal = 1000,

@@ -300,6 +300,8 @@ namespace GameServer.KiemThe.GameEvents.BaiHuTang
             foreach (KPlayer player in this.GetPlayers())
             {
                 player.PKMode = (int) PKMode.Guild;
+                //----fix jackson bắt đầu trận Bạch Hổ Đường mới tính lượt đi
+                BaiHuTang_ActivityScript.BaiHuTang_SetEnteredToday(player);
             }
         }
 

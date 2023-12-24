@@ -14,17 +14,40 @@ local Record2 = 101120
 local Record3 = 101121
 local Record4 = 101122
 function PlayerEvent:OnLogin(scene, player, first)
-	
-	-- ************************** --
-	--System.WriteToConsole("PlayerEvent:OnLogin => " .. player:GetName())
-	-- ************************** --
-
 	local record1 = Player.GetValueForeverRecore(player, Record1)
 	if record1 ~= 1 then
+		player:SetLevel(10)
 		Player.AddItemLua(player,781,1,-1,1)
 		Player.SetValueOfForeverRecore(player, Record1, 1)
 	end
-	
+	if Player.CountItemInBag(player, 781) <= 0 then
+		Player.AddItemLua(player,781,1,-1,1)
+	end
+	----------------------------
+	PlayerEvent:CMDLOGIN(player);
+end
+
+function PlayerEvent:CMDLOGIN(player)
+	local nThang = System.GetMonth()
+	if nThang < 10 then
+		nThang = string.format("0%s",nThang)
+	end
+	local nNgay = System.GetDate()
+	if nNgay < 10 then
+		nNgay = string.format("0%s",nNgay)
+	end
+	local nGio = System.GetHour()
+	if nGio < 10 then
+		nGio = string.format("0%s",nGio)
+	end
+	local nPhut = System.GetMinute()
+	if nPhut < 10 then
+		nPhut = string.format("0%s",nPhut)
+	end
+	local nTimeht = string.format("%s%s%s%s%s",System.GetYear(),nThang,nNgay,nGio,nPhut)
+	nTimeht = tonumber(nTimeht)
+	local online = player:GetPlayerOnline()
+	System.WriteToConsole("["..nTimeht.."] ["..online.."] PlayerEvent:OnLogin ["..player:GetID().."]["..player:GetUserID().."] "..player:GetName())
 end
 
 -- ****************************************************** --
@@ -33,11 +56,28 @@ end
 --		player: Player - NPC tương ứng
 -- ****************************************************** --
 function PlayerEvent:OnLogout(scene, player)
-	
-	-- ************************** --
-	--System.WriteToConsole("PlayerEvent:OnLogout => " .. player:GetName())
-	-- ************************** --
-	
+	local nThang = System.GetMonth()
+	if nThang < 10 then
+		nThang = string.format("0%s",nThang)
+	end
+	local nNgay = System.GetDate()
+	if nNgay < 10 then
+		nNgay = string.format("0%s",nNgay)
+	end
+	local nGio = System.GetHour()
+	if nGio < 10 then
+		nGio = string.format("0%s",nGio)
+	end
+	local nPhut = System.GetMinute()
+	local nPhut = System.GetHour()
+	if nPhut < 10 then
+		nPhut = string.format("0%s",nPhut)
+	end
+	local nTimeht = string.format("%s%s%s%s%s",System.GetYear(),nThang,nNgay,nGio,nPhut)
+	nTimeht = tonumber(nTimeht)
+	local online = player:GetPlayerOnline()
+	System.WriteToConsole("["..nTimeht.."] ["..online.."] PlayerEvent:OnLogout ["..player:GetID().."]["..player:GetUserID().."] "..player:GetName())
+	----------------------------------------------------------------
 end
 
 -- ****************************************************** --

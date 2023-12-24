@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="4470" Y="3168" Dir="1" ScriptID="12" />
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="4846" Y="1722" Dir="3" ScriptID="27"/>
+	<NPC Code="6777" Name="Điềm Tửu Thúc" MinimapName="Binh Khí" VisibleOnMinimap="1" Title="Chủ Tiệm Binh Khí" X="3675" Y="3419" Dir="1" ScriptID="29" />
+	<NPC Code="6782" Name="Đại Lão Bạch" MinimapName="Tửu Lầu" VisibleOnMinimap="1" Title="Chủ Tửu Lầu" X="5393" Y="2007" Dir="3" ScriptID="24"/>
+	<NPC Code="6781" Name="Bất Động Tiên Sinh" MinimapName="Tạp Hóa" VisibleOnMinimap="1" Title="Chủ Tiệm Tạp Hóa" X="2354" Y="3153" Dir="7" ScriptID="28"/>
+	<NPC Code="6778" Name="Thẩm Hà Diệp" MinimapName="Phòng Cụ" VisibleOnMinimap="1" Title="Chủ Tiệm Phòng Cụ" X="2998" Y="3510" Dir="7" ScriptID="25"/>
+	
+	<NPC Code="3479" Name="Phương Hành Giác" MinimapName="Giáo chủ Minh Giáo" VisibleOnMinimap="1" Title="Chưởng môn Minh Giáo" X="8730" Y="5561" Dir="1" ScriptID="152"/>
+	<NPC Code="3478" Name="Tạ Thư Dung" MinimapName="" VisibleOnMinimap="1" Title="" X="6319" Y="4234" Dir="1" ScriptID="122"/>
+	<NPC Code="3477" Name="Cái Á" MinimapName="" VisibleOnMinimap="1" Title="" X="5863" Y="3484" Dir="5" ScriptID="123" />
+	<NPC Code="3476" Name="Mộ Dung Chiêu" MinimapName="" VisibleOnMinimap="1" Title="" X="5788" Y="4406" Dir="1" ScriptID="121" />
+	<NPC Code="3475" Name="Thủy Liên" MinimapName="" VisibleOnMinimap="1" Title="" X="1268" Y="2550" Dir="7" ScriptID="119" />
+	<NPC Code="3472" Name="Liễu Hà Đồ" MinimapName="" VisibleOnMinimap="1" Title="" X="5675" Y="2383" Dir="1" ScriptID="125" />
+	<NPC Code="3473" Name="Cao Xuân Thu" MinimapName="" VisibleOnMinimap="1" Title="" X="4792" Y="4149" Dir="7" ScriptID="120" />
+	
+	<NPC Code="2538" Name="Tổng Quản Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="3738" Y="2440" Dir="1" ScriptID="65" />
+	<NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="5161" Y="2845" Dir="1" ScriptID="64" />
+	
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	 
+	 
+	 
+	
+	 
+	
+	 
+	 
+	 
+	
+  </NPCs>
+</Map>

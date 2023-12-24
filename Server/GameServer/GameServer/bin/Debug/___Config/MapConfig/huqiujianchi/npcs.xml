@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+	<NPC Code="606" Name="Tần Khuê" MinimapName="" VisibleOnMinimap="1" Title="Vạn Tự Doanh" X="7125" Y="3744" Dir="1" ScriptID="157"/>
+    <NPC Code="988" Name="Bích Quang Thiền Sư" MinimapName="" VisibleOnMinimap="1" Title="Chủ Trì" X="7345" Y="3669" Dir="7" ScriptID="157"/>
+    <NPC Code="992" Name="Cách Tang Bình Thố" MinimapName="" VisibleOnMinimap="1" Title="Đại Thủ Ấn" X="7643" Y="3448" Dir="1" ScriptID="157"/>	
+    <NPC Code="855" Name="A Thổ Bá" MinimapName="" VisibleOnMinimap="1" Title="" X="7663" Y="6337" Dir="1" ScriptID="157"/>
+    <NPC Code="588" Name="Ngân Vũ Nạp Tư" MinimapName="" VisibleOnMinimap="1" Title="" X="7472" Y="6207" Dir="5" ScriptID="157"/>
+    <NPC Code="599" Name="Nộ Hầu Nạp Tư" MinimapName="" VisibleOnMinimap="1" Title="Thần Xạ Thủ" X="7051" Y="6392" Dir="1" ScriptID="157"/>
+    <NPC Code="596" Name="Tử Sở" MinimapName="" VisibleOnMinimap="1" Title="" X="7106" Y="6134" Dir="1" ScriptID="157"/>
+	
+  </NPCs>
+</Map>

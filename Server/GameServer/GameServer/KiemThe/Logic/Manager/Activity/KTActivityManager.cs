@@ -83,6 +83,7 @@ namespace GameServer.KiemThe.Logic
             {
                 return false;
             }
+                
             /// Nếu sự kiện không mở
             if (activity.Data.Type == ActivityType.None)
             {
@@ -118,6 +119,7 @@ namespace GameServer.KiemThe.Logic
                             {
                                 continue;
                             }
+                            
                             /// Giờ
                             int nHour = int.Parse(timeSettings[0]);
                             /// Phút

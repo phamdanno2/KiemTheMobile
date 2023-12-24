@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="4765" Y="2314" Dir="1" ScriptID="12" />
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="3665" Y="2852" Dir="7" ScriptID="27"/>	
+	<NPC Code="2532" Name="Truyền Tống Môn Phái" MinimapName="" VisibleOnMinimap="1" Title="" X="3449" Y="2018" Dir="5" ScriptID="64" />
+	<NPC Code="2702" Name="Cờ Quán Quân" MinimapName="" VisibleOnMinimap="1" Title="" X="6652" Y="3955" Dir="1" ScriptID="12" />
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	 
+	 
+	 
+	
+	 
+	
+	 
+	 
+	 
+	
+  </NPCs>
+</Map>

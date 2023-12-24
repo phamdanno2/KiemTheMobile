@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    
+	<NPC Code="658" Name="Hình Bổ Đầu" MinimapName="" VisibleOnMinimap="1" Title="" X="5394" Y="2476" Dir="1" ScriptID="202"/>
+  </NPCs>
+</Map>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemData ItemID="3864" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thiếu Lâm" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="1" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="1" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3865" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thiên Vương " QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="2" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="1" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="2" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3866" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Đường Môn" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="3" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="3" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3867" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Ngũ Độc" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="4" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="4" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3868" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Nga My" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="5" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="5" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3869" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thúy Yên" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="6" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="6" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3870" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Cái Bang" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="7" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="7" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3871" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Thiên Nhẫn" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="8" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="4" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="8" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3872" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Võ Đang" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="9" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="9" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3873" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_ Côn Lôn " QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="10" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="5" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="10" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3874" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Minh Giáo " QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="11" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="2" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="11" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+  <ItemData ItemID="3875" Name="Ngũ Hành Ấn" IconBundleDir="Icon/EquipIcon1.unity3d" IconAtlasName="EquipIcon1" MapSpriteBundleDir="Resources/Item/MapSprite.unity3d" MapSpriteAtlasName="MapSprite" Kind="Ngũ Hành Ấn_Đại Lý Đoàn Thị" QualityPrefix="0" Category="1" Genre="1" Stack="1" DetailType="16" ParticularType="12" Level="1" SuiteID="0" Icon="signet_wuxingyin" View="signet_wuxingyin_s" Intro="" Help="" ObjID="18" BindType="1" Series="3" ReqLevel="0" CDType="0" Price="1" ItemValue="100" MakeCost="-1" ResMale="-1" ResFemale="-1" FightPower="0" ScriptID="-1" DeductOnUse="false" BuffID="-1">
+    <ListBasicProp BasicPropType="seriesenhance" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="1" />
+    <ListBasicProp BasicPropType="seriesabate" BasicPropPA1Min="1" BasicPropPA1Max="1" BasicPropPA2Min="-1" BasicPropPA2Max="-1" BasicPropPA3Min="0" BasicPropPA3Max="0" Index="2" />
+    <ListReqProp ReqPropType="5" ReqPropValue="60" Index="1" />
+    <ListReqProp ReqPropType="6" ReqPropValue="12" Index="2" />
+    <UnLockInterval>-1</UnLockInterval>
+  </ItemData>
+</ArrayOfItemData>

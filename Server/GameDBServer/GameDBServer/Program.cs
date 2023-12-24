@@ -192,8 +192,6 @@ namespace GameDBServer
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            string upasswd = StringEncrypt.Encrypt("__!!1q2w3e4r5t6y!!__", "eabcix675u49,/", "3&3i4x4^+-0");
-
             if (args.Length > 0)
             {
                 cmdLineARGS = args;
@@ -671,7 +669,9 @@ namespace GameDBServer
             GameDBManager.ZoneID = (int)Global.GetSafeAttributeLong(xml, "Zone", "ID");
 
             string uname = StringEncrypt.Decrypt(Global.GetSafeAttributeStr(xml, "Database", "uname"), "eabcix675u49,/", "3&3i4x4^+-0");
+            Console.WriteLine("Usermysql: " + uname);
             string upasswd = StringEncrypt.Decrypt(Global.GetSafeAttributeStr(xml, "Database", "upasswd"), "eabcix675u49,/", "3&3i4x4^+-0");
+            Console.WriteLine("Passmysql: " + upasswd);
 
             System.Console.WriteLine("Number of max connections: {0}", (int)Global.GetSafeAttributeLong(xml, "Database", "maxConns"));
             System.Console.WriteLine("IP address: {0}", Global.GetSafeAttributeStr(xml, "Database", "ip"));

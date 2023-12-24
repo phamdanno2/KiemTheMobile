@@ -10,7 +10,9 @@ using GameServer.KiemThe.LuaSystem.Entities.Math;
 using GameServer.KiemThe.Utilities;
 using GameServer.Logic;
 using MoonSharp.Interpreter;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking.Types;
 
 namespace GameServer.KiemThe.LuaSystem.Entities
 {
@@ -43,6 +45,15 @@ namespace GameServer.KiemThe.LuaSystem.Entities
         public string GetName()
         {
             return this.RefObject.RoleName;
+        }
+
+        /// <summary>
+        /// Trả về tên user id và account
+        /// </summary>
+        /// <returns></returns>
+        public string GetUserID()
+        {
+            return this.RefObject.strUserID;
         }
         #endregion
 
@@ -105,6 +116,19 @@ namespace GameServer.KiemThe.LuaSystem.Entities
         public int GetTopMoney()
         {
             return ShopManager.rankOfMoney.IndexOf(this.RefObject.RoleID) + 1;
+        }
+        public int NpcClick(int resID)
+        {
+            NPC npc = NPCGeneralManager.FindNPCBYRES(this.RefObject.MapCode, this.RefObject.CopyMapID, resID);
+            if (npc != null)
+            {
+                if (GameManager.MapMgr.DictMaps.TryGetValue(this.RefObject.MapCode, out GameMap map))
+                {
+                    KTLuaEnvironment.ExecuteNPCScript_Open(map, npc, this.RefObject, npc.ScriptID, new Dictionary<int, string>());
+                    return 1;
+                }
+            }
+            return 0;
         }
         public void SetTitle(int id)
         {
@@ -702,6 +726,15 @@ namespace GameServer.KiemThe.LuaSystem.Entities
         public bool IsTeamLeader()
         {
             return this.RefObject.TeamID != -1 && KTTeamManager.IsTeamExist(this.RefObject.TeamID) && this.RefObject.TeamLeader == this.RefObject;
+        }
+
+        /// <summary>
+        /// lấy tổng số người online ----fix jackson thêm hàm kiểm tra số lượng online
+        /// </summary>
+        /// <returns></returns>
+        public int GetPlayerOnline()
+        {
+            return GameManager.ClientMgr.GetClientCount();
         }
     }
 }

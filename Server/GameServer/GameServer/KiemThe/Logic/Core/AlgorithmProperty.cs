@@ -2304,6 +2304,20 @@ namespace GameServer.KiemThe.Logic
                 /// Nếu có sát thương
                 if (nDamage > 0)
                 {
+                    //--------------------fix jackson giảm or tăng dame
+                    if (attacker.ObjectType == ObjectTypes.OT_CLIENT && target.ObjectType == ObjectTypes.OT_CLIENT)     //---------kiểm tra là người chơi
+                    {
+                        int damegoc = nDamage;
+                        if (attacker.m_Series == KE_SERIES_TYPE.series_water || attacker.m_Series == KE_SERIES_TYPE.series_fire)               //----fix jackson tăng dame 20%
+                            nDamage = nDamage + ((20 * nDamage) / 100);
+                        if (attacker.m_Series == KE_SERIES_TYPE.series_metal)   //----fix jackson giảm dame 10%
+                            nDamage = nDamage - ((10 * nDamage) / 100);
+
+                        //int nva = (int)attacker.m_Series;
+                        //int nvb = (int)target.m_Series;
+                        //Console.WriteLine(attacker.RoleName + " ngu hanh: "+ nva+" DameGoc: " + damegoc + " DameEit: "+ nDamage+" " + target.RoleName+ " nguhanh: "+ nvb);
+                    }
+
                     /// Nếu lượng sát thương vượt quá sinh mệnh của mục tiêu hiện tại
                     if (nDamage > target.m_CurrentLife)
                     {

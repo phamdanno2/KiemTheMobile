@@ -30,6 +30,11 @@ using Tmsk.Contract;
 using GameServer.KiemThe.GameEvents.EmperorTomb;
 using GameServer.KiemThe.GameEvents.SpecialEvent;
 using GameServer.KiemThe.Core.Activity.LuckyCircle;
+using GameServer.KiemThe.Core.Activity.CardMonth;
+using GameServer.KiemThe.Core.Activity.DownloadBouns;
+using GameServer.KiemThe.Core.Activity.EveryDayOnlineEvent;
+using GameServer.KiemThe.Core.Activity.LevelUpEvent;
+using GameServer.KiemThe.Core.Activity.RechageEvent;
 
 namespace GameServer.KiemThe.Logic
 {
@@ -2212,7 +2217,26 @@ namespace GameServer.KiemThe.Logic
                         }
 
 
-                        #endregion
+                    #endregion
+
+                    #region Reload XML GS
+                    case "ReloadWefare":
+                        {
+                            CardMonthManager.Setup();
+                            //CheckPointManager.Setup();
+                            DownloadBounsManager.Setup();
+                            EveryDayOnlineManager.Setup();
+                            LevelUpEventManager.Setup();
+                            RechageManager.Setup();
+                            break;
+                        }
+                    case "ReloadSkillData":
+                        {
+                            KSkill.LoadSkillData();
+                            break;
+                        }
+                    #endregion
+
                 }
             }
             catch (Exception ex)

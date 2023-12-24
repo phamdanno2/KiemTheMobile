@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>	       
+	 <Teleport Code="1" Tip="Vĩnh Lạc Trấn" Key="1" To="3" ToX="9210" ToY="1250" X="12630" Y="7270" Radius="100" />
+	 <Teleport Code="2" Tip="Võ Đang Phái" Key="2" To="14" ToX="8250" ToY="930" X="2450" Y="8170" Radius="100" />
+     <Teleport Code="3" Tip="Kiếm Môn Quan [cấp 85]" Key="3" To="111" ToX="7710" ToY="1070" X="1590" Y="7370" Radius="100" />
+	 <Teleport Code="4" Tip="Hán Thủy Cổ Độ [cấp 55]" Key="4" To="88" ToX="2970" ToY="7727" X="11970" Y="1570" Radius="100" />
+	 <Teleport Code="5" Tip="Ba Lăng Huyện" Key="5" To="8" ToX="3070" ToY="6110" X="3010" Y="1890" Radius="100" />
+	 
+	</Teleports>
+</Map>

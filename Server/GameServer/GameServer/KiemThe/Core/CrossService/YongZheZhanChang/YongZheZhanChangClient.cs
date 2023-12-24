@@ -313,7 +313,6 @@ namespace KF.Client
                         kuaFuService = KuaFuService;
                     }
 
-               
 
                     clientId = kuaFuService.InitializeClient(this, ClientInfo);
 

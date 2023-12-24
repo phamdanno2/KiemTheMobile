@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Map>
   <NPCs>
+	<NPC Code="2441" Name="Lương Tiếu Tiếu" MinimapName="" VisibleOnMinimap="1" Title="Tần Lăng" X="7500" Y="3600" Dir="0" ScriptID="400030"/>
+ 
 	<NPC Code="2503" Name="Hiệu Úy Mộ Binh (Tống)" MinimapName="" VisibleOnMinimap="1" X="6330" Y="4010" Dir="3" ScriptID="18"/>
 	<NPC Code="2607" Name="Triệu Nguyên Tịnh" MinimapName="Chiêu Mộ Sứ (Tống)" VisibleOnMinimap="1" Title="Chiêu Mộ Sứ (Tống)" X="6830" Y="3650" Dir="1" ScriptID="18" />
 
@@ -8,9 +10,13 @@
 	<NPC Code="2608" Name="Hoàn Nhan Long Húc" MinimapName="Chiêu Mộ Sứ (Kim)" VisibleOnMinimap="1" Title="Chiêu Mộ Sứ (Kim)" X="6530" Y="3450" Dir="1" ScriptID="19"/>
 
 	<NPC Code="3237" Name="Triệu Khản" MinimapName="Hướng Dẫn Tiêu Dao Cốc" VisibleOnMinimap="1" Title="Hướng Dẫn Tiêu Dao Cốc" X="6830" Y="3350" Dir="7" ScriptID="500002"/>
+	<NPC Code="3237" Name="Triệu Khản" MinimapName="Hướng Dẫn Tiêu Dao Cốc" VisibleOnMinimap="1" Title="Hướng Dẫn Tiêu Dao Cốc" X="2670" Y="4050" Dir="7" ScriptID="500002"/>
 
     <NPC Code="2955" Name="Mã Xuyên Sơn" MinimapName="" VisibleOnMinimap="1" Title="Tiếp dẫn Ải Gia Tộc" X="7324" Y="3597" Dir="1" ScriptID="200"/>
+	<NPC Code="2955" Name="Mã Xuyên Sơn" MinimapName="" VisibleOnMinimap="1" Title="Tiếp dẫn Ải Gia Tộc" X="3724" Y="3997" Dir="1" ScriptID="200"/>
+
 	<NPC Code="2654" Name="Hộ Vệ Bạch Hổ Đường" MinimapName="Truyền Tống Bạch Hổ Đường" VisibleOnMinimap="1" Title="Truyền Tống Bạch Hổ Đường" X="7324" Y="3797" Dir="5" ScriptID="400012" />
+	<NPC Code="2654" Name="Hộ Vệ Bạch Hổ Đường" MinimapName="Truyền Tống Bạch Hổ Đường" VisibleOnMinimap="1" Title="Truyền Tống Bạch Hổ Đường" X="6170" Y="2490" Dir="5" ScriptID="400012" />
 
 	<NPC Code="3698" Name="Xa Phu" MinimapName="" VisibleOnMinimap="1" Title="" X="4110" Y="2650" Dir="0" ScriptID="13" />
 	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="3330" Y="2690" Dir="1" ScriptID="12"/>

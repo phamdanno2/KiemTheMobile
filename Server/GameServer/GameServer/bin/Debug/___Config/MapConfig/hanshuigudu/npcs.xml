@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+  
+    <NPC Code="1204" Name="Tường Tẩu" MinimapName="" VisibleOnMinimap="1" Title="" X="2163" Y="4918" Dir="7" ScriptID="157"/>
+	<NPC Code="1205" Name="Toàn Thúc" MinimapName="" VisibleOnMinimap="1" Title="" X="607" Y="5479" Dir="7" ScriptID="157"/>
+   
+  </NPCs>
+</Map>

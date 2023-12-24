@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="633" Name="Kim khoáng thạch" PosX="6142" PosY="3744" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="633" Name="Kim khoáng thạch" PosX="6530" PosY="3613" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="633" Name="Kim khoáng thạch" PosX="5705" PosY="4273" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	 
+	 <GrowPoint Code="633" Name="Kim khoáng thạch" PosX="5776" PosY="4009" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="633" Name="Kim khoáng thạch" PosX="5517" PosY="4163" RespawnTime="20000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	 
+	</GrowPoints>
+</Map>

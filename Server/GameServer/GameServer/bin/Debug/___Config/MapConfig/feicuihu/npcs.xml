@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+  <!--
+    <NPC Code="3584"  Name="Giới Sơn Tông" MinimapName="" VisibleOnMinimap="1" Title="Cơ Quan Đại Sư" X="3058" Y="6812" Dir="1" />
+	<NPC Code="3590"  Name="Cao Thăng" MinimapName="" VisibleOnMinimap="1" Title="Nghĩa Quân Tinh Nhuệ" X="8375" Y="4896" Dir="7" />
+	<NPC Code="3591"  Name="Thôi Kiếm" MinimapName="" VisibleOnMinimap="1" Title="Nghĩa Quân Tinh Nhuệ" X="9067" Y="6103" Dir="1" />	
+    <NPC Code="3585"  Name="Bạch Cương" MinimapName="" VisibleOnMinimap="1" Title="Nghĩa Quân Tiền Bối" X="8690" Y="6371" Dir="1" />
+	-->
+  </NPCs>
+</Map>

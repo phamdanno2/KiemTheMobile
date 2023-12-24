@@ -70,7 +70,8 @@ namespace GameServer.KiemThe.Logic.CheatDetector
             if (distance > SpeedCheatDetector.MaxAllowedDistance)
             {
                 /// TODO: Làm gì nó thì làm
-                Console.WriteLine("Player {0} position is bugged!!!", this.Player.RoleName);
+                //---------fix jackson đóng thông báo
+                //Console.WriteLine("Player {0} position is bugged!!!", this.Player.RoleName);
                 /// Rollback vị trí
                 this.ChangePos(gsPos.x, gsPos.y);
                 /// Toác
@@ -94,7 +95,8 @@ namespace GameServer.KiemThe.Logic.CheatDetector
                 this.totalTrustedTimes++;
                 /// Thiết lập lại vị trí lấy vị trí ở Client
                 this.Player.CurrentPos = new System.Windows.Point(clientPosX, clientPosY);
-                Console.WriteLine("Player {0} is temporary trusted. Total trusted times: {1}", this.Player.RoleName, this.totalTrustedTimes);
+                //------------fix jackson đóng thông báo
+                //Console.WriteLine("Player {0} is temporary trusted. Total trusted times: {1}", this.Player.RoleName, this.totalTrustedTimes);
                 /// OK
                 return true;
             }

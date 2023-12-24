@@ -32,52 +32,73 @@ local Record2 = 101120
 local Record3 = 101121
 local Record4 = 101122
 local Record5 = 101123
+
+local Record6 = 101124
+local Record7 = 101125
+local Record8 = 101126
+local Record9 = 101127
 function TuiTanThu:OnUse(scene, item, player, otherParams)
 
 	-- ************************** --
 	local dialog = GUI.CreateItemDialog()
-	dialog:AddText("Xin chào "..player:GetName().." !")
+	dialog:AddText("Xin chào "..player:GetName().."\nĐua top <color=red>Cấp độ</color> từ <color=green>20h00 17/11/2023 đến 23h00 24/12/2023</color>\nĐua top <color=red>Tài Phú</color> từ <color=green>20h00 17/11/2023 đến 23h00 31/12/2023</color> !")
 
 	if player:GetFactionID()==0 then
 		dialog:AddSelection(1,"Gia nhập Môn Phái.")
 	else
-		dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
-		
+		local record2 = Player.GetValueForeverRecore(player, Record2)
+		if record2 ~= 1 then
+			dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
+		end
+
+		local record6 = Player.GetValueForeverRecore(player, Record6)	
+		if record6 ~= 1 then
+			dialog:AddSelection(10025, "Nhận <color=green>danh vọng</color> các loại")
+		end
+
+		--dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
+		dialog:AddSelection(30003, "Mở shop Trang bị Danh Vọng (Yêu cầu Thạch Cổ Trấn)")
+
+		--local record3 = Player.GetValueForeverRecore(player, Record3)
+		--if record3 ~= 1 then
+		--	dialog:AddSelection(39902, "Trang bị Tân Thủ")
+		--end
+
+		--local record9 = Player.GetValueForeverRecore(player, Record9)
+		--if record9 ~= 1 then
+			dialog:AddSelection(10003, "Nhận <color=green>Phi Phong</color>")
+		--end
+		--local record8 = Player.GetValueForeverRecore(player, Record8)
+		--if record8 ~= 1 then
+			dialog:AddSelection(989898, "Nhận <color=green>Mật Tịch</color> theo phái")
+		--end
+		dialog:AddSelection(11111, "Nhận <color=green>Max Kinh Nghiệm Mật Tịch</color>")
+
+		local record7 = Player.GetValueForeverRecore(player, Record7)
+		if record7 ~= 1 then
+			dialog:AddSelection(22222, "Nhận <color=green>Ngũ Hành Ấn</color>")
+		end
+		dialog:AddSelection(100030, "GiftCode")
 		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
 		dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
-		dialog:AddSelection(100030, "GiftCode")
-		
-		--dialog:AddSelection(30000, "Ta muốn đổi tên")
+
+		local record4 = Player.GetValueForeverRecore(player, Record4)
+		local record5 = Player.GetValueForeverRecore(player, Record5)
+		if record4 ~= 1 or record5 ~= 1 then
+			dialog:AddSelection(100033, "Nhận thưởng Đua Top")
+		end	
+
+		dialog:AddSelection(30000, "Ta muốn đổi tên")
 		dialog:AddSelection(30001, "Xóa vật phẩm")
-		dialog:AddSelection(30002, "Ghép vật phẩm")
+		dialog:AddSelection(30002, "Ghép vật phẩm")	
 
-	--local record2 = Player.GetValueForeverRecore(player, Record2)
-	--local record3 = Player.GetValueForeverRecore(player, Record3)
-	--local record4 = Player.GetValueForeverRecore(player, Record4)
-	--local record5 = Player.GetValueForeverRecore(player, Record5)
-
-	--if record2 ~= 1 then
-	--	dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
-	--end
-	--if record3 ~= 1 then
-	--	dialog:AddSelection(39902, "Vật Phẩm Tân Thủ")
-	--end
-	--if record4 ~= 1 then
-	--	dialog:AddSelection(100033, "Nhận thưởng Top Tài Phú")
-	--end	
-	--if record5 ~= 1 then
-	--	dialog:AddSelection(100035, "Nhận thưởng Top Cấp Độ")
-	--end	
 	end	
-	
 	if player:IsGM() == 1 then
 		dialog:AddSelection(100031, "Lưu danh sach top")
 	end
 	dialog:AddSelection(77777, "Kết thúc đối thoại")
 	
-
 --	dialog:AddSelection(10011, "Dịch chuyển đến Hoàng Thành liên Server")
-	
 	
 	dialog:Show(item, player)
 	-- ************************** --
@@ -1569,13 +1590,15 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		return
 	end
 	if selectionID == 30000 then
-		-- Gọi hàm đổi tên
+		if Player.CountItemInBag(player, 2167) <= 0 then
+            TuiTanThu:ShowDialog(item, player,"Chức năng này yêu cầu <color=yellow>[Thẻ Đổi Tên]</color>. Khi nào có hãy đến tìm ta.")
+            return
+        end
 		GUI.OpenChangeName(player)
-		
-		-- Đóng khung
-		GUI.CloseDialog(player)
+        GUI.CloseDialog(player)
 		return
 	end
+
 	-- ************************** --
 	if selectionID == 39900 then
 		dialog:AddText("<color=red>Nhận hỗ trợ Alpha Test Kiếm Thế Mobile</color>")
@@ -1596,6 +1619,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		return
 	end
 	if selectionID == 22222 then
+		GUI.CloseDialog(player)
 		local factions = player:GetFactionID()
 		if factions == 1 then
 			Player.AddItemLua(player,3864,1,-1,1)
@@ -1623,7 +1647,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 			Player.AddItemLua(player,3875,1,-1,1)
 		end
 		player:AddNotification("Nhận <color=green>ngũ hành ấn</color> thành công")
-		GUI.CloseDialog(player)
+		Player.SetValueOfForeverRecore(player, Record7, 1)
 		return
 	end
 
@@ -1694,7 +1718,8 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		-- Player.AddRetupeValue(player,503,10000)
 		
 		
-		player:AddNotification(""..player:GetName().."Nhận Danh Vọng Các Loại Thành Công")
+		player:AddNotification("Nhận Danh Vọng Các Loại Thành Công")
+		Player.SetValueOfForeverRecore(player, Record6, 1)
 		return
 	end
 	if selectionID == 999999 then
@@ -1870,9 +1895,17 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 			Player.AddItemLua(player,secretID[12].ItemID5,1,series,1)
 			Player.AddItemLua(player,secretID[12].ItemID6,1,series,1)
 		end
-		player:AddNotification("Chúc mừng "..player:GetName().."  nhận hỗ trợ mật tịch thành công")
+		player:AddNotification("Nhận Mật Tịch thành công")
+		Player.SetValueOfForeverRecore(player, Record8, 1)
 		return
 	end
+	if selectionID == 11111 then
+		GUI.CloseDialog(player)
+		Player.SetBookLevelAndExp(player, 100, 0)
+		player:AddNotification("Nhận thành công Kinh Nghiệm Mật Tịch")
+		return
+	end
+	
 	if selectionID == 10001 then
 		local str = "";
 		if Player.CheckMoney(player,0) < 10000000 then
@@ -1923,35 +1956,127 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		local series = Player.GetSeries(player)
 		if series == 1 then
 			if player:GetSex()==0 then
-				Player.AddItemLua(player,3628,1,-1,1)--vo song vuong gia kim nam
+				Player.AddItemLua(player,3619,1,-1,1,0,43200)--sieu pham kim nam
+				Player.AddItemLua(player,3620,1,-1,1,0,43200)--xuat tran kim nam
+				Player.AddItemLua(player,3621,1,-1,1,0,43200)--lang tuyet kim nam
+				Player.AddItemLua(player,3622,1,-1,1,0,43200)--kinh the kim nam
+				Player.AddItemLua(player,3623,1,-1,1,0,43200)--ngu khong kim nam
+				Player.AddItemLua(player,3624,1,-1,1,0,43200)--hon thien kim nam
+				Player.AddItemLua(player,3625,1,-1,1,0,43200)--so phuong kim nam
+				Player.AddItemLua(player,3626,1,-1,1,0,43200)--tiem long kim nam
+				Player.AddItemLua(player,3627,1,-1,1,0,43200)--chi ton kim nam
+				Player.AddItemLua(player,3628,1,-1,1,0,43200)--vo song kim nam
 			else
-				Player.AddItemLua(player,3638,1,-1,1)--vo song vuong gia kim nu
+				Player.AddItemLua(player,3629,1,-1,1,0,43200)--sieu pham kim nu
+				Player.AddItemLua(player,3630,1,-1,1,0,43200)--xuat tran kim nu
+				Player.AddItemLua(player,3631,1,-1,1,0,43200)--lang tuyet kim nu
+				Player.AddItemLua(player,3632,1,-1,1,0,43200)--kinh the kim nu
+				Player.AddItemLua(player,3633,1,-1,1,0,43200)--ngu khong kim nu
+				Player.AddItemLua(player,3634,1,-1,1,0,43200)--hon thien kim nu
+				Player.AddItemLua(player,3635,1,-1,1,0,43200)--so phuong kim nu
+				Player.AddItemLua(player,3636,1,-1,1,0,43200)--tiem long kim nu
+				Player.AddItemLua(player,3637,1,-1,1,0,43200)--chi ton kim nu
+				Player.AddItemLua(player,3638,1,-1,1,0,43200)--vo song kim nu
 			end
 		elseif series == 2 then
 			if player:GetSex()==0 then
-				Player.AddItemLua(player,3648,1,-1,1)--vo song vuong gia moc nam
+				Player.AddItemLua(player,3639,1,-1,1,0,43200)--sieu pham moc nam
+				Player.AddItemLua(player,3640,1,-1,1,0,43200)--xuat tran moc nam
+				Player.AddItemLua(player,3641,1,-1,1,0,43200)--lang tuyet moc nam
+				Player.AddItemLua(player,3642,1,-1,1,0,43200)--kinh the moc nam
+				Player.AddItemLua(player,3643,1,-1,1,0,43200)--ngu khong moc nam
+				Player.AddItemLua(player,3644,1,-1,1,0,43200)--hon thien moc nam
+				Player.AddItemLua(player,3645,1,-1,1,0,43200)--so phuong moc nam
+				Player.AddItemLua(player,3646,1,-1,1,0,43200)--tiem long moc nam
+				Player.AddItemLua(player,3647,1,-1,1,0,43200)--chi ton moc nam
+				Player.AddItemLua(player,3648,1,-1,1,0,43200)--vo song moc nam
 			else
-				Player.AddItemLua(player,3658,1,-1,1)--vo song vuong gia moc nu
+				Player.AddItemLua(player,3649,1,-1,1,0,43200)--sieu pham moc nu
+				Player.AddItemLua(player,3650,1,-1,1,0,43200)--xuat tran moc nu
+				Player.AddItemLua(player,3651,1,-1,1,0,43200)--lang tuyet moc nu
+				Player.AddItemLua(player,3652,1,-1,1,0,43200)--kinh the moc nu
+				Player.AddItemLua(player,3653,1,-1,1,0,43200)--ngu khong moc nu
+				Player.AddItemLua(player,3654,1,-1,1,0,43200)--hon thien moc nu
+				Player.AddItemLua(player,3655,1,-1,1,0,43200)--so phuong moc nu
+				Player.AddItemLua(player,3656,1,-1,1,0,43200)--tiem long moc nu
+				Player.AddItemLua(player,3657,1,-1,1,0,43200)--chi ton moc nu
+				Player.AddItemLua(player,3658,1,-1,1,0,43200)--vo song moc nu
 			end
 		elseif series == 3 then
 			if player:GetSex()==0 then
-				Player.AddItemLua(player,3668,1,-1,1)--vo song vuong gia thuy nam
+				Player.AddItemLua(player,3659,1,-1,1,0,43200)--sieu pham thuy nam
+				Player.AddItemLua(player,3660,1,-1,1,0,43200)--xuat tran thuy nam
+				Player.AddItemLua(player,3661,1,-1,1,0,43200)--lang tuyet thuy nam
+				Player.AddItemLua(player,3662,1,-1,1,0,43200)--kinh the thuy nam
+				Player.AddItemLua(player,3663,1,-1,1,0,43200)--ngu khong thuy nam
+				Player.AddItemLua(player,3664,1,-1,1,0,43200)--hon thien thuy nam
+				Player.AddItemLua(player,3665,1,-1,1,0,43200)--so phuong thuy nam
+				Player.AddItemLua(player,3666,1,-1,1,0,43200)--tiem long thuy nam
+				Player.AddItemLua(player,3667,1,-1,1,0,43200)--chi ton thuy nam
+				Player.AddItemLua(player,3668,1,-1,1,0,43200)--vo song thuy nam
 			else
-				Player.AddItemLua(player,3678,1,-1,1)--vo song vuong gia thuy nu
+				Player.AddItemLua(player,3669,1,-1,1,0,43200)--sieu pham thuy nu
+				Player.AddItemLua(player,3670,1,-1,1,0,43200)--xuat tran thuy nu
+				Player.AddItemLua(player,3671,1,-1,1,0,43200)--lang tuyet thuy nu
+				Player.AddItemLua(player,3672,1,-1,1,0,43200)--kinh the thuy nu
+				Player.AddItemLua(player,3673,1,-1,1,0,43200)--ngu khong thuy nu
+				Player.AddItemLua(player,3674,1,-1,1,0,43200)--hon thien thuy nu
+				Player.AddItemLua(player,3675,1,-1,1,0,43200)--so phuong thuy nu
+				Player.AddItemLua(player,3676,1,-1,1,0,43200)--tiem long thuy nu
+				Player.AddItemLua(player,3677,1,-1,1,0,43200)--chi ton thuy nu
+				Player.AddItemLua(player,3678,1,-1,1,0,43200)--vo song thuy nu
 			end
 		elseif series == 4 then
 			if player:GetSex()==0 then
-				Player.AddItemLua(player,3688,1,-1,1)--vo song vuong gia hoa nam
+				Player.AddItemLua(player,3679,1,-1,1,0,43200)--sieu pham hoa nam
+				Player.AddItemLua(player,3680,1,-1,1,0,43200)--xuat tran hoa nam
+				Player.AddItemLua(player,3681,1,-1,1,0,43200)--lang tuyet hoa nam
+				Player.AddItemLua(player,3682,1,-1,1,0,43200)--kinh the hoa nam
+				Player.AddItemLua(player,3683,1,-1,1,0,43200)--ngu khong hoa nam
+				Player.AddItemLua(player,3684,1,-1,1,0,43200)--hon thien hoa nam
+				Player.AddItemLua(player,3685,1,-1,1,0,43200)--so phuong hoa nam
+				Player.AddItemLua(player,3686,1,-1,1,0,43200)--tiem long hoa nam
+				Player.AddItemLua(player,3687,1,-1,1,0,43200)--chi ton hoa nam
+				Player.AddItemLua(player,3688,1,-1,1,0,43200)--vo song hoa nam
 			else
-				Player.AddItemLua(player,3698,1,-1,1)--vo song vuong gia hoa nu
+				Player.AddItemLua(player,3689,1,-1,1,0,43200)--sieu pham hoa nu
+				Player.AddItemLua(player,3690,1,-1,1,0,43200)--xuat tran hoa nu
+				Player.AddItemLua(player,3691,1,-1,1,0,43200)--lang tuyet hoa nu
+				Player.AddItemLua(player,3692,1,-1,1,0,43200)--kinh the hoa nu
+				Player.AddItemLua(player,3693,1,-1,1,0,43200)--ngu khong hoa nu
+				Player.AddItemLua(player,3694,1,-1,1,0,43200)--hon thien hoa nu
+				Player.AddItemLua(player,3695,1,-1,1,0,43200)--so phuong hoa nu
+				Player.AddItemLua(player,3696,1,-1,1,0,43200)--tiem long hoa nu
+				Player.AddItemLua(player,3697,1,-1,1,0,43200)--chi ton hoa nu
+				Player.AddItemLua(player,3698,1,-1,1,0,43200)--vo song hoa nu
 			end
 		else
 			if player:GetSex()==0 then
-				Player.AddItemLua(player,3708,1,-1,1)--vo song vuong gia hoa nam
+				Player.AddItemLua(player,3699,1,-1,1,0,43200)--sieu pham tho nam
+				Player.AddItemLua(player,3700,1,-1,1,0,43200)--xuat tran tho nam
+				Player.AddItemLua(player,3701,1,-1,1,0,43200)--lang tuyet tho nam
+				Player.AddItemLua(player,3702,1,-1,1,0,43200)--kinh the tho nam
+				Player.AddItemLua(player,3703,1,-1,1,0,43200)--ngu khong tho nam
+				Player.AddItemLua(player,3704,1,-1,1,0,43200)--hon thien tho nam
+				Player.AddItemLua(player,3705,1,-1,1,0,43200)--so phuong tho nam
+				Player.AddItemLua(player,3706,1,-1,1,0,43200)--tiem long tho nam
+				Player.AddItemLua(player,3707,1,-1,1,0,43200)--chi ton tho nam
+				Player.AddItemLua(player,3708,1,-1,1,0,43200)--vo song tho nam
 			else
-				Player.AddItemLua(player,3718,1,-1,1)--vo song vuong gia hoa nu
+				Player.AddItemLua(player,3709,1,-1,1,0,43200)--sieu pham tho nu
+				Player.AddItemLua(player,3700,1,-1,1,0,43200)--xuat tran tho nu
+				Player.AddItemLua(player,3711,1,-1,1,0,43200)--lang tuyet tho nu
+				Player.AddItemLua(player,3712,1,-1,1,0,43200)--kinh the tho nu
+				Player.AddItemLua(player,3713,1,-1,1,0,43200)--ngu khong tho nu
+				Player.AddItemLua(player,3714,1,-1,1,0,43200)--hon thien tho nu
+				Player.AddItemLua(player,3715,1,-1,1,0,43200)--so phuong tho nu
+				Player.AddItemLua(player,3716,1,-1,1,0,43200)--tiem long tho nu
+				Player.AddItemLua(player,3717,1,-1,1,0,43200)--chi ton tho nu
+				Player.AddItemLua(player,3718,1,-1,1,0,43200)--vo song tho nu
 			end
 		end
+		player:AddNotification("Nhận Phi Phong thành công")
+		Player.SetValueOfForeverRecore(player, Record9, 1)
 		return
 	end
 	if selectionID == 10005 then
@@ -2026,62 +2151,6 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		dialog:Show(item, player)
 		return;
 	end
-	if selectionID == 100035 then
-		GUI.CloseDialog(player)
-		local rank = player:GetTopLevel()
-		if rank == 1 then
-			Player.AddItemLua(player,583,20,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15008,2,-1,1)-- Phieu Giam Gia 30%
-			Player.AddItemLua(player,403,20,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank == 2 then
-			Player.AddItemLua(player,583,15,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15008,1,-1,1)-- Phieu Giam Gia 30%
-			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank == 3 then
-			Player.AddItemLua(player,583,10,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank <=0 then
-			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
-		elseif rank <= 10 then
-			Player.AddItemLua(player,583,5,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank <= 20 then
-			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,403,5,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank <= 30 then
-			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,402,10,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		else
-			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
-		end
-		return;
-	end;
 	if selectionID == 100032 then
 		dialog:AddText("<color=green>Đại hiệp muốn xem phần thưởng tài phú hạng mấy ?</color>")
 		dialog:AddSelection(1000321, "Thưởng hạng 1")
@@ -2207,7 +2276,59 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
 			Player.SetValueOfForeverRecore(player, Record4, 1)
 		else
+			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng Top Tài Phú")
+		end
+		local rank = player:GetTopLevel()
+		if rank == 1 then
+			Player.AddItemLua(player,583,20,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15008,2,-1,1)-- Phieu Giam Gia 30%
+			Player.AddItemLua(player,403,20,-1,1)-- Thoi vang (dai)
+
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+		elseif rank == 2 then
+			Player.AddItemLua(player,583,15,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15008,1,-1,1)-- Phieu Giam Gia 30%
+			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
+
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+		elseif rank == 3 then
+			Player.AddItemLua(player,583,10,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
+
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+		elseif rank <=0 then
 			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
+		elseif rank <= 10 then
+			Player.AddItemLua(player,583,5,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
+
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+		elseif rank <= 20 then
+			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,403,5,-1,1)-- Thoi vang (dai)
+
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+		elseif rank <= 30 then
+			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,402,10,-1,1)-- Thoi vang (dai)
+
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+		else
+			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng Top Cấp Độ")
 		end
 		return
 	end
@@ -2226,7 +2347,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		--	dialog:AddSelection(77777, "Ta sẽ quay lại sau !!!")
 			-- dialog:AddSelection(10023, "Nhận Set Đồ Theo Hệ </color>")
 		--	dialog:Show(item, player)
-		player:SetLevel(90)		
+		player:SetLevel(119)		
 		Player.AddItemLua(player,3484,1,-1,1)--Hy Hy--Okie
 		Player.AddItemLua(player,739,1,-1,1)--Luc Thao Tap Chu
 		Player.AddItemLua(player,555,1,-1,1)--Vo Han Truyen Tong Phu
@@ -2239,6 +2360,12 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		Player.AddItemLua(player,15000,10,-1,1)--Phieu Bac Khoa 1 van
 		Player.AddItemLua(player,15001,1,-1,1)--Phieu Dong Khoa 1 van
 		Player.AddItemLua(player,2167,1,-1,1)--The Doi Ten
+		Player.AddMoney(player,5000000,0)-- 500v bạc khoa
+		Player.AddMoney(player,5000,1) --5000 bac
+		
+		Player.AddItemLua(player,132,999,-1,1)--Ngoc Truc Mai Hoa
+		Player.AddItemLua(player,174,999,-1,1)--Ngu Hoa Ngoc Lo Hoan
+		Player.AddItemLua(player,215,1,-1,1)--Tu Luyen Chau
 
 		player:AddNotification(""..player:GetName().."  Nhận Hỗ Trợ Tân Thủ Thành Công")
 		Player.SetValueOfForeverRecore(player, Record2, 1)
@@ -2263,16 +2390,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
@@ -2282,7 +2409,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2300,16 +2427,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
@@ -2321,7 +2448,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID20,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID21,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2339,16 +2466,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)				
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
@@ -2360,7 +2487,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2380,9 +2507,9 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
@@ -2390,8 +2517,8 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					-- TuiTanThu:SetBelonging89CH7(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1)
 					-- TuiTanThu:SetBelonging89CH7(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID14,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID15,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
@@ -2401,7 +2528,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2419,16 +2546,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
@@ -2440,7 +2567,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2459,16 +2586,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
@@ -2479,7 +2606,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2497,17 +2624,17 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
@@ -2518,7 +2645,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2537,17 +2664,17 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
@@ -2557,7 +2684,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2575,18 +2702,18 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID18,1,-1,1,5)
@@ -2596,7 +2723,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2615,16 +2742,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
@@ -2635,7 +2762,7 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
@@ -2653,16 +2780,16 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
@@ -2674,14 +2801,14 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
 					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
 					dialog:Show(item, player)
 				end
-			elseif player:GetFactionID()==12 then
+			else--if player:GetFactionID()==12 then
 				if player:GetSex()==0 then
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID1,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID2,1,-1,1,5)
@@ -2692,17 +2819,17 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID7,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID8,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID9,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				elseif player:GetSex()==1 then
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID10,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID11,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID12,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID13,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID16,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID17,1,-1,1,5)
@@ -2713,15 +2840,13 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID22,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID23,1,-1,1,5)
 					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID24,1,-1,1,5)
-					Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
+					--Player.AddItemLua(player,SetTanThu80CoNgua[player:GetFactionID()].ItemID25,1,-1,1,5)
 					-- TuiTanThu:SetItemKhongCH(item,player,SetTanThu80CoNgua[player:GetFactionID()].ItemID26,1,-1,1)
 					Player.SetValueOfForeverRecore(player, Record3, 1)
 				else
 					dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
 					dialog:Show(item, player)
-				end
-
-			
+				end			
 			end
 		else
 			dialog:AddText("<color=red>Lỗi rồi</color>.Hãy báo cho GM để được hỗ trợ!!!")
@@ -3260,17 +3385,12 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		return
 	end
 	if selectionID == 30003 then
-		local record = Player.GetValueForeverRecore(player, Record2)
-		
-		-- Nếu đã nhận rồi
-		if record == 1 then
-			TuiTanThu:ShowDialog(item, player, "Bằng hữu đã nhận <color=green>Thẻ đổi tên</color> trước đó, không thể nhận thêm!")
-			return
+		if player:NpcClick(2993) == 1 then		
+			GUI.CloseDialog(player)
+		else
+			dialog:AddText("Shop danh vọng chỉ mở ở Thạch Cổ Trấn !")
+			dialog:Show(item, player)
 		end
-		-- Đánh dấu đã nhận rồi
-		Player.SetValueOfForeverRecore(player, Record2, 1)
-		Player.AddItemLua(player,2167,1,-1,1)
-		TuiTanThu:ShowDialog(item, player, "Nhận <color=green>Thẻ đổi tên</color> thành công. Rất cảm ơn bằng hữu đã luôn đồng hành cùng <color=green>Kiếm Thế 2009 - Mobile</color>!")
 		return
 	end
 		

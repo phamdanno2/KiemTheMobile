@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<MapLine ID="1" Name="Thành Cổ Liên Sever" Line="1,123" MaxNum="500"/>
+	<MapLine ID="2" Name="Hiệp Đạo Liên Sever" Line="1,126" MaxNum="500"/>
+	<MapLine ID="3" Name="Tích Cung Liên Sever" Line="1,132" MaxNum="500"/>
+	<MapLine ID="4" Name="Hoàng Thành Liên Sever" Line="1,1616" MaxNum="500"/>
+	<MapLine ID="5" Name="Tống Kim Liên Sever" Line="1,1638" MaxNum="500"/>
+</Config>

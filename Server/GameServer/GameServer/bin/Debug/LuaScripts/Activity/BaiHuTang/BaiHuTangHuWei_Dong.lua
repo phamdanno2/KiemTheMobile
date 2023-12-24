@@ -15,7 +15,7 @@ local Details = {
 		},
 	},
 	[233] = {
-		RequireLevel = {Min = 90, Max = 150},
+		RequireLevel = {Min = 90, Max = 200},
 		EnterScene = {
 			SceneID = 234,			-- Bạch Hổ Đường 1_Đông (cao)
 			PosX = 1449,
@@ -77,7 +77,8 @@ function BaiHuTangHuWei_Dong:OnSelection(scene, npc, player, selectionID, otherP
 			return
 		end
 		
-		EventManager.BaiHuTang_SetEnteredToday(player)
+		----fix jackson đóng set vào map tính lượt đi BHĐ
+		----EventManager.BaiHuTang_SetEnteredToday(player)
 		player:ChangeScene(Details[scene:GetID()].EnterScene.SceneID, Details[scene:GetID()].EnterScene.PosX, Details[scene:GetID()].EnterScene.PosY)
 		return
 	end

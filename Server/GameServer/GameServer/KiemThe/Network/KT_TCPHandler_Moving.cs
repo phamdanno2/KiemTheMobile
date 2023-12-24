@@ -135,7 +135,8 @@ namespace GameServer.KiemThe.Logic
                 /// Tốc độ di chuyển hiện tại
                 int moveSpeed = client.GetCurrentRunSpeed();
 
-                Console.WriteLine("START MOVE ! ");
+                //-------------fix jackson đóng thông báo
+                //Console.WriteLine("START MOVE ! ");
                 /// Kiểm tra vị trí hiện tại của người chơi và vị trí truyền về từ Client xem có hợp lệ không
                 if (!client.SpeedCheatDetector.Validate(fromX, fromY))
                 {

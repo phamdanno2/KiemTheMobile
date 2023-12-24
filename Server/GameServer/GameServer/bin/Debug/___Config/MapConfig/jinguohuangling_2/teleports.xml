@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+     <Teleport Code="1" Tip="Hoàng Lăng Kim Quốc 1 [cấp 25] " Key="1" To="47" ToX="11448" ToY="6249" X="3550" Y="2114" Radius="100" />	 
+	 <Teleport Code="2" Tip="Hoàng Lăng Kim Quốc 3 [cấp 45] " Key="2" To="67" ToX="3826" ToY="2279" X="11771" Y="6435" Radius="100" />
+	 
+		   
+	</Teleports>
+</Map>

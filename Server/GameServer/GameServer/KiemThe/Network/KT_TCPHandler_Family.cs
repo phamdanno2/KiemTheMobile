@@ -86,14 +86,14 @@ namespace GameServer.KiemThe.Logic
                 }
 
                 /// -100 Uy Danh không đủ
-                if (client.Prestige < 20)
-                {
-                    PlayerManager.ShowNotification(client, "Uy danh không đủ");
-                    tcpOutPacket = TCPOutPacket.MakeTCPOutPacket(pool, "-100", nID);
-                    return TCPProcessCmdResults.RESULT_DATA;
-                }
+                //if (client.Prestige < 20)
+                //{
+                //    PlayerManager.ShowNotification(client, "Uy danh không đủ");
+                //    tcpOutPacket = TCPOutPacket.MakeTCPOutPacket(pool, "-100", nID);
+                //    return TCPProcessCmdResults.RESULT_DATA;
+                //}
 
-                if (!KTGlobal.IsHaveMoney(client, 100000, Entities.MoneyType.Bac))
+                if (!KTGlobal.IsHaveMoney(client, 1, Entities.MoneyType.Bac))//100000
                 {
                     PlayerManager.ShowNotification(client, "Bạc trên người không đủ");
                     tcpOutPacket = TCPOutPacket.MakeTCPOutPacket(pool, "-500", nID);
@@ -124,7 +124,7 @@ namespace GameServer.KiemThe.Logic
 
                         if (VALUE > 0)
                         {
-                            KTGlobal.SubMoney(client, 100000, Entities.MoneyType.Bac, "CREATE FAMILY");
+                            KTGlobal.SubMoney(client, 1, Entities.MoneyType.Bac, "CREATE FAMILY");
 
 
 

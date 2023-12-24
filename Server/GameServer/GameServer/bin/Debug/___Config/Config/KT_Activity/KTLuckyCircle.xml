@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	VÒNG QUAY MAY MẮN
+	- Config: Thiết lập vòng quay
+		- Activate: Kích hoạt vòng quay
+		- LimitLevel: Giới hạn cấp độ
+		- RequireToken: Yêu cầu đồng cho mỗi lượt quay
+		- RequireBoundToken: Yêu cầu đồng khóa cho mỗi lượt quay
+		- RequireItemID: Yêu cầu vé quay may mắn
+	- CellData: Dữ liệu ô quay (phải có chính xác 28 ô)
+		- Cell: Thông tin ô vật phẩm
+			- ItemID: ID vật phẩm
+			- Quantity: Số lượng
+			- RateUsingToken: Tỷ lệ quay vào nếu sử dụng đồng (phần 10.000)
+			- RateUsingBoundToken: Tỷ lệ quay vào nếu sử dụng đồng khóa (phần 10.000)
+			- RateUsingCard: Tỷ lệ quay vào nếu sử dụng thẻ (phần 10.000)
+			- CheckPoint: Khi số lượt quay đạt các ngưỡng tương ứng mới quay vào ô này, ngăn cách bởi dấu ; (-1 nếu không áp dụng)
+			- NotifyAfterTaken: Thông báo khi nhận
+			=> Khi có CheckPoint thì Rate sẽ luôn luôn là 0%
+			- EffectType: màu sắc của vòng tròn xoay quanh (-1 là không có gì) màu từ 1-7
+-->
+<KTLuckyCircle>
+	<Config Activate="true" LimitLevel="80" />
+	<Requiration RequireToken="1000" RequireBoundToken="1000" RequireItemID="2169" />
+	<CellData>
+		<Cell ItemID="2170" Quantity="1" RateUsingToken="-1" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="201;412;641;805;1007;1212;1435;1651;1844;2088;2215;2426;2632;2855;3062;3274;3489;3610;3825;4026;4212;4444;4650;4819;5017;5264;5423;5625;5852;6012;6223;6412;6611;6802;7005;7207;7409;7614;7804;8019;8288;8413;8603;8819;9094;9215;9403;9619;9896;10057;10258;10417;10621;10802;11005;11227;11405;11607;11808;12021;12231;12412;12606;12805;13041;13231;13451;13611;13802;14012;14214;14421;14632;14845;15046;15264;15454;15632;15823;16041;16216;16461;16621;16800;17001;17211;17421;17641;17805;18007;18209;18401;18603;18805;19017;19221;19427;19605;19807;20008" NotifyAfterTaken="true" EffectType="1"/>
+		<Cell ItemID="2180" Quantity="1" RateUsingToken="800" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2159" Quantity="1" RateUsingToken="1000" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2172" Quantity="1" RateUsingToken="600" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="true" EffectType="2"/>
+		<Cell ItemID="2156" Quantity="1" RateUsingToken="1100" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="506" Quantity="200" RateUsingToken="3300" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2181" Quantity="1" RateUsingToken="8500" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="403" Quantity="1" RateUsingToken="700" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2171" Quantity="1" RateUsingToken="-1" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="201;412;641;805;1007;1212;1435;1651;1844;2088;2215;2426;2632;2855;3062;3274;3489;3610;3825;4026;4212;4444;4650;4819;5017;5264;5423;5625;5852;6012;6223;6412;6611;6802;7005;7207;7409;7614;7804;8019;8288;8413;8603;8819;9094;9215;9403;9619;9896;10057;10258;10417;10621;10802;11005;11227;11405;11607;11808;12021;12231;12412;12606;12805;13041;13231;13451;13611;13802;14012;14214;14421;14632;14845;15046;15264;15454;15632;15823;16041;16216;16461;16621;16800;17001;17211;17421;17641;17805;18007;18209;18401;18603;18805;19017;19221;19427;19605;19807;20008" NotifyAfterTaken="true" EffectType="1"/>
+		<Cell ItemID="2179" Quantity="1" RateUsingToken="4000" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2158" Quantity="1" RateUsingToken="3000" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2155" Quantity="1" RateUsingToken="2000" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2182" Quantity="1" RateUsingToken="6500" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2177" Quantity="1" RateUsingToken="7800" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="917" Quantity="1" RateUsingToken="810" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="true" EffectType="3"/>
+		<Cell ItemID="2157" Quantity="1" RateUsingToken="7100" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="190" Quantity="1" RateUsingToken="3100" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2176" Quantity="1" RateUsingToken="5000" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2183" Quantity="1" RateUsingToken="4500" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2154" Quantity="1" RateUsingToken="7000" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2175" Quantity="1" RateUsingToken="-1" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="201;412;641;805;1007;1212;1435;1651;1844;2088;2215;2426;2632;2855;3062;3274;3489;3610;3825;4026;4212;4444;4650;4819;5017;5264;5423;5625;5852;6012;6223;6412;6611;6802;7005;7207;7409;7614;7804;8019;8288;8413;8603;8819;9094;9215;9403;9619;9896;10057;10258;10417;10621;10802;11005;11227;11405;11607;11808;12021;12231;12412;12606;12805;13041;13231;13451;13611;13802;14012;14214;14421;14632;14845;15046;15264;15454;15632;15823;16041;16216;16461;16621;16800;17001;17211;17421;17641;17805;18007;18209;18401;18603;18805;19017;19221;19427;19605;19807;20008" NotifyAfterTaken="true" EffectType="1"/>
+		<Cell ItemID="527" Quantity="1" RateUsingToken="3200" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="916" Quantity="1" RateUsingToken="820" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="true" EffectType="3"/>
+		<Cell ItemID="2174" Quantity="1" RateUsingToken="-1" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="201;412;641;805;1007;1212;1435;1651;1844;2088;2215;2426;2632;2855;3062;3274;3489;3610;3825;4026;4212;4444;4650;4819;5017;5264;5423;5625;5852;6012;6223;6412;6611;6802;7005;7207;7409;7614;7804;8019;8288;8413;8603;8819;9094;9215;9403;9619;9896;10057;10258;10417;10621;10802;11005;11227;11405;11607;11808;12021;12231;12412;12606;12805;13041;13231;13451;13611;13802;14012;14214;14421;14632;14845;15046;15264;15454;15632;15823;16041;16216;16461;16621;16800;17001;17211;17421;17641;17805;18007;18209;18401;18603;18805;19017;19221;19427;19605;19807;20008" NotifyAfterTaken="true" EffectType="1"/>
+		<Cell ItemID="402" Quantity="1" RateUsingToken="7200" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2178" Quantity="1" RateUsingToken="6100" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+		<Cell ItemID="2173" Quantity="1" RateUsingToken="-1" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="201;412;641;805;1007;1212;1435;1651;1844;2088;2215;2426;2632;2855;3062;3274;3489;3610;3825;4026;4212;4444;4650;4819;5017;5264;5423;5625;5852;6012;6223;6412;6611;6802;7005;7207;7409;7614;7804;8019;8288;8413;8603;8819;9094;9215;9403;9619;9896;10057;10258;10417;10621;10802;11005;11227;11405;11607;11808;12021;12231;12412;12606;12805;13041;13231;13451;13611;13802;14012;14214;14421;14632;14845;15046;15264;15454;15632;15823;16041;16216;16461;16621;16800;17001;17211;17421;17641;17805;18007;18209;18401;18603;18805;19017;19221;19427;19605;19807;20008" NotifyAfterTaken="true" EffectType="1"/>
+		<Cell ItemID="189" Quantity="1" RateUsingToken="4100" RateUsingBoundToken="-1" RateUsingCard="-1" CheckPoint="-1" NotifyAfterTaken="false" EffectType="-1"/>
+	</CellData>
+</KTLuckyCircle>

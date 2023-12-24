@@ -153,9 +153,6 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
         [XmlAttribute(AttributeName = "Money")]
         public int Money { get; set; }
-
-        [XmlAttribute(AttributeName = "BindCoin")]
-        public int BindCoin { get; set; }
     }
 
     [XmlRoot(ElementName = "BattelAwardExtras")]
@@ -169,12 +166,6 @@ namespace GameServer.KiemThe.Logic.Manager.Battle
 
         [XmlAttribute(AttributeName = "PointType")]
         public int PointType { get; set; }
-
-        [XmlAttribute(AttributeName = "BindCoinRank")]
-        public int BindCoinRank { get; set; }
-
-        [XmlAttribute(AttributeName = "MoneyRank")]
-        public int MoneyRank { get; set; }
     }
 
     [XmlRoot(ElementName = "BattleRank")]

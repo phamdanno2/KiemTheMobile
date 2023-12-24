@@ -28,6 +28,7 @@
 		- EnableCaptchaForBattle: Phần thưởng bạc khóa khi trả lời đúng Captcha
 -->
 <ServerConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ServerRate MoneyRate="1.0" ExpRate="5.0" />
 	<LimitAccount MaxCCU="1000" LimitAccountPerIPAddress="6" />
 	<MonsterAI EnableMonsterAIRandomMove="true" EnableMonsterAI="true" />
 	<Threading MaxUpdateGridThread="5" MaxPlayerStoryBoardThread="5" MaxMonsterTimer="5" MaxBuffTimer="1" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<GrowPoints>
+	 <GrowPoint Code="1559" Name="Di hài Thiên Trúc Tăng" PosX="2407" PosY="2966" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1559" Name="Di hài Thiên Trúc Tăng" PosX="1947" PosY="3500" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1559" Name="Di hài Thiên Trúc Tăng" PosX="1977" PosY="3982" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />	 
+	 <GrowPoint Code="1559" Name="Di hài Thiên Trúc Tăng" PosX="2403" PosY="3828" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1559" Name="Di hài Thiên Trúc Tăng" PosX="2183" PosY="3651" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 <GrowPoint Code="1559" Name="Di hài Thiên Trúc Tăng" PosX="2046" PosY="3167" RespawnTime="30000" CollectTick="5000" InteruptIfTakeDamage="true" ScriptID="300001" />
+	 
+	</GrowPoints>
+</Map>

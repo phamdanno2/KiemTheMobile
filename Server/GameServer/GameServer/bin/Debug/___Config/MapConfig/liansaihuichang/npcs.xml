@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="3386" Name="Quan Hội Trường" MinimapName="" VisibleOnMinimap="1" Title="" X="6812" Y="2508" Dir="1" ScriptID="400020" />
+	<NPC Code="3386" Name="Quan Hội Trường" MinimapName="" VisibleOnMinimap="1" Title="" X="3963" Y="960" Dir="1" ScriptID="400020"/>
+	<NPC Code="3386" Name="Quan Hội Trường" MinimapName="" VisibleOnMinimap="1" Title="" X="1725" Y="2084" Dir="1" ScriptID="400020" />
+	<NPC Code="3386" Name="Quan Hội Trường" MinimapName="" VisibleOnMinimap="1" Title="" X="4578" Y="3627" Dir="1" ScriptID="400020"/>
+	
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="5559" Y="4206" Dir="1" ScriptID="12" />
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="2340" Y="2518" Dir="1" ScriptID="12" /> 
+	<NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="4663" Y="1390" Dir="1" ScriptID="12" /> 
+    <NPC Code="2599" Name="Trâu Đức Khoái" MinimapName="Thủ Khố" VisibleOnMinimap="1" Title="Thủ Khố" X="7789" Y="3042" Dir="1" ScriptID="12" />	
+	
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="6651" Y="4227" Dir="1" ScriptID="27"/> 
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="3301" Y="2992" Dir="1" ScriptID="27"/> 
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="8885" Y="3097" Dir="1" ScriptID="27"/>
+	<NPC Code="6780" Name="Trương Trảm Kinh" MinimapName="Thuốc" VisibleOnMinimap="1" Title="Chủ Tiệm Thuốc" X="5522" Y="1860" Dir="1" ScriptID="27"/>
+	
+	<NPC Code="3698" Name="Xa Phu" 	MinimapName="" VisibleOnMinimap="1" Title="" X="5779" Y="4764" Dir="7" ScriptID="13" />
+	<NPC Code="3698" Name="Xa Phu" 	MinimapName="" VisibleOnMinimap="1" Title="" X="1738" Y="3215" Dir="7" ScriptID="13" /> 
+	<NPC Code="3698" Name="Xa Phu" 	MinimapName="" VisibleOnMinimap="1" Title="" X="4018" Y="2051" Dir="7" ScriptID="13" /> 
+	<NPC Code="3698" Name="Xa Phu" 	MinimapName="" VisibleOnMinimap="1" Title="" X="8003" Y="3630" Dir="7" ScriptID="13" />
+  </NPCs>
+</Map>

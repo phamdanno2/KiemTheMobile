@@ -14,7 +14,7 @@ function EmperorTomb_LiangXiaoXiao:OnOpen(scene, npc, player)
 
 	-- ************************** --
 	local dialog = GUI.CreateNPCDialog()
-	dialog:AddText("Lâu lắm rồi, ta chưa thấy một tên trộm nào dám lởn vởn quanh đây... Nơi này vào thì dễ ra thì khó... Ta thấy tiếc cho ngươi quá...\n\n\n<color=green>Thời gian mở Tần Lăng :</color><color=red> 9h00 ----23h59</color>")
+	dialog:AddText("Lâu lắm rồi, ta chưa thấy một tên trộm nào dám lởn vởn quanh đây... Nơi này vào thì dễ ra thì khó... Ta thấy tiếc cho ngươi quá...\n<color=green>Thời gian mở Tần Lăng :</color><color=red> 18h00 đến 16h00 hôm sau</color>\nLưu ý: mỗi 1 chu kỳ hoạt động chỉ được vào tối đa 2 giờ")
 	dialog:AddSelection(1, "Ta muốn vào Tần Lăng")
 	dialog:AddSelection(100, "Thôi đi!")
 	dialog:Show(npc, player)

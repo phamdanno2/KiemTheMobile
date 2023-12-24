@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Dương Châu Phủ" Key="1" To="26" ToX="3730" ToY="4990" X="8530" Y="2550" Radius="100" />
+	<Teleport Code="2" Tip="Mai Hoa Lĩnh [cấp 5]" Key="2" To="33" ToX="7523" ToY="5583" X="2410" Y="5130" Radius="100" />
+	<Teleport Code="3" Tip="Cái Bang" Key="3" To="15" ToX="950" ToY="1050" X="6390" Y="1190" Radius="100" />
+	<Teleport Code="4" Tip="Tiến Cúc Động [cấp 85]" Key="4" To="110" ToX="3070" ToY="1170" X="10030" Y="4730" Radius="100" />
+	<Teleport Code="5" Tip="Thục Cương Bí Cảnh [cấp 95]" Key="5" To="117" ToX="7015" ToY="874" X="7930" Y="6070" Radius="100" />	
+	<Teleport Code="6" Tip="Hoài Thủy Sa Châu [cấp 15]" Key="6" To="41" ToX="3997" ToY="706" X="2549" Y="569" Radius="100" />
+	
+	
+	</Teleports>
+</Map>

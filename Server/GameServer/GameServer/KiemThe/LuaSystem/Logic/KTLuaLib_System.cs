@@ -130,7 +130,7 @@ namespace GameServer.KiemThe.LuaSystem.Logic
         public static void WriteToConsole(string str)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            //Console.WriteLine("[LUA]: " + str);
+            Console.WriteLine("[LUA]: " + str);
             Console.ResetColor();
         }
         #endregion

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TokenShop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- Tiệm Đồng -->
+	<Token>
+		<Shop ID="203" /> <!--Khuyến mãi-->
+		<Shop ID="212" /><!--Huyền tinh-->
+		<Shop ID="211" /><!--thường dùng-->
+		<Shop ID="213" /><!--Đạo cụ-->
+		<!-- <Shop ID="89" /> -->
+	</Token>
+	<!-- End -->
+	
+	<!-- Tiệm Đồng Khóa -->
+	<BoundToken>
+		<Shop ID="207" /><!--Khuyến mãi-->
+		<Shop ID="214" /><!--Huyền tinh-->
+		<Shop ID="215" /><!--thường dùng-->
+		<!--Shop ID="210" /> -->
+		<!-- <Shop ID="94" /> -->
+	</BoundToken>
+	<!-- End -->
+	
+	<!-- Store-Product -->
+	<StoreProduct>
+		<Product ID="com.ktfog.mobi.pack1" Token="5000" Name="5000 Đồng" Hint="Nạp lần đầu tặng thêm 5000 đồng khóa" Icon="icon_goi_1" FirstBonus="5000" Price="50000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack2" Token="10000" Name="10000 Đồng" Hint="Nạp lần đầu tặng thêm 1 vạn đồng khóa" Icon="icon_goi_2" FirstBonus="10000" Price="100000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack3" Token="20000" Name="20000 Đồng" Hint="Nạp lần đầu tặng thêm 2 vạn đồng khóa" Icon="icon_goi_3" FirstBonus="20000" Price="200000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack4" Token="50000" Name="50000 Đồng" Hint="Nạp lần đầu tặng thêm 5 vạn đồng khóa" Icon="icon_goi_4" FirstBonus="50000" Price="500000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack5" Token="100000" Name="100000 Đồng" Hint="Nạp lần đầu tặng thêm 10 vạn đồng khóa" Icon="icon_goi_5" FirstBonus="100000" Price="1000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack6" Token="200000" Name="200000 Đồng" Hint="Nạp lần đầu tặng thêm 20 vạn đồng khóa" Icon="icon_goi_6" FirstBonus="200000" Price="2000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack7" Token="500000" Name="500000 Đồng" Hint="Nạp lần đầu tặng thêm 50 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="500000" Price="5000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack8" Token="1000000" Name="1000000 Đồng" Hint="Nạp lần đầu tặng thêm 100 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="1000000" Price="10000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack9" Token="2000000" Name="2000000 Đồng" Hint="Nạp lần đầu tặng thêm 200 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="2000000" Price="20000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack10" Token="5000000" Name="5000000 Đồng" Hint="Nạp lần đầu tặng thêm 500 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="5000000" Price="50000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack11" Token="7000000" Name="7000000 Đồng" Hint="Nạp lần đầu tặng thêm 700 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="7000000" Price="70000000" Recommend="true" />
+		<Product ID="com.ktfog.mobi.pack12" Token="10000000" Name="10000000 Đồng" Hint="Nạp lần đầu tặng thêm 1000 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="10000000" Price="100000000" Recommend="true" />
+		<!-- <Product ID="com.ktfog.mobi.pack13" Token="20000000" Name="20000000 Đồng" Hint="Nạp lần đầu tặng thêm 2000 vạn Đồng khóa" Icon="icon_goi_6" FirstBonus="20000000" Price="200000000" Recommend="true" /> -->
+	</StoreProduct>
+	<!-- End -->
+</TokenShop>

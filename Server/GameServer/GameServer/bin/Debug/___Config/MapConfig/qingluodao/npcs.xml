@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <NPCs>
+    <NPC Code="317" Name="Thống lĩnh Tiên Phong Bạch Phổ" MinimapName="" VisibleOnMinimap="1" Title="" X="917" Y="3638" Dir="1" ScriptID="157"/>
+	<NPC Code="18" Name="Lư Tiếu Bần" MinimapName="" VisibleOnMinimap="1" Title="" X="1213" Y="3492" Dir="1" ScriptID="157" />
+	<NPC Code="1165" Name="U Uất Đệ Tử" MinimapName="" VisibleOnMinimap="1" Title="" X="1544" Y="3305" Dir="1" ScriptID="157"/>
+	<NPC Code="5" Name="Quý Thúc Ban" MinimapName="" VisibleOnMinimap="1" Title="" X="1974" Y="3242" Dir="7" ScriptID="157"/>
+	<NPC Code="306" Name="Á Lão Đầu" MinimapName="" VisibleOnMinimap="1" Title="" X="2280" Y="3324" Dir="7" ScriptID="157"/>
+	<NPC Code="1173" Name="Cháu của Á Lão Đầu" MinimapName="" VisibleOnMinimap="1" Title="" X="2593" Y="3355" Dir="1" ScriptID="157"/>
+	<NPC Code="301" Name="Lâu Nhất Quan" MinimapName="" VisibleOnMinimap="1" Title="" X="624" Y="3256" Dir="7" ScriptID="157"/>
+	<NPC Code="316" Name="Sở Kiệt" MinimapName="" VisibleOnMinimap="1" Title="" X="660" Y="3084" Dir="5" ScriptID="157"/>
+	
+  </NPCs>
+</Map>

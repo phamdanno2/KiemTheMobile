@@ -58,7 +58,7 @@ namespace GameDBServer.Logic.KT_ItemManager
 
                 IsItemProseccSing = true;
 
-                Console.WriteLine("DOUPDATE ITEM ==>TOTALCOUNT :" + CardProsecc.Count);
+                //Console.WriteLine("DOUPDATE ITEM ==>TOTALCOUNT :" + CardProsecc.Count);
 
                 while (CardProsecc.Count > 0)
                 {

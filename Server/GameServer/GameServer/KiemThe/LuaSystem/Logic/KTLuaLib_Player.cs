@@ -55,7 +55,7 @@ namespace GameServer.KiemThe.LuaSystem.Logic
                 LogManager.WriteLog(LogTypes.Error, string.Format("Lua error on NPCDialog:Show, NPC is NULL."));
                 return;
             }
-
+/*
             UnityEngine.Vector2 _SelfPos = new UnityEngine.Vector2((int)player.RefObject.CurrentPos.X, (int)player.RefObject.CurrentPos.Y);
 
             UnityEngine.Vector2 NpcPos = new UnityEngine.Vector2((int)npc.RefObject.CurrentPos.X, (int)npc.RefObject.CurrentPos.Y);
@@ -66,7 +66,7 @@ namespace GameServer.KiemThe.LuaSystem.Logic
                 PlayerManager.ShowNotification(player.RefObject, "Khoảng cách quá xa");
                 return;
             }
-
+*/
             /// Đánh dấu vị trí mở Shop lần trước từ NPC
             player.RefObject.LastShopNPC = npc.RefObject;
 
@@ -924,9 +924,40 @@ namespace GameServer.KiemThe.LuaSystem.Logic
             {
                 GuidWarManager.getInstance().NpcClick(npc.RefObject, player.RefObject);
             }
+        }
 
+        /// <summary>
+        /// </summary>
+        /// Trạng thái trận đấu
+        public static int StateBattle(Lua_Player player, int BattleID)
+        {
+            return Battel_SonJin_Manager.StateBattle(player.RefObject, BattleID);
+        }
 
+        /// <summary>
+        /// </summary>
+        /// Số lượng 2 bên lúc đang ký báo danh
+        public static int CountBattle(Lua_Player player, int BattleID, string Camp)
+        {
+            int CampInt = 10;
+            if (Camp == "KIM")
+            {
+                CampInt = 20;
+            }
+            return Battel_SonJin_Manager.CountBattle(player.RefObject, BattleID, CampInt);
+        }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="player"></param>
+        /// <param name="Camp"></param>
+        /// <param name="BattleID"></param>
+        public static int CheckBaoDanhPhe(Lua_NPC npc, Lua_Player player, int BattleID)
+        {
+            int Register = 0;
+            Register = Battel_SonJin_Manager.CheckBaoDanhPhe(player.RefObject, BattleID);
+            return Register;
         }
 
         /// <summary>
@@ -990,9 +1021,21 @@ namespace GameServer.KiemThe.LuaSystem.Logic
             {
                 SendMSG("Không phải thời gian báo danh vui lòng quay lại sau ! <br><br>Thời gian báo danh :<br><br>10h50-10h59<br><br>16h50-16h59<br><br>20h50-20h59<br><br>Quý nhân sĩ hãy chú ý thời gian báo danh để không bị lỡ sự kiện", player.RefObject, npc.RefObject);
             }
+            else if (Register == -5)
+            {
+                SendMSG("Người đã báo danh phe khác, vui lòng trở về lại đúng phe đã báo danh.", player.RefObject, npc.RefObject);
+            }
             else if (Register == -1000)
             {
                 SendMSG("Cấp độ của bạn không phù hợp với chiến trường này", player.RefObject, npc.RefObject);
+            }
+            else if (Register == -300)
+            {
+                SendMSG("Trận tống kim lần này bạn không có đăng ký tham gia.", player.RefObject, npc.RefObject);
+            }
+            else if (Register == -301)
+            {
+                SendMSG("Người đã báo danh phe khác, vui lòng trở về lại đúng phe đã báo danh.", player.RefObject, npc.RefObject);
             }
         }
        /// <summary>
@@ -1135,11 +1178,8 @@ namespace GameServer.KiemThe.LuaSystem.Logic
                 TCPProcessCmdResults result = Global.ReadDataFromDb((int)TCPGameServerCmds.CMD_GETGOODSLISTBYSITE, sendBytesCmd, sendBytesCmd.Length, out bytesData, player.RefObject.ServerId);
                 //{
                 //    LogManager.WriteLog(LogTypes.Error, string.Format("Không kết nối được với DBServer, CMD={0}", (int)TCPGameServerCmds.CMD_SPR_COMPTASK));
-
                 //    KT_TCPHandler.CloseDialog(client);
-
                 //    PlayerManager.ShowNotification(client, "Không kết nối được với DBServer");
-
                 //    return;
                 //}
 

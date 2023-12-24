@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	TỶ LỆ RƠI VẬT PHẨM CỐ ĐỊNH Ở QUÁI
+	- DropInfo: Thông tin rơi
+		- MonsterID: ID quái
+		- MapIDs: Danh sách ID bản đồ, ngăn cách bởi dấu ; (-1: Mọi bản đồ)
+		- QuestIDs: Danh sách ID nhiệm vụ, ngăn cách bởi dấu ; (-1: Mọi nhiệm vụ)
+		- CopySceneOnly: Chỉ tác dụng với phụ bản (True/False)
+		- Rate: Tỷ lệ phần 10.000
+-->
+<MonsterDropRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<DropInfo MonsterID="2427" MapIDs="1536;1537;1538" QuestIDs="-1" CopySceneOnly="false" Rate="1000" />
+	<DropInfo MonsterID="2430" MapIDs="1536;1537;1538" QuestIDs="-1" CopySceneOnly="false" Rate="1000" />
+	<DropInfo MonsterID="2437" MapIDs="1536;1537;1538" QuestIDs="-1" CopySceneOnly="false" Rate="1000" />
+</MonsterDropRate>

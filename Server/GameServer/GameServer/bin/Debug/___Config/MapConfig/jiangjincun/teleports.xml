@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+		
+		<Teleport Code="2" Tip="Thành Đô Phủ" Key="2" To="27" ToX="9021" ToY="1770" X="3470" Y="5230" Radius="100" />
+		<Teleport Code="3" Tip="Nga My Phái" Key="3" To="16" ToX="1482" ToY="1037" X="1170" Y="3650" Radius="100" />
+		<Teleport Code="4" Tip="Đường Môn" Key="4" To="18" ToX="987" ToY="965" X="1050" Y="2950" Radius="100" />
+		<Teleport Code="5" Tip="Thục Nam Trúc Hải [cấp 15]" Key="5" To="42" ToX="8956" ToY="5534" X="2630" Y="770" Radius="100" />
+		<Teleport Code="6" Tip="Trường Giang Hà Cốc [cấp 5]" Key="6" To="34" ToX="1389" ToY="6523" X="3650" Y="710" Radius="100" />
+		<Teleport Code="7" Tip="Phong Đô Quỷ Thành [cấp 95]" Key="7" To="118" ToX="1172" ToY="2306" X="8930" Y="2830" Radius="100" />
+		<Teleport Code="8" Tip="Tam Hiệp Sạn Đạo [cấp 105]" Key="8" To="127" ToX="1157" ToY="2966" X="8591" Y="3560" Radius="100" /> 
+	</Teleports>
+</Map>

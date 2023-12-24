@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>	      
+	  <Teleport Code="1" Tip="Hoa Sơn[cấp 95]" Key="1" To="116" ToX="9435" ToY="7510" X="3100" Y="419" Radius="100" />	
+	  <Teleport Code="2" Tip="Long Môn Thạch Quật[cấp 85]" Key="2" To="107" ToX="9339" ToY="577" X="7509" Y="664" Radius="100" />	
+	  <Teleport Code="3" Tip="Thái Hành Cổ Kính[cấp 55]" Key="3" To="86" ToX="2741" ToY="755" X="8143" Y="2458" Radius="100" />
+	  <Teleport Code="4" Tip="Mê Cung Sa Mạc[cấp 75]" Key="4" To="101" ToX="7990" ToY="642" X="696" Y="4683" Radius="100" />
+	</Teleports>
+</Map>

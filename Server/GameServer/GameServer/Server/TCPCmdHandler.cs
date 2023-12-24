@@ -3022,7 +3022,7 @@ namespace GameServer.Server
 
                     default:
                         {
-                            LogManager.WriteLog(LogTypes.Error, string.Format("Undefined packet, CMD={0}, Client={1}", (TCPGameServerCmds)nID, Global.GetSocketRemoteEndPoint(socket)));
+                            //LogManager.WriteLog(LogTypes.Error, string.Format("Undefined packet, CMD={0}, Client={1}", (TCPGameServerCmds)nID, Global.GetSocketRemoteEndPoint(socket)));
                             if (GameManager.FlagAlowUnRegistedCmd)
                             {
                                 result = TCPProcessCmdResults.RESULT_OK;

@@ -1276,8 +1276,8 @@ namespace GameServer.Logic
                     }
                 case ChatChannel.Global:
                     {
-                        tickLeft = 120000 - diffTick;
-                        return diffTick >= 120000;
+                        tickLeft = 15000 - diffTick;
+                        return diffTick >= 15000;
                     }
                 case ChatChannel.KuaFuLine:
                     {

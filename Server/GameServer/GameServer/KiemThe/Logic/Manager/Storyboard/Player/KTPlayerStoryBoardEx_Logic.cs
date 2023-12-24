@@ -130,8 +130,8 @@ namespace GameServer.KiemThe.Logic
                 /// Cập nhật thời gian Tick hiện tại
                 storyBoard.LastTick = currentTick;
 
-
-                Console.WriteLine("TOTAL TIME NEED TO MOVE :" + elapseTime);
+                //-----fix jackson đóng thông báo
+                //Console.WriteLine("TOTAL TIME NEED TO MOVE :" + elapseTime);
 
                 //Console.WriteLine("Tick storyboard, elapse time = " + elapseTime);
 
@@ -176,8 +176,8 @@ namespace GameServer.KiemThe.Logic
                 /// Đánh dấu đã hoàn thành
                 storyBoard.HasCompletedLastMove = true;
 
-
-                Console.WriteLine("FINISH MOVE AT :" + storyBoard.Owner._DebugTime.Elapsed.TotalMilliseconds);
+                //--------fix jackson đóng thông báo
+                //Console.WriteLine("FINISH MOVE AT :" + storyBoard.Owner._DebugTime.Elapsed.TotalMilliseconds);
 
                 /// Nếu cần thiết phải xóa StoryBoard
                 if (needToRemove)

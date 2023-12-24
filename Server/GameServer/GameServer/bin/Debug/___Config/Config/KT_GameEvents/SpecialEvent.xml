@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	SỰ KIỆN ĐẶC BIỆT
+	- Event: Thông tin sự kiện
+		- Activate: Kích hoạt sự kiện không
+		- Type: Loại sự kiện (1: Đánh quái nhặt nguyên liệu đổi quà, 2: Thu thập nguyên liệu đổi quà)
+		- Name: Tên sự kiện
+		- TimeConfig: Thiết lập thời gian sự kiện
+			- FromDay: Từ ngày
+			- ToDay: Đến ngày
+			
+		====== Với sự kiện Đánh quái nhặt nguyên liệu đổi quà ======
+			- Materials: Nguyên liệu rơi
+				- DropInfo: Thông tin rơi
+					- MonsterID: ID quái
+					- MapIDs: Danh sách ID bản đồ, ngăn cách bởi dấu ; (-1 sẽ có tác dụng trên tất cả bản đồ)
+					- Item: Thông tin vật phẩm rơi
+						- ID: ID vật phẩm
+						- Rate: Tỷ lệ rơi (phần 10.000)
+			- Awards: Danh sách phần thưởng
+				- AwardInfo: Thông tin phần thưởng
+					- Selection: Nội dung lựa chọn ở NPC
+					- RequireItems: Danh sách vật phẩm yêu cầu, ngăn cách nhau bởi dấu ;
+						- Gồm 2 tham biến ID_Số lượng
+					- AwardCount: Số lượng phần thưởng được nhận
+					- RequireFreeBagSpace: Yêu cầu số ô trống trong túi
+					- RequireMoney: Yêu cầu bạc
+					- RequireBoundMoney: Yêu cầu bạc khóa
+					- RequireToken: Yêu cầu đồng
+					- RequireBoundToken: Yêu cầu đồng khóa
+					- Award: Thông tin món thưởng
+						- ItemID: ID vật phẩm
+						- Quantity: Số lượng
+						- Rate: Tỷ lệ nhận được (phần 10.000)
+						- Bound: Khóa hay không
+						
+		====== Với sự kiện Thu thập nguyên liệu đổi quà ======
+			- Materials: Nguyên liệu thu thập
+				- GrowPoint: Thông tin điểm thu thập
+					- ID: ID điểm thu thập (xem ở File NPCs.xml)
+					- Name: Tên điểm thu thập (bỏ trống sẽ lấy tên ở file NPCs.xml)
+					- MapID: ID bản đồ
+					- Pos: Danh sách vị trí xuất hiện trên bản đồ, ngăn cách bởi dấu ;
+					- RespawnTicks: Thời gian xuất hiện tính từ khi sự kiện bắt đầu (Mili giây) (-1 sẽ không xuất hiện)
+					- DurationTicks: Thời gian tồn tại (Mili giây) (-1 là vĩnh viễn)
+					- CollectTicks: Thời gian thu thập (Mili giây)
+					- SpawnCount: Tổng số vị trí sẽ sinh ra (-1 sẽ sinh ra toàn bộ vị trí đã chỉ định)
+					- RequireBagSpaces: Yêu cầu số ô trống trong túi
+					- FromHour: Xuất hiện từ thời điểm (trong ngày)
+					- ToHour: Xuất hiện tới thời điểm (trong ngày)
+					- Item: Thông tin vật phẩm thu thập
+						- ID: ID vật phẩm
+						- Rate: Tỷ lệ thu thập được (phần 10.000)
+			- Awards: Danh sách phần thưởng
+				- AwardInfo: Thông tin phần thưởng
+					- Selection: Nội dung lựa chọn ở NPC
+					- RequireItems: Danh sách vật phẩm yêu cầu, ngăn cách nhau bởi dấu ;
+						- Gồm 2 tham biến ID_Số lượng
+					- AwardCount: Số lượng phần thưởng được nhận
+					- RequireFreeBagSpace: Yêu cầu số ô trống trong túi
+					- RequireMoney: Yêu cầu bạc
+					- RequireBoundMoney: Yêu cầu bạc khóa
+					- RequireToken: Yêu cầu đồng
+					- RequireBoundToken: Yêu cầu đồng khóa
+					- Award: Thông tin món thưởng
+						- ItemID: ID vật phẩm
+						- Quantity: Số lượng
+						- Rate: Tỷ lệ nhận được (phần 10.000)
+						- Bound: Khóa hay không
+-->
+<SpecialEvent>
+	<!-- <Event Activate="true" Type="2" Name="Sự kiện Thu Thập Item Đổi Quà" NPCTalk="Trong thời gian diễn ra Sự kiện Thu Thập Item Đổi Quà,quý nhân sĩ võ lâm hãy thu thập cho ta 100 giỏ Hoa Tình 1 Lễ Bao Nạp Cát.Giao nộp cho sứ giả hoạt động để nhận dược: 1 Thẻ đổi môn phái 1 Rương Ngũ Hành Hồn Thạch (1000)"> -->
+		<!-- <TimeConfig FromDay="01/01/2023" ToDay="31/12/2023" /> -->
+		<!-- <Materials> -->
+			<!-- <GrowPointInfo ID="1542" Name="Điểm thu thập" MapID="5" Pos="100_100;200_200" RespawnTicks="10000" DurationTicks="10000" CollectTicks="10000" SpawnCount="2" RequireBagSpaces="10" FromHour="00:00" ToHour="23:59"> -->
+				<!-- <Item ID="496" Rate="10000" /> -->
+				<!-- <Item ID="132" Rate="10000" /> -->
+			<!-- </GrowPointInfo> -->
+		<!-- </Materials> -->
+		<!-- <Awards> -->
+			<!-- <AwardInfo Selection="Nộp Hoa Tình & Lễ Bao Nạp Cát" RequireItems="1169_100;1119_1" AwardCount="1" RequireFreeBagSpace="10" RequireMoney="0" RequireBoundMoney="0" RequireToken="0" RequireBoundToken="0"> -->
+				<!-- <Award ItemID="2166" Quantity="1" Rate="10000" Bound="true" /> -->
+				<!-- <Award ItemID="2168" Quantity="1" Rate="10000" Bound="true" /> -->
+			<!-- </AwardInfo> -->
+			<!-- <AwardInfo Selection="Giao nộp vật phẩm 2" RequireItems="1111_1;1123_2" AwardCount="2" RequireFreeBagSpace="2" RequireMoney="0" RequireBoundMoney="0" RequireToken="0" RequireBoundToken="0"> -->
+				<!-- <Award ItemID="2410" Quantity="2" Rate="10000" Bound="false" /> -->
+				<!-- <Award ItemID="1618" Quantity="1" Rate="10000" Bound="false" /> -->
+			<!-- </AwardInfo> -->
+		<!-- </Awards> -->
+	<!-- </Event> -->
+	<!-- <Event Activate="true" Type="1" Name="Sự kiện Diệt Quái Thu Thập Phần Thưởng" NPCTalk="Trong thời gian diễn ra Sự kiện Thu Thập Item Đổi Quà,quý nhân sĩ võ lâm hãy thu thập cho ta 100 giỏ Hoa Tình 1 Lễ Bao Nạp Cát.Giao nộp cho sứ giả hoạt động để nhận dược: 1 Thẻ đổi môn phái 1 Rương Ngũ Hành Hồn Thạch (1000)"> -->
+		<!-- <TimeConfig FromDay="01/01/2023" ToDay="31/12/2023" /> -->
+		<!-- <Materials> -->
+			<!-- <DropInfo MonsterID="2327" MapIDs="131" > -->
+				<!-- <Item ID="496" Rate="10000" /> -->
+				<!-- <Item ID="132" Rate="10000" /> -->
+			<!-- </DropInfo> -->
+		<!-- </Materials> -->
+		<!-- <Awards> -->
+			<!-- <AwardInfo Selection="Nộp Hoa Tình & Lễ Bao Nạp Cát" RequireItems="1169_100;1119_1" AwardCount="1" RequireFreeBagSpace="10" RequireMoney="0" RequireBoundMoney="0" RequireToken="0" RequireBoundToken="0"> -->
+				<!-- <Award ItemID="2166" Quantity="1" Rate="10000" Bound="true" /> -->
+				<!-- <Award ItemID="2168" Quantity="1" Rate="10000" Bound="true" /> -->
+			<!-- </AwardInfo> -->
+			<!-- <AwardInfo Selection="Giao nộp vật phẩm 2" RequireItems="1111_1;1123_2" AwardCount="2" RequireFreeBagSpace="2" RequireMoney="0" RequireBoundMoney="0" RequireToken="0" RequireBoundToken="0"> -->
+				<!-- <Award ItemID="2410" Quantity="2" Rate="10000" Bound="false" /> -->
+				<!-- <Award ItemID="1618" Quantity="1" Rate="10000" Bound="false" /> -->
+			<!-- </AwardInfo> -->
+		<!-- </Awards> -->
+	<!-- </Event> -->
+</SpecialEvent>

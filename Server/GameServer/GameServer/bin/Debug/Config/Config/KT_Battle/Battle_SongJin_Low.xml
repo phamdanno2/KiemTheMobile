@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<BattleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BattleName="Dương Châu (Sơ)" MapID="1635" RegisterDualtion="600" BattleDualtion="2700" ReviceAwardDualtion="900" MinLevel="60" MaxLevel="90">
+<BattleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BattleName="Dương Châu (Sơ)" MapID="1635" RegisterDualtion="600" BattleDualtion="2700" ReviceAwardDualtion="900" MinLevel="210" MaxLevel="210">
   
   
   <!-- Ngày trong tuần sẽ có sự kiện-->
   <DayOfWeek>1</DayOfWeek>
-  <DayOfWeek>2</DayOfWeek>
-  <DayOfWeek>3</DayOfWeek>
-  <DayOfWeek>4</DayOfWeek>
-  <DayOfWeek>5</DayOfWeek>
-  <DayOfWeek>6</DayOfWeek>
-  <DayOfWeek>7</DayOfWeek>
-  
   
   <!-- Khung giờ nào sẽ có sự kiện-->
   <OpenTime Hours="11" Minute="0" />
-  <OpenTime Hours="17" Minute="0" />
-  <OpenTime Hours="21" Minute="0" />
   <!-- <OpenTime Hours="23" Minute="00" /> -->
   <!-- <OpenTime Hours="5" Minute="00" /> -->
   <!-- <OpenTime Hours="6" Minute="00" /> -->

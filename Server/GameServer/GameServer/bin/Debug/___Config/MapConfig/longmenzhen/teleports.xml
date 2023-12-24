@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Phượng Tường Phủ" Key="1" To="24" ToX="3004" ToY="6862" X="4221" Y="515" Radius="100" />
+	<Teleport Code="2" Tip="Côn Lôn Phái" Key="2" To="12" ToX="6674" ToY="2938" X="3388" Y="470" Radius="100" />
+	<Teleport Code="3" Tip="Kỳ Liên Sơn [cấp 15]" Key="3" To="39" ToX="9213" ToY="5313" X="1072" Y="822" Radius="100" />
+	<Teleport Code="4" Tip="Gia Dụ Quan [cấp 95]" Key="4" To="115" ToX="9789" ToY="1146" X="2717" Y="5804" Radius="100" />
+	<Teleport Code="5" Tip="Quán Trọ Long Môn [cấp 5]" Key="5" To="31" ToX="8761" ToY="6516" X="824" Y="2425" Radius="100" />
+	<Teleport Code="6" Tip="Đôn Hoàng Cổ Thành[cấp 105]" Key="6" To="124" ToX="9190" ToY="768" X="2501" Y="4748" Radius="100" />
+	
+	
+	</Teleports>
+</Map>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>		
+	<Teleport Code="1" Tip="Vĩnh Lạc Trấn" Key="1" To="3" ToX="13450" ToY="4370" X="1770" Y="770" Radius="100" />
+	<Teleport Code="2" Tip="Biện Kinh Phủ" Key="2" To="23" ToX="1310" ToY="890" X="7190" Y="5410" Radius="100" />
+	<Teleport Code="3" Tip="Cấm Địa Hậu Sơn[Cấp 25]" Key="3" To="46" ToX="7422" ToY="3567" X="1545" Y="2439" Radius="100" />
+		
+	</Teleports>
+</Map>

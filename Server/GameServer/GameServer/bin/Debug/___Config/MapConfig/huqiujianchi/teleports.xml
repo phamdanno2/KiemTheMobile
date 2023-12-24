@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Teleports>
+	<Teleport Code="1" Tip="Lâm An Phủ" Key="1" To="29" ToX="13770" ToY="7210" X="5662" Y="794" Radius="100" />
+	<Teleport Code="2" Tip="Thái Thạch Cơ[Cấp 55]" Key="2" To="92" ToX="7097" ToY="2667" X="578" Y="5151" Radius="100" />
+	<Teleport Code="3" Tip="Hàn Sơn Cổ Sát[Cấp 55]" Key="3" To="89" ToX="4485" ToY="709" X="2779" Y="8298" Radius="100" />
+	</Teleports>
+</Map>

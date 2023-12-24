@@ -194,6 +194,10 @@ namespace FSPlay.KiemVu.UI.SelectServer
                 Super.ShowMessageBox("Lỗi", "Máy chủ được lựa chọn không chính xác.", true);
                 return;
             }
+
+            //serverInfo.nStatus = 4;
+            serverInfo.strURL = "127.0.0.1";
+
             if (serverInfo.nStatus == 1)
             {
                 Super.ShowMessageBox("Lỗi", "Máy chủ được chọn hiện đang bảo trì.", true);
