@@ -37,6 +37,8 @@ local Record6 = 101124
 local Record7 = 101125
 local Record8 = 101126
 local Record9 = 101127
+local Record10 = 101128
+local Record11 = 101129
 function TuiTanThu:OnUse(scene, item, player, otherParams)
 
 	-- ************************** --
@@ -46,6 +48,8 @@ function TuiTanThu:OnUse(scene, item, player, otherParams)
 	if player:GetFactionID()==0 then
 		dialog:AddSelection(1,"Gia nhập Môn Phái.")
 	else
+		dialog:AddSelection(100030, "GiftCode")
+		
 		local record2 = Player.GetValueForeverRecore(player, Record2)
 		if record2 ~= 1 then
 			dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
@@ -64,6 +68,16 @@ function TuiTanThu:OnUse(scene, item, player, otherParams)
 		--	dialog:AddSelection(39902, "Trang bị Tân Thủ")
 		--end
 
+		--local nCheck10 = Player.GetValueForeverRecore(player, Record10)
+		--if nCheck10 ~= 1 then
+		--	dialog:AddSelection(100035, "Nhận <color=green>Thẻ Đổi Tên</color>")
+		--end
+		
+		local nCheck11 = Player.GetValueForeverRecore(player, Record11)
+		if nCheck11 ~= 1 then
+			dialog:AddSelection(100036, "Nhận <color=green>Thẻ Đổi Phái</color>")
+		end
+		
 		--local record9 = Player.GetValueForeverRecore(player, Record9)
 		--if record9 ~= 1 then
 			dialog:AddSelection(10003, "Nhận <color=green>Phi Phong</color>")
@@ -78,32 +92,20 @@ function TuiTanThu:OnUse(scene, item, player, otherParams)
 		if record7 ~= 1 then
 			dialog:AddSelection(22222, "Nhận <color=green>Ngũ Hành Ấn</color>")
 		end
-		dialog:AddSelection(100030, "GiftCode")
-		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
-		dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
-
-		local record4 = Player.GetValueForeverRecore(player, Record4)
-		local record5 = Player.GetValueForeverRecore(player, Record5)
-		if record4 ~= 1 or record5 ~= 1 then
-			dialog:AddSelection(100033, "Nhận thưởng Đua Top")
-		end	
-
+		dialog:AddSelection(200031, "Nhận thưởng và xem đua top Cấp Độ và Tài Phú")
 		dialog:AddSelection(30000, "Ta muốn đổi tên")
 		dialog:AddSelection(30001, "Xóa vật phẩm")
 		dialog:AddSelection(30002, "Ghép vật phẩm")	
-
 	end	
 	if player:IsGM() == 1 then
 		dialog:AddSelection(100031, "Lưu danh sach top")
 	end
 	dialog:AddSelection(77777, "Kết thúc đối thoại")
 	
---	dialog:AddSelection(10011, "Dịch chuyển đến Hoàng Thành liên Server")
+	--	dialog:AddSelection(10011, "Dịch chuyển đến Hoàng Thành liên Server")
 	
 	dialog:Show(item, player)
 	-- ************************** --
-
-
 end
 local AcitvityRecore = {
 		--hai tac
@@ -1589,6 +1591,32 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		player:ExportTop()
 		return
 	end
+	if selectionID == 100035 then
+		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 2) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",2))
+            return false
+        end
+		local nCheck = Player.GetValueForeverRecore(player, Record10)
+		if nCheck ~= 1 then
+			Player.SetValueOfForeverRecore(player, Record10, 1)
+			Player.AddItemLua(player,2167,1,-1,1)	-- thẻ đổi tên
+			player:AddNotification("Nhận Thẻ Đổi Tên thành công")
+		end
+	end
+	if selectionID == 100036 then
+		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 2) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",2))
+            return false
+        end
+		local nCheck = Player.GetValueForeverRecore(player, Record11)
+		if nCheck ~= 1 then
+			Player.SetValueOfForeverRecore(player, Record11, 1)
+			Player.AddItemLua(player,2168,1,-1,1)	-- thẻ đổi môn phái
+			player:AddNotification("Nhận Thẻ Đổi Phái thành công")
+		end
+	end
 	if selectionID == 30000 then
 		if Player.CountItemInBag(player, 2167) <= 0 then
             TuiTanThu:ShowDialog(item, player,"Chức năng này yêu cầu <color=yellow>[Thẻ Đổi Tên]</color>. Khi nào có hãy đến tìm ta.")
@@ -1620,6 +1648,11 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 	end
 	if selectionID == 22222 then
 		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 2) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",2))
+            return false
+        end
+		
 		local factions = player:GetFactionID()
 		if factions == 1 then
 			Player.AddItemLua(player,3864,1,-1,1)
@@ -1808,6 +1841,11 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 	end
 	if selectionID == 989898 then
 		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 8) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",8))
+            return false
+        end
+		
 		local factions = player:GetFactionID()
 		local series = Player.GetSeries(player)
 		if factions == 1 then
@@ -1953,6 +1991,10 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 	end
 	if selectionID == 10003 then
 		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 12) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",12))
+            return false
+        end
 		local series = Player.GetSeries(player)
 		if series == 1 then
 			if player:GetSex()==0 then
@@ -2103,7 +2145,164 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		player:AddNotification("Nhận 500 Vỏ Sò Vàng Thành Công")
 		return
 	end
-
+	if selectionID == 200031 then
+		dialog:AddText("Xin chào "..player:GetName().."\nĐua top <color=red>Cấp độ</color> từ <color=green>20h00 17/11/2023 đến 23h00 24/12/2023</color>\nĐua top <color=red>Tài Phú</color> từ <color=green>20h00 17/11/2023 đến 23h00 31/12/2023</color> !")
+		local nCheck4 = Player.GetValueForeverRecore(player, Record4)
+		if nCheck4 <= 0 then
+			dialog:AddSelection(200032, "Nhận thưởng Đua Top Cấp Độ")
+		end
+		local nCheck5 = Player.GetValueForeverRecore(player, Record5)
+		if nCheck5 <= 0 then
+			dialog:AddSelection(200033, "Nhận thưởng Đua Top Tài Phú")
+		end
+		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
+		dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
+		dialog:AddSelection(77777, "Kết thúc đối thoại")
+		dialog:Show(item, player)
+		return;
+	end
+	
+	if selectionID == 200032 then
+		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 10) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",10))
+            return
+        end
+		local record = Player.GetValueForeverRecore(player, Record4)
+        if record >= 1 then
+            TuiTanThu:ShowDialog(item, player, "Bạn đã nhận đua top cấp độ này rồi.")
+            return
+        end
+		local rank = player:GetTopLevel()
+		if rank <=0 then
+			TuiTanThu:ShowDialog(item, player, "Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
+			return
+		end
+		---------------------------
+		if rank == 1 then
+			Player.SetValueOfForeverRecore(player, Record4, 1)
+			Player.AddItemLua(player,583,20,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15008,2,-1,1)-- Phieu Giam Gia 30%
+			Player.AddItemLua(player,403,20,-1,1)-- Thoi vang (dai)
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+		elseif rank == 2 then
+			Player.SetValueOfForeverRecore(player, Record4, 1)
+			Player.AddItemLua(player,583,15,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15008,1,-1,1)-- Phieu Giam Gia 30%
+			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+		elseif rank == 3 then
+			Player.SetValueOfForeverRecore(player, Record4, 1)
+			Player.AddItemLua(player,583,10,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+		elseif rank <= 10 then
+			Player.SetValueOfForeverRecore(player, Record4, 1)
+			Player.AddItemLua(player,583,5,-1,1)-- Ngu Hon Thach Khoa 1000c
+			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+		elseif rank <= 20 then
+			Player.SetValueOfForeverRecore(player, Record4, 1)
+			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,403,5,-1,1)-- Thoi vang (dai)
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+		elseif rank <= 30 then
+			Player.SetValueOfForeverRecore(player, Record4, 1)
+			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
+			Player.AddItemLua(player,402,10,-1,1)-- Thoi vang (dai)
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
+		else
+			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng Top Cấp Độ")
+		end
+		return
+	end
+	if selectionID == 200033 then
+		GUI.CloseDialog(player)
+		if Player.HasFreeBagSpaces(player, 10) == false then
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",10))
+            return
+        end
+		local record = Player.GetValueForeverRecore(player, Record5)
+        if record >= 1 then
+            TuiTanThu:ShowDialog(item, player, "Bạn đã nhận đua top tài phú này rồi.")
+            return
+        end
+		local rank = player:GetTopMoney()
+		if rank <=0 then
+			TuiTanThu:ShowDialog(item, player, "Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
+			return
+		end
+		---------------------------
+		if rank == 1 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			player:SetTitle(1)
+			Player.AddItemLua(player,3508,1,-1,1)--Hoa Ky Lan--Okie
+			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,30,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,1034,20,-1,1)-- Dinh vang Du Long
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		elseif rank == 2 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			player:SetTitle(2)
+			Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
+			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,6,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,1034,10,-1,1)-- Dinh vang Du Long
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		elseif rank == 3 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			player:SetTitle(3)
+			Player.AddItemLua(player,3502,1,-1,1)--Su Gia Truy Phong--Okie
+			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,3,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,1034,4,-1,1)-- Dinh vang Du Long
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		elseif rank <= 10 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			Player.AddItemLua(player,3487,1,-1,1)--Ma bai Lang Thien
+			Player.AddItemLua(player,492,4,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,4,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,2,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		elseif rank <= 20 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			Player.AddItemLua(player,3486,1,-1,1)--Ma bai Truc Nhat
+			Player.AddItemLua(player,492,2,-1,1)-- Tay Tuy Kinh (so)
+			Player.AddItemLua(player,490,2,-1,1)-- Vo Lam Mat Tich (so)
+			Player.AddItemLua(player,15001,7,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,403,2,-1,1)-- Thoi vang (dai)
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		elseif rank <= 30 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		elseif rank <= 100 then
+			Player.SetValueOfForeverRecore(player, Record5, 1)
+			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
+			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
+			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
+		else
+			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng Top Tài Phú")
+		end
+	end
 	if selectionID == 100034 then
 		dialog:AddText("<color=green>Đại hiệp muốn xem phần thưởng cấp độ hạng mấy ?</color>")
 		dialog:AddSelection(1000341, "Thưởng hạng 1")
@@ -2204,133 +2403,6 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
 		dialog:Show(item, player)
 		return;
-	end
-	if selectionID == 100033 then
-		GUI.CloseDialog(player)
-		local rank = player:GetTopMoney()
-		if rank == 1 then
-			player:SetTitle(1)
-			Player.AddItemLua(player,3508,1,-1,1)--Hoa Ky Lan--Okie
-			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
-			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
-			Player.AddItemLua(player,15001,30,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
-			Player.AddItemLua(player,1034,20,-1,1)-- Dinh vang Du Long
-			
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		elseif rank == 2 then
-			player:SetTitle(2)
-			Player.AddItemLua(player,3500,1,-1,1)--Uc Van--Okie
-			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
-			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
-			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,403,6,-1,1)-- Thoi vang (dai)
-			Player.AddItemLua(player,1034,10,-1,1)-- Dinh vang Du Long
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		elseif rank == 3 then
-			player:SetTitle(3)
-			Player.AddItemLua(player,3502,1,-1,1)--Su Gia Truy Phong--Okie
-			Player.AddItemLua(player,492,5,-1,1)-- Tay Tuy Kinh (so)
-			Player.AddItemLua(player,490,5,-1,1)-- Vo Lam Mat Tich (so)
-			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,403,3,-1,1)-- Thoi vang (dai)
-			Player.AddItemLua(player,1034,4,-1,1)-- Dinh vang Du Long
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		elseif rank <= 0 then
-			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
-		elseif rank <= 10 then
-			Player.AddItemLua(player,3487,1,-1,1)--Ma bai Lang Thien
-			Player.AddItemLua(player,492,4,-1,1)-- Tay Tuy Kinh (so)
-			Player.AddItemLua(player,490,4,-1,1)-- Vo Lam Mat Tich (so)
-			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,403,2,-1,1)-- Thoi vang (dai)
-			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		elseif rank <= 20 then
-			Player.AddItemLua(player,3486,1,-1,1)--Ma bai Truc Nhat
-			Player.AddItemLua(player,492,2,-1,1)-- Tay Tuy Kinh (so)
-			Player.AddItemLua(player,490,2,-1,1)-- Vo Lam Mat Tich (so)
-			Player.AddItemLua(player,15001,7,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,403,2,-1,1)-- Thoi vang (dai)
-			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		elseif rank <= 30 then
-			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		elseif rank <= 100 then
-			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15000,10,-1,1)-- Phieu Bac Khoa 1v
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Tài Phú thành công")
-			Player.SetValueOfForeverRecore(player, Record4, 1)
-		else
-			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng Top Tài Phú")
-		end
-		local rank = player:GetTopLevel()
-		if rank == 1 then
-			Player.AddItemLua(player,583,20,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,20,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15008,2,-1,1)-- Phieu Giam Gia 30%
-			Player.AddItemLua(player,403,20,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank == 2 then
-			Player.AddItemLua(player,583,15,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,15,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15008,1,-1,1)-- Phieu Giam Gia 30%
-			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank == 3 then
-			Player.AddItemLua(player,583,10,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,10,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,403,15,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank <=0 then
-			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng")
-		elseif rank <= 10 then
-			Player.AddItemLua(player,583,5,-1,1)-- Ngu Hon Thach Khoa 1000c
-			Player.AddItemLua(player,15001,5,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15007,2,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,403,10,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank <= 20 then
-			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,403,5,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		elseif rank <= 30 then
-			Player.AddItemLua(player,15001,2,-1,1)-- Phieu Dong Khoa 1v
-			Player.AddItemLua(player,15006,1,-1,1)-- Phieu Giam Gia 20%
-			Player.AddItemLua(player,402,10,-1,1)-- Thoi vang (dai)
-
-			player:AddNotification("Chúc mừng "..player:GetName().."  nhận thưởng Top Cấp Độ thành công")
-			Player.SetValueOfForeverRecore(player, Record5, 1)
-		else
-			player:AddNotification("Người chơi "..player:GetName().." không trong danh sách nhận thưởng Top Cấp Độ")
-		end
-		return
 	end
 	if selectionID == 39901 then
 		--local record2 = Player.GetValueForeverRecore(player, Record2)
@@ -3463,6 +3535,11 @@ function TuiTanThu:OnSelection(scene, item, player, selectionID, otherParams)
 		GUI.CloseDialog(player)
 	end
 	if selectionID == 100030 then
+		if Player.HasFreeBagSpaces(player, 5) == false then
+			GUI.CloseDialog(player)
+            TuiTanThu:ShowDialog(item, player, string.format("Bằng hữu cần sắp xếp tối thiểu <color=green>%d ô trống</color> trong túi đồ!",5))
+            return false
+        end
 		GUI.OpenUI(player, "UIGiftCode")
 		GUI.CloseDialog(player)
 		return

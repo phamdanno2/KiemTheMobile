@@ -200,31 +200,26 @@
   
   
    <!-- Phần thưởng theo tích lũy -->
-  <BattelAward Score="8000" Point="50" PointType="203" Money="100000" BindCoin="10000" />
-  <BattelAward Score="7000" Point="40" PointType="203" Money="90000" BindCoin="9000" />
-  <BattelAward Score="6000" Point="30" PointType="203" Money="80000" BindCoin="8000" />
-  <BattelAward Score="5000" Point="25" PointType="203" Money="60000" BindCoin="6000" />
-  <BattelAward Score="4000" Point="20" PointType="203" Money="40000" BindCoin="4000" />
-  <BattelAward Score="3000" Point="15" PointType="203" Money="30000" BindCoin="3000" />
-  <BattelAward Score="2000" Point="10" PointType="203" Money="20000" BindCoin="2000" />
-  <BattelAward Score="1000" Point="5"  PointType="203" Money="10000" BindCoin="1000" />
-  
+  <BattelAward Score="8000" Point="50" PointType="203" Money="0" />
+  <BattelAward Score="7000" Point="40" PointType="203" Money="0" />
+  <BattelAward Score="6000" Point="30" PointType="203" Money="0" />
+  <BattelAward Score="5000" Point="25" PointType="203" Money="0" />
+  <BattelAward Score="4000" Point="20" PointType="203" Money="0" />
+  <BattelAward Score="3000" Point="15" PointType="203" Money="0" />
+  <BattelAward Score="2000" Point="10" PointType="203" Money="0" />
+  <BattelAward Score="1000" Point="5" PointType="203" Money="0" />
   
   
    <!-- Phần thưởng thêm cho những người top -->
-  <BattelAwardExtras Rank="1" Point="50" PointType="202" BindCoinRank="4000" MoneyRank="150000" />
-  <BattelAwardExtras Rank="2" Point="45" PointType="202" BindCoinRank="3500" MoneyRank="100000" />
-  <BattelAwardExtras Rank="3" Point="40" PointType="202" BindCoinRank="3000" MoneyRank="100000" />
-  <BattelAwardExtras Rank="4" Point="35" PointType="202" BindCoinRank="2500" MoneyRank="100000" />
-  <BattelAwardExtras Rank="5" Point="30" PointType="202" BindCoinRank="2000" MoneyRank="80000" /> 
-  <BattelAwardExtras Rank="6" Point="25" PointType="202" BindCoinRank="1500" MoneyRank="80000" />
-  <BattelAwardExtras Rank="7" Point="20" PointType="202" BindCoinRank="1200" MoneyRank="80000" />
-  <BattelAwardExtras Rank="8" Point="15" PointType="202" BindCoinRank="1000" MoneyRank="80000" />
-  <BattelAwardExtras Rank="9" Point="10" PointType="202" BindCoinRank="700" MoneyRank="50000" />
-  <BattelAwardExtras Rank="10" Point="5" PointType="202" BindCoinRank="500" MoneyRank="50000" /> 
-  
-  
-  
-  
-  
+  <BattelAwardExtras Rank="1" Point="50" PointType="202" />
+  <BattelAwardExtras Rank="2" Point="45" PointType="202" />
+  <BattelAwardExtras Rank="3" Point="40" PointType="202" />
+  <BattelAwardExtras Rank="4" Point="35" PointType="202" />
+  <BattelAwardExtras Rank="5" Point="30" PointType="202" />
+  <BattelAwardExtras Rank="6" Point="25" PointType="202" />
+  <BattelAwardExtras Rank="7" Point="20" PointType="202" />
+  <BattelAwardExtras Rank="8" Point="15" PointType="202" />
+  <BattelAwardExtras Rank="9" Point="10" PointType="202" />
+  <BattelAwardExtras Rank="10" Point="5" PointType="202" /> 
+
 </BattleConfig>

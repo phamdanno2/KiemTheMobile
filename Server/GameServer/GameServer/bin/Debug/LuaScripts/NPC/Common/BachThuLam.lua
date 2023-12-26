@@ -46,58 +46,57 @@ function TuiTanThu:OnOpen(scene, item, player, otherParams)
 	if player:GetFactionID()==0 then
 		dialog:AddSelection(1,"Gia nhập Môn Phái.")
 	else
-		local record2 = Player.GetValueForeverRecore(player, Record2)
-		if record2 ~= 1 then
-			dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
-		end
+		--local record2 = Player.GetValueForeverRecore(player, Record2)
+		--if record2 ~= 1 then
+		--	dialog:AddSelection(39901, "Hỗ Trợ Tân Thủ")
+		--end
 
-		local record6 = Player.GetValueForeverRecore(player, Record6)	
-		if record6 ~= 1 then
-			dialog:AddSelection(10025, "Nhận <color=green>danh vọng các loại</color>")
-		end
+		--local record6 = Player.GetValueForeverRecore(player, Record6)	
+		--if record6 ~= 1 then
+		--	dialog:AddSelection(10025, "Nhận <color=green>danh vọng các loại</color>")
+		--end
 
 		--dialog:AddSelection(39900, "Hỗ Trợ Alpha Test")
-		dialog:AddSelection(30003, "Mở shop Trang bị Danh Vọng (Yêu cầu Thạch Cổ Trấn)")
+		--dialog:AddSelection(30003, "Mở shop Trang bị Danh Vọng (Yêu cầu Thạch Cổ Trấn)")
 
 		--local record3 = Player.GetValueForeverRecore(player, Record3)
 		--if record3 ~= 1 then
 		--	dialog:AddSelection(39902, "Trang bị Tân Thủ")
 		--end
 
-		local record9 = Player.GetValueForeverRecore(player, Record9)
-		if record9 ~= 1 then
-			dialog:AddSelection(10003, "Nhận <color=green>Phi Phong</color>")
-		end
+		--local record9 = Player.GetValueForeverRecore(player, Record9)
+		--if record9 ~= 1 then
+		--	dialog:AddSelection(10003, "Nhận <color=green>Phi Phong</color>")
+		--end
 		--local record8 = Player.GetValueForeverRecore(player, Record8)
 		--if record8 ~= 1 then
-			dialog:AddSelection(989898, "Nhận <color=green>Mật Tịch</color> theo phái")
+		--	dialog:AddSelection(989898, "Nhận <color=green>Mật Tịch</color> theo phái")
 		--end
-		dialog:AddSelection(11111, "Nhận <color=green>Max Kinh Nghiệm Mật Tịch</color>")
+		--dialog:AddSelection(11111, "Nhận <color=green>Max Kinh Nghiệm Mật Tịch</color>")
 
-		local record7 = Player.GetValueForeverRecore(player, Record7)
-		if record7 ~= 1 then
-			dialog:AddSelection(22222, "Nhận <color=green>Ngũ Hành Ấn</color>")
-		end
+		--local record7 = Player.GetValueForeverRecore(player, Record7)
+		--if record7 ~= 1 then
+		--	dialog:AddSelection(22222, "Nhận <color=green>Ngũ Hành Ấn</color>")
+		--end
 	
 		dialog:AddSelection(100030, "GiftCode")
+		--dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
+		--dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
 
-		dialog:AddSelection(100032, "Xem thưởng Top Tài Phú")
-		dialog:AddSelection(100034, "Xem thưởng Top Cấp Độ")
-
-		local record4 = Player.GetValueForeverRecore(player, Record4)
-		local record5 = Player.GetValueForeverRecore(player, Record5)
-		if record4 ~= 1 or record5 ~= 1 then
-			dialog:AddSelection(100033, "Nhận thưởng Đua Top")
-		end	
+		--local record4 = Player.GetValueForeverRecore(player, Record4)
+		--local record5 = Player.GetValueForeverRecore(player, Record5)
+		--if record4 ~= 1 or record5 ~= 1 then
+		--	dialog:AddSelection(100033, "Nhận thưởng Đua Top")
+		--end	
 
 		dialog:AddSelection(30000, "Ta muốn đổi tên")
 		dialog:AddSelection(30001, "Xóa vật phẩm")
 		dialog:AddSelection(30002, "Ghép vật phẩm")	
 
 	end	
-	if player:IsGM() == 1 then
-		dialog:AddSelection(100031, "Lưu danh sach top")
-	end
+	--if player:IsGM() == 1 then
+	--	dialog:AddSelection(100031, "Lưu danh sach top")
+	--end
 	dialog:AddSelection(77777, "Kết thúc đối thoại")
 	
 --	dialog:AddSelection(10011, "Dịch chuyển đến Hoàng Thành liên Server")

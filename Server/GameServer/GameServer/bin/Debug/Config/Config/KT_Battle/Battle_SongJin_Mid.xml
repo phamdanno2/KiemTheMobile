@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<BattleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BattleName="Phượng Tường" MapID="1641" RegisterDualtion="60" BattleDualtion="350" ReviceAwardDualtion="1800" MinLevel="60" MaxLevel="200">
+<BattleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BattleName="Phượng Tường" MapID="1641" RegisterDualtion="600" BattleDualtion="2700" ReviceAwardDualtion="1800" MinLevel="60" MaxLevel="200">
   
   
   <!-- Ngày trong tuần sẽ có sự kiện-->
@@ -10,6 +10,7 @@
   <DayOfWeek>5</DayOfWeek>
   <DayOfWeek>6</DayOfWeek>
   <DayOfWeek>7</DayOfWeek>
+  
   
   <!-- Khung giờ nào sẽ có sự kiện-->
   <OpenTime Hours="11" Minute="0" />
@@ -206,7 +207,7 @@
   
   
   
-   <!-- Phần thưởng theo tích lũy -->
+  <!-- Phần thưởng theo tích lũy -->
   <BattelAward Score="8000" Point="50" PointType="202" Money="0" />
   <BattelAward Score="7000" Point="40" PointType="202" Money="0" />
   <BattelAward Score="6000" Point="30" PointType="202" Money="0" />

@@ -1110,6 +1110,8 @@ namespace GameServer.KiemThe.Core.Item
                         }
                     case KE_ITEM_EQUIP_DETAILTYPE.equip_horse:
                         {
+                            //-----------fix jackson thêm thuộc tính ListBasicProp cho ngựa
+                            //InitBaseAttribParse();
                             InitRequestItem();
                             InitHorseProperty();
 

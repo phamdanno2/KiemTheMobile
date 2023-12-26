@@ -484,6 +484,7 @@ namespace GameDBServer.Logic
                 {
                     if (PageNumber < 0)
                     {
+                        Console.WriteLine("Tong ket BXH Level");
                         List<string> strs = new List<string>();
                         RankServer[RankMode.CapDo].ForEach(x =>
                         {
@@ -491,6 +492,8 @@ namespace GameDBServer.Logic
                             strs.Add(str);
                         });
                         System.IO.File.WriteAllText("rankOfLevel.txt", string.Join(Environment.NewLine,strs));
+
+                        Console.WriteLine("Tong ket BXH Tai Phu");
                         strs.Clear();
                         RankServer[RankMode.TaiPhu].ForEach(x =>
                         {

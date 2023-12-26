@@ -68,8 +68,8 @@
 	<!-- End -->
 	
 	<!-- Tần Lăng -->
-	<Activity ID="400" Name="Khai mở Tần Lăng" Type="1" Time="14;42_14;15" DurationTicks="300000" CoreScript="EmperorTomb" />
-	<Activity ID="401" Name="Thông báo xuất hiện Boss Tần Thủy Hoàng" Type="1" Time="15;30_21;30" DurationTicks="60000" CoreScript="EmperorTomb" />
-	<Activity ID="402" Name="Đóng Tần Lăng" Type="1" Time="14;47_14;20" DurationTicks="60000" CoreScript="EmperorTomb" />
+	<Activity ID="400" Name="Khai mở Tần Lăng" Type="1" Time="18;00" DurationTicks="79230000" CoreScript="EmperorTomb" />
+	<Activity ID="401" Name="Thông báo xuất hiện Boss Tần Thủy Hoàng" Type="1" Time="12;30_21;30" DurationTicks="60000" CoreScript="EmperorTomb" />
+	<Activity ID="402" Name="Đóng Tần Lăng" Type="1" Time="16;00" DurationTicks="60000" CoreScript="EmperorTomb" />
 	<!-- End -->
 </Activities>
