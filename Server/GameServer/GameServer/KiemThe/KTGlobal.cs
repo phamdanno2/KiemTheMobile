@@ -270,7 +270,7 @@ namespace GameServer.KiemThe
         /// <summary>
         /// Thời gian giãn cách thay đổi trạng thái cưỡi ngựa liên tục
         /// </summary>
-        public const long TickHorseStateChange = 5000;
+        public const long TickHorseStateChange = 15000;          //-----------fix jackson thời gian trạng thại lên xuống ngựa
 
         #endregion Giãn cách thay đổi trạng thái cưỡi
 

@@ -282,6 +282,7 @@ namespace GameDBServer
                     cmd = System.Console.ReadLine();
                     if (0 == cmd.CompareTo("y"))
                     {
+                        //Console.WriteLine("OK");
                         GuildManager.getInstance().UpdateGuildShareAutoMatic();
                         // break;
                     }
@@ -669,9 +670,9 @@ namespace GameDBServer
             GameDBManager.ZoneID = (int)Global.GetSafeAttributeLong(xml, "Zone", "ID");
 
             string uname = StringEncrypt.Decrypt(Global.GetSafeAttributeStr(xml, "Database", "uname"), "eabcix675u49,/", "3&3i4x4^+-0");
-            Console.WriteLine("Usermysql: " + uname);
+            //Console.WriteLine("Usermysql: " + uname);
             string upasswd = StringEncrypt.Decrypt(Global.GetSafeAttributeStr(xml, "Database", "upasswd"), "eabcix675u49,/", "3&3i4x4^+-0");
-            Console.WriteLine("Passmysql: " + upasswd);
+            //Console.WriteLine("Passmysql: " + upasswd);
 
             System.Console.WriteLine("Number of max connections: {0}", (int)Global.GetSafeAttributeLong(xml, "Database", "maxConns"));
             System.Console.WriteLine("IP address: {0}", Global.GetSafeAttributeStr(xml, "Database", "ip"));

@@ -1587,8 +1587,8 @@ namespace GameDBServer.DB
             int ret = -1;
             using (MyDbConnection3 conn = new MyDbConnection3())
             {
-                string cmdText = string.Format("INSERT INTO t_ranking (rid, rname, level, occupation, sub_id, monphai, taiphu, volam, liendau, uydanh) VALUES({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}) ON DUPLICATE KEY UPDATE  level={2}, monphai={5}, taiphu={6}, volam={7}, liendau={8}, uydanh={9}",
-                        roleID, rname, level, occupation, sub_id, monphai, taiphu, volam, liendau, uydanh);
+                string cmdText = string.Format("INSERT INTO t_ranking (rid, rname, level, occupation, sub_id, monphai, taiphu, volam, liendau, uydanh) VALUES({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}) ON DUPLICATE KEY UPDATE level={2}, rname='{1}', occupation={3}, monphai={5}, taiphu={6}, volam={7}, liendau={8}, uydanh={9}",
+                            roleID, rname, level, occupation, sub_id, monphai, taiphu, volam, liendau, uydanh);
                 ret = conn.ExecuteNonQuery(cmdText);
             }
 

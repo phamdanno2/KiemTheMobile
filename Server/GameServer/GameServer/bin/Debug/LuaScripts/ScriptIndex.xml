@@ -10,8 +10,6 @@
 	<!-- End -->
 	
 	<!-- NPC -->
-	<Script ID="0" Dir="Test/NPC_Test.lua" />
-	<Script ID="1" Dir="Test/NPC_Test1.lua" />
 	<Script ID="2" Dir="NPC/TuongDuongPhu/ChungMinhTriMo.lua" />
 	<Script ID="3" Dir="NPC/Common/BaoVanDong.lua" />
 	<Script ID="4" Dir="NPC/PhuongTuongPhu/TuMocTrach.lua" />
@@ -168,7 +166,6 @@
 	<Script ID="000218" Dir="NPC/LienServer/TrieuNguyenTinh.lua" />
 	<Script ID="000219" Dir="NPC/LienServer/HoanNhanLongHuc.lua" />
 	<Script ID="000000" Dir="NPC/Common/BachThuLam.lua" />
-	<Script ID="919199" Dir="Test/Test.lua" />
 	<Script ID="900001" Dir="NPC/Common/LuongTieuTieu.lua" />
 	<Script ID="400030" Dir="Activity/EmperorTomb/EmperorTomb_LiangXiaoXiao.lua" />
 	<Script ID="400031" Dir="Activity/EmperorTomb/EmperorTomb_GuanYiDao.lua" />

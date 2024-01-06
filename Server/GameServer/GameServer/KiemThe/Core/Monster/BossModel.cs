@@ -90,7 +90,7 @@ namespace Server.Data
                         TimeRespan _Create = new TimeRespan();
                         _Create.Hour = Hour;
                         _Create.Min = Min;
-                        _Create.IsRespan = false;
+                        _Create.IsRespan = 0;
 
                         _Time.Add(_Create);
 
@@ -115,6 +115,6 @@ namespace Server.Data
 
         public int Min { get; set; }
 
-        public bool IsRespan { get; set; }
+        public int IsRespan { get; set; }
     }
 }

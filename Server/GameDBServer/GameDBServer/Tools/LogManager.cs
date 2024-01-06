@@ -22,6 +22,7 @@ namespace Server.Tools
         Guild = 7,
         TeamBattle = 8,
         TotalUserMoney = 100,
+        BXH = 9,
     }
 
     /// <summary>

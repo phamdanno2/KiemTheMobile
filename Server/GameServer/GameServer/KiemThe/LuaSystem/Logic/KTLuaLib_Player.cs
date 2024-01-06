@@ -83,6 +83,32 @@ namespace GameServer.KiemThe.LuaSystem.Logic
             }
         }
 
+        /// <summary>
+        /// Mở Shop tương ứng
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="player"></param>
+        /// <param name="shopID"></param>
+        public static void OpenShopNew(Lua_Player player, int shopID)
+        {
+            if (player == null || player.RefObject == null)
+            {
+                LogManager.WriteLog(LogTypes.Error, string.Format("Lua error on NPCDialog:Show, Player is NULL."));
+                return;
+            }
+
+            ShopTab _Shop = ShopManager.GetShopTable(shopID, player.RefObject);
+            if (_Shop != null)
+            {
+                KT_TCPHandler.SendShopData(player.RefObject, _Shop);
+            }
+            else
+            {
+                PlayerManager.ShowNotification(player.RefObject, "Cửa hàng bạn tìm không tồn tại");
+                return;
+            }
+        }
+
         public static bool IsHaveEquipBody(Lua_Player player)
         {
             return player.RefObject.GetPlayEquipBody().IsHaveEquipBody();

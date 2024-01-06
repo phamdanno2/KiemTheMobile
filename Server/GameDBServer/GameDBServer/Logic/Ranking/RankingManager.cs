@@ -27,7 +27,7 @@ namespace GameDBServer.Logic
         /// <summary>
         ///  2 tiếng update bảng xếp hạng 1 lần
         /// </summary>
-        private const long MaxDBRoleParamCmdSlot = (60 * 10 * 1 * 1000);
+        private const long MaxDBRoleParamCmdSlot = (60 * 1 * 1 * 1000);    //-----fix jackson 1 phút 1 lần
 
         public long LastUpdateRanking = 0;
 
@@ -110,7 +110,9 @@ namespace GameDBServer.Logic
                 RankServer = new Dictionary<RankMode, List<PlayerRanking>>();
                 LastUpdateRanking = Now;
 
-
+                DateTime nown = DateTime.Now;
+                string formattedDate = nown.ToString("yyyyMMddHHmmss");
+                //Console.WriteLine("UPDATE BXH "+ formattedDate);
                 LogManager.WriteLog(LogTypes.SQL, "DO EXECUTE UPDATE RANK DATA!");
 
                 RankServer[RankMode.CapDo] = GetTop100RankLevel(_DbInput);
@@ -490,6 +492,7 @@ namespace GameDBServer.Logic
                         {
                             var str = x.RoleID + "#" + x.RoleName;
                             strs.Add(str);
+                            LogManager.WriteLog(LogTypes.BXH, "LV Rank: "+ x.ID + " Role: "+x.RoleName+" LV: "+x.Level);
                         });
                         System.IO.File.WriteAllText("rankOfLevel.txt", string.Join(Environment.NewLine,strs));
 
@@ -499,6 +502,7 @@ namespace GameDBServer.Logic
                         {
                             var str = x.RoleID + "#" + x.RoleName;
                             strs.Add(str);
+                            LogManager.WriteLog(LogTypes.BXH, "TaiPhu Rank: " + x.ID + " Role: " + x.RoleName + " Val: " + x.Value);
                         });
                         System.IO.File.WriteAllText("rankofMoney.txt", string.Join(Environment.NewLine, strs));
                     }

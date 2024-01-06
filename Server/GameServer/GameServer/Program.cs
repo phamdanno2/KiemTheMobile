@@ -2194,6 +2194,7 @@ namespace GameServer
         {
             try
             {
+                
                 GameManager.ClientMgr.DoSpriteDBWork(Global._TCPManager.MySocketListener, Global._TCPManager.TcpOutPacketPool);
             }
             catch (Exception ex)

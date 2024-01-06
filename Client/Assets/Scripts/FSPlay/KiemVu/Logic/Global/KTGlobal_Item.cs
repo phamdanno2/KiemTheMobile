@@ -2697,7 +2697,7 @@ namespace FSPlay.KiemVu
         /// Xây Tooltip các thuộc tính cơ bản
         /// </summary>
         /// <param name="itemData"></param>
-        private static string InitHorseProperty(ItemData itemData)
+        private static string InitHorsePropertyOld(ItemData itemData)
         {
             StringBuilder contentBuilder = new StringBuilder();
 
@@ -2709,6 +2709,119 @@ namespace FSPlay.KiemVu
 
             contentBuilder.AppendLine("<color=#057aff>Thuộc tính thú cưỡi:</color>");
 
+            List<RiderProp> RiderProp = itemData.RiderProp;
+            if (RiderProp.Count > 0)
+            {
+                foreach (RiderProp _Prob in RiderProp)
+                {
+                    if (PropertyDefine.PropertiesBySymbolName.TryGetValue(_Prob.RidePropType, out PropertyDefine.Property property))
+                    {
+                        string result = string.Format("<color=#05ffe6>" + property.Description + "</color>", _Prob.RidePropPA1Min, _Prob.RidePropPA2Min, _Prob.RidePropPA3Min);
+                        contentBuilder.AppendLine(result);
+                    }
+                    else
+                    {
+                        contentBuilder.AppendLine("Symbol Not Found :" + _Prob.RidePropType);
+                    }
+                }
+            }
+
+            contentBuilder.AppendLine("");
+
+            return contentBuilder.ToString();
+        }
+
+
+        /// <summary>
+        /// Xây Tooltip các thuộc tính cơ bản
+        /// </summary>
+        /// <param name="itemData"></param>
+        private static string InitHorseProperty(ItemData itemData, string props, int series)
+        {
+            StringBuilder contentBuilder = new StringBuilder();
+
+            /// Nếu vật phẩm không tồn tại
+            if (itemData == null)
+            {
+                return "";
+            }
+
+            //-----------fix jackson thêm thuộc tính ListBasicProp cho ngựa
+            /// Nếu không có thuộc tính sinh sẵn
+            try
+            {
+                if (string.IsNullOrEmpty(props))
+                {
+                }
+                else
+                {
+                    /// Chuyển chuỗi mã hóa thuộc tính về dạng Object
+                    byte[] base64Decode = Convert.FromBase64String(props);
+                    ItemGenByteData equipProp = DataHelper.BytesToObject<ItemGenByteData>(base64Decode, 0, base64Decode.Length);
+                    /// Nếu tồn tại danh sách thuộc tính sinh ra
+                    if (equipProp != null)
+                    {
+                        if (equipProp.BasicPropCount > 0)
+                        {
+                            //contentBuilder.AppendLine("<color=#057aff>Thuộc tính cơ bản:</color>");
+                            /// Danh sách thuộc tính gốc của trang bị
+                            List<BasicProp> emptyProps = itemData.ListBasicProp?.OrderBy(x => x.Index)?.ToList();
+                            if (emptyProps != null)
+                            {
+                                /// Tổng số thuộc tính hiện tại
+                                int nCount = 0;
+                                /// Duyệt danh sách thuộc tính sinh ra của trang bị
+                                for (int i = 0; i < equipProp.BasicPropCount; i++)
+                                {
+                                    int postionGet = (i * 3);
+                                    int propValue0 = equipProp.BasicPropValue[postionGet];
+                                    int propValue1 = equipProp.BasicPropValue[postionGet + 1];
+                                    int propValue2 = equipProp.BasicPropValue[postionGet + 2];
+                                    int value0 = 0, value1 = 0, value2 = 0;
+                                    if (propValue0 != -1)
+                                    {
+                                        nCount++;
+                                        value0 = emptyProps[i].BasicPropPA1Min + propValue0;
+                                    }
+                                    if (propValue1 != -1)
+                                    {
+                                        value1 = emptyProps[i].BasicPropPA2Min + propValue1;
+                                        nCount++;
+                                    }
+                                    if (propValue2 != -1)
+                                    {
+                                        value2 = emptyProps[i].BasicPropPA3Min + propValue2;
+                                        nCount++;
+                                    }
+                                    if (emptyProps[i].BasicPropType == "damage_series_resist")
+                                    {
+                                        string result = string.Format("<color=#05ffe6>{0}: {1}</color>", KTGlobal.GetResValue((Elemental)series), value0.AttributeToString());
+                                        contentBuilder.AppendLine(result);
+                                    }
+                                    else
+                                    {
+                                        if (PropertyDefine.PropertiesBySymbolName.TryGetValue(emptyProps[i].BasicPropType, out PropertyDefine.Property property))
+                                        {
+                                            string result = string.Format("<color=#05ffe6>" + property.Description + "</color>", value0.AttributeToString(), Utils.Truncate(value1 / 18f, 1), value2);
+                                            contentBuilder.AppendLine(result);
+                                        }
+                                        else
+                                        {
+                                            contentBuilder.AppendLine("Symbol Not Found :" + emptyProps[i].BasicPropType);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+
+            contentBuilder.AppendLine("<color=#057aff>Thuộc tính thú cưỡi:</color>");
             List<RiderProp> RiderProp = itemData.RiderProp;
             if (RiderProp.Count > 0)
             {
@@ -3291,7 +3404,8 @@ namespace FSPlay.KiemVu
                     }
                     case KE_ITEM_EQUIP_DETAILTYPE.equip_horse:
                     {
-                        contentBuilder.Append(KTGlobal.InitHorseProperty(item));
+                        //contentBuilder.Append(KTGlobal.InitHorsePropertyOld(item));
+                        contentBuilder.Append(KTGlobal.InitHorseProperty(item, itemGD.Props, itemGD.Series));
                         break;
                     }
                     case KE_ITEM_EQUIP_DETAILTYPE.equip_signet:

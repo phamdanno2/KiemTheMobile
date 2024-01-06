@@ -2305,13 +2305,22 @@ namespace GameServer.KiemThe.Logic
                 if (nDamage > 0)
                 {
                     //--------------------fix jackson giảm or tăng dame
-                    if (attacker.ObjectType == ObjectTypes.OT_CLIENT && target.ObjectType == ObjectTypes.OT_CLIENT)     //---------kiểm tra là người chơi
+                    if (attacker.ObjectType == ObjectTypes.OT_CLIENT && target.ObjectType == ObjectTypes.OT_CLIENT)         //---------kiểm tra là người chơi
                     {
                         int damegoc = nDamage;
-                        if (attacker.m_Series == KE_SERIES_TYPE.series_water || attacker.m_Series == KE_SERIES_TYPE.series_fire)               //----fix jackson tăng dame 20%
+                        if (attacker.m_Series == KE_SERIES_TYPE.series_water || attacker.m_Series == KE_SERIES_TYPE.series_fire)        //----fix jackson tăng dame 20%
                             nDamage = nDamage + ((20 * nDamage) / 100);
                         if (attacker.m_Series == KE_SERIES_TYPE.series_metal)   //----fix jackson giảm dame 10%
                             nDamage = nDamage - ((10 * nDamage) / 100);
+
+                        if (attacker is KPlayer targetPlayer)
+                        {
+                            int nMonPhai = targetPlayer.m_cPlayerFaction.GetFactionId();
+                            if (nMonPhai == 9 || nMonPhai == 6 || nMonPhai == 7 || nMonPhai == 5 || nMonPhai == 4)   //võ dang,Thúy Yên,Cái Bang,Nga My,Ngũ Độc
+                                nDamage = nDamage + ((20 * nDamage) / 100);
+                            if (nMonPhai == 9 || nMonPhai == 2 || nMonPhai == 6) //võ đang, thiên vương, thúy yên 20%
+                                nDamage = nDamage + ((20 * nDamage) / 100);
+                        }
 
                         //int nva = (int)attacker.m_Series;
                         //int nvb = (int)target.m_Series;

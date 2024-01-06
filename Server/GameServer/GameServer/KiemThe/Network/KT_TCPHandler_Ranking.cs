@@ -30,6 +30,7 @@ namespace GameServer.KiemThe.Logic
         /// <returns></returns>
         public static TCPProcessCmdResults ResponseQueryPlayerRanking(TCPManager tcpMgr, TMSKSocket socket, TCPClientPool tcpClientPool, TCPRandKey tcpRandKey, TCPOutPacketPool pool, int nID, byte[] data, int count, out TCPOutPacket tcpOutPacket)
         {
+            //Console.WriteLine("CMD_KT_QUERY_PLAYERRANKING");
             tcpOutPacket = null;
             string cmdData;
 

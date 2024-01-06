@@ -20,8 +20,10 @@ function XoYo_BaoMing_ZhaoKan:OnOpen(scene, npc, player, otherParams)
 	-- Nếu nằm trong các khung giờ cho phép
 	if self:IsRegisterTime() == true then
 		dialog:AddSelection(1, "Vào <color=yellow>Tiêu Dao Cốc (dễ)</color>")
-		dialog:AddSelection(2, "Vào <color=yellow>Tiêu Dao Cốc (trung bình)</color>")
-		dialog:AddSelection(3, "Vào <color=yellow>Tiêu Dao Cốc (khó)</color>")
+		
+		---fix jackson tiêu dao cốc
+		---dialog:AddSelection(2, "Vào <color=yellow>Tiêu Dao Cốc (trung bình)</color>")
+		---dialog:AddSelection(3, "Vào <color=yellow>Tiêu Dao Cốc (khó)</color>")
 		dialog:AddSelection(100, "Ta vẫn chưa chuẩn bị xong...")
 	else
 		dialog:AddSelection(100, "Ta chỉ ghé qua...")

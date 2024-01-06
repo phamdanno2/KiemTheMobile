@@ -858,6 +858,77 @@ namespace GameServer.KiemThe.Core.Item
             }
         }
 
+        /// <summary>
+        /// Khởi tạo thuộc tính Base của Item
+        /// Bao gồm Base Atrib
+        /// </summary>
+        public void InitBaseAttribParseHorse()
+        {
+            try
+            {
+                byte[] Base64Decode = Convert.FromBase64String(_GoodDatas.Props);
+                ItemGenByteData _ItemBuild = DataHelper.BytesToObject<ItemGenByteData>(Base64Decode, 0, Base64Decode.Length);
+                if (_ItemBuild != null)
+                {
+                    if (_ItemBuild.BasicPropCount > 0)
+                    {
+                        List<KMagicAttrib> TotalBaseAttrib = new List<KMagicAttrib>();
+
+                        List<BasicProp> List = _ItemData.ListBasicProp.OrderBy(x => x.Index).ToList();
+
+                        for (int i = 0; i < _ItemBuild.BasicPropCount; i++)
+                        {
+                            int PostionGet = (i * 3);
+
+                            KMagicAttrib Atribute = new KMagicAttrib();
+
+                            int VALUE0 = _ItemBuild.BasicPropValue[PostionGet];
+                            int VALUE1 = _ItemBuild.BasicPropValue[PostionGet + 1];
+                            int VALUE2 = _ItemBuild.BasicPropValue[PostionGet + 2];
+
+                            int _Value0 = 0, _Value1 = 0, _Value2 = 0;
+
+                            if (VALUE0 != -1)
+                            {
+                                _Value0 = List[i].BasicPropPA1Min + VALUE0;
+                            }
+
+                            if (VALUE1 != -1)
+                            {
+                                _Value1 = List[i].BasicPropPA2Min + VALUE1;
+                            }
+                            if (VALUE2 != -1)
+                            {
+                                _Value2 = List[i].BasicPropPA3Min + VALUE2;
+                            }
+
+                            /// Nếu là dòng ngũ hành tương khắc hệ gì đó
+                            if (List[i].BasicPropType == "damage_series_resist")
+                            {
+                                _Value2 = GetResValue(this._GoodDatas.Series);
+                            }
+                            /// Nếu là dòng tỷ lệ bỏ qua kháng
+                            else if (List[i].BasicPropType == "ignoreresist_p")
+                            {
+                                _Value2 = this._GoodDatas.Series;
+                            }
+
+                            if (Atribute.Init(List[i].BasicPropType, _Value0, _Value1, _Value2))
+                            {
+                                TotalBaseAttrib.Add(Atribute);
+                            }
+                            else
+                            {
+                                throw new System.ArgumentException("Symbol not found : " + List[i].BasicPropType);
+                            }
+                        }
+
+                        this.TotalBaseAttrib = TotalBaseAttrib;
+                    }
+                }
+            } catch { }
+        }
+
         private static int GetResValue(int series)
         {
             int resValue = 0;
@@ -1111,7 +1182,7 @@ namespace GameServer.KiemThe.Core.Item
                     case KE_ITEM_EQUIP_DETAILTYPE.equip_horse:
                         {
                             //-----------fix jackson thêm thuộc tính ListBasicProp cho ngựa
-                            //InitBaseAttribParse();
+                            InitBaseAttribParseHorse();
                             InitRequestItem();
                             InitHorseProperty();
 

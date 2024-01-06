@@ -504,7 +504,7 @@ namespace GameDBServer.Logic.GuildLogic
             {
                 conn = _Database.DBConns.PopDBConnection();
 
-                string cmdText = string.Format("Select RoleID,`Share`,GuildID,RoleName,`Rank`,FamilyID, FamilyName from t_guildshare where GuildID = " + GuildID + "");
+                string cmdText = string.Format("Select RoleID,`Share`,GuildID,RoleName,`Rank`,FamilyID,FamilyName from t_guildshare where GuildID = " + GuildID + "");
                 //
 
                 MySQLCommand cmd = new MySQLCommand(cmdText, conn);
@@ -611,11 +611,11 @@ namespace GameDBServer.Logic.GuildLogic
 
             try
             {
-
+                //Console.WriteLine(RoleID+" " + RoleName);
                 conn = this._Database.DBConns.PopDBConnection();
-
-                string cmdText = "Insert into t_guildshare(RoleID,Share,GuildID,RoleName,Rank,FamilyID,FamilyName) VALUES (" + RoleID + "," + Share + "," + GuildID + ",'" + RoleName + "'," + Rank + "," + FamilyID + ",'" + FamilyName + "')";
-
+                //----------fix jackson loi sap hang quan ham Rank -> `Rank`
+                string cmdText = "Insert into t_guildshare (RoleID,`Share`,GuildID,RoleName,`Rank`,FamilyID,FamilyName) VALUES (" + RoleID + "," + Share + "," + GuildID + ",'" + RoleName + "'," + Rank + "," + FamilyID + ",'" + FamilyName + "')";
+                //Console.WriteLine(cmdText);
                 MySQLCommand cmd = new MySQLCommand(cmdText, conn);
 
                 cmd.ExecuteNonQuery();
@@ -646,7 +646,7 @@ namespace GameDBServer.Logic.GuildLogic
         /// </summary>
         public void SetupGuildSharePerWeak()
         {
-
+            //Console.WriteLine("SetupGuildSharePerWeak");
             foreach (Guild _Guild in TotalGuild.Values)
             {
                 /// Lấy ra tổng số tiền của bang này
@@ -665,10 +665,11 @@ namespace GameDBServer.Logic.GuildLogic
                 List<GuildMember> TmpGuildMember = _Guild.GuildMember.Values.Where(x => x.GuildMoney > 0).OrderByDescending(x => x.GuildMoney).Take(10).ToList();
 
                 int i = 1;
-
+                Console.WriteLine("Sap xep TOP 10 quan ham");
                 // Ghi lại 10 thằng có cổ tức cao nhất này vào DB
                 foreach (GuildMember member in TmpGuildMember)
                 {
+                    
                     double Percent = MaxMoneyGuild <= 0 ? 0 : Math.Round(((member.GuildMoney * 100) / MaxMoneyGuild), 2);
 
                     this.InsertGuildShare(member.RoleName, member.RoleID, Percent, member.GuildID, i, member.FactionID, member.FamilyName);

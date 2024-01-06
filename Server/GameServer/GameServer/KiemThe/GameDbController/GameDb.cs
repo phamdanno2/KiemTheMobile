@@ -6,6 +6,7 @@ using Server.Protocol;
 using Server.Tools;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Linq;
 using System.Threading;
 
@@ -45,8 +46,9 @@ namespace GameServer.KiemThe.GameDbController
         /// <summary>
         /// Khoảng thời gian tối đa thực hiện lưu trữ giữ mỗi lần
         /// </summary>
-        private const long MaxDBCmdSlot = (60 * 60 * 1 * 1000);
-
+        //private const long MaxDBCmdSlot = (60 * 60 * 1 * 1000);
+        private const long MaxDBCmdSlot = (60 * 1 * 1 * 1000);          //---------fix jackson Save nhân vật (EXP, BXH)
+        private const long UPDATE_RANKING = (1 * 60 * 1 * 1000);          //---------fix jackson Save nhân vật (EXP, BXH)
 
         /// <summary>
         /// Hàm tự động lưu DB theo thời gian
@@ -95,6 +97,25 @@ namespace GameServer.KiemThe.GameDbController
                 Global.SaveRoleParamsInt32ValueToDB(client, RoleParamName.GatherPoint, client.GetGatherPoint(), true);
                 Global.SaveRoleParamsInt32ValueToDB(client, RoleParamName.MakePoint, client.GetMakePoint(), true);
 
+                //------------fix jackson cập nhật điểm BXH
+                DateTime nown = DateTime.Now;
+                string formattedDate = nown.ToString("yyyyMMddHHmmss");
+                //Console.WriteLine("UPDATE RANKING "+ client.RoleName+ " "+ formattedDate);
+                GameManager.DBCmdMgr.AddDBCmd((int)TCPGameServerCmds.CMD_DB_UPDATEROLEDAILYDATA,
+                    string.Format("{0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}:{9}",
+                    client.RoleID,
+                    DataHelper.EncodeBase64(client.RoleName),
+                    client.m_Level,
+                    client.m_cPlayerFaction.GetFactionId(),
+                    client.m_cPlayerFaction.GetRouteId(),
+                    client.FactionHonor,
+                    client.GetTotalValue() / 10000,
+                    client.WorldHonor,
+                    client.WorldMartial,
+                    client.Prestige
+                    ),
+                    null, client.ServerId); ;
+
                 Global.SetLastDBCmdTicks(client, (int)TCPGameServerCmds.CMD_DB_UPDATE_EXPLEVEL, nowTicks);
             }
 
@@ -120,8 +141,14 @@ namespace GameServer.KiemThe.GameDbController
                 Global.SetLastDBCmdTicks(client, (int)TCPGameServerCmds.CMD_DB_UPDATEPKVAL_CMD, nowTicks);
             }
 
+            
+            //-----------fix jackson cập nhật lưu BXH
             // CHỈ THOÁT MỚI GHI LẠI THÔNG TIN TOP
-            if (force)
+            ///Cập nhật các thông tin liên quan tới vinh dự tài phú
+            long LastCMD_DB_UPDATEROLEDAILYDATA = GetLastDBCmdTicks(client, (int)TCPGameServerCmds.CMD_DB_UPDATEROLEDAILYDATA, nowTicks);
+            // CỨ 1 tiếng ghi vào DB 1 phát thông tin liên quan tới tài phú các kiểu của nhân vật
+            //Console.WriteLine("ProcessDBCmdByTicks: "+ nowTicks+"|" +LastCMD_DB_UPDATEROLEDAILYDATA +"|"+ UPDATE_RANKING);
+            if (nowTicks - LastCMD_DB_UPDATEROLEDAILYDATA >= UPDATE_RANKING || force || instantUpdate)
             {
                 GameManager.DBCmdMgr.AddDBCmd((int)TCPGameServerCmds.CMD_DB_UPDATEROLEDAILYDATA,
                     string.Format("{0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}:{9}",
@@ -140,6 +167,28 @@ namespace GameServer.KiemThe.GameDbController
 
                 Global.SetLastDBCmdTicks(client, (int)TCPGameServerCmds.CMD_DB_UPDATEROLEDAILYDATA, nowTicks);
             }
+        }
+
+        /// <summary>
+        /// ForceUpdateRanking By GM
+        /// </summary>
+        /// <param name="client"></param>
+        public static void ForceUpdateRanking(KPlayer client)
+        {
+            Global.ExecuteDBCmd((int)TCPGameServerCmds.CMD_DB_UPDATEROLEDAILYDATA,
+                    string.Format("{0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}:{9}",
+                    client.RoleID,
+                    DataHelper.EncodeBase64(client.RoleName),
+                    client.m_Level,
+                    client.m_cPlayerFaction.GetFactionId(),
+                    client.m_cPlayerFaction.GetRouteId(),
+                    client.FactionHonor,
+                    client.GetTotalValue() / 10000,
+                    client.WorldHonor,
+                    client.WorldMartial,
+                    client.Prestige
+                    ),
+                    client.ServerId);
         }
 
         /// <summary>

@@ -542,13 +542,14 @@ namespace GameServer.Logic
 
             foreach(RespanBoss boss in TotalBoss)
             {
-
-                var findbosscanrespan = boss._TimeRespan.Where(x => x.Hour == TimeNow.Hour && x.Min == TimeNow.Minute && x.IsRespan == false).FirstOrDefault();
+                //-------------fix jackson gọi boss 55 75 BossModel.xml
+                int nngay = TimeNow.Day;
+                var findbosscanrespan = boss._TimeRespan.Where(x => x.Hour == TimeNow.Hour && x.Min == TimeNow.Minute && x.IsRespan != nngay).FirstOrDefault();
 
                 if (findbosscanrespan != null)
                 {
                     //Đánh dấu là đã ra
-                    findbosscanrespan.IsRespan = true;
+                    findbosscanrespan.IsRespan = nngay;
 
                     int Random = KTGlobal.GetRandomNumber(0, boss.ListMap.Count - 1);
 
@@ -581,7 +582,7 @@ namespace GameServer.Logic
                         }
 
                     });
-
+                    LogManager.WriteLog(LogTypes.GameMapEvents, "Gọi Boss ["+ boss.BossID +"|"+ boss.BossName+"|"+ boss.BossLevel+"] ["+ _Post.MapCode+" "+ _Post.PosX+" "+ _Post.PosY+"]");
                 }
 
             }

@@ -22859,6 +22859,7 @@
       </Value>
     </Symbol>
   </Skill>
+  <!--fix jackson Kim Cang Bất Hoại - Thức 1-->
   <Skill Name="jingangbuhuai_child">
     <Symbol Name="dynamicmagicshield_v">
       <Value ID="1">
@@ -22875,15 +22876,15 @@
     <Symbol Name="meleedamagereturn_p">
       <Value ID="1">
         <SkillLevelValue Level="1" Value="5" />
-        <SkillLevelValue Level="10" Value="30" />
-        <SkillLevelValue Level="12" Value="33" />
+        <SkillLevelValue Level="10" Value="15" />
+        <SkillLevelValue Level="12" Value="16" />
       </Value>
     </Symbol>
     <Symbol Name="rangedamagereturn_p">
       <Value ID="1">
         <SkillLevelValue Level="1" Value="5" />
-        <SkillLevelValue Level="10" Value="30" />
-        <SkillLevelValue Level="12" Value="33" />
+        <SkillLevelValue Level="10" Value="15" />
+        <SkillLevelValue Level="12" Value="16" />
       </Value>
     </Symbol>
     <Symbol Name="fastwalkrun_p">
@@ -22900,6 +22901,7 @@
       </Value>
     </Symbol>
   </Skill>
+  
   <Skill Name="zuibaxiangun">
     <Symbol Name="state_drag_attack">
       <Value ID="1">
@@ -28896,7 +28898,7 @@
       </Value>
     </Symbol>
   </Skill>
-  <!--Liên Hoàn Đoạt Mệnh Thương-->
+  <!--fix jackson Liên Hoàn Đoạt Mệnh Thương-->
   <Skill Name="qiangtianadvancedbook_child">
     <Symbol Name="skilldamageptrim">
       <Value ID="1">
@@ -28914,9 +28916,9 @@
     </Symbol>
     <Symbol Name="superposemagic">
       <Value ID="1">
-        <SkillLevelValue Level="1" Value="50" />
-        <SkillLevelValue Level="10" Value="50" />
-        <SkillLevelValue Level="11" Value="52" />
+        <SkillLevelValue Level="1" Value="99" />
+        <SkillLevelValue Level="10" Value="99" />
+        <SkillLevelValue Level="11" Value="102" />
       </Value>
     </Symbol>
     <Symbol Name="skill_statetime">

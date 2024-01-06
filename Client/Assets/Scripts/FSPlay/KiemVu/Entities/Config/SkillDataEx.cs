@@ -12,7 +12,7 @@ namespace FSPlay.KiemVu.Entities.Config
         /// <summary>
         /// Cấp độ tối đa của kỹ năng
         /// </summary>
-        public const short SystemMaxLevel = 30;
+        public const short SystemMaxLevel = 100;     //-------------fix jackson lỗi max kỹ năng 30
 
         /// <summary>
         /// Thời gian mặc định xuất hiện đạn (với loại đạn xuất nhiều chiêu một lần trong cùng một đường thẳng)
